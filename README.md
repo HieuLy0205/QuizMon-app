@@ -20,3 +20,4 @@ QuizMon/
 │   └── build.gradle.kts                  # Cấu hình module app
 ├── build.gradle.kts                      # Cấu hình dự án (Project level)
 └── settings.gradle.kts                   # Khai báo các module
+<img width="854" height="562" alt="image" src="https://github.com/user-attachments/assets/bcbd36c5-ac6d-4680-a967-51f0cf53bd27" />
