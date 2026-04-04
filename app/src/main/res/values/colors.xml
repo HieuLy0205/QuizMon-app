@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF4C4C</color>
+    <color name="primary">#6200EE</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="map_bg">#D1E9FF</color>
+    <color name="node_unlocked_start">#00C6FF</color>
+    <color name="node_unlocked_end">#0072FF</color>
+    <color name="node_locked_start">#BDC3C7</color>
+    <color name="node_locked_end">#2C3E50</color>
+    <color name="node_stroke">#FFFFFF</color>
+    <color name="purple_btn">#7B68EE</color>
+    <color name="text_shadow">#80000000</color>
+</resources>
