@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "question": "Khi nhận được một tin nhắn hoặc email thông báo trúng thưởng một khoản tiền lớn từ một công ty lạ, bạn nên làm gì?",
+    "options": [
+      "Nhấn vào đường link ngay để nhận thưởng",
+      "Gọi điện cho người thân để khoe và mượn tiền đóng phí nhận thưởng",
+      "Xóa tin nhắn và chặn người gửi",
+      "Cung cấp thông tin cá nhân để kiểm tra độ chính xác"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đây là hình thức lừa đảo phổ biến. Các công ty uy tín không bao giờ yêu cầu đóng phí trước khi nhận thưởng hoặc yêu cầu cung cấp thông tin bảo mật."
+  },
+  {
+    "id": 2,
+    "question": "5 x 5 = ?",
+    "options": ["20","25","30","35"],
+    "correctIndex": 1,
+    "explanation": "5 nhân 5 bằng 25."
+  },
+  {
+    "id": 3,
+    "question": "Theo Hiến pháp 2013, nước Cộng hòa xã hội chủ nghĩa Việt Nam là một nước:",
+    "options": ["Dân chủ nhân dân","Độc lập, có chủ quyền, thống nhất và toàn vẹn lãnh thổ","Cộng hòa dân chủ","Xã hội chủ nghĩa"],
+    "correctIndex": 1,
+    "explanation": "Theo Điều 1 Hiến pháp 2013, \"Nước Cộng hòa xã hội chủ nghĩa Việt Nam là một nước độc lập, có chủ quyền, thống nhất và toàn vẹn lãnh thổ, bao gồm đất liền, hải đảo, vùng biển và vùng trời\""
+  },
+  {
+    "id": 4,
+    "question": "Ai là người có quyền công bố Hiến pháp, luật, pháp lệnh?",
+    "options": ["Thủ tướng Chính phủ","Chủ tịch Quốc hội","Chủ tịch nước","Tổng Bí thư"],
+    "correctIndex": 2,
+    "explanation": "Theo Điều 88 Hiến pháp 2013, Chủ tịch nước có quyền công bố Hiến pháp, luật, pháp lệnh."
+  },
+  {
+    "id": 5,
+    "question": "Cơ quan nào là cơ quan hành chính nhà nước cao nhất?",
+    "options": ["Quốc hội","Chính phủ","Tòa án nhân dân tối cao","Văn phòng Chủ tịch nước"],
+    "correctIndex": 1,
+    "explanation": "Theo Điều 94 Hiến pháp 2013, Chính phủ là cơ quan hành chính nhà nước cao nhất của nước Cộng hòa xã hội chủ nghĩa Việt Nam, thực hiện quyền hành pháp, là cơ quan chấp hành của Quốc hội."
+  },
+  {
+    "id": 6,
+    "question": "Quốc hội bầu Chủ tịch nước trong số các đại biểu Quốc hội theo đề nghị của?",
+    "options": ["Thủ tướng Chính phủ","Ủy ban Thường vụ Quốc hội","Chủ tịch Quốc hội","Tổng Bí thư"],
+    "correctIndex": 1,
+    "explanation": "Theo Điều 70 và 74 Hiến pháp 2013, Quốc hội bầu, miễn nhiệm, bãi nhiệm Chủ tịch nước trong số đại biểu Quốc hội theo đề nghị của Ủy ban Thường vụ Quốc hội. "
+  },
+  {
+    "id": 7,
+    "question": "Thủ đô Việt Nam là gì?",
+    "options": ["Hà Nội","Đà Nẵng","Huế","Sài Gòn"],
+    "correctIndex": 0,
+    "explanation": "Hà Nội là thủ đô của Việt Nam."
+  },
+  {
+    "id": 8,
+    "question": "Trong tình huống bạn đang rất bận nhưng một người bạn thân gọi điện kể lể chuyện buồn trong thời gian dài, cách xử lý khôn khéo nhất là?",
+    "options": [
+      "Nghe hết câu chuyện mặc cho công việc bị trễ",
+      "Cắt ngang lời bạn và dập máy ngay lập tức",
+      "Lắng nghe một chút, sau đó nhẹ nhàng hẹn sẽ gọi lại vào thời gian cụ thể khác",
+      "Nói dối là điện thoại sắp hết pin"
+    ],
+    "correctIndex": 2,
+    "explanation": " Thể hiện sự tôn trọng bạn nhưng vẫn bảo vệ được giới hạn thời gian của bản thân, giữ vững mối quan hệ."
+  }
+]
