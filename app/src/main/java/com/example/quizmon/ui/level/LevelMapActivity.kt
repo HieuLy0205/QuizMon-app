@@ -36,7 +36,7 @@ class LevelMapActivity : AppCompatActivity() {
 
         val rvLevelMap = findViewById<RecyclerView>(R.id.rvLevelMap)
         
-        val totalLevels = 500
+        val totalLevels = 200
         val levels = (1..totalLevels).toList().reversed()
         val currentUnlockedLevel = 1
 
