@@ -1,72 +1,16 @@
 [
   {
-    "topicId": 1,
-    "topicName": "Kiến thức chung + Toán",
-    "questionFile": "KT_Toan_questions.json"
+    "id": 1,
+    "question": "Thủ đô Việt Nam là gì?",
+    "options": ["Hà Nội","Đà Nẵng","Huế","Sài Gòn"],
+    "correctIndex": 0,
+    "explanation": "Hà Nội là thủ đô của Việt Nam."
   },
   {
-    "topicId": 2,
-    "topicName": "Văn học",
-    "questionFile": "V_questions.json"
-  },
-  {
-    "topicId": 3,
-    "topicName": "Lịch sử",
-    "questionFile": "S_questions.json"
-  },
-  {
-    "topicId": 4,
-    "topicName": "Địa lý",
-    "questionFile": "D_questions.json"
-  },
-  {
-    "topicId": 5,
-    "topicName": "Hóa học",
-    "questionFile": "H_questions.json"
-  },
-  {
-    "topicId": 6,
-    "topicName": "Tiếng anh",
-    "questionFile": "E_questions.json"
-  },
-  {
-    "topicId": 7,
-    "topicName": "Đố vui",
-    "questionFile": "DoVui_questions.json"
-  },
-  {
-    "topicId": 8,
-    "topicName": "Chơi chữ",
-    "questionFile": "CC_questions.json"
-  },
-  {
-    "topicId": 9,
-    "topicName": "Vật Lý",
-    "questionFile": "VL_questions.json"
-  },
-  {
-    "topicId": 10,
-    "topicName": "Âm nhạc",
-    "questionFile": "AN_questions.json"
-  },
-  {
-    "topicId": 11,
-    "topicName": "Tin học",
-    "questionFile": "TH_questions.json"
-  },
-  {
-    "topicId": 12,
-    "topicName": "KTCT",
-    "questionFile": "KTCT_questions.json"
-  },
-  {
-    "topicId": 13,
-    "topicName": "TTHCM",
-    "questionFile": "TTHCM_questions.json"
-  },
-  {
-    "topicId": 14,
-    "topicName": "CNXHKH",
-    "questionFile": "CNXHKH_questions.json"
+    "id": 2,
+    "question": "5 x 5 = ?",
+    "options": ["20","25","30","35"],
+    "correctIndex": 1,
+    "explanation": "5 nhân 5 bằng 25."
   }
 ]
