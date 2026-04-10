@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "id": 1,
+    "question": "Trong phạm vi môn học, chủ nghĩa xã hội khoa học được nghiên cứu theo gốc độ nào?",
+    "options": [
+      "Lý luận nghiên cứu chủ nghĩa Mác",
+      "Lý luận về sự phát triển của các hình thái kinh tế xã hội",
+      "Chủ nghĩa Mác - Lênin",
+      "Một trong ba bộ phận hợp thành chủ nghĩa Mác – Lênin"
+    ],
+    "correctIndex": 3,
+    "explanation": "Chủ nghĩa xã hội khoa học là một trong ba bộ phận hợp thành chủ nghĩa Mác - Lênin."
+  }
+]

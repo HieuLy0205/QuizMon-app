@@ -453,7 +453,7 @@
       "Giai cấp có lợi ích cơ bản đối lập với giai cấp tư sản"
     ],
     "correctIndex": 2,
-    "explanation": "Công nhân gắn liền với sản xuất bằng máy móc hiện đại."
+    "explanation": "Công nhân gắn liền with sản xuất bằng máy móc hiện đại."
   },
   {
     "id": 116,
@@ -586,5 +586,485 @@
     ],
     "correctIndex": 2,
     "explanation": "Sự khác biệt nằm ở mục tiêu phục vụ đa số nhân dân."
+  },
+  {
+    "id": 127,
+    "question": "Ba phương diện cơ bản của nền dân chủ theo quan điểm của chủ nghĩa Mác - Lê nin là:",
+    "options": [
+      "Dân chủ là một giá trị nhân loại chung; Dân chủ là một thể chế chính trị; Dân chủ gắn liền with công bằng xã hội",
+      "Phương diện quyền lực; phương diện chính trị; phương diện tổ chức và quản lý xã hội",
+      "Dân chủ là một giá trị nhân loại chung; Dân chủ là một thể chế chính trị; Dân chủ là nhân dân làm chủ",
+      "Dân chủ là một giá trị nhân loại chung; Dân chủ là phương diện tổ chức và quản lý xã hội; Dân chủ là nhân dân là chủ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Theo quan điểm Mác - Lênin, dân chủ có 3 phương diện: quyền lực, chính trị và tổ chức quản lý."
+  },
+  {
+    "id": 128,
+    "question": "Theo quan điểm Đại hội XIII của Đảng, giải pháp cơ bản để phát triển thanh niên (trong đó có sinh viên) trong giai đoạn hiện nay là gì?",
+    "options": [
+      "Quan tâm, tạo động lực cho thanh niên xung kích trong học tập, lao động sáng tạo, khởi nghiệp, lập nghiệp",
+      "Tạo điều kiện để thanh niên bình đẳng về cơ hội học tập",
+      "Giáo dục chính trị tư tưởng, đạo đức, lối sống",
+      "Bảo vệ, chăm sóc và nâng cao sức khỏe cho thanh niên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đại hội XIII nhấn mạnh việc tạo động lực cho thanh niên xung kích, khởi nghiệp."
+  },
+  {
+    "id": 129,
+    "question": "Điều kiện kinh tế - xã hội cần thiết để chủ nghĩa xã hội có thể giành thắng lợi trước chủ nghĩa tư bản là gì?",
+    "options": [
+      "Sớm hoàn thành cuộc cách mạng công nghiệp 4.0",
+      "Sớm hoàn thành sự nghiệp công nghiệp hóa, hiện đại hóa nông nghiệp, nông thôn",
+      "Không còn tình trạng phân biệt lao động trí óc và lao động chân tay, thành thị và nông thôn",
+      "Tạo ra được cơ sở vật chất – kỹ thuật hiện đại ở trình độ cao, vững chắc"
+    ],
+    "correctIndex": 3,
+    "explanation": "Cơ sở vật chất - kỹ thuật hiện đại là nền tảng quyết định thắng lợi của CNXH."
+  },
+  {
+    "id": 130,
+    "question": "Nội dung nào phản ánh mục đích nghiên cứu của cơ cấu xã hội – dân tộc trong giai đoạn hiện nay?",
+    "options": [
+      "Xu hướng biến đổi về quy mô, tỷ trọng, sự phân bố, số lượng, chất lượng trong nội bộ mỗi dân tộc và trong mối quan hệ with các dân tộc khác của một quốc gia trên tất cả các lĩnh vực của đời sống xã hội",
+      "Xu hướng biến đổi về nghề nghiệp trong nội bộ mỗi dân tộc và trong mối quan hệ with các dân tộc khác của một quốc gia trên tất cả các lĩnh vực của đời sống xã hội",
+      "Xu hướng biến đổi về tín ngưỡng, tôn giáo trong nội bộ mỗi dân tộc và trong mối quan hệ with các dân tộc khác của một quốc gia trên tất cả các lĩnh vực của đời sống xã hội",
+      "Xu hướng biến đổi về giới tính, độ tuổi trong nội bộ mỗi dân tộc và trong mối quan hệ with các dân tộc khác của một quốc gia trên tất cả các lĩnh vực của đời sống xã hội"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cơ cấu xã hội - dân tộc tập trung vào biến đổi quy mô, chất lượng và quan hệ dân tộc."
+  },
+  {
+    "id": 131,
+    "question": "Nhà nước giám sát và định hướng hoạt động của các tôn giáo trong xã hội nhằm mục đích gì?",
+    "options": [
+      "Điều chỉnh một số nội dung cho phù hợp with đường lối, chính sách phát triển của Nhà nước",
+      "Mở rộng phạm vi hoạt động và nâng cao uy tín trong và ngoài nước của các tôn giáo",
+      "Đảm bảo tín ngưỡng nhân dân, ai cũng có thể tham gia vào hoạt động tâm linh",
+      "Ngăn ngừa sự mâu thuẫn nội bộ, tránh xung đột, mất đoàn kết"
+    ],
+    "correctIndex": 0,
+    "explanation": "Giám sát để đảm bảo các hoạt động tôn giáo phù hợp with luật pháp và chính sách nhà nước."
+  },
+  {
+    "id": 132,
+    "question": "Trong đời sống thực tiễn, một số hoạt động như: ma chay, cưới xin, làm nhà… con người thường tìm đến tôn giáo nhằm mục đích gì?",
+    "options": [
+      "Có được chỗ dựa về mặt tinh thần",
+      "Có được chỗ dựa về mặt vật chất",
+      "Thể hiện sự kính trọng đối with tôn giáo",
+      "Thể hiện sự tôn kính thần linh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tôn giáo cung cấp sự an ủi và chỗ dựa tinh thần trong các sự kiện quan trọng của đời người."
+  },
+  {
+    "id": 133,
+    "question": "Vì sao cần phải phân biệt rõ hai mặt chính trị và tư tưởng trong việc giải quyết vấn đề tôn giáo?",
+    "options": [
+      "Vì sự phân biệt này giúp tránh khuynh hướng “tả” hoặc “hữu” trong quá trình quản lý, giải quyết những vấn đề liên quan đến tín ngưỡng, tôn giáo",
+      "Vì sự phân biệt này giúp cho quần chúng nhân dân quyết định theo hoặc không theo một tôn giáo nào",
+      "Vì sự phân biệt này giúp cải tạo xã hội cũ, xây dựng xã hội mới, phát huy những mặt tích cực của tôn giáo",
+      "Vì sự phân biệt này giúp cho con người từ bỏ tư tưởng hoang đường hư ảo về hiện thực khách quan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phân biệt mặt chính trị (địch - ta) và mặt tư tưởng (lòng tin) để xử lý đúng đắn."
+  },
+  {
+    "id": 134,
+    "question": "“Thương hiệu xóa đói giảm nghèo” là muốn nhấn mạnh chương trình nào của chính phủ Việt Nam về vấn đề liên quan đến hỗ trợ đồng bào các dân tộc?",
+    "options": [
+      "Chương trình 135",
+      "Chương trình 3 a",
+      "Chương trình giảm nghèo",
+      "Chương trình định canh, định cư"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chương trình 135 là chương trình trọng điểm về phát triển KT-XH các xã đặc biệt khó khăn."
+  },
+  {
+    "id": 135,
+    "question": "Theo quan điểm của chủ nghĩa Mác – Lênin, đặc trưng nào là quan trọng nhất của dân tộc?",
+    "options": [
+      "Có chung phương thức sinh hoại kinh tế",
+      "Có lãnh thổ chung ổn định không bị chia cắt",
+      "Có sự quản lý của một nhà nước",
+      "Có ngôn ngữ chung của quốc gia làm công cụ giao tiếp trong xã hội và trong cộng đồng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cộng đồng về kinh tế là cơ sở liên kết các bộ phận khác của dân tộc."
+  },
+  {
+    "id": 136,
+    "question": "Vì sao phải có thủ tục pháp lý mang tính bắt buộc trong hôn nhân?",
+    "options": [
+      "Thể hiện trách nhiệm của nam và nữ trong hôn nhân, đảm bảo hạnh phúc gia đình bền vững",
+      "Đảm bảo sự phân chia tài sản hợp lý sau hôn nhân cho các thành viên",
+      "Để các cá nhân chịu trách nhiệm trước pháp luật khi xây ra tranh chấp",
+      "Đảm bảo trách nhiệm làm cha, làm mẹ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pháp lý xác nhận sự thừa nhận của xã hội và bảo vệ quyền lợi thành viên gia đình."
+  },
+  {
+    "id": 137,
+    "question": "Gia đình là tế bào của xã hội, vì:",
+    "options": [
+      "Gia đình đã tái tạo ra con người và các tư liệu sinh hoạt cho xã hội",
+      "Gia đình là một thiết chế xã hội đặc thù",
+      "Gia đình là một đơn vị cơ sở của xã hội",
+      "Gia đình đóng góp cho xã hội trên tất cả các lĩnh vực"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gia đình duy trì sự tồn tại của xã hội thông qua việc tái sản xuất con người."
+  },
+  {
+    "id": 138,
+    "question": "Nội dung nào dưới đây thể hiện chức năng tái sản xuất ra con người của gia đình?",
+    "options": [
+      "Sinh con, tạo ra thế hệ nối dõi",
+      "Giáo dục, nuôi dưỡng",
+      "Nâng cao thu nhập",
+      "Nâng cao trình độ học vấn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chức năng sinh sản, duy trì nòi giống là đặc thù nhất của gia đình."
+  },
+  {
+    "id": 139,
+    "question": "Ngoài loại hình đàn ông làm chủ gia đình, ở Việt Nam hiện nay còn mô hình nào khác?",
+    "options": [
+      "Cả hai vợ chồng cùng làm chủ gia đình",
+      "Cả gia đình cùng làm chủ",
+      "Những người đàn ông trong gia đình cùng làm chủ",
+      "Mỗi người đều độc lập, không ai giữ vai trò làm chủ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sự bình đẳng giới dẫn đến mô hình cả hai vợ chồng cùng làm chủ gia đình."
+  },
+  {
+    "id": 140,
+    "question": "Với sự biến đổi của gia đình Việt Nam trong thời kỳ quá độ lên chủ nghĩa xã hội thì thực hiện chức năng nào sẽ là yếu tố quan trọng tác động đến việc bảo vệ chăm sóc trẻ em và người cao tuổi?",
+    "options": [
+      "Tái sản xuất ra con người",
+      "Phát triển kinh tế và tổ chức tiêu dùng",
+      "Chức năng nuôi dưỡng, giáo dục",
+      "Chức năng thỏa mãn nhu cầu tâm sinh lý, tình cảm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nuôi dưỡng và giáo dục là chức năng cốt lõi để bảo vệ các thành viên yếu thế."
+  },
+  {
+    "id": 141,
+    "question": "Vì sao gọi là chủ nghĩa xã hội không tưởng?",
+    "options": [
+      "Vì học thuyết này chưa đưa ra được mô hình xã hội mới, tốt đẹp",
+      "Vì học thuyết này đứng trên lập trường của giai cấp tư sản",
+      "Vì những giải pháp, hướng đi, con đường đấu tranh trong học thuyết thiếu tính khả thi",
+      "Vì học thuyết này chưa rõ ràng, còn chung chung và thiếu tính cách mạng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Gọi là không tưởng vì phương pháp thực hiện không dựa trên các quy luật khách quan, thiếu khả thi."
+  },
+  {
+    "id": 142,
+    "question": "Vì sao nói giai cấp công nhân là đại biểu cho phương thức sản xuất tiên tiến, quyết định sự tồn tại và phát triển của xã hội hiện đại?",
+    "options": [
+      "Họ là sản phẩm của bản thân nền đại công nghiệp, là chủ thể của quá trình sản xuất vật chất hiện đại",
+      "Họ là lực lượng đông đảo nhất, tạo ra nhiều của cải, làm giàu cho xã hội",
+      "Quá trình lao động của họ gắn with máy móc hiện đại, có tính liên kết chặt chẽ",
+      "Họ không ngừng học tập, nâng cao trình độ khoa học – công nghệ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Địa vị kinh tế - xã hội của công nhân gắn with nền đại công nghiệp hiện đại."
+  },
+  {
+    "id": 143,
+    "question": "Vì sao giai cấp công nhân có được sứ mệnh lịch sử mà không phải các giai cấp, tầng lớp khác?",
+    "options": [
+      "Họ là giai cấp cách mạng, đại biểu cho lực lượng sản xuất hiện đại, phương thức sản xuất tiên tiến",
+      "Họ là lực lượng đông đảo nhất, tạo ra nhiều của cải, góp phần quyết định sự giàu có của xã hội",
+      "Quá trình lao động của họ gắn with máy móc hiện đại, có tính liên kết chặt chẽ",
+      "Họ không ngừng học tập, nâng cao trình độ chuyên môn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sứ mệnh lịch sử do địa vị khách quan (đại biểu LLSX tiên tiến) quy định."
+  },
+  {
+    "id": 144,
+    "question": "Giai cấp công nhân là giai cấp triệt để cách mạng, vì:",
+    "options": [
+      "Họ là giai cấp xoá bỏ chủ nghĩa tư bản và xây dựng chủ nghĩa xã hội",
+      "Họ là giai cấp có ít tư liệu sản xuất và phải bán sức lao động",
+      "Họ là giai cấp đông đảo nhất trong xã hội",
+      "Họ là giai cấp thực hiện xoá bỏ mọi chế độ tư hữu"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mục tiêu cuối cùng của công nhân là xóa bỏ mọi chế độ người bóc lột người thông qua xóa bỏ tư hữu."
+  },
+  {
+    "id": 145,
+    "question": "Giai cấp công nhân hiện đại phải bán sức lao động của mình vì:",
+    "options": [
+      "Họ là sản phẩm của nền đại công nghiệp",
+      "Họ bị áp bức bóc lột và không có sự lựa chọn",
+      "Họ không có tư liệu sản xuất",
+      "Nhờ có sức lao động, họ tạo ra hầu hết của cải cho xã hội"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mất tư liệu sản xuất là lý do chính khiến công nhân phải đi làm thuê."
+  },
+  {
+    "id": 146,
+    "question": "Giai cấp công nhân có được những phẩm chất của một giai cấp tiên tiến là do:",
+    "options": [
+      "Quá trình tự rèn luyện của giai cấp công nhân",
+      "Sự áp bức của giai cấp tư sản tạo ra",
+      "Địa vị kinh tế và địa vị chính trị - xã hội quy định",
+      "Làm việc trong môi trường có tính kỷ luật cao"
+    ],
+    "correctIndex": 2,
+    "explanation": "Phẩm chất giai cấp tiên tiến do địa vị khách quan của họ trong xã hội quy định."
+  },
+  {
+    "id": 147,
+    "question": "Vì sao giai cấp công nhân có ý thức tổ chức kỷ luật, đoàn kết cao?",
+    "options": [
+      "Vì họ lao động trong môi trường ngày càng hiện đại và được tôi luyện trong quá trình tham gia các cuộc đấu tranh",
+      "Vì họ làm việc dưới sự quản lý của giai cấp tư sản và sẽ bị đàn áp nếu không thực hiện đúng những quy định",
+      "Vì pháp luật tư sản đưa ra những quy định khắc khe đối with giai cấp công nhân",
+      "Vì bản thân giai cấp công nhân phải tự cố gắng nếu muốn giải phóng giai cấp mình và toàn xã hội"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tính kỷ luật và đoàn kết được hình thành từ môi trường đại công nghiệp."
+  },
+  {
+    "id": 148,
+    "question": "Do đâu trong thời kỳ quá độ lên chủ nghĩa xã hội còn tồn tại nhiều giai cấp, tầng lớp?",
+    "options": [
+      "Do kết cấu của nền kinh tế nhiều thành phần quy định",
+      "Do chủ trương mở cửa nền kinh tế của Đảng",
+      "Do sự khác biệt về mức sống gữa các vùng miền",
+      "Do sự khác nhau về mức lương của người lao động"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kết cấu kinh tế nhiều thành phần quyết định cơ cấu xã hội - giai cấp đa dạng."
+  },
+  {
+    "id": 149,
+    "question": "Từ chủ nghĩa tư bản lên chủ nghĩa xã hội, có cần phải trải qua thời kỳ quá độ không? Vì sao?",
+    "options": [
+      "Không, vì lực lượng sản xuất và quan hệ sản xuất đã phát triển cao",
+      "Không, vì chủ nghĩa tư bản có đủ mọi tiền đề vật chất, kỹ thuật",
+      "Có, nhằm xây dựng quan hệ sản xuất dựa trên chế độ công hữu về tư liệu sản xuất và kiến trúc thượng tầng xã hội chủ nghĩa",
+      "Tùy vào sự định hướng của Đảng cầm quyền, vì Đảng là nhân tố dẫn dắt và quyết định xu hướng phát triển của quốc gia"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cần thời kỳ quá độ để cải tạo cũ, xây dựng mới về QHSX và KTTT."
+  },
+  {
+    "id": 150,
+    "question": "Vì sao nói chủ nghĩa tư bản đã tạo ra bước phát triển vượt bậc về lực lượng sản xuất?",
+    "options": [
+      "Vì có những bước tiến to lớn của lực lượng sản xuất, biểu hiện tập trung nhất là sự ra đời của công nghiệp cơ khí",
+      "Vì có nền kinh tế dựa trên chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất và nâng suất lao động cao",
+      "Vì có lực lượng sản xuất phát triển cao phù hợp with quan hệ sản xuất",
+      "Vì lực lượng sản xuât tư bản chủ nghĩa đã tạo điều kiện thuận lợi cho người lao động trong quá trình sản xuất"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sự ra đời của đại công nghiệp cơ khí là minh chứng cho bước phát triển vượt bậc của LLSX dưới thời CNTB."
+  },
+  {
+    "id": 151,
+    "question": "Vì sao nhà nước xã hội chủ nghĩa được gọi là nhà nước kiểu mới?",
+    "options": [
+      "Vì mang bản chất giai cấp công nhân, đại biểu cho lợi ích, quyền lực và ý chí của nhân dân lao động",
+      "Vì nhà nước được quản lý theo hình thức mới, ko sử dụng công cụ bạo lực trong mọi lĩnh vực",
+      "Vì mang bản chất nhân dân, đại diện cho lợi ích của tất cả mọi người trong xã hội",
+      "Vì nhà nước quản lý xã hội theo Hiến pháp và pháp luật, hạn chế các xung đột trong xã hội"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bản chất giai cấp công nhân và phục vụ nhân dân là đặc điểm 'kiểu mới'."
+  },
+  {
+    "id": 152,
+    "question": "Tại sao nói con đường quá độ lên chủ nghĩa xã hội, bỏ qua chế độ tư bản chủ nghĩa của cách mạng Việt Nam là một tất yếu?",
+    "options": [
+      "Vì đó là định hướng của Đảng cộng sản Việt Nam",
+      "Vì đảm bảo sự phát triển bền vững của lực lượng sản xuất",
+      "Vì phù hợp with đặc điểm của đất nước và xu thế phát triển của thời đại",
+      "Vì đây là nguyện vọng và mong ước của nhân dân ta và toàn nhân loại"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sự lựa chọn này phù hợp with thực tiễn VN và xu thế quá độ lên CNXH trên thế giới."
+  },
+  {
+    "id": 153,
+    "question": "Tại sao nói: Dân chủ là một phạm trù lịch sử?",
+    "options": [
+      "Dân chủ ra đời, phát triền gắn liền with nhà nước và mất đi khi nhà nước tiêu vong",
+      "Dân chủ tồn tại và phát triển cùng with sự tồn tại và phát triển của con người và xã hội loài người",
+      "Dân chủ là sản phẩm và là thành quả của quá trình đấu tranh giai cấp cho những giá trị tiến bộ của nhân loại",
+      "Dân chủ là một trong những nguyên tắc hoạt động của các tổ chức chính trị xã hội"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phạm trù lịch sử gắn with sự xuất hiện và mất đi của nhà nước và giai cấp."
+  },
+  {
+    "id": 154,
+    "question": "Nhà nước Việt Nam hiện nay có tồn tại chức năng trấn áp hay không? Vì sao?",
+    "options": [
+      "Không, vì nhà nước ta là nhà nước của dân, do dân và vì dân",
+      "Không, vì trong nhà nước không còn tồn tại quan hệ giai cấp",
+      "Có, vì̀ còn các thế lực thù địch đi ngược lại with lợi ích quốc gia, dân tộc",
+      "Có, vì đây là chức năng cơ bản và chủ yếu của mọi nhà nước"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trấn áp các phần tử chống đối để bảo vệ thành quả cách mạng và an ninh quốc gia."
+  },
+  {
+    "id": 155,
+    "question": "Vì sao nền dân chủ xã hội chủ nghĩa do Đảng Cộng sản lãnh đạo được coi là yếu tố quan trọng để đảm bảo quyền lực thực sự thuộc về nhân dân?",
+    "options": [
+      "Đảng phải dân chủ hóa trong sinh hoạt, thực hiện nguyên tắc dân chủ, tự phê bình và phê bình",
+      "Đảng phải vững mạnh về chính trị, tư tưởng, tổ chức đảm bảo sự lãnh đạo xuyên suốt",
+      "Đảng phải thường xuyên tự đổi mới, tự chỉnh đốn để hoàn thiện và không ngừng nêu gương",
+      "Đảng Cộng sản đại biểu cho trí tuệ, lợi ích của giai cấp công nhân, nhân dân lao động và toàn dân tộc"
+    ],
+    "correctIndex": 3,
+    "explanation": "Đảng lãnh đạo để đảm bảo định hướng phục vụ nhân dân."
+  },
+  {
+    "id": 156,
+    "question": "Vì sao trong nền dân chủ xã hội chủ nghĩa, nhân dân lao động được coi là người làm chủ những quan hệ chính trị trong xã hội?",
+    "options": [
+      "Vì dân chủ xã hội chủ nghĩa lấy hệ tư tưởng Mác – Lênin làm chủ đạo. Nhân dân là chủ những quan hệ chính trị trong xã hội",
+      "Vì nhân dân được làm chủ giá trị văn hóa, tinh thần. Nhân dân được tham gia rộng rãi vào công việc quản lý nhà nước",
+      "Nhân dân có quyền giới thiệu các đại biểu tham gia vào bộ máy chính quyền, tham gia đóng góp ý kiến xây dựng chính sách; tham gia rộng rãi công việc quản lý nhà nước",
+      "Đảng lãnh đạo giai cấp công nhân và toàn xã hội về mọi mặt, đưa nhân dân lên địa vị người chủ chân chính của xã hội"
+    ],
+    "correctIndex": 2,
+    "explanation": "Quyền tham gia quản lý nhà nước, bầu cử, ứng cử là biểu hiện trực tiếp của làm chủ chính trị."
+  },
+  {
+    "id": 157,
+    "question": "Vì sao Nhà nước xã hội chủ nghĩa mang bản chất chính trị của giai cấp công nhân?",
+    "options": [
+      "Để xây dựng trên những giá trị văn hóa tiên tiến, tiến bộ của nhân loại",
+      "Để xây dựng trên nền tảng tinh thần là lý luận của chủ nghĩa Mác – Lê nin",
+      "Để thực hiện phát triển sản xuất, nâng cao đời sống toàn xã hội",
+      "Để thực hiện quyền lực và lợi ích của toàn thể nhân dân trong đó có giai cấp công nhân"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hệ tư tưởng Mác-Lênin (của giai cấp công nhân) là nền tảng tinh thần của nhà nước."
+  },
+  {
+    "id": 158,
+    "question": "Vì sao nhà nước bóc lột lại coi chức năng trấn áp là chức năng cơ bản?",
+    "options": [
+      "Vì chức năng trấn áp đóng vai trò quyết định trong việc duy trì địa vị của giai cấp nắm quyền sở hữu tư liệu sản xuất chủ yếu của xã hội",
+      "Vì chức năng trấn áp giúp lật đổ giai cấp bóc lột và những phần tử chống đối để bảo vệ thành quả cách mạng",
+      "Vì chức năng trấn áp thực hiện vai trò trấn áp của đa số nhân dân lao động đối with thiểu số bóc lột",
+      "Vì chức năng trấn áp sẽ mang lại cuộc sống tốt đẹp hơn cho đại đa số các giai cấp, tầng lớp nhân dân lao động"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trấn áp để duy trì sự thống trị của giai cấp bóc lột đối with đa số nhân dân."
+  },
+  {
+    "id": 159,
+    "question": "Trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam, vì sao cơ cấu xã hội – giai cấp có sự biến đổi phức tạp, đa dạng và xuất hiện các tầng lớp xã hội mới?",
+    "options": [
+      "Vì nền kinh tế chuyển từ cơ chế tập trung bao cấp sang cơ chế thị trường định hướng xã hội chủ nghĩa, làm thay đổi quan hệ sản xuất và phân hóa xã hội.",
+      "Vì Nhà nước chủ trương giữ nguyên cơ cấu xã hội – giai cấp truyền thống để bảo đảm ổn định xã hội.",
+      "Vì sự phân hóa xã hội chỉ do yếu tố dân số và tự nhiên, không liên quan đến phát triển kinh tế.",
+      "Vì trong thời kỳ quá độ, các giai cấp không còn tồn tại, chỉ còn một cộng đồng xã hội thống nhất."
+    ],
+    "correctIndex": 0,
+    "explanation": "Kinh tế thị trường nhiều thành phần làm nảy sinh các tầng lớp mới (doanh nhân, lao động tự do...)."
+  },
+  {
+    "id": 160,
+    "question": "Trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam, vì sao Đảng ta chủ trương xây dựng đội ngũ doanh nhân trở thành một lực lượng vững mạnh?",
+    "options": [
+      "Đội ngũ doanh nhân là lực lượng lao động sáng tạo đặc biệt trong tiến trình đẩy mạnh công nghiệp hóa, hiện đại hóa đất nước",
+      "Đội ngũ doanh nhân là lực lượng giữ vai trò tích cực trong việc thực hiện chiến lược phát triển kinh tế - xã hội, giải quyết việc làm cho người lao động và tham gia giải quyết các vấn đề an sinh xã hội, xóa đói, giảm nghèo",
+      "Đội ngũ doanh nhân vững mạnh là trực tiếp nâng tầm trí tuệ của dân tộc, sức mạnh của đất nước góp phần đẩy mạnh kinh tế phát triển",
+      "Đội ngũ doanh nhân gắn with phát triển kinh tế tri thức trong điều kiện khoa học - công nghệ và Cách mạng công nghiệp lần thứ 4; góp phần đẩy mạnh kinh tế phát triển"
+    ],
+    "correctIndex": 1,
+    "explanation": "Doanh nhân đóng vai trò quan trọng trong phát triển kinh tế và an sinh xã hội."
+  },
+  {
+    "id": 161,
+    "question": "Trong thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam, vì sao cần phải thực hiện liên minh giữa giai cấp công nhân with các tầng lớp lao động khác?",
+    "options": [
+      "Vì liên minh để vừa xây dựng được cơ sở kinh tế vững mạnh, vừa củng cố chế độ chính trị xã hội chủ nghĩa vững chắc",
+      "Vì liên minh để tạo sức mạnh vật chất đảm bảo cho thắng lợi của cuộc cách mạng xã hội trong giai đoạn giành và giữ chính quyền",
+      "Vì liên minh để tạo sức mạnh tổng hợp đánh thắng mọi kẻ thù xâm lược, hoàn thành thời kỳ quá độ, đưa cả nước đi lên chủ nghĩa xã hội",
+      "Vì liên minh để tạo sức mạnh thực hiện thành công sự nghiệp công nghiệp hóa trên lĩnh vực kinh tế"
+    ],
+    "correctIndex": 0,
+    "explanation": "Liên minh là cơ sở để thực hiện các nhiệm vụ kinh tế và chính trị của thời kỳ quá độ."
+  },
+  {
+    "id": 162,
+    "question": "Bộ phận cơ cấu xã hội nào là cơ bản và quan trọng hàng đầu, chi phối các loại hình cơ cấu xã hội khác? Vì sao?",
+    "options": [
+      "Cơ cấu xã hội - dân cư. Vì trong nền kinh tế thị trường phát triển mạnh, tính cạnh tranh cao, các giai cấp trở nên năng động",
+      "Cơ cấu xã hội - nghề nghiệp. Vì trong xu thế hội nhập sâu rộng, cơ cấu nghề nghiệp trở nên năng động, thích ứng nhanh",
+      "Cơ cấu xã hội - giai cấp. Vì sự biến đổi cơ cấu xã hội – giai cấp tất yếu sẽ ảnh hưởng đến sự biến đổi cơ cấu xã hội khác",
+      "Cơ cấu xã hội - dân tộc. Vì trong xu thế phát triển hiệu quả lao động cao của các dân tộc mới đáp ứng được nhu cầu thị trường"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cơ cấu xã hội - giai cấp chi phối các cơ cấu khác vì nó liên quan trực tiếp đến quan hệ sản xuất."
+  },
+  {
+    "id": 163,
+    "question": "Nội dung: “Là một hình thái ý thức xã hội phản ánh một cách hoang đường, hư ảo hiện thực khách quan; thông qua đó, các lực lượng tự nhiên và xã hội được nhân cách hóa thành những thế lực siêu nhiên, thần bí.” phản ánh mặt nào của tôn giáo?",
+    "options": [
+      "Chỉ ra một trong những nguồn gốc sinh ra tôn giáo",
+      "Chỉ ra tính hiện thực bên ngoài chi phối tôn giáo",
+      "Chỉ ra vai trò của tôn giáo trong thực tiễn",
+      "Chỉ ra tính văn hóa của tôn giáo trong xã hội"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phản ánh bản chất của tôn giáo là sự phản ánh hư ảo cái hiện thực khách quan bên ngoài."
+  },
+  {
+    "id": 164,
+    "question": "Trong xã hội nguyên thủy, tôn giáo có tính chính trị hay không? Vì sao?",
+    "options": [
+      "Không, vì các tôn giáo còn mang tính sơ khai thể hiện niềm tin bản năng của con người và chưa gắn with các lợi ích về kinh tế – xã hội.",
+      "Có, mặc dù tôn giáo mang tính sơ khai thể hiện niềm tin bản năng của con người, nhưng lúc bấy giờ con người đã quan tâm đến các lợi ích về kinh tế – xã hội.",
+      "Không, vì tôn giáo ra đời giúp con người có cuộc sống bình yên, hạnh phúc",
+      "Có, vì lúc bấy giờ lực lượng sản xuất đã phát triển tương đối"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chính trị gắn with giai cấp, xã hội nguyên thủy chưa có giai cấp nên tôn giáo chưa có tính chính trị."
+  },
+  {
+    "id": 165,
+    "question": "Hãy chọn đáp án đúng phản ánh trình tự từ thấp đến cao của các hình thức cộng đồng người trong tiến trình lịch sử?",
+    "options": [
+      "Bộ lạc – bộ tộc – thị tộc – dân tộc",
+      "Bộ tộc – bộ lạc – dân tộc – thị tộc",
+      "Thị tộc – bộ lạc – bộ tộc – dân tộc",
+      "Thị tộc – bộ tộc – bộ lạc – dân tộc"
+    ],
+    "correctIndex": 2,
+    "explanation": "Thị tộc -> Bộ lạc -> Bộ tộc -> Dân tộc."
+  },
+  {
+    "id": 166,
+    "question": "Nội dung nào có tính đặc thù phản ánh đúng sự ra đời của các dân tộc ở phương Tây?",
+    "options": [
+      "Do sự mở rộng địa lý từ các cuộc thám hiểm vĩ đại, chiếm giữ các vùng đất mới",
+      "Do sự giao thoa văn hóa thông qua các chiến tranh xâm lược, bành trướng lãnh thổ",
+      "Do phát triển của lực lượng sản xuất, đẩy nhanh phân hóa giai cấp trong phương thức sản xuất",
+      "Do lịch sử chiến tranh kéo dài và chia tách nhiều vùng, lãnh thổ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sự hình thành các dân tộc ở phương Tây (theo quan điểm của chủ nghĩa Mác – Lênin) có đặc điểm rất rõ ràng: nó gắn với sự phát triển của phương thức sản xuất tư bản chủ nghĩa.\n\nCụ thể:\n\nKhi lực lượng sản xuất phát triển mạnh (công cụ lao động, kỹ thuật, kinh tế hàng hóa…),\nXã hội phong kiến dần bị phá vỡ,\nQuá trình phân hóa giai cấp diễn ra mạnh mẽ (tư sản – vô sản),\nThị trường thống nhất, lãnh thổ thống nhất kinh tế – chính trị hình thành,\n→ Từ đó hình thành các dân tộc hiện đại ở phương Tây."
   }
 ]
