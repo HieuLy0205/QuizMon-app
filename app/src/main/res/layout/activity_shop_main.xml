@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/anh3_shop_map">
+
+    <LinearLayout
+        android:id="@+id/layoutsao"
+        android:layout_width="122dp"
+        android:layout_height="136dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgsao"
+            android:layout_width="50dp"
+            android:layout_height="51dp"
+            android:src="@drawable/tim2_shop_map">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textsao"
+            android:layout_width="62dp"
+            android:layout_height="36dp"
+            android:background="@drawable/icon_shop_map"
+            android:text="10"
+            android:gravity="center"
+            android:textSize="20sp">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layouttim"
+        android:layout_width="128dp"
+        android:layout_height="133dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/layoutsao"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgtim"
+            android:layout_width="61dp"
+            android:layout_height="66dp"
+            android:src="@drawable/su_shop_map">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/texttim"
+            android:layout_width="62dp"
+            android:layout_height="36dp"
+            android:background="@drawable/icon_shop_map"
+            android:text="10"
+            android:gravity="center"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutsu"
+        android:layout_width="138dp"
+        android:layout_height="130dp"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@id/layouttim"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgsu"
+            android:layout_width="60dp"
+            android:layout_height="68dp"
+            android:src="@drawable/sao_shop_map">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textsu"
+            android:layout_width="62dp"
+            android:layout_height="36dp"
+            android:background="@drawable/icon_shop_map"
+            android:text="10"
+            android:gravity="center"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutcuahang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/layouttim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="cữa hàng"
+            android:textSize="34sp">
+        </TextView>
+    </LinearLayout>
+
+    <!--    <GridLayout-->
+    <!--        android:layout_width="432dp"-->
+    <!--        android:layout_height="573dp"-->
+    <!--        android:columnCount="2"-->
+    <!--        android:padding="8dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/layoutcuahang">-->
+
+    <!--        <RelativeLayout-->
+    <!--            android:id="@+id/relativeLayout"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:layout_column="1"-->
+    <!--            app:layout_constraintStart_toStartOf="parent"-->
+    <!--            app:layout_constraintTop_toTopOf="parent"-->
+    <!--            >-->
+
+    <!--        </RelativeLayout>-->
+    <!--    </GridLayout>-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
