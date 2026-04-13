@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="@drawable/anh_nen_shop">
+    android:background="@drawable/background">
 
     <LinearLayout
         android:id="@+id/layoutsao"
