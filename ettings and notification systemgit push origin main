@@ -1,0 +1,545 @@
+[1mdiff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml[m
+[1mindex 3719950..82d628d 100644[m
+[1m--- a/app/src/main/AndroidManifest.xml[m
+[1m+++ b/app/src/main/AndroidManifest.xml[m
+[36m@@ -1,7 +1,9 @@[m
+ <?xml version="1.0" encoding="utf-8"?>[m
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"[m
+     package="com.example.quizmon">[m
+[31m-[m
+[32m+[m[32m    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>[m
+[32m+[m[32m    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>[m
+[32m+[m[32m    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>[m
+     <application[m
+         android:allowBackup="true"[m
+         android:dataExtractionRules="@xml/data_extraction_rules"[m
+[36m@@ -27,6 +29,16 @@[m
+         <activity android:name=".ui.level.TreasureActivity"/>[m
+         <activity android:name=".ui.level.SpinWheelActivity"/>[m
+         <activity android:name=".ui.level.FlipCardActivity"/>[m
+[32m+[m[32m        <activity[m
+[32m+[m[32m            android:name=".ui.settings.SettingsActivity"[m
+[32m+[m[32m            android:exported="false"/>[m
+[32m+[m[32m        <receiver[m
+[32m+[m[32m            android:name=".ui.notification.NotificationReceiver"[m
+[32m+[m[32m            android:exported="false">[m
+[32m+[m[32m            <intent-filter>[m
+[32m+[m[32m                <action android:name="android.intent.action.BOOT_COMPLETED"/>[m
+[32m+[m[32m            </intent-filter>[m
+[32m+[m[32m        </receiver>[m
+     </application>[m
+ [m
+ </manifest>[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/assets/AN_questions.json b/app/src/main/assets/an_questions.json[m
+[1msimilarity index 100%[m
+[1mrename from app/src/main/assets/AN_questions.json[m
+[1mrename to app/src/main/assets/an_questions.json[m
+[1mdiff --git a/app/src/main/assets/CC_questions.json b/app/src/main/assets/cc_questions.json[m
+[1msimilarity index 100%[m
+[1mrename from app/src/main/assets/CC_questions.json[m
+[1mrename to app/src/main/assets/cc_questions.json[m
+[1mdiff --git a/app/src/main/java/com/example/quizmon/MainActivity.kt b/app/src/main/java/com/example/quizmon/MainActivity.kt[m
+[1mindex 684320c..936053c 100644[m
+[1m--- a/app/src/main/java/com/example/quizmon/MainActivity.kt[m
+[1m+++ b/app/src/main/java/com/example/quizmon/MainActivity.kt[m
+[36m@@ -9,6 +9,7 @@[m [mimport androidx.core.view.ViewCompat[m
+ import androidx.core.view.WindowInsetsCompat[m
+ import com.example.quizmon.ui.pet.PetActivity[m
+ import com.example.quizmon.ui.level.LevelMapActivity[m
+[32m+[m[32mimport com.example.quizmon.ui.settings.SettingsActivity[m
+ [m
+ class MainActivity : AppCompatActivity() {[m
+ [m
+[36m@@ -23,7 +24,7 @@[m [mclass MainActivity : AppCompatActivity() {[m
+             insets[m
+         }[m
+ [m
+[31m-        //  Bắt sự kiện nút Quiz -> Mở LevelMapActivity thay vì QuizActivity trực tiếp[m
+[32m+[m[32m        //  Bắt sự kiện nút Quiz[m
+         val btnQuiz = findViewById<Button>(R.id.btnQuiz)[m
+         btnQuiz.setOnClickListener {[m
+             val intent = Intent(this, LevelMapActivity::class.java)[m
+[36m@@ -36,5 +37,10 @@[m [mclass MainActivity : AppCompatActivity() {[m
+             val intent = Intent(this, PetActivity::class.java)[m
+             startActivity(intent)[m
+         }[m
+[32m+[m[32m        // THÊM: Bắt sự kiện nút Settings[m
+[32m+[m[32m        val btnSettings = findViewById<Button>(R.id.btnSettings)[m
+[32m+[m[32m        btnSettings.setOnClickListener {[m
+[32m+[m[32m            startActivity(Intent(this, SettingsActivity::class.java))[m
+[32m+[m[32m        }[m
+     }[m
+ }[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/java/com/example/quizmon/ui/notification/NotificationHelper.kt b/app/src/main/java/com/example/quizmon/ui/notification/NotificationHelper.kt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..4f4352d[m
+[1m--- /dev/null[m
+[1m+++ b/app/src/main/java/com/example/quizmon/ui/notification/NotificationHelper.kt[m
+[36m@@ -0,0 +1,88 @@[m
+[32m+[m[32mpackage com.example.quizmon.ui.notification[m
+[32m+[m
+[32m+[m[32mimport android.app.AlarmManager[m
+[32m+[m[32mimport android.app.PendingIntent[m
+[32m+[m[32mimport android.content.Context[m
+[32m+[m[32mimport android.content.Intent[m
+[32m+[m[32mimport java.util.Calendar[m
+[32m+[m
+[32m+[m[32mclass NotificationHelper(private val context: Context) {[m
+[32m+[m
+[32m+[m[32m    private val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager[m
+[32m+[m
+[32m+[m[32m    fun scheduleDaily(hour: Int, minute: Int) {[m
+[32m+[m[32m        val intent = Intent(context, NotificationReceiver::class.java)[m
+[32m+[m[32m        val pendingIntent = PendingIntent.getBroadcast([m
+[32m+[m[32m            context,[m
+[32m+[m[32m            0,[m
+[32m+[m[32m            intent,[m
+[32m+[m[32m            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE[m
+[32m+[m[32m        )[m
+[32m+[m
+[32m+[m[32m        val calendar = Calendar.getInstance().apply {[m
+[32m+[m[32m            set(Calendar.HOUR_OF_DAY, hour)[m
+[32m+[m[32m            set(Calendar.MINUTE, minute)[m
+[32m+[m[32m            set(Calendar.SECOND, 0)[m
+[32m+[m[32m            set(Calendar.MILLISECOND, 0)[m
+[32m+[m
+[32m+[m[32m            val now = Calendar.getInstance()[m
+[32m+[m[32m            if (timeInMillis <= now.timeInMillis) {[m
+[32m+[m[32m                add(Calendar.DATE, 1)[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        alarmManager.setRepeating([m
+[32m+[m[32m            AlarmManager.RTC_WAKEUP,[m
+[32m+[m[32m            calendar.timeInMillis,[m
+[32m+[m[32m            AlarmManager.INTERVAL_DAY,[m
+[32m+[m[32m            pendingIntent[m
+[32m+[m[32m        )[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    fun cancelNotification() {[m
+[32m+[m[32m        val intent = Intent(context, NotificationReceiver::class.java)[m
+[32m+[m[32m        val pendingIntent = PendingIntent.getBroadcast([m
+[32m+[m[32m            context,[m
+[32m+[m[32m            0,[m
+[32m+[m[32m            intent,[m
+[32m+[m[32m            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE[m
+[32m+[m[32m        )[m
+[32m+[m[32m        alarmManager.cancel(pendingIntent)[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    fun isNotificationEnabled(): Boolean {[m
+[32m+[m[32m        val sharedPref = context.getSharedPreferences("settings", Context.MODE_PRIVATE)[m
+[32m+[m[32m        return sharedPref.getBoolean("notification_enabled", true)[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    fun setNotificationEnabled(enabled: Boolean) {[m
+[32m+[m[32m        val sharedPref = context.getSharedPreferences("settings", Context.MODE_PRIVATE)[m
+[32m+[m[32m        sharedPref.edit().putBoolean("notification_enabled", enabled).apply()[m
+[32m+[m
+[32m+[m[32m        if (enabled) {[m
+[32m+[m[32m            val hour = sharedPref.getInt("notification_hour", 8)[m
+[32m+[m[32m            val minute = sharedPref.getInt("notification_minute", 0)[m
+[32m+[m[32m            scheduleDaily(hour, minute)[m
+[32m+[m[32m        } else {[m
+[32m+[m[32m            cancelNotification()[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    fun saveNotificationTime(hour: Int, minute: Int) {[m
+[32m+[m[32m        val sharedPref = context.getSharedPreferences("settings", Context.MODE_PRIVATE)[m
+[32m+[m[32m        sharedPref.edit()[m
+[32m+[m[32m            .putInt("notification_hour", hour)[m
+[32m+[m[32m            .putInt("notification_minute", minute)[m
+[32m+[m[32m            .apply()[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    fun getNotificationHour(): Int {[m
+[32m+[m[32m        return context.getSharedPreferences("settings", Context.MODE_PRIVATE)[m
+[32m+[m[32m            .getInt("notification_hour", 8)[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    fun getNotificationMinute(): Int {[m
+[32m+[m[32m        return context.getSharedPreferences("settings", Context.MODE_PRIVATE)[m
+[32m+[m[32m            .getInt("notification_minute", 0)[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/java/com/example/quizmon/ui/notification/NotificationReceiver.kt b/app/src/main/java/com/example/quizmon/ui/notification/NotificationReceiver.kt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..8306628[m
+[1m--- /dev/null[m
+[1m+++ b/app/src/main/java/com/example/quizmon/ui/notification/NotificationReceiver.kt[m
+[36m@@ -0,0 +1,71 @@[m
+[32m+[m[32mpackage com.example.quizmon.ui.notification[m
+[32m+[m
+[32m+[m[32mimport android.app.NotificationChannel[m
+[32m+[m[32mimport android.app.NotificationManager[m
+[32m+[m[32mimport android.app.PendingIntent[m
+[32m+[m[32mimport android.content.BroadcastReceiver[m
+[32m+[m[32mimport android.content.Context[m
+[32m+[m[32mimport android.content.Intent[m
+[32m+[m[32mimport android.os.Build[m
+[32m+[m[32mimport androidx.core.app.NotificationCompat[m
+[32m+[m[32mimport com.example.quizmon.MainActivity[m
+[32m+[m[32mimport com.example.quizmon.R[m
+[32m+[m
+[32m+[m[32mclass NotificationReceiver : BroadcastReceiver() {[m
+[32m+[m
+[32m+[m[32m    override fun onReceive(context: Context, intent: Intent) {[m
+[32m+[m[32m        val messages = listOf([m
+[32m+[m[32m            "🐱 Pet đói rồi! Cho ăn đi bạn ơi~",[m
+[32m+[m[32m            "👋 Bạn có quên mình không? Vào xem nào!",[m
+[32m+[m[32m            "⏰ Còn công việc chưa hoàn thành đó nha!",[m
+[32m+[m[32m            "🌟 Hôm nay bạn đã học được gì chưa?",[m
+[32m+[m[32m            "💪 Cố lên! Hoàn thành nhiệm vụ thôi nào~",[m
+[32m+[m[32m            "🎯 Mình đang chờ bạn quay lại đây!"[m
+[32m+[m[32m        )[m
+[32m+[m
+[32m+[m[32m        sendNotification(context, messages.random())[m
+[32m+[m
+[32m+[m[32m        val sharedPref = context.getSharedPreferences("settings", Context.MODE_PRIVATE)[m
+[32m+[m[32m        val hour = sharedPref.getInt("notification_hour", 8)[m
+[32m+[m[32m        val minute = sharedPref.getInt("notification_minute", 0)[m
+[32m+[m
+[32m+[m[32m        NotificationHelper(context).scheduleDaily(hour, minute)[m
+[32m+[m[32m    }[m
+[32m+[m
+[32m+[m[32m    private fun sendNotification(context: Context, message: String) {[m
+[32m+[m[32m        val channelId = "quizmon_channel"[m
+[32m+[m
+[32m+[m[32m        val notificationManager =[m
+[32m+[m[32m            context.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager[m
+[32m+[m
+[32m+[m[32m        val openAppIntent = Intent(context, MainActivity::class.java)[m
+[32m+[m[32m        val pendingIntent = PendingIntent.getActivity([m
+[32m+[m[32m            context,[m
+[32m+[m[32m            0,[m
+[32m+[m[32m            openAppIntent,[m
+[32m+[m[32m            PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE[m
+[32m+[m[32m        )[m
+[32m+[m
+[32m+[m[32m        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {[m
+[32m+[m[32m            val channel = NotificationChannel([m
+[32m+[m[32m                channelId,[m
+[32m+[m[32m                "QuizMon Notifications",[m
+[32m+[m[32m                NotificationManager.IMPORTANCE_HIGH[m
+[32m+[m[32m            ).apply {[m
+[32m+[m[32m                description = "Thông báo nhắc nhở từ QuizMon"[m
+[32m+[m[32m            }[m
+[32m+[m[32m            notificationManager.createNotificationChannel(channel)[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        val notification = NotificationCompat.Builder(context, channelId)[m
+[32m+[m[32m            .setSmallIcon(R.drawable.ic_launcher_foreground)[m
+[32m+[m[32m            .setContentTitle("QuizMon")[m
+[32m+[m[32m            .setContentText(message)[m
+[32m+[m[32m            .setPriority(NotificationCompat.PRIORITY_HIGH)[m
+[32m+[m[32m            .setContentIntent(pendingIntent)[m
+[32m+[m[32m            .setAutoCancel(true)[m
+[32m+[m[32m            .build()[m
+[32m+[m
+[32m+[m[32m        notificationManager.notify((System.currentTimeMillis() % Int.MAX_VALUE).toInt(), notification)[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/java/com/example/quizmon/ui/settings/SettingsActivity.kt b/app/src/main/java/com/example/quizmon/ui/settings/SettingsActivity.kt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1b5320a[m
+[1m--- /dev/null[m
+[1m+++ b/app/src/main/java/com/example/quizmon/ui/settings/SettingsActivity.kt[m
+[36m@@ -0,0 +1,111 @@[m
+[32m+[m[32mpackage com.example.quizmon.ui.settings[m
+[32m+[m
+[32m+[m[32mimport android.Manifest[m
+[32m+[m[32mimport android.app.TimePickerDialog[m
+[32m+[m[32mimport android.content.pm.PackageManager[m
+[32m+[m[32mimport android.os.Build[m
+[32m+[m[32mimport android.os.Bundle[m
+[32m+[m[32mimport android.widget.*[m
+[32m+[m[32mimport androidx.appcompat.app.AppCompatActivity[m
+[32m+[m[32mimport androidx.core.app.ActivityCompat[m
+[32m+[m[32mimport androidx.core.content.ContextCompat[m
+[32m+[m[32mimport com.example.quizmon.R[m
+[32m+[m[32mimport com.example.quizmon.ui.notification.NotificationHelper[m
+[32m+[m
+[32m+[m[32mclass SettingsActivity : AppCompatActivity() {[m
+[32m+[m
+[32m+[m[32m    private lateinit var notificationHelper: NotificationHelper[m
+[32m+[m
+[32m+[m[32m    override fun onCreate(savedInstanceState: Bundle?) {[m
+[32m+[m[32m        super.onCreate(savedInstanceState)[m
+[32m+[m[32m        setContentView(R.layout.activity_settings)[m
+[32m+[m
+[32m+[m[32m        // 🔔 Xin quyền notification (Android 13+)[m
+[32m+[m[32m        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {[m
+[32m+[m[32m            if (ContextCompat.checkSelfPermission([m
+[32m+[m[32m                    this,[m
+[32m+[m[32m                    Manifest.permission.POST_NOTIFICATIONS[m
+[32m+[m[32m                ) != PackageManager.PERMISSION_GRANTED[m
+[32m+[m[32m            ) {[m
+[32m+[m[32m                ActivityCompat.requestPermissions([m
+[32m+[m[32m                    this,[m
+[32m+[m[32m                    arrayOf(Manifest.permission.POST_NOTIFICATIONS),[m
+[32m+[m[32m                    100[m
+[32m+[m[32m                )[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        notificationHelper = NotificationHelper(this)[m
+[32m+[m
+[32m+[m[32m        val etNickname = findViewById<EditText>(R.id.etNickname)[m
+[32m+[m[32m        val btnPickTime = findViewById<Button>(R.id.btnPickTime)[m
+[32m+[m[32m        val tvSelectedTime = findViewById<TextView>(R.id.tvSelectedTime)[m
+[32m+[m[32m        val btnSave = findViewById<Button>(R.id.btnSave)[m
+[32m+[m[32m        val etHour = findViewById<EditText>(R.id.etHour)[m
+[32m+[m[32m        val etMinute = findViewById<EditText>(R.id.etMinute)[m
+[32m+[m
+[32m+[m[32m        val sharedPref = getSharedPreferences("settings", MODE_PRIVATE)[m
+[32m+[m
+[32m+[m[32m        // Load data[m
+[32m+[m[32m        etNickname.setText(sharedPref.getString("nickname", ""))[m
+[32m+[m
+[32m+[m[32m        val hour = sharedPref.getInt("notification_hour", 8)[m
+[32m+[m[32m        val minute = sharedPref.getInt("notification_minute", 0)[m
+[32m+[m
+[32m+[m[32m        tvSelectedTime.text = "Giờ nhắc: %02d:%02d".format(hour, minute)[m
+[32m+[m[32m        etHour.setText(hour.toString().padStart(2, '0'))[m
+[32m+[m[32m        etMinute.setText(minute.toString().padStart(2, '0'))[m
+[32m+[m
+[32m+[m[32m        // ⏰ TimePicker[m
+[32m+[m[32m        btnPickTime.setOnClickListener {[m
+[32m+[m[32m            TimePickerDialog(this, { _, h, m ->[m
+[32m+[m[32m                etHour.setText(h.toString().padStart(2, '0'))[m
+[32m+[m[32m                etMinute.setText(m.toString().padStart(2, '0'))[m
+[32m+[m[32m                tvSelectedTime.text = "Giờ nhắc: %02d:%02d".format(h, m)[m
+[32m+[m[32m            }, hour, minute, true).show()[m
+[32m+[m[32m        }[m
+[32m+[m
+[32m+[m[32m        // 💾 SAVE[m
+[32m+[m[32m        btnSave.setOnClickListener {[m
+[32m+[m
+[32m+[m[32m            // DEBUG (biết chắc nút đã bấm)[m
+[32m+[m[32m            Toast.makeText(this, "Đã bấm lưu", Toast.LENGTH_SHORT).show()[m
+[32m+[m
+[32m+[m[32m            val nickname = etNickname.text.toString().trim()[m
+[32m+[m[32m            val h = etHour.text.toString().trim().toIntOrNull()[m
+[32m+[m[32m            val m = etMinute.text.toString().trim().toIntOrNull()[m
+[32m+[m
+[32m+[m[32m            if (nickname.isEmpty()) {[m
+[32m+[m[32m                etNickname.error = "Nickname không được để trống!"[m
+[32m+[m[32m                return@setOnClickListener[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m            if (h == null || m == null || h !in 0..23 || m !in 0..59) {[m
+[32m+[m[32m                Toast.makeText(this, "Giờ không hợp lệ!", Toast.LENGTH_LONG).show()[m
+[32m+[m[32m                return@setOnClickListener[m
+[32m+[m[32m            }[m
+[32m+[m
+[32m+[m[32m            //  Lưu trước[m
+[32m+[m[32m            sharedPref.edit()[m
+[32m+[m[32m                .putString("nickname", nickname)[m
+[32m+[m[32m                .putInt("notification_hour", h)[m
+[32m+[m[32m                .putInt("notification_minute", m)[m
+[32m+[m[32m                .putBoolean("notification_enabled", true)[m
+[32m+[m[32m                .apply()[m
+[32m+[m
+[32m+[m[32m            tvSelectedTime.text = "Giờ nhắc: %02d:%02d".format(h, m)[m
+[32m+[m
+[32m+[m[32m            //  Hiện toast TRƯỚC (không bị mất)[m
+[32m+[m[32m            Toast.makeText(this, "Đã lưu thông tin!", Toast.LENGTH_LONG).show()[m
+[32m+[m
+[32m+[m[32m            //  Schedule an toàn (không crash)[m
+[32m+[m[32m            try {[m
+[32m+[m[32m                notificationHelper.scheduleDaily(h, m)[m
+[32m+[m[32m                Toast.makeText(this, "Đã bật nhắc!", Toast.LENGTH_SHORT).show()[m
+[32m+[m[32m            } catch (e: Exception) {[m
+[32m+[m[32m                e.printStackTrace()[m
+[32m+[m[32m                Toast.makeText(this, "Lỗi khi bật nhắc!", Toast.LENGTH_LONG).show()[m
+[32m+[m[32m            }[m
+[32m+[m[32m        }[m
+[32m+[m[32m    }[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/java/com/example/quizmon/ui/settings/SettingsViewModel.kt b/app/src/main/java/com/example/quizmon/ui/settings/SettingsViewModel.kt[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7c77d96[m
+[1m--- /dev/null[m
+[1m+++ b/app/src/main/java/com/example/quizmon/ui/settings/SettingsViewModel.kt[m
+[36m@@ -0,0 +1,4 @@[m
+[32m+[m[32mpackage com.example.quizmon.ui.settings[m
+[32m+[m
+[32m+[m[32mclass SettingsViewModel {[m
+[32m+[m[32m}[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/res/drawable/bg_quiz.png b/app/src/main/res/drawable/bg_quiz.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ee22db2[m
+Binary files /dev/null and b/app/src/main/res/drawable/bg_quiz.png differ
+[1mdiff --git a/app/src/main/res/drawable/btn_CNKHXH.png b/app/src/main/res/drawable/btn_cnxhkh.png[m
+[1msimilarity index 100%[m
+[1mrename from app/src/main/res/drawable/btn_CNKHXH.png[m
+[1mrename to app/src/main/res/drawable/btn_cnxhkh.png[m
+[1mdiff --git a/app/src/main/res/drawable/btn_Dia.png b/app/src/main/res/drawable/btn_dia.png[m
+[1msimilarity index 100%[m
+[1mrename from app/src/main/res/drawable/btn_Dia.png[m
+[1mrename to app/src/main/res/drawable/btn_dia.png[m
+[1mdiff --git a/app/src/main/res/drawable/btn_Hoa.png b/app/src/main/res/drawable/btn_hoa.png[m
+[1msimilarity index 100%[m
+[1mrename from app/src/main/res/drawable/btn_Hoa.png[m
+[1mrename to app/src/main/res/drawable/btn_hoa.png[m
+[1mdiff --git a/app/src/main/res/drawable/btn_Su.png b/app/src/main/res/drawable/btn_su.png[m
+[1msimilarity index 100%[m
+[1mrename from app/src/main/res/drawable/btn_Su.png[m
+[1mrename to app/src/main/res/drawable/btn_su.png[m
+[1mdiff --git a/app/src/main/res/drawable/btn_VL.png b/app/src/main/res/drawable/btn_vl.png[m
+[1msimilarity index 100%[m
+[1mrename from app/src/main/res/drawable/btn_VL.png[m
+[1mrename to app/src/main/res/drawable/btn_vl.png[m
+[1mdiff --git a/app/src/main/res/layout/activity_main.xml b/app/src/main/res/layout/activity_main.xml[m
+[1mindex 0a45098..15dfb94 100644[m
+[1m--- a/app/src/main/res/layout/activity_main.xml[m
+[1m+++ b/app/src/main/res/layout/activity_main.xml[m
+[36m@@ -39,6 +39,15 @@[m
+             android:layout_marginTop="16dp"[m
+             android:background="@drawable/bg_button"[m
+             android:text="@string/btn_pet" />[m
+[31m-[m
+[32m+[m[32m        <Button[m
+[32m+[m[32m            android:id="@+id/btnSettings"[m
+[32m+[m[32m            android:layout_width="match_parent"[m
+[32m+[m[32m            android:layout_height="50dp"[m
+[32m+[m[32m            android:layout_marginTop="12dp"[m
+[32m+[m[32m            android:text="Cài đặt"[m
+[32m+[m[32m            android:textColor="#FFFFFF"[m
+[32m+[m[32m            android:textStyle="bold"[m
+[32m+[m[32m            android:backgroundTint="#7C4DFF"[m
+[32m+[m[32m            android:background="@drawable/bg_button" />[m
+     </LinearLayout>[m
+ </androidx.constraintlayout.widget.ConstraintLayout>[m
+\ No newline at end of file[m
+[1mdiff --git a/app/src/main/res/layout/activity_settings.xml b/app/src/main/res/layout/activity_settings.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7db1864[m
+[1m--- /dev/null[m
+[1m+++ b/app/src/main/res/layout/activity_settings.xml[m
+[36m@@ -0,0 +1,116 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="utf-8"?>[m
+[32m+[m[32m<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"[m
+[32m+[m[32m    android:layout_width="match_parent"[m
+[32m+[m[32m    android:layout_height="match_parent"[m
+[32m+[m[32m    android:fillViewport="true"[m
+[32m+[m[32m    android:background="@drawable/bg_quiz">[m
+[32m+[m
+[32m+[m[32m    <LinearLayout[m
+[32m+[m[32m        android:layout_width="match_parent"[m
+[32m+[m[32m        android:layout_height="wrap_content"[m
+[32m+[m[32m        android:orientation="vertical"[m
+[32m+[m[32m        android:padding="24dp">[m
+[32m+[m
+[32m+[m[32m        <!-- Title -->[m
+[32m+[m[32m        <TextView[m
+[32m+[m[32m            android:text="Cài đặt"[m
+[32m+[m[32m            android:textSize="22sp"[m
+[32m+[m[32m            android:textStyle="bold"[m
+[32m+[m[32m            android:textColor="#212121"[m
+[32m+[m[32m            android:layout_marginBottom="24dp"[m
+[32m+[m[32m            android:layout_width="wrap_content"[m
+[32m+[m[32m            android:layout_height="wrap_content"/>[m
+[32m+[m
+[32m+[m[32m        <!-- Nickname -->[m
+[32m+[m[32m        <TextView[m
+[32m+[m[32m            android:text="Nickname"[m
+[32m+[m[32m            android:textSize="14sp"[m
+[32m+[m[32m            android:textStyle="bold"[m
+[32m+[m[32m            android:textColor="#424242"[m
+[32m+[m[32m            android:layout_width="wrap_content"[m
+[32m+[m[32m            android:layout_height="wrap_content"/>[m
+[32m+[m
+[32m+[m[32m        <EditText[m
+[32m+[m[32m            android:id="@+id/etNickname"[m
+[32m+[m[32m            android:hint="Nhập nickname..."[m
+[32m+[m[32m            android:layout_marginTop="8dp"[m
+[32m+[m[32m            android:layout_marginBottom="24dp"[m
+[32m+[m[32m            android:layout_width="match_parent"[m
+[32m+[m[32m            android:layout_height="wrap_content"[m
+[32m+[m[32m            android:padding="12dp"/>[m
+[32m+[m
+[32m+[m[32m        <!-- Time section -->[m
+[32m+[m[32m        <TextView[m
+[32m+[m[32m            android:text="Giờ nhắc nhở"[m
+[32m+[m[32m            android:textSize="14sp"[m
+[32m+[m[32m            android:textStyle="bold"[m
+[32m+[m[32m            android:textColor="#424242"[m
+[32m+[m[32m            android:layout_width="wrap_content"[m
+[32m+[m[32m            android:layout_height="wrap_content"/>[m
+[32m+[m
+[32m+[m[32m        <!-- Input HH:MM -->[m
+[32m+[m[32m        <LinearLayout[m
+[32m+[m[32m            android:layout_width="wrap_content"[m
+[32m+[m[32m            android:layout_height="wrap_content"[m
+[32m+[m[32m            android:orientation="horizontal"[m
+[32m+[m[32m            android:layout_marginTop="8dp"[m
+[32m+[m[32m            android:layout_marginBottom="16dp">[m
+[32m+[m
+[32m+[m[32m            <EditText[m
+[32m+[m[32m                android:id="@+id/etHour"[m
+[32m+[m[32m                android:layout_width="60dp"[m
+[32m+[m[32m                android:layout_height="48dp"[m
+[32m+[m[32m                android:hint="HH"[m
+[32m+[m[32m                android:inputType="number"[m
+[32m+[m[32m                android:maxLength="2"[m
+[32m+[m[32m                android:gravity="center"[m
+[32m+[m[32m                android:textSize="16sp"/>[m
+[32m+[m
+[32m+[m[32m            <TextView[m
+[32m+[m[32m                android:text=" : "[m
+[32m+[m[32m                android:textSize="18sp"[m
+[32m+[m[32m                android:layout_marginHorizontal="8dp"[m
+[32m+[m[32m                android:layout_width="wrap_content"[m
+[32m+[m[32m                android:layout_height="wrap_content"/>[m
+[32m+[m
+[32m+[m[32m            <EditText[m
+[32m+[m[32m                android:id="@+id/etMinute"[m
+[32m+[m[32m                android:layout_width="60dp"[m
+[32m+[m[32m                android:layout_height="48dp"[m
+[32m+[m[32m                android:hint="MM"[m
+[32m+[m[32m                android:inputType="number"[m
+[32m+[m[32m                android:maxLength="2"[m
+[32m+[m[32m                android:gravity="center"[m
+[32m+[m[32m                android:textSize="16sp"/>[m
+[32m+[m[32m        </LinearLayout>[m
+[32m+[m
+[32m+[m[32m        <!-- Time picker button -->[m
+[32m+[m[32m        <Button[m
+[32m+[m[32m            android:id="@+id/btnPickTime"[m
+[32m+[m[32m            android:text="Chọn giờ nhanh"[m
+[32m+[m[32m            android:layout_marginBottom="8dp"[m
+[32m+[m[32m            android:layout_width="wrap_content"[m
+[32m+[m[32m            android:layout_height="wrap_content"/>[m
+[32m+[m
+[32m+[m[32m        <!-- Selected time -->[m
+[32m+[m[32m        <TextView[m
+[32m+[m[32m            android:id="@+id/tvSelectedTime"[m
+[32m+[m[32m            android:text="Giờ nhắc: 08:00"[m
+[32m+[m[32m            android:textSize="14sp"[m
+[32m+[m[32m            android:textColor="#616161"[m
+[32m+[m[32m            android:layout_marginBottom="32dp"[m
+[32m+[m[32m            android:layout_width="wrap_content"[m
+[32m+[m[32m            android:layout_height="wrap_content"/>[m
+[32m+[m
+[32m+[m[32m        <!-- Save button -->[m
+[32m+[m[32m        <Button[m
+[32m+[m[32m            android:id="@+id/btnSave"[m
+[32m+[m[32m            android:text="Lưu và bật nhắc"[m
+[32m+[m[32m            android:textColor="#FFFFFF"[m
+[32m+[m[32m            android:backgroundTint="#7C4DFF"[m
+[32m+[m[32m            android:layout_width="match_parent"[m
+[32m+[m[32m            android:layout_height="50dp"/>[m
+[32m+[m
+[32m+[m[32m    </LinearLayout>[m
+[32m+[m
+[32m+[m[32m</ScrollView>[m
+\ No newline at end of file[m
