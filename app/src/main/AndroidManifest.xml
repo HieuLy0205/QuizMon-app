@@ -23,6 +23,10 @@
         <activity android:name=".ui.quiz.QuizActivity"/>
         <activity android:name=".ui.pet.PetActivity"/>
         <activity android:name=".ui.level.LevelMapActivity"/>
+        <activity android:name=".ui.level.SubMapActivity"/>
+        <activity android:name=".ui.level.TreasureActivity"/>
+        <activity android:name=".ui.level.SpinWheelActivity"/>
+        <activity android:name=".ui.level.FlipCardActivity"/>
     </application>
 
 </manifest>
