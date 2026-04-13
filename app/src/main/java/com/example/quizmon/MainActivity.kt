@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.ui.pet.PetActivity
 import com.example.quizmon.ui.level.LevelMapActivity
+import com.example.quizmon.ui.settings.SettingsActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        //  Bắt sự kiện nút Quiz -> Mở LevelMapActivity thay vì QuizActivity trực tiếp
+        //  Bắt sự kiện nút Quiz
         val btnQuiz = findViewById<Button>(R.id.btnQuiz)
         btnQuiz.setOnClickListener {
             val intent = Intent(this, LevelMapActivity::class.java)
@@ -35,6 +36,11 @@ class MainActivity : AppCompatActivity() {
         btnPet.setOnClickListener {
             val intent = Intent(this, PetActivity::class.java)
             startActivity(intent)
+        }
+        // THÊM: Bắt sự kiện nút Settings
+        val btnSettings = findViewById<Button>(R.id.btnSettings)
+        btnSettings.setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
         }
     }
 }
