@@ -40,6 +40,13 @@
             android:background="@drawable/bg_button"
             android:text="@string/btn_pet" />
         <Button
+            android:id="@+id/btnshopstore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button"
+            android:text="@string/btn_shop" />
+        <Button
             android:id="@+id/btnSettings"
             android:layout_width="match_parent"
             android:layout_height="50dp"
