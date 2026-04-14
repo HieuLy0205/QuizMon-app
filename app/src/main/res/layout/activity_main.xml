@@ -39,14 +39,15 @@
             android:layout_marginTop="16dp"
             android:background="@drawable/bg_button"
             android:text="@string/btn_pet" />
-
         <Button
-        android:id="@+id/btnShop"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/bg_button"
-        android:text="@string/btn_shop" />
-
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:text="Cài đặt"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#7C4DFF"
+            android:background="@drawable/bg_button" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

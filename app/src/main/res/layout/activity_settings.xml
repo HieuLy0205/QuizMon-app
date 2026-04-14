@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_quiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Title -->
+        <TextView
+            android:text="Cài đặt"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Nickname -->
+        <TextView
+            android:text="Nickname"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#424242"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/etNickname"
+            android:hint="Nhập nickname..."
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"/>
+
+        <!-- Time section -->
+        <TextView
+            android:text="Giờ nhắc nhở"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#424242"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Input HH:MM -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/etHour"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:hint="HH"
+                android:inputType="number"
+                android:maxLength="2"
+                android:gravity="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:text=" : "
+                android:textSize="18sp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etMinute"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:hint="MM"
+                android:inputType="number"
+                android:maxLength="2"
+                android:gravity="center"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <!-- Time picker button -->
+        <Button
+            android:id="@+id/btnPickTime"
+            android:text="Chọn giờ nhanh"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Selected time -->
+        <TextView
+            android:id="@+id/tvSelectedTime"
+            android:text="Giờ nhắc: 08:00"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Save button -->
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Lưu và bật nhắc"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#7C4DFF"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
