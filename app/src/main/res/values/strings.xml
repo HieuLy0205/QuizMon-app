@@ -29,4 +29,15 @@
     <string name="hard_mode">Chế độ khó</string>
     <string name="bg_map_desc">Hình nền bản đồ</string>
     <string name="score0">Score: 0</string>
+    <string name="btn_shop">Cửa Hàng</string>
+    <string name="text_napthe">Nạp xu</string>
+    <string name="text_napmau">Nạp thêm máu</string>
+    <string name="text_shopxu">Shop Mua Xu</string>
+    <string name="text_shoptim">Shop Mua Máu</string>
+    <string name="text_shopphobien">Shop Phố Biển</string>
+    <string name="text_shoppvp">Shop PVP</string>"
+    <string name="text_gianap">🅰️Mệnh giá nộp</string>
+    <string name="text_thangtoan">🅱️Phương thức thanh toán</string>
+    <string name="text_dangnhap">🆎Đăng nhập</string>"
+
 </resources>

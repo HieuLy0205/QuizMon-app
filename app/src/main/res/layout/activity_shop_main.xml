@@ -107,14 +107,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         >
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="cữa hàng"
-            android:textSize="34sp"
-            >
-        </TextView>
+            android:text="CỬA HÀNG"
+            android:textSize="34sp"></TextView>
 
         <LinearLayout
             android:id="@+id/lne_hanggoiapi"

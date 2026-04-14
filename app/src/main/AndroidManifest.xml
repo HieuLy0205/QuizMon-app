@@ -20,6 +20,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.shop.shop_phobien"/>
+        <activity android:name=".ui.shop.shop_tim"/>
+        <activity android:name=".ui.shop.shop_xu"/>
+        <activity android:name=".ui.shop.shop_pvp"/>
+        <activity android:name=".ui.shop.activity_shop" />
         <activity android:name=".ui.quiz.QuizActivity"/>
         <activity android:name=".ui.pet.PetActivity"/>
         <activity android:name=".ui.level.LevelMapActivity"/>

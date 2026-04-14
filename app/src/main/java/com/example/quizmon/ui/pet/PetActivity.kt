@@ -35,7 +35,6 @@ class PetActivity : AppCompatActivity() {
 //            handle.postDelayed(this, 5000)
 //            Log.i("info", "ImageView tapped")
         }
-
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

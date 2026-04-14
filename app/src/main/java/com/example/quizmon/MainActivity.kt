@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.ui.pet.PetActivity
 import com.example.quizmon.ui.level.LevelMapActivity
+import com.example.quizmon.ui.shop.activity_shop
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,6 +35,12 @@ class MainActivity : AppCompatActivity() {
         val btnPet = findViewById<Button>(R.id.btnPet)
         btnPet.setOnClickListener {
             val intent = Intent(this, PetActivity::class.java)
+            startActivity(intent)
+        }
+        // Bắt sự kiện nút shop
+        val btnShop = findViewById<Button>(R.id.btnShop)
+        btnShop.setOnClickListener {
+            val intent = Intent(this, activity_shop::class.java)
             startActivity(intent)
         }
     }
