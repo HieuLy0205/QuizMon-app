@@ -38,20 +38,132 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:text="Thanh nhiệm cụ hằng ngày">
+
+        </TextView>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:orientation="vertical"
-            >
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
             <TextView
+                android:layout_width="258dp"
+                android:layout_height="41dp"
+                android:text="@string/text_nhiemvu"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_Nv1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Nhiệm vụ"
-                android:textSize="26sp"
-                android:textStyle="bold"
-                >
-            </TextView>
+                android:backgroundTint="#B680DAEB"
+                android:text="hoàn thành">
+            </Button>
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="258dp"
+                android:layout_height="41dp"
+                android:text="@string/text_nhiemvu"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_Nv2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#B680DAEB"
+                android:text="hoàn thành">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="258dp"
+                android:layout_height="41dp"
+                android:text="@string/text_nhiemvu"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_Nv3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#B680DAEB"
+                android:text="hoàn thành">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="258dp"
+                android:layout_height="41dp"
+                android:text="@string/text_nhiemvu"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_Nv4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#B680DAEB"
+                android:text="hoàn thành">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="258dp"
+                android:layout_height="41dp"
+                android:text="@string/text_nhiemvu"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_Nv5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:backgroundTint="#B680DAEB"
+                android:text="hoàn thành">
+            </Button>
+        </LinearLayout>
+
     </LinearLayout>
 
 </ScrollView>

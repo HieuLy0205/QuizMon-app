@@ -35,9 +35,10 @@
     <string name="text_shopxu">Shop Mua Xu</string>
     <string name="text_shoptim">Shop Mua Máu</string>
     <string name="text_shopphobien">Shop Phố Biển</string>
-    <string name="text_shoppvp">Shop PVP</string>"
+    <string name="text_shoppvp">Shop PVP</string>
     <string name="text_gianap">🅰️Mệnh giá nộp</string>
     <string name="text_thangtoan">🅱️Phương thức thanh toán</string>
-    <string name="text_dangnhap">🆎Đăng nhập</string>"
+    <string name="text_dangnhap">🆎Đăng nhập</string>
+    <string name="text_nhiemvu">Nhiệm vụ</string>"
 
 </resources>

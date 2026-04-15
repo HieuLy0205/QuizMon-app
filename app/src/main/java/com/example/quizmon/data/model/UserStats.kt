@@ -11,7 +11,7 @@ data class UserStats(
     var petLevel: Int = 1
 ){
     fun getExpToNextLevel(): Int {
-        return level *100 //có thể thay đổi
+        return level *100
     }
     //tăng cấp khi đủ kinh nghiệm
     fun addExp(amount: Int){
