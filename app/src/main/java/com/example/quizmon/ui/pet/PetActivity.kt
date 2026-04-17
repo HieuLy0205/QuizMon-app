@@ -7,10 +7,13 @@ import android.os.Looper
 import com.example.quizmon.R
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
+import android.widget.ImageButton
 import android.view.View
 import android.util.Log
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.quizmon.ui.shop.PreferenceManager
 
 
 class PetActivity : AppCompatActivity() {
@@ -46,14 +49,25 @@ class PetActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        val btnBack = findViewById<ImageButton>(R.id.btnBack)
+        btnBack.setOnClickListener { finish() }
         startAnimation()
     }
-//    3 (nhịp điêu) báo cáo với handl : định nghĩa thời gian chuyển ảnh
+    //3 (nhịp điêu) báo cáo với handl : định nghĩa thời gian chuyển ảnh
     private val handle = Handler(Looper.getMainLooper())
     private fun startAnimation() {
         handle.postDelayed(runnable, 150)
+    }
 
+    //HÀM TĂNG CONE
+    override fun onResume() {
+        super.onResume()
+        updateCoinDisplay()
+    }
+    private fun updateCoinDisplay(){
+        val textcoin = findViewById<TextView>(R.id.textcoin)
+        val preferenceManager = PreferenceManager(this)
+        textcoin.text = preferenceManager.getCoins().toString()
     }
 
 }

@@ -39,6 +39,7 @@
     <string name="text_gianap">🅰️Mệnh giá nộp</string>
     <string name="text_thangtoan">🅱️Phương thức thanh toán</string>
     <string name="text_dangnhap">🆎Đăng nhập</string>
-    <string name="text_nhiemvu">Nhiệm vụ</string>"
-
+    <string name="text_ShopNv">Nhiệm Vụ Hằng ngày</string>
+    <string name="text_nhiemvu">Nhiệm vụ</string>
+    <string name="text_so">0</string>
 </resources>
