@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Deep Sea Glow -->
+    <path
+        android:fillColor="#2200B0FF"
+        android:pathData="M50,50m-48,0a48,48 0 1,1 96,0a48,48 0 1,1 -96,0" />
+
+    <!-- Main Body (Deep Blue Ocean) -->
+    <path
+        android:strokeColor="#0D47A1"
+        android:strokeWidth="6"
+        android:pathData="M50,10 A40,40 0 1,1 49.9,10" />
+
+    <!-- Red Glowing Patterns -->
+    <path
+        android:strokeColor="#FF4081"
+        android:strokeWidth="2.5"
+        android:pathData="M30,15 A35,35 0 0,1 70,15 M30,85 A35,35 0 0,0 70,85" />
+
+    <!-- Large Fins/Wings -->
+    <path
+        android:fillColor="#0D47A1"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="0.5"
+        android:pathData="M10,50 Q-5,30 15,20 M90,50 Q105,30 85,20" />
+
+    <!-- White Accents (The square spots) -->
+    <path android:fillColor="#FFFFFF" android:pathData="M15,45 h6 v6 h-6 Z M79,45 h6 v6 h-6 Z" />
+
+    <!-- Inner Light Blue highlight -->
+    <path
+        android:strokeColor="#40C4FF"
+        android:strokeWidth="1"
+        android:pathData="M50,13 A37,37 0 1,1 49.9,13" />
+
+</vector>

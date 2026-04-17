@@ -33,7 +33,7 @@ class SubMapActivity : AppCompatActivity() {
     
     private var currentScore: Int = 0
     private val scorePerCorrect = 25
-    private val scorePerIncorrect = 10 // Bị trừ 10 điểm khi sai
+    private val scorePerIncorrect = 10
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -74,7 +74,7 @@ class SubMapActivity : AppCompatActivity() {
             val type = object : TypeToken<List<SubMapItem?>>() {}.type
             mapItems = Gson().fromJson(json, type)
         } else {
-            generateConnectedMap()
+            generateMapWithUniqueCategories()
             saveMapState()
         }
     }
@@ -91,22 +91,24 @@ class SubMapActivity : AppCompatActivity() {
 
     private fun updateUI() {
         tvScore.text = "Score: $currentScore"
-        
-        // Giả sử 100 điểm là tối đa cho 3 sao (33, 66, 100)
         val progress = currentScore.coerceIn(0, 100)
         pbStarProgress.progress = progress
-
         starIcons[0].setImageResource(if (progress >= 33) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
         starIcons[1].setImageResource(if (progress >= 66) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
         starIcons[2].setImageResource(if (progress >= 100) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
     }
 
-    private fun generateConnectedMap() {
-        val categories = listOf("CNKHXH", "DiaLy", "Toan", "VanHoc", "LichSu")
+    private fun generateMapWithUniqueCategories() {
+        // Danh sách tất cả các chủ đề hiện có logo trong drawable
+        val allCategories = mutableListOf("CNKHXH", "DiaLy", "Toan", "VanHoc", "LichSu", "VatLy", "AmNhac")
+        allCategories.shuffle()
+        
         val activeCells = mutableSetOf<Pair<Int, Int>>()
         activeCells.add(Pair(columns / 2, rows / 2))
 
-        val targetSize = Random.nextInt(12, 16)
+        // Số lượng ô sẽ bằng số lượng chủ đề (mỗi chủ đề 1 câu)
+        val targetSize = allCategories.size 
+        
         while (activeCells.size < targetSize) {
             val base = activeCells.random()
             val neighbors = listOf(
@@ -117,17 +119,21 @@ class SubMapActivity : AppCompatActivity() {
         }
 
         val tempItems = arrayOfNulls<SubMapItem>(columns * rows)
-        activeCells.forEach { (x, y) ->
+        val cellList = activeCells.toList()
+        
+        for (i in 0 until targetSize) {
+            val (x, y) = cellList[i]
             val index = y * columns + x
             tempItems[index] = SubMapItem(
                 id = "item_$index",
                 type = SubMapType.QUESTION,
-                category = categories.random(),
+                category = allCategories[i],
                 x = x,
                 y = y,
                 status = CompletionStatus.NOT_STARTED
             )
         }
+        
         mapItems.clear()
         mapItems.addAll(tempItems)
     }
@@ -143,7 +149,6 @@ class SubMapActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (lastClickedPosition != -1) {
             val item = mapItems[lastClickedPosition] ?: return
-            
             if (resultCode == RESULT_OK) {
                 currentScore += scorePerCorrect
                 mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.CORRECT)
@@ -151,7 +156,6 @@ class SubMapActivity : AppCompatActivity() {
                 currentScore = (currentScore - scorePerIncorrect).coerceAtLeast(0)
                 mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.INCORRECT)
             }
-
             adapter.notifyItemChanged(lastClickedPosition)
             saveMapState()
             updateUI()
@@ -166,7 +170,7 @@ class SubMapActivity : AppCompatActivity() {
 
         if (allQuestionsDone) {
             if (atLeastOneStar) {
-                Toast.makeText(this, "Ải đã hoàn thành! Ải tiếp theo đã mở.", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Ải đã hoàn thành!", Toast.LENGTH_LONG).show()
                 val mainPrefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
                 val currentMax = mainPrefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
                 if (levelId == currentMax) {
@@ -174,8 +178,7 @@ class SubMapActivity : AppCompatActivity() {
                 }
                 android.os.Handler(mainLooper).postDelayed({ finish() }, 2000)
             } else {
-                Toast.makeText(this, "Chưa đủ điểm (1 sao) để qua ải! Hãy thử lại.", Toast.LENGTH_LONG).show()
-                // Có thể reset trạng thái INCORRECT để người dùng chơi lại các câu sai
+                Toast.makeText(this, "Chưa đủ điểm (1 sao) để qua ải!", Toast.LENGTH_LONG).show()
             }
         }
     }

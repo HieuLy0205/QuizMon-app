@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Hào quang thiên giới tỏa sáng (Divine Glow) -->
+    <path
+        android:fillColor="#15FFD740"
+        android:pathData="M50,50m-48,0a48,48 0 1,1 96,0a48,48 0 1,1 -96,0" />
+
+    <!-- Vòng tròn bạc/trắng chính (Thân thể Arceus) -->
+    <path
+        android:strokeColor="#E0E0E0"
+        android:strokeWidth="4"
+        android:pathData="M50,15 A35,35 0 1,1 49.9,15" />
+
+    <!-- Vòng tròn vàng huyền thoại (Thánh khí của Arceus) -->
+    <path
+        android:strokeColor="#FFD600"
+        android:strokeWidth="5"
+        android:pathData="M50,10 A40,40 0 1,1 49.9,10" />
+
+    <!-- 4 Khung giữ ngọc trên vòng vàng -->
+    <path
+        android:fillColor="#FFD600"
+        android:pathData="M50,2 L58,10 L50,18 L42,10 Z M98,50 L90,42 L82,50 L90,58 Z M50,98 L42,90 L50,82 L58,90 Z M2,50 L10,58 L18,50 L10,42 Z" />
+
+    <!-- Ngọc Plate màu xanh lục (Life Plate) đặc trưng -->
+    <path android:fillColor="#64DD17" android:pathData="M50,6 A4,4 0 1,1 49.9,6" />
+    <path android:fillColor="#64DD17" android:pathData="M94,50 A4,4 0 1,1 93.9,50" />
+    <path android:fillColor="#64DD17" android:pathData="M50,94 A4,4 0 1,1 49.9,94" />
+    <path android:fillColor="#64DD17" android:pathData="M6,50 A4,4 0 1,1 5.9,50" />
+
+    <!-- Các tia sáng thần thánh hướng ra ngoài -->
+    <path
+        android:strokeColor="#FFD600"
+        android:strokeWidth="1.5"
+        android:strokeLineCap="round"
+        android:pathData="M20,20 L12,12 M80,20 L88,12 M80,80 L88,88 M20,80 L12,88" />
+
+</vector>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="130dp"
+    android:height="130dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Hào quang đỏ rực tỏa sáng (Soul Aura) -->
+    <path
+        android:fillColor="#44FF0000"
+        android:pathData="M50,50m-48,0a48,48 0 1,1 96,0a48,48 0 1,1 -96,0" />
+
+    <!-- Hồn Hoàn chính (Vòng tròn đỏ thẫm 10 vạn năm) -->
+    <path
+        android:strokeColor="#D50000"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M50,12 A38,38 0 1,1 49.9,12" />
+
+    <!-- Các luồng năng lượng xoáy xung quanh -->
+    <path
+        android:strokeColor="#FF5252"
+        android:strokeWidth="2"
+        android:pathData="M50,15 A35,35 0 0,1 85,50 M15,50 A35,35 0 0,1 50,85" />
+
+    <!-- Tia sét/Năng lượng bộc phát (Divine Sparks) -->
+    <path
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.2"
+        android:pathData="M30,20 L22,10 L35,15 M70,20 L78,10 L65,15 M70,80 L78,90 L65,85 M30,80 L22,90 L35,85" />
+
+    <!-- Phù văn cổ xưa ở 4 hướng -->
+    <path
+        android:fillColor="#B71C1C"
+        android:pathData="M50,2 L55,10 L45,10 Z M98,50 L90,45 L90,55 Z M50,98 L45,90 L55,90 Z M2,50 L10,55 L10,45 Z" />
+
+    <!-- Vòng sáng lõi bên trong -->
+    <path
+        android:strokeColor="#FF1744"
+        android:strokeWidth="1"
+        android:pathData="M50,18 A32,32 0 1,1 49.9,18" />
+
+</vector>
