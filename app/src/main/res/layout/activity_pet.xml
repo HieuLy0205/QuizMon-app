@@ -8,6 +8,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <LinearLayout
+        android:id="@+id/layoutcoin"
+        android:layout_width="188dp"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgcoin"
+            android:layout_width="88dp"
+            android:layout_height="80dp"
+            android:src="@drawable/sao_shop_map">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textcoin"
+            android:layout_width="94dp"
+            android:layout_height="36dp"
+            android:background="@drawable/icon_shop_map"
+            android:gravity="center"
+            android:text="@string/text_so"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
+
     <FrameLayout
         android:layout_width="300dp"
         android:layout_height="300dp">
@@ -23,11 +49,18 @@
 
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/tvLevel"
-        android:text="@string/tv_level"
-        android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="87dp"
+        android:layout_height="43dp"
+        android:layout_margin="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="576dp"
+        android:background="#CD19D5BC"
+        android:contentDescription="@string/btn_back"
+        android:padding="12dp"
+        android:layout_gravity="bottom"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back" />
+
 </LinearLayout>
