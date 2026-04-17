@@ -25,11 +25,19 @@ class shop_phobien: AppCompatActivity() {
         btn_Nv4 = findViewById(R.id.btn_Nv4)
         btn_Nv5 = findViewById(R.id.btn_Nv5)
         btnBack = findViewById(R.id.btnBack)
+
+        // kiểm tra khi vào màn hình thông qua preference
+        val preferenceManager = PreferenceManager(this)
+        if(preferenceManager.isTaskCompletedToday("nv1")){
+            btn_Nv1.isEnabled = false
+            btn_Nv1.text = "Đã nhận hôm nay"
+        }
+
         // sự kiện lick nhiệm vụ hằng ngày tăng được coin
         btn_Nv1.setOnClickListener {
             // Xử lý khi nút được nhấn
-            val preferenceManager = PreferenceManager(this)
             preferenceManager.addCoin(10)
+            preferenceManager.markTaskCompletedToday("nv1")
             btn_Nv1.isEnabled = false
             btn_Nv1.text = "Đã hoàn thành"
         }
@@ -37,6 +45,7 @@ class shop_phobien: AppCompatActivity() {
             // Xử lý khi nút được nhấn
             finish()
         }
+
 
     }
 
