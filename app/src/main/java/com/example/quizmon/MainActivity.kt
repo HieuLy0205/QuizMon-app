@@ -2,9 +2,12 @@ package com.example.quizmon
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
+import android.view.View
+import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.ui.pet.PetActivity
@@ -24,28 +27,40 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        //  Bắt sự kiện nút Quiz
-        val btnQuiz = findViewById<Button>(R.id.btnQuiz)
-        btnQuiz.setOnClickListener {
+        setupTaskbar()
+
+        // Bắt sự kiện nút Quiz (Card chính trên màn hình)
+        findViewById<View>(R.id.btnQuiz).setOnClickListener {
             val intent = Intent(this, LevelMapActivity::class.java)
             startActivity(intent)
         }
 
-        // Bắt sự kiện nút Pet
-        val btnPet = findViewById<Button>(R.id.btnPet)
-        btnPet.setOnClickListener {
-            val intent = Intent(this, PetActivity::class.java)
-            startActivity(intent)
-        }
-        // THÊM: Bắt sự kiện nút Settings
-        val btnSettings = findViewById<Button>(R.id.btnSettings)
-        btnSettings.setOnClickListener {
+        // Bắt sự kiện nút Settings
+        /*findViewById<View>(R.id.btnSettings)?.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
+        }*/
+    }
+
+    private fun setupTaskbar() {
+        // Highlight trang chủ bằng thanh gỗ
+        findViewById<View>(R.id.indicator_home).visibility = View.VISIBLE
+        findViewById<TextView>(R.id.tv_nav_home).setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
+        
+        // Sự kiện click cho các icon trên taskbar
+        findViewById<LinearLayout>(R.id.nav_profile).setOnClickListener {
+            startActivity(Intent(this, PetActivity::class.java))
         }
-        // THÊM: Bắt sự kiện nút shop
-        val btnshopstore = findViewById<Button>(R.id.btnshopstore)
-        btnshopstore.setOnClickListener {
+        
+        findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener {
             startActivity(Intent(this, activity_shop::class.java))
+        }
+
+        findViewById<LinearLayout>(R.id.nav_history).setOnClickListener {
+            // Tính năng Lịch sử
+        }
+
+        findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {
+            startActivity(Intent(this, SettingsActivity::class.java))
         }
     }
 }

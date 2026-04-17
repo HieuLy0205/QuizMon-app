@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Vòng dây leo chính -->
+    <path
+        android:strokeColor="#689F38"
+        android:strokeWidth="2.5"
+        android:pathData="M50,6 A44,44 0 1,1 49.9,6" />
+
+    <!-- Các mầm lá nhỏ xung quanh -->
+    <path android:fillColor="#8BC34A" android:pathData="M50,2 Q54,6 50,10 Q46,6 50,2" />
+    <path android:fillColor="#8BC34A" android:pathData="M98,50 Q94,54 90,50 Q94,46 98,50" />
+    <path android:fillColor="#8BC34A" android:pathData="M50,98 Q46,94 50,90 Q54,94 50,98" />
+    <path android:fillColor="#8BC34A" android:pathData="M2,50 Q6,46 10,50 Q6,54 2,50" />
+
+    <!-- Điểm xuyết hoa nhỏ cùng tông màu nền (vàng nhạt) -->
+    <path android:fillColor="#FFF176" android:pathData="M82,18 A3,3 0 1,1 81.9,18" />
+    <path android:fillColor="#FFF176" android:pathData="M82,82 A3,3 0 1,1 81.9,82" />
+    <path android:fillColor="#FFF176" android:pathData="M18,82 A3,3 0 1,1 17.9,82" />
+    <path android:fillColor="#FFF176" android:pathData="M18,18 A3,3 0 1,1 17.9,18" />
+
+    <!-- Các nét uốn lượn mềm mại hơn -->
+    <path
+        android:strokeColor="#558B2F"
+        android:strokeWidth="1"
+        android:pathData="M30,12 Q40,5 50,12 M70,12 Q60,5 50,12 M88,30 Q95,40 88,50 M88,70 Q95,60 88,50" />
+</vector>

@@ -33,7 +33,7 @@ class SubMapAdapter(
         }
         
         holder.itemView.visibility = View.VISIBLE
-        holder.bind(item, position)
+        holder.bind(item)
     }
 
     override fun getItemCount(): Int = items.size
@@ -43,51 +43,55 @@ class SubMapAdapter(
         private val ivIcon: ImageView = itemView.findViewById(R.id.ivIcon)
         private val tvId: TextView = itemView.findViewById(R.id.tvId)
 
-        fun bind(item: SubMapItem, position: Int) {
+        fun bind(item: SubMapItem) {
             tvId.text = ""
+            ivIcon.clearColorFilter()
             
-            // Xử lý màu sắc và icon dựa trên trạng thái hoàn thành
-            when (item.status) {
-                CompletionStatus.CORRECT -> {
-                    cardItem.setCardBackgroundColor(Color.parseColor("#4CAF50")) // Green
-                    ivIcon.setImageResource(android.R.drawable.checkbox_on_background) // Placeholder cho dấu tick
-                    ivIcon.setColorFilter(Color.WHITE)
-                }
-                CompletionStatus.INCORRECT -> {
-                    cardItem.setCardBackgroundColor(Color.parseColor("#F44336")) // Red
-                    ivIcon.setImageResource(android.R.drawable.ic_delete) // Placeholder cho dấu X
-                    ivIcon.setColorFilter(Color.WHITE)
-                }
+            // Xử lý icon dựa trên loại và chủ đề
+            val iconRes = when (item.status) {
+                CompletionStatus.CORRECT -> android.R.drawable.checkbox_on_background
+                CompletionStatus.INCORRECT -> android.R.drawable.ic_delete
                 CompletionStatus.NOT_STARTED -> {
-                    ivIcon.clearColorFilter()
-                    val bgColor = when (item.type) {
-                        SubMapType.QUESTION -> {
-                            tvId.text = "1"
-                            when (item.category) {
-                                "CNKHXH" -> Color.parseColor("#FF80AB")
-                                "DiaLy" -> Color.parseColor("#4FC3F7")
-                                "Toan" -> Color.parseColor("#FFB74D")
-                                else -> Color.parseColor("#AED581")
-                            }
-                        }
-                        SubMapType.TREASURE -> Color.parseColor("#FFEB3B")
-                        SubMapType.SPIN_WHEEL -> Color.parseColor("#BA68C8")
-                        SubMapType.FLIP_CARD -> Color.parseColor("#FF7043")
-                        else -> Color.WHITE
-                    }
-                    cardItem.setCardBackgroundColor(bgColor)
-
-                    if (item.type == SubMapType.TREASURE) {
-                        ivIcon.setImageResource(R.drawable.icon_ruong_xu)
-                    } else if (item.type == SubMapType.QUESTION) {
-                        ivIcon.setImageResource(R.drawable.ic_launcher_foreground)
-                    } else {
-                        ivIcon.setImageResource(0)
+                    when (item.type) {
+                        SubMapType.QUESTION -> getCategoryIcon(item.category)
+                        SubMapType.TREASURE -> R.drawable.icon_ruong_xu
+                        else -> 0
                     }
                 }
             }
 
-            itemView.setOnClickListener { onItemClick(item, position) }
+            if (iconRes != 0) {
+                ivIcon.setImageResource(iconRes)
+                if (item.status != CompletionStatus.NOT_STARTED) {
+                    ivIcon.setColorFilter(Color.WHITE)
+                }
+            } else {
+                ivIcon.setImageResource(0)
+            }
+
+            // Xử lý màu nền - Hòa với nền khi chưa bắt đầu
+            val bgColor = when (item.status) {
+                CompletionStatus.CORRECT -> Color.parseColor("#4CAF50")
+                CompletionStatus.INCORRECT -> Color.parseColor("#F44336")
+                CompletionStatus.NOT_STARTED -> Color.TRANSPARENT
+            }
+            cardItem.setCardBackgroundColor(bgColor)
+            cardItem.cardElevation = if (item.status == CompletionStatus.NOT_STARTED) 0f else 4f
+
+            itemView.setOnClickListener { onItemClick(item, adapterPosition) }
+        }
+
+        private fun getCategoryIcon(category: String?): Int {
+            return when (category) {
+                "Hoa" -> R.drawable.bt_hoa
+                "CNXHKH" -> R.drawable.bt_cnxhkh
+                "DiaLy" -> R.drawable.bt_dia
+                "VanHoc" -> R.drawable.bt_van
+                "LichSu" -> R.drawable.bt_su
+                "VatLy" -> R.drawable.bt_vl
+                "AmNhac" -> R.drawable.bt_an
+                else -> R.drawable.ic_launcher_foreground
+            }
         }
     }
 }

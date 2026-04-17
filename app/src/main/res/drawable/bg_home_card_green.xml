@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Màu vàng mật ong ấm áp, hợp với nền giấy cũ/parchment -->
+    <solid android:color="#FFCA28" />
+    <corners android:radius="24dp" />
+    <!-- Viền màu gỗ đậm để tạo phong cách chibi/vẽ tay -->
+    <stroke android:width="4dp" android:color="#8B4513" />
+</shape>

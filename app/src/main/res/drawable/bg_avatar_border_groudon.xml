@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Magma Glow -->
+    <path
+        android:fillColor="#22FF5722"
+        android:pathData="M50,50m-48,0a48,48 0 1,1 96,0a48,48 0 1,1 -96,0" />
+
+    <!-- Main Body (Deep Red Armor) -->
+    <path
+        android:strokeColor="#B71C1C"
+        android:strokeWidth="6"
+        android:pathData="M50,10 A40,40 0 1,1 49.9,10" />
+
+    <!-- Black Pattern (The iconic Groudon markings) -->
+    <path
+        android:strokeColor="#212121"
+        android:strokeWidth="2"
+        android:pathData="M50,10 L50,20 M90,50 L80,50 M50,90 L50,80 M10,50 L20,50" />
+
+    <!-- Spikes/Teeth -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M25,25 L15,15 L28,22 Z M75,25 L85,15 L72,22 Z M25,75 L15,85 L28,78 Z M75,75 L85,85 L72,78 Z" />
+
+    <!-- Yellow Accents (Eyes/Magma cracks) -->
+    <path android:fillColor="#FFD600" android:pathData="M45,8 L55,8 L50,15 Z" />
+    <path
+        android:strokeColor="#FFD600"
+        android:strokeWidth="1"
+        android:pathData="M35,15 Q50,5 65,15" />
+
+</vector>

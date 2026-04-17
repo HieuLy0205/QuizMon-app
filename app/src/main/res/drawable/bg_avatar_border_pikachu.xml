@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Soft Yellow Glow -->
+    <path
+        android:fillColor="#33FFEB3B"
+        android:pathData="M50,50m-48,0a48,48 0 1,1 96,0a48,48 0 1,1 -96,0" />
+
+    <!-- Pikachu Ears -->
+    <!-- Left Ear -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:strokeColor="#FBC02D"
+        android:strokeWidth="1"
+        android:pathData="M30,20 L15,5 Q10,2 18,10 L35,22 Z" />
+    <path
+        android:fillColor="#212121"
+        android:pathData="M15,5 Q10,2 18,10 L15,8 Z" /> <!-- Ear tip -->
+
+    <!-- Right Ear -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:strokeColor="#FBC02D"
+        android:strokeWidth="1"
+        android:pathData="M70,20 L85,5 Q90,2 82,10 L65,22 Z" />
+    <path
+        android:fillColor="#212121"
+        android:pathData="M85,5 Q90,2 82,10 L85,8 Z" /> <!-- Ear tip -->
+
+    <!-- Main Yellow Border -->
+    <path
+        android:strokeColor="#FFEB3B"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M50,12 A38,38 0 1,1 49.9,12" />
+
+    <!-- Red Cheeks on the border -->
+    <path android:fillColor="#F44336" android:pathData="M22,70 A5,5 0 1,1 21.9,70" />
+    <path android:fillColor="#F44336" android:pathData="M78,70 A5,5 0 1,1 77.9,70" />
+
+    <!-- Mini Pikachu at bottom right corner -->
+    <!-- Head -->
+    <path
+        android:fillColor="#FFEB3B"
+        android:strokeColor="#FBC02D"
+        android:strokeWidth="0.5"
+        android:pathData="M85,85 m-8,0 a8,8 0 1,1 16,0 a8,8 0 1,1 -16,0" />
+    <!-- Mini Ears -->
+    <path android:fillColor="#FFEB3B" android:pathData="M78,78 L74,72 L80,76 Z" />
+    <path android:fillColor="#FFEB3B" android:pathData="M92,78 L96,72 L90,76 Z" />
+    <!-- Eyes -->
+    <path android:fillColor="#212121" android:pathData="M82,83 A1,1 0 1,1 81.9,83" />
+    <path android:fillColor="#212121" android:pathData="M88,83 A1,1 0 1,1 87.9,83" />
+    <!-- Mini Cheeks -->
+    <path android:fillColor="#F44336" android:pathData="M79,87 A1.5,1.5 0 1,1 78.9,87" />
+    <path android:fillColor="#F44336" android:pathData="M91,87 A1.5,1.5 0 1,1 90.9,87" />
+
+</vector>

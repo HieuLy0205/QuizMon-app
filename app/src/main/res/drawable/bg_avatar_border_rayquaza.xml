@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Lớp bóng đổ/tỏa sáng xanh lục đặc trưng -->
+    <path
+        android:fillColor="#2200E676"
+        android:pathData="M50,50m-48,0a48,48 0 1,1 96,0a48,48 0 1,1 -96,0" />
+
+    <!-- Thân Rồng (Vòng tròn chính màu xanh lục Emerald) -->
+    <path
+        android:strokeColor="#2E7D32"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:pathData="M50,10 A40,40 0 1,1 49.9,10" />
+    <path
+        android:strokeColor="#43A047"
+        android:strokeWidth="2"
+        android:pathData="M50,12 A38,38 0 1,1 49.9,12" />
+
+    <!-- Các vây/sừng phong cách Rayquaza ở phía trên -->
+    <path
+        android:fillColor="#2E7D32"
+        android:strokeColor="#1B5E20"
+        android:strokeWidth="1"
+        android:pathData="M30,15 L20,5 L35,12 Z M70,15 L80,5 L65,12 Z" />
+    <!-- Điểm nhấn màu đỏ ở chóp vây -->
+    <path android:fillColor="#FF1744" android:pathData="M20,5 L23,8 L18,8 Z M80,5 L77,8 L82,8 Z" />
+
+    <!-- Các vòng tròn vàng đặc trưng trên thân Rayquaza -->
+    <group>
+        <path
+            android:strokeColor="#FFD600"
+            android:strokeWidth="2"
+            android:pathData="M50,10 m-5,0 a5,5 0 1,1 10,0 a5,5 0 1,1 -10,0" />
+        <path
+            android:strokeColor="#FFD600"
+            android:strokeWidth="2"
+            android:pathData="M90,50 m0,-5 a5,5 0 1,1 0,10 a5,5 0 1,1 0,-10" />
+        <path
+            android:strokeColor="#FFD600"
+            android:strokeWidth="2"
+            android:pathData="M50,90 m-5,0 a5,5 0 1,1 10,0 a5,5 0 1,1 -10,0" />
+        <path
+            android:strokeColor="#FFD600"
+            android:strokeWidth="2"
+            android:pathData="M10,50 m0,-5 a5,5 0 1,1 0,10 a5,5 0 1,1 0,-10" />
+    </group>
+
+    <!-- Các chi tiết gai nhọn màu đen/xám đậm -->
+    <path
+        android:fillColor="#212121"
+        android:pathData="M15,30 L10,25 L18,28 Z M85,30 L90,25 L82,28 Z M15,70 L10,75 L18,72 Z M85,70 L90,75 L82,72 Z" />
+
+</vector>

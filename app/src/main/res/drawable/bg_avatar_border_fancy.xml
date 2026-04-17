@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="110dp"
+    android:height="110dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Hiệu ứng tỏa sáng nhẹ phía sau -->
+    <path
+        android:fillColor="#33FFD740"
+        android:pathData="M50,50m-48,0a48,48 0 1,1 96,0a48,48 0 1,1 -96,0" />
+
+    <!-- Vòng tròn chính (Dạng như kim loại vàng uốn lượn) -->
+    <path
+        android:strokeColor="#FFC107"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:pathData="M50,10 A40,40 0 1,1 49.9,10" />
+
+    <!-- Các họa tiết trang trí nhô ra (Kiểu sừng hoặc lá cách điệu) -->
+    <path
+        android:fillColor="#FFA000"
+        android:pathData="M50,2 L55,12 L45,12 Z M98,50 L88,45 L88,55 Z M50,98 L45,88 L55,88 Z M2,50 L12,55 L12,45 Z" />
+
+    <!-- Đính thêm đá quý (Gems) -->
+    <path android:fillColor="#E91E63" android:pathData="M80,20 A4,4 0 1,1 79.9,20" /> <!-- Hồng -->
+    <path android:fillColor="#2196F3" android:pathData="M80,80 A4,4 0 1,1 79.9,80" /> <!-- Xanh dương -->
+    <path android:fillColor="#4CAF50" android:pathData="M20,80 A4,4 0 1,1 19.9,80" /> <!-- Xanh lá -->
+    <path android:fillColor="#9C27B0" android:pathData="M20,20 A4,4 0 1,1 19.9,20" /> <!-- Tím -->
+
+    <!-- Nét chạm khắc bên trong vòng tròn -->
+    <path
+        android:strokeColor="#FFECB3"
+        android:strokeWidth="1"
+        android:pathData="M50,15 A35,35 0 1,1 49.9,15" />
+</vector>
