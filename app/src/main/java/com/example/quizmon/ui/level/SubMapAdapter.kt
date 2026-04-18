@@ -46,15 +46,21 @@ class SubMapAdapter(
         fun bind(item: SubMapItem) {
             tvId.text = ""
             ivIcon.clearColorFilter()
+            val density = itemView.context.resources.displayMetrics.density
             
-            // Xử lý icon dựa trên loại và chủ đề
+            // 1. Lựa chọn Icon dựa trên trạng thái (Dùng bt_dung, bt_sai, bt_bonus)
             val iconRes = when (item.status) {
-                CompletionStatus.CORRECT -> android.R.drawable.checkbox_on_background
-                CompletionStatus.INCORRECT -> android.R.drawable.ic_delete
+                CompletionStatus.CORRECT -> {
+                    if (item.type == SubMapType.QUESTION) R.drawable.bt_dung
+                    else R.drawable.bt_bonus
+                }
+                CompletionStatus.INCORRECT -> R.drawable.bt_sai
                 CompletionStatus.NOT_STARTED -> {
                     when (item.type) {
                         SubMapType.QUESTION -> getCategoryIcon(item.category)
-                        SubMapType.TREASURE -> R.drawable.icon_ruong_xu
+                        SubMapType.TREASURE -> R.drawable.bt_chest
+                        SubMapType.SPIN_WHEEL -> R.drawable.bt_vqmm
+                        SubMapType.FLIP_CARD -> R.drawable.bt_draw
                         else -> 0
                     }
                 }
@@ -62,34 +68,50 @@ class SubMapAdapter(
 
             if (iconRes != 0) {
                 ivIcon.setImageResource(iconRes)
-                if (item.status != CompletionStatus.NOT_STARTED) {
-                    ivIcon.setColorFilter(Color.WHITE)
-                }
             } else {
                 ivIcon.setImageResource(0)
             }
 
-            // Xử lý màu nền - Hòa với nền khi chưa bắt đầu
-            val bgColor = when (item.status) {
-                CompletionStatus.CORRECT -> Color.parseColor("#4CAF50")
-                CompletionStatus.INCORRECT -> Color.parseColor("#F44336")
-                CompletionStatus.NOT_STARTED -> Color.TRANSPARENT
+            // 2. Xử lý hiển thị ô
+            when (item.status) {
+                CompletionStatus.CORRECT, CompletionStatus.INCORRECT -> {
+                    // Khi đã trả lời, ảnh bt_dung/bt_sai/bt_bonus đã bao gồm cả hình dạng và màu sắc
+                    cardItem.setCardBackgroundColor(Color.TRANSPARENT)
+                    cardItem.cardElevation = 0f
+                    cardItem.radius = 0f 
+                }
+                CompletionStatus.NOT_STARTED -> {
+                    if (item.type == SubMapType.QUESTION) {
+                        cardItem.setCardBackgroundColor(Color.parseColor("#FFFFFF"))
+                        cardItem.radius = 12f * density
+                        cardItem.cardElevation = 4f
+                    } else {
+                        cardItem.setCardBackgroundColor(Color.TRANSPARENT)
+                        cardItem.cardElevation = 0f
+                        cardItem.radius = 0f
+                    }
+                }
             }
-            cardItem.setCardBackgroundColor(bgColor)
-            cardItem.cardElevation = if (item.status == CompletionStatus.NOT_STARTED) 0f else 4f
 
             itemView.setOnClickListener { onItemClick(item, adapterPosition) }
         }
 
         private fun getCategoryIcon(category: String?): Int {
             return when (category) {
-                "Hoa" -> R.drawable.bt_hoa
+                "AmNhac" -> R.drawable.bt_an
+                "ChoiChu" -> R.drawable.bt_cc
                 "CNXHKH" -> R.drawable.bt_cnxhkh
                 "DiaLy" -> R.drawable.bt_dia
-                "VanHoc" -> R.drawable.bt_van
+                "DoVui" -> R.drawable.bt_dv
+                "TiengAnh" -> R.drawable.bt_e
+                "HoaHoc" -> R.drawable.bt_hoa
+                "KienThucChung" -> R.drawable.bt_ktc
+                "KinhTeChinhTri" -> R.drawable.bt_ktct
                 "LichSu" -> R.drawable.bt_su
+                "TinHoc" -> R.drawable.bt_tin
+                "TuTuongHCM" -> R.drawable.bt_tthcm
+                "VanHoc" -> R.drawable.bt_van
                 "VatLy" -> R.drawable.bt_vl
-                "AmNhac" -> R.drawable.bt_an
                 else -> R.drawable.ic_launcher_foreground
             }
         }
