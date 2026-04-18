@@ -42,4 +42,13 @@
     <string name="text_ShopNv">Nhiệm Vụ Hằng ngày</string>
     <string name="text_nhiemvu">Nhiệm vụ</string>
     <string name="text_so">0</string>
+    <string name="hoso">Hồ sơ</string>
+    <string name="ls">Lịch sử</string>
+    <string name="home">Trang chủ</string>
+    <string name="shop">Cửa hàng</string>
+    <string name="menu">Menu</string>
+    <string name="play">Chơi</string>
+    <string name="lvl">Cấp độ</string>
+    <string name="pvp">Thi đấu</string>
+    <string name="bonus">Thưởng\nhàng ngày</string>
 </resources>

@@ -46,10 +46,11 @@
                 android:src="@drawable/sao_shop_map"
                 android:contentDescription="@null" />
             <TextView
+                android:id="@+id/tvScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
-                android:text="142"
+                android:text="0"
                 android:textStyle="bold"
                 android:textColor="#F57C00" />
         </LinearLayout>
@@ -71,10 +72,11 @@
                 android:src="@drawable/icon_ruong_xu"
                 android:contentDescription="@null" />
             <TextView
+                android:id="@+id/tvCoins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
-                android:text="625"
+                android:text="0"
                 android:textStyle="bold"
                 android:textColor="#FBC02D" />
             <ImageView
@@ -102,6 +104,7 @@
                 android:src="@drawable/tim_shop_map"
                 android:contentDescription="@null" />
             <TextView
+                android:id="@+id/tvHearts"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -169,6 +172,7 @@
             </FrameLayout>
 
             <TextView
+                android:id="@+id/tvUserName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
@@ -209,7 +213,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
-                        android:text="Chơi"
+                        android:text="@string/play"
                         android:textColor="#FFFFFF"
                         android:textSize="34sp"
                         android:textStyle="bold"
@@ -234,6 +238,7 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <TextView
+                            android:id="@+id/tvCurrentLevel"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="1"
@@ -244,9 +249,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Cấp độ"
+                            android:text="@string/lvl"
                             android:textColor="#5D4037"
-                            android:textSize="10sp"
+                            android:textSize="15sp"
                             android:textStyle="bold" />
                     </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
@@ -294,7 +299,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|center_horizontal"
                             android:layout_marginBottom="16dp"
-                            android:text="Thi đấu"
+                            android:text="@string/pvp"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold"
@@ -340,7 +345,7 @@
                             android:layout_gravity="bottom|center_horizontal"
                             android:layout_marginBottom="16dp"
                             android:gravity="center"
-                            android:text="Thưởng\nhàng ngày"
+                            android:text="@string/bonus"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold"
