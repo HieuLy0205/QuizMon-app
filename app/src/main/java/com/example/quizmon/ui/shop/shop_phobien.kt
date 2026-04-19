@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 import com.example.quizmon.R
 
 
@@ -40,6 +41,20 @@ class shop_phobien: AppCompatActivity() {
             preferenceManager.markTaskCompletedToday("nv1")
             btn_Nv1.isEnabled = false
             btn_Nv1.text = "Đã hoàn thành"
+        }
+
+        btn_Nv2.setOnClickListener {
+            val isReady = preferenceManager.Dk_Ainho_coin("nv2")
+            val isReceivedToday = preferenceManager.isTaskCompletedToday("nv2")
+            if (isReady && !isReceivedToday) {
+                preferenceManager.addCoin(20)
+                preferenceManager.markTaskCompletedToday("nv2")
+                btn_Nv2.isEnabled = false
+                btn_Nv2.text = "Đã hoàn thành"
+            }else{
+                Toast.makeText(this,
+                    "Chưa song ải", Toast.LENGTH_SHORT).show()
+            }
         }
         btnBack.setOnClickListener {
             // Xử lý khi nút được nhấn

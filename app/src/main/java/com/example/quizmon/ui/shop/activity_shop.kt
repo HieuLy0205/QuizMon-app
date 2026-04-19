@@ -54,7 +54,7 @@ class activity_shop : AppCompatActivity() {
         }
         val btn_goi_api4 = findViewById<Button>(R.id.btn_goi_api4)
         btn_goi_api4.setOnClickListener {
-            val intent = Intent(this, shop_phobien::class.java)
+            val intent = Intent(this, shop_pvp::class.java)
             startActivity(intent)
         }
     }
