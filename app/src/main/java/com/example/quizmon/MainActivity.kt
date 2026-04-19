@@ -1,5 +1,6 @@
 package com.example.quizmon
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -28,17 +29,31 @@ class MainActivity : AppCompatActivity() {
         }
 
         setupTaskbar()
+        updateUI()
 
         // Bắt sự kiện nút Quiz (Card chính trên màn hình)
         findViewById<View>(R.id.btnQuiz).setOnClickListener {
             val intent = Intent(this, LevelMapActivity::class.java)
             startActivity(intent)
         }
+    }
 
-        // Bắt sự kiện nút Settings
-        /*findViewById<View>(R.id.btnSettings)?.setOnClickListener {
-            startActivity(Intent(this, SettingsActivity::class.java))
-        }*/
+    override fun onResume() {
+        super.onResume()
+        // Cập nhật lại số liệu mỗi khi quay lại màn hình chính
+        updateUI()
+    }
+
+    private fun updateUI() {
+        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+        
+        // Lấy cấp độ hiện tại (mặc định là 1 nếu chưa có)
+        val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
+        findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
+
+        // Tiện thể cập nhật luôn Xu nếu bạn cần
+        val coins = prefs.getInt("current_coins", 0)
+        findViewById<TextView>(R.id.tvCoins)?.text = coins.toString()
     }
 
     private fun setupTaskbar() {

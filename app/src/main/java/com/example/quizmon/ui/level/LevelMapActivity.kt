@@ -40,23 +40,27 @@ class LevelMapActivity : AppCompatActivity() {
         val rvLevelMap = findViewById<RecyclerView>(R.id.rvLevelMap)
         
         val totalLevels = 200
+        // Danh sách từ 1 đến 200
         val levels = (1..totalLevels).toList().reversed()
 
         val adapter = LevelAdapter(levels, currentUnlockedLevel) { selectedLevel ->
-            if (selectedLevel <= currentUnlockedLevel) {
-                val intent = Intent(this, SubMapActivity::class.java)
-                intent.putExtra("LEVEL_ID", selectedLevel)
-                startActivity(intent)
-            }
+            // Cho phép vào SubMapActivity nếu level đó đã được mở khóa
+            val intent = Intent(this, SubMapActivity::class.java)
+            intent.putExtra("LEVEL_ID", selectedLevel)
+            startActivity(intent)
         }
 
         val layoutManager = LinearLayoutManager(this).apply {
-            stackFromEnd = true
+            stackFromEnd = true // Để cuộn từ dưới lên
         }
         rvLevelMap.layoutManager = layoutManager
         rvLevelMap.adapter = adapter
         
-        rvLevelMap.scrollToPosition(totalLevels - currentUnlockedLevel)
+        // Cuộn đến vị trí level hiện tại
+        val scrollPosition = levels.indexOf(currentUnlockedLevel)
+        if (scrollPosition != -1) {
+            rvLevelMap.scrollToPosition(scrollPosition)
+        }
 
         rvLevelMap.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
@@ -88,12 +92,9 @@ class LevelMapActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        // Cập nhật lại level khi quay về từ SubMapActivity
-        val oldLevel = currentUnlockedLevel
         loadProgress()
-        if (oldLevel != currentUnlockedLevel) {
-            recreate() // Refresh UI
-        }
+        // Cập nhật lại adapter để hiển thị đúng trạng thái các nút
+        findViewById<RecyclerView>(R.id.rvLevelMap).adapter?.notifyDataSetChanged()
     }
 
     private fun loadProgress() {
