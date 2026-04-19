@@ -31,7 +31,7 @@ class SubMapAdapter(
             holder.itemView.visibility = View.INVISIBLE
             return
         }
-        
+
         holder.itemView.visibility = View.VISIBLE
         holder.bind(item)
     }
@@ -47,7 +47,7 @@ class SubMapAdapter(
             tvId.text = ""
             ivIcon.clearColorFilter()
             val density = itemView.context.resources.displayMetrics.density
-            
+
             // 1. Lựa chọn Icon dựa trên trạng thái (Dùng bt_dung, bt_sai, bt_bonus)
             val iconRes = when (item.status) {
                 CompletionStatus.CORRECT -> {
@@ -78,8 +78,9 @@ class SubMapAdapter(
                     // Khi đã trả lời, ảnh bt_dung/bt_sai/bt_bonus đã bao gồm cả hình dạng và màu sắc
                     cardItem.setCardBackgroundColor(Color.TRANSPARENT)
                     cardItem.cardElevation = 0f
-                    cardItem.radius = 0f 
+                    cardItem.radius = 0f
                 }
+
                 CompletionStatus.NOT_STARTED -> {
                     if (item.type == SubMapType.QUESTION) {
                         cardItem.setCardBackgroundColor(Color.parseColor("#FFFFFF"))

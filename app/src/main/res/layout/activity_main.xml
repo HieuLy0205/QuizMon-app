@@ -46,7 +46,7 @@
                 android:src="@drawable/sao_shop_map"
                 android:contentDescription="@null" />
             <TextView
-                android:id="@+id/tvScore"
+                android:id="@+id/textcoin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -101,7 +101,7 @@
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/tim_shop_map"
+                android:src="@drawable/tim3_shop_map"
                 android:contentDescription="@null" />
             <TextView
                 android:id="@+id/tvHearts"

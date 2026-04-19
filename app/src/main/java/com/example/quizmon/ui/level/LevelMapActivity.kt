@@ -38,7 +38,7 @@ class LevelMapActivity : AppCompatActivity() {
         btnBack.setOnClickListener { finish() }
 
         val rvLevelMap = findViewById<RecyclerView>(R.id.rvLevelMap)
-        
+
         val totalLevels = 200
         // Danh sách từ 1 đến 200
         val levels = (1..totalLevels).toList().reversed()
@@ -55,7 +55,7 @@ class LevelMapActivity : AppCompatActivity() {
         }
         rvLevelMap.layoutManager = layoutManager
         rvLevelMap.adapter = adapter
-        
+
         // Cuộn đến vị trí level hiện tại
         val scrollPosition = levels.indexOf(currentUnlockedLevel)
         if (scrollPosition != -1) {
@@ -67,7 +67,7 @@ class LevelMapActivity : AppCompatActivity() {
                 super.onScrolled(recyclerView, dx, dy)
                 val offset = recyclerView.computeVerticalScrollOffset()
                 val range = recyclerView.computeVerticalScrollRange() - recyclerView.computeVerticalScrollExtent()
-                
+
                 if (range > 0) {
                     val progress = offset.toFloat() / range
                     val maxIndex = backgroundResIds.size - 1
@@ -75,10 +75,10 @@ class LevelMapActivity : AppCompatActivity() {
                     val currentIndex = floatIndex.toInt().coerceIn(0, maxIndex)
                     val nextIndex = (currentIndex + 1).coerceAtMost(maxIndex)
                     val alpha = floatIndex - currentIndex
-                    
+
                     ivBackground1.setImageResource(backgroundResIds[currentIndex])
                     ivBackground1.alpha = 1f - alpha
-                    
+
                     if (currentIndex != nextIndex) {
                         ivBackground2.setImageResource(backgroundResIds[nextIndex])
                         ivBackground2.alpha = alpha

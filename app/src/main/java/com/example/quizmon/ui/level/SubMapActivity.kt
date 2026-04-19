@@ -30,7 +30,7 @@ class SubMapActivity : AppCompatActivity() {
     private var levelId: Int = 1
     private var mapItems = mutableListOf<SubMapItem?>()
     private var lastClickedPosition: Int = -1
-    
+
     private var currentScore: Int = 0
     private val scorePerCorrect = 25
     private val scorePerIncorrect = 10
@@ -58,7 +58,7 @@ class SubMapActivity : AppCompatActivity() {
 
         loadMapState()
         updateUI()
-        
+
         adapter = SubMapAdapter(mapItems) { item, position ->
             lastClickedPosition = position
             handleItemClick(item)
@@ -70,7 +70,7 @@ class SubMapActivity : AppCompatActivity() {
         val prefs = getSharedPreferences("QuizMonMapPrefs", Context.MODE_PRIVATE)
         val json = prefs.getString("MAP_STATE_$levelId", null)
         currentScore = prefs.getInt("SCORE_$levelId", 0)
-        
+
         if (json != null) {
             val type = object : TypeToken<List<SubMapItem?>>() {}.type
             mapItems = Gson().fromJson(json, type)
@@ -97,7 +97,7 @@ class SubMapActivity : AppCompatActivity() {
 
         val progress = currentScore.coerceIn(0, 100)
         pbStarProgress.progress = progress
-        
+
         starIcons[0].setImageResource(if (progress >= 33) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
         starIcons[1].setImageResource(if (progress >= 66) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
         starIcons[2].setImageResource(if (progress >= 100) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
@@ -106,10 +106,10 @@ class SubMapActivity : AppCompatActivity() {
     private fun generateMapWithShape() {
         val allCategories = mutableListOf(
             "AmNhac", "ChoiChu", "CNXHKH", "DiaLy", "DoVui",
-            "TiengAnh", "HoaHoc", "KienThucChung", "KinhTeChinhTri", 
+            "TiengAnh", "HoaHoc", "KienThucChung", "KinhTeChinhTri",
             "LichSu", "TinHoc", "TuTuongHCM", "VanHoc", "VatLy"
         ).shuffled()
-        
+
         // Định nghĩa các hình thù dựa trên tọa độ (x, y)
         val robotShape = listOf(
             Pair(3,0), Pair(3,1), // Đầu
@@ -118,7 +118,7 @@ class SubMapActivity : AppCompatActivity() {
             Pair(2,4), Pair(3,4), Pair(4,4), // Bụng
             Pair(2,5), Pair(4,5), Pair(2,6), Pair(4,6)  // Chân
         )
-        
+
         val flowerShape = listOf(
             Pair(3,3), // Nhụy
             Pair(3,2), Pair(4,2), Pair(4,3), Pair(4,4), Pair(3,4), Pair(2,4), Pair(2,3), Pair(2,2), // Cánh hoa
@@ -160,7 +160,7 @@ class SubMapActivity : AppCompatActivity() {
             SubMapType.TREASURE to "chest",
             SubMapType.FLIP_CARD to "draw"
         )
-        
+
         for (i in 0 until specialTypes.size) {
             val coordIndex = allCategories.size + i
             if (coordIndex < shuffledCoords.size) {
@@ -169,14 +169,14 @@ class SubMapActivity : AppCompatActivity() {
                 tempItems[y * columns + x] = SubMapItem(id = id, type = type, x = x, y = y)
             }
         }
-        
+
         mapItems.clear()
         mapItems.addAll(tempItems)
     }
 
     private fun handleItemClick(item: SubMapItem) {
         if (item.status != CompletionStatus.NOT_STARTED) return
-        
+
         try {
             when (item.type) {
                 SubMapType.QUESTION -> {

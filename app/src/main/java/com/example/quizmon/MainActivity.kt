@@ -15,6 +15,7 @@ import com.example.quizmon.ui.pet.PetActivity
 import com.example.quizmon.ui.level.LevelMapActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.activity_shop
+import com.example.quizmon.ui.shop.PreferenceManager
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        updateCoinDisplay()
         // Cập nhật lại số liệu mỗi khi quay lại màn hình chính
         updateUI()
     }
@@ -77,5 +79,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
+    }
+
+    private fun updateCoinDisplay(){
+        val textcoin = findViewById<TextView>(R.id.textcoin)
+        val preferenceManager = PreferenceManager(this)
+        textcoin.text = preferenceManager.getCoins().toString()
     }
 }
