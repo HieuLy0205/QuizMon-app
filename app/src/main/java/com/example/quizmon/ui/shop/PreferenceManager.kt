@@ -35,4 +35,12 @@ class PreferenceManager(context: Context) {
         val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         sharedPreferences.edit().putString("task_$taskId", currentDate).apply()
     }
+    //hàm đánh dấu hoàn thành song cả ải nhỏ
+    fun Dk_Ainho_Addcoin(taskId: String, isReady: Boolean) {
+        sharedPreferences.edit().putBoolean("task_$taskId", isReady).apply()
+    }
+    //hàm xem là song ải nhưng chưa nhận coin
+    fun Dk_Ainho_coin(taskId: String): Boolean {
+        return sharedPreferences.getBoolean("task_$taskId", false)
+    }
 }

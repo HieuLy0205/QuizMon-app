@@ -40,7 +40,11 @@
     <string name="text_thangtoan">🅱️Phương thức thanh toán</string>
     <string name="text_dangnhap">🆎Đăng nhập</string>
     <string name="text_ShopNv">Nhiệm Vụ Hằng ngày</string>
-    <string name="text_nhiemvu">Nhiệm vụ</string>
+    <string name="text_nhiemvu1">Nhiệm vụ đăng nhập </string>
+    <string name="text_nhiemvu2">Nhiệm vụ qua ải nhỏ </string>
+    <string name="text_nhiemvu3">Nhiệm vụ nạp su </string>
+    <string name="text_nhiemvu4">Nhiệm vụ hoàn thành pvp</string>
+    <string name="text_nhiemvu5">Nhiệm vụ nạp máu</string>
     <string name="text_so">0</string>
     <string name="hoso">Hồ sơ</string>
     <string name="ls">Lịch sử</string>

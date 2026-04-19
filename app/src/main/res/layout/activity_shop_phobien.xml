@@ -60,7 +60,7 @@
                 android:id="@+id/text_nv1"
                 android:layout_width="258dp"
                 android:layout_height="41dp"
-                android:text="@string/text_nhiemvu"
+                android:text="@string/text_nhiemvu1"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
@@ -83,7 +83,7 @@
             <TextView
                 android:layout_width="258dp"
                 android:layout_height="41dp"
-                android:text="@string/text_nhiemvu"
+                android:text="@string/text_nhiemvu2"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
@@ -106,7 +106,7 @@
             <TextView
                 android:layout_width="258dp"
                 android:layout_height="41dp"
-                android:text="@string/text_nhiemvu"
+                android:text="@string/text_nhiemvu3"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
@@ -129,7 +129,7 @@
             <TextView
                 android:layout_width="258dp"
                 android:layout_height="41dp"
-                android:text="@string/text_nhiemvu"
+                android:text="@string/text_nhiemvu4"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
@@ -152,7 +152,7 @@
             <TextView
                 android:layout_width="258dp"
                 android:layout_height="41dp"
-                android:text="@string/text_nhiemvu"
+                android:text="@string/text_nhiemvu5"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>

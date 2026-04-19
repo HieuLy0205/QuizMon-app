@@ -244,8 +244,13 @@ class SubMapActivity : AppCompatActivity() {
                 Toast.makeText(this, "Ải đã hoàn thành!", Toast.LENGTH_LONG).show()
                 val mainPrefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
                 val currentMax = mainPrefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
+                val coinManager = com.example.quizmon.ui.shop.PreferenceManager(this)// user nv2.
                 if (levelId == currentMax) {
                     mainPrefs.edit().putInt("CURRENT_UNLOCKED_LEVEL", levelId + 1).apply()
+                    coinManager.Dk_Ainho_Addcoin("nv2", true) //tăng coin nv2
+                }else{
+                    //chơi lại ải thì: sử lý sau
+                    //coinManeger.addCoin: sử lý sau tăng giảm hoạc không có.
                 }
             } else {
                 Toast.makeText(this, "Chưa đủ điểm (1 sao) để qua ải!", Toast.LENGTH_LONG).show()
