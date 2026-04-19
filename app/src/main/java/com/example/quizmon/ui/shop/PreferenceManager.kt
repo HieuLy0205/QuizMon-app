@@ -20,7 +20,7 @@ class PreferenceManager(context: Context) {
 
     fun addCoin(amount: Int) {
         val current = getCoins()
-        //svecoins là ghi đề
+        //savecoins là ghi đề
         saveCoins(current + amount) // CTTT CỘNG THÊM SỐ LƯỢNG MỚI VÀO SỐ LƯỢNG CỦ
     }
 
@@ -42,5 +42,11 @@ class PreferenceManager(context: Context) {
     //hàm xem là song ải nhưng chưa nhận coin
     fun Dk_Ainho_coin(taskId: String): Boolean {
         return sharedPreferences.getBoolean("task_$taskId", false)
+    }
+    fun getPetLevel(): Int{
+        return sharedPreferences.getInt("pet_level", 1)
+    }
+    fun savePetLevel(level: Int){
+        sharedPreferences.edit().putInt("pet_level", level).apply()
     }
 }

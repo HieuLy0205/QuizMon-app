@@ -42,7 +42,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
+            android:textStyle="normal"
             android:textSize="24sp"
             android:gravity="center"
             android:text="@string/text_ShopNv">
@@ -69,7 +69,9 @@
                 android:id="@+id/btn_Nv1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#B680DAEB"
+                android:backgroundTint="#B697EB80"
+                android:textColor="#161313"
+                android:textStyle="bold"
                 android:text="hoàn thành">
             </Button>
         </LinearLayout>
@@ -92,7 +94,9 @@
                 android:id="@+id/btn_Nv2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#B680DAEB"
+                android:backgroundTint="#B6EB8C80"
+                android:textColor="#161313"
+                android:textStyle="bold"
                 android:text="hoàn thành">
             </Button>
         </LinearLayout>
@@ -115,7 +119,9 @@
                 android:id="@+id/btn_Nv3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#B680DAEB"
+                android:backgroundTint="#B65CD9F0"
+                android:textColor="#161313"
+                android:textStyle="bold"
                 android:text="hoàn thành">
             </Button>
         </LinearLayout>
@@ -138,7 +144,9 @@
                 android:id="@+id/btn_Nv4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#B680DAEB"
+                android:backgroundTint="#EBD280"
+                android:textColor="#161313"
+                android:textStyle="bold"
                 android:text="hoàn thành">
             </Button>
         </LinearLayout>
@@ -161,27 +169,24 @@
                 android:id="@+id/btn_Nv5"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#B680DAEB"
+                android:backgroundTint="#B6C680EB"
+                android:textColor="#161313"
+                android:textStyle="bold"
                 android:text="hoàn thành">
             </Button>
         </LinearLayout>
 
         <ImageButton
             android:id="@+id/btnBack"
-            android:layout_width="87dp"
-            android:layout_height="43dp"
-            android:layout_margin="16dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="576dp"
-            android:background="#CD19D5BC"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/bg_difficulty_btn"
             android:contentDescription="@string/btn_back"
             android:padding="12dp"
+            android:layout_gravity="bottom"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutcuahang"
-            app:tint="@color/white" />
+            android:src="@drawable/ic_back" />
     </LinearLayout>
 
 

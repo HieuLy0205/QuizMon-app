@@ -17,41 +17,79 @@ import com.example.quizmon.ui.shop.PreferenceManager
 
 
 class PetActivity : AppCompatActivity() {
-
-    //Chương trình hoạt ảnh gồm 3 thành phần
-    private lateinit var imgPet1: ImageView
-    //    1 (Dử liệu) chủng bị ảnh = danh sách ảnh ->
-    private var petFarm = intArrayOf(
-        R.drawable.dragon_pet_2,
-        R.drawable.dragon_pet_1,
-    )
-//    2 (hành động) lấy ảnh hiện tại, hiển thị ảnh lên màn hình, chuẩn bị ảnh tiếp theo.
-    private var currentPet = 0
-    private var runnable = object : Runnable {
-        override fun run() {
-            imgPet1.setImageResource(petFarm[currentPet])
-//            currentPet = (currentPet + 1) % petFarm.size
-            val delayTime = if (currentPet == 0) 3000L else 200L
-            currentPet = (currentPet + 1) % petFarm.size
-            handle.postDelayed(this, delayTime)
-            Log.d("PetAnim", "Frame: $currentPet - Delay: $delayTime")
-//            handle.postDelayed(this, 5000)
-//            Log.i("info", "ImageView tapped")
-        }
-    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pet)
-        imgPet1 = findViewById(R.id.imgPet1)
-
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.pet)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        imgPet1 = findViewById(R.id.imgPet1)
+        val btn_tanglevel = findViewById<Button>(R.id.btn_tanglevel)
+        //note 0:sự kiện nút tăng cấp
+//        btn_tanglevel.setOnClickListener {
+//            pref.savePetLevel(1)
+//            pref.saveCoins(100)
+//            // cập nhập dao diện về lại pet cấp 1
+//            val level = pref.getPetLevel()
+//            petFarm = getFramesByLevel(level)
+//            currentPet = 0
+//            updateCoinDisplay()
+//            true
+//        }
+        btn_tanglevel.setOnClickListener {
+            val currentLevel = pref.getPetLevel()
+            val currentCoins = pref.getCoins()
+            if (currentLevel < 3){
+                if(currentCoins >= 20){
+                    pref.saveCoins(currentCoins - 10)
+                    val nextLevel = currentLevel + 1
+                    pref.savePetLevel(nextLevel)
+
+                    petFarm = getFramesByLevel(nextLevel)
+                    currentPet = 0
+
+                    updateCoinDisplay()
+
+                    android.widget.Toast.makeText(this,
+                        "Tăng cấp thành công",
+                        android.widget.Toast.LENGTH_SHORT).show()
+                }else{
+                    android.widget.Toast.makeText(this,
+                        "không đủ coin",
+                        android.widget.Toast.LENGTH_SHORT).show()
+                }
+                }else{
+                android.widget.Toast.makeText(this,
+                    "chưa đạt yêu cầu",
+                    android.widget.Toast.LENGTH_SHORT).show()
+            }
+        }
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
+        //note 1: sự kiện quy lại
         btnBack.setOnClickListener { finish() }
+
         startAnimation()
+    }
+    //note 3: Chương trình hoạt ảnh gồm 3 thành phần
+    private lateinit var imgPet1: ImageView
+    private lateinit var pref: PreferenceManager
+    //    1 (Dử liệu) chủng bị ảnh = danh sách ảnh ->
+    private var petFarm = intArrayOf()
+
+//    2 (hành động) lấy ảnh hiện tại, hiển thị ảnh lên màn hình, chuẩn bị ảnh tiếp theo.
+    private var currentPet = 0
+    private var runnable = object : Runnable {
+        override fun run() {
+            if (petFarm.isNotEmpty()) {
+                imgPet1.setImageResource(petFarm[currentPet])
+                val delayTime = if (currentPet == 0) 3000L else 200L
+                currentPet = (currentPet + 1) % petFarm.size
+                handle.postDelayed(this, delayTime)
+                Log.d("PetAnim", "Frame: $currentPet - Delay: $delayTime")
+            }
+        }
     }
     //3 (nhịp điêu) báo cáo với handl : định nghĩa thời gian chuyển ảnh
     private val handle = Handler(Looper.getMainLooper())
@@ -59,15 +97,31 @@ class PetActivity : AppCompatActivity() {
         handle.postDelayed(runnable, 150)
     }
 
-    //HÀM TĂNG CONE
+    //note 4: HÀM TĂNG CONE :onResume và updateConDisplay
     override fun onResume() {
         super.onResume()
+        pref = PreferenceManager(this)
+        val level = pref.getPetLevel()
+        petFarm = getFramesByLevel(level)
+        currentPet = 0
         updateCoinDisplay()
     }
+    //cập nhập số coin thành số màn hình
     private fun updateCoinDisplay(){
         val textcoin = findViewById<TextView>(R.id.textcoin)
         val preferenceManager = PreferenceManager(this)
         textcoin.text = preferenceManager.getCoins().toString()
+    }
+    private val FramesLevel1 = intArrayOf(R.drawable.dragon_c1_f1, R.drawable.dragon_c1_f2)
+    private val FramesLevel2 = intArrayOf(R.drawable.dragon_c2_f1, R.drawable.dragon_c2_f2)
+    private val FramesLevel3 = intArrayOf(R.drawable.dragon_pet_2, R.drawable.dragon_pet_1)
+    private fun getFramesByLevel(level: Int): IntArray {
+        return when (level) {
+            1 -> FramesLevel1
+            2 -> FramesLevel2
+            3 -> FramesLevel3
+            else -> FramesLevel1
+        }
     }
 
 }
