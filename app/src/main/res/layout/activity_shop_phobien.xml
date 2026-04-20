@@ -29,13 +29,16 @@
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:background="@drawable/bt_dia"
-                android:backgroundTint="#FC94918E"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_play"
+                android:backgroundTint="#89D9D6D6"
                 android:gravity="center"
                 android:text="@string/text_shopphobien"
                 android:textSize="24sp"
-                android:textStyle="bold" />
+                android:textColor="#1B1919"
+                android:textStyle="bold"
+                android:backgroundTintMode="src_atop">
+            </TextView>
         </LinearLayout>
 
         <TextView

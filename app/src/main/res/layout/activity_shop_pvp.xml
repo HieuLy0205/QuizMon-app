@@ -16,44 +16,162 @@
         <!-- Header -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="110dp"
             android:layout_marginBottom="16dp"
             android:orientation="horizontal"
             android:padding="16dp">
 
             <ImageView
                 android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/icon_ruong_pvp"
-                android:contentDescription="Icon Shop" />
+                android:layout_height="81dp"
+                android:contentDescription="Icon Shop"
+                android:src="@drawable/icon_ruong_pvp" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="99dp"
-                android:background="@drawable/bt_dia"
-                android:backgroundTint="#FC94918E"
+                android:layout_height="87dp"
+                android:background="@drawable/btn_play"
+                android:backgroundTint="#74D9D6D6"
+                android:backgroundTintMode="src_atop"
                 android:gravity="center"
                 android:text="@string/text_shoppvp"
+                android:textColor="#090808"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center"
+            android:text="Nhận pet với shop"
+            android:textSize="28sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qua ải pet free + 20 coin "
+                android:textStyle="normal"
+                android:textSize="20sp">
+            </CheckBox>
+
+        </LinearLayout>
+        <!-- Trứng rồng thứ nhất -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="188dp"
+                android:layout_height="95dp"
+                android:gravity="center"
+                android:text="@string/text_nhantrung"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="92dp"
+                android:background="@drawable/trung_pet_4"
+                android:backgroundTint="#19EDEAEA"
+                android:backgroundTintMode="src_atop"
+                android:textStyle="bold">
+            </ImageView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="name: Trứng rồng sầu riêng ">
+        </TextView>
+        <!--Trứng rồng thứ 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="188dp"
+                android:layout_height="95dp"
+                android:gravity="center"
+                android:text="@string/text_nhantrung"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="92dp"
+                android:background="@drawable/trung_pet_2"
+                android:backgroundTint="#19EDEAEA"
+                android:backgroundTintMode="src_atop"
+                android:textStyle="bold">
+            </ImageView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="name: Trứng rồng mựt nily ">
+        </TextView>
+
+        <!--Trứng rồng thứ 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="188dp"
+                android:layout_height="95dp"
+                android:gravity="center"
+                android:text="@string/text_nhantrung"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="92dp"
+                android:background="@drawable/trung_pet_6"
+                android:backgroundTint="#19EDEAEA"
+                android:backgroundTintMode="src_atop"
+                android:textStyle="bold">
+            </ImageView>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="name: Trứng kỳ cáo băn phong ">
+        </TextView>
+
+
         <ImageButton
             android:id="@+id/btnBack"
-            android:layout_width="87dp"
-            android:layout_height="43dp"
-            android:layout_margin="16dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="576dp"
-            android:background="#CD19D5BC"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/bg_difficulty_btn"
             android:contentDescription="@string/btn_back"
             android:padding="12dp"
+            android:layout_gravity="bottom"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutcuahang"
-            app:layout_constraintVertical_bias="1.0"
-            app:tint="@color/white" />
+            android:src="@drawable/ic_back" />
     </LinearLayout>
 
 </ScrollView>

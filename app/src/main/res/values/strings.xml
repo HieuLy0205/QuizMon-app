@@ -54,6 +54,7 @@
     <string name="play">Chơi</string>
     <string name="lvl">Cấp độ</string>
     <string name="pvp">Thi đấu</string>
+    <string name="text_nhantrung">Nhận pet mới qua ải</string>"
     <string name="btn_tanglevel">tăng cấp</string>
     <string name="bonus">Thưởng\nhàng ngày</string>
 </resources>

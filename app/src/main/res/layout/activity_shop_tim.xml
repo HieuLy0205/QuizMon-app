@@ -30,12 +30,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="69dp"
-                android:background="@drawable/bt_dia"
-                android:backgroundTint="#B3E60606"
+                android:background="@drawable/btn_play"
+                android:backgroundTint="#89D9D6D6"
                 android:gravity="center"
                 android:textStyle="bold"
                 android:text="@string/text_napmau"
-                android:textSize="24sp" />
+                android:textColor="#100F0F"
+                android:textSize="24sp"
+                android:backgroundTintMode="src_atop"/>
         </LinearLayout>
 
         <!-- Giá nạp Section -->
@@ -169,21 +171,15 @@
 
         <ImageButton
             android:id="@+id/btnBack"
-            android:layout_width="87dp"
-            android:layout_height="43dp"
-            android:layout_margin="16dp"
-            android:layout_marginStart="24dp"
-            android:layout_marginTop="576dp"
-            android:background="#CD19D5BC"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_margin="24dp"
+            android:background="@drawable/bg_difficulty_btn"
             android:contentDescription="@string/btn_back"
             android:padding="12dp"
+            android:layout_gravity="bottom"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/layoutcuahang"
-            app:layout_constraintVertical_bias="1.0"
-            app:tint="@color/white" />
+            android:src="@drawable/ic_back" />
 
     </LinearLayout>
 </ScrollView>

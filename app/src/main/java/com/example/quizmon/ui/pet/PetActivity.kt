@@ -65,7 +65,8 @@ class PetActivity : AppCompatActivity() {
                     "chưa đạt yêu cầu",
                     android.widget.Toast.LENGTH_SHORT).show()
             }
-        }
+
+      }
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
         //note 1: sự kiện quy lại
         btnBack.setOnClickListener { finish() }
