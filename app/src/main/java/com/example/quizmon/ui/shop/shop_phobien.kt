@@ -53,7 +53,7 @@ class shop_phobien: AppCompatActivity() {
                 btn_Nv2.text = "Đã hoàn thành"
             }else{
                 Toast.makeText(this,
-                    "Chưa song ải", Toast.LENGTH_SHORT).show()
+                    "Chưa xong ải", Toast.LENGTH_SHORT).show()
             }
         }
         btnBack.setOnClickListener {
