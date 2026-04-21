@@ -2,15 +2,20 @@ package com.example.quizmon.ui.settings
 
 import android.Manifest
 import android.app.TimePickerDialog
+import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.quizmon.MainActivity
 import com.example.quizmon.R
 import com.example.quizmon.ui.notification.NotificationHelper
+import com.example.quizmon.ui.pet.PetActivity
+import com.example.quizmon.ui.shop.activity_shop
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -36,6 +41,8 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         notificationHelper = NotificationHelper(this)
+        
+        setupTaskbar()
 
         val etNickname = findViewById<EditText>(R.id.etNickname)
         val btnPickTime = findViewById<Button>(R.id.btnPickTime)
@@ -67,8 +74,6 @@ class SettingsActivity : AppCompatActivity() {
 
         // 💾 SAVE
         btnSave.setOnClickListener {
-
-            // DEBUG (biết chắc nút đã bấm)
             Toast.makeText(this, "Đã bấm lưu", Toast.LENGTH_SHORT).show()
 
             val nickname = etNickname.text.toString().trim()
@@ -85,7 +90,6 @@ class SettingsActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            //  Lưu trước
             sharedPref.edit()
                 .putString("nickname", nickname)
                 .putInt("notification_hour", h)
@@ -94,11 +98,8 @@ class SettingsActivity : AppCompatActivity() {
                 .apply()
 
             tvSelectedTime.text = "Giờ nhắc: %02d:%02d".format(h, m)
-
-            //  Hiện toast TRƯỚC (không bị mất)
             Toast.makeText(this, "Đã lưu thông tin!", Toast.LENGTH_LONG).show()
 
-            //  Schedule an toàn (không crash)
             try {
                 notificationHelper.scheduleDaily(h, m)
                 Toast.makeText(this, "Đã bật nhắc!", Toast.LENGTH_SHORT).show()
@@ -106,6 +107,35 @@ class SettingsActivity : AppCompatActivity() {
                 e.printStackTrace()
                 Toast.makeText(this, "Lỗi khi bật nhắc!", Toast.LENGTH_LONG).show()
             }
+        }
+    }
+
+    private fun setupTaskbar() {
+        // Highlight Menu bằng thanh gỗ
+        findViewById<View>(R.id.indicator_menu).visibility = View.VISIBLE
+        findViewById<TextView>(R.id.tv_nav_menu).setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
+        
+        // Sự kiện click cho các icon trên taskbar
+        findViewById<LinearLayout>(R.id.nav_home).setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+            startActivity(intent)
+        }
+
+        findViewById<LinearLayout>(R.id.nav_profile).setOnClickListener {
+            startActivity(Intent(this, PetActivity::class.java))
+        }
+        
+        findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener {
+            startActivity(Intent(this, activity_shop::class.java))
+        }
+
+        findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {
+            // Đã ở Menu rồi
+        }
+        
+        findViewById<LinearLayout>(R.id.nav_history).setOnClickListener {
+            // Lịch sử
         }
     }
 }

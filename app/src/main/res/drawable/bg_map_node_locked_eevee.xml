@@ -7,18 +7,11 @@
         </shape>
     </item>
 
-    <!-- Outer Border -->
+    <!-- Border -->
     <item>
         <shape android:shape="oval">
-            <solid android:color="#A0A0A0" />
+            <solid android:color="@color/eevee_locked" />
             <stroke android:width="2dp" android:color="#808080" />
-        </shape>
-    </item>
-
-    <!-- Inner Fill -->
-    <item android:top="8dp" android:bottom="8dp" android:left="8dp" android:right="8dp">
-        <shape android:shape="oval">
-            <solid android:color="#CCCCCC" />
         </shape>
     </item>
 </layer-list>

@@ -1,6 +1,5 @@
 package com.example.quizmon.ui.statistics
 
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,11 +7,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.quizmon.R
 import com.example.quizmon.data.repository.StatisticsRepository
-import com.example.quizmon.utils.ChartHelper
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -20,14 +16,11 @@ import kotlinx.coroutines.withContext
 class StatisticsFragment : Fragment() {
 
     private lateinit var repository: StatisticsRepository
-    private lateinit var tvTotalCorrect: TextView
-    private lateinit var tvTotalWrong: TextView
-    private lateinit var tvTotalQuestions: TextView
-    private lateinit var tvCurrentStreak: TextView
-    private lateinit var tvLongestStreak: TextView
-    private lateinit var chartView: View
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: StatisticsAdapter
+    private lateinit var tvLevelsValue: TextView
+    private lateinit var tvSinceValue: TextView
+    private lateinit var tvQuestionsValue: TextView
+    private lateinit var tvRateValue: TextView
+    private lateinit var tvName: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -47,17 +40,11 @@ class StatisticsFragment : Fragment() {
     }
 
     private fun initViews(view: View) {
-        tvTotalCorrect = view.findViewById(R.id.tv_total_correct)
-        tvTotalWrong = view.findViewById(R.id.tv_total_wrong)
-        tvTotalQuestions = view.findViewById(R.id.tv_total_questions)
-        tvCurrentStreak = view.findViewById(R.id.tv_current_streak)
-        tvLongestStreak = view.findViewById(R.id.tv_longest_streak)
-        chartView = view.findViewById(R.id.chart_view)
-        recyclerView = view.findViewById(R.id.recycler_view_daily_stats)
-
-        adapter = StatisticsAdapter(mutableListOf())
-        recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recyclerView.adapter = adapter
+        tvLevelsValue = view.findViewById(R.id.tv_levels_value)
+        tvSinceValue = view.findViewById(R.id.tv_since_value)
+        tvQuestionsValue = view.findViewById(R.id.tv_questions_value)
+        tvRateValue = view.findViewById(R.id.tv_rate_value)
+        tvName = view.findViewById(R.id.tvName)
     }
 
     private fun loadStatistics() {
@@ -65,28 +52,21 @@ class StatisticsFragment : Fragment() {
             val overall = withContext(Dispatchers.IO) {
                 repository.getOverallStatistics()
             }
-
-            val last7Days = withContext(Dispatchers.IO) {
-                repository.getLast7DaysStats()
-            }
-
-            updateUI(overall, last7Days)
+            updateUI(overall)
         }
     }
 
-    private fun updateUI(overall: com.example.quizmon.data.model.OverallStatistics, last7Days: List<com.example.quizmon.data.model.Statistics>) {
-        tvTotalCorrect.text = "Đúng: ${overall.totalCorrect}"
-        tvTotalWrong.text = "Sai: ${overall.totalWrong}"
-        tvTotalQuestions.text = "Tổng: ${overall.totalQuestions}"
-        tvCurrentStreak.text = "🔥 Chuỗi hiện tại: ${overall.currentStreak} ngày"
-        tvLongestStreak.text = "🏆 Chuỗi dài nhất: ${overall.longestStreak} ngày"
-
-        // Vẽ biểu đồ
-        val bitmapDrawable = ChartHelper.createBarChart(last7Days, 800, 400)
-        chartView.background = bitmapDrawable
-
-        // Cập nhật danh sách daily stats
-        adapter.updateData(last7Days)
+    private fun updateUI(overall: com.example.quizmon.data.model.OverallStatistics) {
+        // Cập nhật dữ liệu từ repository vào giao diện mới
+        tvLevelsValue.text = "${overall.totalCorrect / 5}" // Giả định logic tính level
+        tvQuestionsValue.text = "${overall.totalQuestions}"
+        
+        val rate = if (overall.totalQuestions > 0) {
+            (overall.totalCorrect * 100) / overall.totalQuestions
+        } else 0
+        tvRateValue.text = "$rate%"
+        
+        tvSinceValue.text = "Tháng 4 2024"
     }
 
     companion object {

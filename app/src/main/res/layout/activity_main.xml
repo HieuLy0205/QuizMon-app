@@ -19,113 +19,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="@null" />
 
-    <!-- Thanh trạng thái phía trên (Top Bar) -->
-    <LinearLayout
-        android:id="@+id/topBar"
+    <!-- Thanh trạng thái phía trên -->
+    <include
+        android:id="@+id/taskhead"
+        layout="@layout/layout_taskhead"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="12dp"
-        android:gravity="center_vertical"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <!-- Ngôi sao / Điểm -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_stats_bar"
-            android:paddingStart="8dp"
-            android:paddingEnd="12dp"
-            android:paddingTop="4dp"
-            android:paddingBottom="4dp"
-            android:gravity="center_vertical"
-            android:layout_marginEnd="8dp">
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/sao_shop_map"
-                android:contentDescription="@null" />
-            <TextView
-                android:id="@+id/textcoin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="0"
-                android:textStyle="bold"
-                android:textColor="#F57C00" />
-        </LinearLayout>
-
-        <!-- Xu / Tiền -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_stats_bar"
-            android:paddingStart="8dp"
-            android:paddingEnd="12dp"
-            android:paddingTop="4dp"
-            android:paddingBottom="4dp"
-            android:gravity="center_vertical"
-            android:layout_marginEnd="8dp">
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/icon_ruong_xu"
-                android:contentDescription="@null" />
-            <TextView
-                android:id="@+id/tvCoins"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="0"
-                android:textStyle="bold"
-                android:textColor="#FBC02D" />
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="4dp"
-                android:src="@android:drawable/ic_input_add"
-                app:tint="@color/home_green"
-                android:contentDescription="@null" />
-        </LinearLayout>
-
-        <!-- Tim / Mạng -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_stats_bar"
-            android:paddingStart="8dp"
-            android:paddingEnd="12dp"
-            android:paddingTop="4dp"
-            android:paddingBottom="4dp"
-            android:gravity="center_vertical">
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/tim3_shop_map"
-                android:contentDescription="@null" />
-            <TextView
-                android:id="@+id/tvHearts"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="Max"
-                android:textStyle="bold"
-                android:textColor="#E91E63" />
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginStart="4dp"
-                android:src="@android:drawable/ic_input_add"
-                app:tint="@color/home_green"
-                android:contentDescription="@null" />
-        </LinearLayout>
-    </LinearLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintTop_toBottomOf="@id/taskhead"
         app:layout_constraintBottom_toTopOf="@id/taskbar">
 
         <LinearLayout
@@ -181,7 +87,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/black" />
 
-            <!-- Nút CHƠI chính (Overlay) -->
+            <!-- Nút CHƠI chính -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -203,7 +109,6 @@
                         android:src="@drawable/btn_play"
                         android:contentDescription="@null" />
 
-                    <!-- Lớp phủ mờ -->
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -214,6 +119,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="32dp"
                         android:text="@string/play"
+                        android:fontFamily="@font/alex_brush"
                         android:textColor="#FFFFFF"
                         android:textSize="34sp"
                         android:textStyle="bold"
@@ -257,7 +163,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Hai nút phụ phía dưới (Overlay) -->
+            <!-- Hai nút phụ phía dưới -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
@@ -288,7 +194,6 @@
                             android:src="@drawable/main1"
                             android:contentDescription="@null" />
 
-                        <!-- Lớp phủ mờ -->
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -299,7 +204,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|center_horizontal"
                             android:layout_marginBottom="16dp"
-                            android:text="@string/pvp"
+                            android:text="@string/rank"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold"
@@ -333,7 +238,6 @@
                             android:src="@drawable/main2"
                             android:contentDescription="@null" />
 
-                        <!-- Lớp phủ mờ -->
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -359,6 +263,53 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <!-- Streak Fire overlayed above taskbar -->
+    <FrameLayout
+        android:id="@+id/layoutStreak"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-10dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/taskbar"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivStreakFire"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/streak_fire"
+            android:contentDescription="Streak" />
+
+        <TextView
+            android:id="@+id/tvStreakCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+    </FrameLayout>
+
+    <!-- Floating Pet -->
+    <ImageView
+        android:id="@+id/ivFloatingPet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/pet001_rong_c2"
+        app:layout_constraintBottom_toTopOf="@id/taskbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="Floating Pet" />
 
     <include
         android:id="@+id/taskbar"

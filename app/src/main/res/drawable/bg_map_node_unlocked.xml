@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="oval">
-    <gradient
-        android:startColor="@color/node_unlocked_start"
-        android:endColor="@color/node_unlocked_end"
-        android:angle="45" />
-    <stroke
-        android:width="4dp"
-        android:color="@color/node_stroke" />
-    <size
-        android:width="100dp"
-        android:height="100dp" />
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Bottom Shadow -->
+    <item android:top="6dp" android:left="2dp">
+        <shape android:shape="oval">
+            <solid android:color="#33000000" />
+        </shape>
+    </item>
+
+    <!-- Outer Border (Dark Brown) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/eevee_dark" />
+        </shape>
+    </item>
+
+    <!-- Main Body (Cream) -->
+    <item android:top="4dp" android:bottom="4dp" android:left="4dp" android:right="4dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/eevee_cream" />
+        </shape>
+    </item>
+
+    <!-- Inner Button (Brown Gradient) -->
+    <item android:top="12dp" android:bottom="12dp" android:left="12dp" android:right="12dp">
+        <shape android:shape="oval">
+            <gradient
+                android:startColor="#D4A780"
+                android:endColor="@color/eevee_brown"
+                android:angle="270" />
+            <stroke android:width="2dp" android:color="@color/eevee_dark" />
+        </shape>
+    </item>
+
+    <!-- Glossy Shine -->
+    <item android:top="16dp" android:left="24dp" android:right="24dp" android:bottom="50dp">
+        <shape android:shape="oval">
+            <solid android:color="#40FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

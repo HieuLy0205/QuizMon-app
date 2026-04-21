@@ -23,4 +23,10 @@
     <color name="home_blue">#3498DB</color>
     <color name="home_pink">#E91E63</color>
     <color name="stat_bg">#B3FFFFFF</color>
+
+    <!-- Eevee Theme Colors -->
+    <color name="eevee_brown">#B38B67</color>
+    <color name="eevee_cream">#F5E6BE</color>
+    <color name="eevee_dark">#6B4423</color>
+    <color name="eevee_locked">#A9A9A9</color>
 </resources>

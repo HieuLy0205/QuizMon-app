@@ -50,10 +50,50 @@
     <string name="ls">Lịch sử</string>
     <string name="home">Trang chủ</string>
     <string name="shop">Cửa hàng</string>
-    <string name="menu">Menu</string>
+    <string name="menu">Thiết lập</string>
     <string name="play">Chơi</string>
     <string name="lvl">Cấp độ</string>
     <string name="pvp">Thi đấu</string>
+    <string name="rank">Xếp hạng</string>
+    <string name="text_nhantrung">Nhận pet mới qua ải</string>
     <string name="btn_tanglevel">tăng cấp</string>
     <string name="bonus">Thưởng\nhàng ngày</string>
+
+    <!-- Strings cho màn hình Hồ sơ & Thống kê -->
+    <string name="tab_thanh_tich">Thành tích</string>
+    <string name="tab_thong_ke">Thống kê</string>
+    <string name="tab_mua_hang">Mua hàng</string>
+    <string name="stat_levels_completed">Số cấp độ đã hoàn thành</string>
+    <string name="stat_since">Kể từ</string>
+    <string name="stat_questions_answered">Số câu hỏi đã trả lời</string>
+    <string name="stat_correct_rate">Tỷ lệ trả lời đúng</string>
+    <string name="stat_category_performance">Hiệu suất theo danh mục</string>
+    <string name="category_culture">Văn hóa</string>
+    <string name="category_math">Toán học</string>
+    <string name="category_history">Lịch sử</string>
+    <string name="default_date_stat">Tháng 4 2026</string>
+    <string name="percent_100">100%</string>
+    <string name="percent_67">67%</string>
+    <string name="text_time">3:00</string>
+
+    <!-- Các chuỗi bổ sung bị thiếu -->
+    <string name="default_star_count">10</string>
+    <string name="default_coin_count">525</string>
+    <string name="default_time">04:10</string>
+    <string name="default_user_name">Fonix</string>
+    <string name="stat_questions_value">3</string>
+
+    <!-- Achievements Strings -->
+    <string name="achievement_warrior">Chiến binh</string>
+    <string name="achievement_warrior_desc">Thắng 100 trận đấu</string>
+    <string name="percent_14">14%</string>
+    <string name="achievement_fan">Người hâm mộ</string>
+    <string name="achievement_fan_desc">Đăng nhập 7 ngày liên tiếp</string>
+    <string name="percent_5">5%</string>
+    <string name="achievement_hunter">Thợ săn</string>
+    <string name="achievement_hunter_desc">Thu thập 50 loại thú cưng</string>
+    <string name="percent_2">2%</string>
+    <string name="achievement_passion">Đam mê</string>
+    <string name="achievement_passion_desc">Chơi hơn 1000 câu hỏi</string>
+    <string name="percent_1">1%</string>
 </resources>
