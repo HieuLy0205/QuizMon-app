@@ -141,11 +141,12 @@
         android:layout_weight="1"
         android:gravity="center"
         android:orientation="vertical">
-        <!--android:src="@drawable/menu_taskbar"-->
+
         <ImageView
             android:id="@+id/iv_nav_menu"
             android:layout_width="42dp"
             android:layout_height="42dp"
+            android:src="@drawable/menu_taskbar"
             android:contentDescription="@null" />
         <TextView
             android:id="@+id/tv_nav_menu"
