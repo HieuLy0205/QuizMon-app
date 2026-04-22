@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="chipStyle">
+        <item name="android:background">@drawable/bg_chip</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="tickStyle">
+        <item name="android:src">@drawable/ic_check</item>
+    </style>
+    <style name="GenderButton">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">48dp</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:layout_margin">4dp</item>
+    <item name="android:textAllCaps">false</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">#222222</item>
+    <item name="android:background">@drawable/bg_gender_selector</item>
+    </style>
+</resources>

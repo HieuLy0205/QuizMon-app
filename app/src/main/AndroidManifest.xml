@@ -36,6 +36,10 @@
         <activity android:name=".ui.level.TreasureActivity"/>
         <activity android:name=".ui.level.SpinWheelActivity"/>
         <activity android:name=".ui.streak.StreakActivity"/>
+        <activity android:name=".ui.onboarding.AgeActivity" />
+        <activity android:name=".ui.onboarding.PersonalizeActivity" />
+        <activity android:name=".ui.onboarding.NicknameActivity" />
+        <activity android:name=".ui.onboarding.AvatarActivity" />
         <activity
             android:name=".ui.settings.SettingsActivity"
             android:exported="false"/>

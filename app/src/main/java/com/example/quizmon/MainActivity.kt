@@ -1,6 +1,5 @@
 package com.example.quizmon
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -24,7 +23,6 @@ import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
-import com.example.quizmon.ui.shop.shop_phobien
 import com.example.quizmon.utils.StreakManager
 import kotlin.math.abs
 
@@ -53,10 +51,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LevelMapActivity::class.java)
             startActivity(intent)
         }
-        findViewById<View>(R.id.thn_main).setOnClickListener {
-            val intent = Intent(this, shop_phobien::class.java)
-            startActivity(intent)
-        }
+
         // Bắt sự kiện cho cụm Streak
         val layoutStreak = findViewById<FrameLayout>(R.id.layoutStreak)
         layoutStreak?.setOnClickListener {
@@ -69,11 +64,10 @@ class MainActivity : AppCompatActivity() {
         layoutStreak?.startAnimation(streakAnimation)
     }
 
-    @SuppressLint("ClickableViewAccessibility")
     private fun setupFloatingPet() {
         val ivFloatingPet = findViewById<ImageView>(R.id.ivFloatingPet)
 
-        // bắt đầu sự kiện animation
+        // Start animation
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
         ivFloatingPet.startAnimation(bounceAnimation)
 
@@ -84,6 +78,7 @@ class MainActivity : AppCompatActivity() {
                     dY = view.y - event.rawY
                     view.clearAnimation()
                 }
+
                 MotionEvent.ACTION_MOVE -> {
                     view.animate()
                         .x(event.rawX + dX)
@@ -91,13 +86,16 @@ class MainActivity : AppCompatActivity() {
                         .setDuration(0)
                         .start()
                 }
+
                 MotionEvent.ACTION_UP -> {
                     view.startAnimation(bounceAnimation)
                     if (abs(view.x - (event.rawX + dX)) < CLICK_DRAG_TOLERANCE &&
-                        abs(view.y - (event.rawY + dY)) < CLICK_DRAG_TOLERANCE) {
+                        abs(view.y - (event.rawY + dY)) < CLICK_DRAG_TOLERANCE
+                    ) {
                         view.performClick()
                     }
                 }
+
                 else -> return@setOnTouchListener false
             }
             true
@@ -110,7 +108,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-
+        updateCoinDisplay()
         updateUI()
 
         findViewById<FrameLayout>(R.id.layoutStreak)?.startAnimation(
@@ -124,26 +122,28 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateUI() {
         val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-        //Cập nhập lại coin và xu
-        val coin = prefs.getInt("current_coins", 0)
-        findViewById<TextView>(R.id.textcoin)?.text = coin.toString()
-        val xu = prefs.getInt("current_xu", 0)
-        findViewById<TextView>(R.id.textxu)?.text = xu.toString()
-
+        val preferenceManager = PreferenceManager(this)
         val streakManager = StreakManager(this)
+
         val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
         findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
-        findViewById<TextView>(R.id.tvStreakCount)?.text = streakManager.getCurrentStreak().toString()
+
+        findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
+        findViewById<TextView>(R.id.tvCoins)?.text = prefs.getInt("current_coins", 0).toString()
+
+        findViewById<TextView>(R.id.tvStreakCount)?.text =
+            streakManager.getCurrentStreak().toString()
     }
 
     private fun setupTaskbar() {
         findViewById<View>(R.id.indicator_home)?.visibility = View.VISIBLE
-        findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
-        
-        findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener {
-            startActivity(Intent(this, ProfileActivity::class.java))
-        }
-        
+        findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(
+            ContextCompat.getColor(
+                this,
+                R.color.taskbar_active
+            )
+        )
+
         findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener {
             startActivity(Intent(this, HistoryActivity::class.java))
         }
@@ -154,6 +154,25 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
+        }
+        findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener {
+            openProfileFlow()
+        }
+    }
+
+    private fun updateCoinDisplay() {
+        val preferenceManager = PreferenceManager(this)
+        findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
+    }
+// Proflie
+    private fun openProfileFlow() {
+        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+        val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
+
+        if (isFirstTime) {
+            startActivity(Intent(this, com.example.quizmon.ui.onboarding.AgeActivity::class.java))
+        } else {
+            startActivity(Intent(this, ProfileActivity::class.java))
         }
     }
 }
