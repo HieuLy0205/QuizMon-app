@@ -40,20 +40,22 @@
         app:tint="@color/white" />
 
     <!-- Avatar Section -->
+
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/ivAvatar"
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_marginStart="24dp"
+        android:contentDescription="@null"
         android:padding="3dp"
         android:src="@drawable/pet001_rong_c2"
-        android:contentDescription="@null"
-        app:strokeWidth="4dp"
-        app:strokeColor="#FFFFFF"
-        app:shapeAppearanceOverlay="@style/CircleImage"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="@id/header_bg"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_bg"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="4dp" />
 
     <ImageView
         android:layout_width="28dp"
@@ -114,6 +116,7 @@
                 android:layout_height="28dp"
                 android:src="@drawable/hoso_taskbar"
                 android:contentDescription="@null" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -201,7 +204,7 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:src="@drawable/pet001_rong_c2"
-                    android:background="#E0E0E0"
+                    android:background="@color/white"
                     android:padding="8dp"
                     app:shapeAppearanceOverlay="@style/CircleImage"
                     android:contentDescription="@null" />
@@ -257,7 +260,7 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:src="@drawable/pet001_rong_c2"
-                    android:background="#E0E0E0"
+                    android:background="@color/white"
                     android:padding="8dp"
                     app:shapeAppearanceOverlay="@style/CircleImage"
                     android:contentDescription="@null" />
@@ -313,7 +316,7 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:src="@drawable/pet001_rong_c2"
-                    android:background="#E0E0E0"
+                    android:background="@color/white"
                     android:padding="8dp"
                     app:shapeAppearanceOverlay="@style/CircleImage"
                     android:contentDescription="@null" />
@@ -369,7 +372,7 @@
                     android:layout_width="65dp"
                     android:layout_height="65dp"
                     android:src="@drawable/pet001_rong_c2"
-                    android:background="#E0E0E0"
+                    android:background="@color/white"
                     android:padding="8dp"
                     app:shapeAppearanceOverlay="@style/CircleImage"
                     android:contentDescription="@null" />
