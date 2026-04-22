@@ -3,7 +3,11 @@ package com.example.quizmon
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.MotionEvent
 import android.view.View
+import android.view.animation.AnimationUtils
+import android.widget.FrameLayout
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -16,8 +20,17 @@ import com.example.quizmon.ui.level.LevelMapActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.activity_shop
 import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.ui.streak.StreakActivity
+import com.example.quizmon.ui.profile.ProfileActivity
+import com.example.quizmon.ui.history.HistoryActivity
+import com.example.quizmon.utils.StreakManager
+import kotlin.math.abs
 
 class MainActivity : AppCompatActivity() {
+    private var dX = 0f
+    private var dY = 0f
+    private val CLICK_DRAG_TOLERANCE = 10f
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -31,59 +44,135 @@ class MainActivity : AppCompatActivity() {
 
         setupTaskbar()
         updateUI()
+        setupFloatingPet()
 
         // Bắt sự kiện nút Quiz (Card chính trên màn hình)
         findViewById<View>(R.id.btnQuiz).setOnClickListener {
             val intent = Intent(this, LevelMapActivity::class.java)
             startActivity(intent)
         }
+
+        // Bắt sự kiện cho cụm Streak
+        val layoutStreak = findViewById<FrameLayout>(R.id.layoutStreak)
+        layoutStreak?.setOnClickListener {
+            val intent = Intent(this, StreakActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Thêm animation cho ngọn lửa
+        val streakAnimation = AnimationUtils.loadAnimation(this, R.anim.streak_bounce)
+        layoutStreak?.startAnimation(streakAnimation)
+    }
+
+    private fun setupFloatingPet() {
+        val ivFloatingPet = findViewById<ImageView>(R.id.ivFloatingPet)
+
+        // Start animation
+        val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
+        ivFloatingPet.startAnimation(bounceAnimation)
+
+        ivFloatingPet.setOnTouchListener { view, event ->
+            when (event.actionMasked) {
+                MotionEvent.ACTION_DOWN -> {
+                    dX = view.x - event.rawX
+                    dY = view.y - event.rawY
+                    view.clearAnimation()
+                }
+
+                MotionEvent.ACTION_MOVE -> {
+                    view.animate()
+                        .x(event.rawX + dX)
+                        .y(event.rawY + dY)
+                        .setDuration(0)
+                        .start()
+                }
+
+                MotionEvent.ACTION_UP -> {
+                    view.startAnimation(bounceAnimation)
+                    if (abs(view.x - (event.rawX + dX)) < CLICK_DRAG_TOLERANCE &&
+                        abs(view.y - (event.rawY + dY)) < CLICK_DRAG_TOLERANCE
+                    ) {
+                        view.performClick()
+                    }
+                }
+
+                else -> return@setOnTouchListener false
+            }
+            true
+        }
+
+        ivFloatingPet.setOnClickListener {
+            startActivity(Intent(this, PetActivity::class.java))
+        }
     }
 
     override fun onResume() {
         super.onResume()
         updateCoinDisplay()
-        // Cập nhật lại số liệu mỗi khi quay lại màn hình chính
         updateUI()
+
+        findViewById<FrameLayout>(R.id.layoutStreak)?.startAnimation(
+            AnimationUtils.loadAnimation(this, R.anim.streak_bounce)
+        )
+
+        findViewById<ImageView>(R.id.ivFloatingPet)?.startAnimation(
+            AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
+        )
     }
 
     private fun updateUI() {
         val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-        
-        // Lấy cấp độ hiện tại (mặc định là 1 nếu chưa có)
+        val preferenceManager = PreferenceManager(this)
+        val streakManager = StreakManager(this)
+
         val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
         findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
 
-        // Tiện thể cập nhật luôn Xu nếu bạn cần
-        val coins = prefs.getInt("current_coins", 0)
-        findViewById<TextView>(R.id.tvCoins)?.text = coins.toString()
+        findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
+        findViewById<TextView>(R.id.tvCoins)?.text = prefs.getInt("current_coins", 0).toString()
+
+        findViewById<TextView>(R.id.tvStreakCount)?.text =
+            streakManager.getCurrentStreak().toString()
     }
 
     private fun setupTaskbar() {
-        // Highlight trang chủ bằng thanh gỗ
-        findViewById<View>(R.id.indicator_home).visibility = View.VISIBLE
-        findViewById<TextView>(R.id.tv_nav_home).setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
-        
-        // Sự kiện click cho các icon trên taskbar
-        findViewById<LinearLayout>(R.id.nav_profile).setOnClickListener {
-            startActivity(Intent(this, PetActivity::class.java))
+        findViewById<View>(R.id.indicator_home)?.visibility = View.VISIBLE
+        findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(
+            ContextCompat.getColor(
+                this,
+                R.color.taskbar_active
+            )
+        )
+
+        findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener {
+            startActivity(Intent(this, HistoryActivity::class.java))
         }
-        
-        findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener {
+
+        findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener {
             startActivity(Intent(this, activity_shop::class.java))
         }
 
-        findViewById<LinearLayout>(R.id.nav_history).setOnClickListener {
-            // Tính năng Lịch sử
-        }
-
-        findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {
+        findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
+        }
+        findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener {
+            openProfileFlow()
         }
     }
 
-    private fun updateCoinDisplay(){
-        val textcoin = findViewById<TextView>(R.id.textcoin)
+    private fun updateCoinDisplay() {
         val preferenceManager = PreferenceManager(this)
-        textcoin.text = preferenceManager.getCoins().toString()
+        findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
+    }
+// Proflie
+    private fun openProfileFlow() {
+        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+        val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
+
+        if (isFirstTime) {
+            startActivity(Intent(this, com.example.quizmon.ui.onboarding.AgeActivity::class.java))
+        } else {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
     }
 }

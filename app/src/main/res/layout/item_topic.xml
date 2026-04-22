@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="70dp"
+    android:layout_margin="8dp"
+    android:layout_weight="1"
+    android:background="@drawable/bg_topic_selector"
+    android:padding="12dp">
+
+    <!-- ICON -->
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_movie" />
+
+    <!-- TEXT -->
+    <TextView
+        android:id="@+id/txtTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/icon"
+        android:layout_marginStart="10dp"
+        android:layout_centerVertical="true"
+        android:text="Topic"
+        android:textSize="15sp"
+        android:textColor="#222"
+        android:textStyle="bold" />
+
+    <!-- TICK -->
+    <ImageView
+        android:id="@+id/tick"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:src="@drawable/ic_check"
+        android:background="@drawable/bg_tick_circle"
+        android:padding="2dp" />
+</RelativeLayout>

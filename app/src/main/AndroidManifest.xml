@@ -28,11 +28,18 @@
         <activity android:name=".ui.shop.shop_pvp"/>
         <activity android:name=".ui.shop.activity_shop" />
         <activity android:name=".ui.pet.PetActivity"/>
+        <activity android:name=".ui.profile.ProfileActivity"/>
+        <activity android:name=".ui.history.HistoryActivity"/>
         <activity android:name=".ui.level.LevelMapActivity"/>
         <activity android:name=".ui.level.SubMapActivity"/>
         <activity android:name=".ui.quiz.QuizActivity"/>
         <activity android:name=".ui.level.TreasureActivity"/>
         <activity android:name=".ui.level.SpinWheelActivity"/>
+        <activity android:name=".ui.streak.StreakActivity"/>
+        <activity android:name=".ui.onboarding.AgeActivity" />
+        <activity android:name=".ui.onboarding.PersonalizeActivity" />
+        <activity android:name=".ui.onboarding.NicknameActivity" />
+        <activity android:name=".ui.onboarding.AvatarActivity" />
         <activity
             android:name=".ui.settings.SettingsActivity"
             android:exported="false"/>
