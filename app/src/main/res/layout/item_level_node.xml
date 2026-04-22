@@ -3,33 +3,66 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="40dp"
-    android:paddingBottom="40dp">
+    android:paddingTop="32dp"
+    android:paddingBottom="32dp">
 
-    <FrameLayout
+    <!-- Container cho nút Level -->
+    <RelativeLayout
         android:id="@+id/levelNodeContainer"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
         android:layout_gravity="center_horizontal"
-        android:background="@drawable/bg_map_node_locked">
+        android:background="@drawable/bg_map_node_unlocked"
+        android:elevation="6dp">
 
+        <!-- Số Level -->
         <TextView
             android:id="@+id/tvLevelNumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_centerInParent="true"
             android:text="1"
-            android:textColor="@color/white"
-            android:textSize="32sp"
-            android:textStyle="bold" />
+            android:textColor="@color/eevee_dark"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:shadowColor="#40000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2" />
 
+        <!-- Biểu tượng khóa -->
         <ImageView
             android:id="@+id/ivLock"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginBottom="8dp"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
             android:src="@drawable/ic_lock"
-            app:tint="@color/white" />
-    </FrameLayout>
+            android:visibility="gone"
+            app:tint="@color/eevee_dark" />
+
+    </RelativeLayout>
+
+    <!-- Trang trí tai Pokemon (Giả lập tai Eevee đơn giản bằng View) -->
+    <View
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="-45dp"
+        android:rotation="-30"
+        android:background="@drawable/bg_map_node_locked"
+        android:alpha="0.8" />
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="45dp"
+        android:rotation="30"
+        android:background="@drawable/bg_map_node_locked"
+        android:alpha="0.8" />
+
 </FrameLayout>

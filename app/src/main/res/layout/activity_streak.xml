@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF1F4">
+
+    <!-- Header Section -->
+    <View
+        android:id="@+id/header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#F8BBD0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        android:alpha="0.4"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_difficulty_btn"
+        android:contentDescription="@null"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <!-- Avatar Section -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:padding="3dp"
+        android:src="@drawable/pet001_rong_c2"
+        android:contentDescription="@null"
+        app:strokeWidth="4dp"
+        app:strokeColor="#FFFFFF"
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        app:layout_constraintBottom_toBottomOf="@id/header_bg"
+        app:layout_constraintTop_toBottomOf="@id/header_bg"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:src="@drawable/sao_shop_map"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
+        app:layout_constraintEnd_toEndOf="@id/ivAvatar" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/default_user_name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/header_bg"
+        app:layout_constraintStart_toEndOf="@id/ivAvatar" />
+
+    <ImageView
+        android:id="@+id/btnEdit"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
+        android:src="@android:drawable/ic_menu_edit"
+        android:padding="6dp"
+        android:background="@drawable/bg_stats_bar"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toBottomOf="@id/header_bg"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Tabs Layout -->
+    <LinearLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:baselineAligned="false"
+        app:layout_constraintTop_toBottomOf="@id/tvName">
+
+        <LinearLayout
+            android:id="@+id/tab_achievements"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/hoso_taskbar"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_thanh_tich"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#555555" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="4dp"
+                android:background="#555555" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_stats"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/lichsu_taskbar"
+                android:alpha="0.4"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_thong_ke"
+                android:textSize="13sp"
+                android:textColor="#999999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tab_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/shop_taskbar"
+                android:alpha="0.4"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tab_mua_hang"
+                android:textSize="13sp"
+                android:textColor="#999999" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Content Area (Achievements List) -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Item 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:baselineAligned="false">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/pet001_rong_c2"
+                    android:background="#E0E0E0"
+                    android:padding="8dp"
+                    app:shapeAppearanceOverlay="@style/CircleImage"
+                    android:contentDescription="@null" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/achievement_warrior"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#78909C" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/achievement_warrior_desc"
+                        android:textSize="13sp"
+                        android:textColor="#B0BEC5" />
+                    <ProgressBar
+                        android:id="@+id/progress_warrior"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="14"
+                        android:progressTint="#8BC34A" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_warrior_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/percent_14"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#546E7A" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginHorizontal="12dp" />
+
+            <!-- Item 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:baselineAligned="false">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/pet001_rong_c2"
+                    android:background="#E0E0E0"
+                    android:padding="8dp"
+                    app:shapeAppearanceOverlay="@style/CircleImage"
+                    android:contentDescription="@null" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/achievement_fan"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#78909C" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/achievement_fan_desc"
+                        android:textSize="13sp"
+                        android:textColor="#B0BEC5" />
+                    <ProgressBar
+                        android:id="@+id/progress_fan"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="5"
+                        android:progressTint="#8BC34A" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_fan_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/percent_5"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#546E7A" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginHorizontal="12dp" />
+
+            <!-- Item 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:baselineAligned="false">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/pet001_rong_c2"
+                    android:background="#E0E0E0"
+                    android:padding="8dp"
+                    app:shapeAppearanceOverlay="@style/CircleImage"
+                    android:contentDescription="@null" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/achievement_hunter"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#78909C" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/achievement_hunter_desc"
+                        android:textSize="13sp"
+                        android:textColor="#B0BEC5" />
+                    <ProgressBar
+                        android:id="@+id/progress_hunter"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="2"
+                        android:progressTint="#8BC34A" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_hunter_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/percent_2"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#546E7A" />
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginHorizontal="12dp" />
+
+            <!-- Item 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:baselineAligned="false">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/pet001_rong_c2"
+                    android:background="#E0E0E0"
+                    android:padding="8dp"
+                    app:shapeAppearanceOverlay="@style/CircleImage"
+                    android:contentDescription="@null" />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/achievement_passion"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#78909C" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/achievement_passion_desc"
+                        android:textSize="13sp"
+                        android:textColor="#B0BEC5" />
+                    <ProgressBar
+                        android:id="@+id/progress_passion"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:layout_marginTop="8dp"
+                        android:progress="1"
+                        android:progressTint="#8BC34A" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_passion_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:text="@string/percent_1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#546E7A" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

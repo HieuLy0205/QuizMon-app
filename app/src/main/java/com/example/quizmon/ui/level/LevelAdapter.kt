@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizmon.R
@@ -18,7 +19,7 @@ class LevelAdapter(
 
     class LevelViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val tvNumber: TextView = view.findViewById(R.id.tvLevelNumber)
-        val container: FrameLayout = view.findViewById(R.id.levelNodeContainer)
+        val container: RelativeLayout = view.findViewById(R.id.levelNodeContainer)
         val ivLock: ImageView = view.findViewById(R.id.ivLock)
     }
 
@@ -55,7 +56,7 @@ class LevelAdapter(
         } else {
             holder.container.setBackgroundResource(R.drawable.bg_map_node_locked)
             holder.ivLock.visibility = View.VISIBLE
-            holder.tvNumber.visibility = View.VISIBLE // Vẫn hiện số nhưng mờ hoặc icon khóa đè lên
+            holder.tvNumber.visibility = View.VISIBLE
             holder.itemView.setOnClickListener(null)
         }
     }

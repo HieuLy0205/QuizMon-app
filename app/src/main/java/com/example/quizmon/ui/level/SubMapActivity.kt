@@ -44,8 +44,10 @@ class SubMapActivity : AppCompatActivity() {
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
         btnBack.setOnClickListener { finish() }
 
-        tvTotalStars = findViewById(R.id.tvTotalStars)
-        tvTotalCoins = findViewById(R.id.tvTotalCoins)
+        // Cập nhật ID theo layout_taskhead mới
+        tvTotalStars = findViewById(R.id.textcoin)
+        tvTotalCoins = findViewById(R.id.tvCoins)
+        
         pbStarProgress = findViewById(R.id.pbStarProgress)
         starIcons = listOf(
             findViewById(R.id.star1),

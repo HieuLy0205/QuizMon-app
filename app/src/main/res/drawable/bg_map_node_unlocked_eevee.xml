@@ -3,22 +3,25 @@
     <!-- Shadow -->
     <item android:top="4dp" android:left="2dp">
         <shape android:shape="oval">
-            <solid android:color="#20000000" />
+            <solid android:color="#40000000" />
         </shape>
     </item>
 
-    <!-- Outer Border -->
+    <!-- Outer Border (Cream) -->
     <item>
         <shape android:shape="oval">
-            <solid android:color="#A0A0A0" />
-            <stroke android:width="2dp" android:color="#808080" />
+            <solid android:color="@color/eevee_cream" />
+            <stroke android:width="4dp" android:color="@color/eevee_dark" />
         </shape>
     </item>
 
-    <!-- Inner Fill -->
+    <!-- Inner Fill (Brown) -->
     <item android:top="8dp" android:bottom="8dp" android:left="8dp" android:right="8dp">
         <shape android:shape="oval">
-            <solid android:color="#CCCCCC" />
+            <gradient
+                android:startColor="@color/eevee_brown"
+                android:endColor="#D4A780"
+                android:angle="270" />
         </shape>
     </item>
 </layer-list>
