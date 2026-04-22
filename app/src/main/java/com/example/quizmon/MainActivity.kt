@@ -1,5 +1,6 @@
 package com.example.quizmon
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -16,6 +17,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.ui.pet.PetActivity
+import com.example.quizmon.ui.shop.shop_phobien
 import com.example.quizmon.ui.level.LevelMapActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.activity_shop
@@ -51,6 +53,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LevelMapActivity::class.java)
             startActivity(intent)
         }
+        // Bắt đầu sự kiện nút Thưởng hằng ngày
+        findViewById<FrameLayout>(R.id.thn_main).setOnClickListener {
+            val intent = Intent(this, shop_phobien::class.java)
+            startActivity(intent)
+        }
 
         // Bắt sự kiện cho cụm Streak
         val layoutStreak = findViewById<FrameLayout>(R.id.layoutStreak)
@@ -64,6 +71,8 @@ class MainActivity : AppCompatActivity() {
         layoutStreak?.startAnimation(streakAnimation)
     }
 
+    @SuppressLint("ClickableViewAccessibility")
+    //của pet
     private fun setupFloatingPet() {
         val ivFloatingPet = findViewById<ImageView>(R.id.ivFloatingPet)
 
@@ -129,7 +138,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
 
         findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
-        findViewById<TextView>(R.id.tvCoins)?.text = prefs.getInt("current_coins", 0).toString()
+        findViewById<TextView>(R.id.textcoin)?.text = prefs.getInt("current_coins", 0).toString()
 
         findViewById<TextView>(R.id.tvStreakCount)?.text =
             streakManager.getCurrentStreak().toString()
