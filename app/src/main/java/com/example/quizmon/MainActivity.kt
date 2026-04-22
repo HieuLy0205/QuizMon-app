@@ -1,5 +1,6 @@
 package com.example.quizmon
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
@@ -23,6 +24,7 @@ import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
+import com.example.quizmon.ui.shop.shop_phobien
 import com.example.quizmon.utils.StreakManager
 import kotlin.math.abs
 
@@ -51,7 +53,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LevelMapActivity::class.java)
             startActivity(intent)
         }
-
+        findViewById<View>(R.id.thn_main).setOnClickListener {
+            val intent = Intent(this, shop_phobien::class.java)
+            startActivity(intent)
+        }
         // Bắt sự kiện cho cụm Streak
         val layoutStreak = findViewById<FrameLayout>(R.id.layoutStreak)
         layoutStreak?.setOnClickListener {
@@ -64,10 +69,11 @@ class MainActivity : AppCompatActivity() {
         layoutStreak?.startAnimation(streakAnimation)
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private fun setupFloatingPet() {
         val ivFloatingPet = findViewById<ImageView>(R.id.ivFloatingPet)
 
-        // Start animation
+        // bắt đầu sự kiện animation
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
         ivFloatingPet.startAnimation(bounceAnimation)
 
@@ -104,9 +110,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        updateCoinDisplay()
+
         updateUI()
-        
+
         findViewById<FrameLayout>(R.id.layoutStreak)?.startAnimation(
             AnimationUtils.loadAnimation(this, R.anim.streak_bounce)
         )
@@ -118,15 +124,15 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateUI() {
         val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-        val preferenceManager = PreferenceManager(this)
+        //Cập nhập lại coin và xu
+        val coin = prefs.getInt("current_coins", 0)
+        findViewById<TextView>(R.id.textcoin)?.text = coin.toString()
+        val xu = prefs.getInt("current_xu", 0)
+        findViewById<TextView>(R.id.textxu)?.text = xu.toString()
+
         val streakManager = StreakManager(this)
-        
         val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
         findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
-
-        findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
-        findViewById<TextView>(R.id.tvCoins)?.text = prefs.getInt("current_coins", 0).toString()
-
         findViewById<TextView>(R.id.tvStreakCount)?.text = streakManager.getCurrentStreak().toString()
     }
 
@@ -149,10 +155,5 @@ class MainActivity : AppCompatActivity() {
         findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
-    }
-
-    private fun updateCoinDisplay(){
-        val preferenceManager = PreferenceManager(this)
-        findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
     }
 }

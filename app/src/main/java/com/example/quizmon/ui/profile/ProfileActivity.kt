@@ -42,7 +42,7 @@ class ProfileActivity : AppCompatActivity() {
         val streakManager = StreakManager(this)
 
         findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
-        findViewById<TextView>(R.id.tvCoins)?.text = prefs.getInt("current_coins", 0).toString()
+        findViewById<TextView>(R.id.textxu)?.text = prefs.getInt("current_coins", 0).toString()
         
         findViewById<TextView>(R.id.tvStatStreak).text = streakManager.getCurrentStreak().toString()
         findViewById<TextView>(R.id.tvStatLevel).text = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1).toString()

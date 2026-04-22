@@ -46,7 +46,7 @@ class SubMapActivity : AppCompatActivity() {
 
         // Cập nhật ID theo layout_taskhead mới
         tvTotalStars = findViewById(R.id.textcoin)
-        tvTotalCoins = findViewById(R.id.tvCoins)
+        tvTotalCoins = findViewById(R.id.textxu)
         
         pbStarProgress = findViewById(R.id.pbStarProgress)
         starIcons = listOf(
