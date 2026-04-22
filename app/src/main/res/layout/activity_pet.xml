@@ -12,8 +12,7 @@
         android:id="@+id/layoutcoin"
         android:layout_width="161dp"
         android:layout_height="65dp"
-        android:layout_gravity="bottom"
-        android:gravity="center">
+        android:gravity="center_vertical">
 
         <ImageView
             android:id="@+id/imgcoin"
