@@ -40,7 +40,7 @@ class HistoryActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
         
         val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-        findViewById<TextView>(R.id.tvCoins)?.text = prefs.getInt("current_coins", 0).toString()
+//        findViewById<TextView>(R.id.tvCoins)?.text = prefs.getInt("current_coins", 0).toString()
     }
 
     private fun setupTaskbar() {

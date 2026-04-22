@@ -267,6 +267,53 @@
         </LinearLayout>
     </ScrollView>
 
+    <!-- Streak Fire overlayed above taskbar -->
+    <FrameLayout
+        android:id="@+id/layoutStreak"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-10dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/taskbar"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/ivStreakFire"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/streak_fire"
+            android:contentDescription="Streak" />
+
+        <TextView
+            android:id="@+id/tvStreakCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="12dp"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:shadowColor="#80000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+    </FrameLayout>
+
+    <!-- Floating Pet -->
+    <ImageView
+        android:id="@+id/ivFloatingPet"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/pet001_rong_c2"
+        app:layout_constraintBottom_toTopOf="@id/taskbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="Floating Pet" />
+
     <include
         android:id="@+id/taskbar"
         layout="@layout/layout_taskbar"

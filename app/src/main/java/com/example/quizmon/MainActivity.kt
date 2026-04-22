@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupFloatingPet() {
         val ivFloatingPet = findViewById<ImageView>(R.id.ivFloatingPet)
-        
+
         // Start animation
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
         ivFloatingPet.startAnimation(bounceAnimation)
@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 MotionEvent.ACTION_UP -> {
                     view.startAnimation(bounceAnimation)
-                    if (abs(view.x - (event.rawX + dX)) < CLICK_DRAG_TOLERANCE && 
+                    if (abs(view.x - (event.rawX + dX)) < CLICK_DRAG_TOLERANCE &&
                         abs(view.y - (event.rawY + dY)) < CLICK_DRAG_TOLERANCE) {
                         view.performClick()
                     }
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<FrameLayout>(R.id.layoutStreak)?.startAnimation(
             AnimationUtils.loadAnimation(this, R.anim.streak_bounce)
         )
-        
+
         findViewById<ImageView>(R.id.ivFloatingPet)?.startAnimation(
             AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
         )
@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
         findViewById<TextView>(R.id.tvCoins)?.text = prefs.getInt("current_coins", 0).toString()
-        
+
         findViewById<TextView>(R.id.tvStreakCount)?.text = streakManager.getCurrentStreak().toString()
     }
 
