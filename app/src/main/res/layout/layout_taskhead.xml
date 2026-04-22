@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Thanh trạng thái phía trên (Top bar) -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Ngôi sao / Điểm -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_stats_bar"
+            android:paddingStart="8dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="12dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/sao_shop_map"
+                android:contentDescription="@null" />
+            <TextView
+                android:id="@+id/textcoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="#F57C00" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="1dp"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@color/home_green"
+                android:contentDescription="@null" />
+
+        </LinearLayout>
+
+        <!-- Xu / Tiền -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_stats_bar"
+            android:paddingStart="8dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/su_shop_map"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="#FBC02D" />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="1dp"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@color/home_green"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <!-- Điểm/trả lời câu hỏi -->
+        <LinearLayout
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/bg_stats_bar"
+            android:gravity="center_vertical"
+            android:paddingStart="8dp"
+            android:paddingTop="6dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="6dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/diem_shop_map"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:text="@string/text_so"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="14dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:gravity="center"
+                android:text="@string/text_so"
+                android:textColor="#E91E63"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Tim / Mạng -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_stats_bar"
+            android:paddingStart="8dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            >
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:text="@string/text_so"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:background="@drawable/tim3_shop_map"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/tvHearts"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:text="@string/text_time"
+                android:gravity="center"
+                android:textColor="#E91E63"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
