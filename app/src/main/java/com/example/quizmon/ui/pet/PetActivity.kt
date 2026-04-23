@@ -29,53 +29,36 @@ class PetActivity : AppCompatActivity() {
         imgPet1 = findViewById(R.id.imgPet1)
         val btn_tanglevel = findViewById<Button>(R.id.btn_tanglevel)
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
-        //note 0:sự kiện nút tăng cấp
-//        btn_tanglevel.setOnClickListener {
-//            pref.savePetLevel(1)
-//            pref.saveCoins(100)
-//            // cập nhập dao diện về lại pet cấp 1
-//            val level = pref.getPetLevel()
-//            petFarm = getFramesByLevel(level)
-//            currentPet = 0
-//            updateCoinDisplay()
-//            true
-//        }
-        //logic Tăng cấp
-        btn_tanglevel.setOnClickListener {
-            val currentLevel = pref.getPetLevel()
-            val currentCoins = pref.getCoins()
-            if (currentLevel < 3){
-                if(currentCoins >= 20){
-                    pref.saveCoins(currentCoins - 10)
-                    val nextLevel = currentLevel + 1
-                    pref.savePetLevel(nextLevel)
 
+        btn_tanglevel.setOnClickListener {
+            val currentLeve = pref.getPetLevel()
+            val currientCoin = pref.getCoins()
+            if(currentLeve<3){
+                if(currientCoin>=20){
+                    //mở bộ nhớ ra và
+                    pref.saveCoins(currientCoin - 20)
+                    val nextLevel = currentLeve + 1
+                    pref.savePetLevel(nextLevel)
                     petFarm = getFramesByLevel(nextLevel)
                     currentPet = 0
-
                     updateCoinDisplay()
-
-                    android.widget.Toast.makeText(this,
-                        "Tăng cấp thành công",
-                        android.widget.Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this,
+                        "Tăng cấp Thành công", Toast.LENGTH_SHORT).show()
                 }else{
                     Toast.makeText(this,
-                        "không đủ coin",
-                        android.widget.Toast.LENGTH_SHORT).show()
+                        "Chưa đủ coin", Toast.LENGTH_SHORT).show()
                 }
-                }else{
-                    Toast.makeText(this,
-                    "chưa đạt yêu cầu",
-                    Toast.LENGTH_SHORT).show()
-            }
-
+        }
+            Toast.makeText(this,
+                "không đạt yêu cầu", Toast.LENGTH_SHORT).show()
       }
         //note 1: sự kiện quy lại
         btnBack.setOnClickListener { finish() }
         startAnimation()
     }
     //note 3: Chương trình hoạt ảnh gồm 3 thành phần
-    private lateinit var imgPet1: ImageView
+    private lateinit var  imgPet1: ImageView
+
     private lateinit var pref: PreferenceManager
     //    1 (Dử liệu) chủng bị ảnh = danh sách ảnh ->
     private var petFarm = intArrayOf()
@@ -125,5 +108,4 @@ class PetActivity : AppCompatActivity() {
             else -> FramesLevel1
         }
     }
-
 }
