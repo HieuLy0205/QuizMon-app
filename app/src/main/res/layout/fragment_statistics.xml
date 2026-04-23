@@ -25,30 +25,48 @@
         android:contentDescription="@null"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Top Bar Stats -->
+    <!-- Nút Quay lại (Đã sửa lỗi Accessibility: Thêm mô tả, tăng vùng chạm, xóa nút thừa) -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:elevation="15dp"
+        android:translationZ="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#D0000000" />
+
+    <!-- Top Bar Stats (Đã chuyển về bên phải) -->
     <LinearLayout
         android:id="@+id/topBar"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="12dp"
         android:gravity="center_vertical"
-        android:baselineAligned="false"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
+        <!-- Nhóm Sao -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_stats_bar"
-            android:padding="6dp"
+            android:layout_height="34dp"
             android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_stats_bar"
             android:gravity="center_vertical"
-            android:baselineAligned="false">
+            android:paddingHorizontal="8dp">
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/sao_shop_map"
-                android:contentDescription="@null" />
+                android:src="@drawable/sao_shop_map" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -57,19 +75,18 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
+        <!-- Nhóm Xu -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/bg_stats_bar"
-            android:padding="6dp"
+            android:layout_height="34dp"
             android:layout_marginEnd="8dp"
+            android:background="@drawable/bg_stats_bar"
             android:gravity="center_vertical"
-            android:baselineAligned="false">
+            android:paddingHorizontal="8dp">
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/icon_ruong_xu"
-                android:contentDescription="@null" />
+                android:src="@drawable/su_shop_map" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -80,21 +97,20 @@
                 android:layout_width="14dp"
                 android:layout_height="14dp"
                 android:src="@android:drawable/ic_input_add"
-                android:contentDescription="@null" />
+                app:tint="#4CAF50" />
         </LinearLayout>
 
+        <!-- Nhóm Thời gian -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="34dp"
             android:background="@drawable/bg_stats_bar"
-            android:padding="6dp"
             android:gravity="center_vertical"
-            android:baselineAligned="false">
+            android:paddingHorizontal="8dp">
             <ImageView
                 android:layout_width="18dp"
                 android:layout_height="18dp"
-                android:src="@drawable/tim3_shop_map"
-                android:contentDescription="@null" />
+                android:src="@drawable/tim3_shop_map" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -105,7 +121,7 @@
                 android:layout_width="14dp"
                 android:layout_height="14dp"
                 android:src="@android:drawable/ic_input_add"
-                android:contentDescription="@null" />
+                app:tint="#4CAF50" />
         </LinearLayout>
     </LinearLayout>
 
@@ -115,15 +131,16 @@
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_marginStart="24dp"
+        android:contentDescription="@null"
         android:padding="3dp"
         android:src="@drawable/pet001_rong_c2"
-        android:contentDescription="@null"
-        app:strokeWidth="4dp"
-        app:strokeColor="#FFFFFF"
-        app:shapeAppearanceOverlay="@style/CircleImage"
+        android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="@id/header_bg"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_bg"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="4dp" />
 
     <ImageView
         android:id="@+id/iv_avatar_star"
@@ -444,53 +461,6 @@
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
-
-            <!-- Section Title -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="16dp"
-                android:text="@string/stat_category_performance"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:textColor="#333333" />
-
-            <!-- Category Performance Item -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:paddingVertical="8dp"
-                android:paddingHorizontal="16dp"
-                android:baselineAligned="false">
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:src="@android:drawable/ic_menu_gallery"
-                    android:padding="8dp"
-                    android:background="@drawable/bg_stats_bar"
-                    android:contentDescription="@null"
-                    app:tint="#9C27B0" />
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:layout_marginStart="16dp"
-                    android:text="@string/category_culture"
-                    android:textSize="16sp"
-                    android:textColor="#555555"
-                    android:textStyle="bold" />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/percent_100"
-                    android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#555555" />
-            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 
