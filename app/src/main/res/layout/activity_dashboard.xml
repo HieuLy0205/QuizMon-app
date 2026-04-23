@@ -4,128 +4,146 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F7F9">
+    android:background="#EDF1F4"
+    tools:context=".ui.statistics.StatisticsFragment">
 
-    <!-- Thanh chỉ số phía trên (Stars, Coins, Hearts) -->
-    <LinearLayout
-        android:id="@+id/layout_top_stats"
+    <!-- Header Section -->
+    <View
+        android:id="@+id/header_bg"
         android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#F8BBD0"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_header_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        android:alpha="0.4"
+        android:contentDescription="@null"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Nút Quay lại (Đã sửa lỗi Accessibility: Thêm mô tả, tăng vùng chạm, xóa nút thừa) -->
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_back"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"
+        android:elevation="15dp"
+        android:translationZ="15dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="@string/btn_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#D0000000" />
+
+    <!-- Top Bar Stats (Đã chuyển về bên phải) -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp"
-        android:gravity="center"
-        android:elevation="10dp"
-        android:translationZ="10dp"
-        app:layout_constraintTop_toTopOf="parent">
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
+        <!-- Nhóm Sao -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
             android:background="@drawable/bg_stats_bar"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="4dp"
             android:gravity="center_vertical"
-            android:layout_marginEnd="8dp">
+            android:paddingHorizontal="8dp">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
                 android:src="@drawable/sao_shop_map" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
                 android:text="@string/default_star_count"
-                android:textColor="@color/black"
-                android:layout_marginStart="6dp"
                 android:textStyle="bold" />
         </LinearLayout>
 
+        <!-- Nhóm Xu -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="34dp"
+            android:layout_marginEnd="8dp"
             android:background="@drawable/bg_stats_bar"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="4dp"
             android:gravity="center_vertical"
-            android:layout_marginEnd="8dp">
+            android:paddingHorizontal="8dp">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/diem_shop_map" />
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/su_shop_map" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
                 android:text="@string/default_coin_count"
-                android:textColor="@color/black"
-                android:layout_marginStart="6dp"
                 android:textStyle="bold" />
             <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
                 android:src="@android:drawable/ic_input_add"
-                android:layout_marginStart="4dp"
                 app:tint="#4CAF50" />
         </LinearLayout>
 
+        <!-- Nhóm Thời gian -->
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="34dp"
             android:background="@drawable/bg_stats_bar"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="4dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:paddingHorizontal="8dp">
             <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
                 android:src="@drawable/tim3_shop_map" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
                 android:text="@string/default_time"
-                android:textColor="@color/black"
-                android:layout_marginStart="6dp"
                 android:textStyle="bold" />
             <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
                 android:src="@android:drawable/ic_input_add"
-                android:layout_marginStart="4dp"
                 app:tint="#4CAF50" />
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Header Background -->
-    <ImageView
-        android:id="@+id/ivHeaderBg"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:src="@drawable/background"
-        android:scaleType="centerCrop"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <View
-        android:id="@+id/viewProfileBg"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:background="@color/white"
-        app:layout_constraintTop_toBottomOf="@id/ivHeaderBg" />
-
-    <!-- Avatar -->
+    <!-- Avatar Section -->
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/ivAvatar"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="24dp"
+        android:contentDescription="@null"
+        android:padding="3dp"
         android:src="@drawable/pet001_rong_c2"
-        android:padding="4dp"
         android:background="@color/white"
-        app:strokeColor="@color/white"
-        app:strokeWidth="4dp"
-        app:shapeAppearanceOverlay="@style/CircleImage"
-        app:layout_constraintBottom_toBottomOf="@id/ivHeaderBg"
-        app:layout_constraintTop_toBottomOf="@id/ivHeaderBg"
+        app:layout_constraintBottom_toBottomOf="@id/header_bg"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="24dp" />
+        app:layout_constraintTop_toBottomOf="@id/header_bg"
+        app:shapeAppearanceOverlay="@style/CircleImage"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="4dp" />
 
     <ImageView
+        android:id="@+id/iv_avatar_star"
         android:layout_width="28dp"
         android:layout_height="28dp"
         android:src="@drawable/sao_shop_map"
@@ -137,44 +155,46 @@
         android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:text="@string/default_user_name"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         android:textColor="#333333"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/ivHeaderBg"
+        app:layout_constraintTop_toBottomOf="@id/header_bg"
         app:layout_constraintStart_toEndOf="@id/ivAvatar" />
 
     <ImageView
-        android:id="@+id/btnEdit"
-        android:layout_width="38dp"
-        android:layout_height="38dp"
+        android:id="@+id/iv_edit_name"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="16dp"
         android:src="@android:drawable/ic_menu_edit"
+        android:padding="6dp"
         android:background="@drawable/bg_stats_bar"
-        android:padding="10dp"
-        android:layout_marginEnd="24dp"
-        app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:tint="#888888" />
+        android:contentDescription="@null"
+        app:layout_constraintTop_toBottomOf="@id/header_bg"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Tab Bar -->
+    <!-- Tabs Layout -->
     <LinearLayout
-        android:id="@+id/layoutTabs"
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
         android:orientation="horizontal"
-        android:background="@color/white"
-        android:paddingTop="12dp"
-        app:layout_constraintTop_toBottomOf="@id/viewProfileBg">
+        android:background="#FFFFFF"
+        android:baselineAligned="false"
+        app:layout_constraintTop_toBottomOf="@id/tvName">
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:paddingVertical="8dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:baselineAligned="false">
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
@@ -185,42 +205,43 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_thanh_tich"
-                android:textSize="12sp"
-                android:textColor="#BBBBBB" />
+                android:textSize="13sp"
+                android:textColor="#999999" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:paddingVertical="8dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:baselineAligned="false">
             <ImageView
-                android:layout_width="26dp"
-                android:layout_height="26dp"
-                android:src="@drawable/lichsu_taskbar"/>
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/lichsu_taskbar"
+                android:contentDescription="@null" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_thong_ke"
-                android:textSize="12sp"
+                android:textSize="13sp"
                 android:textStyle="bold"
-                android:textColor="#333333" />
+                android:textColor="#555555" />
             <View
-                android:layout_width="80dp"
+                android:layout_width="match_parent"
                 android:layout_height="3dp"
-                android:background="#333333"
-                android:layout_marginTop="4dp" />
+                android:layout_marginTop="4dp"
+                android:background="#555555" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:paddingVertical="8dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:baselineAligned="false">
             <ImageView
                 android:layout_width="28dp"
                 android:layout_height="28dp"
@@ -231,178 +252,331 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tab_mua_hang"
-                android:textSize="12sp"
-                android:textColor="#BBBBBB" />
+                android:textSize="13sp"
+                android:textColor="#999999" />
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Stat Cards -->
+    <!-- Statistics Content Area -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@id/layoutTabs"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintBottom_toTopOf="@id/bottom_taskbar">
 
-        <GridLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="2"
+            android:orientation="vertical"
             android:padding="12dp">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
+            <!-- 4 Cards Grid -->
+            <GridLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="2dp"
-                app:cardBackgroundColor="#A5D6A7">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:padding="16dp">
-                    <ImageView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:src="@android:drawable/ic_menu_sort_by_size"
-                        android:layout_alignParentEnd="true"
-                        app:tint="#FFFFFF" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/text_so"
-                        android:textSize="36sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:layout_above="@id/tvDesc1"
-                        android:layout_marginBottom="4dp" />
-                    <TextView
-                        android:id="@+id/tvDesc1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/stat_levels_completed"
-                        android:textColor="#FFFFFF"
-                        android:textSize="13sp"
-                        android:layout_alignParentBottom="true" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+                android:columnCount="2"
+                android:rowCount="2"
+                android:alignmentMode="alignMargins"
+                android:columnOrderPreserved="false">
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="2dp"
-                app:cardBackgroundColor="#9FA8DA">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:padding="16dp">
-                    <ImageView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:src="@android:drawable/ic_menu_recent_history"
-                        android:layout_alignParentEnd="true"
-                        app:tint="#FFFFFF" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/stat_since"
-                        android:textSize="24sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:layout_above="@id/tvDesc2"
-                        android:layout_marginBottom="4dp" />
-                    <TextView
-                        android:id="@+id/tvDesc2"
+                <!-- Card 1 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#A5D6A7">
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/default_date_stat"
-                        android:textColor="#FFFFFF"
-                        android:textSize="13sp"
-                        android:layout_alignParentBottom="true" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+                        <ImageView
+                            android:id="@+id/iv_icon_1"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@android:drawable/ic_menu_sort_by_size"
+                            android:alpha="0.6"
+                            app:tint="#FFFFFF"
+                            android:contentDescription="@null"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+                        <TextView
+                            android:id="@+id/tv_levels_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/text_so"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/stat_levels_completed"
+                            android:textSize="11sp"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintTop_toBottomOf="@id/tv_levels_value"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/iv_icon_1" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="2dp"
-                app:cardBackgroundColor="#4DD0E1">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:padding="16dp">
-                    <ImageView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:src="@android:drawable/ic_menu_help"
-                        android:layout_alignParentEnd="true"
-                        app:tint="#FFFFFF" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/stat_questions_value"
-                        android:textSize="36sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:layout_above="@id/tvDesc3"
-                        android:layout_marginBottom="4dp" />
-                    <TextView
-                        android:id="@+id/tvDesc3"
+                <!-- Card 2 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#9FA8DA">
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/stat_questions_answered"
-                        android:textColor="#FFFFFF"
-                        android:textSize="13sp"
-                        android:layout_alignParentBottom="true" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+                        <ImageView
+                            android:id="@+id/iv_icon_2"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@android:drawable/ic_menu_recent_history"
+                            android:alpha="0.6"
+                            app:tint="#FFFFFF"
+                            android:contentDescription="@null"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+                        <TextView
+                            android:id="@+id/tv_since_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/stat_since"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                        <TextView
+                            android:id="@+id/tv_since_value"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/default_date_stat"
+                            android:textSize="11sp"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintTop_toBottomOf="@id/tv_since_label"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/iv_icon_2" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_margin="8dp"
-                app:cardCornerRadius="16dp"
-                app:cardElevation="2dp"
-                app:cardBackgroundColor="#CE93D8">
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="130dp"
-                    android:padding="16dp">
-                    <ImageView
-                        android:layout_width="36dp"
-                        android:layout_height="36dp"
-                        android:src="@android:drawable/checkbox_on_background"
-                        android:layout_alignParentEnd="true"
-                        app:tint="#FFFFFF" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/percent_67"
-                        android:textSize="36sp"
-                        android:textStyle="bold"
-                        android:textColor="#FFFFFF"
-                        android:layout_above="@id/tvDesc4"
-                        android:layout_marginBottom="4dp" />
-                    <TextView
-                        android:id="@+id/tvDesc4"
+                <!-- Card 3 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#4DD0E1">
+                    <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/stat_correct_rate"
-                        android:textColor="#FFFFFF"
-                        android:textSize="13sp"
-                        android:layout_alignParentBottom="true" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+                        <ImageView
+                            android:id="@+id/iv_icon_3"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@android:drawable/ic_menu_help"
+                            android:alpha="0.6"
+                            app:tint="#FFFFFF"
+                            android:contentDescription="@null"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+                        <TextView
+                            android:id="@+id/tv_questions_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/stat_questions_value"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/stat_questions_answered"
+                            android:textSize="11sp"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintTop_toBottomOf="@id/tv_questions_value"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/iv_icon_3" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
 
-        </GridLayout>
+                <!-- Card 4 -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="0dp"
+                    app:cardBackgroundColor="#CE93D8">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="12dp">
+                        <ImageView
+                            android:id="@+id/iv_icon_4"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:src="@android:drawable/checkbox_on_background"
+                            android:alpha="0.6"
+                            app:tint="#FFFFFF"
+                            android:contentDescription="@null"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent" />
+                        <TextView
+                            android:id="@+id/tv_rate_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/percent_67"
+                            android:textSize="24sp"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/stat_correct_rate"
+                            android:textSize="11sp"
+                            android:textColor="#FFFFFF"
+                            app:layout_constraintTop_toBottomOf="@id/tv_rate_value"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/iv_icon_4" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+        </LinearLayout>
     </ScrollView>
+
+    <!-- Taskbar -->
+    <LinearLayout
+        android:id="@+id/bottom_taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="8dp"
+        android:elevation="8dp"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/hoso_taskbar"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hoso"
+                android:textSize="12sp"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/lichsu_taskbar"
+                android:alpha="0.5"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ls"
+                android:textSize="12sp"
+                android:textColor="#999999" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2">
+            <View
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_stats_bar" />
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:src="@drawable/home_taskbar"
+                android:contentDescription="@null" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/shop_taskbar"
+                android:alpha="0.5"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/shop"
+                android:textSize="12sp"
+                android:textColor="#999999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:baselineAligned="false">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@android:drawable/ic_menu_sort_by_size"
+                android:alpha="0.5"
+                android:contentDescription="@null" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu"
+                android:textSize="12sp"
+                android:textColor="#999999" />
+        </LinearLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
