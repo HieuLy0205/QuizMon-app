@@ -1,1 +1,1442 @@
-[]
+[
+  {
+    "id": 1,
+    "question": "Nước ta nằm ở vị trí:",
+    "options": [
+      "Rìa phía đông bán đảo Đông Dương",
+      "Trên bán đảo Trung Ấn",
+      "Trung tâm Châu Á",
+      "Cả A và B đều đúng"
+    ],
+    "correctIndex": 3,
+    "explanation": "Việt Nam nằm ở rìa phía đông của bán đảo Đông Dương, thuộc khu vực bán đảo Trung Ấn."
+  },
+  {
+    "id": 2,
+    "question": "Trên đất liền, lãnh thổ nước ta tiếp giáp với các quốc gia:",
+    "options": [
+      "Thái Lan, Lào, Mianma",
+      "Lào, Campuchia, Thái Lan",
+      "Trung Quốc, Lào, Campuchia",
+      "Trung Quốc, Thái Lan, Mianma"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lãnh thổ đất liền Việt Nam giáp với Trung Quốc ở phía Bắc, Lào và Campuchia ở phía Tây."
+  },
+  {
+    "id": 3,
+    "question": "Điểm cực Nam của nước ta thuộc tỉnh:",
+    "options": [
+      "Bạc Liêu",
+      "Cà Mau",
+      "Sóc Trăng",
+      "Kiên Giang"
+    ],
+    "correctIndex": 1,
+    "explanation": "Điểm cực Nam của Việt Nam nằm tại xã Đất Mũi, huyện Ngọc Hiển, tỉnh Cà Mau."
+  },
+  {
+    "id": 4,
+    "question": "Điểm cực Tây của nước ta thuộc tỉnh nào:",
+    "options": [
+      "Điện Biên",
+      "Lai Châu",
+      "Sơn La",
+      "Lào Cai"
+    ],
+    "correctIndex": 0,
+    "explanation": "Điểm cực Tây nằm tại A Pa Chải, xã Sín Thầu, huyện Mường Nhé, tỉnh Điện Biên."
+  },
+  {
+    "id": 5,
+    "question": "Nước ta nằm trong tọa độ địa lí (phần đất liền):",
+    "options": [
+      "23°23'B – 8°30'B và 102°10'Đ – 109°24'Đ",
+      "23°20'B – 8°30'B và 102°10'Đ – 109°24'Đ",
+      "23°23'B – 8°34'B và 102°10'Đ – 109°24'Đ",
+      "23°23'B – 8°30'B và 102°10'Đ – 109°20'Đ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Điểm cực Bắc là 23°23'B, cực Nam là 8°34'B, cực Tây là 102°10'Đ và cực Đông là 109°24'Đ."
+  },
+  {
+    "id": 6,
+    "question": "Trong các tỉnh (thành phố) sau, tỉnh (thành phố) nào không giáp biển:",
+    "options": [
+      "Cần Thơ",
+      "TP Hồ Chí Minh",
+      "Quảng Nam",
+      "Nghệ An"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cần Thơ là thành phố trực thuộc trung ương nằm ở vùng đồng bằng sông Cửu Long và không tiếp giáp biển."
+  },
+  {
+    "id": 7,
+    "question": "Vùng nội thủy ở nước ta được xác định là vùng:",
+    "options": [
+      "Tiếp giáp với đất liền",
+      "Phía trong đường cơ sở",
+      "Phía ngoài đường cơ sở",
+      "Vùng tiếp giáp với đất liền ở phía trong đường cơ sở"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nội thủy là vùng nước nằm phía trong đường cơ sở và tiếp giáp với bờ biển."
+  },
+  {
+    "id": 8,
+    "question": "Vùng có chiều rộng 200 hải lí tính từ đường cơ sở ra phía biển của nước ta là vùng:",
+    "options": [
+      "Lãnh hải",
+      "Tiếp giáp lãnh hải",
+      "Vùng đặc quyền về kinh tế",
+      "Thềm lục địa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vùng đặc quyền kinh tế là vùng biển rộng 200 hải lý tính từ đường cơ sở."
+  },
+  {
+    "id": 9,
+    "question": "Nền móng ban đầu của lãnh thổ Việt Nam được hình thành trong giai đoạn:",
+    "options": [
+      "Tiền Cambri",
+      "Tân kiến tạo",
+      "Trung sinh",
+      "Nguyên sinh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Giai đoạn Tiền Cambri là giai đoạn đầu tiên và kéo dài nhất trong lịch sử phát triển lãnh thổ."
+  },
+  {
+    "id": 10,
+    "question": "Lớp vỏ cảnh quan địa lí của nước ta còn rất nghèo nàn, đơn điệu ở giai đoạn:",
+    "options": [
+      "Giai đoạn Tiền Cambri",
+      "Giai đoạn Cổ kiến tạo",
+      "Giai đoạn Tân kiến tạo",
+      "Giai đoạn Tiền Cambri và Cổ kiến tạo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trong giai đoạn Tiền Cambri, sinh vật còn ở trình độ thấp, cảnh quan sơ khai."
+  },
+  {
+    "id": 11,
+    "question": "Giai đoạn Cổ kiến tạo ở nước ta bao gồm bao nhiêu chu kì kiến tạo lớn:",
+    "options": [
+      "2 chu kì",
+      "3 chu kì",
+      "4 chu kì",
+      "5 chu kì"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cổ kiến tạo bao gồm các chu kì: Calêđôni, Hecxini, Inđôxini và Kimêri."
+  },
+  {
+    "id": 12,
+    "question": "Tỉ lệ diện tích địa hình núi cao trên 2000m ở nước ta so với diện tích toàn bộ lãnh thổ chiếm khoảng:",
+    "options": [
+      "1%",
+      "3%",
+      "5%",
+      "8%"
+    ],
+    "correctIndex": 0,
+    "explanation": "Địa hình nước ta chủ yếu là đồi núi thấp, núi cao trên 2000m chỉ chiếm 1% diện tích."
+  },
+  {
+    "id": 13,
+    "question": "Đường cơ sở được xác định bởi các điểm chuẩn là:",
+    "options": [
+      "Các đảo ven bờ",
+      "Các mũi đất dọc bờ biển",
+      "Các đảo ven bờ hoặc các mũi đất dọc bờ biển",
+      "Nối các điểm nhô ra xa nhất của bờ biển và các đảo ven bờ"
+    ],
+    "correctIndex": 3,
+    "explanation": "Đường cơ sở dùng để tính chiều rộng lãnh hải Việt Nam là đường thẳng nối liền các điểm chuẩn trên bờ biển và các đảo ven bờ."
+  },
+  {
+    "id": 14,
+    "question": "Ở nước ta, vùng biển thuộc chủ quyền quốc gia trên biển gọi là:",
+    "options": [
+      "Vùng tiếp giáp lãnh hải",
+      "Lãnh hải",
+      "Vùng đặc quyền kinh tế",
+      "Vùng thềm lục địa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lãnh hải là vùng biển có chiều rộng 12 hải lý, được coi là lãnh thổ trên biển của quốc gia."
+  },
+  {
+    "id": 15,
+    "question": "Đặc điểm của biển Đông là:",
+    "options": [
+      "Biển lớn và kín với diện tích khoảng 3,447 triệu km2",
+      "Nguồn dự trữ ẩm dồi dào",
+      "Giàu tài nguyên khoáng sản và hải sản",
+      "Tất cả các ý trên"
+    ],
+    "correctIndex": 3,
+    "explanation": "Biển Đông có diện tích lớn, tương đối kín và có ảnh hưởng sâu sắc đến thiên nhiên đất liền."
+  },
+  {
+    "id": 16,
+    "question": "Lũ Tiểu mãn ở miền thuỷ văn Đông Trường Sơn thường xảy ra vào:",
+    "options": [
+      "Tháng 2, 3",
+      "Tháng 5, 6",
+      "Tháng 8, 9",
+      "Tháng 10, 11"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lũ tiểu mãn thường xuất hiện vào đầu mùa mưa, khoảng tháng 5 và tháng 6."
+  },
+  {
+    "id": 17,
+    "question": "Có nhiều dãy núi hướng vòng cung là đặc điểm địa hình của:",
+    "options": [
+      "Miền Đông Bắc",
+      "Miền Bắc Trung Bộ",
+      "Miền Nam Trung Bộ",
+      "Miền Tây Bắc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vùng núi Đông Bắc nổi bật với 4 cánh cung: Sông Gâm, Ngân Sơn, Bắc Sơn, Đông Triều."
+  },
+  {
+    "id": 18,
+    "question": "Đi dọc bờ biển nước ta trung bình cách bao nhiêu km thì gặp một cửa sông:",
+    "options": [
+      "15 km",
+      "20 km",
+      "25 km",
+      "30 km"
+    ],
+    "correctIndex": 1,
+    "explanation": "Do mạng lưới sông ngòi dày đặc, cứ trung bình 20km bờ biển lại có một cửa sông."
+  },
+  {
+    "id": 19,
+    "question": "Nguồn cung cấp nước cho sông ngòi nước ta chủ yếu từ:",
+    "options": [
+      "Nước mưa",
+      "Nước ngầm",
+      "Tuyết",
+      "Nước ngầm và nước mưa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Do nằm trong vùng nhiệt đới ẩm gió mùa, nguồn nước sông ngòi chủ yếu do nước mưa cung cấp."
+  },
+  {
+    "id": 20,
+    "question": "Nhận định nào là chính xác về dòng chảy sông ngòi nước ta:",
+    "options": [
+      "Lượng nước sinh ra chủ yếu trên lãnh thổ nước ta",
+      "Lượng nước sinh ra trong và ngoài lãnh thổ là như nhau",
+      "Lượng nước sinh ra chủ yếu từ các lưu vực nằm ngoài lãnh thổ (hơn 60%)",
+      "Lượng nước sinh ra trên lãnh thổ chiếm 45%"
+    ],
+    "correctIndex": 2,
+    "explanation": "Phần lớn lưu vực các sông lớn của nước ta (như sông Hồng, sông Mê Công) nằm ngoài lãnh thổ."
+  },
+  {
+    "id": 21,
+    "question": "Lưu lượng nước của sông ngòi nước ta tập trung chủ yếu ở:",
+    "options": [
+      "Hệ thống sông Hồng",
+      "Hệ thống sông Cửu Long",
+      "Hệ thống sông Đồng Nai",
+      "Hệ thống sông Cả"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hệ thống sông Cửu Long có lưu lượng nước lớn nhất nhờ lưu vực rộng lớn và nguồn nước từ thượng nguồn."
+  },
+  {
+    "id": 22,
+    "question": "Quá trình hình thành đất chủ yếu ở Việt Nam là:",
+    "options": [
+      "Quá trình rửa trôi",
+      "Quá trình hình thành đá ong",
+      "Quá trình feralit",
+      "Tất cả các ý trên"
+    ],
+    "correctIndex": 2,
+    "explanation": "Feralit là quá trình hình thành đất đặc trưng của vùng nhiệt đới ẩm gió mùa."
+  },
+  {
+    "id": 23,
+    "question": "Đi từ Tây sang Đông của miền Bắc nước ta lần lượt gặp các cánh cung núi:",
+    "options": [
+      "Sông Gâm, Ngân Sơn, Bắc Sơn, Đông Triều",
+      "Đông Triều, Bắc Sơn, Ngân Sơn, Sông Gâm",
+      "Ngân Sơn, Sông Gâm, Đông Triều, Bắc Sơn",
+      "Bắc Sơn, Đông Triều, Sông Gâm, Ngân Sơn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thứ tự từ Tây sang Đông của 4 cánh cung vùng Đông Bắc."
+  },
+  {
+    "id": 24,
+    "question": "Vùng núi có độ cao lớn nhất nước ta là:",
+    "options": [
+      "Vùng núi Tây Bắc",
+      "Vùng núi Trường Sơn Bắc",
+      "Vùng núi Trường Sơn Nam",
+      "Vùng núi Đông Bắc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vùng núi Tây Bắc có dãy Hoàng Liên Sơn với đỉnh Phan-xi-păng cao nhất cả nước."
+  },
+  {
+    "id": 25,
+    "question": "Các con sông kẹp giữa thung lũng của vùng núi Tây Bắc là:",
+    "options": [
+      "Sông Hồng, sông Lô, sông Đà",
+      "Sông Hồng, sông Đà, sông Mã",
+      "Sông Đà, sông Mã, sông Chu",
+      "Sông Lô, sông Mã, sông Chu"
+    ],
+    "correctIndex": 2,
+    "explanation": "Các sông này chảy theo hướng Tây Bắc - Đông Nam, xen kẽ giữa các dãy núi cao ở Tây Bắc."
+  },
+  {
+    "id": 26,
+    "question": "Khu vực có dải đồi trung du rộng nhất nước ta nằm ở:",
+    "options": [
+      "Bắc Trung Bộ",
+      "Đông Nam Bộ",
+      "Rìa đồng bằng sông Hồng",
+      "Tây Nguyên"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vùng đồi trung du Bắc Bộ là vùng chuyển tiếp giữa miền núi phía Bắc và đồng bằng sông Hồng."
+  },
+  {
+    "id": 27,
+    "question": "Vĩ tuyến nào được coi là ranh giới giữa hai miền khí hậu Bắc và Nam nước ta:",
+    "options": [
+      "12°B",
+      "14°B",
+      "16°B",
+      "18°B"
+    ],
+    "correctIndex": 2,
+    "explanation": "Dãy Bạch Mã (vĩ tuyến 16°B) là ranh giới tự nhiên ngăn cản gió mùa Đông Bắc, phân chia hai miền khí hậu."
+  },
+  {
+    "id": 28,
+    "question": "Đi từ Bắc vào Nam tương ứng là các hệ thống sông lớn:",
+    "options": [
+      "Sông Hồng, sông Cả, sông Trà Khúc, sông Đồng Nai, sông Đà Rằng",
+      "Sông Hồng, sông Cả, sông Trà Khúc, sông Đà Rằng, sông Đồng Nai",
+      "Sông Hồng, sông Trà Khúc, sông Cả, sông Đồng Nai, sông Đà Rằng",
+      "Sông Hồng, sông Trà Khúc, sông Cả, sông Đà Rằng, sông Đồng Nai"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thứ tự các hệ thống sông lớn phân bố dọc theo chiều dài đất nước."
+  },
+  {
+    "id": 29,
+    "question": "Nhóm đất chiếm diện tích lớn nhất trong hệ đất đồng bằng là:",
+    "options": [
+      "Nhóm đất phù sa",
+      "Nhóm đất cát",
+      "Nhóm đất phèn",
+      "Nhóm đất mặn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đất phù sa ngọt là tài nguyên quý giá nhất của các vùng đồng bằng."
+  },
+  {
+    "id": 30,
+    "question": "Nhóm đất than bùn tập trung chủ yếu ở vùng:",
+    "options": [
+      "Giao Thủy (Nam Định)",
+      "Cửa sông Tiền và sông Hậu",
+      "Đồng Tháp Mười và U Minh",
+      "Ven biển Nam Trung Bộ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đất than bùn hình thành tại các vùng trũng ngập nước lâu ngày dưới rừng tràm."
+  },
+  {
+    "id": 31,
+    "question": "Đặc điểm của đất lúa nước ở nước ta là:",
+    "options": [
+      "Đất nhẹ, ít bị glây",
+      "Đất nhẹ, tơi xốp",
+      "Đất nặng, bí, bị glây",
+      "Đất nặng nhưng ít bị glây"
+    ],
+    "correctIndex": 2,
+    "explanation": "Quá trình canh tác lúa nước lâu ngày gây ra hiện tượng yếm khí và glây hóa."
+  },
+  {
+    "id": 32,
+    "question": "Trên đai cao á nhiệt đới và ôn đới chủ yếu là các nhóm đất:",
+    "options": [
+      "Đất feralit có mùn và đất mùn alit",
+      "Nhóm đất xám và đất feralit nâu đỏ",
+      "Nhóm đất đen",
+      "Đất feralit có mùn và nhóm đất đen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi lên cao, nhiệt độ giảm, quá trình feralit yếu đi và tích lũy mùn tăng lên."
+  },
+  {
+    "id": 33,
+    "question": "Để đảm bảo vai trò bảo vệ môi trường, phải nâng độ che phủ rừng cả nước lên khoảng:",
+    "options": [
+      "30 – 35%",
+      "35 – 40%",
+      "40 – 45%",
+      "45 – 50%"
+    ],
+    "correctIndex": 3,
+    "explanation": "Đây là mục tiêu chiến lược để bảo vệ đất, nước và điều hòa khí hậu."
+  },
+  {
+    "id": 34,
+    "question": "Thứ tự vườn quốc gia từ Bắc vào Nam là:",
+    "options": [
+      "Ba Bể, Bến Én, Chư MoRay, Cát Tiên, Tràm Chim",
+      "Ba Bể, Bến Én, Tràm Chim, Cát Tiên, Chư MoRay",
+      "Bến Én, Ba Bể, Cát Tiên, Chư MoRay, Tràm Chim",
+      "Bến Én, Ba Bể, Cát Tiên, Tràm Chim, Chư MoRay"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sắp xếp theo vị trí địa lý từ các tỉnh phía Bắc xuống phía Nam."
+  },
+  {
+    "id": 35,
+    "question": "Trong số các loại đất phải cải tạo hiện nay, loại đất chiếm diện tích lớn nhất là:",
+    "options": [
+      "Đất phèn",
+      "Đất mặn và cát biển",
+      "Đất xám bạc màu",
+      "Đất glây và đất than mùn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đất phèn tập trung nhiều nhất ở Đồng bằng sông Cửu Long."
+  },
+  {
+    "id": 36,
+    "question": "Luật bảo vệ môi trường được Nhà nước ban hành vào thời gian:",
+    "options": [
+      "Tháng 12/1993",
+      "Tháng 1/1994",
+      "Tháng 12/1994",
+      "Tháng 1/1995"
+    ],
+    "correctIndex": 0,
+    "explanation": "Luật bảo vệ môi trường đầu tiên của Việt Nam được thông qua vào ngày 27/12/1993."
+  },
+  {
+    "id": 37,
+    "question": "Hiện tượng bùng nổ dân số nước ta bắt đầu từ:",
+    "options": [
+      "Cuối thế kỉ XX",
+      "Thập kỉ 30 của thế kỉ XX",
+      "Thập kỉ 40 của thế kỉ XX",
+      "Thập kỉ 50 của thế kỉ XX"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sau khi hòa bình lập lại ở miền Bắc, tỉ lệ gia tăng tự nhiên tăng rất nhanh."
+  },
+  {
+    "id": 38,
+    "question": "Tình trạng di dân tự do tới những vùng trung du miền núi gây hậu quả:",
+    "options": [
+      "Tăng sự mất cân đối tỉ số giới tính",
+      "Các vùng xuất cư thiếu hụt lao động",
+      "Làm tăng thêm khó khăn cho vấn đề việc làm",
+      "Tài nguyên và môi trường ở vùng nhập cư bị suy giảm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Di dân tự do thường đi kèm với phá rừng làm nương rẫy, gây hại cho môi trường."
+  },
+  {
+    "id": 39,
+    "question": "Nhận định nào chưa chính xác về chất lượng nguồn lao động nước ta:",
+    "options": [
+      "Cần cù, sáng tạo",
+      "Có kinh nghiệm sản xuất nông nghiệp",
+      "Có nhiều kinh nghiệm trong sản xuất công nghiệp hiện đại",
+      "Chất lượng lao động ngày càng được nâng cao"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lao động nước ta vẫn còn hạn chế về tác phong công nghiệp và kinh nghiệm làm việc với máy móc hiện đại."
+  },
+  {
+    "id": 40,
+    "question": "Đa dạng hóa các hoạt động sản xuất địa phương là phương hướng giải quyết việc làm ở:",
+    "options": [
+      "Vùng nông thôn",
+      "Vùng trung du",
+      "Vùng miền núi",
+      "Vùng đô thị"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhằm tận dụng thời gian nhàn rỗi trong nông nghiệp và tăng thu nhập cho nông dân."
+  },
+  {
+    "id": 41,
+    "question": "Chỉ số phát triển con người HDI là tổng hợp của ba yếu tố chính:",
+    "options": [
+      "GDP bình quân, chỉ số giáo dục, tuổi thọ trung bình",
+      "GDP, chỉ số giáo dục, tuổi thọ bình quân",
+      "Chỉ số giáo dục, tỉ suất chết, GDP bình quân",
+      "Tỉ lệ lao động kĩ thuật, GDP, tuổi thọ bình quân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đây là thước đo chuẩn quốc tế để đánh giá sự phát triển của một quốc gia."
+  },
+  {
+    "id": 42,
+    "question": "Ý nào sau đây không phải là đặc điểm của quá trình đô thị hoá:",
+    "options": [
+      "Dân cư thành thị có xu hướng tăng nhanh",
+      "Đời sống người dân thành thị được nâng cao",
+      "Dân cư tập trung vào các đô thị lớn",
+      "Phổ biến rộng rãi lối sống thành thị"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nâng cao đời sống là kết quả/mục tiêu, không phải là đặc điểm bản chất của quá trình đô thị hóa."
+  },
+  {
+    "id": 43,
+    "question": "Đô thị Việt Nam quy mô nhỏ, phân bố tản mạn đã gây ra hạn chế:",
+    "options": [
+      "Hạn chế khả năng đầu tư phát triển kinh tế",
+      "Quá trình phổ biến lối sống thành thị nhanh hơn",
+      "Sự thiếu đồng bộ về cơ sở vật chất",
+      "Tỉ lệ đô thị hoá giữa các vùng khác nhau"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gây khó khăn cho việc tập trung nguồn lực và xây dựng cơ sở hạ tầng hiện đại."
+  },
+  {
+    "id": 44,
+    "question": "Việc sử dụng lao động nhiều nhất hiện nay thuộc ngành:",
+    "options": [
+      "Nông – lâm – ngư nghiệp",
+      "Công nghiệp",
+      "Xây dựng",
+      "Dịch vụ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dù tỉ trọng đang giảm nhưng nông nghiệp vẫn là ngành thu hút nhiều lao động nhất."
+  },
+  {
+    "id": 45,
+    "question": "Khu vực có mật độ dân số cao nhất nước ta là:",
+    "options": [
+      "Đồng bằng sông Cửu Long",
+      "Đồng bằng sông Hồng",
+      "Duyên hải miền Trung",
+      "Đông Nam Bộ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đồng bằng sông Hồng có lịch sử khai thác lâu đời và thâm canh lúa nước."
+  },
+  {
+    "id": 46,
+    "question": "Tỉ suất tử vong trẻ dưới 1 tuổi ở nước ta giảm do:",
+    "options": [
+      "Đào tạo được nhiều bác sĩ",
+      "Chăm sóc sức khoẻ ban đầu tốt",
+      "Kết hợp đông tây y",
+      "Xây dựng nhiều bệnh viện"
+    ],
+    "correctIndex": 1,
+    "explanation": "Các chương trình tiêm chủng mở rộng và chăm sóc bà mẹ trẻ em đạt hiệu quả cao."
+  },
+  {
+    "id": 47,
+    "question": "Đặc điểm nổi bật nhất của nguồn lao động nước ta là:",
+    "options": [
+      "Dồi dào, sáng tạo, chất lượng cao",
+      "Đội ngũ trẻ, trình độ cao",
+      "Dồi dào, cần cù, kinh nghiệm sản xuất phong phú",
+      "Năng động, lao động có trình độ chiếm ưu thế"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đây là những ưu điểm truyền thống của nguồn lao động Việt Nam."
+  },
+  {
+    "id": 48,
+    "question": "Sự phát triển của mạng lưới giáo dục nước ta được biểu hiện ở:",
+    "options": [
+      "Có nhiều loại hình trường (quốc lập, dân lập...)",
+      "Hệ thống giáo dục hoàn chỉnh từ mầm non đến trên đại học",
+      "Nhiều tỉnh hoàn thành phổ cập trung học cơ sở",
+      "Tất cả các xã đều có trường tiểu học"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sự bao phủ và tính liên thông của các cấp học trong hệ thống quốc dân."
+  },
+  {
+    "id": 49,
+    "question": "Sau khi thống nhất đất nước, nền kinh tế nước ta xuất phát từ nền sản xuất:",
+    "options": [
+      "Công nghiệp",
+      "Công – nông nghiệp",
+      "Nông – công nghiệp",
+      "Nông nghiệp lạc hậu"
+    ],
+    "correctIndex": 3,
+    "explanation": "Việt Nam đi lên từ một nước nông nghiệp bị tàn phá nặng nề bởi chiến tranh."
+  },
+  {
+    "id": 50,
+    "question": "Công cuộc đổi mới nền kinh tế nước ta được bắt đầu từ năm:",
+    "options": [
+      "1976",
+      "1986",
+      "1987",
+      "1996"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đại hội Đảng lần thứ VI năm 1986 đã đề ra đường lối Đổi mới toàn diện."
+  },
+  {
+    "id": 51,
+    "question": "Thành tựu to lớn sau khi tiến hành công cuộc Đổi mới ở nước ta là:",
+    "options": [
+      "Ổn định chính trị - xã hội, kinh tế tăng trưởng cao",
+      "Cơ cấu ngành chuyển dịch theo hướng CNH-HĐH",
+      "Xoá đói giảm nghèo đạt kết quả tốt",
+      "Tất cả các ý trên"
+    ],
+    "correctIndex": 3,
+    "explanation": "Công cuộc Đổi mới mang lại sự thay đổi tích cực toàn diện trên mọi lĩnh vực đời sống."
+  },
+  {
+    "id": 52,
+    "question": "Cơ cấu kinh tế nước ta chuyển dịch theo hướng CNH-HĐH thể hiện ở việc:",
+    "options": [
+      "Nông nghiệp chiếm tỷ trọng cao nhất",
+      "Tỷ trọng nông nghiệp giảm, công nghiệp và dịch vụ tăng",
+      "Công nghiệp tăng mạnh, dịch vụ không tăng",
+      "Dịch vụ tăng nhanh nhất, công nghiệp tăng chậm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Xu hướng chung là giảm tỷ trọng khu vực I, tăng tỷ trọng khu vực II và III."
+  },
+  {
+    "id": 53,
+    "question": "Thành phần kinh tế giữ vai trò chủ đạo trong nền kinh tế quốc dân ở nước ta là:",
+    "options": [
+      "Kinh tế nhà nước",
+      "Kinh tế tập thể",
+      "Kinh tế cá thể",
+      "Kinh tế có vốn đầu tư nước ngoài"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kinh tế nhà nước nắm giữ các ngành then chốt, điều tiết và định hướng phát triển kinh tế."
+  },
+  {
+    "id": 54,
+    "question": "Trong các loại đất sau, loại đất nào KHÔNG nằm trong nhóm đất nông nghiệp:",
+    "options": [
+      "Đất vườn tạp",
+      "Đất chuyên dùng (xây dựng, giao thông...)",
+      "Mặt nước nuôi trồng thủy sản",
+      "Đất đồng cỏ chăn nuôi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đất chuyên dùng thuộc nhóm đất phi nông nghiệp."
+  },
+  {
+    "id": 55,
+    "question": "Bình quân đất tự nhiên trên đầu người của nước ta vào khoảng:",
+    "options": [
+      "1/3 thế giới",
+      "1/4 thế giới",
+      "1/5 thế giới",
+      "1/6 thế giới"
+    ],
+    "correctIndex": 3,
+    "explanation": "Do dân số đông và diện tích đất liền hạn chế, bình quân đất của Việt Nam rất thấp."
+  },
+  {
+    "id": 56,
+    "question": "Vùng trồng lúa An Khê nổi tiếng miền núi nước ta thuộc khu vực:",
+    "options": [
+      "Duyên hải miền Trung",
+      "Tây Bắc Bắc Bộ",
+      "Tây Nguyên",
+      "Nam Trung Bộ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cánh đồng An Khê nằm trên vùng cao nguyên thuộc tỉnh Gia Lai."
+  },
+  {
+    "id": 57,
+    "question": "Dừa là loại cây công nghiệp được trồng nhiều nhất ở vùng:",
+    "options": [
+      "Bắc Trung Bộ",
+      "Duyên hải Nam Trung Bộ",
+      "Đông Nam Bộ",
+      "Đồng bằng sông Cửu Long"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bến Tre (thuộc ĐBSCL) là 'xứ dừa' lớn nhất cả nước."
+  },
+  {
+    "id": 58,
+    "question": "Ở vùng Tây Nguyên, cây chè được trồng nhiều nhất ở tỉnh:",
+    "options": [
+      "Kon Tum",
+      "Gia Lai",
+      "Lâm Đồng",
+      "Đắk Lắk"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bảo Lộc (Lâm Đồng) là vùng chuyên canh chè nổi tiếng nhất Tây Nguyên."
+  },
+  {
+    "id": 59,
+    "question": "Đàn trâu ở nước ta được nuôi nhiều nhất ở vùng:",
+    "options": [
+      "Đồng bằng sông Hồng",
+      "Bắc Trung Bộ",
+      "Trung du và miền núi phía Bắc",
+      "Đồng bằng sông Cửu Long"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trâu khỏe, ưa khí hậu ẩm mát và chịu lạnh tốt, rất phù hợp với miền núi phía Bắc."
+  },
+  {
+    "id": 60,
+    "question": "Nghề nuôi cá tra, cá basa trong lồng bè trên sông Tiền, sông Hậu nổi tiếng ở tỉnh:",
+    "options": [
+      "Tiền Giang",
+      "An Giang",
+      "Hậu Giang",
+      "Kiên Giang"
+    ],
+    "correctIndex": 1,
+    "explanation": "An Giang là địa phương dẫn đầu cả nước về sản lượng và xuất khẩu cá tra, basa."
+  },
+  {
+    "id": 61,
+    "question": "Cây ăn quả, dược liệu, cây công nghiệp cận nhiệt và ôn đới là sản phẩm của vùng:",
+    "options": [
+      "Trung du và miền núi phía Bắc",
+      "Đồng bằng sông Hồng",
+      "Tây Nguyên",
+      "Tất cả các vùng trên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhờ địa hình núi cao và có mùa đông lạnh, vùng này có thế mạnh về các loài cây ưa mát."
+  },
+  {
+    "id": 62,
+    "question": "Vùng có giá trị sản xuất công nghiệp đứng đầu cả nước hiện nay là:",
+    "options": [
+      "Đồng bằng sông Hồng",
+      "Duyên hải miền Trung",
+      "Đông Nam Bộ",
+      "Đồng bằng sông Cửu Long"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đông Nam Bộ hội tụ mọi điều kiện thuận lợi nhất để phát triển công nghiệp."
+  },
+  {
+    "id": 63,
+    "question": "Quốc lộ 9 nổi tiếng trong kháng chiến chống Mỹ thuộc tỉnh:",
+    "options": [
+      "Quảng Bình",
+      "Quảng Trị",
+      "Thừa Thiên Huế",
+      "Nghệ An"
+    ],
+    "correctIndex": 1,
+    "explanation": "Quốc lộ 9 nối từ cảng Cửa Việt đến cửa khẩu Lao Bảo, thuộc tỉnh Quảng Trị."
+  },
+  {
+    "id": 64,
+    "question": "Loại hình nào sau đây KHÔNG thuộc mạng lưới thông tin liên lạc:",
+    "options": [
+      "Mạng điện thoại",
+      "Mạng phi điện thoại",
+      "Mạng truyền dẫn",
+      "Mạng kỹ thuật số"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kỹ thuật số là công nghệ truyền tin, không phải là một loại hình mạng lưới dịch vụ riêng biệt."
+  },
+  {
+    "id": 65,
+    "question": "Nước ta chính thức gia nhập WTO với tư cách là thành viên thứ:",
+    "options": [
+      "146",
+      "150",
+      "153",
+      "149"
+    ],
+    "correctIndex": 1,
+    "explanation": "Việt Nam chính thức trở thành thành viên thứ 150 của Tổ chức Thương mại Thế giới vào ngày 11/01/2007."
+  },
+  {
+    "id": 66,
+    "question": "Lễ hội Đua Bò là lễ hội truyền thống diễn ra hằng năm ở tỉnh:",
+    "options": [
+      "Sóc Trăng",
+      "Cần Thơ",
+      "An Giang",
+      "Trà Vinh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đua bò Bảy Núi là lễ hội đặc sắc của đồng bào Khmer tỉnh An Giang."
+  },
+  {
+    "id": 67,
+    "question": "Ưu thế tự nhiên nổi bật để phát triển cây chè ở miền núi phía Bắc so với Tây Nguyên là:",
+    "options": [
+      "Địa hình đồi núi là chủ yếu",
+      "Khí hậu nhiệt đới có mùa đông lạnh",
+      "Đất feralit màu mỡ",
+      "Lượng mưa ẩm dồi dào"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cây chè ưa khí hậu mát mẻ, mùa đông lạnh ở phía Bắc giúp chè có chất lượng thơm ngon đặc thù."
+  },
+  {
+    "id": 68,
+    "question": "Nhận định nào sau đây KHÔNG chính xác về đất ở Đồng bằng sông Hồng:",
+    "options": [
+      "Đất là tài nguyên có giá trị hàng đầu của vùng",
+      "Toàn bộ diện tích đồng bằng là đất phù sa màu mỡ",
+      "Diện tích đất phèn, mặn ít hơn nhiều so với ĐBSCL",
+      "Nhiều nơi đã xuất hiện đất bạc màu do canh tác"
+    ],
+    "correctIndex": 1,
+    "explanation": "ĐBSH còn có đất trong đê (không được bồi đắp thường xuyên) và đất ngoài đê, đất bạc màu..."
+  },
+  {
+    "id": 69,
+    "question": "Các ngành kinh tế biển quan trọng của Đồng bằng sông Hồng là:",
+    "options": [
+      "Giao thông vận tải, du lịch và nuôi trồng thủy sản",
+      "Làm muối, đánh bắt thủy sản",
+      "Khai thác khoáng sản, giao thông vận tải biển",
+      "Giao thông biển, du lịch biển và làm muối"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vùng có nhiều tiềm năng về cảng biển, bãi tắm đẹp và diện tích mặt nước bãi bồi ven biển."
+  },
+  {
+    "id": 70,
+    "question": "Thế mạnh nổi trội của ĐBSH về dân cư và nguồn lao động là:",
+    "options": [
+      "Lao động trình độ cao tập trung ở đô thị",
+      "Nguồn lao động trẻ đông đảo",
+      "Lao động đông, có truyền thống và trình độ kỹ thuật cao",
+      "Có số lượng lao động đông nhất cả nước"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đây là vùng có nguồn lao động dồi dào với kinh nghiệm thâm canh và kỹ thuật tốt nhất cả nước."
+  },
+  {
+    "id": 71,
+    "question": "Hai trung tâm kinh tế lớn nhất Đồng bằng sông Hồng hiện nay là:",
+    "options": [
+      "Hà Nội và Hải Dương",
+      "Hà Nội và Hải Phòng",
+      "Hải Phòng và Nam Định",
+      "Hà Nội và Hà Nam"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hà Nội là thủ đô, Hải Phòng là thành phố cảng quan trọng, tạo thành hai cực tăng trưởng của vùng."
+  },
+  {
+    "id": 72,
+    "question": "Loại cây trồng và vật nuôi phát triển nhất ở Đồng bằng sông Hồng là:",
+    "options": [
+      "Cây ăn quả và lợn",
+      "Lúa và trâu",
+      "Lúa và lợn",
+      "Cây ăn quả và trâu"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vùng là vựa lúa lớn thứ hai và có đàn lợn đông nhất cả nước nhờ nguồn thức ăn từ phụ phẩm nông nghiệp."
+  },
+  {
+    "id": 73,
+    "question": "Ranh giới tự nhiên giữa hai vùng Bắc Trung Bộ và Duyên hải Nam Trung Bộ là:",
+    "options": [
+      "Dãy Bạch Mã",
+      "Dãy Tam Điệp",
+      "Dãy Hoành Sơn",
+      "Dãy Kẻ Bàng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dãy Bạch Mã đâm ngang ra biển, tạo ranh giới tự nhiên giữa Thừa Thiên Huế và Đà Nẵng."
+  },
+  {
+    "id": 74,
+    "question": "Vườn quốc gia nào sau đây KHÔNG thuộc vùng Duyên hải miền Trung:",
+    "options": [
+      "Bến Én",
+      "Vũ Quang",
+      "Pù Mát",
+      "Cát Tiên"
+    ],
+    "correctIndex": 3,
+    "explanation": "Vườn quốc gia Cát Tiên nằm ở vùng Đông Nam Bộ (Lâm Đồng, Đồng Nai, Bình Phước)."
+  },
+  {
+    "id": 75,
+    "question": "Ở Duyên hải miền Trung, việc trồng rừng ven biển có tác dụng chính là:",
+    "options": [
+      "Điều hòa nguồn nước",
+      "Hạn chế tác hại của lũ",
+      "Chắn gió bão và sự di chuyển của các cồn cát",
+      "Chống xói mòn, rửa trôi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rừng phi lao ven biển cực kỳ quan trọng trong việc ngăn nạn 'cát bay, cát lấp' ở miền Trung."
+  },
+  {
+    "id": 76,
+    "question": "Đồng bằng có diện tích lớn nhất của Duyên hải miền Trung là:",
+    "options": [
+      "Thanh - Nghệ - Tĩnh",
+      "Phú Khánh",
+      "Nam - Ngãi - Định",
+      "Bình - Trị - Thiên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đồng bằng Thanh Hóa và Nghệ An là những đồng bằng ven biển rộng nhất ở khu vực này."
+  },
+  {
+    "id": 77,
+    "question": "Nạn cát bay ở Duyên hải miền Trung phổ biến nhất ở tỉnh:",
+    "options": [
+      "Quảng Bình",
+      "Thừa Thiên - Huế",
+      "Ninh Thuận",
+      "Bình Thuận"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quảng Bình là nơi có diện tích cồn cát trắng lớn và nạn cát lấn ruộng đồng diễn ra nghiêm trọng."
+  },
+  {
+    "id": 78,
+    "question": "Thế mạnh của vùng Bắc Trung Bộ là ngành chăn nuôi:",
+    "options": [
+      "Trâu",
+      "Bò",
+      "Lợn",
+      "Gia cầm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vùng đồi núi phía Tây Bắc Trung Bộ có điều kiện chăn nuôi trâu rất thuận lợi."
+  },
+  {
+    "id": 79,
+    "question": "Tài nguyên thiên nhiên đem lại giá trị kinh tế cao nhất ở Duyên hải Nam Trung Bộ là:",
+    "options": [
+      "Rừng",
+      "Đất",
+      "Khoáng sản",
+      "Biển (thủy sản, du lịch, muối...)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Biển là tiềm năng lớn nhất của vùng với nhiều bãi tôm bãi cá, cảng nước sâu và bãi tắm đẹp."
+  },
+  {
+    "id": 80,
+    "question": "Đỉnh núi có độ cao lớn nhất khu vực Tây Nguyên là:",
+    "options": [
+      "Ngọc Linh",
+      "Ngọc Krinh",
+      "Kon Ka Kinh",
+      "Chư Yang Sin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đỉnh Ngọc Linh cao 2598m, nằm ở khối núi phía Bắc Tây Nguyên."
+  },
+  {
+    "id": 81,
+    "question": "Quốc lộ huyết mạch nối Tây Nguyên với Đông Nam Bộ là:",
+    "options": [
+      "Quốc lộ 26",
+      "Quốc lộ 51",
+      "Quốc lộ 14",
+      "Quốc lộ 27"
+    ],
+    "correctIndex": 2,
+    "explanation": "QL14 chạy dọc theo các cao nguyên Tây Nguyên xuống Đông Nam Bộ."
+  },
+  {
+    "id": 82,
+    "question": "Nét tương đồng về thế mạnh công nghiệp của Tây Nguyên và miền núi phía Bắc là:",
+    "options": [
+      "Khai thác khoáng sản",
+      "Khai thác lâm sản",
+      "Khai thác thủy điện",
+      "Nguồn lao động tay nghề cao"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cả hai vùng đều có địa hình dốc và trữ lượng nước sông ngòi lớn, rất thuận lợi làm thủy điện."
+  },
+  {
+    "id": 83,
+    "question": "Nhân tố ảnh hưởng nhất đến sự phân bố cây cà phê ở Tây Nguyên là:",
+    "options": [
+      "Khí hậu nhiệt đới",
+      "Đất đỏ badan",
+      "Kinh nghiệm sản xuất",
+      "Địa hình bằng phẳng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đất đỏ badan có tầng phong hóa sâu, giàu dinh dưỡng, rất thích hợp với cây cà phê."
+  },
+  {
+    "id": 84,
+    "question": "Tỉnh nằm ở ngã ba biên giới Việt Nam – Lào – Campuchia là:",
+    "options": [
+      "Kon Tum",
+      "Gia Lai",
+      "Đắk Lắk",
+      "Đắk Nông"
+    ],
+    "correctIndex": 0,
+    "explanation": "Huyện Ngọc Hồi, tỉnh Kon Tum là nơi có ngã ba biên giới Đông Dương."
+  },
+  {
+    "id": 85,
+    "question": "Cây công nghiệp lâu năm có diện tích đứng hàng thứ hai ở Tây Nguyên là:",
+    "options": [
+      "Chè",
+      "Cao su",
+      "Hồ tiêu",
+      "Điều"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sau cà phê, cao su là cây công nghiệp quan trọng thứ hai được trồng trên diện rộng ở Tây Nguyên."
+  },
+  {
+    "id": 86,
+    "question": "Đông Nam Bộ là vùng thu hút vốn đầu tư nước ngoài nhiều nhất do:",
+    "options": [
+      "Tài nguyên dồi dào, lao động giỏi",
+      "Chính sách kinh tế thông thoáng",
+      "Cơ sở hạ tầng tương đối hoàn thiện",
+      "Tất cả các ý trên"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sự kết hợp giữa vị trí, lao động, hạ tầng và chính sách giúp vùng dẫn đầu về thu hút FDI."
+  },
+  {
+    "id": 87,
+    "question": "Đông Nam Bộ và Tây Nguyên có thế mạnh tương đồng về:",
+    "options": [
+      "Khai thác khoáng sản",
+      "Chăn nuôi gia súc lớn",
+      "Trồng cây công nghiệp lâu năm",
+      "Khai thác lâm sản"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cả hai vùng đều có diện tích đất badan/đất xám rộng lớn để phát triển vùng chuyên canh cây công nghiệp."
+  },
+  {
+    "id": 88,
+    "question": "Đường dây tải điện 500KV Bắc Nam chạy từ Hòa Bình đến:",
+    "options": [
+      "Tân An",
+      "Trạm biến áp Phú Lâm (TP.HCM)",
+      "Thủ Đức",
+      "Phú Mỹ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trạm biến áp Phú Lâm là điểm cuối của đường dây 500KV mạch 1."
+  },
+  {
+    "id": 89,
+    "question": "Cây trồng quan trọng hàng đầu trong các cây công nghiệp ngắn ngày ở Đông Nam Bộ là:",
+    "options": [
+      "Mía, lạc",
+      "Đậu tương, mía",
+      "Lạc, đậu tương",
+      "Thuốc lá, mía"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mía và đậu tương là hai cây công nghiệp ngắn ngày chủ lực của vùng Đông Nam Bộ."
+  },
+  {
+    "id": 90,
+    "question": "Đồng bằng sông Cửu Long bao gồm các bộ phận:",
+    "options": [
+      "Phần đất phù sa sông Tiền bồi đắp",
+      "Phần đất phù sa sông Hậu bồi đắp",
+      "Phần đất rìa nằm ngoài tác động trực tiếp của hai sông",
+      "Tất cả các bộ phận trên"
+    ],
+    "correctIndex": 3,
+    "explanation": "ĐBSCL là một hệ thống hạ lưu châu thổ rộng lớn với nhiều nhóm đất khác nhau."
+  },
+  {
+    "id": 91,
+    "question": "Nhóm đất phèn ở ĐBSCL phân bố chủ yếu ở khu vực:",
+    "options": [
+      "Đồng Tháp Mười, vùng trũng Cà Mau, Kiên Giang",
+      "Dọc sông Tiền, sông Hậu",
+      "Ven biển Đông",
+      "Vùng trũng trung tâm bán đảo Cà Mau"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đất phèn tập trung ở các vùng trũng chưa được thoát phèn triệt để."
+  },
+  {
+    "id": 92,
+    "question": "Hệ sinh thái rừng phổ biến ở Đồng bằng sông Cửu Long là:",
+    "options": [
+      "Rừng ngập mặn và rừng tràm",
+      "Rừng nhiệt đới rụng lá và rừng ngập mặn",
+      "Rừng ngập mặn và rừng thưa",
+      "Rừng khộp và rừng tràm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rừng ngập mặn ven biển và rừng tràm ở vùng đất phèn là hai đặc trưng của ĐBSCL."
+  },
+  {
+    "id": 93,
+    "question": "Các loại khoáng sản chủ yếu ở ĐBSCL hiện đang được khai thác là:",
+    "options": [
+      "Đá vôi và than bùn",
+      "Đá vôi và than nâu",
+      "Apatit và than bùn",
+      "Dầu mỏ và than bùn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đá vôi (Hà Tiên) và than bùn (U Minh) là hai khoáng sản có giá trị kinh tế nhất vùng."
+  },
+  {
+    "id": 94,
+    "question": "Tác dụng của mạng lưới sông ngòi, kênh rạch chằng chịt ở ĐBSCL là:",
+    "options": [
+      "Tạo tuyến đường thủy tự nhiên",
+      "Phát triển thủy sản nước ngọt",
+      "Phục vụ tưới tiêu, thau chua rửa mặn",
+      "Tất cả các ý trên"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hệ thống kênh rạch là mạch máu giao thông và là nền tảng cho sản xuất nông nghiệp vùng này."
+  },
+  {
+    "id": 95,
+    "question": "So với ĐBSH, thuận lợi cơ bản trong đánh bắt thủy sản ở ĐBSCL là:",
+    "options": [
+      "Có nguồn thủy sản rất phong phú (ngư trường lớn)",
+      "Có một mùa lũ trong năm",
+      "Người dân có kinh nghiệm lâu đời",
+      "Công nghiệp chế biến phát triển hơn"
+    ],
+    "correctIndex": 0,
+    "explanation": "ĐBSCL gần các ngư trường trọng điểm phía Nam với trữ lượng hải sản rất lớn."
+  },
+  {
+    "id": 96,
+    "question": "Nhiệm vụ hàng đầu để khai thác tốt tài nguyên và đẩy mạnh sản xuất ở ĐBSCL là:",
+    "options": [
+      "Giải quyết tốt vấn đề thủy lợi",
+      "Phát triển công nghiệp chế biến",
+      "Trồng và bảo vệ rừng",
+      "Hoàn thiện hệ thống giao thông"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thủy lợi là chìa khóa để cải tạo đất phèn, mặn và cung cấp nước cho canh tác mùa khô."
+  },
+  {
+    "id": 97,
+    "question": "Việt Nam gắn liền với lục địa và đại dương nào sau đây:",
+    "options": [
+      "Á và Ấn Độ Dương",
+      "Á và Thái Bình Dương",
+      "Á – Âu và Thái Bình Dương, Ấn Độ Dương",
+      "Á – Âu và Thái Bình Dương"
+    ],
+    "correctIndex": 3,
+    "explanation": "Việt Nam nằm ở rìa đông của lục địa Á-Âu, tiếp giáp với Thái Bình Dương."
+  },
+  {
+    "id": 98,
+    "question": "Việt Nam có chung biên giới cả trên đất liền và trên biển với:",
+    "options": [
+      "Trung Quốc, Lào",
+      "Trung Quốc, Thái Lan",
+      "Campuchia, Trung Quốc",
+      "Campuchia, Thái Lan"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lào là nước không giáp biển, Thái Lan chỉ chung biên giới biển với Việt Nam."
+  },
+  {
+    "id": 99,
+    "question": "Đi từ Bắc vào Nam, phần đất liền nước ta kéo dài khoảng:",
+    "options": [
+      "12 vĩ độ",
+      "15 vĩ độ",
+      "17 vĩ độ",
+      "18 vĩ độ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khoảng cách từ cực Bắc (Lũng Cú) đến cực Nam (Đất Mũi) tương đương 15 vĩ độ."
+  },
+  {
+    "id": 100,
+    "question": "Đường bờ biển nước ta kéo dài từ Móng Cái đến Hà Tiên khoảng:",
+    "options": [
+      "3200km",
+      "3260km",
+      "2300km",
+      "2360km"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đường bờ biển Việt Nam có hình chữ S đặc trưng, dài 3260 km."
+  },
+  {
+    "id": 101,
+    "question": "Quốc gia có đường biên giới với Việt Nam trên đất liền dài nhất là:",
+    "options": [
+      "Trung Quốc",
+      "Campuchia",
+      "Lào",
+      "Tất cả đều sai"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đường biên giới đất liền Việt Nam - Lào dài nhất (khoảng 2100 km)."
+  },
+  {
+    "id": 102,
+    "question": "Đi từ Bắc vào Nam của nước ta, có các cửa khẩu tương ứng là:",
+    "options": [
+      "Tân Thanh, Cầu Treo, Mộc Bài, Xà Xía",
+      "Tân Thanh, Xà Xía, Cầu Treo, Mộc Bài",
+      "Tân Thanh, Cầu Treo, Xà Xía, Mộc Bài",
+      "Cầu Treo, Mộc Bài, Tân Thanh, Xà Xía"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sắp xếp theo vị trí địa lý từ Bắc xuống Nam (Lạng Sơn -> Hà Tĩnh -> Tây Ninh -> Kiên Giang)."
+  },
+  {
+    "id": 103,
+    "question": "Đường cơ sở ở nước ta được xác định là đường:",
+    "options": [
+      "Tính từ mực nước lên xuống trung bình của thuỷ triều",
+      "Tính từ mép nước thuỷ triều đến độ sâu 10m",
+      "Rộng 20 hải lí tính từ đường bờ biển trở ra",
+      "Nối các mũi đất xa nhất với các đảo ven bờ"
+    ],
+    "correctIndex": 3,
+    "explanation": "Đường cơ sở là đường gãy khúc nối các điểm chuẩn ven bờ và các đảo."
+  },
+  {
+    "id": 104,
+    "question": "Vùng biển có quyền thực hiện các biện pháp an ninh, kiểm soát thuế quan, y tế... là vùng:",
+    "options": [
+      "Lãnh hải",
+      "Tiếp giáp lãnh hải",
+      "Vùng đặc quyền kinh tế",
+      "Thềm lục địa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vùng tiếp giáp lãnh hải là vùng biển quốc gia thực hiện quyền tài phán và kiểm soát về an ninh, y tế."
+  },
+  {
+    "id": 105,
+    "question": "Đảo có diện tích lớn nhất nước ta là:",
+    "options": [
+      "Cái Bầu",
+      "Cồn Cỏ",
+      "Phú Quý",
+      "Phú Quốc"
+    ],
+    "correctIndex": 3,
+    "explanation": "Phú Quốc là đảo lớn nhất Việt Nam, thuộc tỉnh Kiên Giang."
+  },
+  {
+    "id": 106,
+    "question": "Vị trí địa lí đã quy định đặc điểm cơ bản của thiên nhiên nước ta là:",
+    "options": [
+      "Nhiệt đới ẩm",
+      "Nhiệt đới khô",
+      "Nhiệt đới gió mùa",
+      "Nhiệt đới ẩm gió mùa"
+    ],
+    "correctIndex": 3,
+    "explanation": "Nhờ vị trí tiếp giáp biển và trong khu vực gió mùa, thiên nhiên nước ta không bị khô hạn như các nước cùng vĩ độ."
+  },
+  {
+    "id": 107,
+    "question": "Sự phân hoá về mặt không gian của thiên nhiên Việt Nam thể hiện qua:",
+    "options": [
+      "Phân hoá theo vĩ độ",
+      "Phân hoá theo kinh độ (Đông - Tây)",
+      "Phân hoá theo đai cao",
+      "Tất cả đều đúng"
+    ],
+    "correctIndex": 3,
+    "explanation": "Thiên nhiên nước ta phân hóa đa dạng theo mọi chiều không gian."
+  },
+  {
+    "id": 108,
+    "question": "Lịch sử phát triển tự nhiên Việt Nam diễn ra phức tạp vì lãnh thổ nằm ở:",
+    "options": [
+      "Trong vành đai nội chí tuyến",
+      "Nơi gặp gỡ của nhiều hệ thống hoàn lưu",
+      "Nơi tiếp giáp của nhiều đơn vị kiến tạo lớn",
+      "Rìa phía Đông bán đảo Đông Dương"
+    ],
+    "correctIndex": 2,
+    "explanation": "Việt Nam nằm ở nơi giao nhau giữa các vành đai sinh khoáng và các mảng kiến tạo lớn."
+  },
+  {
+    "id": 109,
+    "question": "Hướng núi chính của miền Bắc nước ta được hình thành từ giai đoạn:",
+    "options": [
+      "Tiền Cambri",
+      "Cổ kiến tạo",
+      "Tân kiến tạo",
+      "Cổ kiến tạo và Tân kiến tạo"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bộ khung địa hình với các hướng núi chính (Tây Bắc - Đông Nam và vòng cung) hình thành chủ yếu trong Cổ kiến tạo."
+  },
+  {
+    "id": 110,
+    "question": "Trong giai đoạn tiền Cambri, lãnh thổ Việt Nam chủ yếu là:",
+    "options": [
+      "Lục địa",
+      "Đại dương",
+      "Biển chuyển từ vỏ đại dương sang vỏ lục địa",
+      "Biển chuyển từ vỏ lục địa sang vỏ đại dương"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đây là giai đoạn hình thành những mảng nền móng đầu tiên của vỏ lục địa."
+  },
+  {
+    "id": 111,
+    "question": "Vai trò của hoạt động kiến tạo giai đoạn tiền Cambri thể hiện ở việc:",
+    "options": [
+      "Làm sinh vật phong phú",
+      "Thiên nhiên phân hoá phức tạp",
+      "Tạo nên những nền móng cơ sở ban đầu",
+      "Làm khoáng sản phong phú"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tiền Cambri hình thành các mảng nền nguyên thủy (như khối Kon Tum, Hoàng Liên Sơn)."
+  },
+  {
+    "id": 112,
+    "question": "Chu kì kiến tạo dài nhất trong giai đoạn Cổ kiến tạo là:",
+    "options": [
+      "Calêđôni",
+      "Hecxini",
+      "Inđôxini",
+      "Kimêri"
+    ],
+    "correctIndex": 0,
+    "explanation": "Calêđôni là chu kì mở đầu và kéo dài nhất của đại Cổ sinh."
+  },
+  {
+    "id": 113,
+    "question": "Chu kì kiến tạo ngắn nhất trong giai đoạn Cổ kiến tạo là:",
+    "options": [
+      "Calêđôni",
+      "Hecxini",
+      "Inđôxini",
+      "Kimêri"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kimêri là chu kì kiến tạo cuối cùng của giai đoạn này."
+  },
+  {
+    "id": 114,
+    "question": "Địa hình núi cao của nước ta phân bố chủ yếu ở khu vực:",
+    "options": [
+      "Đông Bắc",
+      "Tây Bắc",
+      "Bắc Trung Bộ",
+      "Tây Nguyên"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tây Bắc có địa hình núi cao đồ sộ nhất với dãy Hoàng Liên Sơn."
+  },
+  {
+    "id": 115,
+    "question": "Địa hình đồi núi nước ta có nhiều độ cao khác nhau là do:",
+    "options": [
+      "Kết quả của nhiều chu kì kiến tạo trong Tân kiến tạo",
+      "Ngoại lực làm cắt xẻ các bề mặt địa hình",
+      "Vận động tạo núi Anpi yếu",
+      "Giai đoạn tiền Cambri hình thành bộ phận nhỏ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tân kiến tạo nâng lên không đều và diễn ra theo nhiều đợt tạo nên các bậc địa hình."
+  },
+  {
+    "id": 116,
+    "question": "Những khối núi cao trên 2000m đã:",
+    "options": [
+      "Phá vỡ cảnh quan nhiệt đới",
+      "Làm thay đổi cảnh quan nhiệt đới",
+      "Tác động đến cảnh quan nhiệt đới",
+      "Làm phong phú cảnh quan nhiệt đới"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ở độ cao trên 2000m, tính chất nhiệt đới không còn, chuyển sang cảnh quan ôn đới núi cao."
+  },
+  {
+    "id": 117,
+    "question": "Đi từ Bắc vào Nam trên lãnh thổ nước ta, lần lượt qua các đèo:",
+    "options": [
+      "Đèo Ngang, đèo Hải Vân, đèo Cả, đèo Cù Mông",
+      "Đèo Ngang, đèo Cù Mông, đèo Hải Vân, đèo Cả",
+      "Đèo Ngang, đèo Hải Vân, đèo Cù Mông, đèo Cả",
+      "Đèo Ngang, đèo Cả, đèo Cù Mông, đèo Hải Vân"
+    ],
+    "correctIndex": 2,
+    "explanation": "Thứ tự từ Bắc vào Nam: Đèo Ngang (Hà Tĩnh-Quảng Bình) -> Hải Vân (Huế-Đà Nẵng) -> Cù Mông (Bình Định-Phú Yên) -> Cả (Phú Yên-Khánh Hòa)."
+  },
+  {
+    "id": 118,
+    "question": "Hai vịnh có diện tích lớn nhất của nước ta là:",
+    "options": [
+      "Vịnh Bắc Bộ và vịnh Văn Phong",
+      "Vịnh Bắc Bộ và vịnh Cam Ranh",
+      "Vịnh Bắc Bộ và vịnh Thái Lan",
+      "Vịnh Thái Lan và vịnh Văn Phong"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vịnh Bắc Bộ ở phía Bắc và vịnh Thái Lan ở phía Tây Nam là hai vịnh lớn nhất."
+  },
+  {
+    "id": 119,
+    "question": "Nơi có thềm lục địa hẹp nhất nước ta thuộc vùng biển của khu vực:",
+    "options": [
+      "Bắc Bộ",
+      "Bắc Trung Bộ",
+      "Nam Trung Bộ",
+      "Nam Bộ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vùng biển Nam Trung Bộ có địa hình núi ăn sát ra biển nên thềm lục địa rất hẹp và sâu."
+  },
+  {
+    "id": 120,
+    "question": "Vùng biển có thềm lục địa rộng nhất nước ta là khu vực:",
+    "options": [
+      "Bắc Bộ và Nam Trung Bộ",
+      "Bắc Trung Bộ và Nam Bộ",
+      "Bắc Bộ và Nam Bộ",
+      "Nam Trung Bộ và Nam Bộ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vùng biển Bắc Bộ và Nam Bộ có thềm lục địa rộng nông, tương ứng với hai đồng bằng lớn."
+  }
+]

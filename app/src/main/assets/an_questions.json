@@ -1,1 +1,957 @@
-[]
+[
+  {
+    "id": 1,
+    "question": "Yếu tố nào quyết định một bài hát trở thành xu hướng (viral) trên mạng xã hội hiện nay?",
+    "options": [
+      "Giai điệu dễ nhớ",
+      "Vũ đạo bắt trend",
+      "Sự lan truyền trên nền tảng số",
+      "Tất cả các yếu tố trên"
+    ],
+    "correctIndex": 3,
+    "explanation": "Một bài hát viral thường cần kết hợp nhiều yếu tố như giai điệu, vũ đạo và sự lan truyền trên nền tảng số."
+  },
+  {
+    "id": 2,
+    "question": "Nền tảng nào phổ biến nhất hiện nay giúp bài hát lan truyền nhanh?",
+    "options": [
+      "Radio",
+      "TikTok",
+      "Báo giấy",
+      "CD truyền thống"
+    ],
+    "correctIndex": 1,
+    "explanation": "TikTok là nền tảng chính giúp nhiều bài hát trở nên nổi tiếng nhanh chóng."
+  },
+  {
+    "id": 3,
+    "question": "Thuật ngữ “streaming” trong âm nhạc có nghĩa là gì?",
+    "options": [
+      "Tải nhạc về máy",
+      "Nghe nhạc trực tuyến",
+      "Ghi âm bài hát",
+      "Biểu diễn trực tiếp"
+    ],
+    "correctIndex": 1,
+    "explanation": "Streaming là việc nghe nhạc trực tuyến mà không cần tải về."
+  },
+  {
+    "id": 4,
+    "question": "Yếu tố nào giúp một bài hát dễ được replay nhiều lần?",
+    "options": [
+      "Lời khó hiểu",
+      "Giai điệu bắt tai",
+      "Thời lượng dài",
+      "Không có cao trào"
+    ],
+    "correctIndex": 1,
+    "explanation": "Giai điệu bắt tai khiến người nghe muốn nghe lại nhiều lần."
+  },
+  {
+    "id": 5,
+    "question": "MV (Music Video) có vai trò gì trong việc quảng bá bài hát?",
+    "options": [
+      "Không quan trọng",
+      "Chỉ để minh họa",
+      "Giúp tăng độ nhận diện",
+      "Chỉ dành cho nghệ sĩ lớn"
+    ],
+    "correctIndex": 2,
+    "explanation": "MV giúp bài hát tiếp cận khán giả rộng hơn và tăng độ nhận diện."
+  },
+  {
+    "id": 6,
+    "question": "Thể loại nhạc nào đang phổ biến trong giới trẻ hiện nay?",
+    "options": [
+      "Classical",
+      "EDM, Pop",
+      "Opera",
+      "Nhạc cung đình"
+    ],
+    "correctIndex": 1,
+    "explanation": "EDM và Pop là những thể loại phổ biến với giới trẻ hiện nay."
+  },
+  {
+    "id": 7,
+    "question": "“Hook” trong một bài hát là gì?",
+    "options": [
+      "Phần mở đầu",
+      "Phần điệp khúc dễ nhớ",
+      "Phần kết thúc",
+      "Phần nhạc nền"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hook là đoạn gây ấn tượng mạnh, thường là điệp khúc."
+  },
+  {
+    "id": 8,
+    "question": "Remix trong âm nhạc là gì?",
+    "options": [
+      "Viết lại lời bài hát",
+      "Biểu diễn lại trực tiếp",
+      "Phối lại bài hát",
+      "Thu âm lại từ đầu"
+    ],
+    "correctIndex": 2,
+    "explanation": "Remix là việc phối lại bài hát với phong cách mới."
+  },
+  {
+    "id": 9,
+    "question": "Một bài hát có tempo nhanh thường mang lại cảm giác gì?",
+    "options": [
+      "Buồn",
+      "Sôi động",
+      "U tối",
+      "Tĩnh lặng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tempo nhanh thường tạo cảm giác sôi động và năng lượng."
+  },
+  {
+    "id": 10,
+    "question": "Yếu tố nào giúp ca sĩ tạo dấu ấn riêng?",
+    "options": [
+      "Giọng hát",
+      "Phong cách biểu diễn",
+      "Hình ảnh cá nhân",
+      "Tất cả các yếu tố trên"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tất cả các yếu tố đều góp phần tạo dấu ấn riêng cho ca sĩ."
+  },
+  {
+    "id": 11,
+    "question": "Cover bài hát nghĩa là gì?",
+    "options": [
+      "Sáng tác mới",
+      "Hát lại bài của người khác",
+      "Phối nhạc",
+      "Quay MV"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cover là hát lại bài hát đã có sẵn."
+  },
+  {
+    "id": 12,
+    "question": "Auto-tune dùng để làm gì?",
+    "options": [
+      "Tăng âm lượng",
+      "Chỉnh sửa cao độ giọng hát",
+      "Tạo beat",
+      "Ghi âm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Auto-tune giúp chỉnh cao độ giọng hát."
+  },
+  {
+    "id": 13,
+    "question": "Playlist trong ứng dụng nghe nhạc là gì?",
+    "options": [
+      "Danh sách video",
+      "Danh sách bài hát",
+      "Danh sách nghệ sĩ",
+      "Danh sách album"
+    ],
+    "correctIndex": 1,
+    "explanation": "Playlist là danh sách các bài hát được sắp xếp."
+  },
+  {
+    "id": 14,
+    "question": "Album là gì?",
+    "options": [
+      "Một bài hát",
+      "Tập hợp nhiều bài hát",
+      "Một MV",
+      "Một buổi diễn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Album là tập hợp nhiều bài hát phát hành cùng lúc."
+  },
+  {
+    "id": 15,
+    "question": "Single trong âm nhạc là gì?",
+    "options": [
+      "Một bài hát lẻ",
+      "Album lớn",
+      "MV đặc biệt",
+      "Liveshow"
+    ],
+    "correctIndex": 0,
+    "explanation": "Single là một bài hát được phát hành riêng lẻ."
+  },
+  {
+    "id": 16,
+    "question": "Yếu tố nào giúp bài hát dễ viral trên TikTok?",
+    "options": [
+      "Đoạn nhạc ngắn dễ nhớ",
+      "Vũ đạo đơn giản",
+      "Hiệu ứng trend",
+      "Tất cả các yếu tố trên"
+    ],
+    "correctIndex": 3,
+    "explanation": "Các yếu tố này kết hợp giúp bài hát viral."
+  },
+  {
+    "id": 17,
+    "question": "Beat trong âm nhạc là gì?",
+    "options": [
+      "Giai điệu chính",
+      "Nhịp nền",
+      "Lời bài hát",
+      "Giọng hát"
+    ],
+    "correctIndex": 1,
+    "explanation": "Beat là phần nhịp nền của bài hát."
+  },
+  {
+    "id": 18,
+    "question": "Producer trong âm nhạc có vai trò gì?",
+    "options": [
+      "Hát chính",
+      "Sáng tác lời",
+      "Sản xuất và phối nhạc",
+      "Quay MV"
+    ],
+    "correctIndex": 2,
+    "explanation": "Producer chịu trách nhiệm sản xuất và phối nhạc."
+  },
+  {
+    "id": 19,
+    "question": "Live performance là gì?",
+    "options": [
+      "Biểu diễn trực tiếp",
+      "Thu âm",
+      "Phát hành online",
+      "Mix nhạc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Live performance là biểu diễn trực tiếp trước khán giả."
+  },
+  {
+    "id": 20,
+    "question": "Ca khúc ballad thường mang đặc điểm gì?",
+    "options": [
+      "Nhanh, mạnh",
+      "Nhẹ nhàng, tình cảm",
+      "Không có lời",
+      "Chỉ dùng nhạc cụ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ballad thường nhẹ nhàng và giàu cảm xúc."
+  },
+  {
+    "id": 21,
+    "question": "Chart âm nhạc dùng để làm gì?",
+    "options": [
+      "Xếp hạng bài hát",
+      "Tạo nhạc",
+      "Ghi âm",
+      "Biểu diễn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chart dùng để xếp hạng mức độ phổ biến của bài hát."
+  },
+  {
+    "id": 22,
+    "question": "Fanbase trong âm nhạc là gì?",
+    "options": [
+      "Nhóm sản xuất",
+      "Người hâm mộ",
+      "Nhạc cụ",
+      "Album"
+    ],
+    "correctIndex": 1,
+    "explanation": "Fanbase là cộng đồng người hâm mộ của nghệ sĩ."
+  },
+  {
+    "id": 23,
+    "question": "Yếu tố nào giúp một bài hát tồn tại lâu dài?",
+    "options": [
+      "Chất lượng âm nhạc",
+      "Ý nghĩa lời bài hát",
+      "Sự đồng cảm của người nghe",
+      "Tất cả các yếu tố trên"
+    ],
+    "correctIndex": 3,
+    "explanation": "Một bài hát bền vững cần hội tụ nhiều yếu tố."
+  },
+    {
+      "id": 24,
+      "question": "Độ cao thấp của âm thanh trong âm nhạc phụ thuộc vào yếu tố nào?",
+      "options": ["Biên độ dao động","Tần số dao động","Quy mô dao động","Vật thể dao động"],
+      "correctIndex": 1,
+      "explanation": "Độ cao (pitch) của âm thanh phụ thuộc trực tiếp vào tần số dao động: tần số càng cao thì âm càng cao."
+    },
+    {
+      "id": 25,
+      "question": "Màu sắc âm thanh phụ thuộc vào yếu tố nào?",
+      "options": ["Cường độ dao động","Tần số dao động","Tính chất vật phát âm","Quy mô dao động"],
+      "correctIndex": 2,
+      "explanation": "Màu sắc âm thanh (timbre) phụ thuộc vào đặc tính của nguồn âm và cách dao động của vật phát âm."
+    },
+    {
+      "id": 26,
+      "question": "Độ mạnh nhẹ của âm thanh phụ thuộc vào yếu tố nào?",
+      "options": ["Biên độ dao động","Tần số dao động","Tính chất vật phát âm","Quy mô dao động"],
+      "correctIndex": 0,
+      "explanation": "Độ mạnh yếu của âm thanh phụ thuộc vào biên độ dao động: biên độ càng lớn thì âm càng to."
+    },
+    {
+      "id": 27,
+      "question": "Trường độ của âm thanh phụ thuộc vào yếu tố nào?",
+      "options": ["Cường độ dao động","Tần số dao động","Tính chất vật phát âm","Quy mô dao động"],
+      "correctIndex": 1,
+      "explanation": "Trường độ là độ dài của âm thanh, phụ thuộc vào thời gian dao động (liên quan đến tần số và thời gian phát âm)."
+    },
+    {
+      "id": 28,
+      "question": "Có bao nhiêu kí hiệu cơ bản về trường độ trong âm nhạc?",
+      "options": ["5","6","7","8"],
+      "correctIndex": 2,
+      "explanation": "Trong lý thuyết cơ bản có 7 ký hiệu trường độ chính (tròn, trắng, đen, móc đơn, móc kép...)."
+    },
+    {
+      "id": 29,
+      "question": "Bậc chuyển hóa được hình thành từ kí hiệu nào?",
+      "options": ["Dấu hóa","Dấu lặng","Dấu nối","Dấu miễn nhịp"],
+      "correctIndex": 0,
+      "explanation": "Bậc chuyển hóa trong âm nhạc được tạo bởi các dấu hóa (thăng, giáng, bình)."
+    },
+    {
+      "id": 30,
+      "question": "Tiết tấu trong âm nhạc là gì?",
+      "options": ["Nối tiếp các nốt nhạc","Nối tiếp các trường độ","Nối tiếp các âm thanh","Nối tiếp các dấu lặng"],
+      "correctIndex": 1,
+      "explanation": "Tiết tấu là sự tổ chức và nối tiếp các trường độ trong âm nhạc."
+    },
+    {
+      "id": 31,
+      "question": "Hiện tượng trùng âm là gì?",
+      "options": ["Si# - Đôb","La# - Solb","Rê# - Mib","Mi - Fa#"],
+      "correctIndex": 2,
+      "explanation": "Trùng âm là hai cách ghi khác nhau nhưng cùng cao độ, ví dụ Rê# = Mib."
+    },
+    {
+      "id": 32,
+      "question": "Có bao nhiêu kí hiệu chuyển hóa (dấu hóa)?",
+      "options": ["4","5","6","7"],
+      "correctIndex": 1,
+      "explanation": "Có 5 dấu hóa cơ bản: thăng, giáng, thăng kép, giáng kép, bình."
+    },
+    {
+      "id": 33,
+      "question": "Nửa cung diatonic là trường hợp nào?",
+      "options": ["Đô - Đô#","Mi - Fa","La - Lab","Si - Đô#"],
+      "correctIndex": 1,
+      "explanation": "Mi – Fa là nửa cung tự nhiên (diatonic) trong hệ thống âm nhạc."
+    },
+    {
+      "id": 34,
+      "question": "Nửa cung chromatic là trường hợp nào?",
+      "options": ["Fa - Fa#","Mi - Fa","Si# - Sib","Rê# - Rêb"],
+      "correctIndex": 3,
+      "explanation": "Rê# – Rêb là nửa cung chromatic vì cùng cao độ nhưng khác cách ghi."
+    },
+    {
+      "id": 35,
+      "question": "Nguyên cung chromatic là trường hợp nào?",
+      "options": ["La - Lab","Fa# - Solb","Mi - Fa#","Rêb - Rê#"],
+      "correctIndex": 3,
+      "explanation": "Rêb – Rê# là cặp trùng âm tạo nguyên cung chromatic."
+    },
+    {
+      "id": 36,
+      "question": "Nguyên cung diatonic là trường hợp nào?",
+      "options": ["Đô# - Sib","Mi - Fa#","Fa - Fa#","Rê# - Rêb"],
+      "correctIndex": 0,
+      "explanation": "Đô# – Sib là nguyên cung diatonic trong cách phân chia âm."
+    },
+    {
+      "id": 37,
+      "question": "Trong các loại nhịp sau, nhịp nào không phải nhịp đơn?",
+      "options": ["2/8","3/8","4/4","3/4"],
+      "correctIndex": 2,
+      "explanation": "4/4 là nhịp kép, không thuộc nhóm nhịp đơn."
+    },
+    {
+      "id": 38,
+      "question": "Trong nhịp phức có bao nhiêu phách mạnh tương đối?",
+      "options": ["1","2","Ít nhất 1","Ít nhất 2"],
+      "correctIndex": 0,
+      "explanation": "Nhịp phức thường có 1 phách mạnh chính."
+    },
+    {
+      "id": 39,
+      "question": "Trong nhịp hỗn hợp có bao nhiêu phách mạnh?",
+      "options": ["1","2","Ít nhất 1","Ít nhất 2"],
+      "correctIndex": 2,
+      "explanation": "Nhịp hỗn hợp có nhiều nhóm phách nên có ít nhất 1 phách mạnh."
+    },
+    {
+      "id": 40,
+      "question": "Nguyên tắc nhịp biến đổi là gì?",
+      "options": ["Có chu kì","Không có chu kì","Có và không có chu kì","Tất cả đúng"],
+      "correctIndex": 2,
+      "explanation": "Nhịp biến đổi có thể theo chu kì hoặc không theo chu kì."
+    },
+    {
+      "id": 41,
+      "question": "Hiện tượng đảo phách là gì?",
+      "options": ["Trọng âm trùng phách mạnh","Trọng âm từ phách nhẹ sang nhẹ","Trọng âm không trùng phách mạnh","Trọng âm từ mạnh sang mạnh"],
+      "correctIndex": 2,
+      "explanation": "Đảo phách là khi trọng âm tiết tấu không trùng với trọng âm nhịp."
+    },
+    {
+      "id": 42,
+      "question": "Ý nghĩa của nhịp 6/8 là gì?",
+      "options": ["6 phách nốt đen","2 phách đen chấm","8 móc đơn","6 móc đơn"],
+      "correctIndex": 3,
+      "explanation": "6/8 có 6 móc đơn trong một ô nhịp, chia thành 2 nhóm."
+    },
+    {
+      "id": 43,
+      "question": "Nhịp 5/4 được tạo thành từ?",
+      "options": ["2/4 + 3/4","3/4 + 2/4","Cả hai","Không đúng"],
+      "correctIndex": 2,
+      "explanation": "Nhịp 5/4 có thể ghép từ 2/4 và 3/4 hoặc ngược lại."
+    },
+    {
+      "id": 44,
+      "question": "Khái niệm quãng là gì?",
+      "options": ["Khoảng cách giữa hai âm","Nối tiếp âm","Tập hợp âm","Nhịp điệu"],
+      "correctIndex": 0,
+      "explanation": "Quãng là khoảng cách cao độ giữa hai âm."
+    },
+    {
+      "id": 45,
+      "question": "Độ lớn của quãng được xác định dựa vào?",
+      "options": ["Số nửa cung","Số bậc","Cả hai","Không đúng"],
+      "correctIndex": 2,
+      "explanation": "Quãng được xác định bởi số bậc và số nửa cung."
+    },
+    {
+      "id": 46,
+      "question": "Có bao nhiêu giá trị chất lượng của quãng?",
+      "options": ["5","6","7","8"],
+      "correctIndex": 2,
+      "explanation": "Có 7 chất lượng quãng cơ bản (trưởng, thứ, đúng, tăng, giảm...)."
+    },
+    {
+      "id": 47,
+      "question": "Nhóm quãng nào không có chất lượng đúng?",
+      "options": ["2,4,6","9,10,13","6,10,11","3,6,12"],
+      "correctIndex": 1,
+      "explanation": "Quãng 9,10,13 không có dạng 'đúng'."
+    },
+    {
+      "id": 48,
+      "question": "Nhóm quãng nghịch là?",
+      "options": ["2T,3T,4Đ","4Đ,7t,6T","5T,7T,2T","5g,3t,6t"],
+      "correctIndex": 3,
+      "explanation": "Các quãng này tạo cảm giác căng, không ổn định."
+    },
+    {
+      "id": 49,
+      "question": "Nhóm quãng thuận là?",
+      "options": ["3T,6T,5Đ","4Đ,6t,8Đ","4Đ,5Đ,3t","Tất cả đúng"],
+      "correctIndex": 3,
+      "explanation": "Tất cả đều thuộc nhóm quãng thuận cơ bản."
+    },
+    {
+      "id": 50,
+      "question": "Quãng đơn là gì?",
+      "options": ["Nhỏ hơn quãng 8","Bằng quãng 8","Lớn hơn quãng 8","Không xác định"],
+      "correctIndex": 0,
+      "explanation": "Quãng đơn có độ lớn nhỏ hơn hoặc bằng quãng 8."
+    },
+    {
+      "id": 51,
+      "question": "Quãng kép là gì?",
+      "options": ["Nhỏ hơn quãng 8","Bằng quãng 8","Lớn hơn quãng 8","Không xác định"],
+      "correctIndex": 2,
+      "explanation": "Quãng kép là quãng có độ lớn lớn hơn quãng 8 (ví dụ quãng 9 trở lên)."
+    },
+    {
+      "id": 52,
+      "question": "Hiện tượng đảo quãng là gì?",
+      "options": ["Đổi tên nốt","Đổi vị trí âm gốc và âm ngọn","Giữ nguyên quãng","Tăng cao độ"],
+      "correctIndex": 1,
+      "explanation": "Đảo quãng là khi âm gốc và âm ngọn đổi vị trí cho nhau."
+    },
+    {
+      "id": 53,
+      "question": "Khi đảo quãng 7 trưởng sẽ thu được gì?",
+      "options": ["Quãng 2 thứ","Quãng 2 trưởng","Quãng 9 trưởng","Cả A và C"],
+      "correctIndex": 3,
+      "explanation": "Quãng 7 trưởng khi đảo sẽ thành quãng 2 thứ hoặc quãng 9 tương ứng."
+    },
+    {
+      "id": 54,
+      "question": "Đảo quãng kép là gì?",
+      "options": ["Đổi vị trí trong quãng 8","Đổi vị trí trong quãng lớn hơn 8","Không đổi","Tăng âm"],
+      "correctIndex": 1,
+      "explanation": "Đảo quãng kép áp dụng cho các quãng lớn hơn quãng 8."
+    },
+    {
+      "id": 55,
+      "question": "Điệu thức trong âm nhạc là gì?",
+      "options": ["Hệ thống nhịp","Mối tương quan cao độ","Trường độ","Âm sắc"],
+      "correctIndex": 1,
+      "explanation": "Điệu thức là hệ thống tổ chức cao độ giữa các âm."
+    },
+    {
+      "id": 56,
+      "question": "Âm ổn định trong điệu thức là?",
+      "options": ["I-III-V","II-IV-V","I-II-IV","III-IV-V"],
+      "correctIndex": 0,
+      "explanation": "Âm ổn định thường là bậc I, III, V của điệu thức."
+    },
+    {
+      "id": 57,
+      "question": "Gam trong âm nhạc là gì?",
+      "options": ["Hợp âm","Sắp xếp âm theo cao độ","Nhịp","Trường độ"],
+      "correctIndex": 1,
+      "explanation": "Gam là sự sắp xếp các âm theo thứ tự cao độ."
+    },
+    {
+      "id": 58,
+      "question": "Ký hiệu bậc trong gam thường dùng gì?",
+      "options": ["Chữ cái","Số La Mã","Hình vẽ","Dấu lặng"],
+      "correctIndex": 1,
+      "explanation": "Bậc gam thường ký hiệu bằng số La Mã."
+    },
+    {
+      "id": 59,
+      "question": "Giọng Đô trưởng thuộc loại nào?",
+      "options": ["Có dấu hóa","Không dấu hóa","Giáng","Thăng"],
+      "correctIndex": 1,
+      "explanation": "Đô trưởng tự nhiên không có dấu hóa."
+    },
+    {
+      "id": 60,
+      "question": "Đặc điểm điệu trưởng là gì?",
+      "options": ["I-IV-V tạo hợp âm trưởng","I-II-III","II-IV-V","III-V-VI"],
+      "correctIndex": 0,
+      "explanation": "Điệu trưởng có cấu trúc hợp âm I-IV-V."
+    },
+    {
+      "id": 61,
+      "question": "Hai giọng trùng âm là gì?",
+      "options": ["Khác tên, cùng cao độ","Cùng tên, khác cao độ","Khác cả hai","Giống nhau"],
+      "correctIndex": 0,
+      "explanation": "Trùng âm là khác tên nhưng cùng cao độ."
+    },
+    {
+      "id": 62,
+      "question": "Cặp giọng trùng âm đúng là?",
+      "options": ["Cis-moll và Des-dur","C-dur và G-dur","A-moll và E-dur","D-dur và F-dur"],
+      "correctIndex": 0,
+      "explanation": "Cis-moll và Des-dur là cặp trùng âm."
+    },
+    {
+      "id": 63,
+      "question": "Giọng họ hàng gần có bao nhiêu giọng?",
+      "options": ["2","4","6","8"],
+      "correctIndex": 2,
+      "explanation": "Một giọng có 6 giọng họ hàng gần."
+    },
+    {
+      "id": 64,
+      "question": "Giọng song song là gì?",
+      "options": ["Cùng tên","Cùng hóa biểu","Khác hoàn toàn","Không liên quan"],
+      "correctIndex": 1,
+      "explanation": "Giọng song song có cùng hóa biểu nhưng khác điệu thức."
+    },
+    {
+      "id": 65,
+      "question": "Quan hệ giữa trưởng và thứ song song là?",
+      "options": ["Cách nhau 1 cung rưỡi","III của thứ = I của trưởng","Cả hai đúng","Không liên quan"],
+      "correctIndex": 2,
+      "explanation": "Hai giọng song song có quan hệ chặt chẽ về bậc III và I."
+    },
+    {
+      "id": 66,
+      "question": "Gam trưởng tự nhiên đi lên có cấu trúc?",
+      "options": ["2T-2T-1/2T-2T-2T-2T-1/2T","2T-3T-2T","1T-1T-1T","2T-2T-2T"],
+      "correctIndex": 0,
+      "explanation": "Gam trưởng có cấu trúc cung-nửa cung đặc trưng."
+    },
+    {
+      "id": 67,
+      "question": "Gam thứ tự nhiên có đặc điểm gì?",
+      "options": ["Buồn","Vui","Không ổn định","Cả A và C"],
+      "correctIndex": 3,
+      "explanation": "Gam thứ thường mang tính buồn và không ổn định."
+    },
+    {
+      "id": 68,
+      "question": "Có bao nhiêu cặp giọng trưởng trùng âm cơ bản?",
+      "options": ["3","4","5","6"],
+      "correctIndex": 3,
+      "explanation": "Có 6 cặp giọng trưởng trùng âm cơ bản."
+    },
+    {
+      "id": 69,
+      "question": "Hai giọng trưởng hòa thanh khác nhau ở?",
+      "options": ["Bậc III","Bậc V","Bậc VI","Bậc VII"],
+      "correctIndex": 2,
+      "explanation": "Sự khác nhau nằm ở bậc VI trong hòa thanh."
+    },
+    {
+      "id": 70,
+      "question": "Hợp âm được cấu tạo từ bao nhiêu âm?",
+      "options": ["2","3","4","5"],
+      "correctIndex": 1,
+      "explanation": "Hợp âm cơ bản gồm 3 âm chồng lên nhau."
+    },
+    {
+      "id": 71,
+      "question": "Tên gọi hợp âm ba gồm?",
+      "options": ["Trưởng, thứ, tăng, giảm","Chỉ trưởng","Chỉ thứ","Không xác định"],
+      "correctIndex": 0,
+      "explanation": "Hợp âm ba có 4 loại cơ bản."
+    },
+    {
+      "id": 72,
+      "question": "Thể đảo hợp âm ba gồm?",
+      "options": ["6 và 6/4","4/3 và 6/5","2 và 6","Tất cả"],
+      "correctIndex": 3,
+      "explanation": "Hợp âm ba có nhiều dạng đảo khác nhau."
+    },
+    {
+      "id": 73,
+      "question": "Hợp âm bảy là gì?",
+      "options": ["3 âm","4 âm chồng quãng 3","5 âm","2 âm"],
+      "correctIndex": 1,
+      "explanation": "Hợp âm bảy gồm 4 âm xếp chồng quãng 3."
+    },
+    {
+      "id": 74,
+      "question": "Hợp âm bảy đảo có bao nhiêu dạng?",
+      "options": ["1","2","3","4"],
+      "correctIndex": 3,
+      "explanation": "Hợp âm bảy có 3 thể đảo chính + gốc."
+    },
+    {
+      "id": 75,
+      "question": "Hợp âm bảy dẫn được xây trên bậc nào?",
+      "options": ["I","II","V","VII"],
+      "correctIndex": 3,
+      "explanation": "Hợp âm bảy dẫn thường xây trên bậc VII."
+    },
+    {
+      "id": 76,
+      "question": "Trong điệu trưởng, hợp âm bảy dẫn là?",
+      "options": ["Giảm","Thứ","Tăng","Không xác định"],
+      "correctIndex": 0,
+      "explanation": "Trong trưởng, hợp âm bảy dẫn thường là hợp âm giảm."
+    },
+    {
+      "id": 77,
+      "question": "Âm nhạc ngũ cung gồm bao nhiêu âm?",
+      "options": ["3","4","5","6"],
+      "correctIndex": 2,
+      "explanation": "Ngũ cung gồm 5 âm cơ bản."
+    },
+    {
+      "id": 78,
+      "question": "Điệu 'Cung' trong ngũ cung có cấu trúc?",
+      "options": ["2T-3t-2T-3t-2T","2T-2T-3t-2T-3t","3t-2T-3t-2T-2T","2T-3t-2T-2T-3t"],
+      "correctIndex": 0,
+      "explanation": "Đây là cấu trúc điệu Cung."
+    },
+    {
+      "id": 79,
+      "question": "Điệu 'Thương' trong ngũ cung?",
+      "options": ["2T-2T-3t-2T-3t","2T-3t-2T-3t-2T","3t-2T-3t-2T-2T","2T-3t-2T-2T-3t"],
+      "correctIndex": 0,
+      "explanation": "Cấu trúc đặc trưng điệu Thương."
+    },
+    {
+      "id": 80,
+      "question": "Điệu 'Vũ' trong ngũ cung?",
+      "options": ["3t-2T-2T-3t-2T","2T-3t-2T-2T-3t","2T-2T-3t-2T-3t","3t-2T-3t-2T-2T"],
+      "correctIndex": 0,
+      "explanation": "Đặc trưng điệu Vũ."
+    },
+    {
+      "id": 81,
+      "question": "Điệu 'Giốc' trong ngũ cung?",
+      "options": ["2T-3t-2T-3t-2T","2T-2T-3t-2T-3t","3t-2T-3t-2T-2T","2T-3t-2T-2T-3t"],
+      "correctIndex": 0,
+      "explanation": "Cấu trúc điệu Giốc."
+    },
+    {
+      "id": 82,
+      "question": "Điệu 'Chủy' trong ngũ cung?",
+      "options": ["2T-3t-2T-2T-3t","2T-2T-3t-2T-3t","3t-2T-3t-2T-2T","2T-3t-2T-3t-2T"],
+      "correctIndex": 0,
+      "explanation": "Đặc trưng điệu Chủy."
+    },
+    {
+      "id": 83,
+      "question": "Giọng họ hàng gần có bao nhiêu giọng?",
+      "options": ["2","4","6","8"],
+      "correctIndex": 2,
+      "explanation": "Có 6 giọng họ hàng gần."
+    },
+    {
+      "id": 84,
+      "question": "Giọng không liên hệ với fis-moll là?",
+      "options": ["a-moll","cis-moll","E-dur","D-dur"],
+      "correctIndex": 3,
+      "explanation": "D-dur không thuộc nhóm gần fis-moll."
+    },
+    {
+      "id": 85,
+      "question": "Giọng liên hệ với H-dur là?",
+      "options": ["g-moll","F-dur","e-moll","C-dur"],
+      "correctIndex": 1,
+      "explanation": "F-dur có quan hệ họ hàng với H-dur."
+    },
+    {
+      "id": 86,
+      "question": "Giọng không liên hệ với Es-dur là?",
+      "options": ["c-moll","A-dur","g-moll","B-dur"],
+      "correctIndex": 3,
+      "explanation": "B-dur không thuộc họ hàng gần."
+    },
+    {
+      "id": 87,
+      "question": "Cromatic trong điệu trưởng là?",
+      "options": ["Nâng II hạ IV VI","Hạ II nâng IV VI","Cả hai","Không có"],
+      "correctIndex": 2,
+      "explanation": "Cromatic gồm cả nâng và hạ bậc."
+    },
+    {
+      "id": 88,
+      "question": "Cromatic trong điệu thứ là?",
+      "options": ["II IV VII biến đổi","Chỉ VII","Chỉ IV","Không"],
+      "correctIndex": 0,
+      "explanation": "Điệu thứ có nhiều bậc biến đổi."
+    },
+    {
+      "id": 89,
+      "question": "Xác định giọng dựa vào?",
+      "options": ["Hóa biểu","Âm kết","Giai điệu","Cả ba"],
+      "correctIndex": 3,
+      "explanation": "Cả 3 yếu tố đều quan trọng."
+    },
+    {
+      "id": 90,
+      "question": "Dịch giọng để?",
+      "options": ["Dễ hát","Phù hợp nhạc cụ","Biểu cảm","Tất cả"],
+      "correctIndex": 3,
+      "explanation": "Dịch giọng phục vụ nhiều mục đích."
+    },
+    {
+      "id": 91,
+      "question": "Dịch giọng thay đổi gì?",
+      "options": ["Cao độ","Nhịp","Lời","Tempo"],
+      "correctIndex": 0,
+      "explanation": "Chỉ thay đổi cao độ."
+    },
+    {
+      "id": 92,
+      "question": "Có bao nhiêu cách dịch giọng?",
+      "options": ["1","2","3","4"],
+      "correctIndex": 1,
+      "explanation": "Có 2 cách chính."
+    },
+    {
+      "id": 93,
+      "question": "Âm nhạc ngũ cung có đặc điểm?",
+      "options": ["5 âm","7 âm","12 âm","3 âm"],
+      "correctIndex": 0,
+      "explanation": "Ngũ cung nghĩa là 5 âm."
+    },
+    {
+      "id": 94,
+      "question": "Quãng 8 là gì?",
+      "options": ["Cùng tên","Cách 8 bậc","Khác tên","Sai"],
+      "correctIndex": 1,
+      "explanation": "Quãng 8 cách nhau 8 bậc."
+    },
+    {
+      "id": 95,
+      "question": "Quãng thuận gồm?",
+      "options": ["3,6,5","2,7","4,8","Tất cả"],
+      "correctIndex": 0,
+      "explanation": "Quãng thuận gồm 3,6,5."
+    },
+    {
+      "id": 96,
+      "question": "Quãng nghịch gồm?",
+      "options": ["2,7","3,6","5,8","1,4"],
+      "correctIndex": 0,
+      "explanation": "Quãng nghịch là 2 và 7."
+    },
+    {
+      "id": 97,
+      "question": "Hợp âm ổn định nhất là?",
+      "options": ["I","II","V","VII"],
+      "correctIndex": 0,
+      "explanation": "Bậc I là ổn định nhất."
+    },
+    {
+      "id": 98,
+      "question": "Âm nhạc phụ thuộc mạnh vào?",
+      "options": ["Cảm xúc","Toán học","Màu sắc","Vật lý"],
+      "correctIndex": 0,
+      "explanation": "Âm nhạc gắn liền cảm xúc."
+    },
+    {
+      "id": 99,
+      "question": "Tiết tấu là sự tổ chức của?",
+      "options": ["Cao độ","Trường độ","Âm sắc","Hòa thanh"],
+      "correctIndex": 1,
+      "explanation": "Tiết tấu liên quan trường độ."
+    },
+    {
+      "id": 100,
+      "question": "Âm nhạc là nghệ thuật của?",
+      "options": ["Âm thanh","Màu sắc","Chữ viết","Hình ảnh"],
+      "correctIndex": 0,
+      "explanation": "Âm nhạc là nghệ thuật âm thanh."
+    },
+    {
+      "id": 101,
+      "question": "Lời bài hát (lyrics) là gì?",
+      "options": ["Giai điệu","Nội dung chữ của bài hát","Nhịp","Hòa âm"],
+      "correctIndex": 1,
+      "explanation": "Lyrics là phần lời, tức nội dung chữ của bài hát."
+    },
+    {
+      "id": 102,
+      "question": "Lời bài hát ballad thường có đặc điểm gì?",
+      "options": ["Ngắn, nhanh","Tình cảm, kể chuyện","Không có nghĩa","Chỉ có điệp khúc"],
+      "correctIndex": 1,
+      "explanation": "Ballad thường có lời kể chuyện và giàu cảm xúc."
+    },
+    {
+      "id": 103,
+      "question": "Hook trong lời bài hát là gì?",
+      "options": ["Câu mở đầu","Câu gây nghiện, dễ nhớ","Câu kết","Intro nhạc"],
+      "correctIndex": 1,
+      "explanation": "Hook là đoạn lời dễ nhớ, gây ấn tượng mạnh."
+    },
+    {
+      "id": 104,
+      "question": "Rap lyrics thường đặc trưng bởi?",
+      "options": ["Nhiều vần điệu","Không có nhịp","Chỉ hát chậm","Không có lời"],
+      "correctIndex": 0,
+      "explanation": "Rap thường chú trọng vần và nhịp điệu lời."
+    },
+    {
+      "id": 105,
+      "question": "Lời bài hát tự sự là kiểu gì?",
+      "options": ["Kể câu chuyện","Chỉ lặp từ","Không có nội dung","Chỉ điệp khúc"],
+      "correctIndex": 0,
+      "explanation": "Tự sự là kiểu lời kể một câu chuyện."
+    },
+    {
+      "id": 106,
+      "question": "Lời bài hát trữ tình thường mang cảm xúc gì?",
+      "options": ["Hài hước","Cảm xúc sâu lắng","Giận dữ","Không cảm xúc"],
+      "correctIndex": 1,
+      "explanation": "Trữ tình thường nhẹ nhàng và sâu sắc."
+    },
+    {
+      "id": 107,
+      "question": "Điệp khúc trong lời bài hát là gì?",
+      "options": ["Câu lặp lại nhiều lần","Câu mở đầu","Câu kết","Beat nhạc"],
+      "correctIndex": 0,
+      "explanation": "Điệp khúc là phần lặp lại để nhấn mạnh nội dung."
+    },
+    {
+      "id": 108,
+      "question": "Verse trong bài hát là gì?",
+      "options": ["Phần kể nội dung chính","Điệp khúc","Intro","Outro"],
+      "correctIndex": 0,
+      "explanation": "Verse là phần phát triển nội dung bài hát."
+    },
+    {
+      "id": 109,
+      "question": "Outro trong bài hát là gì?",
+      "options": ["Phần mở đầu","Phần kết thúc","Điệp khúc","Rap"],
+      "correctIndex": 1,
+      "explanation": "Outro là phần kết thúc bài hát."
+    },
+    {
+      "id": 110,
+      "question": "Intro trong bài hát là gì?",
+      "options": ["Phần đầu bài hát","Phần giữa","Phần kết","Điệp khúc"],
+      "correctIndex": 0,
+      "explanation": "Intro là phần mở đầu bài hát."
+    },
+    {
+      "id": 111,
+      "question": "Lời bài hát hiện đại thường chịu ảnh hưởng bởi?",
+      "options": ["Văn học cổ","Mạng xã hội","Chỉ nhạc cổ điển","Không ảnh hưởng"],
+      "correctIndex": 1,
+      "explanation": "Lyrics hiện đại chịu ảnh hưởng mạnh từ mạng xã hội."
+    },
+    {
+      "id": 112,
+      "question": "Chủ đề phổ biến trong lyrics hiện nay?",
+      "options": ["Tình yêu","Toán học","Lịch sử","Vật lý"],
+      "correctIndex": 0,
+      "explanation": "Tình yêu là chủ đề phổ biến nhất."
+    },
+    {
+      "id": 113,
+      "question": "Ngôn ngữ trong lời bài hát hiện đại thường?",
+      "options": ["Khó hiểu","Đơn giản, gần gũi","Cổ điển","Hàn lâm"],
+      "correctIndex": 1,
+      "explanation": "Ngôn ngữ hiện đại thường dễ hiểu, gần gũi."
+    },
+    {
+      "id": 114,
+      "question": "Refrain trong bài hát là gì?",
+      "options": ["Câu lặp lại ngắn","Intro","Outro","Beat"],
+      "correctIndex": 0,
+      "explanation": "Refrain là câu lặp lại ngắn trong bài hát."
+    },
+    {
+      "id": 115,
+      "question": "Lyrics storytelling là gì?",
+      "options": ["Kể chuyện bằng lời bài hát","Chỉ hát","Chỉ nhạc","Không lời"],
+      "correctIndex": 0,
+      "explanation": "Là cách dùng lời bài hát để kể chuyện."
+    },
+    {
+      "id": 116,
+      "question": "Lời bài hát có vần giúp gì?",
+      "options": ["Khó nhớ hơn","Dễ nhớ và tạo nhịp","Không tác dụng","Làm chậm bài hát"],
+      "correctIndex": 1,
+      "explanation": "Vần giúp lời dễ nhớ và có nhịp điệu."
+    },
+    {
+      "id": 117,
+      "question": "Freestyle trong lyrics là gì?",
+      "options": ["Viết theo khuôn mẫu","Ứng biến tự do","Không có lời","Chỉ điệp khúc"],
+      "correctIndex": 1,
+      "explanation": "Freestyle là viết hoặc rap tự do không theo cấu trúc cố định."
+    },
+    {
+      "id": 118,
+      "question": "Lyrical content ảnh hưởng đến gì?",
+      "options": ["Cảm xúc người nghe","Chỉ âm lượng","Chỉ nhịp","Không ảnh hưởng"],
+      "correctIndex": 0,
+      "explanation": "Nội dung lời ảnh hưởng trực tiếp cảm xúc người nghe."
+    },
+    {
+      "id": 119,
+      "question": "Chorus trong bài hát là gì?",
+      "options": ["Điệp khúc chính","Intro","Verse","Outro"],
+      "correctIndex": 0,
+      "explanation": "Chorus là phần điệp khúc chính của bài hát."
+    },
+    {
+      "id": 120,
+      "question": "Một bài hát hay về lyrics cần gì?",
+      "options": ["Ý nghĩa","Vần điệu","Cảm xúc","Tất cả"],
+      "correctIndex": 3,
+      "explanation": "Lyrics hay cần ý nghĩa, vần và cảm xúc kết hợp."
+    }
+]
