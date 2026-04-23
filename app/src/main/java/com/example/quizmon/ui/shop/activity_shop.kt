@@ -83,7 +83,7 @@ class activity_shop : AppCompatActivity() {
         }
 
         findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener {
-            // Đã ở Shop rồi
+            startActivity(Intent(this, activity_shop::class.java))
         }
 
         findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {

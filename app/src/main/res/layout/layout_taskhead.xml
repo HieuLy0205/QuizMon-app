@@ -66,7 +66,7 @@
                 android:src="@drawable/su_shop_map"
                 android:contentDescription="@null" />
             <TextView
-                android:id="@+id/tvCoins"
+                android:id="@+id/textxu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="1dp"
@@ -104,7 +104,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/tvExp"
+                android:id="@+id/textexp"
                 android:layout_width="14dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="1dp"

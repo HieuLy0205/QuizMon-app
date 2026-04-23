@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.ImageButton
+import android.widget.Toast
 import android.view.View
 import android.util.Log
 import androidx.core.view.ViewCompat
@@ -27,6 +28,7 @@ class PetActivity : AppCompatActivity() {
         }
         imgPet1 = findViewById(R.id.imgPet1)
         val btn_tanglevel = findViewById<Button>(R.id.btn_tanglevel)
+        val btnBack = findViewById<ImageButton>(R.id.btnBack)
         //note 0:sự kiện nút tăng cấp
 //        btn_tanglevel.setOnClickListener {
 //            pref.savePetLevel(1)
@@ -38,6 +40,7 @@ class PetActivity : AppCompatActivity() {
 //            updateCoinDisplay()
 //            true
 //        }
+        //logic Tăng cấp
         btn_tanglevel.setOnClickListener {
             val currentLevel = pref.getPetLevel()
             val currentCoins = pref.getCoins()
@@ -56,21 +59,19 @@ class PetActivity : AppCompatActivity() {
                         "Tăng cấp thành công",
                         android.widget.Toast.LENGTH_SHORT).show()
                 }else{
-                    android.widget.Toast.makeText(this,
+                    Toast.makeText(this,
                         "không đủ coin",
                         android.widget.Toast.LENGTH_SHORT).show()
                 }
                 }else{
-                android.widget.Toast.makeText(this,
+                    Toast.makeText(this,
                     "chưa đạt yêu cầu",
-                    android.widget.Toast.LENGTH_SHORT).show()
+                    Toast.LENGTH_SHORT).show()
             }
 
       }
-        val btnBack = findViewById<ImageButton>(R.id.btnBack)
         //note 1: sự kiện quy lại
         btnBack.setOnClickListener { finish() }
-
         startAnimation()
     }
     //note 3: Chương trình hoạt ảnh gồm 3 thành phần

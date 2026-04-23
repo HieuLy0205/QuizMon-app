@@ -24,6 +24,17 @@ class PreferenceManager(context: Context) {
         saveCoins(current + amount) // CTTT CỘNG THÊM SỐ LƯỢNG MỚI VÀO SỐ LƯỢNG CỦ
     }
 
+    fun saveXu(xu: Int) {
+        sharedPreferences.edit().putInt("current_xu", xu).apply()
+    }
+    fun getXu(): Int {
+        return sharedPreferences.getInt("current_xu", 0)
+    }
+    fun addXu(amount: Int) {
+        val current = getXu()
+        saveXu(current + amount)
+    }
+
     //hàm kiêm tra nhiệm vụ trong ngày
     fun isTaskCompletedToday(taskId: String): Boolean {
         val lastData = sharedPreferences.getString("task_$taskId", null)

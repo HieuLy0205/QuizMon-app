@@ -23,7 +23,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent">
-
         </include>
 
     <LinearLayout
@@ -35,7 +34,6 @@
         app:layout_constraintTop_toBottomOf="@id/layout_taskhead">
 
         <!-- Hàng 1 -->
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -96,24 +94,11 @@
                 app:backgroundTint="@null" />
         </LinearLayout>
     </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/btnBack"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="24dp"
-        android:background="@drawable/bg_difficulty_btn"
-        android:contentDescription="@string/btn_back"
-        android:src="@drawable/ic_back"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:tint="@color/white" />
-
-<!--    <include-->
-<!--        android:id="@+id/taskbar"-->
-<!--        layout="@layout/layout_taskbar"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="75dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent" />-->
+    <include
+        android:id="@+id/taskbar"
+        layout="@layout/layout_taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
