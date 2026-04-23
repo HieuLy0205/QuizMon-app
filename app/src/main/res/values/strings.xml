@@ -58,6 +58,7 @@
     <string name="text_nhantrung">Nhận pet mới qua ải</string>"
     <string name="btn_tanglevel">tăng cấp</string>
     <string name="bonus">Thưởng\nhàng ngày</string>
+    <string name="rank">Xếp hạng</string>
 
     <!-- Strings cho màn hình Hồ sơ & Thống kê -->
     <string name="tab_thanh_tich">Thành tích</string>

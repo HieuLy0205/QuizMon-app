@@ -19,20 +19,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="@null" />
 
+    <!-- Thanh trạng thái phía trên -->
     <include
-        android:id="@+id/layout_taskhead"
+        android:id="@+id/taskhead"
         layout="@layout/layout_taskhead"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </include>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
-        app:layout_constraintTop_toBottomOf="@id/layout_taskhead"
+        app:layout_constraintTop_toBottomOf="@id/taskhead"
         app:layout_constraintBottom_toTopOf="@id/taskbar">
 
         <LinearLayout
@@ -88,7 +87,7 @@
                 android:textStyle="bold"
                 android:textColor="@color/black" />
 
-            <!-- Nút CHƠI chính (Overlay) -->
+            <!-- Nút CHƠI chính -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
@@ -110,7 +109,6 @@
                         android:src="@drawable/btn_play"
                         android:contentDescription="@null" />
 
-                    <!-- Lớp phủ mờ -->
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -164,7 +162,7 @@
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Hai nút phụ phía dưới (Overlay) -->
+            <!-- Hai nút phụ phía dưới -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
@@ -195,7 +193,6 @@
                             android:src="@drawable/main1"
                             android:contentDescription="@null" />
 
-                        <!-- Lớp phủ mờ -->
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -206,7 +203,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="bottom|center_horizontal"
                             android:layout_marginBottom="16dp"
-                            android:text="@string/pvp"
+                            android:text="@string/rank"
                             android:textColor="#FFFFFF"
                             android:textSize="20sp"
                             android:textStyle="bold"
@@ -230,7 +227,6 @@
                     android:focusable="true">
 
                     <FrameLayout
-                        android:id="@+id/thn_main"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
 
@@ -241,7 +237,6 @@
                             android:src="@drawable/main2"
                             android:contentDescription="@null" />
 
-                        <!-- Lớp phủ mờ -->
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"

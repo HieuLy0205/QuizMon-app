@@ -53,8 +53,9 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LevelMapActivity::class.java)
             startActivity(intent)
         }
+        
         // Bắt đầu sự kiện nút Thưởng hằng ngày
-        findViewById<FrameLayout>(R.id.thn_main).setOnClickListener {
+        findViewById<View>(R.id.cardDailyReward).setOnClickListener {
             val intent = Intent(this, shop_phobien::class.java)
             startActivity(intent)
         }
@@ -72,7 +73,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     @SuppressLint("ClickableViewAccessibility")
-    //của pet
     private fun setupFloatingPet() {
         val ivFloatingPet = findViewById<ImageView>(R.id.ivFloatingPet)
 
@@ -138,7 +138,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
 
         findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
-        findViewById<TextView>(R.id.textcoin)?.text = prefs.getInt("current_coins", 0).toString()
 
         findViewById<TextView>(R.id.tvStreakCount)?.text =
             streakManager.getCurrentStreak().toString()
@@ -173,7 +172,7 @@ class MainActivity : AppCompatActivity() {
         val preferenceManager = PreferenceManager(this)
         findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
     }
-// Proflie
+
     private fun openProfileFlow() {
         val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
         val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
