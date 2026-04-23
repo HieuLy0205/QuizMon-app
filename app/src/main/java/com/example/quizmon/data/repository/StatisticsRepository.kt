@@ -62,13 +62,18 @@ class StatisticsRepository(context: Context) {
         val totalQuestions = allStats.sumOf { it.totalQuestions }
         val currentStreak = localDataSource.getCurrentStreak()
         val longestStreak = localDataSource.getLongestStreak()
+        
+        val levelsCompleted = localDataSource.getLevelsCompleted()
+        val startDate = Date(localDataSource.getStartDate())
 
         return OverallStatistics(
             totalCorrect = totalCorrect,
             totalWrong = totalWrong,
             totalQuestions = totalQuestions,
             currentStreak = currentStreak,
-            longestStreak = longestStreak
+            longestStreak = longestStreak,
+            levelsCompleted = levelsCompleted,
+            startDate = startDate
         )
     }
 
