@@ -5,11 +5,14 @@ import android.os.Bundle
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.example.quizmon.MainActivity
 import com.example.quizmon.R
 import com.example.quizmon.ui.onboarding.AgeActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.activity_shop
+import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.ui.history.HistoryActivity
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -26,7 +29,6 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
-        // ✅ FIX QUAN TRỌNG
         val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
 
         imgAvatar = findViewById(R.id.imgAvatar)
@@ -39,6 +41,7 @@ class ProfileActivity : AppCompatActivity() {
         btnEditProfile = findViewById(R.id.btnEditProfile)
 
         setupTaskbar()
+        updateHeaderStats()
 
         val age = prefs.getInt("age", 0)
         val gender = prefs.getString("gender", "Chưa chọn")
@@ -68,17 +71,33 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     private fun setupTaskbar() {
+        // Highlight mục Hồ sơ
+        findViewById<View>(R.id.indicator_profile).visibility = View.VISIBLE
+        findViewById<TextView>(R.id.tv_nav_profile).setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
+
         findViewById<View>(R.id.nav_home).setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+            startActivity(intent)
         }
 
         findViewById<View>(R.id.nav_shop).setOnClickListener {
             startActivity(Intent(this, activity_shop::class.java))
         }
 
+        findViewById<View>(R.id.nav_history).setOnClickListener {
+            startActivity(Intent(this, HistoryActivity::class.java))
+        }
+
         findViewById<View>(R.id.nav_menu).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
+    }
+
+    private fun updateHeaderStats() {
+        val pref = PreferenceManager(this)
+        findViewById<TextView>(R.id.head_text_star)?.text = pref.getCoins().toString()
+        findViewById<TextView>(R.id.head_text_coin)?.text = pref.getXu().toString()
     }
 
     private fun setAvatar(id: String) {
@@ -88,5 +107,10 @@ class ProfileActivity : AppCompatActivity() {
             "avatar_vip1" -> imgAvatar.setImageResource(R.drawable.avatar_vip1)
             else -> imgAvatar.setImageResource(R.drawable.avatar1)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        updateHeaderStats()
     }
 }

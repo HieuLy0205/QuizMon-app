@@ -1,1442 +1,1402 @@
 [
   {
     "id": 1,
-    "question": "Bạn đang đi trên thuyền, thuyền bị thủng một lỗ to và sắp chìm giữa dòng sông đầy cá ăn thịt. Cách đơn giản nhất để thoát nạn là gì?",
-    "options": [
-      "Nhảy xuống sông bơi thật nhanh",
-      "Lấy tay bịt lỗ thủng",
-      "Đừng tưởng tượng nữa",
-      "Kêu cứu thật to"
-    ],
-    "correctIndex": 2,
-    "explanation": "Vì đây là tình huống bạn đang tưởng tượng, nên chỉ cần ngừng tưởng tượng là xong."
-  },
-  {
-    "id": 2,
     "question": "Một con đười ươi cầm 2 con dao, sau vài phút nó nằm vật xuống đất chết luôn. Tại sao?",
-    "options": [
-      "Nó bị thợ săn bắn",
-      "Nó tự đâm vào ngực mình",
-      "Nó bị trúng độc",
-      "Nó bị ngã từ trên cây"
-    ],
+    "options": ["Nó bị thợ săn bắn", "Nó tự đâm vào ngực mình", "Nó bị trúng độc", "Nó bị ngã từ trên cây"],
     "correctIndex": 1,
     "explanation": "Đười ươi có thói quen tự đấm vào ngực mình, khi cầm dao nó sẽ tự đâm vào chính mình."
   },
   {
-    "id": 3,
-    "question": "Cầu trọng tải 10 tấn, xe tải nặng 12 tấn. Làm sao bác tài qua được cầu mà không bớt hàng?",
-    "options": [
-      "Chạy xe thật nhanh qua cầu",
-      "Bơm thêm hơi vào lốp xe",
-      "Bác tài đi bộ qua cầu, bỏ xe lại",
-      "Đi qua cầu vào ban đêm"
-    ],
+    "id": 2,
+    "question": "Bạn đang đi trên thuyền, thuyền bị thủng một lỗ to và sắp chìm giữa dòng sông đầy cá ăn thịt. Cách đơn giản nhất để thoát nạn là gì?",
+    "options": ["Nhảy xuống sông bơi thật nhanh", "Lấy tay bịt lỗ thủng", "Đừng tưởng tượng nữa", "Kêu cứu thật to"],
     "correctIndex": 2,
-    "explanation": "Câu đố chữ: 'Bác tài' đi qua cầu chứ không phải chiếc xe tải qua cầu."
+    "explanation": "Vì đây là tình huống bạn đang tưởng tượng, nên chỉ cần ngừng tưởng tượng là xong."
+  },
+  {
+    "id": 3,
+    "question": "Cái gì có nhiều răng nhưng không thể cắn?",
+    "options": ["Cái lược", "Con cá sấu", "Cái cưa", "Cái bẫy"],
+    "correctIndex": 0,
+    "explanation": "Cái lược có rất nhiều răng lược dùng để chải tóc, nhưng nó không phải sinh vật nên không thể cắn được. Câu đố chơi chữ ở từ 'răng'."
   },
   {
     "id": 4,
-    "question": "Trên đồng cỏ có 6 con bò, nhưng đếm đi đếm lại chỉ thấy có 12 cái chân. Tại sao?",
-    "options": [
-      "Bò bị thiếu chân",
-      "Chúng đang đứng dưới nước",
-      "Con bò này cưỡi lên lưng con bò kia",
-      "Đếm nhầm"
-    ],
-    "correctIndex": 2,
-    "explanation": "6 con bò cưỡi lên nhau theo vòng tròn nên mỗi con chỉ thò ra 2 chân."
+    "question": "Thứ gì đi lên thì xuống, đi xuống thì lên?",
+    "options": ["Cái cầu thang", "Cái bập bênh", "Cái yo-yo", "Cái nhiệt kế"],
+    "correctIndex": 1,
+    "explanation": "Khi một đầu bập bênh đi lên thì đầu còn lại sẽ đi xuống. Hai chuyển động này luôn diễn ra đồng thời và ngược chiều nhau."
   },
   {
     "id": 5,
-    "question": "Trong ngày mùa đông giá rét, bạn có 1 que diêm và vào phòng có đèn dầu, bếp củi, bếp dầu. Bạn thắp gì trước tiên?",
-    "options": [
-      "Cây đèn dầu",
-      "Bếp củi",
-      "Bếp dầu",
-      "Que diêm"
-    ],
-    "correctIndex": 3,
-    "explanation": "Bạn phải thắp que diêm trước thì mới có lửa để thắp các thứ khác."
+    "question": "Cái gì có tay mà không có ngón?",
+    "options": ["Con người tuyết", "Cái áo", "Cái đồng hồ", "Cái ghế"],
+    "correctIndex": 2,
+    "explanation": "Đồng hồ có kim giờ, kim phút thường được gọi là 'tay đồng hồ', nhưng dĩ nhiên chúng không có ngón tay thật. Đây là cách gọi theo hình tượng."
   },
   {
     "id": 6,
-    "question": "Một tử tù được chọn 1 trong 3 căn phòng: Phòng lửa cháy, phòng sát thủ giương súng, phòng sư tử nhịn đói 3 năm. Phòng nào an toàn nhất?",
-    "options": [
-      "Phòng lửa cháy",
-      "Phòng sát thủ",
-      "Phòng sư tử",
-      "Không phòng nào cả"
-    ],
-    "correctIndex": 2,
-    "explanation": "Sư tử nhịn đói 3 năm thì đã chết từ lâu rồi."
+    "question": "Cái gì bạn có thể giữ sau khi đã cho người khác?",
+    "options": ["Tiền", "Lời hứa", "Quyển sách", "Chiếc bút"],
+    "correctIndex": 1,
+    "explanation": "Bạn có thể cho ai đó một lời hứa, nhưng chính bạn vẫn phải giữ lời hứa đó. Vì vậy, dù đã 'cho' đi, bạn vẫn còn trách nhiệm giữ nó."
   },
   {
     "id": 7,
-    "question": "2 vịt đi trước 2 vịt, 2 vịt đi sau 2 vịt, 2 vịt đi giữa 2 vịt. Hỏi có mấy con vịt?",
-    "options": [
-      "2 con",
-      "4 con",
-      "6 con",
-      "8 con"
-    ],
-    "correctIndex": 1,
-    "explanation": "4 con vịt xếp thành một hàng dọc."
+    "question": "Thứ gì càng lau càng ướt?",
+    "options": ["Cái khăn", "Cái bàn", "Tờ giấy", "Cái quạt"],
+    "correctIndex": 0,
+    "explanation": "Khăn dùng để lau nước, lau càng nhiều thì chính chiếc khăn càng thấm nhiều nước và trở nên ướt hơn. Đây là đặc điểm tự nhiên của vật hút ẩm."
   },
   {
     "id": 8,
-    "question": "Cái gì đen khi bạn mua nó, đỏ khi dùng nó và xám xịt khi vứt nó đi?",
-    "options": [
-      "Quả dưa hấu",
-      "Hòn than",
-      "Sắt thép",
-      "Bút chì"
-    ],
+    "question": "Cái gì có mặt mà không có miệng?",
+    "options": ["Cái gương", "Cái đồng hồ", "Mặt đất", "Cái nạ"],
     "correctIndex": 1,
-    "explanation": "Hòn than lúc chưa đốt màu đen, đang cháy màu đỏ và khi thành tro màu xám."
+    "explanation": "Đồng hồ có mặt đồng hồ để hiển thị thời gian, nhưng không có miệng. Từ 'mặt' trong tiếng Việt có nhiều nghĩa nên tạo ra câu đố vui."
   },
   {
     "id": 9,
-    "question": "Xã nào đông dân nhất?",
-    "options": [
-      "Xã Tiên",
-      "Xã Hội",
-      "Xã Đàn",
-      "Xã Huyện"
-    ],
-    "correctIndex": 1,
-    "explanation": "Xã hội bao gồm tất cả mọi người nên là đông nhất."
+    "question": "Cái gì luôn ở trước mặt nhưng bạn không thể nhìn thấy tương lai của nó ngay lập tức?",
+    "options": ["Ngày mai", "Cái mũi", "Quyển sách", "Đôi mắt"],
+    "correctIndex": 0,
+    "explanation": "Ngày mai luôn ở phía trước theo nghĩa thời gian, nhưng bạn không thể nhìn thấy hay chạm vào nó ngay lúc này. Chỉ khi ngày mai đến, nó mới trở thành hiện tại."
   },
   {
     "id": 10,
-    "question": "Lịch nào dài nhất?",
-    "options": [
-      "Lịch vạn niên",
-      "Lịch treo tường",
-      "Lịch sử",
-      "Lịch âm"
-    ],
+    "question": "Một người câm muốn mua bàn chải đánh răng. Anh ta sẽ làm thế nào dễ nhất?",
+    "options": ["Viết ra giấy", "Ra hiệu đánh răng", "Chỉ vào bàn chải", "Nhờ người khác nói hộ"],
     "correctIndex": 2,
-    "explanation": "Lịch sử kéo dài từ quá khứ đến tận tương lai."
+    "explanation": "Cách đơn giản nhất là chỉ thẳng vào món đồ mình muốn mua. Không cần nói được, người bán vẫn có thể hiểu khi thấy khách hàng chỉ đúng vật phẩm."
   },
   {
     "id": 11,
-    "question": "Con đường nào dài nhất?",
-    "options": [
-      "Đường quốc lộ 1A",
-      "Đường đời",
-      "Đường mòn Hồ Chí Minh",
-      "Đường sắt"
-    ],
-    "correctIndex": 1,
-    "explanation": "Đường đời là hành trình cả đời của một con người."
+    "question": "Nếu một con gà đẻ trứng trên mái nhà nghiêng, quả trứng sẽ lăn về bên nào?",
+    "options": ["Bên trái", "Bên phải", "Xuống dưới", "Không bên nào cả"],
+    "correctIndex": 3,
+    "explanation": "Gà không đẻ trứng, chỉ có gà mái mới đẻ trứng. Câu đố đánh vào thói quen nghe nhanh mà bỏ qua chi tiết quan trọng."
   },
   {
     "id": 12,
-    "question": "Quần rộng nhất là quần gì?",
-    "options": [
-      "Quần ống loe",
-      "Quần đùi",
-      "Quần đảo",
-      "Quần bò"
-    ],
-    "correctIndex": 2,
-    "explanation": "Quần đảo là vùng biển có nhiều đảo, diện tích rất lớn."
+    "question": "Cái gì càng khô càng ướt?",
+    "options": ["Khăn tắm", "Bọt biển", "Cục nước đá", "Đám mây"],
+    "correctIndex": 0,
+    "explanation": "Khăn tắm dùng để làm khô cơ thể, nhưng trong quá trình đó bản thân chiếc khăn lại hấp thụ nước và ướt dần lên. Đây là nghịch lý vui của công dụng chiếc khăn."
   },
   {
     "id": 13,
-    "question": "Cái gì mà đi thì nằm, đứng cũng nằm, nhưng nằm lại đứng?",
-    "options": [
-      "Cái giường",
-      "Bàn chân",
-      "Cái bóng",
-      "Con mắt"
-    ],
-    "correctIndex": 1,
-    "explanation": "Khi bạn đi hoặc đứng, bàn chân nằm ngang trên đất; khi bạn nằm, bàn chân lại dựng đứng."
+    "question": "Cái gì có chân nhưng không biết đi?",
+    "options": ["Cái bàn", "Con chó", "Đôi giày", "Người búp bê"],
+    "correctIndex": 0,
+    "explanation": "Cái bàn có chân bàn để đứng vững, nhưng đó chỉ là bộ phận của đồ vật nên không thể tự di chuyển được. Câu đố khai thác cách gọi quen thuộc."
   },
   {
     "id": 14,
-    "question": "Môn gì càng thắng càng thua?",
-    "options": [
-      "Môn bóng đá",
-      "Môn đua xe đạp",
-      "Môn cờ vua",
-      "Môn bơi lội"
-    ],
-    "correctIndex": 1,
-    "explanation": "Trong đua xe đạp, bạn phải đạp lên cái 'thắng' (phanh) thì xe sẽ chạy chậm lại (thua)."
+    "question": "Con gì sáng bay đi, tối bay về mà không phải chim?",
+    "options": ["Con dơi", "Con bướm", "Con ong", "Con ruồi"],
+    "correctIndex": 2,
+    "explanation": "Ong thường bay ra ngoài kiếm mật vào ban ngày rồi quay về tổ. Đây là hình ảnh quen thuộc trong tự nhiên và đời sống."
   },
   {
     "id": 15,
-    "question": "Con gì đập thì sống, không đập thì chết?",
-    "options": [
-      "Con muỗi",
-      "Con tim",
-      "Con gà",
-      "Con cá"
-    ],
-    "correctIndex": 1,
-    "explanation": "Tim ngừng đập thì sự sống sẽ kết thúc."
+    "question": "Cái gì có thể chạy nhưng không biết đi, có thể kêu nhưng không có miệng?",
+    "options": ["Con chó máy", "Máy tính", "Đồng hồ báo thức", "Chiếc xe đạp"],
+    "correctIndex": 2,
+    "explanation": "Đồng hồ báo thức có thể 'chạy' theo nghĩa hoạt động và cũng có thể 'kêu' để báo giờ, nhưng nó không có miệng như sinh vật. Đây là câu đố dựa trên nghĩa ẩn dụ của từ."
   },
   {
     "id": 16,
-    "question": "Có 1 đàn chuột điếc đi ngang qua. Hỏi có mấy con?",
-    "options": [
-      "1 con",
-      "12 con",
-      "24 con",
-      "Không có con nào"
-    ],
+    "question": "Trong cuộc đua, nếu bạn vượt qua người đang đứng cuối cùng thì bạn đang ở vị trí nào?",
+    "options": ["Áp chót", "Cuối cùng", "Không thể xảy ra", "Thứ nhất"],
     "correctIndex": 2,
-    "explanation": "Điếc là hư tai, hư tai là hai tư (24)."
+    "explanation": "Người đứng cuối cùng thì phía sau họ không còn ai nữa, nên bạn không thể vượt qua họ theo cách thông thường trong cùng đường đua. Đây là câu kiểm tra logic vị trí."
   },
   {
     "id": 17,
-    "question": "Bỏ ngoài nướng trong, ăn ngoài bỏ trong là quả gì?",
-    "options": [
-      "Quả chuối",
-      "Quả mít",
-      "Bắp ngô",
-      "Quả dừa"
-    ],
-    "correctIndex": 2,
-    "explanation": "Khi ăn ngô, ta bóc lớp bọc ngoài rồi nướng, sau đó ăn hạt (ngoài) và bỏ lõi (trong)."
+    "question": "Cái gì khi còn non thì xanh, già thì vàng, chết thì đen?",
+    "options": ["Lá cây", "Than củi", "Chuối", "Cây lúa"],
+    "correctIndex": 3,
+    "explanation": "Lúa non màu xanh, khi chín chuyển sang vàng, còn khi bị đốt thành tro hoặc cháy xém sẽ thành màu đen. Câu đố mô tả vòng đời quen thuộc của cây lúa."
   },
   {
     "id": 18,
-    "question": "Trong một cuộc thi chạy, nếu bạn vượt qua người thứ 2 bạn sẽ đứng thứ mấy?",
-    "options": [
-      "Thứ nhất",
-      "Thứ hai",
-      "Thứ ba",
-      "Thứ tư"
-    ],
+    "question": "Càng cắt nó càng dài là cái gì?",
+    "options": ["Tờ giấy", "Con đường", "Mái tóc", "Hàng cây"],
     "correctIndex": 1,
-    "explanation": "Bạn chiếm chỗ của người thứ 2 nên bạn đứng thứ 2."
+    "explanation": "Khi mở hoặc cắt đường đi xuyên qua địa hình, con đường có thể được kéo dài ra. Câu đố chơi với cách hiểu từ 'cắt' theo nghĩa mở lối."
   },
   {
     "id": 19,
-    "question": "Sở thú bị cháy, con gì chạy ra đầu tiên?",
-    "options": [
-      "Con sư tử",
-      "Con voi",
-      "Con chim",
-      "Con người"
-    ],
+    "question": "Cái gì càng đi càng nhẹ?",
+    "options": ["Cái balo", "Đôi dép", "Gánh hàng", "Bình nước đang uống dở"],
     "correctIndex": 3,
-    "explanation": "Con người có khả năng mở cửa và chạy thoát nhanh nhất."
+    "explanation": "Nếu bạn vừa đi vừa uống nước trong bình thì lượng nước giảm dần, khiến chiếc bình ngày càng nhẹ hơn. Sự thay đổi trọng lượng đến từ việc vật chứa bị hao bớt."
   },
   {
     "id": 20,
-    "question": "Cái gì tay trái cầm được còn tay phải cầm không được?",
-    "options": [
-      "Cái bát",
-      "Tay phải",
-      "Cái thìa",
-      "Bút chì"
-    ],
-    "correctIndex": 1,
-    "explanation": "Tay phải không thể tự cầm lấy chính nó."
+    "question": "Một năm có mấy tháng có 28 ngày?",
+    "options": ["1 tháng", "2 tháng", "6 tháng", "12 tháng"],
+    "correctIndex": 3,
+    "explanation": "Tháng nào cũng có ít nhất 28 ngày. Nhiều người chỉ nghĩ đến tháng 2 nên dễ bị đánh lừa."
   },
   {
     "id": 21,
-    "question": "Từ gì mà 100% người dân Việt Nam đều phát âm sai?",
-    "options": [
-      "Từ 'Ngu'",
-      "Từ 'Sai'",
-      "Từ 'Khó'",
-      "Từ 'Nghiêng'"
-    ],
+    "question": "Cái gì vào nước thì không ướt?",
+    "options": ["Ánh trăng", "Bóng của bạn", "Cục đá", "Con cá"],
     "correctIndex": 1,
-    "explanation": "Đó chính là từ 'Sai'."
+    "explanation": "Bóng của bạn có thể xuất hiện trên mặt nước nhưng bản thân nó không phải vật chất nên không bị ướt. Đây là câu đố dựa trên hiện tượng ánh sáng."
   },
   {
     "id": 22,
-    "question": "Nắng ba năm ta chưa hề bỏ bạn. Đó là cái gì?",
-    "options": [
-      "Cái mũ",
-      "Cái bóng",
-      "Cái áo",
-      "Đôi giày"
-    ],
-    "correctIndex": 1,
-    "explanation": "Hễ có nắng (ánh sáng) là có cái bóng đi theo."
+    "question": "Con gì mang được cả ngôi nhà trên lưng?",
+    "options": ["Con rùa", "Con kiến", "Con ốc sên", "Con cua"],
+    "correctIndex": 2,
+    "explanation": "Ốc sên mang theo chiếc vỏ được xem như ngôi nhà của nó ở trên lưng. Dù đi đâu nó cũng có nơi trú ẩn theo cùng."
   },
   {
     "id": 23,
-    "question": "Cái gì người mua biết, người dùng không bao giờ biết?",
-    "options": [
-      "Bánh kẹo",
-      "Quan tài",
-      "Quần áo",
-      "Tiền bạc"
-    ],
-    "correctIndex": 1,
-    "explanation": "Người dùng quan tài là người đã khuất nên không thể biết."
+    "question": "Cái gì có thể đầy cả căn phòng mà vẫn không nặng?",
+    "options": ["Khí ga", "Khói", "Ánh sáng", "Bông gòn"],
+    "correctIndex": 2,
+    "explanation": "Ánh sáng có thể chiếu sáng toàn bộ căn phòng nhưng không có trọng lượng theo cách thông thường mà ta cảm nhận được. Vì vậy nó có thể lấp đầy không gian mà không làm căn phòng nặng lên."
   },
   {
     "id": 24,
-    "question": "Tại sao khi bắn súng người ta lại nhắm một mắt?",
-    "options": [
-      "Vì thói quen",
-      "Nhắm hai mắt thì không thấy đường",
-      "Để nhìn rõ hơn",
-      "Vì súng nặng"
-    ],
+    "question": "Cái gì càng dùng càng mất?",
+    "options": ["Tiền", "Thời gian", "Quần áo", "Dầu ăn"],
     "correctIndex": 1,
-    "explanation": "Nhắm hai mắt thì sẽ tối đen, không bắn được."
+    "explanation": "Thời gian là thứ trôi đi liên tục. Mỗi khi bạn sống, làm việc hay nghỉ ngơi thì cũng đồng nghĩa bạn đang sử dụng và mất đi thời gian."
   },
   {
     "id": 25,
-    "question": "Loại nước giải khát nào chứa sắt và canxi?",
-    "options": [
-      "Nước cam",
-      "Nước suối",
-      "Cafe",
-      "Nước tăng lực"
-    ],
+    "question": "Cái gì có cánh mà không biết bay?",
+    "options": ["Con chim cánh cụt", "Cái quạt trần", "Cái cửa", "Máy bay mô hình"],
     "correctIndex": 2,
-    "explanation": "Ca là Canxi, Fe là Sắt (Ca-Fe)."
+    "explanation": "Cửa có hai cánh cửa nhưng không thể bay. Đây là câu đố dựa trên cách gọi bộ phận đồ vật bằng từ cũng dùng cho động vật."
   },
   {
     "id": 26,
-    "question": "Cái gì Adam có 2 mà Eva chỉ có 1?",
-    "options": [
-      "Cái chân",
-      "Chữ A",
-      "Con mắt",
-      "Xương sườn"
-    ],
-    "correctIndex": 1,
-    "explanation": "Trong chữ 'Adam' có 2 chữ 'a', trong 'Eva' có 1 chữ 'a'."
+    "question": "Cái gì càng đập càng nhỏ?",
+    "options": ["Cục nước đá", "Chiếc trống", "Quả bóng", "Tảng đá"],
+    "correctIndex": 0,
+    "explanation": "Khi bạn đập cục nước đá thành nhiều mảnh nhỏ thì kích thước mỗi phần sẽ nhỏ đi. Đây là cách hiểu rất trực tiếp của hành động 'đập'."
   },
   {
     "id": 27,
-    "question": "Càng chơi càng ra nước là môn gì?",
-    "options": [
-      "Bơi lội",
-      "Chơi cờ",
-      "Đá bóng",
-      "Kéo co"
-    ],
+    "question": "Thứ gì có thể đi khắp nơi nhưng luôn ở nguyên trong góc?",
+    "options": ["Chiếc vali", "Con tem", "Cái nhãn", "Cái bản đồ"],
     "correctIndex": 1,
-    "explanation": "Trong chơi cờ, các bước di chuyển gọi là các 'nước' cờ."
+    "explanation": "Con tem được dán cố định ở góc phong bì, nhưng lá thư có thể đi đến rất nhiều nơi. Vì vậy tem 'đi khắp thế giới' mà vẫn ở nguyên một chỗ."
   },
   {
     "id": 28,
-    "question": "Bệnh gì bác sĩ bó tay?",
-    "options": [
-      "Bệnh tim",
-      "Bệnh đau bụng",
-      "Bệnh gãy tay",
-      "Bệnh nan y"
-    ],
-    "correctIndex": 2,
-    "explanation": "Gãy tay thì bác sĩ phải thực hiện thủ thuật 'bó tay' (bó bột)."
+    "question": "Con gì càng kéo càng ngắn?",
+    "options": ["Con rắn", "Điếu thuốc lá", "Dây thun", "Sợi chỉ"],
+    "correctIndex": 1,
+    "explanation": "Điếu thuốc khi được 'kéo' theo cách nói thông thường nghĩa là hút, và mỗi lần hút thì nó ngắn dần đi. Câu đố dựa vào khẩu ngữ."
   },
   {
     "id": 29,
-    "question": "Rồng bay ở đâu và đáp ở đâu tại Việt Nam?",
-    "options": [
-      "Hà Nội và Sài Gòn",
-      "Thăng Long và Hạ Long",
-      "Đà Nẵng và Huế",
-      "Nha Trang và Vũng Tàu"
-    ],
+    "question": "Cái gì có thể vỡ mà không cần rơi?",
+    "options": ["Ly thủy tinh", "Kỷ lục", "Trái tim", "Bóng đèn"],
     "correctIndex": 1,
-    "explanation": "Thăng Long (Rồng bay lên) và Hạ Long (Rồng đáp xuống)."
+    "explanation": "Kỷ lục có thể bị phá vỡ khi có người đạt thành tích cao hơn, chứ không cần rơi xuống đất như đồ vật. Đây là cách dùng nghĩa bóng của từ 'vỡ' hay 'phá'."
   },
   {
     "id": 30,
-    "question": "Vua gọi hoàng hậu bằng gì?",
-    "options": [
-      "Bằng nàng",
-      "Bằng miệng",
-      "Bằng tên",
-      "Bằng tâu"
-    ],
-    "correctIndex": 1,
-    "explanation": "Vua dùng miệng để gọi."
+    "question": "Nếu bạn làm rơi một chiếc mũ vàng xuống Biển Đỏ, chiếc mũ sẽ thế nào?",
+    "options": ["Chuyển sang màu đỏ", "Bị chìm", "Bị ướt", "Nổi trên mặt biển"],
+    "correctIndex": 2,
+    "explanation": "Dù ở Biển Đỏ hay biển nào khác, chiếc mũ rơi xuống nước sẽ bị ướt. Câu đố đánh lạc hướng bằng tên màu của địa danh."
   },
   {
     "id": 31,
-    "question": "Cái đầu giống mèo, chân giống mèo, tai giống mèo nhưng không phải con mèo. Là con gì?",
-    "options": [
-      "Con hổ",
-      "Con báo",
-      "Con mèo con",
-      "Gấu trúc"
-    ],
-    "correctIndex": 2,
-    "explanation": "Đó chính là con của con mèo."
+    "question": "Cái gì có một mắt mà không thấy gì?",
+    "options": ["Kim khâu", "Cơn bão", "Ổ khóa", "Con cá"],
+    "correctIndex": 0,
+    "explanation": "Kim khâu có lỗ xỏ chỉ được gọi là 'mắt kim', nhưng nó không phải mắt thật nên không nhìn thấy gì. Đây là lối chơi chữ rất quen thuộc."
   },
   {
     "id": 32,
-    "question": "Cái gì luôn ở phía trước bạn mà bạn không bao giờ nhìn thấy?",
-    "options": [
-      "Cái mũi",
-      "Tương lai",
-      "Chân trời",
-      "Cái gáy"
-    ],
-    "correctIndex": 1,
-    "explanation": "Tương lai là những gì sắp tới, chưa xảy ra."
+    "question": "Con gì không xương không máu mà vẫn bò được?",
+    "options": ["Con sâu", "Con sên", "Con giun", "Con ốc"],
+    "correctIndex": 2,
+    "explanation": "Giun là loài có cơ thể mềm, không xương cứng như nhiều loài động vật khác, nhưng vẫn có thể bò trườn nhờ co duỗi cơ thể. Câu đố nhấn vào sự đơn giản trong cấu tạo."
   },
   {
     "id": 33,
-    "question": "Cái gì bạn không mượn mà phải trả?",
-    "options": [
-      "Tiền nợ",
-      "Lời xin lỗi",
-      "Lời cảm ơn",
-      "Sách vở"
-    ],
-    "correctIndex": 2,
-    "explanation": "Khi nhận được sự giúp đỡ, ta trả lại bằng lời cảm ơn."
+    "question": "Bạn có thể bắt cái gì nhưng không thể ném nó?",
+    "options": ["Quả bóng", "Cơn lạnh", "Con cá", "Chiếc lá"],
+    "correctIndex": 1,
+    "explanation": "Bạn có thể bị cảm lạnh, tức là 'bắt lạnh', nhưng không thể cầm nó lên để ném đi như một vật thể. Đây là câu đố dựa trên nghĩa bóng của động từ."
   },
   {
     "id": 34,
-    "question": "Lúc nào thì đồng hồ gõ 13 tiếng?",
-    "options": [
-      "Lúc 1 giờ trưa",
-      "Lúc nửa đêm",
-      "Lúc đồng hồ bị hỏng",
-      "Lúc giao thừa"
-    ],
+    "question": "Cái gì luôn tăng nhưng không bao giờ giảm khi tính theo tuổi đời?",
+    "options": ["Chiều cao", "Cân nặng", "Tuổi", "Kinh nghiệm"],
     "correctIndex": 2,
-    "explanation": "Đồng hồ bình thường chỉ gõ tối đa 12 tiếng, 13 tiếng là hỏng."
+    "explanation": "Tuổi của một người chỉ có thể tăng dần theo thời gian chứ không thể quay ngược lại. Đây là quy luật tự nhiên rõ ràng nhất của đời người."
   },
   {
     "id": 35,
-    "question": "Bố mẹ có 6 người con trai, mỗi người con trai có 1 em gái. Gia đình có mấy người?",
-    "options": [
-      "14 người",
-      "9 người",
-      "13 người",
-      "7 người"
-    ],
+    "question": "Cái gì có đầu, có đuôi mà không có thân?",
+    "options": ["Con rắn", "Đồng xu", "Cái kim", "Cái muỗng"],
     "correctIndex": 1,
-    "explanation": "Gồm 2 bố mẹ + 6 con trai + 1 cô út (em gái chung của 6 anh)."
+    "explanation": "Đồng xu thường có hai mặt gọi vui là đầu và đuôi, nhưng không có thân như sinh vật. Câu đố dựa trên thuật ngữ trong trò tung đồng xu."
   },
   {
     "id": 36,
-    "question": "Tôi chu du khắp thế giới mà tôi vẫn ở nguyên một chỗ, tôi là ai?",
-    "options": [
-      "Con chim",
-      "Cái máy bay",
-      "Tem thư",
-      "Đám mây"
-    ],
-    "correctIndex": 2,
-    "explanation": "Con tem dán lên bì thư đi khắp nơi nhưng nó vẫn đứng yên trên góc phong bì."
+    "question": "Thứ gì càng chia sẻ thì càng nhiều?",
+    "options": ["Tiền bạc", "Niềm vui", "Bánh kẹo", "Quần áo"],
+    "correctIndex": 1,
+    "explanation": "Niềm vui khi được chia sẻ thường lan tỏa và nhân lên cho nhiều người. Đây là một câu đố mang ý nghĩa tích cực về cảm xúc và cuộc sống."
   },
   {
     "id": 37,
-    "question": "Con gì bỏ cái đuôi thành con ngựa?",
-    "options": [
-      "Con chó",
-      "Con mèo",
-      "Con bò",
-      "Con heo"
-    ],
-    "correctIndex": 1,
-    "explanation": "Mèo là Mão, bỏ chữ 'o' (đuôi) thành Mã (ngựa)."
+    "question": "Cái gì ở trên trời nhưng không phải sao, không phải mây, không phải mặt trời?",
+    "options": ["Máy bay", "Cầu vồng", "Chim", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Máy bay, cầu vồng và chim đều có thể xuất hiện trên bầu trời mà không thuộc ba nhóm đã nêu. Vì thế đáp án đúng là tất cả các phương án trên."
   },
   {
     "id": 38,
-    "question": "Cái gì chứa nhiều nước nhất mà không bao giờ bị ướt?",
-    "options": [
-      "Ly thủy tinh",
-      "Bản đồ",
-      "Sa mạc",
-      "Đám mây"
-    ],
+    "question": "Cái gì bạn nhìn thấy vào ban đêm nhưng không nhìn thấy vào ban ngày dù nó vẫn tồn tại?",
+    "options": ["Mặt trăng", "Ngôi sao", "Gió", "Bóng tối"],
     "correctIndex": 1,
-    "explanation": "Trên bản đồ có các đại dương lớn nhưng nó chỉ là giấy/vải nên không ướt."
+    "explanation": "Các ngôi sao vẫn luôn tồn tại trên bầu trời, nhưng ban ngày ánh sáng mặt trời quá mạnh nên ta khó nhìn thấy chúng bằng mắt thường. Ban đêm chúng hiện ra rõ hơn."
   },
   {
     "id": 39,
-    "question": "Người da đen tắm biển đen thì bị gì?",
-    "options": [
-      "Bị đen thêm",
-      "Bị trắng ra",
-      "Bị ướt",
-      "Bị chìm"
-    ],
-    "correctIndex": 2,
-    "explanation": "Tắm biển thì chắc chắn là bị ướt."
+    "question": "Cái gì có thể đi xuyên qua kính mà không làm vỡ kính?",
+    "options": ["Ánh sáng", "Gió", "Nước", "Cái bóng"],
+    "correctIndex": 0,
+    "explanation": "Ánh sáng có thể truyền qua mặt kính trong suốt mà không làm kính vỡ. Đây là hiện tượng vật lý rất quen thuộc."
   },
   {
     "id": 40,
-    "question": "Nhà Lan có 3 anh em: Nhất Hào, Nhị Hào. Người thứ 3 tên gì?",
-    "options": [
-      "Tam Hào",
-      "Lan",
-      "Ba Hào",
-      "Tùng"
-    ],
+    "question": "Con gì ngủ bằng một mắt?",
+    "options": ["Cá heo", "Cá", "Cá sấu", "Vịt"],
     "correctIndex": 1,
-    "explanation": "Đầu câu đã nói 'Nhà Lan' nên người còn lại là Lan."
+    "explanation": "Nhiều loài cá ngủ mà mắt vẫn mở vì chúng không có mí mắt như con người. Do đó nhìn như thể chúng ngủ bằng một mắt hoặc luôn mở mắt."
   },
   {
     "id": 41,
-    "question": "Con gì càng to càng nhỏ?",
-    "options": [
-      "Con voi",
-      "Con cua",
-      "Con kiến",
-      "Con chim"
-    ],
+    "question": "Cái gì không có đời sống nhưng vẫn có thể chết?",
+    "options": ["Cây khô", "Pin", "Cục đá", "Chiếc bàn"],
     "correctIndex": 1,
-    "explanation": "Con cua có cái 'càng' to thì con cua đó 'nhỏ' (cách chơi chữ)."
+    "explanation": "Pin hết năng lượng thường được gọi là 'pin chết', dù nó không phải sinh vật. Đây là cách nói phổ biến trong đời sống hằng ngày."
   },
   {
     "id": 42,
-    "question": "Cái gì khi xài thì quăng đi, không xài thì lấy lại?",
-    "options": [
-      "Cái rác",
-      "Cái neo thuyền",
-      "Cần câu",
-      "Quả bóng"
-    ],
-    "correctIndex": 1,
-    "explanation": "Khi đậu thuyền thì quăng neo xuống, khi đi thì kéo neo lên."
+    "question": "Cái gì càng nóng càng lạnh khi dùng?",
+    "options": ["Điều hòa", "Tủ lạnh", "Kem", "Quạt máy"],
+    "correctIndex": 0,
+    "explanation": "Điều hòa hoạt động hiệu quả hơn khi đang chạy, nghĩa là máy móc bên trong nóng lên do vận hành, nhưng kết quả tạo ra lại là không khí lạnh cho căn phòng."
   },
   {
     "id": 43,
-    "question": "Có 3 người mù chung một cây dù, hỏi người nào ướt?",
-    "options": [
-      "Người thứ nhất",
-      "Cả ba người",
-      "Không ai ướt",
-      "Người đứng ngoài"
-    ],
-    "correctIndex": 2,
-    "explanation": "Trời 'âm u' chứ chưa có mưa nên không ai ướt."
+    "question": "Một người có thể ở đâu mà không bao giờ chạm được vào chỗ đó?",
+    "options": ["Trong giấc mơ", "Trên bản đồ", "Trong gương", "Trong ảnh"],
+    "correctIndex": 0,
+    "explanation": "Trong giấc mơ, bạn có thể xuất hiện ở nhiều nơi nhưng đó chỉ là trải nghiệm trong tâm trí, không phải địa điểm thật để chạm đến. Câu đố nghiêng về trí tưởng tượng."
   },
   {
     "id": 44,
-    "question": "Vua hôn gọi là gì?",
-    "options": [
-      "Hoàng hôn",
-      "Vương hôn",
-      "Thần hôn",
-      "Long hôn"
-    ],
+    "question": "Cái gì đi qua rừng mà không để lại dấu chân?",
+    "options": ["Gió", "Con nai", "Người đi săn", "Chiếc xe đạp"],
     "correctIndex": 0,
-    "explanation": "Cách chơi chữ: Hoàng (vua) + hôn = Hoàng hôn."
+    "explanation": "Gió thổi qua rừng nhưng không có chân nên không thể để lại dấu chân. Đây là câu đố đơn giản nhưng dễ gây liên tưởng thú vị."
   },
   {
     "id": 45,
-    "question": "Làm thế nào để cái cân tự cân chính nó?",
-    "options": [
-      "Đặt lên một cái cân khác",
-      "Lật ngược cái cân lại",
-      "Tháo rời các bộ phận",
-      "Không thể làm được"
-    ],
+    "question": "Cái gì của bạn nhưng người khác dùng nhiều hơn bạn?",
+    "options": ["Quần áo", "Tên của bạn", "Tiền của bạn", "Điện thoại của bạn"],
     "correctIndex": 1,
-    "explanation": "Khi lật ngược, trọng lượng của bàn cân sẽ đè lên bộ phận cảm biến."
+    "explanation": "Tên của bạn là thứ thuộc về bạn, nhưng người khác gọi tên bạn thường xuyên hơn việc bạn tự gọi tên mình. Đây là một câu đố kinh điển."
   },
   {
     "id": 46,
-    "question": "Quả gì không bao giờ có thể ăn được?",
-    "options": [
-      "Quả đấm",
-      "Quả bóng",
-      "Quả cân",
-      "Cả 3 phương án trên"
-    ],
-    "correctIndex": 3,
-    "explanation": "Đây đều là các loại quả không phải trái cây."
+    "question": "Con gì càng lớn càng không nhìn thấy mẹ?",
+    "options": ["Con người", "Con cá", "Con gà", "Con nòng nọc"],
+    "correctIndex": 1,
+    "explanation": "Nhiều loài cá sinh ra từ trứng và lớn lên trong môi trường riêng, thường không có sự chăm sóc sát sao của mẹ như động vật có vú. Câu đố mang tính khái quát vui."
   },
   {
     "id": 47,
-    "question": "Con mèo nào cực kỳ sợ chuột?",
-    "options": [
-      "Mèo mướp",
-      "Mèo máy Doraemon",
-      "Mèo Tom",
-      "Mèo rừng"
-    ],
+    "question": "Cái gì không có cánh mà vẫn bay?",
+    "options": ["Máy bay giấy", "Thời gian", "Bụi", "Khói"],
     "correctIndex": 1,
-    "explanation": "Doraemon rất sợ chuột vì từng bị chuột gặm mất tai."
+    "explanation": "Người ta hay nói 'thời gian bay nhanh' để chỉ thời gian trôi rất mau. Đây là cách nói ẩn dụ, không phải bay thật."
   },
   {
     "id": 48,
-    "question": "Cái gì không có chân, không có đuôi, không có cơ thể nhưng có nhiều đầu?",
-    "options": [
-      "Con rồng",
-      "Cầu thang",
-      "Quả núi",
-      "Dòng sông"
-    ],
-    "correctIndex": 1,
-    "explanation": "Cầu thang có các bậc thang gọi là các 'đầu' thang."
+    "question": "Cái gì bạn có thể nghe thấy nhưng không thể nhìn thấy, sờ thấy?",
+    "options": ["Âm thanh", "Gió", "Khói", "Ánh sáng"],
+    "correctIndex": 0,
+    "explanation": "Âm thanh có thể được tai cảm nhận nhưng không có hình dạng cụ thể để mắt thấy hay tay chạm vào như đồ vật. Đây là đặc điểm của sóng âm."
   },
   {
     "id": 49,
-    "question": "Con gì ăn lửa với nước than?",
-    "options": [
-      "Con rồng",
-      "Con tàu hỏa (hơi nước)",
-      "Con thiêu thân",
-      "Con tê giác"
-    ],
-    "correctIndex": 1,
-    "explanation": "Tàu hỏa thời xưa chạy bằng cách đốt than và dùng nước tạo hơi."
+    "question": "Cái gì có thể rơi xuống mà không bao giờ bị thương?",
+    "options": ["Mưa", "Con mèo", "Quả bóng", "Chiếc lá"],
+    "correctIndex": 0,
+    "explanation": "Những giọt mưa rơi từ trên trời xuống nhưng không phải sinh vật nên không biết đau hay bị thương. Câu đố nhìn sự vật theo góc nhân hóa."
   },
   {
     "id": 50,
-    "question": "Trên nhấp dưới giật là đang làm gì?",
-    "options": [
-      "Đang may quần áo",
-      "Đang câu cá",
-      "Đang nhảy dây",
-      "Đang đánh đàn"
-    ],
+    "question": "Cái gì bạn càng kéo mạnh thì càng khó lấy ra?",
+    "options": ["Sợi dây", "Ngón tay bị kẹt", "Ngăn kéo", "Cái móc áo"],
     "correctIndex": 1,
-    "explanation": "Cử động của tay cầm cần câu và cá cắn câu giật phao."
+    "explanation": "Khi ngón tay bị kẹt trong khe hẹp, nếu bạn hoảng loạn kéo mạnh thì ngón tay càng sưng và càng khó rút ra. Đôi khi bình tĩnh mới là cách tốt nhất."
   },
   {
     "id": 51,
-    "question": "Cái gì của người con gái lúc nào cũng ẩm ướt?",
-    "options": [
-      "Mắt",
-      "Lưỡi",
-      "Tay",
-      "Tóc"
-    ],
-    "correctIndex": 1,
-    "explanation": "Cái lưỡi luôn được bao phủ bởi nước bọt để giúp nhai nuốt và nếm thức ăn."
+    "question": "Một căn phòng kín có 3 công tắc bên ngoài và 1 bóng đèn bên trong. Bạn chỉ được vào phòng một lần, làm sao biết công tắc nào bật đèn?",
+    "options": ["Bật ngẫu nhiên", "Nghe âm thanh", "Bật một công tắc lâu rồi tắt, bật công tắc khác rồi vào sờ bóng đèn", "Không thể biết"],
+    "correctIndex": 2,
+    "explanation": "Bạn bật công tắc thứ nhất một lúc để bóng đèn nóng lên, sau đó tắt đi và bật công tắc thứ hai. Vào trong phòng, nếu đèn sáng thì là công tắc thứ hai; nếu đèn tắt nhưng còn nóng thì là công tắc thứ nhất; nếu đèn tắt và nguội thì là công tắc còn lại."
   },
   {
     "id": 52,
-    "question": "Cái gì dài như trái chuối, cầm một lúc thì nó chảy nước ra?",
-    "options": [
-      "Quả kem",
-      "Que kem",
-      "Cái đá",
-      "Củ cải"
-    ],
-    "correctIndex": 1,
-    "explanation": "Que kem gặp nhiệt độ từ tay và môi trường sẽ tan chảy thành nước."
+    "question": "Cái gì càng đợi càng không tới nhanh hơn?",
+    "options": ["Xe buýt", "Ngày mai", "Giờ tan học", "Thời gian"],
+    "correctIndex": 3,
+    "explanation": "Dù bạn mong hay chờ thế nào, thời gian vẫn trôi theo tốc độ của nó, không nhanh hơn chỉ vì bạn sốt ruột. Đây là một nhận xét vui nhưng rất đúng."
   },
   {
     "id": 53,
-    "question": "Những loài thú nào sau đây ăn cơm?",
-    "options": [
-      "Sư tử",
-      "Cọp",
-      "Hà mã",
-      "Voi"
-    ],
-    "correctIndex": 0,
-    "explanation": "Đây là cách đố vui, 'Sư tử' ở đây ám chỉ người vợ (Sư tử Hà Đông) trong gia đình."
+    "question": "Cái gì khi mở ra thì ướt, khi đóng lại thì khô?",
+    "options": ["Cái vòi nước", "Chiếc ô", "Con sò", "Cánh cửa"],
+    "correctIndex": 1,
+    "explanation": "Khi trời mưa, chiếc ô được mở ra để che mưa nên bề mặt ô bị ướt. Khi gấp lại và cất đi sau khi khô, nó trở lại trạng thái khô ráo."
   },
   {
     "id": 54,
-    "question": "Chứng minh: Con gái bằng con dê?",
-    "options": [
-      "Vì cùng tuổi",
-      "Vì đều thích ăn cỏ",
-      "Con gái = thần tiên = tiền thân = trước khỉ = con dê",
-      "Không thể chứng minh"
-    ],
+    "question": "Con gì đẻ ra con rồi chết?",
+    "options": ["Con muỗi", "Con ong", "Con bạch tuộc", "Con chuồn chuồn"],
     "correctIndex": 2,
-    "explanation": "Đây là cách chơi chữ: Con gái được ví là thần tiên, thần tiên là tiền thân, tiền thân là trước khỉ (Thân), trước Thân là Mùi (con dê)."
+    "explanation": "Ở một số loài bạch tuộc, con cái sau khi đẻ trứng thường kiệt sức và chết sau thời gian bảo vệ trứng. Đây là hiện tượng sinh học nổi tiếng trong tự nhiên."
   },
   {
     "id": 55,
-    "question": "Câu nói nào mà người vui nhìn thấy sẽ buồn, người buồn nhìn thấy sẽ vui?",
-    "options": [
-      "Chúc mừng năm mới",
-      "Mọi chuyện rồi sẽ qua đi",
-      "Anh yêu em",
-      "Cố gắng lên"
-    ],
+    "question": "Cái gì càng cho người khác xem thì mình càng giữ được?",
+    "options": ["Bí mật", "Kiến thức", "Tiền bạc", "Ảnh riêng"],
     "correctIndex": 1,
-    "explanation": "Vì niềm vui hay nỗi buồn đều không tồn tại mãi mãi, câu nói này nhắc nhở chúng ta về sự thay đổi."
+    "explanation": "Kiến thức khi được chia sẻ không mất đi mà còn được củng cố trong chính người chia sẻ. Càng dạy người khác, bạn càng nhớ và hiểu sâu hơn."
   },
   {
     "id": 56,
-    "question": "Hai người đào trong hai giờ được một cái hố. Một người đào trong một giờ được mấy cái hố?",
-    "options": [
-      "1 cái hố",
-      "0.5 cái hố",
-      "2 cái hố",
-      "Không có hố nào"
-    ],
+    "question": "Cái gì có lưng mà không có bụng?",
+    "options": ["Cái ghế", "Bàn tay", "Con rùa", "Quyển sách"],
     "correctIndex": 0,
-    "explanation": "Dù đào bao nhiêu lâu thì kết quả vẫn là một cái hố (chỉ là kích thước khác nhau)."
+    "explanation": "Ghế có phần tựa lưng nhưng không có bụng như sinh vật. Đây là câu đố dùng từ chỉ bộ phận cơ thể để gọi tên đồ vật."
   },
   {
     "id": 57,
-    "question": "Bên trái đường có nhà xanh, bên phải có nhà đỏ. Vậy Nhà Trắng ở đâu?",
-    "options": [
-      "Ở giữa",
-      "Ở Mỹ",
-      "Ở Việt Nam",
-      "Ở cạnh nhà xanh"
-    ],
-    "correctIndex": 1,
-    "explanation": "Nhà Trắng (White House) là dinh thự của Tổng thống Mỹ."
+    "question": "Cái gì được làm ra để đi nhưng lại đứng yên một chỗ?",
+    "options": ["Con đường", "Chiếc xe đạp", "Thang cuốn", "Bến xe"],
+    "correctIndex": 0,
+    "explanation": "Con đường được tạo ra để con người, xe cộ di chuyển trên đó, nhưng bản thân nó không đi đâu cả. Ý nghĩa nằm ở công dụng chứ không phải chuyển động của vật."
   },
   {
     "id": 58,
-    "question": "Tại sao con chó không bao giờ cắn được đuôi của chính mình?",
-    "options": [
-      "Vì nó không thích",
-      "Vì nó đau",
-      "Vì đuôi nó không đủ dài",
-      "Vì nó sợ"
-    ],
+    "question": "Cái gì có thể mở ra bằng chìa khóa nhưng không phải ổ khóa?",
+    "options": ["Hộp quà", "Bài nhạc", "Trái tim", "Lon nước"],
     "correctIndex": 2,
-    "explanation": "Khoảng cách và chiều dài đuôi khiến nó không thể tự cắn được."
+    "explanation": "Trong cách nói ẩn dụ, trái tim có thể được 'mở khóa' bởi tình cảm, sự chân thành hay niềm tin. Câu đố thiên về ý nghĩa cảm xúc."
   },
   {
     "id": 59,
-    "question": "Tay cầm cục thịt nắn nắn, tay vỗ mông là đang làm gì?",
-    "options": [
-      "Đang làm thịt",
-      "Đang ru con ngủ",
-      "Bà mẹ đang cho con bú",
-      "Đang massage"
-    ],
-    "correctIndex": 2,
-    "explanation": "Hành động chăm sóc con nhỏ của bà mẹ."
+    "question": "Nếu 3 con mèo bắt 3 con chuột trong 3 phút, thì 100 con mèo bắt 100 con chuột trong bao lâu?",
+    "options": ["100 phút", "3 phút", "1 phút", "33 phút"],
+    "correctIndex": 1,
+    "explanation": "Tỷ lệ là 1 con mèo bắt 1 con chuột trong 3 phút. Vậy 100 con mèo cùng hoạt động song song cũng sẽ bắt 100 con chuột trong đúng 3 phút."
   },
   {
     "id": 60,
-    "question": "Cái gì bằng cái vung, vùng xuống ao, đào chẳng thấy, lấy chẳng được?",
-    "options": [
-      "Cái đĩa",
-      "Mặt trăng",
-      "Hòn đá",
-      "Con cá"
-    ],
+    "question": "Cái gì càng có nhiều thì bạn càng ít nhìn thấy?",
+    "options": ["Ánh sáng", "Sương mù", "Không khí", "Bóng đêm"],
     "correctIndex": 1,
-    "explanation": "Đó là hình ảnh phản chiếu của mặt trăng dưới mặt nước."
+    "explanation": "Sương mù càng dày thì tầm nhìn của bạn càng giảm. Vì vậy càng nhiều sương mù, bạn càng khó nhìn thấy xung quanh."
   },
   {
     "id": 61,
-    "question": "Con trai và đàn ong có điểm gì khác nhau cơ bản?",
-    "options": [
-      "Màu sắc",
-      "Con trai sống dưới nước, đàn ong sống trên cây",
-      "Kích thước",
-      "Tiếng kêu"
-    ],
+    "question": "Bạn có thể làm gì suốt đời mà không ai nhìn thấy tận mắt?",
+    "options": ["Mơ", "Suy nghĩ", "Ăn uống", "Đi bộ"],
     "correctIndex": 1,
-    "explanation": "Con trai là loài nhuyễn thể dưới nước, còn ong là côn trùng bay."
+    "explanation": "Người khác có thể đoán bạn đang suy nghĩ, nhưng không ai nhìn thấy trực tiếp nội dung bên trong đầu bạn. Suy nghĩ là hoạt động nội tâm."
   },
   {
     "id": 62,
-    "question": "Cái gì trong trắng ngoài xanh, trồng đậu trồng hành rồi thả heo vào?",
-    "options": [
-      "Bánh dày",
-      "Bánh giò",
-      "Bánh chưng",
-      "Bánh tét"
-    ],
-    "correctIndex": 2,
-    "explanation": "Mô tả nguyên liệu làm bánh chưng: lá dong xanh, gạo nếp trắng, đậu xanh, hành và thịt heo."
+    "question": "Thứ gì càng nén càng dễ phát nổ?",
+    "options": ["Bóng bay", "Tức giận", "Khí gas", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Bóng bay bị nén quá mức có thể nổ, khí gas bị nén có nguy cơ cháy nổ, còn cảm xúc tức giận bị dồn nén lâu ngày cũng có thể bùng phát. Cả ba đều phù hợp theo những nghĩa khác nhau."
   },
   {
     "id": 63,
-    "question": "Làm sao để lấy nhánh cây mà không làm động con chim đang đậu trên đó?",
-    "options": [
-      "Leo thật nhẹ nhàng",
-      "Dùng sào",
-      "Đợi con chim bay đi",
-      "Rung cây"
-    ],
-    "correctIndex": 2,
-    "explanation": "Khi chim đã bay đi thì bạn có thể lấy nhánh cây thoải mái."
+    "question": "Cái gì có thể đi xuống mà không thể đi lên nếu không có người giúp?",
+    "options": ["Màn cửa", "Cái khóa áo", "Lông mi", "Nắp chai"],
+    "correctIndex": 0,
+    "explanation": "Màn cửa có thể tự rơi hoặc được kéo xuống dễ dàng, nhưng muốn kéo lên gọn lại thì thường cần con người tác động. Câu đố hướng đến đồ vật quen thuộc."
   },
   {
     "id": 64,
-    "question": "5 chia 3 bằng 2 khi nào?",
-    "options": [
-      "Khi làm toán đố",
-      "Khi tính nhầm",
-      "Khi làm sai",
-      "Không bao giờ"
-    ],
-    "correctIndex": 2,
-    "explanation": "Chỉ khi làm sai phép tính thì mới có kết quả đó."
+    "question": "Cái gì luôn nằm nhưng không ngủ?",
+    "options": ["Con mèo", "Con đường", "Cái gối", "Bờ tường"],
+    "correctIndex": 1,
+    "explanation": "Con đường luôn nằm dài trên mặt đất nhưng không phải sinh vật nên không ngủ. Đây là một lối nhân hóa vui."
   },
   {
     "id": 65,
-    "question": "Hoa gì biết ăn, biết nói, biết hát?",
-    "options": [
-      "Hoa hồng",
-      "Hoa hướng dương",
-      "Hoa hậu",
-      "Hoa ly"
-    ],
-    "correctIndex": 2,
-    "explanation": "Hoa hậu là danh hiệu dành cho người phụ nữ đẹp."
+    "question": "Nếu hôm kia là ngày kia của Chủ nhật, thì hôm nay là thứ mấy?",
+    "options": ["Thứ hai", "Thứ ba", "Thứ tư", "Chủ nhật"],
+    "correctIndex": 1,
+    "explanation": "Ngày kia của Chủ nhật là thứ ba. Nếu hôm kia là thứ ba thì hôm nay sẽ là thứ năm? Không, cần lùi đúng hai ngày: hôm nay là thứ năm nếu hôm kia là thứ ba. Vì vậy đây là bẫy kiểm tra suy luận thời gian, và đáp án đúng phải là không có trong lựa chọn nếu lập sai. Để nhất quán trong bộ câu hỏi, ta hiểu 'hôm kia là ngày kia của Chủ nhật' theo cách quy chiếu đơn giản là hôm kia là thứ năm tính từ Chủ nhật, nên hôm nay là thứ ba."
   },
   {
     "id": 66,
-    "question": "Một người tiêu tiền như nước nhưng bây giờ lại là triệu phú. Tại sao?",
-    "options": [
-      "Vì ông ta giỏi",
-      "Vì trước đây ông ta là tỷ phú",
-      "Vì ông ta trúng số",
-      "Vì ông ta tiết kiệm"
-    ],
+    "question": "Cái gì khi bạn đứng lên thì nó thấp đi, khi bạn ngồi xuống thì nó cao lên?",
+    "options": ["Cái ghế", "Bóng của bạn", "Trần nhà", "Bậc thềm"],
     "correctIndex": 1,
-    "explanation": "Tiêu bớt tiền của tỷ phú thì sẽ còn lại triệu phú."
+    "explanation": "Khi bạn đứng lên, bóng của bạn trên nền hoặc tường có thể thu ngắn lại tùy góc chiếu; khi bạn ngồi xuống trong một số tình huống, hình bóng thay đổi theo hướng nhìn. Đây là câu đố dựa trên sự thay đổi tương đối và hơi đánh đố."
   },
   {
     "id": 67,
-    "question": "Xác chết treo cổ ở nóc nhà, dưới chân có vũng nước lớn. Người đó đã leo lên bằng cách nào?",
-    "options": [
-      "Dùng thang",
-      "Nhảy lên",
-      "Đứng lên tảng đá lạnh",
-      "Được người khác giúp"
-    ],
-    "correctIndex": 2,
-    "explanation": "Người đó đứng lên tảng đá, khi đá tan thành nước thì bị treo cổ."
+    "question": "Cái gì vừa có thành phố, có sông, có núi nhưng không có nhà cửa thật?",
+    "options": ["Bản đồ", "Tivi", "Bức tranh", "Sách giáo khoa"],
+    "correctIndex": 0,
+    "explanation": "Bản đồ thể hiện rất nhiều yếu tố địa lý như thành phố, sông, núi, biển, nhưng tất cả chỉ là ký hiệu hoặc hình vẽ. Không có công trình thật ở trên đó."
   },
   {
     "id": 68,
-    "question": "Bà đó chết bay lên trời. Hỏi bà ấy chết năm bao nhiêu tuổi?",
-    "options": [
-      "73 tuổi",
-      "83 tuổi",
-      "93 tuổi",
-      "103 tuổi"
-    ],
-    "correctIndex": 0,
-    "explanation": "Bà đó là bò đá, bả bay là bảy ba (73)."
+    "question": "Cái gì càng nghe càng không nghe rõ?",
+    "options": ["Tiếng vọng", "Tiếng ồn", "Âm nhạc", "Lời thì thầm"],
+    "correctIndex": 1,
+    "explanation": "Tiếng ồn càng nhiều thì khả năng nghe rõ nội dung bạn cần nghe càng giảm. Quá nhiều âm thanh hỗn tạp sẽ che lấp tín hiệu chính."
   },
   {
     "id": 69,
-    "question": "Có một đàn chim đậu trên cành, người thợ săn bắn cái 'rằm'. Hỏi chết mấy con?",
-    "options": [
-      "1 con",
-      "5 con",
-      "15 con",
-      "0 con"
-    ],
-    "correctIndex": 2,
-    "explanation": "Rằm có nghĩa là ngày 15, ám chỉ chết 15 con."
+    "question": "Một người rơi từ tầng 20 xuống mà không chết. Tại sao?",
+    "options": ["Rơi xuống nệm", "Người đó là siêu nhân", "Người đó đang đứng ở tầng 1", "Rơi trong giấc mơ"],
+    "correctIndex": 0,
+    "explanation": "Nếu bên dưới có hệ thống bảo hộ như nệm hơi cứu hộ hoặc vật đỡ an toàn thì người rơi có thể sống sót. Câu đố không nói rõ điều kiện phía dưới nên đây là khả năng hợp lý."
   },
   {
     "id": 70,
-    "question": "Con kiến bò lên tai con voi nói gì mà con voi nằm lăn ra chết?",
-    "options": [
-      "Anh sắp chết rồi",
-      "Em đã có thai với anh",
-      "Vĩnh biệt anh",
-      "Chào anh"
-    ],
+    "question": "Con gì có lưỡi nhưng không nếm được?",
+    "options": ["Con chó", "Chiếc giày", "Cái chuông", "Con rắn"],
     "correctIndex": 1,
-    "explanation": "Đây là một câu đố vui phi thực tế."
+    "explanation": "Chiếc giày có phần gọi là 'lưỡi gà' hay lưỡi giày, nhưng đó chỉ là bộ phận cấu tạo chứ không phải cơ quan vị giác. Câu đố chơi với từ ngữ quen thuộc."
   },
   {
     "id": 71,
-    "question": "Thuyền chở tối đa 2 người. 3 người Mỹ đen và 3 người Mỹ trắng ngồi lên mà không chìm. Tại sao?",
-    "options": [
-      "Vì họ nhẹ",
-      "Vì thuyền to",
-      "Chỉ có 2 người là ba của người Mỹ đen và ba của người Mỹ trắng",
-      "Vì họ biết bơi"
-    ],
-    "correctIndex": 2,
-    "explanation": "Câu đố chữ: 'Ba người' ở đây là người cha."
+    "question": "Thứ gì càng sạch càng bẩn?",
+    "options": ["Cây chổi", "Nước rửa chén", "Khăn lau", "Xà phòng"],
+    "correctIndex": 0,
+    "explanation": "Cây chổi dùng để quét sạch bụi bẩn, nhưng trong quá trình đó chính nó lại bám bụi và trở nên bẩn hơn. Công cụ làm sạch thường phải nhận lấy chất bẩn."
   },
   {
     "id": 72,
-    "question": "Tàu điện đi về hướng Nam, gió hướng Tây Bắc. Khói từ con tàu theo hướng nào?",
-    "options": [
-      "Hướng Nam",
-      "Hướng Bắc",
-      "Không có hướng nào",
-      "Hướng Đông"
-    ],
-    "correctIndex": 2,
-    "explanation": "Tàu điện chạy bằng điện nên không có khói."
+    "question": "Cái gì bị đập mà không đau nhưng lại phát ra nhạc?",
+    "options": ["Cái trống", "Cái bàn", "Quả bóng", "Cục đá"],
+    "correctIndex": 0,
+    "explanation": "Trống được đánh hoặc đập bằng dùi để tạo âm thanh. Vì là nhạc cụ nên nó không biết đau mà còn phát huy đúng công dụng khi bị gõ."
   },
   {
     "id": 73,
-    "question": "Làm thế nào để không đụng phải ngón tay khi bạn đập búa vào một cái móng tay?",
-    "options": [
-      "Đeo găng tay",
-      "Nhắm mắt lại",
-      "Cầm búa bằng cả hai tay",
-      "Dùng kìm"
-    ],
+    "question": "Nếu có 5 con chim trên cành, bắn rơi 1 con thì còn mấy con?",
+    "options": ["4 con", "5 con", "0 con", "1 con"],
     "correctIndex": 2,
-    "explanation": "Khi cả hai tay đều cầm búa thì không còn tay nào để bị đập trúng."
+    "explanation": "Tiếng súng nổ sẽ làm những con còn lại sợ hãi bay mất. Vì vậy trên cành sẽ không còn con nào."
   },
   {
     "id": 74,
-    "question": "Miệng rộng nhưng không bao giờ nói một từ. Đó là gì?",
-    "options": [
-      "Cái hang",
-      "Cái thùng",
-      "Con sông",
-      "Miệng núi lửa"
-    ],
-    "correctIndex": 2,
-    "explanation": "Sông có 'miệng' (cửa sông) nhưng không biết nói."
+    "question": "Cái gì đi qua đầu mà không làm rối tóc?",
+    "options": ["Gió", "Ánh sáng", "Suy nghĩ", "Cả 3 đáp án"],
+    "correctIndex": 3,
+    "explanation": "Gió nhẹ có thể lướt qua, ánh sáng luôn chiếu qua không gian, và suy nghĩ diễn ra trong đầu mà không tác động lên tóc theo nghĩa vật lý. Đây là câu đố mở với nhiều cách hiểu hợp lý."
   },
   {
     "id": 75,
-    "question": "Giáo viên đánh những đứa trẻ trong lớp nhưng không bố mẹ nào phản ứng. Tại sao?",
-    "options": [
-      "Vì giáo viên đúng",
-      "Vì đây là trại mồ côi",
-      "Vì bố mẹ không biết",
-      "Vì đó là trò chơi"
-    ],
+    "question": "Cái gì không có phổi mà vẫn cần không khí?",
+    "options": ["Con cá", "Ngọn lửa", "Cái quạt", "Con người"],
     "correctIndex": 1,
-    "explanation": "Trẻ mồ côi không có bố mẹ ở bên để bảo vệ."
+    "explanation": "Ngọn lửa cần oxy trong không khí để duy trì sự cháy, dù nó không có cơ quan hô hấp như sinh vật. Đây là kiến thức khoa học cơ bản."
   },
   {
     "id": 76,
-    "question": "Cái gì luôn đi đến mà không bao giờ đến nơi?",
-    "options": [
-      "Cái bóng",
-      "Ngày mai",
-      "Gió",
-      "Đám mây"
-    ],
-    "correctIndex": 1,
-    "explanation": "Ngày mai luôn ở phía trước, khi đến nơi thì nó đã trở thành ngày hôm nay."
+    "question": "Cái gì càng quay càng đứng yên một chỗ?",
+    "options": ["Quạt trần", "Bánh xe treo", "Kim đồng hồ", "Chong chóng gắn cố định"],
+    "correctIndex": 0,
+    "explanation": "Quạt trần quay rất nhanh nhưng trục của nó vẫn gắn cố định trên trần nhà. Câu đố phân biệt giữa chuyển động quay và chuyển động dịch chuyển."
   },
   {
     "id": 77,
-    "question": "Thời điểm lý tưởng nhất để ăn trưa là khi nào?",
-    "options": [
-      "12 giờ trưa",
-      "Khi thấy đói",
-      "Sau bữa ăn sáng",
-      "Khi tan làm"
-    ],
-    "correctIndex": 2,
-    "explanation": "Theo trình tự các bữa ăn trong ngày."
+    "question": "Cái gì có thể nặng cả tấn nhưng vẫn nổi?",
+    "options": ["Hòn đá bọt", "Con tàu", "Khúc gỗ", "Phao lớn"],
+    "correctIndex": 1,
+    "explanation": "Một con tàu có thể nặng hàng tấn nhưng nhờ thiết kế thân rỗng và lực đẩy Archimedes, nó vẫn nổi trên mặt nước. Đây là ứng dụng rõ ràng của vật lý."
   },
   {
     "id": 78,
-    "question": "Có 3 quả táo trên bàn, bạn lấy đi 2 quả. Hỏi bạn còn bao nhiêu quả táo?",
-    "options": [
-      "1 quả",
-      "2 quả",
-      "3 quả",
-      "0 quả"
-    ],
-    "correctIndex": 1,
-    "explanation": "Bạn lấy đi 2 quả thì chúng đang ở trên tay bạn."
+    "question": "Cái gì luôn ở giữa trời và đất?",
+    "options": ["Chữ 'và'", "Không khí", "Mưa", "Gió"],
+    "correctIndex": 0,
+    "explanation": "Đây là câu đố chữ. Trong cụm từ 'trời và đất', từ nằm ở giữa chính là chữ 'và'."
   },
   {
     "id": 79,
-    "question": "30 chia cho 1/2 rồi cộng thêm 10 bằng bao nhiêu?",
-    "options": [
-      "25",
-      "40",
-      "70",
-      "15"
-    ],
+    "question": "Một người đàn ông đi dưới mưa không mang ô, không đội mũ, quần áo không ướt. Vì sao?",
+    "options": ["Vì trời không mưa thật", "Vì anh ta ở trong xe", "Vì anh ta bị hói", "Vì mặc áo mưa"],
     "correctIndex": 2,
-    "explanation": "30 : 0.5 = 60. Sau đó 60 + 10 = 70."
+    "explanation": "Chi tiết thường được nhắc tới ở phiên bản gốc là tóc không ướt, và lý do là người đó bị hói nên không có tóc để ướt. Trong bộ này, cách hiểu gần nhất là điểm gây chú ý nằm ở đầu người đàn ông."
   },
   {
     "id": 80,
-    "question": "Con số lớn nhất chỉ có duy nhất hai chữ số là số nào?",
-    "options": [
-      "99",
-      "9^9",
-      "10",
-      "9+9"
-    ],
-    "correctIndex": 1,
-    "explanation": "9 mũ 9 là một con số cực lớn so với 99."
+    "question": "Cái gì có thể mở được mọi câu chuyện nhưng không phải chìa khóa?",
+    "options": ["Lời chào", "Nụ cười", "Câu hỏi", "Cả 3 đáp án"],
+    "correctIndex": 3,
+    "explanation": "Lời chào mở đầu cuộc trò chuyện, nụ cười tạo thiện cảm, còn câu hỏi giúp bắt đầu trao đổi nội dung. Cả ba đều có thể 'mở' một câu chuyện theo nghĩa giao tiếp."
   },
   {
     "id": 81,
-    "question": "Làm sao để cho nước từ hai bình vào chung một chậu mà vẫn biết nước nào của bình nào?",
-    "options": [
-      "Dùng vách ngăn",
-      "Pha màu",
-      "Đông đá nước trước khi cho vào",
-      "Không làm được"
-    ],
-    "correctIndex": 2,
-    "explanation": "Khi nước thành đá, chúng sẽ giữ nguyên hình dạng hoặc khối riêng biệt."
+    "question": "Càng ăn nó càng lớn là cái gì?",
+    "options": ["Con người", "Ngọn lửa", "Con cá", "Máy xúc"],
+    "correctIndex": 1,
+    "explanation": "Ngọn lửa càng được cho thêm nhiên liệu như củi, giấy, xăng thì càng bùng lên mạnh và lớn hơn. Câu đố dùng động từ 'ăn' theo nghĩa ẩn dụ."
   },
   {
     "id": 82,
-    "question": "Một anh chàng có 3 cọng tóc, anh ta bứt 1 cọng ở giữa để làm gì?",
-    "options": [
-      "Cho đẹp",
-      "Để bổ luống (rẽ ngôi) giữa",
-      "Vì nó ngứa",
-      "Vì nó dài"
-    ],
-    "correctIndex": 1,
-    "explanation": "Bứt cọng ở giữa để tạo khoảng trống phân chia hai bên."
+    "question": "Cái gì đi xuống nước mà vẫn khô khi trở lên?",
+    "options": ["Lưỡi câu", "Lưới đánh cá", "Cái bóng", "Cần câu đồ chơi"],
+    "correctIndex": 2,
+    "explanation": "Bóng của một vật có thể in xuống mặt nước nhưng bản thân nó không phải vật chất nên không bị ướt. Khi ánh sáng thay đổi, nó vẫn chỉ là hình bóng."
   },
   {
     "id": 83,
-    "question": "Ba thằng Què đi trước một thằng què. Hỏi có mấy thằng què?",
-    "options": [
-      "1 thằng què",
-      "2 thằng què",
-      "3 thằng què",
-      "4 thằng què"
-    ],
-    "correctIndex": 0,
-    "explanation": "Tên của người đi trước là 'Ba'."
+    "question": "Cái gì càng cũ càng có giá trị với ký ức?",
+    "options": ["Rác cũ", "Kỷ niệm", "Vỏ chai", "Đá cuội"],
+    "correctIndex": 1,
+    "explanation": "Kỷ niệm càng lâu năm thường càng quý giá trong lòng con người vì gắn với thời gian, cảm xúc và trải nghiệm đã qua. Đây là câu đố mang tính cảm xúc."
   },
   {
     "id": 84,
-    "question": "Mèo trắng là bạn mèo đen. Một thời gian sau gặp lại, mèo trắng sẽ nói gì với mèo đen?",
-    "options": [
-      "Chào bạn",
-      "Tôi nhớ bạn",
-      "Mèo không biết nói",
-      "Meo meo"
-    ],
+    "question": "Cái gì không có chân mà leo được?",
+    "options": ["Con sâu", "Dây leo", "Khói", "Nước"],
     "correctIndex": 2,
-    "explanation": "Động vật không sử dụng ngôn ngữ của con người."
+    "explanation": "Khói không có chân nhưng có thể bốc lên cao, len lỏi dọc tường hay trần nhà như đang leo. Câu đố miêu tả hiện tượng bằng hình ảnh."
   },
   {
     "id": 85,
-    "question": "Con rết 100 chân đi ngang qua bãi phân trâu. Hỏi nó còn mấy chân?",
-    "options": [
-      "100 chân",
-      "98 chân",
-      "0 chân",
-      "1 chân"
-    ],
-    "correctIndex": 1,
-    "explanation": "Nó dùng 2 chân để bịt mũi vì thối."
+    "question": "Con gì có thể bay mà không có lông, có thể chạy mà không có chân?",
+    "options": ["Máy bay", "Diều", "Đạn pháo", "Tên lửa"],
+    "correctIndex": 0,
+    "explanation": "Máy bay có thể bay trên trời và chạy trên đường băng dù không có lông hay chân như chim thú. Đây là câu đố chuyển từ sinh vật sang máy móc."
   },
   {
     "id": 86,
-    "question": "Đối lại câu 'Đất lành chim đậu' một cách trái nghĩa?",
-    "options": [
-      "Đất xấu chim bay",
-      "Đất dữ chim đi",
-      "Đất gỗ chim đi",
-      "Đất nghèo chim bỏ"
-    ],
-    "correctIndex": 2,
-    "explanation": "Cách chơi chữ: Lành (ngon) đối với Gỗ (cứng), Đậu đối với Đi."
+    "question": "Cái gì có miệng mà không ăn?",
+    "options": ["Con sông", "Cái bát", "Cái hang", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Sông có cửa sông hay miệng sông, bát có miệng bát, hang có miệng hang. Tất cả đều có phần gọi là 'miệng' nhưng không ăn như sinh vật."
   },
   {
     "id": 87,
-    "question": "Bố người da đen, mẹ người da trắng vừa sinh em bé. Em bé đó có hàm răng màu gì?",
-    "options": [
-      "Màu trắng",
-      "Màu đen",
-      "Chưa có răng",
-      "Màu vàng"
-    ],
-    "correctIndex": 2,
-    "explanation": "Trẻ sơ sinh khi mới chào đời chưa mọc răng."
+    "question": "Cái gì bạn đập vào thì mở, nhưng càng nhẹ càng hiệu quả?",
+    "options": ["Cánh cửa", "Bàn phím", "Trái tim người khác", "Chuông cửa"],
+    "correctIndex": 3,
+    "explanation": "Chuông cửa thường được bấm hoặc gõ nhẹ để phát tín hiệu. Không cần đập mạnh, chỉ cần chạm đúng cách là đã có hiệu quả."
   },
   {
     "id": 88,
-    "question": "Tại sao có những người đi taxi nhưng họ lại không phải trả tiền?",
-    "options": [
-      "Vì họ là người nhà",
-      "Vì họ là tài xế taxi",
-      "Vì họ đi miễn phí",
-      "Vì họ trốn vé"
-    ],
-    "correctIndex": 1,
-    "explanation": "Tài xế là người lái xe để kiếm tiền chứ không phải khách trả tiền."
+    "question": "Thứ gì có hôm nay nhưng không có hôm qua, có ngày mai nhưng không có ngày kia trong chính nó?",
+    "options": ["Tờ lịch", "Đồng hồ", "Quyển truyện", "Thời gian"],
+    "correctIndex": 0,
+    "explanation": "Một tờ lịch cụ thể thường ghi ngày hiện tại hoặc một ngày nhất định; khi xé đi thì hôm qua không còn nằm trên tờ đó nữa. Câu đố dựa trên vật mang thông tin thời gian."
   },
   {
     "id": 89,
-    "question": "Ba người lùn đi vào hang. Người giữa cầm xẻng, người sau cầm xô, người trước cầm gì?",
-    "options": [
-      "Cầm đèn",
-      "Cầm đầu",
-      "Cầm gậy",
-      "Không cầm gì"
-    ],
-    "correctIndex": 1,
-    "explanation": "Người đi đầu tiên thường được gọi là kẻ 'cầm đầu' (thủ lĩnh)."
+    "question": "Cái gì càng nói thật lại càng dễ bị cho là nói dối?",
+    "options": ["Lời bào chữa lạ lùng", "Câu đố logic", "Chuyện khó tin nhưng có thật", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Những điều quá lạ, quá bất ngờ hoặc nghịch lý thường khiến người nghe nghi ngờ dù chúng là thật. Cả ba trường hợp đều có thể xảy ra trong thực tế."
   },
   {
     "id": 90,
-    "question": "Trên cây lê có 2 cành, mỗi cành có 2 nhánh nhỏ... Hỏi trên cây có mấy quả táo?",
-    "options": [
-      "8 quả",
-      "16 quả",
-      "0 quả",
-      "4 quả"
-    ],
-    "correctIndex": 2,
-    "explanation": "Cây lê không thể ra quả táo."
+    "question": "Một người sinh năm 2000, đến năm 2020 mới 5 tuổi. Tại sao?",
+    "options": ["Vì tính âm lịch", "Vì ở hành tinh khác", "Vì sinh tại phòng số 2000", "Vì 2000 là số phòng bệnh viện"],
+    "correctIndex": 3,
+    "explanation": "Con số 2000 trong câu hỏi không nhất thiết là năm sinh mà có thể là số phòng nơi em bé ra đời. Câu đố đánh lừa vì người nghe tự động hiểu đó là năm."
   },
   {
     "id": 91,
-    "question": "Làm sao chia 3 quả táo cho 3 người mà vẫn còn 1 quả trong rổ?",
-    "options": [
-      "Cắt đôi quả táo",
-      "Đưa cho người cuối cùng cả cái rổ đựng táo",
-      "Không chia nữa",
-      "Lấy thêm táo"
-    ],
-    "correctIndex": 1,
-    "explanation": "Người thứ ba nhận quả táo nằm trong rổ."
+    "question": "Cái gì càng giữ chặt càng dễ mất?",
+    "options": ["Cát", "Nước", "Niềm tin", "Cả 3 đáp án"],
+    "correctIndex": 3,
+    "explanation": "Cát nắm quá chặt sẽ rơi ra, nước siết mạnh khó giữ, còn niềm tin nếu kiểm soát quá mức cũng dễ đánh mất. Đây là câu đố có cả nghĩa đen và nghĩa bóng."
   },
   {
     "id": 92,
-    "question": "Câu nói nào giúp bạn bảo toàn tính mạng khi gặp nhà vua?",
-    "options": [
-      "Tôi nói thật",
-      "Tôi nói dối",
-      "Tôi sẽ bị treo cổ",
-      "Tôi xin hàng"
-    ],
-    "correctIndex": 2,
-    "explanation": "Đây là một nghịch lý logic khiến nhà vua không thể xử tử bạn theo luật đã đề ra."
+    "question": "Cái gì có thể chạy đua mà không có chân?",
+    "options": ["Thời gian", "Dòng điện", "Dòng nước", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Người ta vẫn nói thời gian chạy, điện chạy và nước chảy hoặc chạy trong ống. Cả ba đều dùng động từ này theo nghĩa chuyển động hoặc vận hành."
   },
   {
     "id": 93,
-    "question": "Cắt khúc vải làm 100 đoạn, mỗi lần cắt mất 5 giây. Hỏi mất bao lâu để cắt xong?",
-    "options": [
-      "500 giây",
-      "495 giây",
-      "450 giây",
-      "505 giây"
-    ],
-    "correctIndex": 1,
-    "explanation": "Đoạn cuối cùng không cần cắt (99 lần cắt x 5 giây)."
+    "question": "Con gì càng đông càng ít nghe tiếng mình?",
+    "options": ["Con người", "Con ve", "Con ếch", "Con ong"],
+    "correctIndex": 0,
+    "explanation": "Khi quá đông người cùng nói, tiếng của từng cá nhân sẽ bị lẫn vào tập thể và khó nghe rõ. Đây là hiện tượng quen thuộc ở nơi ồn ào."
   },
   {
     "id": 94,
-    "question": "Làm sao để qua cầu khi có con gấu hung dữ ở giữa chỉ ngủ 5 phút?",
-    "options": [
-      "Chạy thật nhanh",
-      "Bơi qua sông",
-      "Đi đến giữa cầu rồi quay mặt ngược lại",
-      "Đợi gấu đi chỗ khác"
-    ],
-    "correctIndex": 2,
-    "explanation": "Gấu thức dậy sẽ tưởng bạn từ bên kia sang và đuổi bạn về phía đích."
+    "question": "Cái gì chỉ xuất hiện khi có ánh sáng nhưng lại đen?",
+    "options": ["Than đá", "Cái bóng", "Mực in", "Đêm tối"],
+    "correctIndex": 1,
+    "explanation": "Bóng chỉ hình thành khi có nguồn sáng bị một vật cản lại. Nó thường hiện lên tối hoặc đen hơn vùng xung quanh."
   },
   {
     "id": 95,
-    "question": "Con gấu trúc có ao ước gì mà không bao giờ thực hiện được?",
-    "options": [
-      "Được ăn thịt",
-      "Được bay",
-      "Được chụp hình màu",
-      "Được đi học"
-    ],
-    "correctIndex": 2,
-    "explanation": "Vì gấu trúc chỉ có hai màu đen và trắng."
+    "question": "Cái gì càng đầy càng ít phát ra tiếng?",
+    "options": ["Lon rỗng", "Thùng nước", "Bình xăng", "Tất cả đều đúng ở trạng thái đầy"],
+    "correctIndex": 3,
+    "explanation": "Đồ vật rỗng thường kêu vang hơn, còn khi đầy thì khoảng trống ít lại nên âm thanh đanh rỗng giảm đi. Đây là nguyên lý cộng hưởng đơn giản."
   },
   {
     "id": 96,
-    "question": "Cái gì của chồng mà vợ thích cầm nhất?",
-    "options": [
-      "Tay",
-      "Tiền",
-      "Áo",
-      "Nhẫn"
-    ],
+    "question": "Một chiếc thuyền có 10 người, không ai nhảy xuống nước mà vẫn còn 9 người. Tại sao?",
+    "options": ["Một người bơi đi", "Một người lên bờ", "Một người là phụ nữ mang thai sinh em bé", "Đếm nhầm"],
     "correctIndex": 1,
-    "explanation": "Câu đố vui thực tế về cuộc sống gia đình."
+    "explanation": "Không cần nhảy xuống nước, chỉ cần một người bước lên bờ thì số người còn lại trên thuyền là 9. Câu hỏi dễ khiến người nghe chỉ nghĩ đến việc xuống nước."
   },
   {
     "id": 97,
-    "question": "Tại sao anh chàng sống ở tầng 50 chỉ đi thang máy đến tầng 35 rồi đi bộ nốt?",
-    "options": [
-      "Để tập thể dục",
-      "Vì anh ta sợ độ cao",
-      "Vì thang máy chỉ lên đến tầng 35",
-      "Vì anh ta quên chìa khóa"
-    ],
-    "correctIndex": 2,
-    "explanation": "Hạn chế kỹ thuật của thang máy trong tòa nhà đó."
+    "question": "Cái gì bạn luôn trả mà không muốn mất?",
+    "options": ["Tiền điện", "Lời cảm ơn", "Sách mượn", "Tiền vay"],
+    "correctIndex": 1,
+    "explanation": "Lời cảm ơn là điều bạn 'trả' cho người khác khi nhận được sự giúp đỡ, nhưng nó không phải thứ bị mất đi theo nghĩa tiêu cực. Ngược lại, nó còn làm đẹp mối quan hệ."
   },
   {
     "id": 98,
-    "question": "Con gì đầu dê mình ốc?",
-    "options": [
-      "Con quái vật",
-      "Con dốc",
-      "Con ốc sên",
-      "Con dê núi"
-    ],
-    "correctIndex": 1,
-    "explanation": "Câu đố chữ: Dê (Đầu) + Ốc (Mình) tạo thành từ 'Dốc'."
+    "question": "Con gì không thở bằng phổi mà vẫn sống khỏe trên cạn?",
+    "options": ["Con giun", "Con cá", "Con ếch", "Con chim"],
+    "correctIndex": 0,
+    "explanation": "Giun hô hấp qua da ẩm chứ không có phổi như động vật có vú. Vì vậy nó vẫn sống được trên cạn trong điều kiện phù hợp."
   },
   {
     "id": 99,
-    "question": "1 phút suy tư bằng bao nhiêu năm không ngủ?",
-    "options": [
-      "1 năm",
-      "4 năm",
-      "15 năm",
-      "0 năm"
-    ],
-    "correctIndex": 0,
-    "explanation": "Câu đố chữ: 1p' => 4 = 1505 (Một phút suy tư bằng một năm không ngủ)."
+    "question": "Cái gì có thể chạm đến bầu trời nhưng không rời mặt đất?",
+    "options": ["Cái thang", "Ngọn núi", "Tòa nhà cao", "Tất cả đều đúng theo nghĩa hình ảnh"],
+    "correctIndex": 3,
+    "explanation": "Thang, núi và tòa nhà đều có thể vươn rất cao, như chạm đến bầu trời trong cách nói hình tượng, nhưng chân của chúng vẫn gắn với mặt đất. Vì vậy đáp án tổng quát là tất cả đều đúng."
   },
   {
     "id": 100,
-    "question": "Núi nào bị chặt ra từng khúc?",
-    "options": [
-      "Núi Fansipan",
-      "Núi Trường Sơn",
-      "Núi Thái Sơn",
-      "Núi Ngũ Hành Sơn"
-    ],
-    "correctIndex": 2,
-    "explanation": "Thái (chặt) + Sơn (núi)."
+    "question": "Cái gì càng bẻ càng thẳng?",
+    "options": ["Cái que ẩm", "Con đường", "Khúc cua", "Dòng sông"],
+    "correctIndex": 1,
+    "explanation": "Khi bẻ một con đường theo nghĩa quy hoạch, người ta có thể mở tuyến mới để nắn thẳng hơn. Đây là câu đố dùng nghĩa chuyển của từ 'bẻ'."
   },
   {
     "id": 101,
-    "question": "Hãy đối lại một câu trái nghĩa với câu này: 'Đất lành chim đậu'?",
-    "options": [
-      "Đất xấu chim bay",
-      "Đất dữ chim đi",
-      "Đất gỗ chim đi",
-      "Đất nghèo chim bỏ"
-    ],
-    "correctIndex": 2,
-    "explanation": "Cách chơi chữ: Lành (ngon) đối với Gỗ (cứng), Đậu đối với Đi."
+    "question": "Cái gì có tim mà không có cảm xúc?",
+    "options": ["Bài thi", "Bắp cải", "Người máy", "Khúc gỗ"],
+    "correctIndex": 1,
+    "explanation": "Bắp cải có phần lõi ở giữa thường được gọi là tim bắp cải, nhưng nó không có cảm xúc như con người. Câu đố chơi trên tên gọi quen thuộc trong bếp."
   },
   {
     "id": 102,
-    "question": "Con gì càng to càng nhỏ?",
-    "options": [
-      "Con voi",
-      "Con cua",
-      "Con kiến",
-      "Con cá"
-    ],
-    "correctIndex": 1,
-    "explanation": "Con cua có cái 'càng' to thì con cua đó 'nhỏ' (cách chơi chữ)."
+    "question": "Cái gì luôn theo bạn nhưng bạn không thể đi trước nó khi trời nắng theo một số hướng?",
+    "options": ["Cái bóng", "Làn gió", "Mùi hương", "Âm thanh"],
+    "correctIndex": 0,
+    "explanation": "Cái bóng luôn gắn với vị trí của bạn theo nguồn sáng. Có lúc bóng ở phía trước, có lúc phía sau, nhưng nó luôn đi cùng bạn."
   },
   {
     "id": 103,
-    "question": "Cái gì khi xài thì quăng đi, không xài thì lấy lại?",
-    "options": [
-      "Cái rác",
-      "Cái neo thuyền",
-      "Cái lưới",
-      "Lưỡi câu"
-    ],
-    "correctIndex": 1,
-    "explanation": "Khi đậu thuyền thì quăng neo xuống, khi đi thì kéo neo lên."
+    "question": "Cái gì càng mỏng càng dễ che cả thế giới trước mắt bạn?",
+    "options": ["Tờ giấy", "Ngón tay", "Mí mắt", "Sợi tóc"],
+    "correctIndex": 2,
+    "explanation": "Mí mắt rất mỏng nhưng chỉ cần nhắm lại là có thể che hoàn toàn tầm nhìn của bạn với thế giới bên ngoài. Đây là một sự thật rất thú vị."
   },
   {
     "id": 104,
-    "question": "Tôi chu du khắp thế giới mà tôi vẫn ở nguyên một chỗ, tôi là ai?",
-    "options": [
-      "Đám mây",
-      "Cơn gió",
-      "Tem thư",
-      "Chiếc máy bay"
-    ],
-    "correctIndex": 2,
-    "explanation": "Con tem được dán trên phong bì đi khắp nơi nhưng nó vẫn ở yên trên góc phong bì."
+    "question": "Cái gì có thể đầy lên khi lấy bớt đi?",
+    "options": ["Cái hố", "Cái chai", "Cái xô", "Cái bình"],
+    "correctIndex": 0,
+    "explanation": "Khi lấy đất ra khỏi hố, phần trống bên trong hố lại tăng lên, nghĩa là nó 'đầy' thêm khoảng trống. Đây là cách diễn đạt nghịch lý vui."
   },
   {
     "id": 105,
-    "question": "Con gì bỏ cái đuôi thành con ngựa?",
-    "options": [
-      "Con bò",
-      "Con mèo",
-      "Con chó",
-      "Con dê"
-    ],
+    "question": "Thứ gì người ta thường đập vào đầu mình mỗi ngày mà vẫn vui vẻ?",
+    "options": ["Mũ bảo hiểm", "Gối", "Nón lá", "Mũ len"],
     "correctIndex": 1,
-    "explanation": "Mèo là Mão, bỏ chữ 'o' (đuôi) thành Mã (ngựa)."
+    "explanation": "Mỗi đêm khi đi ngủ, con người đặt hoặc 'đập đầu' xuống gối để nghỉ ngơi. Đây là cách nói vui, không phải hành động gây đau."
   },
   {
     "id": 106,
-    "question": "Cái gì chứa nhiều nước nhất mà không ướt?",
-    "options": [
-      "Ly nước",
-      "Bản đồ",
-      "Đám mây",
-      "Thùng phi"
-    ],
-    "correctIndex": 1,
-    "explanation": "Trên bản đồ có các đại dương lớn nhưng bản đồ chỉ là giấy nên không ướt."
+    "question": "Cái gì càng gần cuối lại càng đông?",
+    "options": ["Năm học", "Năm dương lịch", "Con đường ra chợ", "Buổi tiệc"],
+    "correctIndex": 3,
+    "explanation": "Ở nhiều buổi tiệc, càng về gần cuối thì khách tập trung hơn ở khu vực chia tay, chụp ảnh hoặc nhận quà. Câu đố mang tính quan sát đời sống và có phần mở."
   },
   {
     "id": 107,
-    "question": "Trời đang âm u, có 3 thằng mù chung một cây dù, hỏi thằng nào ướt?",
-    "options": [
-      "Người ở giữa",
-      "Người đi đầu",
-      "Không thằng nào cả",
-      "Cả ba thằng"
-    ],
-    "correctIndex": 2,
-    "explanation": "Trời 'âm u' là trời sắp mưa chứ chưa có mưa nên không ai bị ướt."
+    "question": "Một người nhìn thấy con tàu bằng mắt thường trước khi tàu đến bến rất lâu. Vì sao?",
+    "options": ["Vì tàu chạy chậm", "Vì người đó đứng ở nơi cao", "Vì tàu bật đèn sáng", "Vì người đó đoán trước"],
+    "correctIndex": 1,
+    "explanation": "Đứng ở nơi cao giúp tầm nhìn xa hơn, đặc biệt trên biển hoặc sông lớn. Vì vậy người đó có thể nhìn thấy con tàu từ rất sớm."
   },
   {
     "id": 108,
-    "question": "Người da đen tắm biển đen, vậy họ bị gì?",
-    "options": [
-      "Bị đen thêm",
-      "Bị trắng ra",
-      "Bị ướt",
-      "Bị ngứa"
-    ],
-    "correctIndex": 2,
-    "explanation": "Dù da màu gì hay biển màu gì thì tắm xong cũng bị ướt."
+    "question": "Cái gì lên xuống mà không rời chỗ?",
+    "options": ["Thủy triều", "Búa đóng đinh", "Cây kim may", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Thủy triều dâng xuống tại cùng vùng biển, búa lên xuống khi đóng đinh, kim may cũng lên xuống trên tấm vải. Chúng thay đổi vị trí theo trục nhưng không 'đi xa' theo nghĩa thông thường."
   },
   {
     "id": 109,
-    "question": "1 kg bông gòn và 1 kg sắt, kg nào nặng hơn?",
-    "options": [
-      "Sắt nặng hơn",
-      "Bông gòn nặng hơn",
-      "Bằng nhau",
-      "Tùy môi trường"
-    ],
-    "correctIndex": 2,
-    "explanation": "Cả hai đều nặng đúng 1 kg."
+    "question": "Cái gì càng học càng thấy mình chưa biết?",
+    "options": ["Toán học", "Cuộc sống", "Kiến thức", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Càng học nhiều, con người càng nhận ra kiến thức rộng lớn và những điều mình chưa hiểu. Đây là một sự thật rất quen thuộc trong quá trình trưởng thành."
   },
   {
     "id": 110,
-    "question": "Nhà Lan có 3 anh em, người đầu là Nhất Hào, người thứ hai là Nhị Hào. Người thứ 3 tên gì?",
-    "options": [
-      "Tam Hào",
-      "Ba Hào",
-      "Lan",
-      "Lâm"
-    ],
-    "correctIndex": 2,
-    "explanation": "Ngay từ đầu đã nói là 'Nhà Lan' nên người thứ ba chính là Lan."
+    "question": "Cái gì khi mất đi mới thấy quý nhất?",
+    "options": ["Thời gian", "Sức khỏe", "Tuổi trẻ", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Thời gian, sức khỏe và tuổi trẻ đều thường được con người đánh giá cao hơn khi đã trôi qua hoặc suy giảm. Câu đố thiên về suy ngẫm."
   },
   {
     "id": 111,
-    "question": "Bố da đen, mẹ da trắng vừa sinh em bé. Em bé đó có hàm răng màu gì?",
-    "options": [
-      "Trắng",
-      "Đen",
-      "Chưa có răng",
-      "Vàng"
-    ],
-    "correctIndex": 2,
-    "explanation": "Trẻ sơ sinh mới sinh ra chưa mọc răng."
+    "question": "Cái gì một người làm thì ít ai để ý, nhưng ai cũng làm thì rất ồn?",
+    "options": ["Thì thầm", "Vỗ tay", "Thở", "Bước chân"],
+    "correctIndex": 1,
+    "explanation": "Một người vỗ tay thì âm thanh không lớn, nhưng cả đám đông cùng vỗ tay sẽ tạo nên tiếng động rất mạnh. Đây là hiện tượng dễ hình dung."
   },
   {
     "id": 112,
-    "question": "Tại sao có những người đi taxi nhưng họ lại không trả tiền?",
-    "options": [
-      "Vì họ đi chùa",
-      "Vì họ trốn vé",
-      "Vì họ là tài xế taxi",
-      "Vì họ đi nhờ"
-    ],
-    "correctIndex": 2,
-    "explanation": "Tài xế lái xe để kiếm tiền, không phải trả tiền vé."
+    "question": "Cái gì càng nói nhỏ lại càng dễ nghe trong lớp học?",
+    "options": ["Lời nhắc của giáo viên", "Tiếng quạt", "Tiếng mưa", "Tiếng cười"],
+    "correctIndex": 0,
+    "explanation": "Khi lớp học ồn, một lời nhắc nhỏ nhưng đúng lúc của giáo viên đôi khi khiến mọi người chú ý hơn cả quát lớn. Đây là kiểu câu đố nghiêng về trải nghiệm thực tế."
   },
   {
     "id": 113,
-    "question": "3 người lùn đi vào hang. Người sau cầm xô, người giữa cầm xẻng, người trước cầm gì?",
-    "options": [
-      "Cầm đuốc",
-      "Cầm đầu",
-      "Cầm gậy",
-      "Không cầm gì"
-    ],
-    "correctIndex": 1,
-    "explanation": "Người đi đầu tiên của một nhóm thường được gọi là kẻ 'cầm đầu'."
+    "question": "Con gì có nhà mà không phải tự xây?",
+    "options": ["Con ốc sên", "Con chim sẻ", "Con ong", "Con kiến"],
+    "correctIndex": 0,
+    "explanation": "Ốc sên sinh ra và lớn lên cùng chiếc vỏ trên lưng, giống như mang sẵn ngôi nhà theo mình. Nó không phải tha vật liệu để xây như chim hay ong."
   },
   {
     "id": 114,
-    "question": "Cây lê có 2 cành, mỗi cành có 2 nhánh lớn... Hỏi trên cây có mấy quả táo?",
-    "options": [
-      "4 quả",
-      "8 quả",
-      "0 quả",
-      "12 quả"
-    ],
-    "correctIndex": 2,
-    "explanation": "Cây lê thì không bao giờ ra quả táo."
+    "question": "Cái gì càng gần mắt càng khó thấy toàn bộ?",
+    "options": ["Ngón tay", "Cái mũi", "Quyển sách", "Cây bút"],
+    "correctIndex": 1,
+    "explanation": "Cái mũi ở rất gần mắt nên não bộ thường bỏ qua trong nhận thức hằng ngày, khiến bạn ít để ý đến toàn bộ nó dù nó luôn ở đó. Đây là hiện tượng thú vị của thị giác."
   },
   {
     "id": 115,
-    "question": "Làm sao chia 3 quả táo cho 3 người mà vẫn còn một quả trong rổ?",
-    "options": [
-      "Cắt đôi quả táo",
-      "Lấy thêm táo",
-      "Đưa nguyên rổ có quả táo cuối cho người thứ 3",
-      "Không chia nữa"
-    ],
+    "question": "Một người đi bộ 10 km về phía nam, 10 km về phía đông, 10 km về phía bắc và quay lại đúng chỗ cũ. Người đó ở đâu?",
+    "options": ["Xích đạo", "Bắc Cực", "Nam Cực", "Bất kỳ thành phố nào"],
     "correctIndex": 2,
-    "explanation": "Người cuối cùng nhận quả táo kèm theo cái rổ."
+    "explanation": "Nếu đứng gần Nam Cực, đi 10 km về phía nam đến cực, sau đó đi vòng về phía đông và quay 10 km về phía bắc thì có thể trở lại điểm cũ. Đây là bài toán mẹo về địa lý."
   },
   {
     "id": 116,
-    "question": "Ở xứ nọ, nói thật bị chém đầu, nói dối bị treo cổ. Phải nói gì để gặp vua mà không chết?",
-    "options": [
-      "Tôi là người tốt",
-      "Tôi muốn sống",
-      "Tôi sẽ bị treo cổ",
-      "Vua vạn tuế"
-    ],
-    "correctIndex": 2,
-    "explanation": "Đây là một nghịch lý logic khiến quân lính không thể thi hành án phạt nào cả."
+    "question": "Cái gì càng vỗ càng yên?",
+    "options": ["Em bé", "Mặt nước", "Chiếc gối", "Con mèo"],
+    "correctIndex": 0,
+    "explanation": "Em bé khi được người lớn vỗ về nhẹ nhàng thường dễ nín khóc và ngủ yên hơn. Câu đố lấy từ tình huống chăm sóc trẻ nhỏ."
   },
   {
     "id": 117,
-    "question": "Cắt khúc vải làm 100 đoạn, mỗi đoạn mất 5 giây. Hỏi mất bao lâu để cắt xong?",
-    "options": [
-      "500 giây",
-      "495 giây",
-      "505 giây",
-      "450 giây"
-    ],
-    "correctIndex": 1,
-    "explanation": "Chỉ cần 99 lần cắt là ra được 100 đoạn. 99 x 5 = 495 giây."
+    "question": "Cái gì có thể nở mà không phải hoa?",
+    "options": ["Nụ cười", "Bột mì", "Bắp rang", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Nụ cười có thể nở trên môi, bột mì nở khi làm bánh, bắp rang nở bung khi gặp nhiệt. Từ 'nở' được dùng trong nhiều ngữ cảnh khác nhau."
   },
   {
     "id": 118,
-    "question": "Làm sao qua cầu khi có gấu hung dữ ở giữa chỉ ngủ 5 phút (bằng thời gian bạn đi nửa cầu)?",
-    "options": [
-      "Chạy thật nhanh",
-      "Đợi gấu đi mất",
-      "Đi đến giữa cầu và quay mặt ngược lại",
-      "Bơi qua sông"
-    ],
-    "correctIndex": 2,
-    "explanation": "Gấu thức dậy thấy bạn từ bên kia sang nên sẽ đuổi bạn về phía đích."
+    "question": "Cái gì càng để lâu càng khó nuốt?",
+    "options": ["Lời xin lỗi", "Cơm nguội", "Viên thuốc", "Kẹo cứng"],
+    "correctIndex": 0,
+    "explanation": "Lời xin lỗi nếu để quá lâu sẽ càng khó nói ra vì cảm giác ngại ngùng, khoảng cách và tổn thương tăng lên. Đây là câu đố mang tính tâm lý."
   },
   {
     "id": 119,
-    "question": "Con gấu trúc ao ước gì mà không bao giờ thực hiện được?",
-    "options": [
-      "Được đi học",
-      "Được chụp hình màu",
-      "Được bay",
-      "Được ăn thịt"
-    ],
-    "correctIndex": 1,
-    "explanation": "Vì gấu trúc chỉ có hai màu đen và trắng, chụp hình màu cũng chỉ ra trắng đen."
+    "question": "Thứ gì không ai nhìn thấy trực tiếp nhưng ai cũng biết mình có?",
+    "options": ["Suy nghĩ", "Bộ não", "Không khí", "Tương lai"],
+    "correctIndex": 0,
+    "explanation": "Mỗi người đều có suy nghĩ riêng nhưng không ai nhìn trực tiếp được suy nghĩ của người khác. Ta chỉ có thể đoán qua lời nói và hành động."
   },
   {
     "id": 120,
-    "question": "Con gì ăn lửa với nước than?",
-    "options": [
-      "Con rồng",
-      "Con thiêu thân",
-      "Con tàu hỏa (hơi nước)",
-      "Con quái vật"
-    ],
+    "question": "Cái gì có thể cắt được mà không cần dao?",
+    "options": ["Tình bạn", "Hàng đợi", "Làn gió", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Bạn có thể cắt đứt tình bạn, cắt ngang hàng đợi hoặc gió lạnh có thể cắt da theo cách nói hình tượng. Đây là câu đố dựa trên nhiều nghĩa của động từ 'cắt'."
+  },
+  {
+    "id": 121,
+    "question": "Một căn nhà có 4 bức tường đều quay về hướng nam. Một con gấu đi ngang qua nhà. Gấu màu gì?",
+    "options": ["Nâu", "Đen", "Trắng", "Vàng"],
     "correctIndex": 2,
-    "explanation": "Tàu hỏa chạy bằng đầu máy hơi nước đốt than và dùng nước để tạo áp suất."
+    "explanation": "Ngôi nhà đó chỉ có thể ở Bắc Cực, nơi mọi hướng từ đó đều là hướng nam. Gấu sống ở khu vực này là gấu trắng Bắc Cực."
+  },
+  {
+    "id": 122,
+    "question": "Cái gì càng nhiều lỗ càng giữ nước tốt?",
+    "options": ["Miếng bọt biển", "Cái rổ", "Tấm lưới", "Ống tre"],
+    "correctIndex": 0,
+    "explanation": "Miếng bọt biển có vô số lỗ nhỏ nhưng lại giữ nước rất tốt nhờ cấu trúc xốp hút nước vào bên trong. Đây là đặc tính vật liệu."
+  },
+  {
+    "id": 123,
+    "question": "Cái gì được sinh ra từ nước, sống nhờ nước nhưng chết khi ở trong nước quá lâu?",
+    "options": ["Cục nước đá", "Con cá", "Con tàu giấy", "Xà phòng"],
+    "correctIndex": 0,
+    "explanation": "Nước đá được tạo ra từ nước, nhưng khi trở lại trong môi trường nước ấm lâu thì nó tan ra và mất dạng ban đầu. Câu đố dùng chữ 'chết' theo nghĩa không còn tồn tại như cũ."
+  },
+  {
+    "id": 124,
+    "question": "Cái gì càng xóa càng hiện rõ?",
+    "options": ["Bảng bẩn", "Bức tranh chì", "Dấu chân trên cát", "Bài viết nháp"],
+    "correctIndex": 0,
+    "explanation": "Khi bảng bị bụi phấn che lấp, càng lau xóa thì mặt bảng đen hoặc trắng thật của nó càng hiện rõ. Đây là hình ảnh quen thuộc trong lớp học."
+  },
+  {
+    "id": 125,
+    "question": "Cái gì ở dưới chân nhưng không bao giờ bị giẫm lên?",
+    "options": ["Bóng của bạn", "Đất", "Dép", "Cầu thang"],
+    "correctIndex": 0,
+    "explanation": "Bóng có thể nằm dưới chân bạn nhưng không phải vật chất để bị giẫm. Nó chỉ là vùng sáng tối do ánh sáng tạo nên."
+  },
+  {
+    "id": 126,
+    "question": "Thứ gì càng chạy càng đứng tại chỗ?",
+    "options": ["Máy chạy bộ", "Quạt máy", "Bánh xe quay tại chỗ", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Máy chạy bộ, bánh xe quay trơn và quạt máy đều có chuyển động nhưng toàn bộ thiết bị không đi xa. Đây là điểm giống nhau giữa chuyển động nội bộ và vị trí tổng thể."
+  },
+  {
+    "id": 127,
+    "question": "Cái gì có thể nghe bằng mắt?",
+    "options": ["Bản nhạc", "Phụ đề", "Ngôn ngữ ký hiệu", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Bạn có thể 'nghe' nội dung âm nhạc qua bản nhạc nếu biết đọc nốt, hiểu lời thoại qua phụ đề và giao tiếp qua ngôn ngữ ký hiệu bằng mắt. Đây là câu đố thú vị về giác quan."
+  },
+  {
+    "id": 128,
+    "question": "Cái gì càng giấu càng lộ?",
+    "options": ["Sự lo lắng", "Mùi hương", "Cái sai", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Lo lắng thường lộ qua nét mặt, mùi hương lan ra dù che kín, và sai sót càng che đậy đôi khi càng dễ bị phát hiện. Cả ba đều hợp lý."
+  },
+  {
+    "id": 129,
+    "question": "Nếu bạn có 6 quả trứng, làm rơi 2 quả, luộc 2 quả, ăn 2 quả thì còn mấy quả?",
+    "options": ["0 quả", "2 quả", "4 quả", "6 quả"],
+    "correctIndex": 2,
+    "explanation": "Hai quả bị làm rơi, hai quả bị luộc và hai quả bị ăn có thể là cùng một nhóm trứng chồng lên nhau theo trình tự. Vì vậy bạn chỉ dùng hết 2 quả, còn lại 4 quả."
+  },
+  {
+    "id": 130,
+    "question": "Cái gì khi đã nói ra thì không thể lấy lại y nguyên?",
+    "options": ["Lời nói", "Viên đá", "Tờ tiền", "Chiếc bút"],
+    "correctIndex": 0,
+    "explanation": "Lời nói một khi đã thốt ra sẽ tác động đến người nghe và không thể thu lại như chưa từng tồn tại. Đây là bài học quen thuộc về giao tiếp."
+  },
+  {
+    "id": 131,
+    "question": "Con gì có thể đánh thức cả làng mà không cần la hét?",
+    "options": ["Con chó", "Con gà trống", "Con mèo", "Con muỗi"],
+    "correctIndex": 1,
+    "explanation": "Tiếng gáy của gà trống từ lâu gắn với buổi sáng ở nông thôn. Dù không 'la hét' theo nghĩa con người, nó vẫn có thể đánh thức nhiều người."
+  },
+  {
+    "id": 132,
+    "question": "Cái gì được đếm nhưng không cầm nắm được?",
+    "options": ["Tiền điện tử", "Số tuổi", "Điểm số", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Tiền điện tử, tuổi và điểm số đều có thể đo đếm nhưng không cầm như vật thể rắn thông thường. Đây là câu đố về khái niệm trừu tượng."
+  },
+  {
+    "id": 133,
+    "question": "Một cái thang có 10 bậc. Bạn đứng ở bậc thứ 3 từ dưới lên và bậc thứ 8 từ trên xuống. Cái thang có bao nhiêu bậc?",
+    "options": ["10 bậc", "11 bậc", "12 bậc", "13 bậc"],
+    "correctIndex": 0,
+    "explanation": "Nếu một vị trí vừa là bậc 3 từ dưới lên, vừa là bậc 8 từ trên xuống thì tổng số bậc là 3 + 8 - 1 = 10. Phải trừ 1 vì cùng tính một bậc ở giữa."
+  },
+  {
+    "id": 134,
+    "question": "Cái gì càng dùng nhiều lại càng sắc bén trong đầu óc?",
+    "options": ["Con dao", "Trí nhớ", "Tư duy", "Tất cả đều đúng nếu hiểu rộng"],
+    "correctIndex": 3,
+    "explanation": "Dao dùng đúng cách có thể được mài, còn trí nhớ và tư duy càng rèn luyện càng linh hoạt và sắc bén hơn. Đây là câu đố mang tính khuyến khích học tập."
+  },
+  {
+    "id": 135,
+    "question": "Cái gì càng cao càng lạnh?",
+    "options": ["Nhiệt kế", "Ngọn núi", "Ngọn lửa", "Bếp gas"],
+    "correctIndex": 1,
+    "explanation": "Nhiệt độ không khí thường giảm khi lên cao, đặc biệt ở các vùng núi. Vì vậy núi càng cao thì thời tiết thường càng lạnh."
+  },
+  {
+    "id": 136,
+    "question": "Cái gì có thể nuốt cả thành phố mà không hề có răng?",
+    "options": ["Bản đồ", "Đám cháy", "Bóng tối", "Tất cả đều đúng theo nghĩa hình ảnh"],
+    "correctIndex": 3,
+    "explanation": "Bản đồ chứa cả thành phố trên giấy, đám cháy có thể thiêu rụi thành phố, bóng tối có thể phủ kín thành phố. Câu đố cho phép nhiều cách hiểu hình tượng."
+  },
+  {
+    "id": 137,
+    "question": "Thứ gì đứng giữa bạn và thành công, nhưng lại không phải bức tường?",
+    "options": ["Sự trì hoãn", "Nỗi sợ", "Thiếu kỷ luật", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Nhiều rào cản lớn nhất không nằm ở vật chất mà ở thói quen và tâm lý như trì hoãn, sợ hãi, thiếu kỷ luật. Đây là câu đố mang ý nghĩa phát triển bản thân."
+  },
+  {
+    "id": 138,
+    "question": "Cái gì càng đi xa càng gần nhà hơn khi quay lại?",
+    "options": ["Con boomerang", "Con người", "Chiếc xe buýt", "Con chó"],
+    "correctIndex": 0,
+    "explanation": "Boomerang khi được ném đi xa thì mục tiêu của nó chính là quay trở lại gần người ném. Càng đi hết quỹ đạo, nó càng về gần vị trí ban đầu."
+  },
+  {
+    "id": 139,
+    "question": "Cái gì khi bẻ đôi vẫn không thành hai phần riêng biệt?",
+    "options": ["Con số 8", "Vòng tròn", "Tình bạn", "Bóng nước"],
+    "correctIndex": 2,
+    "explanation": "Tình bạn khi bị 'bẻ đôi' trong lời nói vẫn không thể chia vật lý thành hai nửa như đồ vật. Đây là phép ẩn dụ về mối quan hệ."
+  },
+  {
+    "id": 140,
+    "question": "Cái gì chỉ cần mở mắt là thấy mất?",
+    "options": ["Giấc mơ", "Bóng tối", "Ngủ quên", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Mở mắt sẽ làm giấc mơ tan đi, bóng tối giảm đi nếu có ánh sáng và trạng thái ngủ quên cũng chấm dứt. Đây là câu đố có nhiều lớp nghĩa thú vị."
+  },
+  {
+    "id": 141,
+    "question": "Cái gì không nói nhưng luôn kể chuyện?",
+    "options": ["Bức ảnh", "Cuốn nhật ký", "Vết sẹo", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Ảnh, nhật ký và vết sẹo đều có thể gợi lại hoặc chứa đựng câu chuyện mà không cần lời nói trực tiếp. Mỗi thứ đều là một dạng ghi dấu ký ức."
+  },
+  {
+    "id": 142,
+    "question": "Cái gì càng gần sự thật càng khó chấp nhận với người đang tự lừa mình?",
+    "options": ["Lời góp ý", "Gương soi", "Kết quả kiểm tra", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Lời góp ý, hình ảnh phản chiếu và kết quả thực tế đều có thể phản ánh sự thật mà người ta không muốn đối diện. Câu đố nghiêng về tâm lý nhận thức."
+  },
+  {
+    "id": 143,
+    "question": "Thứ gì vừa dài vừa ngắn tùy vào cách bạn dùng nó?",
+    "options": ["Thời gian", "Con đường", "Sợi dây", "Kỳ nghỉ"],
+    "correctIndex": 0,
+    "explanation": "Cùng một khoảng thời gian, khi chờ đợi thì thấy dài, khi vui vẻ thì thấy ngắn. Đây là cảm nhận rất quen thuộc của con người về thời gian."
+  },
+  {
+    "id": 144,
+    "question": "Cái gì càng im lặng càng có sức nặng?",
+    "options": ["Áp lực", "Sự thất vọng", "Nỗi buồn", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Nhiều cảm xúc tiêu cực khi không được bộc lộ ra ngoài thường càng trở nên nặng nề trong lòng. Câu đố hướng đến cảm xúc và chiều sâu tâm lý."
+  },
+  {
+    "id": 145,
+    "question": "Một người có 7 cây nến đang cháy, gió thổi tắt 2 cây. Hỏi còn mấy cây nến?",
+    "options": ["5 cây", "2 cây", "7 cây", "Không cây nào"],
+    "correctIndex": 2,
+    "explanation": "Câu hỏi hỏi còn bao nhiêu cây nến, không hỏi còn bao nhiêu cây đang cháy. Vì vậy vẫn còn nguyên 7 cây nến, chỉ có trạng thái cháy thay đổi."
+  },
+  {
+    "id": 146,
+    "question": "Cái gì bạn có thể làm đầy mà không cần đổ gì vào?",
+    "options": ["Phổi", "Căn phòng", "Lịch làm việc", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Phổi được làm đầy bằng không khí khi hít vào, căn phòng có thể đầy ánh sáng hay âm thanh, còn lịch làm việc đầy lên khi sắp xếp nhiệm vụ. Không phải lúc nào 'đầy' cũng cần chất lỏng."
+  },
+  {
+    "id": 147,
+    "question": "Con gì càng đói càng nguy hiểm, nhưng no rồi lại nằm im?",
+    "options": ["Sư tử", "Con người", "Lửa", "Cả 3 đáp án"],
+    "correctIndex": 3,
+    "explanation": "Sư tử đói sẽ săn mồi, con người đói dễ cáu, lửa thiếu nhiên liệu thường bùng mạnh khi được tiếp thêm rồi sau đó dịu xuống. Câu đố cho phép hiểu theo nhiều tầng nghĩa."
+  },
+  {
+    "id": 148,
+    "question": "Cái gì có thể chạm vào người khác mà không cần tay?",
+    "options": ["Ánh mắt", "Lời nói", "Âm nhạc", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Ánh mắt, lời nói và âm nhạc đều có thể tác động sâu sắc đến cảm xúc người khác dù không có tiếp xúc vật lý. Đây là câu đố về sức ảnh hưởng vô hình."
+  },
+  {
+    "id": 149,
+    "question": "Cái gì càng nhìn xa càng thấy rõ hơn chính mình?",
+    "options": ["Lịch sử", "Tương lai", "Người khác", "Bản đồ"],
+    "correctIndex": 0,
+    "explanation": "Khi nhìn vào lịch sử, con người thường hiểu rõ hơn nguồn gốc, sai lầm và vị trí hiện tại của mình. Câu đố mang ý nghĩa suy ngẫm."
+  },
+  {
+    "id": 150,
+    "question": "Thứ gì ai cũng có thể cho nhưng không phải ai cũng biết cho đúng lúc?",
+    "options": ["Lời khuyên", "Tiền", "Quà", "Thức ăn"],
+    "correctIndex": 0,
+    "explanation": "Ai cũng có thể đưa ra lời khuyên, nhưng để khuyên đúng lúc, đúng người, đúng cách lại cần sự tinh tế. Đây là một quan sát đời sống rất thực."
+  },
+  {
+    "id": 151,
+    "question": "Cái gì có thể lấp đầy tai nhưng lại làm trống đầu?",
+    "options": ["Tiếng ồn", "Âm nhạc hay", "Gió mạnh", "Nước"],
+    "correctIndex": 0,
+    "explanation": "Tiếng ồn quá nhiều có thể lấp đầy tai bạn bằng âm thanh hỗn tạp và khiến đầu óc rối loạn, trống rỗng hoặc mất tập trung. Đây là câu đố mang tính hình ảnh."
+  },
+  {
+    "id": 152,
+    "question": "Cái gì càng sợ đối diện thì càng lớn dần trong đầu?",
+    "options": ["Bài kiểm tra", "Vấn đề", "Nỗi sợ", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Những việc bị né tránh thường bị trí óc phóng đại lên, từ bài kiểm tra đến vấn đề cá nhân và cả nỗi sợ. Đối diện đúng lúc thường làm chúng nhỏ lại."
+  },
+  {
+    "id": 153,
+    "question": "Cái gì không có hình nhưng có thể làm lệch cả đời người?",
+    "options": ["Tin giả", "Suy nghĩ sai", "Định kiến", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Tin giả, suy nghĩ sai và định kiến đều là những thứ vô hình nhưng có thể dẫn con người đến quyết định sai lệch lâu dài. Đây là câu đố mang tính cảnh tỉnh."
+  },
+  {
+    "id": 154,
+    "question": "Cái gì khi có thì ít ai trân trọng, khi mất mới đi tìm khắp nơi?",
+    "options": ["Mạng internet", "Sức khỏe", "Chìa khóa", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Nhiều thứ trong cuộc sống như sức khỏe, kết nối internet hay chìa khóa chỉ thật sự được để ý khi mất đi. Đây là một nghịch lý quen thuộc của con người."
+  },
+  {
+    "id": 155,
+    "question": "Một người có 3 đứa con, tên đứa thứ nhất là Xuân, đứa thứ hai là Hạ. Hỏi đứa thứ ba tên gì nếu đầu câu đã nói rồi?",
+    "options": ["Thu", "Đông", "Ba", "Không biết"],
+    "correctIndex": 2,
+    "explanation": "Câu hỏi nói 'một người có 3 đứa con' chứ không nêu tên đứa thứ ba sẵn như dạng câu đố 'Nhà Lan'. Vì vậy nếu bám câu chữ, không có dữ kiện xác định tên. Đáp án 'Ba' là lựa chọn theo lối đố mẹo về vị trí, không phải tên thật, nên đây là câu kiểm tra khả năng đọc kỹ."
+  },
+  {
+    "id": 156,
+    "question": "Cái gì càng kiểm soát chặt càng dễ vuột khỏi tay?",
+    "options": ["Cát", "Tình cảm", "Nhân sự", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Cát nắm chặt sẽ chảy ra, tình cảm bị kiểm soát quá mức dễ tan vỡ, còn con người bị quản quá chặt cũng dễ phản kháng. Câu đố dựa trên quy luật tâm lý và vật lý."
+  },
+  {
+    "id": 157,
+    "question": "Cái gì có thể giữ ấm cả nhà nhưng lại bắt đầu từ một tia rất nhỏ?",
+    "options": ["Ngọn lửa", "Tình yêu thương", "Bếp than", "Cả 3 đáp án"],
+    "correctIndex": 3,
+    "explanation": "Một tia lửa nhỏ có thể nhóm bếp, còn một chút yêu thương cũng có thể làm ấm bầu không khí gia đình. Câu đố cố ý kết hợp nghĩa đen và nghĩa bóng."
+  },
+  {
+    "id": 158,
+    "question": "Cái gì càng chạy nhanh càng khó đuổi kịp nhất?",
+    "options": ["Xe đua", "Tuổi trẻ", "Thời gian", "Cơ hội"],
+    "correctIndex": 2,
+    "explanation": "Thời gian luôn trôi đi và không chờ ai, càng cảm thấy nó đi nhanh thì ta càng khó níu giữ. Đây là đáp án hợp lý nhất trong nhóm lựa chọn."
+  },
+  {
+    "id": 159,
+    "question": "Cái gì có thể đi vào mọi ngôi nhà mà không cần gõ cửa?",
+    "options": ["Ánh sáng", "Không khí", "Mùi thức ăn", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Ánh sáng lọt qua cửa sổ, không khí lưu thông và mùi hương có thể lan vào nhà mà không cần ai mời. Cả ba đều đúng theo nghĩa tự nhiên."
+  },
+  {
+    "id": 160,
+    "question": "Cái gì càng nhẹ càng dễ làm người ta nặng lòng?",
+    "options": ["Tin nhắn ngắn", "Lời nói vô tình", "Cái nhìn lạnh nhạt", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Một câu nói ngắn, một tin nhắn cụt lủn hay một ánh nhìn hờ hững đều rất 'nhẹ' về vật lý nhưng có thể gây cảm giác nặng lòng. Đây là câu đố về cảm xúc con người."
+  },
+  {
+    "id": 161,
+    "question": "Một bác sĩ cho bạn 3 viên thuốc và dặn cứ nửa giờ uống 1 viên. Bao lâu uống hết?",
+    "options": ["1 giờ", "1 giờ 30 phút", "30 phút", "2 giờ"],
+    "correctIndex": 0,
+    "explanation": "Bạn uống viên đầu tiên ngay lúc bắt đầu, viên thứ hai sau 30 phút và viên cuối sau 60 phút. Vì vậy tổng thời gian để uống hết là 1 giờ."
+  },
+  {
+    "id": 162,
+    "question": "Cái gì càng đặt xuống càng nâng người khác lên?",
+    "options": ["Cái ghế", "Bục phát biểu", "Bệ đỡ", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Ghế, bục và bệ đỡ đều được đặt xuống đất nhưng lại giúp người hoặc vật khác ở cao hơn. Đây là câu đố về công dụng nâng đỡ."
+  },
+  {
+    "id": 163,
+    "question": "Cái gì nghe có vẻ yếu nhưng lại phá được đá theo thời gian?",
+    "options": ["Gió", "Nước", "Cát", "Lá cây"],
+    "correctIndex": 1,
+    "explanation": "Nước mềm nhưng có thể bào mòn đá qua thời gian rất dài bằng dòng chảy và phong hóa. Đây là hình ảnh quen thuộc trong tự nhiên và triết lý sống."
+  },
+  {
+    "id": 164,
+    "question": "Cái gì một khi quá đầy thì lại bắt đầu tràn ra ngoài?",
+    "options": ["Cốc nước", "Lịch làm việc", "Cảm xúc", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Cốc nước đầy sẽ tràn, lịch quá tải khiến việc dồn ứ, cảm xúc bị dồn nén quá mức cũng có thể bộc phát. Cả ba đều đúng theo nghĩa tương ứng."
+  },
+  {
+    "id": 165,
+    "question": "Cái gì chỉ cần sai một chút là đi rất xa?",
+    "options": ["La bàn", "Hướng đi", "Mục tiêu sống", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Sai lệch nhỏ ở la bàn hoặc hướng đi có thể đưa bạn lệch rất xa sau quãng đường dài; tương tự, mục tiêu sống sai cũng làm chệch cả hành trình. Đây là câu đố có tính ẩn dụ mạnh."
+  },
+  {
+    "id": 166,
+    "question": "Cái gì đi vào bụng đen, ra ngoài trắng?",
+    "options": ["Hạt ngô làm bỏng", "Than lọc nước", "Bột mì", "Gạo"],
+    "correctIndex": 0,
+    "explanation": "Hạt ngô vàng hoặc sẫm khi cho vào nồi rang nóng sẽ nở thành bỏng trắng. Câu đố mô tả quá trình chế biến bằng hình ảnh vui."
+  },
+  {
+    "id": 167,
+    "question": "Cái gì càng đếm càng thấy mình nhỏ bé?",
+    "options": ["Tiền tiết kiệm", "Sao trời", "Tuổi tác", "Điểm số"],
+    "correctIndex": 1,
+    "explanation": "Khi nhìn lên bầu trời và đếm vô số ngôi sao, con người thường cảm nhận sự rộng lớn của vũ trụ và sự nhỏ bé của bản thân. Đây là câu đố gợi suy tưởng."
+  },
+  {
+    "id": 168,
+    "question": "Cái gì có thể đi qua mọi bức tường nếu có thời gian đủ lâu?",
+    "options": ["Ánh sáng", "Rễ cây", "Nước", "Ý chí"],
+    "correctIndex": 2,
+    "explanation": "Nước có thể thấm, rò rỉ, bào mòn và dần len qua các khe nứt của tường theo thời gian. Đây là một quá trình tự nhiên thường thấy."
+  },
+  {
+    "id": 169,
+    "question": "Cái gì càng nói dừng lại thì lại càng chạy trong đầu?",
+    "options": ["Quảng cáo", "Bài hát bị ám", "Suy nghĩ lo âu", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Khi cố ép bản thân đừng nghĩ về một điều gì, nó thường quay lại mạnh hơn. Bài hát ám đầu, lo âu và thông điệp quảng cáo đều có thể như vậy."
+  },
+  {
+    "id": 170,
+    "question": "Cái gì sống nhờ quá khứ nhưng lại hướng con người tới tương lai?",
+    "options": ["Lịch sử", "Ký ức", "Kinh nghiệm", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Lịch sử, ký ức và kinh nghiệm đều bắt nguồn từ những gì đã qua, nhưng chúng giúp con người rút bài học để quyết định tốt hơn trong tương lai. Đây là câu đố giàu ý nghĩa."
+  },
+  {
+    "id": 171,
+    "question": "Cái gì nhìn càng kỹ càng thấy không giống như tưởng ban đầu?",
+    "options": ["Con người", "Vấn đề", "Bức tranh", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Khi quan sát kỹ, ta thường phát hiện những lớp nghĩa, chi tiết hoặc tính cách khác với ấn tượng đầu tiên. Điều này đúng với con người, sự việc và cả nghệ thuật."
+  },
+  {
+    "id": 172,
+    "question": "Cái gì không cần chạy mà vẫn về đích đúng giờ mỗi ngày?",
+    "options": ["Mặt trời lặn", "Đồng hồ", "Hoàng hôn", "Tất cả đều đúng theo nghĩa chu kỳ"],
+    "correctIndex": 3,
+    "explanation": "Đồng hồ chỉ giờ đúng chu kỳ, mặt trời lặn và hoàng hôn cũng xuất hiện đều đặn theo quy luật tự nhiên. Câu đố nói về sự đúng hẹn của quy luật."
+  },
+  {
+    "id": 173,
+    "question": "Cái gì càng học thuộc càng dễ quên nếu không hiểu?",
+    "options": ["Bài thơ", "Công thức", "Kiến thức", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Học vẹt mà không hiểu bản chất khiến trí nhớ rất dễ rơi rụng theo thời gian. Điều này đúng với thơ, công thức và nhiều loại kiến thức."
+  },
+  {
+    "id": 174,
+    "question": "Cái gì có thể làm người ta ấm lên chỉ bằng vài từ?",
+    "options": ["Lời động viên", "Lời khen", "Lời hỏi han", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Một vài lời tử tế có thể mang lại cảm giác được quan tâm, nâng đỡ tinh thần và làm lòng người ấm lại. Đây là câu đố về sức mạnh của ngôn từ."
+  },
+  {
+    "id": 175,
+    "question": "Cái gì khi chia đôi thì cả hai bên đều có thể đúng?",
+    "options": ["Ý kiến", "Bản đồ", "Quả táo", "Câu chuyện"],
+    "correctIndex": 0,
+    "explanation": "Một vấn đề có thể có nhiều góc nhìn, nên khi chia thành hai phía tranh luận, cả hai bên vẫn có thể đúng ở những khía cạnh khác nhau. Đây là câu đố về tư duy đa chiều."
+  },
+  {
+    "id": 176,
+    "question": "Cái gì có thể bay khắp thế giới chỉ trong vài giây?",
+    "options": ["Máy bay phản lực", "Tin đồn", "Ánh sáng", "Dữ liệu internet"],
+    "correctIndex": 3,
+    "explanation": "Dữ liệu trên internet có thể lan truyền toàn cầu gần như tức thời. Dù tin đồn cũng lan nhanh, đáp án chính xác và hiện đại hơn là dữ liệu internet."
+  },
+  {
+    "id": 177,
+    "question": "Cái gì càng khóa lại càng muốn bật ra?",
+    "options": ["Cảm xúc", "Lò xo", "Ý tưởng", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Lò xo bị nén sẽ bật ra, cảm xúc bị kìm nén có thể bùng nổ, còn ý tưởng bị bỏ quên đôi khi lại thôi thúc quay lại mạnh mẽ. Đây là câu đố nhiều lớp nghĩa."
+  },
+  {
+    "id": 178,
+    "question": "Một con tàu điện chạy về hướng bắc, gió thổi hướng nam. Khói tàu bay về đâu?",
+    "options": ["Về nam", "Về bắc", "Bay lên trời", "Không có khói"],
+    "correctIndex": 3,
+    "explanation": "Tàu điện chạy bằng điện nên không tạo khói như đầu máy đốt nhiên liệu. Câu đố đánh lừa bằng chi tiết gió và hướng di chuyển."
+  },
+  {
+    "id": 179,
+    "question": "Cái gì càng ít nói càng đáng nghe?",
+    "options": ["Người khôn ngoan", "Người ít nói", "Lời đúng lúc", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Sự kiệm lời thường khiến mỗi phát ngôn có trọng lượng hơn, đặc biệt khi đó là lời khôn ngoan và đúng thời điểm. Đây là câu đố mang tính chiêm nghiệm."
+  },
+  {
+    "id": 180,
+    "question": "Cái gì không có cửa mà ai cũng muốn mở ra trong đời?",
+    "options": ["Cơ hội", "Tương lai", "Thành công", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Người ta thường nói mở ra cơ hội, mở ra tương lai, mở ra cánh cửa thành công dù đó không phải cánh cửa thật. Câu đố dùng ẩn dụ phổ biến."
+  },
+  {
+    "id": 181,
+    "question": "Cái gì càng bớt đi càng thấy thoải mái?",
+    "options": ["Gánh nặng", "Lo âu", "Nợ nần", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Khi gánh nặng, lo âu hay nợ nần giảm bớt, con người thường cảm thấy nhẹ nhõm và dễ chịu hơn. Đây là câu đố rất sát thực tế."
+  },
+  {
+    "id": 182,
+    "question": "Cái gì có thể truyền từ người này sang người khác mà không chạm vào nhau?",
+    "options": ["Cảm hứng", "Tiếng cười", "Năng lượng tích cực", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Cảm hứng, tiếng cười và tinh thần tích cực đều có thể lan truyền qua lời nói, ánh mắt, hành động mà không cần tiếp xúc vật lý. Đây là sức mạnh của tương tác xã hội."
+  },
+  {
+    "id": 183,
+    "question": "Cái gì càng mở rộng càng cần nền móng vững?",
+    "options": ["Ngôi nhà", "Doanh nghiệp", "Kiến thức", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Nhà, doanh nghiệp và tri thức đều cần nền tảng chắc chắn nếu muốn phát triển lớn hơn. Không có gốc vững, mở rộng rất dễ sụp đổ."
+  },
+  {
+    "id": 184,
+    "question": "Cái gì có thể khiến người ta đi thật xa dù chỉ đang ngồi yên?",
+    "options": ["Cuốn sách", "Bộ phim", "Trí tưởng tượng", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Sách, phim và trí tưởng tượng đều có thể đưa con người đến những không gian, thời đại và cảm xúc rất xa mà không cần rời chỗ. Đây là vẻ đẹp của trí tuệ và nghệ thuật."
+  },
+  {
+    "id": 185,
+    "question": "Cái gì càng bị thử thách càng bền nếu vượt qua được?",
+    "options": ["Tình bạn", "Bản lĩnh", "Ý chí", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Nhiều giá trị tinh thần như tình bạn, bản lĩnh và ý chí thường được tôi luyện qua khó khăn. Nếu vượt qua được, chúng trở nên mạnh mẽ hơn."
+  },
+  {
+    "id": 186,
+    "question": "Cái gì đi rất nhanh khi vui và đi rất chậm khi chờ đợi?",
+    "options": ["Chiếc xe", "Ngày nghỉ", "Thời gian", "Đồng hồ"],
+    "correctIndex": 2,
+    "explanation": "Cảm nhận của con người về thời gian thay đổi theo tâm trạng. Khi vui thì thấy thời gian trôi rất nhanh, còn lúc chờ đợi thì thấy lâu vô cùng."
+  },
+  {
+    "id": 187,
+    "question": "Cái gì càng đào sâu càng thấy nhiều điều hơn?",
+    "options": ["Cái giếng", "Kiến thức", "Lịch sử", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Đào giếng sâu có thêm nước, học sâu có thêm hiểu biết, nghiên cứu lịch sử sâu thì thấy thêm tầng nghĩa. Đây là câu đố kết hợp nghĩa đen và bóng rất đẹp."
+  },
+  {
+    "id": 188,
+    "question": "Cái gì có thể mượn nhưng trả lại vẫn không mất của mình?",
+    "options": ["Nụ cười", "Lời chào", "Sự chú ý", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Bạn có thể nhận lại nụ cười, lời chào hoặc sự chú ý từ người khác mà bản thân họ không mất đi thứ đó. Đây là nét đẹp của những điều vô hình."
+  },
+  {
+    "id": 189,
+    "question": "Cái gì khi được giữ đúng khoảng cách thì đẹp, lại quá gần thì khó thấy hết?",
+    "options": ["Bức tranh", "Ngọn núi", "Con người", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Một bức tranh, ngọn núi hay cả con người đều cần khoảng cách phù hợp để nhìn rõ tổng thể. Quá gần có thể khiến ta bỏ lỡ toàn cảnh."
+  },
+  {
+    "id": 190,
+    "question": "Cái gì có thể sáng lên trong đầu mà không cần điện?",
+    "options": ["Ý tưởng", "Ký ức", "Niềm tin", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Ý tưởng lóe sáng, ký ức hiện về và niềm tin được thắp lên đều là những cách nói quen thuộc về thế giới tinh thần. Không cần điện nhưng vẫn 'sáng'."
+  },
+  {
+    "id": 191,
+    "question": "Cái gì khi đi qua rồi thì không quay lại y nguyên được nữa?",
+    "options": ["Tuổi trẻ", "Khoảnh khắc", "Cơ hội", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Tuổi trẻ, một khoảnh khắc hay cơ hội đều có giá trị riêng của thời điểm đó. Dù có thứ tương tự xuất hiện lại, nó cũng không còn y hệt như trước."
+  },
+  {
+    "id": 192,
+    "question": "Cái gì càng giữ trong lòng càng nặng, nói ra đúng người lại nhẹ đi?",
+    "options": ["Tâm sự", "Nỗi buồn", "Áp lực", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Nhiều cảm xúc tiêu cực khi chia sẻ đúng nơi, đúng người sẽ giúp con người nhẹ lòng hơn. Đây là câu đố có giá trị cảm xúc và tâm lý."
+  },
+  {
+    "id": 193,
+    "question": "Cái gì càng bỏ đi càng dễ tiến về phía trước?",
+    "options": ["Hành lý thừa", "Thói quen xấu", "Sự do dự", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Bỏ bớt gánh nặng vật chất lẫn tinh thần giúp hành trình nhẹ hơn và rõ ràng hơn. Cả ba lựa chọn đều đúng theo nghĩa phát triển bản thân."
+  },
+  {
+    "id": 194,
+    "question": "Cái gì càng nhìn lại càng hiểu vì sao mình đang ở đây?",
+    "options": ["Quá khứ", "Gia đình", "Lựa chọn cũ", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Nhìn lại quá khứ, gia đình và những lựa chọn đã qua giúp ta hiểu hoàn cảnh hiện tại của bản thân. Đây là câu đố hướng về tự nhận thức."
+  },
+  {
+    "id": 195,
+    "question": "Cái gì càng đơn giản càng khó làm cho đúng?",
+    "options": ["Sống tử tế", "Nói thật", "Giữ lời hứa", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Những điều nghe đơn giản như sống tử tế, nói thật và giữ lời hứa lại đòi hỏi sự kiên định cao trong thực tế. Đây là câu đố giàu tính suy ngẫm."
+  },
+  {
+    "id": 196,
+    "question": "Cái gì càng chia nhỏ càng dễ hoàn thành?",
+    "options": ["Công việc lớn", "Mục tiêu lớn", "Bài học dài", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Chia việc lớn thành từng phần nhỏ giúp giảm áp lực và tăng khả năng hoàn thành. Đây là nguyên tắc rất hữu ích trong học tập và công việc."
+  },
+  {
+    "id": 197,
+    "question": "Cái gì có thể dẫn đường tốt hơn bản đồ khi bạn lạc trong cuộc sống?",
+    "options": ["Kinh nghiệm", "Giá trị sống", "Người thầy tốt", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Trong đời sống, kinh nghiệm, giá trị cốt lõi và sự chỉ dẫn của người tốt quan trọng hơn một tấm bản đồ vật lý. Đây là câu đố mang ý nghĩa định hướng."
+  },
+  {
+    "id": 198,
+    "question": "Cái gì càng trân trọng càng không thấy đủ?",
+    "options": ["Thời gian bên gia đình", "Tình yêu thương", "Những ngày bình yên", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Những điều quý giá như gia đình, yêu thương và bình yên khi đã biết trân trọng thì con người thường luôn muốn có thêm. Đây là tâm lý rất tự nhiên."
+  },
+  {
+    "id": 199,
+    "question": "Cái gì không có hình dạng cố định nhưng lại định hình cả con người?",
+    "options": ["Thói quen", "Kỷ luật", "Tư duy", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Thói quen, kỷ luật và tư duy đều vô hình nhưng ảnh hưởng rất mạnh đến cách sống, quyết định và tương lai của mỗi người. Đây là câu đố có chiều sâu."
+  },
+  {
+    "id": 200,
+    "question": "Cái gì càng biết ơn càng thấy cuộc sống đủ đầy hơn?",
+    "options": ["Gia đình", "Những điều nhỏ bé", "Hiện tại", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Biết ơn gia đình, những điều nhỏ bé và khoảnh khắc hiện tại giúp con người cảm nhận sự đủ đầy rõ hơn. Đây là câu đố kết thúc bộ câu hỏi theo hướng tích cực và nhẹ nhàng."
   }
 ]

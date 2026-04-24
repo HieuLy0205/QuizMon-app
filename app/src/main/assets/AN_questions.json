@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "question": "Một bài hát có ca từ chạm đến người nghe thường cần điều gì nhất?",
+    "options": ["Từ ngữ khó", "Cảm xúc thật", "Nhiều tiếng lóng", "Câu quá dài"],
+    "correctIndex": 1,
+    "explanation": "Ca từ dễ chạm tới người nghe nhất khi xuất phát từ cảm xúc thật. Dù ngôn ngữ đơn giản hay cầu kỳ, điều khiến người nghe nhớ lâu vẫn là sự chân thành, vì họ cảm thấy bản thân được phản chiếu trong câu hát."
+  },
+  {
+    "id": 2,
+    "question": "Trong nhạc hiện đại, điệp khúc thường được viết thế nào để dễ nhớ?",
+    "options": ["Rất dài và nhiều ý", "Lặp ý chính rõ ràng", "Chỉ dùng từ hiếm", "Không cần nhịp"],
+    "correctIndex": 1,
+    "explanation": "Điệp khúc hiệu quả thường nhấn lại thông điệp trung tâm bằng cấu trúc rõ ràng, dễ hát theo và có mức lặp hợp lý. Điều này giúp người nghe ghi nhớ nhanh, đặc biệt trong các ca khúc pop, indie hoặc viral trên mạng xã hội."
+  },
+  {
+    "id": 3,
+    "question": "Khi ca sĩ dùng hình ảnh như 'mưa', 'đêm', 'con phố' trong lyrics, đó thường là gì?",
+    "options": ["Biểu tượng gợi cảm xúc", "Lỗi viết lời", "Từ đệm ngẫu nhiên", "Cách kéo dài bài"],
+    "correctIndex": 0,
+    "explanation": "Những hình ảnh quen thuộc như mưa, đêm, con phố thường được dùng như biểu tượng. Chúng không chỉ tả cảnh mà còn gợi tâm trạng cô đơn, nhớ nhung, hoài niệm hoặc chuyển biến nội tâm của nhân vật trữ tình."
+  },
+  {
+    "id": 4,
+    "question": "Ca từ hay thường cân bằng tốt nhất giữa yếu tố nào?",
+    "options": ["Ý nghĩa và giai điệu", "Độ dài và tốc độ", "Tiếng lóng và từ hiếm", "Tên riêng và địa danh"],
+    "correctIndex": 0,
+    "explanation": "Lời ca không tồn tại độc lập mà phải đi cùng giai điệu. Một câu hát hay là câu vừa có ý nghĩa, vừa đặt lên nhạc mượt mà, đúng nhịp và khiến cảm xúc được đẩy lên tự nhiên khi cất giọng."
+  },
+  {
+    "id": 5,
+    "question": "Nếu một bài hát có lyrics rất hoa mỹ nhưng khó hiểu, điểm yếu thường là gì?",
+    "options": ["Thiếu nhạc cụ", "Thiếu khả năng kết nối", "Thiếu âm lượng", "Thiếu phần mở đầu"],
+    "correctIndex": 1,
+    "explanation": "Ca từ quá phức tạp có thể tạo ấn tượng ban đầu nhưng dễ làm người nghe xa cách nếu không còn cảm giác gần gũi. Trong nhạc hiện đại, sự kết nối thường quan trọng hơn việc phô diễn ngôn từ."
+  },
+  {
+    "id": 6,
+    "question": "Một câu hát ngắn nhưng mạnh thường hiệu quả vì lý do nào?",
+    "options": ["Dễ nhớ và dễ lan truyền", "Luôn mang nghĩa triết học", "Làm bài dài hơn", "Chỉ hợp nhạc rap"],
+    "correctIndex": 0,
+    "explanation": "Câu hát ngắn, rõ và giàu cảm xúc dễ được nhớ, trích dẫn và hát lại. Đây là lý do nhiều ca khúc hiện đại thành công nhờ một câu then chốt cô đọng, đủ mạnh để người nghe nhận ra ngay bài hát."
+  },
+  {
+    "id": 7,
+    "question": "Trong lyrics hiện đại, việc dùng ngôi 'em', 'anh', 'tôi', 'ta' giúp ích gì?",
+    "options": ["Tăng tính kể chuyện và nhập vai", "Làm bài bí ẩn hơn vô nghĩa", "Chỉ để gieo vần", "Không có tác dụng"],
+    "correctIndex": 0,
+    "explanation": "Đại từ xưng hô giúp xác định góc nhìn của người kể. Nhờ đó, ca khúc trở nên có nhân vật, có quan hệ và có chiều sâu cảm xúc rõ hơn, khiến người nghe dễ bước vào thế giới của bài hát."
+  },
+  {
+    "id": 8,
+    "question": "Yếu tố nào làm một đoạn verse trở nên cuốn hút trước khi vào điệp khúc?",
+    "options": ["Kể mở ra tình huống", "Lặp lại đúng một từ", "Không có nghĩa", "Chỉ đọc nhanh"],
+    "correctIndex": 0,
+    "explanation": "Verse thường có nhiệm vụ dẫn dắt câu chuyện, tạo bối cảnh và xây cảm xúc để điệp khúc bùng nổ. Khi verse mở ra được tình huống hấp dẫn, người nghe sẽ mong chờ phần cao trào phía sau."
+  },
+  {
+    "id": 9,
+    "question": "Một lyrics được xem là 'đời' và gần gũi khi nào?",
+    "options": ["Khi phản ánh trải nghiệm quen thuộc", "Khi dùng toàn thuật ngữ", "Khi không có hình ảnh", "Khi không có cảm xúc"],
+    "correctIndex": 0,
+    "explanation": "Ca từ gần gũi thường chạm vào những điều người nghe từng trải qua như yêu, chia tay, áp lực, trưởng thành hay cô đơn. Sự quen thuộc ấy làm bài hát như đang nói hộ cảm xúc của chính họ."
+  },
+  {
+    "id": 10,
+    "question": "Trong một bài hát, việc lặp lại một cụm từ nhiều lần thường nhằm mục đích gì?",
+    "options": ["Nhấn mạnh thông điệp", "Che lỗi hòa âm", "Thay phần phối khí", "Làm khán giả khó nhớ"],
+    "correctIndex": 0,
+    "explanation": "Sự lặp lại trong lyrics giúp tạo điểm neo trí nhớ và nhấn mạnh cảm xúc trung tâm. Nếu được dùng hợp lý, nó khiến câu hát trở nên ám ảnh; nếu lạm dụng, nó có thể làm bài hát đơn điệu."
+  },
+  {
+    "id": 11,
+    "question": "Một bài hát tình yêu hiện đại thường hấp dẫn hơn khi ca từ tránh điều gì?",
+    "options": ["Sáo rỗng và khuôn mẫu", "Nhịp điệu rõ ràng", "Hình ảnh cụ thể", "Cảm xúc thật"],
+    "correctIndex": 0,
+    "explanation": "Người nghe ngày nay dễ nhận ra những câu chữ quá quen, thiếu cá tính. Ca từ tình yêu hấp dẫn hơn khi có chi tiết riêng, góc nhìn mới hoặc cách diễn đạt thật, thay vì chỉ lặp lại những câu tỏ tình chung chung."
+  },
+  {
+    "id": 12,
+    "question": "Khi một câu hát 'gợi' nhiều hơn 'nói thẳng', ưu điểm lớn nhất là gì?",
+    "options": ["Tạo khoảng trống để người nghe tự cảm", "Làm bài vô nghĩa hơn", "Giảm cảm xúc", "Chỉ hợp nhạc cổ điển"],
+    "correctIndex": 0,
+    "explanation": "Ca từ giàu tính gợi mở giúp người nghe tham gia vào quá trình cảm nhận. Họ có thể tự liên hệ trải nghiệm cá nhân, từ đó bài hát trở nên sâu hơn và có sức sống lâu hơn trong trí nhớ."
+  },
+  {
+    "id": 13,
+    "question": "Trong rap melody hoặc pop hiện đại, vần có vai trò gì với lyrics?",
+    "options": ["Tạo độ trôi chảy và nhịp ngôn ngữ", "Chỉ để trang trí", "Không ảnh hưởng gì", "Làm giảm cảm xúc"],
+    "correctIndex": 0,
+    "explanation": "Vần giúp câu hát liền mạch, bắt tai và dễ ngân nga. Đặc biệt ở rap melody hay pop, cách sắp chữ theo vần còn tạo groove riêng, khiến người nghe cảm thấy lời 'chạy' theo nhạc rất tự nhiên."
+  },
+  {
+    "id": 14,
+    "question": "Một bài hát buồn nhưng lyrics quá kể lể thường gặp vấn đề gì?",
+    "options": ["Thiếu tiết chế", "Thiếu âm bass", "Thiếu số lượng câu", "Thiếu từ láy"],
+    "correctIndex": 0,
+    "explanation": "Khi mọi cảm xúc đều được nói ra trực tiếp và kéo dài quá mức, bài hát dễ mất tinh tế. Ca từ buồn hiệu quả thường biết chọn chi tiết đắt giá và để lại dư âm, thay vì giải thích quá nhiều."
+  },
+  {
+    "id": 15,
+    "question": "Yếu tố nào giúp một lyrics trở thành câu 'caption' được chia sẻ nhiều?",
+    "options": ["Ngắn, rõ, giàu cảm xúc", "Càng dài càng tốt", "Phải có từ chuyên môn", "Chỉ nói về thành công"],
+    "correctIndex": 0,
+    "explanation": "Một câu hát được chia sẻ nhiều thường cô đọng, dễ hiểu và chạm đúng cảm giác phổ biến như nhớ, yêu, tiếc nuối, chữa lành hay trưởng thành. Nó đủ riêng để đẹp, nhưng đủ chung để nhiều người thấy mình trong đó."
+  },
+  {
+    "id": 16,
+    "question": "Khi lyrics kể theo dòng thời gian từ quá khứ đến hiện tại, đó là kỹ thuật gì nổi bật?",
+    "options": ["Tự sự có tiến trình", "Gieo vần kép", "Đảo phách ngôn ngữ", "Chơi chữ đồng âm"],
+    "correctIndex": 0,
+    "explanation": "Kể chuyện theo tiến trình thời gian giúp ca khúc có diễn biến rõ ràng. Người nghe sẽ cảm nhận được sự thay đổi trong mối quan hệ, tâm trạng hoặc nhận thức của nhân vật trữ tình qua từng đoạn."
+  },
+  {
+    "id": 17,
+    "question": "Một lyrics dùng nhiều chi tiết nhỏ như quán quen, tin nhắn cũ, chuyến xe muộn thường tạo hiệu ứng gì?",
+    "options": ["Tăng tính điện ảnh và chân thật", "Làm bài xa lạ hơn", "Giảm khả năng hình dung", "Chỉ để đủ số chữ"],
+    "correctIndex": 0,
+    "explanation": "Chi tiết nhỏ khiến bài hát có hình ảnh cụ thể và sống động. Thay vì cảm xúc chung chung, người nghe thấy được cảnh, nhớ được khoảnh khắc, từ đó cảm xúc trở nên gần và thật hơn rất nhiều."
+  },
+  {
+    "id": 18,
+    "question": "Trong nhạc hiện đại, tại sao ca từ đơn giản không đồng nghĩa với ca từ dở?",
+    "options": ["Vì đơn giản nhưng đúng cảm xúc vẫn rất mạnh", "Vì không cần ý nghĩa", "Vì ai cũng thích từ dễ", "Vì không cần cấu trúc"],
+    "correctIndex": 0,
+    "explanation": "Sức mạnh của lyrics không nằm ở độ khó của từ ngữ mà ở độ chính xác trong cảm xúc. Một câu đơn giản nhưng đặt đúng chỗ, hát đúng giai điệu và đúng tâm trạng vẫn có thể khiến người nghe nhớ rất lâu."
+  },
+  {
+    "id": 19,
+    "question": "Một câu hát sử dụng phép đối lập như 'gần mà xa' thường nhằm mục đích gì?",
+    "options": ["Khắc họa mâu thuẫn cảm xúc", "Làm bài khó hiểu vô cớ", "Thay phần điệp khúc", "Giảm độ nhạc tính"],
+    "correctIndex": 0,
+    "explanation": "Phép đối lập giúp diễn tả những trạng thái tâm lý phức tạp như yêu nhưng tổn thương, còn nhớ nhưng phải buông. Đây là thủ pháp rất phổ biến vì nó phản ánh đúng sự mâu thuẫn trong cảm xúc hiện đại."
+  },
+  {
+    "id": 20,
+    "question": "Nếu một bài hát có giai điệu đẹp nhưng lyrics nhạt, điều gì dễ xảy ra?",
+    "options": ["Bài khó tạo dấu ấn lâu dài", "Bài chắc chắn thất bại", "Bài sẽ thành rap", "Bài không thể phát hành"],
+    "correctIndex": 0,
+    "explanation": "Giai điệu có thể giúp người nghe chú ý lúc đầu, nhưng lyrics mới thường là phần giữ họ ở lại lâu hơn. Nếu lời quá nhạt, bài hát có thể nghe ổn nhưng khó trở thành ca khúc được trích dẫn hoặc nhớ mãi."
+  },
+  {
+    "id": 21,
+    "question": "Khi một ca khúc dùng ngôn ngữ đời thường nhưng vẫn đẹp, đó là dấu hiệu của điều gì?",
+    "options": ["Khả năng chọn chữ tinh tế", "Sự ngẫu nhiên hoàn toàn", "Thiếu vốn từ", "Chỉ hợp với ballad"],
+    "correctIndex": 0,
+    "explanation": "Dùng ngôn ngữ đời thường mà vẫn gợi cảm cho thấy người viết có khả năng chọn chi tiết và nhịp câu rất tốt. Họ không cần từ quá hoa mỹ vẫn tạo được chất thơ và sức nặng cảm xúc."
+  },
+  {
+    "id": 22,
+    "question": "Ca từ trong một bài chữa lành thường ưu tiên tông cảm xúc nào?",
+    "options": ["An ủi và nâng đỡ", "Châm biếm gay gắt", "Phô trương quyền lực", "Kịch tính cực đoan"],
+    "correctIndex": 0,
+    "explanation": "Bài hát chữa lành thường dùng lời ca tạo cảm giác được thấu hiểu, được ôm lấy và được tiếp thêm hy vọng. Ngôn ngữ trong kiểu bài này thường dịu, tích cực nhưng không phủ nhận nỗi buồn thực tế."
+  },
+  {
+    "id": 23,
+    "question": "Một lyrics hay về chia tay thường không chỉ nói 'buồn' mà còn làm gì?",
+    "options": ["Cho thấy lý do và dư âm của nỗi buồn", "Lặp từ 'đau' liên tục", "Tránh mọi hình ảnh", "Không cần bối cảnh"],
+    "correctIndex": 0,
+    "explanation": "Nỗi buồn thuyết phục hơn khi có nguyên nhân, ký ức, đồ vật, khoảng trống hay sự thay đổi cụ thể đi kèm. Chính những yếu tố ấy khiến cảm xúc chia tay có chiều sâu thay vì chỉ là tuyên bố cảm xúc đơn giản."
+  },
+  {
+    "id": 24,
+    "question": "Khi người viết nhạc đặt ca từ khớp trọng âm với giai điệu, lợi ích lớn nhất là gì?",
+    "options": ["Nghe tự nhiên và dễ hát", "Làm lời bí ẩn hơn", "Tăng số lượng câu", "Thay thế hòa âm"],
+    "correctIndex": 0,
+    "explanation": "Nếu trọng âm của chữ rơi đúng vào chỗ nhạc cần nhấn, người nghe sẽ cảm thấy câu hát rất mượt. Đây là yếu tố quan trọng để lyrics không bị gượng, đặc biệt trong nhạc pop, R&B và acoustic."
+  },
+  {
+    "id": 25,
+    "question": "Một bài hát viral trên mạng thường có đoạn lyrics như thế nào?",
+    "options": ["Có một câu móc mạnh", "Toàn câu rất dài", "Không có thông điệp", "Chỉ toàn từ địa phương khó hiểu"],
+    "correctIndex": 0,
+    "explanation": "Nhiều bài viral sở hữu một câu móc vừa bắt tai vừa dễ đồng cảm. Đó có thể là câu tỏ tình, câu tiếc nuối, câu tự sự hoặc câu tuyên ngôn ngắn gọn khiến người nghe muốn dùng lại trong video hay bài đăng."
+  },
+  {
+    "id": 26,
+    "question": "Trong lyrics, ẩn dụ giúp bài hát hay hơn chủ yếu ở điểm nào?",
+    "options": ["Làm nghĩa sâu và nhiều lớp", "Làm mất kết nối", "Thay beat", "Bắt buộc bài phải dài"],
+    "correctIndex": 0,
+    "explanation": "Ẩn dụ cho phép người viết nói về cảm xúc bằng hình ảnh khác như biển, gió, mùa, ánh đèn. Điều này giúp lời ca giàu chiều sâu, mở rộng cách hiểu và tăng tính nghệ thuật mà không cần giải thích trực tiếp."
+  },
+  {
+    "id": 27,
+    "question": "Một bài hát về trưởng thành thường hiệu quả khi ca từ có thêm yếu tố nào?",
+    "options": ["Sự chiêm nghiệm", "Tốc độ cực nhanh", "Nhiều tên thương hiệu", "Lặp vô hạn một chữ"],
+    "correctIndex": 0,
+    "explanation": "Chủ đề trưởng thành thường đòi hỏi độ lắng và khả năng nhìn lại. Ca từ chiêm nghiệm giúp bài hát không chỉ kể chuyện mà còn cho thấy bài học, sự thay đổi hoặc cái giá của việc lớn lên."
+  },
+  {
+    "id": 28,
+    "question": "Vì sao nhiều ca khúc hiện đại ưu tiên câu hát nói như đang tâm sự?",
+    "options": ["Tạo cảm giác gần và thật", "Để che kỹ thuật hát", "Vì không cần giai điệu", "Để bài khó thuộc hơn"],
+    "correctIndex": 0,
+    "explanation": "Phong cách tâm sự khiến người nghe có cảm giác ca sĩ đang nói trực tiếp với mình. Cách viết này rất hợp thời vì phù hợp với thói quen nghe nhạc cá nhân, riêng tư và nhu cầu tìm sự đồng cảm."
+  },
+  {
+    "id": 29,
+    "question": "Một lyrics được xem là có 'cao trào cảm xúc' khi nào?",
+    "options": ["Ý và chữ được đẩy mạnh ở điểm nhạc bùng nổ", "Chỉ cần hát to hơn", "Chỉ thêm nhạc cụ", "Chỉ đổi tempo"],
+    "correctIndex": 0,
+    "explanation": "Cao trào trong lời ca xuất hiện khi nội dung, hình ảnh và lựa chọn từ ngữ cùng dồn đến một điểm mạnh nhất, thường trùng với điệp khúc hoặc đoạn bridge. Khi đó, người nghe cảm thấy cảm xúc được giải phóng rõ rệt."
+  },
+  {
+    "id": 30,
+    "question": "Nếu một bài hát có nhiều câu đẹp riêng lẻ nhưng tổng thể rời rạc, vấn đề nằm ở đâu?",
+    "options": ["Thiếu mạch ý thống nhất", "Thiếu số lượng nốt", "Thiếu nhạc cụ điện tử", "Thiếu độ vang"],
+    "correctIndex": 0,
+    "explanation": "Một bài hát hay không chỉ cần từng câu đẹp mà còn cần chúng phục vụ cùng một trục cảm xúc hoặc câu chuyện. Nếu các câu không liên kết, người nghe sẽ khó nắm được thông điệp tổng thể."
+  },
+  {
+    "id": 31,
+    "question": "Trong bài hát hiện đại, bridge thường có vai trò gì với lyrics?",
+    "options": ["Mở góc nhìn mới trước đoạn cuối", "Lặp y nguyên verse đầu", "Chỉ để nghỉ lấy hơi", "Không liên quan tới nội dung"],
+    "correctIndex": 0,
+    "explanation": "Bridge thường là nơi lời ca đổi góc nhìn, đào sâu nội tâm hoặc nâng cảm xúc lên một nấc khác trước khi trở lại điệp khúc. Vì vậy đây là phần rất quan trọng để tránh bài hát bị một màu."
+  },
+  {
+    "id": 32,
+    "question": "Yếu tố nào khiến một lyrics nghe 'thật thời nay' mà vẫn bền lâu?",
+    "options": ["Hiện đại nhưng không phụ thuộc trào lưu ngắn hạn", "Dùng tối đa từ hot trend", "Chỉ nhắc mạng xã hội", "Càng nhiều slang càng tốt"],
+    "correctIndex": 0,
+    "explanation": "Ca từ hiện đại không nhất thiết phải chạy theo mọi xu hướng ngôn ngữ. Muốn bền lâu, lời hát nên phản ánh cảm xúc và cách sống hôm nay nhưng vẫn chạm vào những điều con người luôn trải qua."
+  },
+  {
+    "id": 33,
+    "question": "Khi bài hát dùng một hình ảnh xuyên suốt từ đầu đến cuối, đó thường là gì?",
+    "options": ["Mô-típ chủ đạo", "Lỗi lặp ý", "Cách kéo dài bài", "Thiếu ý tưởng"],
+    "correctIndex": 0,
+    "explanation": "Một mô-típ chủ đạo như biển, chuyến tàu, căn phòng hay mùa đông giúp bài hát có tính thống nhất. Hình ảnh đó trở thành sợi dây liên kết các đoạn lời và tăng độ nhận diện cho ca khúc."
+  },
+  {
+    "id": 34,
+    "question": "Một bài hát có lyrics dễ đồng cảm với giới trẻ hiện nay thường chạm đến điều gì?",
+    "options": ["Áp lực, yêu đương, cô đơn, tìm mình", "Chỉ chiến tranh cổ đại", "Chỉ thuật ngữ chuyên ngành", "Chỉ chuyện viễn tưởng xa lạ"],
+    "correctIndex": 0,
+    "explanation": "Những chủ đề như áp lực cuộc sống, tình yêu chưa trọn, mất phương hướng, chữa lành hay tự tìm bản thân rất gần với trải nghiệm của giới trẻ. Vì vậy ca từ xoay quanh các chủ đề này thường có sức lan tỏa lớn."
+  },
+  {
+    "id": 35,
+    "question": "Điểm khác biệt của lời hát hay so với lời văn bình thường là gì?",
+    "options": ["Phải có nhạc tính", "Phải càng dài càng tốt", "Phải dùng toàn từ cổ", "Phải giống thơ tự do hoàn toàn"],
+    "correctIndex": 0,
+    "explanation": "Lời hát ngoài nghĩa còn phải ngân lên được, khớp giai điệu, nhịp và cảm xúc khi thể hiện. Vì thế một câu viết hay trên giấy chưa chắc đã là câu hát hay nếu thiếu nhạc tính."
+  },
+  {
+    "id": 36,
+    "question": "Một câu lyrics khiến người nghe 'nổi da gà' thường nhờ điều gì?",
+    "options": ["Đúng cảm xúc và đúng thời điểm xuất hiện", "Nhiều dấu chấm than", "Rất nhiều từ khó", "Hát nhỏ hoàn toàn"],
+    "correctIndex": 0,
+    "explanation": "Sự rung động mạnh thường đến khi câu hát được đặt đúng điểm cao trào hoặc đúng khoảnh khắc chuyển cảm xúc. Nội dung có thể rất giản dị, nhưng vì xuất hiện đúng lúc nên lại cực kỳ thấm."
+  },
+  {
+    "id": 37,
+    "question": "Trong lyrics, việc kể một điều rất riêng nhưng vẫn khiến nhiều người đồng cảm cho thấy điều gì?",
+    "options": ["Tính phổ quát trong trải nghiệm cá nhân", "Sự mâu thuẫn vô lý", "Thiếu nhất quán", "Lạm dụng chi tiết"],
+    "correctIndex": 0,
+    "explanation": "Nghệ thuật của ca từ là từ một câu chuyện riêng có thể mở ra cảm xúc chung. Khi chi tiết cá nhân đủ chân thật, người nghe lại càng dễ soi thấy câu chuyện của chính mình trong đó."
+  },
+  {
+    "id": 38,
+    "question": "Một bài hát thất tình nhưng vẫn được yêu thích lâu thường cần thêm yếu tố nào?",
+    "options": ["Góc nhìn riêng hoặc câu chữ độc đáo", "Chỉ kéo dài nỗi buồn", "Càng khó hiểu càng tốt", "Chỉ có điệp khúc"],
+    "correctIndex": 0,
+    "explanation": "Vì chủ đề thất tình rất phổ biến, bài hát muốn nổi bật cần có nét riêng trong cách kể, hình ảnh hoặc triết lý cảm xúc. Chính sự khác biệt ấy làm người nghe nhớ bài giữa rất nhiều ca khúc cùng đề tài."
+  },
+  {
+    "id": 39,
+    "question": "Ca từ sử dụng nhiều câu hỏi tu từ thường tạo cảm giác gì?",
+    "options": ["Day dứt và đối thoại nội tâm", "Khô cứng hơn", "Ít cảm xúc hơn", "Không có chủ đích"],
+    "correctIndex": 0,
+    "explanation": "Những câu hỏi như 'vì sao', 'bao giờ', 'có phải' thường làm tăng cảm giác băn khoăn, tiếc nuối hoặc tự vấn. Đây là cách hiệu quả để kéo người nghe vào tâm trạng chưa thể khép lại."
+  },
+  {
+    "id": 40,
+    "question": "Một bài pop hiện đại thường tránh kiểu lyrics nào để không bị cũ?",
+    "options": ["Lên gân và giáo điều", "Rõ ràng và ngắn gọn", "Có hình ảnh mới", "Giàu nhạc tính"],
+    "correctIndex": 0,
+    "explanation": "Những câu hát quá lên lớp, hô khẩu hiệu hoặc áp đặt cảm xúc thường khiến bài nghe cũ và gượng. Nhạc hiện đại ưu tiên cảm xúc được trải nghiệm hơn là bị giảng giải."
+  },
+  {
+    "id": 41,
+    "question": "Trong viết lời, 'hook line' là gì?",
+    "options": ["Câu móc dễ nhớ nhất của bài", "Tên phần hòa âm", "Đoạn dạo nhạc", "Kỹ thuật thu âm"],
+    "correctIndex": 0,
+    "explanation": "Hook line là câu hoặc cụm câu dễ ghi nhớ nhất, thường xuất hiện ở điệp khúc hoặc chỗ nhấn chính. Đây là phần khiến bài hát được nhận ra nhanh và có khả năng lan truyền mạnh."
+  },
+  {
+    "id": 42,
+    "question": "Một lyrics dùng phép lặp âm hoặc lặp phụ âm đầu thường tạo cảm giác gì?",
+    "options": ["Nhịp miệng vui tai và bắt âm tốt", "Khó nghe hơn", "Mất ý nghĩa", "Chỉ hợp thơ cổ"],
+    "correctIndex": 0,
+    "explanation": "Lặp âm giúp câu hát có chất nhạc tự thân ngay cả trước khi đặt lên giai điệu. Đây là thủ pháp làm lời trở nên mượt miệng, dễ thuộc và hấp dẫn khi hát hoặc rap."
+  },
+  {
+    "id": 43,
+    "question": "Khi lyrics dùng ít chữ nhưng nhiều khoảng lặng, hiệu ứng thường là gì?",
+    "options": ["Tăng độ ám ảnh và dư âm", "Giảm cảm xúc hoàn toàn", "Không thể biểu diễn", "Chỉ để tiết kiệm lời"],
+    "correctIndex": 0,
+    "explanation": "Khoảng lặng cho người nghe thời gian cảm nhận chữ vừa vang lên. Trong nhiều bài hát hiện đại, chính phần không nói hết lại làm nỗi buồn hoặc sự nhớ nhung trở nên nặng hơn."
+  },
+  {
+    "id": 44,
+    "question": "Một bài hát về tự do cá nhân thường cần ca từ mang tinh thần nào?",
+    "options": ["Khẳng định bản thân", "Lệ thuộc tuyệt đối", "Mơ hồ vô nghĩa", "Chỉ than phiền"],
+    "correctIndex": 0,
+    "explanation": "Chủ đề tự do cá nhân thường gắn với việc nhận ra giá trị bản thân, quyền lựa chọn và dám bước ra khỏi khuôn mẫu. Vì vậy lời ca cần có sức khẳng định và truyền cảm hứng rõ ràng."
+  },
+  {
+    "id": 45,
+    "question": "Tại sao nhiều bài hát hiện nay thích dùng hình ảnh đời sống đô thị trong lyrics?",
+    "options": ["Vì gần với nhịp sống hiện đại", "Vì không còn chủ đề khác", "Vì dễ kéo dài bài", "Vì bắt buộc theo xu hướng"],
+    "correctIndex": 0,
+    "explanation": "Đô thị mang tới nhiều biểu tượng quen thuộc như đèn đường, quán cà phê, căn phòng nhỏ, tàu xe, giờ tan ca. Những hình ảnh này phản ánh đúng nhịp sống hôm nay nên dễ tạo sự đồng cảm."
+  },
+  {
+    "id": 46,
+    "question": "Một lyrics hay về yêu đơn phương thường cần gì để không thành than thở một chiều?",
+    "options": ["Sự tinh tế trong quan sát cảm xúc", "Chỉ lặp lại 'nhớ em'", "Càng nhiều câu càng tốt", "Không cần hình ảnh"],
+    "correctIndex": 0,
+    "explanation": "Yêu đơn phương dễ rơi vào kể lể nếu chỉ nói nỗi nhớ. Khi có quan sát tinh tế như ánh mắt, khoảng cách, sự im lặng hay những điều không dám nói, bài hát sẽ đau mà vẫn đẹp."
+  },
+  {
+    "id": 47,
+    "question": "Trong lyrics, từ ngữ 'đắt' là từ như thế nào?",
+    "options": ["Ít nhưng đúng và gợi mạnh", "Càng hiếm càng tốt", "Càng dài càng hay", "Chỉ dùng trong rap"],
+    "correctIndex": 0,
+    "explanation": "Từ ngữ đắt là từ xuất hiện đúng chỗ, có sức gợi lớn và làm sáng cả câu hát. Nó không nhất thiết phức tạp, nhưng thường khiến người nghe dừng lại vì cảm thấy quá chính xác."
+  },
+  {
+    "id": 48,
+    "question": "Nếu ca từ quá phụ thuộc vào trend ngắn hạn, rủi ro lớn nhất là gì?",
+    "options": ["Nhanh lỗi thời", "Quá sâu sắc", "Thiếu giai điệu", "Khó phối khí"],
+    "correctIndex": 0,
+    "explanation": "Trend có thể giúp bài nổi nhanh nhưng cũng dễ khiến lời ca mất sức sống khi trào lưu qua đi. Bài hát bền hơn khi cân bằng giữa hơi thở hiện tại và giá trị cảm xúc lâu dài."
+  },
+  {
+    "id": 49,
+    "question": "Một bài hát có lyrics nhiều tầng nghĩa thường đem lại trải nghiệm gì?",
+    "options": ["Nghe lại nhiều lần vẫn phát hiện thêm điều mới", "Nghe một lần là chán", "Không ai hiểu được", "Chỉ giới chuyên môn mới thích"],
+    "correctIndex": 0,
+    "explanation": "Nhiều tầng nghĩa giúp bài hát sống lâu hơn với người nghe. Lần đầu họ có thể thấy giai điệu đẹp, lần sau lại nhận ra hình ảnh ẩn dụ, lần nữa mới thấm thông điệp sâu hơn."
+  },
+  {
+    "id": 50,
+    "question": "Khi lyrics và giai điệu cùng hướng về một cảm xúc, điều gì xảy ra?",
+    "options": ["Tác động cảm xúc được cộng hưởng", "Bài bị đơn điệu ngay", "Người nghe khó hiểu hơn", "Không có khác biệt"],
+    "correctIndex": 0,
+    "explanation": "Lời buồn đi với giai điệu buồn, hoặc lời mạnh mẽ đi với nhạc dứt khoát sẽ làm cảm xúc được khuếch đại. Sự thống nhất này giúp bài hát chạm người nghe sâu và rõ hơn."
+  },
+  {
+    "id": 51,
+    "question": "Một câu hát về nhớ nhung dễ hiệu quả hơn khi có gì đi kèm?",
+    "options": ["Một hình ảnh cụ thể để bám vào", "Chỉ nói 'rất nhớ'", "Toàn từ trừu tượng", "Không cần ngữ cảnh"],
+    "correctIndex": 0,
+    "explanation": "Thay vì chỉ nói 'anh nhớ em', việc gắn nỗi nhớ với mùi hương, con đường, giờ giấc hay một đồ vật cụ thể sẽ khiến cảm xúc rõ ràng và sống động hơn trong trí tưởng tượng người nghe."
+  },
+  {
+    "id": 52,
+    "question": "Trong ca từ, việc chuyển từ 'em' sang 'tôi' giữa bài thường cho thấy điều gì?",
+    "options": ["Sự thay đổi góc nhìn hoặc trạng thái nội tâm", "Lỗi chính tả", "Thiếu vần", "Không có dụng ý"],
+    "correctIndex": 0,
+    "explanation": "Sự thay đổi đại từ có thể cho thấy nhân vật đã rút khỏi mối quan hệ, nhìn lại bản thân hoặc chuyển từ đối thoại sang độc thoại. Đây là tín hiệu kể chuyện khá tinh tế trong lyrics."
+  },
+  {
+    "id": 53,
+    "question": "Điểm mạnh của lyrics kể chuyện theo từng cảnh nhỏ là gì?",
+    "options": ["Tạo cảm giác như xem một thước phim", "Làm bài khó hiểu", "Giảm sự nhập vai", "Chỉ phù hợp với nhạc dance"],
+    "correctIndex": 0,
+    "explanation": "Khi ca từ chia thành các cảnh nhỏ, người nghe dễ hình dung diễn biến và không gian của câu chuyện. Điều này giúp bài hát có tính điện ảnh, đặc biệt hiệu quả với ballad, indie và pop kể chuyện."
+  },
+  {
+    "id": 54,
+    "question": "Một bài hát nói về áp lực cuộc sống thường thuyết phục hơn khi nào?",
+    "options": ["Miêu tả được cảm giác cụ thể, không chung chung", "Chỉ nói 'mệt' liên tục", "Không có điểm sáng nào", "Chỉ dùng khẩu hiệu"],
+    "correctIndex": 0,
+    "explanation": "Áp lực trở nên thật hơn khi được mô tả qua tình huống cụ thể như đêm thức muộn, deadlines, kỳ vọng gia đình, cảm giác lạc lõng giữa đông người. Những chi tiết này tạo chiều sâu cho thông điệp."
+  },
+  {
+    "id": 55,
+    "question": "Ca từ mang tính tự sự khác ca từ khẩu hiệu ở điểm nào?",
+    "options": ["Tự sự cho thấy trải nghiệm sống", "Tự sự luôn dài hơn", "Khẩu hiệu luôn hay hơn", "Không có khác biệt"],
+    "correctIndex": 0,
+    "explanation": "Ca từ tự sự thường đi từ trải nghiệm, quan sát và cảm xúc thật nên có độ thuyết phục cao. Trong khi đó, câu chữ khẩu hiệu dễ vang nhưng đôi khi thiếu chiều sâu cá nhân."
+  },
+  {
+    "id": 56,
+    "question": "Vì sao nhiều ca khúc thành công có phần opening lyric rất mạnh?",
+    "options": ["Vì câu mở đầu quyết định mức độ níu người nghe", "Vì mở đầu không quan trọng", "Vì chỉ để đủ cấu trúc", "Vì luôn là điệp khúc"],
+    "correctIndex": 0,
+    "explanation": "Ở thời đại nghe nhanh, vài giây đầu rất quan trọng. Một câu mở đầu hay có thể lập tức dựng bối cảnh, tạo tò mò hoặc bộc lộ cảm xúc, khiến người nghe muốn tiếp tục ở lại với bài hát."
+  },
+  {
+    "id": 57,
+    "question": "Nếu lyrics hay nhưng quá dày ý trong một câu, vấn đề gì dễ xảy ra?",
+    "options": ["Khó hát và khó thấm", "Dễ viral hơn", "Tăng độ mượt", "Không ảnh hưởng gì"],
+    "correctIndex": 0,
+    "explanation": "Một câu nhồi quá nhiều ý dễ làm mất nhịp thở của bài và khiến người nghe không kịp cảm. Ca từ hiệu quả thường biết chắt lọc, để mỗi câu mang một trọng tâm rõ ràng."
+  },
+  {
+    "id": 58,
+    "question": "Một bài hát về hy vọng thường cần tránh điều gì để không giả tạo?",
+    "options": ["Lạc quan sáo rỗng, phủ nhận nỗi đau", "Có ánh sáng ở cuối bài", "Dùng câu khích lệ", "Giữ tông ấm áp"],
+    "correctIndex": 0,
+    "explanation": "Hy vọng thuyết phục khi nó đi qua tổn thương thật, chứ không xóa bỏ thực tế khó khăn. Nếu lời ca chỉ cố tích cực mà không thừa nhận nỗi đau, người nghe sẽ cảm thấy thiếu chân thành."
+  },
+  {
+    "id": 59,
+    "question": "Trong bài hát hiện đại, sự 'đồng cảm' của lyrics đến từ đâu nhiều nhất?",
+    "options": ["Từ trải nghiệm con người phổ quát", "Từ kỹ thuật phòng thu", "Từ số lượng nhạc cụ", "Từ tốc độ beat"],
+    "correctIndex": 0,
+    "explanation": "Người nghe đồng cảm khi họ nhận ra bản thân trong lời hát. Điều này đến từ những trải nghiệm phổ quát như yêu, nhớ, tiếc nuối, áp lực, mất mát, trưởng thành và mong muốn được thấu hiểu."
+  },
+  {
+    "id": 60,
+    "question": "Khi một câu hát có thể hiểu theo cả nghĩa tình yêu lẫn cuộc sống, đó là điểm mạnh gì?",
+    "options": ["Tính mở và đa nghĩa", "Sự mơ hồ vô ích", "Thiếu rõ ràng hoàn toàn", "Lỗi viết lời"],
+    "correctIndex": 0,
+    "explanation": "Ca từ đa nghĩa giúp mỗi người nghe tìm thấy lớp cảm xúc phù hợp với mình. Một câu hát có thể vừa là chuyện tình, vừa là hành trình sống sẽ có khả năng sống lâu và chạm được nhiều nhóm khán giả."
+  },
+  {
+    "id": 61,
+    "question": "Tại sao nhiều người thích lyrics có màu sắc hội thoại?",
+    "options": ["Vì nghe như một cuộc nói chuyện thật", "Vì luôn vần hơn", "Vì dễ kéo dài bài", "Vì không cần cấu trúc"],
+    "correctIndex": 0,
+    "explanation": "Ca từ mang màu sắc hội thoại tạo cảm giác thân mật và đời sống. Người nghe không thấy mình đang bị 'trình bày' mà như đang nghe ai đó thổ lộ thật lòng."
+  },
+  {
+    "id": 62,
+    "question": "Một lyrics dùng hình ảnh 'mùa' trong bài hát hiện đại thường để làm gì?",
+    "options": ["Ẩn dụ cho trạng thái tình cảm hoặc thời gian", "Chỉ để tả thời tiết", "Lấp chỗ trống lời", "Không có dụng ý"],
+    "correctIndex": 0,
+    "explanation": "Mùa trong ca từ thường gợi sự đổi thay, chu kỳ, đến rồi đi hoặc một quãng ký ức. Đây là hình ảnh quen thuộc nhưng vẫn hiệu quả vì dễ gắn với cảm xúc yêu, nhớ và trưởng thành."
+  },
+  {
+    "id": 63,
+    "question": "Yếu tố nào giúp lời rap hiện đại vừa kỹ thuật vừa giàu cảm xúc?",
+    "options": ["Cân bằng wordplay và nội dung thật", "Chỉ cần nhiều vần nội", "Chỉ cần tốc độ cao", "Chỉ cần punchline vui"],
+    "correctIndex": 0,
+    "explanation": "Kỹ thuật làm rap hấp dẫn ở tai, nhưng nội dung thật mới giữ được người nghe lâu. Khi wordplay, flow và cảm xúc thật đi cùng nhau, lyrics sẽ vừa ấn tượng vừa có giá trị nghe lại."
+  },
+  {
+    "id": 64,
+    "question": "Một bài hát dễ trở thành 'anthem' cho người trẻ khi lyrics làm được gì?",
+    "options": ["Nói đúng tâm trạng chung của cả một thế hệ", "Chỉ kể chuyện riêng không liên quan ai", "Tránh mọi thông điệp", "Chỉ dựa vào beat mạnh"],
+    "correctIndex": 0,
+    "explanation": "Những ca khúc được xem như tiếng nói của thế hệ thường chạm đến áp lực, tự do, khát vọng, bất an hoặc nhu cầu được công nhận của nhiều người cùng lúc. Lyrics khi đó vượt khỏi câu chuyện cá nhân để thành tiếng lòng chung."
+  },
+  {
+    "id": 65,
+    "question": "Một bài hát có lời quá trực diện đôi khi kém hấp dẫn hơn vì sao?",
+    "options": ["Thiếu không gian tưởng tượng cho người nghe", "Quá nhiều hình ảnh", "Khó hiểu hơn", "Thiếu trọng âm"],
+    "correctIndex": 0,
+    "explanation": "Khi mọi thứ đều được nói thẳng, người nghe ít có cơ hội tự tham gia vào quá trình cảm nhận. Một chút ẩn dụ hoặc khoảng trống thường khiến bài hát lắng lại lâu hơn."
+  },
+  {
+    "id": 66,
+    "question": "Trong bài hát hiện đại, sự lặp cấu trúc câu có thể tạo hiệu quả gì?",
+    "options": ["Tạo nhịp và tăng độ ám ảnh", "Làm bài chắc chắn nhàm", "Giảm tính giai điệu", "Không có vai trò"],
+    "correctIndex": 0,
+    "explanation": "Lặp cấu trúc như 'nếu...', 'vẫn...', 'giá như...' giúp người nghe bắt nhịp nội dung dễ hơn và làm cảm xúc được nhấn mạnh từng bước. Đây là kỹ thuật thường dùng để tăng độ cuốn."
+  },
+  {
+    "id": 67,
+    "question": "Một lyrics tốt trong nhạc love song hiện nay thường ưu tiên điều nào hơn?",
+    "options": ["Sự chân thành hơn là ngọt ngào gượng ép", "Càng sến càng hay", "Càng khoa trương càng tốt", "Chỉ cần vần đẹp"],
+    "correctIndex": 0,
+    "explanation": "Người nghe hiện đại thường phản ứng tốt với lời ca chân thật, có cả sự vụng về, bối rối hoặc tinh tế đời thường. Điều đó khiến tình yêu trong bài hát gần và đáng tin hơn."
+  },
+  {
+    "id": 68,
+    "question": "Khi một bài hát dùng vật thể như 'chiếc áo', 'tách cà phê', 'vé xe' để gợi nhớ, đó là gì?",
+    "options": ["Chi tiết mang ký ức", "Từ đệm vô nghĩa", "Lỗi mô tả", "Chủ đề sản phẩm"],
+    "correctIndex": 0,
+    "explanation": "Đồ vật gắn với ký ức thường có sức gợi rất mạnh vì chúng làm nỗi nhớ trở nên hữu hình. Người nghe có thể không nhớ cùng một vật, nhưng họ hiểu cảm giác kỷ niệm bám vào những điều nhỏ bé."
+  },
+  {
+    "id": 69,
+    "question": "Ca từ nào thường khiến bài hát nghe 'thấm dần' theo thời gian?",
+    "options": ["Ca từ có chiều sâu và trải nghiệm", "Ca từ chỉ gây sốc", "Ca từ chỉ để gây cười", "Ca từ hoàn toàn ngẫu nhiên"],
+    "correctIndex": 0,
+    "explanation": "Những bài hát thấm dần thường chứa trải nghiệm sống, chiêm nghiệm hoặc hình ảnh khiến người nghe cần thời gian để ngấm. Mỗi lần quay lại, họ lại hiểu thêm một lớp nghĩa khác."
+  },
+  {
+    "id": 70,
+    "question": "Một bài hát về cô đơn dễ chạm người nghe hơn khi lyrics thể hiện điều gì?",
+    "options": ["Cảm giác trống rỗng trong hoàn cảnh cụ thể", "Chỉ nói 'cô đơn' nhiều lần", "Không có bối cảnh nào", "Chỉ mô tả đêm tối"],
+    "correctIndex": 0,
+    "explanation": "Cô đơn trở nên thật khi gắn với những hoàn cảnh cụ thể như đông người nhưng lạc lõng, về nhà muộn, mở điện thoại không biết nhắn ai. Những tình huống ấy khiến cảm giác được nhận diện rõ."
+  },
+  {
+    "id": 71,
+    "question": "Trong viết lời, 'chất thơ' của lyrics thường đến từ đâu?",
+    "options": ["Từ hình ảnh, nhịp câu và độ gợi", "Từ việc dùng từ khó liên tục", "Từ câu càng dài càng tốt", "Từ bỏ hết nghĩa đen"],
+    "correctIndex": 0,
+    "explanation": "Chất thơ không chỉ đến từ từ đẹp mà từ cách hình ảnh, âm điệu và khoảng trống cảm xúc phối hợp với nhau. Một câu đơn giản vẫn có thể rất thơ nếu nó gợi được nhiều hơn phần nó nói."
+  },
+  {
+    "id": 72,
+    "question": "Vì sao một số bài hát có lyrics mang tính 'confession' rất được yêu thích?",
+    "options": ["Vì tạo cảm giác nghe một lời thú nhận thật", "Vì luôn dễ hát hơn", "Vì không cần giai điệu", "Vì chỉ hợp với ballad buồn"],
+    "correctIndex": 0,
+    "explanation": "Lời thú nhận luôn tạo cảm giác thân mật và rủi ro cảm xúc. Người nghe bị cuốn vào vì thấy có điều gì đó rất thật, rất người và có khi là điều họ chưa dám nói thay cho mình."
+  },
+  {
+    "id": 73,
+    "question": "Một bài hát có ca từ mạnh về self-love thường cần tránh điều gì?",
+    "options": ["Biến tự yêu thành tự tôn sáo rỗng", "Nhắc đến tổn thương cũ", "Có lời khẳng định tích cực", "Giữ tinh thần nâng đỡ"],
+    "correctIndex": 0,
+    "explanation": "Self-love hiệu quả khi xuất phát từ chữa lành và hiểu mình, không phải chỉ khoe cái tôi rỗng. Nếu lời quá phô trương, bài hát dễ mất sự đồng cảm và chiều sâu."
+  },
+  {
+    "id": 74,
+    "question": "Trong lyrics, việc dùng điệp ngữ ở đầu nhiều câu liên tiếp giúp gì?",
+    "options": ["Tạo nhịp cảm xúc dồn dập", "Giảm khả năng nhớ", "Làm mất trọng tâm", "Chỉ để đủ thời lượng"],
+    "correctIndex": 0,
+    "explanation": "Điệp ngữ đầu câu tạo cảm giác nhấn mạnh có chủ ý, như những đợt sóng cảm xúc nối tiếp. Đây là cách hiệu quả để làm đoạn lời có lực và dễ gây ấn tượng."
+  },
+  {
+    "id": 75,
+    "question": "Một lyrics hay trong bài về chia ly thường hay có điểm gì?",
+    "options": ["Biết dừng đúng lúc, không nói quá", "Giải thích mọi thứ tới cùng", "Lặp toàn bộ câu cũ", "Chỉ nói về đau đớn"],
+    "correctIndex": 0,
+    "explanation": "Chia ly thường mạnh ở dư âm hơn là lời giải thích. Khi ca từ biết dừng ở một chi tiết hay một câu đủ đau, người nghe sẽ tự hoàn thiện phần cảm xúc còn lại trong lòng mình."
+  },
+  {
+    "id": 76,
+    "question": "Nếu người nghe nói lyrics của một bài 'có cảnh', họ thường muốn nói gì?",
+    "options": ["Lời hát gợi ra hình ảnh rõ ràng", "Lời hát quá ồn", "Lời hát thiếu ý", "Lời hát có nhiều lỗi"],
+    "correctIndex": 0,
+    "explanation": "Một bài có 'cảnh' nghĩa là nghe lời đã thấy không gian, nhân vật và khoảnh khắc. Đây là điểm rất mạnh vì nó khiến người nghe không chỉ nghe mà còn như đang nhìn thấy câu chuyện."
+  },
+  {
+    "id": 77,
+    "question": "Ca từ về tình yêu trưởng thành thường khác tình yêu tuổi mới lớn ở đâu?",
+    "options": ["Có nhiều chiêm nghiệm và chấp nhận hơn", "Ít cảm xúc hơn hoàn toàn", "Không cần hình ảnh", "Chỉ dùng từ ngắn"],
+    "correctIndex": 0,
+    "explanation": "Tình yêu trưởng thành thường không chỉ có rung động mà còn có mất mát, trách nhiệm, khoảng cách và sự chấp nhận. Vì vậy lyrics kiểu này thường lắng hơn, sâu hơn và ít bốc đồng hơn."
+  },
+  {
+    "id": 78,
+    "question": "Khi một bài hát sử dụng nhiều động từ mạnh trong lyrics, tác dụng là gì?",
+    "options": ["Tăng cảm giác chuyển động và sức nặng", "Làm bài dịu hơn", "Giảm nhịp câu", "Không có ảnh hưởng"],
+    "correctIndex": 0,
+    "explanation": "Động từ mạnh làm câu hát có hành động, có sức tiến hoặc va chạm rõ ràng. Chúng rất hữu ích trong bài về quyết định, bứt phá, tổn thương hoặc đấu tranh nội tâm."
+  },
+  {
+    "id": 79,
+    "question": "Một bài hát có lyrics mang chất nhật ký thường hấp dẫn vì sao?",
+    "options": ["Tạo sự riêng tư và chân thành", "Vì luôn có nhiều vần hơn", "Vì không cần cấu trúc", "Vì chỉ hợp với acoustic"],
+    "correctIndex": 0,
+    "explanation": "Chất nhật ký khiến người nghe có cảm giác được đọc một phần đời thật của người viết. Cảm giác riêng tư ấy thường tạo nên sức hút mạnh, đặc biệt trong indie, bedroom pop và singer-songwriter."
+  },
+  {
+    "id": 80,
+    "question": "Một câu lyrics đẹp nhưng không khớp hơi hát sẽ gặp khó khăn gì?",
+    "options": ["Khó thể hiện tự nhiên", "Dễ thành hit hơn", "Tăng cảm xúc hơn", "Không ảnh hưởng tới bài"],
+    "correctIndex": 0,
+    "explanation": "Lời hát phải phục vụ việc cất giọng. Nếu câu quá dài, đặt sai nhịp thở hoặc khó phát âm trên giai điệu, nó sẽ khiến người biểu diễn bị gượng và làm giảm sức truyền cảm."
+  },
+  {
+    "id": 81,
+    "question": "Trong lyrics hiện đại, một câu 'twist' ở cuối verse thường để làm gì?",
+    "options": ["Đảo cảm xúc hoặc hé lộ điều bất ngờ", "Kết thúc bài ngay", "Thêm vần phụ", "Thay đoạn bridge"],
+    "correctIndex": 0,
+    "explanation": "Một câu chuyển bất ngờ ở cuối verse giúp người nghe chú ý và tạo lực đẩy vào điệp khúc. Nó có thể làm thay đổi cách hiểu hoặc tăng độ đau, độ nhớ, độ bất ngờ của câu chuyện."
+  },
+  {
+    "id": 82,
+    "question": "Vì sao lyrics có tính đối thoại giữa hai người thường dễ cuốn?",
+    "options": ["Vì tạo cảm giác xung đột hoặc tương tác sống động", "Vì luôn ngắn hơn", "Vì ít cần vần", "Vì chỉ hợp với nhạc kịch"],
+    "correctIndex": 0,
+    "explanation": "Khi lời hát như một cuộc đối thoại, bài hát có thêm động lực nội tại. Người nghe bị kéo vào mối quan hệ, vào điều chưa nói hết, vào khoảng cách giữa hai nhân vật."
+  },
+  {
+    "id": 83,
+    "question": "Một lyrics quá nhiều mỹ từ nhưng thiếu trải nghiệm thường tạo cảm giác gì?",
+    "options": ["Đẹp bề mặt nhưng khó tin", "Rất chân thật", "Rất dễ đồng cảm", "Càng nghe càng gần"],
+    "correctIndex": 0,
+    "explanation": "Ngôn từ bóng bẩy có thể gây ấn tượng, nhưng nếu không có cảm giác sống bên trong, người nghe sẽ thấy nó chỉ đẹp ở lớp ngoài. Sự chân thực vẫn là lõi của lyrics mạnh."
+  },
+  {
+    "id": 84,
+    "question": "Trong bài hát hiện đại, việc dùng khoảng thời gian như '3 giờ sáng' hay 'một mùa hè' giúp gì?",
+    "options": ["Định vị cảm xúc bằng mốc nhớ cụ thể", "Làm bài khó hiểu hơn", "Không có tác dụng", "Chỉ để gieo vần"],
+    "correctIndex": 0,
+    "explanation": "Mốc thời gian cụ thể khiến ký ức trong bài hát trở nên thật và đáng nhớ hơn. Người nghe dễ hình dung một khoảnh khắc rõ nét thay vì cảm xúc trôi nổi không bến."
+  },
+  {
+    "id": 85,
+    "question": "Một lyrics mạnh về chữa lành thường không hứa điều gì?",
+    "options": ["Rằng mọi nỗi đau sẽ biến mất ngay", "Rằng có thể bước tiếp", "Rằng người nghe không cô độc", "Rằng vết thương có thể lành"],
+    "correctIndex": 0,
+    "explanation": "Chữa lành thực tế không phải xóa đau lập tức mà là chấp nhận, đi qua và hồi phục dần. Lời ca chân thành thường thừa nhận quá trình ấy thay vì đưa ra niềm vui giả tạo."
+  },
+  {
+    "id": 86,
+    "question": "Khi lyrics dùng nhiều từ chỉ giác quan như nghe, thấy, chạm, mùi, hiệu quả là gì?",
+    "options": ["Làm cảm xúc trở nên sống động hơn", "Giảm tính hình ảnh", "Chỉ để đủ số chữ", "Không có khác biệt"],
+    "correctIndex": 0,
+    "explanation": "Ngôn ngữ giác quan kéo người nghe vào trải nghiệm thực. Họ không chỉ hiểu mà còn gần như cảm nhận được khung cảnh và cảm xúc bằng cơ thể mình."
+  },
+  {
+    "id": 87,
+    "question": "Một bài hát có lyrics được gọi là 'thơ nhưng không xa' thường nghĩa là gì?",
+    "options": ["Đẹp và gợi nhưng vẫn dễ chạm", "Quá khó hiểu", "Chỉ hợp học thuật", "Không có câu chuyện"],
+    "correctIndex": 0,
+    "explanation": "Đó là kiểu ca từ vừa có hình ảnh và nhạc tính đẹp, vừa không tách khỏi cảm xúc đời thường. Người nghe vẫn hiểu, vẫn thấy gần, nhưng vẫn cảm nhận được chiều sâu nghệ thuật."
+  },
+  {
+    "id": 88,
+    "question": "Một lyrics dùng sự im lặng như một hình ảnh thường nói lên điều gì?",
+    "options": ["Khoảng cách, tổn thương hoặc điều chưa nói", "Niềm vui trọn vẹn", "Sự ồn ào", "Không mang ý nghĩa nào"],
+    "correctIndex": 0,
+    "explanation": "Im lặng trong ca từ thường không đơn thuần là không có âm thanh, mà là biểu tượng cho khoảng cách, bế tắc, ngập ngừng hoặc nỗi đau không thể gọi tên."
+  },
+  {
+    "id": 89,
+    "question": "Trong nhạc pop, vì sao nhiều bài chọn một từ khóa lặp lại xuyên suốt?",
+    "options": ["Để tạo nhận diện chủ đề", "Để che thiếu ý tưởng hoàn toàn", "Để tránh cảm xúc", "Để giảm nhạc tính"],
+    "correctIndex": 0,
+    "explanation": "Một từ khóa như 'nhớ', 'đợi', 'về', 'mơ', 'thương' có thể trở thành cột sống của bài hát. Khi xuất hiện xuyên suốt, nó tạo liên kết chủ đề và giúp người nghe nhớ nhanh hơn."
+  },
+  {
+    "id": 90,
+    "question": "Một bài hát có lời chạm nhưng không bi lụy thường nhờ điều gì?",
+    "options": ["Biết tiết chế cảm xúc", "Tránh mọi nỗi buồn", "Không dùng hình ảnh", "Chỉ hát đều đều"],
+    "correctIndex": 0,
+    "explanation": "Tiết chế là yếu tố giúp bài buồn mà vẫn đẹp. Người viết biết dừng ở đúng độ sâu cần thiết, không kéo dài cảm xúc đến mức nặng nề hay than thở quá đà."
+  },
+  {
+    "id": 91,
+    "question": "Một lyrics khiến người nghe cảm thấy 'bị gọi tên' thường có đặc điểm gì?",
+    "options": ["Chạm đúng cảm giác khó nói thành lời", "Toàn từ hiếm gặp", "Chỉ dùng mệnh lệnh", "Thiếu hình ảnh hoàn toàn"],
+    "correctIndex": 0,
+    "explanation": "Đôi khi người nghe không cần điều mới, họ cần một câu hát nói đúng điều mình đã cảm nhưng chưa diễn tả được. Khi đó bài hát tạo cảm giác như đang gọi đúng tên nỗi lòng."
+  },
+  {
+    "id": 92,
+    "question": "Trong bài hát hiện đại, lyrics về thành phố thường gợi điều gì ngoài bối cảnh?",
+    "options": ["Nhịp sống, cô đơn và mối quan hệ", "Chỉ kiến trúc", "Chỉ giao thông", "Không có ý nghĩa cảm xúc"],
+    "correctIndex": 0,
+    "explanation": "Thành phố trong lyrics thường là biểu tượng cho nhịp sống nhanh, đông mà cô đơn, những cuộc gặp gỡ chóng vánh, những căn phòng nhỏ và cảm giác lạc lõng giữa nhiều ánh đèn."
+  },
+  {
+    "id": 93,
+    "question": "Tại sao phần pre-chorus thường cần lyrics mang tính đẩy cảm xúc?",
+    "options": ["Vì nó là cầu nối dẫn vào điệp khúc", "Vì nó không quan trọng", "Vì chỉ để đủ cấu trúc", "Vì luôn là phần dài nhất"],
+    "correctIndex": 0,
+    "explanation": "Pre-chorus có nhiệm vụ nâng cảm xúc từ verse lên chorus. Nếu lời ở đây được viết tốt, người nghe sẽ cảm thấy có sự chuẩn bị và bùng nổ ở điệp khúc sẽ thỏa mãn hơn."
+  },
+  {
+    "id": 94,
+    "question": "Một bài hát có lyrics mang năng lượng tích cực thường hấp dẫn hơn khi nào?",
+    "options": ["Khi tích cực nhưng vẫn đáng tin", "Khi phủ nhận mọi khó khăn", "Khi chỉ hô khẩu hiệu", "Khi không có hình ảnh cụ thể"],
+    "correctIndex": 0,
+    "explanation": "Sự tích cực có sức mạnh khi nó không rỗng. Người nghe cần cảm thấy bài hát hiểu khó khăn của họ trước khi nâng họ lên, thay vì chỉ ép họ phải vui."
+  },
+  {
+    "id": 95,
+    "question": "Nếu lyrics dùng quá nhiều câu giống nhau về cấu trúc mà không biến đổi, điểm yếu là gì?",
+    "options": ["Dễ gây đơn điệu", "Tăng chiều sâu ngay", "Làm bài phong phú hơn", "Không ảnh hưởng gì"],
+    "correctIndex": 0,
+    "explanation": "Lặp cấu trúc có ích nếu có tiến triển cảm xúc. Nếu lặp mà không có biến đổi về ý hoặc lực, bài hát sẽ nhanh mất bất ngờ và khiến người nghe bị mỏi tai."
+  },
+  {
+    "id": 96,
+    "question": "Một câu hát mạnh về chia tay thường hiệu quả hơn khi nhấn vào điều gì?",
+    "options": ["Cái còn lại sau khi người kia rời đi", "Chỉ trách móc đối phương", "Chỉ kể chi tiết vô tận", "Chỉ lặp một từ buồn"],
+    "correctIndex": 0,
+    "explanation": "Điều ám ảnh sau chia tay thường không chỉ là lúc rời đi mà là khoảng trống còn lại: thói quen, đồ vật, thời gian, con đường cũ. Nhấn vào dư âm ấy khiến lyrics sâu và thấm hơn."
+  },
+  {
+    "id": 97,
+    "question": "Trong lyrics, việc dùng nghịch lý như 'quên để nhớ' có tác dụng gì?",
+    "options": ["Tạo chiều sâu cho cảm xúc phức tạp", "Làm bài vô nghĩa", "Chỉ để cho vui", "Không có hiệu quả"],
+    "correctIndex": 0,
+    "explanation": "Nghịch lý phản ánh đúng bản chất cảm xúc con người, nhất là trong tình yêu và mất mát. Những trạng thái tưởng như ngược nhau lại thường cùng tồn tại, và lyrics khai thác điều đó rất hiệu quả."
+  },
+  {
+    "id": 98,
+    "question": "Một bài hát có lời kể về hành trình vượt qua khó khăn thường cần thêm điều gì để thuyết phục?",
+    "options": ["Cho thấy vấp ngã trước khi đứng lên", "Chỉ nói chiến thắng cuối cùng", "Không cần cảm xúc yếu đuối", "Không cần chi tiết"],
+    "correctIndex": 0,
+    "explanation": "Sự hồi phục có ý nghĩa hơn khi người nghe thấy nhân vật đã từng mỏi mệt, chùn bước hoặc thất bại. Chính hành trình ấy mới làm phần đứng lên trở nên cảm động."
+  },
+  {
+    "id": 99,
+    "question": "Một lyrics được khen là 'có chất riêng' thường vì điều gì?",
+    "options": ["Có giọng nói và góc nhìn không lẫn", "Dùng thật nhiều từ lạ", "Tránh mọi cảm xúc quen thuộc", "Không cần người nghe hiểu"],
+    "correctIndex": 0,
+    "explanation": "Chất riêng đến từ cách quan sát, chọn chi tiết, nhịp câu và thái độ cảm xúc đặc trưng của người viết. Nó không nhất thiết kỳ lạ, nhưng khiến người nghe nhận ra bản sắc rõ ràng."
+  },
+  {
+    "id": 100,
+    "question": "Yếu tố nào giúp ca từ trong bài dance-pop vẫn có giá trị chứ không chỉ bắt tai?",
+    "options": ["Có thông điệp hoặc cảm xúc rõ", "Chỉ cần beat mạnh", "Không cần ý nghĩa", "Chỉ lặp vài từ vô nghĩa"],
+    "correctIndex": 0,
+    "explanation": "Ngay cả với dance-pop, lyrics vẫn có thể tạo dấu ấn nếu có câu móc ý nghĩa, tinh thần giải phóng, vui sống hoặc tự tin. Khi đó bài hát không chỉ khiến người ta nhún nhảy mà còn nhớ tới thông điệp."
+  },
+  {
+    "id": 101,
+    "question": "Một bài hát về sự tiếc nuối thường dễ chạm hơn khi lyrics thể hiện điều gì?",
+    "options": ["Điều lẽ ra đã có thể xảy ra", "Chỉ mô tả hiện tại", "Chỉ dùng lời trách móc", "Không có hồi tưởng"],
+    "correctIndex": 0,
+    "explanation": "Tiếc nuối mạnh nhất khi người nghe cảm nhận được khoảng cách giữa cái đã mất và cái đáng lẽ có thể xảy ra. Sự so le ấy tạo nên nỗi đau rất người và rất dễ đồng cảm."
+  },
+  {
+    "id": 102,
+    "question": "Ca từ dùng ngắt câu bất thường đôi khi có mục đích gì?",
+    "options": ["Mô phỏng nhịp cảm xúc đứt đoạn", "Che lỗi chính tả", "Làm đủ khuôn nhạc", "Không có ý nghĩa"],
+    "correctIndex": 0,
+    "explanation": "Cách ngắt câu có thể phản ánh sự ngập ngừng, hụt hơi, hoảng loạn hoặc do dự của nhân vật trữ tình. Khi dùng đúng, nó làm lời hát mang tính biểu cảm mạnh hơn nhiều."
+  },
+  {
+    "id": 103,
+    "question": "Vì sao nhiều lyrics hiện đại chuộng những từ gần khẩu ngữ?",
+    "options": ["Vì tăng cảm giác thật và dễ tiếp cận", "Vì thiếu chiều sâu", "Vì không cần nhạc tính", "Vì bắt buộc phải viral"],
+    "correctIndex": 0,
+    "explanation": "Khẩu ngữ giúp câu hát bước gần đời sống hơn và làm người nghe thấy tự nhiên. Tuy nhiên, để hay, nó vẫn cần được chọn lọc và đặt đúng ngữ cảnh chứ không phải nói sao chép y nguyên."
+  },
+  {
+    "id": 104,
+    "question": "Một bài hát có lyrics vừa buồn vừa đẹp thường thường làm tốt điều gì?",
+    "options": ["Biến đau thương thành hình ảnh có sức gợi", "Kể lể toàn bộ nỗi đau", "Dùng từ cực đoan liên tục", "Loại bỏ mọi chi tiết"],
+    "correctIndex": 0,
+    "explanation": "Nỗi buồn trong ca từ đẹp không chỉ nằm ở nội dung mà còn ở cách nó được nâng thành hình ảnh, không khí và dư âm. Nhờ đó, người nghe thấy đau nhưng không bị nặng nề."
+  },
+  {
+    "id": 105,
+    "question": "Một đoạn lyrics hay về ký ức thường có cấu trúc nào dễ hiệu quả?",
+    "options": ["Hiện tại xen quá khứ", "Chỉ hiện tại thuần túy", "Chỉ khẩu hiệu", "Không cần hình ảnh nào"],
+    "correctIndex": 0,
+    "explanation": "Sự đan xen giữa hiện tại và quá khứ tạo cảm giác ký ức đang sống lại trong tâm trí. Nó cho người nghe thấy sự va chạm giữa điều đã qua và điều đang còn lại."
+  },
+  {
+    "id": 106,
+    "question": "Một bài hát được gọi là có lyrics 'đinh' thường nghĩa là gì?",
+    "options": ["Có một vài câu quá nổi bật và nhớ lâu", "Có thật nhiều câu khó", "Có phần mở đầu dài", "Có nhịp chậm hơn"],
+    "correctIndex": 0,
+    "explanation": "Câu 'đinh' là câu đủ mạnh để người nghe muốn trích ra riêng, dùng lại hoặc nhớ ngay sau lần nghe đầu. Đây là dấu hiệu rất rõ của một bài hát có lời nổi bật."
+  },
+  {
+    "id": 107,
+    "question": "Một lyrics mang tính 'tự cứu mình' khác gì lời an ủi từ người khác?",
+    "options": ["Nó có giọng nội tâm và quyết tâm cá nhân", "Nó luôn to tiếng hơn", "Nó ít cảm xúc hơn", "Nó không cần hình ảnh"],
+    "correctIndex": 0,
+    "explanation": "Lời tự cứu mình thường xuất phát từ đối thoại nội tâm, nhận ra giới hạn và tự đứng dậy. Nó mang sức mạnh của sự chủ động, khác với kiểu lời được ban phát từ bên ngoài."
+  },
+  {
+    "id": 108,
+    "question": "Khi một bài hát có verse rất kể chuyện và chorus rất khái quát, đó thường là lựa chọn gì?",
+    "options": ["Cân bằng chi tiết và thông điệp", "Mất nhất quán hoàn toàn", "Thiếu dụng ý", "Chỉ để đủ khuôn"],
+    "correctIndex": 0,
+    "explanation": "Verse chi tiết giúp dựng bối cảnh, còn chorus khái quát giúp chốt cảm xúc ở mức phổ quát. Đây là cấu trúc phổ biến vì vừa kể được chuyện riêng vừa mở ra sự đồng cảm rộng."
+  },
+  {
+    "id": 109,
+    "question": "Một lyrics hiệu quả trong nhạc chill thường cần phẩm chất nào?",
+    "options": ["Êm, gợi, không phô trương", "Càng dồn dập càng tốt", "Càng kịch tính càng hay", "Chỉ cần lặp từ"],
+    "correctIndex": 0,
+    "explanation": "Nhạc chill thường hướng tới trạng thái lắng, nên lyrics phù hợp là loại mềm, có không khí và không quá ép cảm xúc. Nó cần đủ đẹp để thấm chậm, chứ không cần quá nhiều va đập."
+  },
+  {
+    "id": 110,
+    "question": "Trong bài hát hiện đại, lời ca nói về điện thoại, tin nhắn, online thường phản ánh điều gì?",
+    "options": ["Mối quan hệ trong bối cảnh đời sống hiện đại", "Thiếu sáng tạo hoàn toàn", "Chỉ là chi tiết kỹ thuật", "Không mang giá trị cảm xúc"],
+    "correctIndex": 0,
+    "explanation": "Những chi tiết như seen tin nhắn, màn hình sáng đêm muộn hay chờ một cuộc gọi là những trải nghiệm rất hiện đại. Chúng làm câu chuyện tình cảm gần với đời sống thật của người nghe hôm nay."
+  },
+  {
+    "id": 111,
+    "question": "Một bài hát buồn nhưng lyrics vẫn thanh thoát thường nhờ điều gì?",
+    "options": ["Lựa chọn hình ảnh tinh tế thay vì bi kịch hóa", "Giảm hết cảm xúc", "Không nói gì rõ ràng", "Chỉ dùng từ cổ"],
+    "correctIndex": 0,
+    "explanation": "Biết chuyển nỗi buồn thành hình ảnh vừa đủ sẽ giúp bài hát đau mà không nặng. Tinh tế trong chọn chữ là lý do nhiều ca khúc buồn vẫn rất đẹp và được nghe lặp lại."
+  },
+  {
+    "id": 112,
+    "question": "Khi lyrics có sự chuyển đổi từ tuyệt vọng sang chấp nhận, điều này tạo ra gì?",
+    "options": ["Một cung cảm xúc có phát triển", "Một bài hát rời rạc", "Sự vô nghĩa", "Chỉ thay đổi từ vựng"],
+    "correctIndex": 0,
+    "explanation": "Phát triển cảm xúc khiến người nghe thấy bài hát đang di chuyển, không đứng yên trong một tâm trạng. Điều này làm trải nghiệm nghe sâu hơn và thường để lại dư vị trưởng thành."
+  },
+  {
+    "id": 113,
+    "question": "Một lyrics có tính 'gọi tên thế hệ' thường chạm vào đâu?",
+    "options": ["Nỗi lo chung của người trẻ trong thời đại đó", "Chỉ phong cảnh thiên nhiên", "Chỉ từ cổ điển", "Không có thông điệp"],
+    "correctIndex": 0,
+    "explanation": "Những bài hát nói đúng cảm giác của thời đại như áp lực thành công, cô đơn online, mất kết nối, kiệt sức hay đi tìm bản sắc sẽ dễ trở thành tiếng nói chung của thế hệ."
+  },
+  {
+    "id": 114,
+    "question": "Tại sao một bài hát có lyrics tốt vẫn cần tránh quá nhiều 'thông minh'?",
+    "options": ["Vì khoe kỹ thuật quá mức có thể làm mất cảm xúc", "Vì thông minh luôn dở", "Vì người nghe không thích suy nghĩ", "Vì không cần nghệ thuật"],
+    "correctIndex": 0,
+    "explanation": "Sự tinh xảo chỉ phát huy khi phục vụ cảm xúc. Nếu câu chữ chỉ nhằm phô diễn cách chơi chữ hay cấu trúc mà quên kết nối với người nghe, bài hát sẽ khó để lại tình cảm thật."
+  },
+  {
+    "id": 115,
+    "question": "Một câu hát dùng hình ảnh ánh sáng trong bài buồn thường mang ý gì?",
+    "options": ["Gợi hy vọng, ký ức hoặc điều đã xa", "Chỉ tả vật lý", "Không có giá trị biểu tượng", "Chỉ để cân âm tiết"],
+    "correctIndex": 0,
+    "explanation": "Ánh sáng có thể là hy vọng, hồi ức, điểm tựa hay điều đẹp đã từng hiện diện. Khi đặt trong bài buồn, nó thường tạo độ tương phản khiến nỗi buồn trở nên dịu mà sâu."
+  },
+  {
+    "id": 116,
+    "question": "Một lyrics được khen là 'không sến' dù nói về yêu nhiều thường nhờ gì?",
+    "options": ["Chân thành và có chi tiết riêng", "Nói ít về cảm xúc", "Tránh mọi hình ảnh", "Dùng toàn từ lạnh lùng"],
+    "correctIndex": 0,
+    "explanation": "Sự sến thường đến từ khuôn mẫu và khoa trương. Khi lời yêu được đặt trong trải nghiệm cụ thể, với sự chân thành vừa đủ, nó sẽ nghe đẹp và gần thay vì gượng ép."
+  },
+  {
+    "id": 117,
+    "question": "Trong lyrics, một phép lặp có tiến triển nghĩa là gì?",
+    "options": ["Lặp lại nhưng mỗi lần nâng cảm xúc hoặc đổi nghĩa", "Lặp y nguyên không thay đổi", "Lặp để đủ thời lượng", "Lặp không mục đích"],
+    "correctIndex": 0,
+    "explanation": "Lặp có tiến triển là kỹ thuật lặp cấu trúc hoặc cụm từ nhưng mỗi lần thêm sắc thái mới. Nhờ đó, người nghe vừa thấy quen vừa thấy cảm xúc đang được đẩy xa hơn."
+  },
+  {
+    "id": 118,
+    "question": "Một bài hát về nỗi nhớ thành công thường khiến người nghe cảm thấy gì?",
+    "options": ["Như đang sống lại một điều đã qua", "Như đang học lý thuyết", "Như nghe tin tức", "Như đọc hướng dẫn"],
+    "correctIndex": 0,
+    "explanation": "Nỗi nhớ trong bài hát hiệu quả khi không chỉ được nói ra mà được tái hiện bằng cảnh, mùi, âm thanh, đồ vật hoặc khoảng trống. Điều đó khiến ký ức như hiện lên ngay lúc nghe."
+  },
+  {
+    "id": 119,
+    "question": "Một lyrics hiện đại hay về tình yêu thường phản ánh kiểu quan hệ nào?",
+    "options": ["Quan hệ có thật với đủ gần xa và phức tạp", "Quan hệ hoàn hảo tuyệt đối", "Quan hệ không có xung đột", "Quan hệ vô cảm hoàn toàn"],
+    "correctIndex": 0,
+    "explanation": "Tình yêu hiện đại trong bài hát thường hấp dẫn hơn khi có sự lửng lơ, thiếu chắc chắn, tổn thương, nỗ lực và trưởng thành. Chính sự không hoàn hảo làm nó giống đời sống thật."
+  },
+  {
+    "id": 120,
+    "question": "Một bài hát có lyrics nói về việc buông bỏ thường mạnh nhất khi nào?",
+    "options": ["Khi vẫn còn yêu nhưng chọn rời đi", "Khi không còn cảm xúc gì", "Khi chỉ trách móc", "Khi không có mất mát"],
+    "correctIndex": 0,
+    "explanation": "Buông bỏ đau nhất và cũng đẹp nhất khi tình cảm chưa hết nhưng người ta hiểu rằng ở lại không còn đúng nữa. Sự giằng co đó tạo nên chiều sâu rất lớn cho lời ca."
+  },
+  {
+    "id": 121,
+    "question": "Khi lyrics có nhiều khoảng 'nếu như', điều này thường biểu đạt gì?",
+    "options": ["Sự tiếc nuối và giả định", "Sự chắc chắn tuyệt đối", "Niềm vui trọn vẹn", "Không mang cảm xúc"],
+    "correctIndex": 0,
+    "explanation": "Những câu giả định mở ra thế giới không có thật nhưng đầy cảm xúc. Chúng là cách rất hiệu quả để diễn tả tiếc nuối, ước ao và những điều không thể quay lại."
+  },
+  {
+    "id": 122,
+    "question": "Vì sao một bài hát về tuổi trẻ thường cần lyrics có độ chuyển động?",
+    "options": ["Vì tuổi trẻ gắn với hành trình và biến đổi", "Vì phải hát nhanh hơn", "Vì không cần chiều sâu", "Vì chỉ hợp nhạc rock"],
+    "correctIndex": 0,
+    "explanation": "Tuổi trẻ là giai đoạn đi, thử, vấp, mơ và đổi thay. Ca từ có động lực di chuyển sẽ phản ánh đúng tinh thần ấy hơn là những câu hoàn toàn đứng yên."
+  },
+  {
+    "id": 123,
+    "question": "Một lời bài hát chạm đến người nghe mạnh hơn khi ca sĩ hát rõ từng chữ vì sao?",
+    "options": ["Vì lyrics được truyền tải trọn vẹn", "Vì nhạc cụ nhỏ đi", "Vì beat chậm hơn", "Vì lời tự hay hơn"],
+    "correctIndex": 0,
+    "explanation": "Ca từ chỉ thực sự sống khi người nghe nghe ra và cảm được từng chữ. Cách phát âm, nhả chữ và nhấn từ làm tăng đáng kể khả năng lyrics chạm tới cảm xúc."
+  },
+  {
+    "id": 124,
+    "question": "Một bài hát có lyrics 'đúng tâm trạng đêm' thường có đặc điểm gì?",
+    "options": ["Lắng, riêng tư và gợi suy nghĩ", "Quá ồn và dồn dập", "Không có câu chuyện", "Chỉ dùng từ vui nhộn"],
+    "correctIndex": 0,
+    "explanation": "Đêm trong trải nghiệm nghe nhạc thường gắn với một mình, hồi tưởng và tự vấn. Vì vậy lời ca hợp 'tâm trạng đêm' thường có không gian trống, giọng kể nhẹ và cảm xúc sâu."
+  },
+  {
+    "id": 125,
+    "question": "Trong lyrics, việc nhắc lại một địa điểm cũ thường có tác dụng gì?",
+    "options": ["Biến nơi chốn thành ký ức cảm xúc", "Chỉ tả bản đồ", "Không liên quan đến nội dung", "Làm bài khô hơn"],
+    "correctIndex": 0,
+    "explanation": "Nơi chốn trong bài hát thường không chỉ là địa lý mà là nơi cất giữ một quan hệ, một quãng đời hoặc một bản ngã cũ. Nhắc lại địa điểm là cách gọi lại ký ức rất mạnh."
+  },
+  {
+    "id": 126,
+    "question": "Một lyrics tốt về vượt qua tổn thương thường nhấn mạnh điều gì?",
+    "options": ["Quá trình hồi phục chứ không chỉ kết quả", "Chiến thắng dễ dàng", "Phủ nhận vết thương", "Không cần nội tâm"],
+    "correctIndex": 0,
+    "explanation": "Người nghe tin vào sự hồi phục khi thấy nó có mồ hôi, nước mắt, thất vọng và kiên trì. Lời hát chỉ nói đến chiến thắng cuối cùng thường kém chân thật hơn."
+  },
+  {
+    "id": 127,
+    "question": "Nếu một bài hát dùng quá nhiều từ cảm thán, điều gì dễ xảy ra?",
+    "options": ["Cảm xúc bị loãng hoặc kém tinh tế", "Tăng chiều sâu ngay", "Tạo nhiều tầng nghĩa hơn", "Bài sẽ dễ nhớ hơn chắc chắn"],
+    "correctIndex": 0,
+    "explanation": "Cảm thán có thể mạnh khi đặt đúng chỗ, nhưng lạm dụng sẽ khiến cảm xúc thành ồn ào. Sự tinh tế trong lyrics thường nằm ở hình ảnh và hoàn cảnh hơn là chỉ hét to cảm xúc."
+  },
+  {
+    "id": 128,
+    "question": "Một bài hát tình yêu hiện đại dễ được yêu thích khi lời hát có thêm điều gì ngoài lãng mạn?",
+    "options": ["Sự thật về bất an và mong muốn", "Chỉ lời hứa hoàn hảo", "Chỉ khen ngoại hình", "Không cần cá tính"],
+    "correctIndex": 0,
+    "explanation": "Tình yêu hôm nay không chỉ là ngọt ngào mà còn có lo lắng, giới hạn, nhu cầu được an toàn và được hiểu. Khi lyrics chạm tới phần đó, bài hát thường có chiều sâu hơn."
+  },
+  {
+    "id": 129,
+    "question": "Trong lyrics, chi tiết 'nhỏ mà đau' thường quý vì sao?",
+    "options": ["Vì nó làm cảm xúc trở nên rất thật", "Vì nó luôn triết lý", "Vì nó thay cho điệp khúc", "Vì nó chỉ để trang trí"],
+    "correctIndex": 0,
+    "explanation": "Nỗi đau thường bám vào những điều tưởng nhỏ như một thói quen, một tin nhắn cuối, một chỗ ngồi cũ. Chính sự nhỏ bé ấy làm cảm xúc trở nên xác thực và ám ảnh."
+  },
+  {
+    "id": 130,
+    "question": "Một lyrics có sức lan tỏa quốc tế thường cần điều gì ở nội dung?",
+    "options": ["Cảm xúc phổ quát dù ngôn ngữ khác nhau", "Toàn thành ngữ địa phương", "Chỉ nói chuyện rất hẹp", "Không cần cảm xúc"],
+    "correctIndex": 0,
+    "explanation": "Dù khác ngôn ngữ, những cảm xúc như yêu, mất mát, hy vọng, cô đơn và chữa lành vẫn được hiểu rộng rãi. Ca từ chạm vào lõi cảm xúc đó thường dễ vượt qua rào cản văn hóa."
+  },
+  {
+    "id": 131,
+    "question": "Một bài hát có lyrics khiến người nghe muốn 'hát theo ngay' thường vì gì?",
+    "options": ["Nhịp chữ tự nhiên và câu dễ nhớ", "Nội dung quá phức tạp", "Chỉ toàn vần lạ", "Không có điệp khúc"],
+    "correctIndex": 0,
+    "explanation": "Khả năng hát theo đến từ cách chữ rơi đúng nhịp, câu ngắn vừa miệng và ý đủ rõ để người nghe nắm ngay. Đây là điểm cực quan trọng với các ca khúc đại chúng."
+  },
+  {
+    "id": 132,
+    "question": "Khi lyrics đặt một câu rất nhẹ ở cuối bài, hiệu quả thường là gì?",
+    "options": ["Để lại dư âm sâu thay vì kết luận nặng", "Làm bài hụt hẫng vô nghĩa", "Giảm hoàn toàn cảm xúc", "Không có tác dụng"],
+    "correctIndex": 0,
+    "explanation": "Kết thúc nhẹ đôi khi mạnh hơn một tuyên bố lớn. Nó để người nghe ở lại với cảm xúc đang lắng xuống, tạo khoảng vang nội tâm sau khi bài hát đã hết."
+  },
+  {
+    "id": 133,
+    "question": "Một bài hát có lời được gọi là 'có chiều sâu' thường vì lý do nào?",
+    "options": ["Ngoài lớp nghĩa trực tiếp còn có lớp cảm xúc và suy ngẫm", "Vì dùng nhiều từ điển tích", "Vì cực kỳ dài", "Vì càng khó hiểu càng tốt"],
+    "correctIndex": 0,
+    "explanation": "Chiều sâu đến từ việc lời hát mở ra nhiều mức cảm nhận. Người nghe có thể hiểu ngay lớp đầu, nhưng càng nghe lại càng nhận ra suy nghĩ, nỗi đau hay triết lý phía dưới."
+  },
+  {
+    "id": 134,
+    "question": "Một lyrics hay về xa cách thường làm rõ điều gì?",
+    "options": ["Khoảng cách không chỉ là không gian mà còn là cảm xúc", "Chỉ số kilomet", "Chỉ phương tiện di chuyển", "Không cần nội tâm"],
+    "correctIndex": 0,
+    "explanation": "Xa cách trong bài hát thường đau không phải vì khoảng cách vật lý đơn thuần, mà vì sự lệch nhịp, im lặng, không còn chạm tới nhau trong tâm hồn. Lời ca hay sẽ làm rõ điều đó."
+  },
+  {
+    "id": 135,
+    "question": "Vì sao một câu hát quá hoàn hảo về kỹ thuật chưa chắc đã chạm người nghe?",
+    "options": ["Vì thiếu sự sống và độ thật", "Vì kỹ thuật luôn là thừa", "Vì người nghe không hiểu vần", "Vì chỉ hợp với thơ"],
+    "correctIndex": 0,
+    "explanation": "Người nghe có thể không phân tích kỹ thuật, nhưng họ cảm được độ thật. Một câu rất khéo nhưng vô hồn sẽ khó ở lại lâu bằng một câu hơi mộc nhưng đúng cảm giác."
+  },
+  {
+    "id": 136,
+    "question": "Một bài hát về thanh xuân thường dễ được nhớ khi lyrics có gì?",
+    "options": ["Hình ảnh thời gian và khoảnh khắc đã qua", "Chỉ nói 'tuổi trẻ' liên tục", "Không có nhân vật", "Chỉ nói về chiến thắng"],
+    "correctIndex": 0,
+    "explanation": "Thanh xuân luôn gắn với cái đã trôi qua. Những hình ảnh như sân trường, mùa hè, chuyến đi, lời hứa cũ hoặc nụ cười ngây ngô làm chủ đề này trở nên cụ thể và chạm hơn."
+  },
+  {
+    "id": 137,
+    "question": "Một lyrics hiện đại có thể vừa cá tính vừa phổ thông khi nào?",
+    "options": ["Khi giữ giọng riêng nhưng chạm cảm xúc chung", "Khi bỏ hết bản sắc", "Khi chỉ chạy theo số đông", "Khi làm thật khó hiểu"],
+    "correctIndex": 0,
+    "explanation": "Bản sắc riêng giúp bài không lẫn, còn cảm xúc chung giúp bài được đón nhận rộng. Sự cân bằng này rất quan trọng nếu muốn ca khúc vừa có nghệ thuật vừa có sức lan tỏa."
+  },
+  {
+    "id": 138,
+    "question": "Một bài hát chữa lành nhưng vẫn buồn thường hay ở điểm nào?",
+    "options": ["Thừa nhận nỗi đau rồi mới mở ra ánh sáng", "Xóa bỏ hoàn toàn nỗi buồn", "Chỉ nói tích cực", "Không có quá trình cảm xúc"],
+    "correctIndex": 0,
+    "explanation": "Chữa lành không phải lúc nào cũng vui. Nhiều ca khúc chữa lành rất hay vì chúng đi qua nỗi buồn một cách dịu dàng và trung thực, rồi mới cho thấy lối ra."
+  },
+  {
+    "id": 139,
+    "question": "Trong lyrics, việc tránh nói thẳng tên cảm xúc nhưng vẫn làm người nghe cảm được gọi là gì?",
+    "options": ["Biểu đạt gián tiếp hiệu quả", "Thiếu rõ ràng", "Không có nội dung", "Lỗi diễn đạt"],
+    "correctIndex": 0,
+    "explanation": "Đây là một kỹ năng viết lời rất mạnh. Thay vì nói 'tôi buồn', người viết cho người nghe thấy chiếc ghế trống, căn phòng im, bầu trời xám, và nỗi buồn tự xuất hiện."
+  },
+  {
+    "id": 140,
+    "question": "Một đoạn chorus mạnh về cảm xúc thường cần gì ngoài ý hay?",
+    "options": ["Âm tiết và nhịp chữ dễ bám giai điệu", "Càng nhiều câu càng tốt", "Càng ít rõ nghĩa càng hay", "Không cần lặp lại"],
+    "correctIndex": 0,
+    "explanation": "Điệp khúc là nơi người nghe nhớ nhiều nhất, nên ngoài thông điệp mạnh, chữ còn phải rơi vào giai điệu thật thuận. Nếu không hát lên đã miệng, ý hay cũng khó phát huy hết."
+  },
+  {
+    "id": 141,
+    "question": "Khi lyrics làm người nghe 'thấy mình đang lớn lên', đó là thành công ở đâu?",
+    "options": ["Khả năng chạm tới trải nghiệm trưởng thành", "Khả năng chơi vần", "Khả năng hát cao", "Khả năng gây sốc"],
+    "correctIndex": 0,
+    "explanation": "Những bài hát như vậy thường nói đúng cảm giác thay đổi, mất mát ngây thơ, học cách chấp nhận và hiểu mình hơn. Nó không chỉ kể chuyện mà còn đồng hành cùng quá trình lớn lên của người nghe."
+  },
+  {
+    "id": 142,
+    "question": "Một lyrics dùng nhiều động từ ở thì hiện tại thường tạo cảm giác gì?",
+    "options": ["Mọi thứ đang xảy ra ngay bây giờ", "Xa cách hơn", "Giống hồi ký hơn", "Không có chuyển động"],
+    "correctIndex": 0,
+    "explanation": "Thì hiện tại khiến cảm xúc có tính trực tiếp và nóng hổi. Người nghe như được đặt vào khoảnh khắc đang diễn ra chứ không chỉ nghe kể lại từ xa."
+  },
+  {
+    "id": 143,
+    "question": "Một câu lyrics tốt về tự do thường không chỉ nói 'bay' hay 'đi' mà còn làm gì?",
+    "options": ["Cho thấy điều nhân vật muốn rời khỏi hoặc hướng tới", "Chỉ lặp một biểu tượng", "Không có mục tiêu cảm xúc", "Không cần nội dung"],
+    "correctIndex": 0,
+    "explanation": "Tự do có ý nghĩa khi gắn với bối cảnh: rời khỏi áp lực, thoát khỏi sợ hãi, tìm về bản thân hoặc hướng tới một đời sống rộng hơn. Điều đó giúp câu hát có chiều sâu thay vì chỉ là khẩu hiệu."
+  },
+  {
+    "id": 144,
+    "question": "Một bài hát có lời nghe 'đi qua thời gian' thường nhờ điều gì?",
+    "options": ["Chạm vào cảm xúc bền vững của con người", "Chạy theo trend ngắn hạn", "Chỉ dựa vào hiệu ứng âm thanh", "Dùng rất nhiều slang"],
+    "correctIndex": 0,
+    "explanation": "Những cảm xúc như yêu thương, mất mát, hy vọng, tiếc nuối, trưởng thành luôn có giá trị ở nhiều thời điểm khác nhau. Lyrics bám vào những điều đó thường có tuổi thọ lâu."
+  },
+  {
+    "id": 145,
+    "question": "Trong lyrics hiện đại, 'nói ít hiểu nhiều' là ưu điểm vì sao?",
+    "options": ["Tăng độ tinh tế và sức gợi", "Làm bài khó tiếp cận hơn", "Giảm cảm xúc hoàn toàn", "Không phù hợp nhạc pop"],
+    "correctIndex": 0,
+    "explanation": "Sự cô đọng khiến mỗi chữ có trọng lượng hơn. Khi bài hát không nói quá nhiều mà vẫn truyền đủ cảm giác, người nghe thường thấy lời ca thông minh và đáng nhớ."
+  },
+  {
+    "id": 146,
+    "question": "Một bài hát kể về mối quan hệ mập mờ thường hấp dẫn vì điều gì trong lyrics?",
+    "options": ["Sự lửng lơ và chưa thể gọi tên", "Sự rõ ràng tuyệt đối", "Không có căng thẳng cảm xúc", "Chỉ toàn lời trách"],
+    "correctIndex": 0,
+    "explanation": "Mối quan hệ mập mờ chứa nhiều cảm xúc hiện đại: gần mà không gọi tên, quan tâm nhưng không cam kết, nhớ nhưng không thể hỏi. Đây là chất liệu rất mạnh cho lyrics."
+  },
+  {
+    "id": 147,
+    "question": "Một lyrics hay về đợi chờ thường nhấn vào điều gì?",
+    "options": ["Thời gian trôi và tâm trạng đổi theo", "Chỉ nói về đồng hồ", "Không cần cảm xúc", "Chỉ mô tả người kia"],
+    "correctIndex": 0,
+    "explanation": "Đợi chờ là trải nghiệm của thời gian. Khi lời ca cho thấy thời gian đi qua và tâm trạng dần nặng lên, người nghe mới thực sự cảm được nỗi đợi."
+  },
+  {
+    "id": 148,
+    "question": "Một bài hát về tự vấn bản thân thường mạnh khi lyrics có gì?",
+    "options": ["Câu hỏi nội tâm chân thật", "Chỉ câu trả lời chắc chắn", "Không có mâu thuẫn", "Chỉ lời khuyên cho người khác"],
+    "correctIndex": 0,
+    "explanation": "Tự vấn hấp dẫn ở sự chưa xong, chưa chắc, chưa hiểu hết mình. Những câu hỏi nội tâm đúng thường kéo người nghe vào vùng cảm xúc rất thật và rất người."
+  },
+  {
+    "id": 149,
+    "question": "Một đoạn lyrics nói về việc nhớ ai đó qua âm thanh quen thuộc có tác dụng gì?",
+    "options": ["Kích hoạt ký ức bằng thính giác", "Làm bài bớt hình ảnh", "Không liên quan cảm xúc", "Chỉ để tạo tiếng động"],
+    "correctIndex": 0,
+    "explanation": "Âm thanh như tiếng mưa, bản nhạc cũ, giọng nói, tiếng chuông hay tiếng xe đêm có khả năng gợi nhớ rất mạnh. Đó là cách hiệu quả để làm nỗi nhớ trở nên cụ thể và giàu cảm giác."
+  },
+  {
+    "id": 150,
+    "question": "Một lyrics được xem là trưởng thành khi nói về yêu thường vì sao?",
+    "options": ["Nó hiểu yêu không chỉ là sở hữu", "Nó không còn cảm xúc", "Nó tránh mọi tổn thương", "Nó chỉ toàn lý trí"],
+    "correctIndex": 0,
+    "explanation": "Yêu trưởng thành có thể bao gồm tôn trọng, lùi lại, chấp nhận, chữa lành và không níu giữ bằng mọi giá. Khi lời ca chạm đến phần đó, nó thường sâu và đẹp hơn nhiều."
+  },
+  {
+    "id": 151,
+    "question": "Trong lyrics, một câu đơn giản như 'anh vẫn ở đây' có thể mạnh vì điều gì?",
+    "options": ["Sức nặng đến từ ngữ cảnh cảm xúc", "Vì luôn là câu hiếm", "Vì có nhiều kỹ thuật", "Vì không cần giai điệu"],
+    "correctIndex": 0,
+    "explanation": "Không phải câu nào mạnh cũng phức tạp. Khi được đặt sau một hành trình cảm xúc phù hợp, một câu rất đơn giản có thể trở thành điểm rơi cực lớn về tinh thần và ý nghĩa."
+  },
+  {
+    "id": 152,
+    "question": "Một bài hát có lyrics mang chất cinematic thường làm tốt điều gì?",
+    "options": ["Dựng được cảnh, góc nhìn và nhịp chuyển", "Chỉ nhiều tính từ", "Không cần mạch chuyện", "Chỉ dùng từ trừu tượng"],
+    "correctIndex": 0,
+    "explanation": "Chất điện ảnh trong lời ca đến từ khả năng mở cảnh, zoom vào chi tiết, đổi góc nhìn và làm người nghe cảm thấy bài hát như một chuỗi khung hình chuyển động."
+  },
+  {
+    "id": 153,
+    "question": "Một lyrics mạnh về sự quay về thường gợi điều gì?",
+    "options": ["Nơi chốn hoặc con người từng là chỗ trú", "Chỉ hành động di chuyển", "Không cần ký ức", "Chỉ tả đường đi"],
+    "correctIndex": 0,
+    "explanation": "Quay về thường mang ý nghĩa cảm xúc lớn hơn việc trở lại một nơi vật lý. Nó có thể là quay về với bản thân cũ, với gia đình, với bình yên hoặc với một tình yêu từng bỏ lỡ."
+  },
+  {
+    "id": 154,
+    "question": "Tại sao lyrics có nhịp nói tự nhiên thường dễ thành công ở nhạc acoustic?",
+    "options": ["Vì ít lớp âm thanh nên lời nổi rõ hơn", "Vì acoustic không cần ý nghĩa", "Vì càng dài càng tốt", "Vì chỉ cần một vần cuối"],
+    "correctIndex": 0,
+    "explanation": "Khi phần phối khí tối giản, người nghe tập trung nhiều vào giọng hát và lời. Vì vậy lyrics trong acoustic cần tự nhiên, mộc mà đủ sâu để giữ toàn bộ cảm xúc bài hát."
+  },
+  {
+    "id": 155,
+    "question": "Một bài hát buồn có lyrics tốt thường không làm gì?",
+    "options": ["Không ép người nghe phải buồn theo", "Không có cảm xúc", "Không có câu chuyện", "Không có hình ảnh"],
+    "correctIndex": 0,
+    "explanation": "Lời ca buồn hay thường mở ra không gian để người nghe tự đi vào, chứ không áp đặt cảm xúc. Chính sự tôn trọng trải nghiệm của người nghe làm bài hát trở nên tinh tế."
+  },
+  {
+    "id": 156,
+    "question": "Một lyrics liên tục dùng hình ảnh chuyển động như đi, trôi, lạc, rơi thường tạo cảm giác gì?",
+    "options": ["Bất ổn hoặc hành trình chưa yên", "Tĩnh tại hoàn toàn", "Không gian đứng yên", "Thiếu chủ đề"],
+    "correctIndex": 0,
+    "explanation": "Những động từ chuyển động gợi cảm giác không cố định, đang tìm kiếm, đang mất phương hướng hoặc đang đổi thay. Đây là lựa chọn rất phù hợp với chủ đề trưởng thành và cô đơn."
+  },
+  {
+    "id": 157,
+    "question": "Một câu hát được nhớ lâu không nhất thiết vì nó quá lạ, mà thường vì sao?",
+    "options": ["Nó đúng cảm giác nhiều người từng có", "Nó có thật nhiều từ hiếm", "Nó dài hơn mọi câu khác", "Nó không rõ nghĩa"],
+    "correctIndex": 0,
+    "explanation": "Sự đồng cảm thường mạnh hơn sự lạ. Một câu hát đúng tâm trạng của nhiều người sẽ ở lại lâu, dù câu chữ có thể rất giản dị và đời thường."
+  },
+  {
+    "id": 158,
+    "question": "Trong lyrics, việc dùng hình ảnh con đường hoặc chuyến đi thường gắn với điều gì?",
+    "options": ["Hành trình cảm xúc hoặc trưởng thành", "Chỉ du lịch", "Chỉ tả địa lý", "Không có biểu tượng"],
+    "correctIndex": 0,
+    "explanation": "Con đường và chuyến đi là ẩn dụ quen thuộc cho lựa chọn, xa cách, trưởng thành và kiếm tìm bản thân. Chúng đặc biệt hiệu quả trong các bài hát mang tính hành trình."
+  },
+  {
+    "id": 159,
+    "question": "Một bài hát có lyrics tự do nhưng vẫn chặt chẽ thường vì sao?",
+    "options": ["Có mạch cảm xúc rõ dù câu chữ linh hoạt", "Không cần cấu trúc nào", "Chỉ dùng câu ngắn", "Chỉ nhờ beat mạnh"],
+    "correctIndex": 0,
+    "explanation": "Tự do trong cách viết không đồng nghĩa với lỏng lẻo. Bài hát hay vẫn có trục cảm xúc và logic nội tại, dù cách diễn đạt có thể mềm, mơ hoặc phi tuyến."
+  },
+  {
+    "id": 160,
+    "question": "Một lyrics hay về mối quan hệ đã cũ thường khơi lên điều gì?",
+    "options": ["Sự thay đổi của hai người theo thời gian", "Chỉ đổ lỗi một phía", "Chỉ tả quá khứ đẹp", "Không có hiện tại"],
+    "correctIndex": 0,
+    "explanation": "Điều khiến mối quan hệ cũ trở nên sâu trong bài hát là thấy được con người đã khác đi ra sao, khoảng cách đã hình thành thế nào và điều gì vẫn còn sót lại."
+  },
+  {
+    "id": 161,
+    "question": "Một đoạn verse hay thường không chỉ dẫn chuyện mà còn làm gì?",
+    "options": ["Gieo hạt cảm xúc cho chorus", "Lặp lại điệp khúc", "Thay phần hòa âm", "Không cần hình ảnh"],
+    "correctIndex": 0,
+    "explanation": "Verse hiệu quả sẽ chuẩn bị mặt bằng cảm xúc để điệp khúc bật lên mạnh hơn. Nó giống như phần dồn nén trước khi bài hát thực sự mở tim ra với người nghe."
+  },
+  {
+    "id": 162,
+    "question": "Một lyrics hiện đại về yêu xa thường dễ chạm khi nào?",
+    "options": ["Khi nói được cảm giác lệch múi giờ, lệch nhịp sống", "Khi chỉ nói nhớ chung chung", "Khi không có thời gian cụ thể", "Khi bỏ qua công nghệ liên lạc"],
+    "correctIndex": 0,
+    "explanation": "Yêu xa ngày nay gắn với gọi video, chờ tin nhắn, giờ giấc lệch nhau, những lần không thể có mặt. Những chi tiết hiện đại ấy làm bài hát chân thực hơn rất nhiều."
+  },
+  {
+    "id": 163,
+    "question": "Một câu lyric tốt về thất vọng thường có gì ngoài nỗi buồn?",
+    "options": ["Sự vỡ ra của kỳ vọng", "Chỉ im lặng tuyệt đối", "Không có nguyên nhân", "Chỉ trách bản thân"],
+    "correctIndex": 0,
+    "explanation": "Thất vọng đau vì trước đó đã có hy vọng. Khi lời hát làm hiện lên điều từng tin tưởng rồi bị đánh mất, cảm xúc sẽ sắc nét và thuyết phục hơn nhiều."
+  },
+  {
+    "id": 164,
+    "question": "Một lyrics có thể khiến người nghe quay lại nghe đêm khuya vì lý do gì?",
+    "options": ["Nó chạm vùng cảm xúc riêng tư khó nói", "Nó quá ồn và náo nhiệt", "Nó chỉ để giải trí tức thời", "Nó không có nội dung"],
+    "correctIndex": 0,
+    "explanation": "Đêm là lúc nhiều cảm xúc riêng tư hiện rõ nhất. Những bài hát khiến người ta mở lại khi khuya thường nói đúng điều họ giấu kỹ hoặc chưa nói được với ai."
+  },
+  {
+    "id": 165,
+    "question": "Một bài hát mang tính chữa lành nhưng không giáo điều thường chọn cách nói nào?",
+    "options": ["Đi cùng người nghe thay vì dạy bảo", "Ra lệnh phải mạnh mẽ", "Đưa lời khuyên cứng nhắc", "Phủ nhận yếu đuối"],
+    "correctIndex": 0,
+    "explanation": "Ca từ chữa lành hiệu quả thường không áp đặt mà đồng hành. Nó nói 'tôi hiểu' hoặc 'chúng ta cùng đi qua' hơn là ra lệnh người nghe phải ổn lên ngay lập tức."
+  },
+  {
+    "id": 166,
+    "question": "Trong lyrics, việc giữ một biểu tượng nhỏ xuyên suốt đến cuối bài giúp gì?",
+    "options": ["Tạo cảm giác khép vòng rất đẹp", "Làm bài lặp vô ích", "Giảm chiều sâu", "Không có ảnh hưởng"],
+    "correctIndex": 0,
+    "explanation": "Khi một hình ảnh xuất hiện từ đầu và trở lại ở cuối với sắc thái mới, bài hát tạo được cảm giác trọn vẹn. Người nghe thấy hành trình cảm xúc đã đi đủ một vòng."
+  },
+  {
+    "id": 167,
+    "question": "Một lyrics hay về việc không thuộc về nơi nào thường gợi gì?",
+    "options": ["Cảm giác lạc lõng giữa nhiều không gian", "Niềm vui sum vầy", "Chỉ tả địa lý", "Không có nội tâm"],
+    "correctIndex": 0,
+    "explanation": "Không thuộc về là cảm giác rất hiện đại, nhất là với người trẻ di chuyển nhiều hoặc đang tìm bản ngã. Lời ca hay sẽ làm hiện lên cảm giác ở đâu cũng hơi đứng ngoài."
+  },
+  {
+    "id": 168,
+    "question": "Một bài hát có lyrics về khát vọng thường thuyết phục hơn khi nào?",
+    "options": ["Khi cho thấy cái giá và nỗ lực đi kèm", "Khi chỉ hô to ước mơ", "Khi không có trở ngại nào", "Khi tránh mọi chi tiết thực tế"],
+    "correctIndex": 0,
+    "explanation": "Khát vọng chỉ thật khi đi kèm mồ hôi, sợ hãi, đánh đổi và niềm tin. Những yếu tố đó làm bài hát mạnh hơn nhiều so với kiểu nói chung chung về thành công."
+  },
+  {
+    "id": 169,
+    "question": "Một câu hát dùng cụm từ đời thường nhưng đặt trong ngữ cảnh đẹp thường cho thấy gì?",
+    "options": ["Khả năng biến cái quen thành cái chạm", "Thiếu nghệ thuật", "Không có sáng tạo", "Chỉ hợp với nhạc nói"],
+    "correctIndex": 0,
+    "explanation": "Nghệ thuật viết lời không chỉ là tìm từ lạ mà còn là đặt từ quen vào đúng chỗ để nó sáng lên. Đây là dấu hiệu của người viết có cảm quan ngôn ngữ tốt."
+  },
+  {
+    "id": 170,
+    "question": "Một lyrics tốt về nỗi sợ trưởng thành thường làm gì?",
+    "options": ["Gọi đúng những áp lực và mất mát tinh thần", "Chỉ nói phải cố lên", "Tránh mọi yếu đuối", "Không cần hình ảnh cụ thể"],
+    "correctIndex": 0,
+    "explanation": "Nỗi sợ trưởng thành liên quan đến trách nhiệm, cô đơn, so sánh, thất bại và đánh mất bản thân. Khi lời hát nêu đúng những điểm ấy, người nghe thấy được thấu hiểu."
+  },
+  {
+    "id": 171,
+    "question": "Trong lyrics, việc dùng từ 'chúng ta' thay vì 'anh và em' có thể tạo khác biệt gì?",
+    "options": ["Tạo cảm giác về một thực thể chung và ký ức chung", "Giảm cảm xúc", "Làm câu khó hát", "Không tạo khác biệt"],
+    "correctIndex": 0,
+    "explanation": "Từ 'chúng ta' gợi cảm giác hai người từng là một thế giới chung. Khi mối quan hệ rạn vỡ, chính từ này cũng làm nỗi mất mát nghe lớn và trọn vẹn hơn."
+  },
+  {
+    "id": 172,
+    "question": "Một bài hát có lyrics khiến người nghe vừa đau vừa thấy đẹp thường nhờ điều gì?",
+    "options": ["Biến cảm xúc thành hình ảnh tinh tế", "Tăng độ bi kịch tối đa", "Chỉ dùng từ buồn", "Không cần tiết chế"],
+    "correctIndex": 0,
+    "explanation": "Vẻ đẹp trong nỗi đau đến từ cách diễn đạt, không chỉ từ nội dung buồn. Hình ảnh tinh tế và nhịp câu mềm giúp người nghe đón nhận nỗi buồn như một trải nghiệm thẩm mỹ."
+  },
+  {
+    "id": 173,
+    "question": "Một lyrics nói về việc nhớ chính mình của ngày xưa thường thuộc chủ đề nào?",
+    "options": ["Bản sắc và trưởng thành", "Chỉ tình yêu đôi lứa", "Chỉ phong cảnh", "Chỉ giải trí vui vẻ"],
+    "correctIndex": 0,
+    "explanation": "Đây là kiểu ca từ xoay quanh sự thay đổi bản thân, đánh mất sự hồn nhiên hoặc đi tìm lại điều từng là mình. Nó là chủ đề rất gần với cảm thức hiện đại."
+  },
+  {
+    "id": 174,
+    "question": "Tại sao lyrics về một khoảnh khắc nhỏ đôi khi mạnh hơn kể cả một chuyện dài?",
+    "options": ["Vì khoảnh khắc đúng có thể chứa cả câu chuyện", "Vì chuyện dài luôn dở", "Vì ngắn nên đỡ viết", "Vì không cần cảm xúc"],
+    "correctIndex": 0,
+    "explanation": "Một ánh nhìn, một lần chạm tay, một buổi chiều mưa hay một câu chưa kịp nói có thể gói cả quan hệ vào đó. Sức mạnh của ca từ đôi khi nằm ở khả năng nén rất nhiều vào một điểm."
+  },
+  {
+    "id": 175,
+    "question": "Một lyrics hay về sự kiệt sức thường không chỉ nói mệt mà còn nói gì?",
+    "options": ["Cảm giác bị bào mòn và muốn được nghỉ", "Chỉ trách cuộc đời", "Chỉ tả công việc", "Không có nội tâm"],
+    "correctIndex": 0,
+    "explanation": "Kiệt sức là trạng thái tinh thần lẫn thể chất. Lời ca mạnh sẽ làm hiện ra cảm giác trống rỗng, hụt hơi, mất động lực hoặc khao khát được ôm lấy và nghỉ ngơi thật sự."
+  },
+  {
+    "id": 176,
+    "question": "Một bài hát có chorus lặp nhưng vẫn không chán thường vì sao?",
+    "options": ["Vì câu lặp đủ mạnh và đúng cảm xúc", "Vì lặp càng nhiều càng hay", "Vì người nghe không để ý", "Vì verse không quan trọng"],
+    "correctIndex": 0,
+    "explanation": "Điều làm chorus lặp không chán là nó mang sức nặng cảm xúc thật. Mỗi lần trở lại, nó như một làn sóng nhấn sâu hơn vào tâm trạng của bài."
+  },
+  {
+    "id": 177,
+    "question": "Một lyrics hiện đại về hạnh phúc thường tránh điều gì để không nông?",
+    "options": ["Tránh chỉ mô tả vui vẻ bề mặt", "Tránh mọi hình ảnh ấm áp", "Tránh nhắc con người", "Tránh cảm xúc rõ ràng"],
+    "correctIndex": 0,
+    "explanation": "Hạnh phúc trong lời ca sâu hơn khi được đặt trong sự biết ơn, bình yên, chữa lành hoặc sau những ngày khó khăn. Nếu chỉ nói vui mà không có nền, cảm xúc dễ trở nên mỏng."
+  },
+  {
+    "id": 178,
+    "question": "Trong lyrics, sự đối xứng giữa câu đầu và câu cuối bài có thể tạo hiệu quả gì?",
+    "options": ["Tạo cảm giác hoàn chỉnh và tinh tế", "Làm bài trùng lặp vô ích", "Không liên quan", "Chỉ để khoe kỹ thuật"],
+    "correctIndex": 0,
+    "explanation": "Khi câu cuối phản chiếu câu đầu theo cách mới, người nghe nhận ra hành trình cảm xúc đã đi một vòng và nhân vật đã thay đổi. Đây là kết cấu rất đẹp trong viết lời."
+  },
+  {
+    "id": 179,
+    "question": "Một lyrics hay về mối quan hệ độc hại thường cần điểm gì?",
+    "options": ["Cho thấy sự giằng co giữa yêu và tổn thương", "Chỉ lên án một phía", "Chỉ than phiền đơn giản", "Không cần chiều sâu"],
+    "correctIndex": 0,
+    "explanation": "Quan hệ độc hại thường khó rời vì vẫn còn gắn bó, thói quen hoặc hi vọng. Khi lời ca thể hiện được sự mâu thuẫn ấy, nó sẽ chân thực và đau hơn nhiều."
+  },
+  {
+    "id": 180,
+    "question": "Một bài hát được khen là 'lời rất thơ' nhưng vẫn dễ lan truyền vì sao?",
+    "options": ["Vì vẻ đẹp đi cùng khả năng hiểu và nhớ", "Vì người nghe thích mọi thứ khó", "Vì không cần cảm xúc", "Vì chỉ nhờ beat mạnh"],
+    "correctIndex": 0,
+    "explanation": "Lời thơ mà vẫn lan truyền được là khi nó đẹp nhưng không xa người nghe. Câu chữ đủ gợi, đủ nhạc tính và vẫn chạm tới một cảm xúc quen thuộc để mọi người muốn mang đi chia sẻ."
+  },
+  {
+    "id": 181,
+    "question": "Một lyrics hiệu quả về sự bắt đầu lại thường cho thấy điều gì?",
+    "options": ["Nỗi sợ đi cùng hy vọng", "Chỉ niềm vui tuyệt đối", "Không còn quá khứ", "Không có do dự"],
+    "correctIndex": 0,
+    "explanation": "Bắt đầu lại hiếm khi hoàn toàn nhẹ nhàng. Khi lời ca giữ được cả run rẩy lẫn hy vọng, người nghe sẽ tin vào hành trình mới ấy hơn."
+  },
+  {
+    "id": 182,
+    "question": "Ca từ trong bài hát hiện đại dễ sống lâu khi có phẩm chất nào?",
+    "options": ["Chân thật, cô đọng, gợi mở", "Càng nhiều slang càng tốt", "Càng phức tạp càng hay", "Chỉ cần hợp trend"],
+    "correctIndex": 0,
+    "explanation": "Ba yếu tố quan trọng nhất thường là độ thật của cảm xúc, độ chắt lọc của ngôn ngữ và khả năng mở ra nhiều cảm nhận. Những bài hát hội đủ các yếu tố này rất dễ được nhớ lâu."
+  },
+  {
+    "id": 183,
+    "question": "Một câu hát về ở lại có thể rất đau khi đặt trong bối cảnh nào?",
+    "options": ["Biết rằng ở lại cũng không cứu được gì", "Hai người đang hạnh phúc", "Không có xung đột", "Chỉ là lời chào hỏi"],
+    "correctIndex": 0,
+    "explanation": "Ở lại không phải lúc nào cũng là hy vọng. Khi lời ca cho thấy sự bất lực của việc níu giữ, câu hát sẽ mang chiều sâu đau đớn và trưởng thành."
+  },
+  {
+    "id": 184,
+    "question": "Một bài hát có lyrics hướng nội thường phù hợp với kiểu nghe nào?",
+    "options": ["Nghe cá nhân và lắng", "Nghe chỉ để nhảy", "Nghe ồn ào ngoài trời", "Nghe không chú ý lời"],
+    "correctIndex": 0,
+    "explanation": "Những bài hướng nội thường cần không gian riêng để người nghe ngấm lời và soi vào mình. Sức mạnh của chúng nằm ở sự thầm thì hơn là phô trương."
+  },
+  {
+    "id": 185,
+    "question": "Một lyrics có thể rất hiện đại ngay cả khi không dùng từ hot trend vì sao?",
+    "options": ["Vì nó chạm đúng cảm thức sống hôm nay", "Vì bắt buộc phải nhắc công nghệ", "Vì chỉ cần câu ngắn", "Vì tránh mọi biểu tượng"],
+    "correctIndex": 0,
+    "explanation": "Sự hiện đại nằm ở cách nhìn, áp lực, mối quan hệ và tâm trạng của thời đại, không chỉ ở lớp từ vựng bề mặt. Một bài hát không theo trend vẫn rất hiện đại nếu nó nói đúng đời sống hiện nay."
+  },
+  {
+    "id": 186,
+    "question": "Một bài hát có lyrics tốt về hồi phục sau chia tay thường làm gì?",
+    "options": ["Cho thấy từng bước chấp nhận bản thân", "Xóa nỗi buồn ngay lập tức", "Chỉ nói mạnh mẽ giả tạo", "Không nhắc đến mất mát"],
+    "correctIndex": 0,
+    "explanation": "Hồi phục là một đường cong, không phải công tắc. Khi lời ca cho thấy từng bước nhỏ như tập quen khoảng trống, tập ngủ yên, tập đi tiếp, bài hát sẽ rất đáng tin."
+  },
+  {
+    "id": 187,
+    "question": "Trong lyrics, việc đặt hai hình ảnh đối nghịch trong cùng một câu thường để làm gì?",
+    "options": ["Làm nổi bật xung đột nội tâm", "Trang trí ngẫu nhiên", "Giảm sức nặng cảm xúc", "Không tạo ý nghĩa"],
+    "correctIndex": 0,
+    "explanation": "Những cặp đối nghịch như sáng-tối, nóng-lạnh, gần-xa, đông-vắng giúp câu hát có độ căng. Chúng phản ánh tốt những trạng thái cảm xúc mâu thuẫn trong tình yêu và cuộc sống."
+  },
+  {
+    "id": 188,
+    "question": "Một lyrics hay về gia đình trong nhạc hiện đại thường có điểm nào?",
+    "options": ["Mộc mạc nhưng giàu chiều sâu tình cảm", "Quá khoa trương", "Chỉ toàn lời dạy bảo", "Không có chi tiết đời thường"],
+    "correctIndex": 0,
+    "explanation": "Ca từ về gia đình thường mạnh khi giữ được sự giản dị, gần gũi với bữa cơm, mái nhà, tiếng gọi, sự hy sinh và khoảng cách giữa các thế hệ. Chính điều đời thường làm nó xúc động."
+  },
+  {
+    "id": 189,
+    "question": "Một bài hát có lyrics về mất phương hướng thường dễ chạm ai nhất?",
+    "options": ["Những người đang đi tìm vị trí của mình", "Chỉ người yêu nhạc cổ", "Chỉ người học nhạc", "Không ai cả"],
+    "correctIndex": 0,
+    "explanation": "Cảm giác không biết mình đang ở đâu trong cuộc đời là trải nghiệm rất phổ biến, nhất là ở người trẻ. Bài hát gọi đúng cảm giác ấy thường tạo sự đồng cảm rất mạnh."
+  },
+  {
+    "id": 190,
+    "question": "Một câu hát có thể rất mạnh dù không hoàn chỉnh ngữ pháp theo văn viết vì sao?",
+    "options": ["Vì lời hát ưu tiên nhạc tính và cảm xúc nói thật", "Vì ngữ pháp không quan trọng bao giờ", "Vì càng sai càng hay", "Vì để đủ nhịp"],
+    "correctIndex": 0,
+    "explanation": "Lời hát khác văn viết ở chỗ nó được cất lên. Đôi khi một câu lửng, một cấu trúc đời thường hoặc không quá chỉnh trong văn phạm lại tạo cảm giác tự nhiên và chân thật hơn."
+  },
+  {
+    "id": 191,
+    "question": "Một lyrics làm người nghe thấy 'dịu lại' thường có tông như thế nào?",
+    "options": ["Ấm, chậm, thấu hiểu", "Gay gắt, kết án", "Hoảng loạn cực độ", "Phô trương quyền lực"],
+    "correctIndex": 0,
+    "explanation": "Sự dịu lại đến từ cảm giác được hiểu và được thở. Những lời ca ấm áp, chậm rãi và không áp lực thường tạo ra trải nghiệm chữa lành rất rõ."
+  },
+  {
+    "id": 192,
+    "question": "Một bài hát có lyrics mạnh về tự do rời bỏ thường nhấn vào đâu?",
+    "options": ["Can đảm rời điều không còn phù hợp", "Chỉ giận dữ", "Chỉ ca ngợi cô độc", "Không cần lý do"],
+    "correctIndex": 0,
+    "explanation": "Rời bỏ không chỉ là đi mà còn là quyết định tôn trọng bản thân. Khi lời ca cho thấy sự can đảm ấy, bài hát sẽ vừa giải phóng vừa giàu chiều sâu."
+  },
+  {
+    "id": 193,
+    "question": "Một lyrics có giá trị nghe lại nhiều lần thường có gì?",
+    "options": ["Chi tiết và lớp nghĩa dần mở ra", "Chỉ gây bất ngờ một lần", "Chỉ hiệu ứng âm thanh", "Không có nội dung"],
+    "correctIndex": 0,
+    "explanation": "Bài hát đáng nghe lại thường không cạn sau lần đầu. Người nghe quay lại để phát hiện thêm chi tiết, hiểu thêm tâm trạng hoặc thấy một câu nào đó giờ mới thấm."
+  },
+  {
+    "id": 194,
+    "question": "Một lyrics về việc nhớ nhà thường dễ làm người nghe xúc động vì sao?",
+    "options": ["Chạm đến nhu cầu được thuộc về", "Chỉ vì ai cũng nhớ đường", "Vì chủ đề này luôn buồn", "Vì không cần hình ảnh"],
+    "correctIndex": 0,
+    "explanation": "Nhớ nhà không chỉ là nhớ một nơi, mà là nhớ cảm giác an toàn, được chờ đợi và được là mình. Đây là tầng cảm xúc rất sâu nên dễ chạm đến nhiều người."
+  },
+  {
+    "id": 195,
+    "question": "Một bài hát có lyrics về khép lại quá khứ thường đẹp khi nào?",
+    "options": ["Khi còn tiếc nhưng đã biết buông", "Khi quên sạch ngay lập tức", "Khi chỉ trách móc mãi", "Khi không có học được gì"],
+    "correctIndex": 0,
+    "explanation": "Khép lại đẹp nhất khi không phải là phủ nhận mọi điều đã có, mà là nhìn nhận, biết ơn hoặc chấp nhận rồi bước tiếp. Điều đó khiến bài hát vừa đau vừa trưởng thành."
+  },
+  {
+    "id": 196,
+    "question": "Trong lyrics, sự im lặng sau một câu nặng thường hiệu quả vì sao?",
+    "options": ["Cho cảm xúc có thời gian rơi xuống", "Vì thiếu lời", "Vì không biết viết tiếp", "Không có tác dụng gì"],
+    "correctIndex": 0,
+    "explanation": "Một câu nặng cần khoảng trống để vang. Sự im lặng sau đó giúp người nghe hấp thụ hết sức nặng của lời hát, thay vì bị trôi tuột sang câu sau ngay lập tức."
+  },
+  {
+    "id": 197,
+    "question": "Một lyrics nói về 'ở một mình' hay hơn khi phân biệt được điều gì?",
+    "options": ["Sự khác nhau giữa cô đơn và bình yên", "Chỉ nói ở một mình là buồn", "Chỉ nói ở một mình là vui", "Không cần sắc thái"],
+    "correctIndex": 0,
+    "explanation": "Ở một mình có thể là lạc lõng nhưng cũng có thể là hồi phục. Khi lời ca phân biệt được những sắc thái đó, bài hát sẽ tinh tế và sâu hơn nhiều."
+  },
+  {
+    "id": 198,
+    "question": "Một bài hát có lyrics về hiện tại sống nhanh thường cần điều gì để không hời hợt?",
+    "options": ["Một lớp suy ngẫm phía sau nhịp sống", "Chỉ dồn nhiều từ trendy", "Chỉ nói về tiệc tùng", "Không cần thông điệp"],
+    "correctIndex": 0,
+    "explanation": "Nhịp sống nhanh chỉ trở nên đáng nhớ trong lyrics khi đi kèm câu hỏi: ta đang chạy vì điều gì, đang bỏ lại gì, và có thực sự sống không. Lớp suy ngẫm đó tạo chiều sâu cho bài."
+  },
+  {
+    "id": 199,
+    "question": "Một lyrics chạm đến người nghe rộng rãi thường có phẩm chất cốt lõi nào?",
+    "options": ["Chân thành, rõ ý, giàu hình ảnh", "Chỉ thật nhiều kỹ thuật", "Chỉ dùng từ độc lạ", "Chỉ cần hợp một xu hướng"],
+    "correctIndex": 0,
+    "explanation": "Ca từ chạm rộng thường không quá bí hiểm, nhưng cũng không phẳng. Nó đủ rõ để hiểu, đủ hình ảnh để nhớ, và đủ chân thành để người nghe tin vào cảm xúc trong bài."
+  },
+  {
+    "id": 200,
+    "question": "Một bài hát hay về lyrics trong âm nhạc hiện đại cần điều gì đầy đủ nhất?",
+    "options": ["Ý nghĩa", "Nhạc tính", "Cảm xúc chân thật", "Sự kết hợp của tất cả"],
+    "correctIndex": 3,
+    "explanation": "Một lyrics thực sự hay hiếm khi chỉ mạnh ở một yếu tố. Nó cần ý nghĩa để có nội dung, nhạc tính để hát lên mượt mà, và cảm xúc chân thật để chạm người nghe. Khi ba yếu tố đó hòa vào nhau, bài hát mới có thể vừa dễ nhớ, vừa sâu, vừa bền lâu."
+  }
+]

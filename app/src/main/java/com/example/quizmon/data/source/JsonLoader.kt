@@ -61,16 +61,16 @@ class JsonLoader(private val context: Context) {
      */
     private fun getStaticTopics(): List<Topic> {
         return listOf(
-            Topic(1, "Kiến thức chung + Toán", "KT_Toan_questions.json"),
+            Topic(1, "Kiến thức chung + Toán", "KTC_questions.json"),
             Topic(2, "Văn học", "V_questions.json"),
             Topic(3, "Lịch sử", "S_questions.json"),
             Topic(4, "Địa lý", "D_questions.json"),
             Topic(5, "Hóa học", "H_questions.json"),
             Topic(6, "Tiếng anh", "E_questions.json"),
             Topic(7, "Đố vui", "DoVui_questions.json"),
-            Topic(8, "Chơi chữ", "cc_questions.json"),
+            Topic(8, "Chơi chữ", "CC_questions.json"),
             Topic(9, "Vật Lý", "VL_questions.json"),
-            Topic(10, "Âm nhạc", "an_questions.json"),
+            Topic(10, "Âm nhạc", "AN_questions.json"),
             Topic(11, "Tin học", "TH_questions.json"),
             Topic(12, "Kinh tế chính trị", "KTCT_questions.json"),
             Topic(13, "Tư tưởng Hồ Chí Minh", "TTHCM_questions.json"),

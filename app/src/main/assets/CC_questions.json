@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "question": "Con gì đầu dê mình ốc?",
+    "options": ["Con cua", "Con dốc", "Con cá", "Con sóc"],
+    "correctIndex": 1,
+    "explanation": "Đây là câu đố chơi chữ rất quen thuộc. 'Đầu dê mình ốc' không tả một con vật có thật mà ghép âm để thành từ 'con dốc', tức là một lối dốc chứ không phải sinh vật."
+  },
+  {
+    "id": 2,
+    "question": "Cái gì càng rửa càng bẩn?",
+    "options": ["Cái chén", "Bàn tay", "Nước", "Khăn giấy"],
+    "correctIndex": 2,
+    "explanation": "Khi dùng nước để rửa đồ, nước ban đầu sạch nhưng sau quá trình rửa lại chứa bụi bẩn, xà phòng và cặn. Vì thế thứ 'càng rửa càng bẩn' chính là nước."
+  },
+  {
+    "id": 3,
+    "question": "Cái gì đánh cha, đánh má, đánh anh, đánh chị mà không ai giận?",
+    "options": ["Đòn roi", "Bàn chải", "Máy giặt", "Bài chòi"],
+    "correctIndex": 1,
+    "explanation": "Từ 'đánh' ở đây được hiểu theo nghĩa 'đánh răng' chứ không phải đánh người. Bàn chải dùng để đánh răng cho cả nhà nên nghe vui tai và tạo cảm giác chơi chữ."
+  },
+  {
+    "id": 4,
+    "question": "Con gì mang được miếng gỗ lớn nhưng không mang được hòn sỏi nhỏ?",
+    "options": ["Con voi", "Con kiến", "Con đường", "Con thuyền"],
+    "correctIndex": 2,
+    "explanation": "Đáp án là 'con đường' vì đường có thể 'mang' xe chở gỗ đi qua. Nhưng nếu nói đường mang hòn sỏi thì không đúng cách hiểu thông thường, nên đây là mẹo đổi nghĩa của từ 'mang'."
+  },
+  {
+    "id": 5,
+    "question": "Ở đâu đường xá trước nhà luôn sạch nhất?",
+    "options": ["Trước bệnh viện", "Trước tiệm rửa xe", "Trước nhà thuốc", "Trước nhà mình"],
+    "correctIndex": 3,
+    "explanation": "Đây là câu đố mẹo dựa vào cách nói đời thường. Người ta thường quét dọn sạch phần trước nhà mình trước tiên, nên 'trước nhà mình' là nơi sạch nhất theo logic vui."
+  },
+  {
+    "id": 6,
+    "question": "Cái gì có cổ mà không có đầu?",
+    "options": ["Cái chai", "Cái áo", "Cái ghế", "Cái ly"],
+    "correctIndex": 1,
+    "explanation": "Áo có phần gọi là 'cổ áo' nhưng không có đầu như con người. Câu đố khai thác việc một bộ phận trên đồ vật trùng tên với bộ phận cơ thể."
+  },
+  {
+    "id": 7,
+    "question": "Cái gì có răng mà không có miệng?",
+    "options": ["Cưa", "Lược", "Kéo", "Bàn chải"],
+    "correctIndex": 1,
+    "explanation": "Lược có rất nhiều 'răng lược' nhưng rõ ràng không có miệng để ăn nói. Đây là dạng chơi chữ dùng từ chỉ hình dáng giống bộ phận cơ thể."
+  },
+  {
+    "id": 8,
+    "question": "Cái gì có mắt mà không thấy đường?",
+    "options": ["Cái kim", "Con mèo", "Người mù", "Cái kéo"],
+    "correctIndex": 0,
+    "explanation": "Kim may có 'mắt kim', tức là lỗ để xỏ chỉ, nhưng không phải mắt để nhìn. Câu đố đánh lừa người nghe bằng cách dùng từ 'mắt' theo nghĩa khác."
+  },
+  {
+    "id": 9,
+    "question": "Cái gì có chân mà không biết đi?",
+    "options": ["Cái bàn", "Con chó", "Đôi dép", "Cầu thang"],
+    "correctIndex": 0,
+    "explanation": "Bàn có các 'chân bàn' để đứng vững nhưng bản thân nó không thể tự bước đi. Đây là kiểu đố dựa trên từ cùng tên nhưng khác nghĩa."
+  },
+  {
+    "id": 10,
+    "question": "Thứ gì người mua biết, người bán biết, người dùng lại không biết?",
+    "options": ["Bí mật", "Quan tài", "Thuốc ngủ", "Vé số"],
+    "correctIndex": 1,
+    "explanation": "Người mua và người bán quan tài đều biết món hàng đó là gì, nhưng người nằm trong quan tài thì đã chết nên không biết nữa. Câu đố tạo bất ngờ nhờ đổi góc nhìn."
+  },
+  {
+    "id": 11,
+    "question": "Cái gì luôn đi đến mà không bao giờ đến nơi?",
+    "options": ["Ngày mai", "Xe buýt", "Gió", "Con suối"],
+    "correctIndex": 0,
+    "explanation": "Ngày mai luôn được nhắc đến như một thời điểm sẽ tới, nhưng khi nó đến thì nó lại trở thành hôm nay. Vì thế 'ngày mai' luôn ở phía trước mà không bao giờ giữ nguyên là ngày mai."
+  },
+  {
+    "id": 12,
+    "question": "Cái gì bạn có thể giữ sau khi đã cho người khác?",
+    "options": ["Tiền", "Lời hứa", "Quyển sách", "Chiếc nón"],
+    "correctIndex": 1,
+    "explanation": "Khi bạn đưa ra một lời hứa cho ai đó, bạn vẫn có thể giữ lời hứa ấy bằng cách thực hiện nó. Câu đố chơi trên nghĩa đen và nghĩa bóng của từ 'giữ'."
+  },
+  {
+    "id": 13,
+    "question": "Cái gì càng lấy ra thì càng lớn?",
+    "options": ["Cái túi", "Cái hố", "Cái nồi", "Cái tủ"],
+    "correctIndex": 1,
+    "explanation": "Khi đào đất và lấy đất ra khỏi hố, cái hố sẽ ngày càng to hơn. Đây là câu đố logic đơn giản nhưng tạo cảm giác lạ vì hành động 'lấy ra' lại làm vật lớn lên."
+  },
+  {
+    "id": 14,
+    "question": "Cái gì không vay mà trả?",
+    "options": ["Bài kiểm tra", "Lời đáp", "Điện thoại", "Xe máy"],
+    "correctIndex": 1,
+    "explanation": "Ta thường nói 'trả lời' dù thực tế không hề vay ai câu hỏi cả. Câu đố dựa hoàn toàn vào nghĩa của cụm từ quen thuộc trong tiếng Việt."
+  },
+  {
+    "id": 15,
+    "question": "Môn thể thao nào càng thắng càng thua?",
+    "options": ["Cờ vua", "Đấu vật", "Đua xe", "Bóng bàn"],
+    "correctIndex": 0,
+    "explanation": "Trong cờ vua, muốn thắng bạn phải 'ăn' quân của đối phương, nhưng khi 'ăn' nhiều quân thì bên kia lại thua. Câu đố này dựa vào cách dùng từ 'ăn' trong cờ, vừa là thắng thế vừa không phải ăn thật."
+  },
+  {
+    "id": 16,
+    "question": "Con gì đập thì sống, không đập thì chết?",
+    "options": ["Con muỗi", "Con tim", "Con cá", "Con cua"],
+    "correctIndex": 1,
+    "explanation": "Tim phải đập thì con người mới sống; nếu tim ngừng đập thì sự sống chấm dứt. Từ 'con tim' khiến câu hỏi nghe như hỏi về con vật, tạo hiệu ứng chơi chữ."
+  },
+  {
+    "id": 17,
+    "question": "Cái gì càng đi càng nhỏ?",
+    "options": ["Cục gôm", "Điếu thuốc", "Chiếc dép", "Quả bóng"],
+    "correctIndex": 1,
+    "explanation": "Điếu thuốc khi được hút dần sẽ ngắn đi, tức là 'càng đi' theo nghĩa thời gian sử dụng thì càng nhỏ. Đây là kiểu đố mẹo bằng cách hiểu từ 'đi' theo nghĩa tiến trình."
+  },
+  {
+    "id": 18,
+    "question": "Cái gì càng kéo càng ngắn?",
+    "options": ["Dây thun", "Điếu thuốc", "Áo len", "Bút chì"],
+    "correctIndex": 1,
+    "explanation": "Kéo một hơi thuốc nghĩa là rít thêm một lần, và như vậy điếu thuốc sẽ ngắn dần. Câu đố dựa vào nghĩa đặc biệt của từ 'kéo' trong khẩu ngữ."
+  },
+  {
+    "id": 19,
+    "question": "Cái gì đen khi bạn mua, đỏ khi dùng, xám khi bỏ?",
+    "options": ["Than", "Áo khoác", "Nồi đất", "Quả vải"],
+    "correctIndex": 0,
+    "explanation": "Than khi mới mua thường có màu đen, khi cháy sẽ đỏ rực, và sau khi cháy hết trở thành tro xám. Đây là câu đố quan sát màu sắc theo từng giai đoạn sử dụng."
+  },
+  {
+    "id": 20,
+    "question": "Con gì không biết đi mà vẫn tới đích?",
+    "options": ["Con sông", "Con trâu", "Con rùa", "Con dế"],
+    "correctIndex": 0,
+    "explanation": "Sông không có chân để đi nhưng vẫn chảy về biển, tức là vẫn 'đến đích' theo cách nói hình tượng. Từ 'con sông' khiến người nghe dễ lầm sang hỏi con vật."
+  },
+  {
+    "id": 21,
+    "question": "Cái gì ai cũng thấy mỗi ngày nhưng không ai chạm tới được?",
+    "options": ["Mặt trời", "Cái bóng", "Bầu trời", "Mây"],
+    "correctIndex": 2,
+    "explanation": "Bầu trời ở ngay trên đầu chúng ta mỗi ngày, ai cũng nhìn thấy nhưng không thể với tay chạm đến. Câu đố dùng trải nghiệm quen thuộc để tạo cảm giác đơn giản mà bất ngờ."
+  },
+  {
+    "id": 22,
+    "question": "Cái gì khi đứng thì nằm, khi nằm thì đứng?",
+    "options": ["Bàn chân", "Con dơi", "Bàn số 9", "Cái nón"],
+    "correctIndex": 2,
+    "explanation": "Số 9 khi đứng bình thường là số 9, nhưng nếu đặt nằm ngang theo cách nhìn đố mẹo, người ta liên tưởng thành số 6 hoặc hình ngược lại. Đây là kiểu đố dựa vào hướng nhìn và quy ước ký hiệu."
+  },
+  {
+    "id": 23,
+    "question": "Cái gì có nhiều lá mà không phải cây?",
+    "options": ["Quyển sách", "Bắp cải", "Cái quạt", "Cây dừa"],
+    "correctIndex": 0,
+    "explanation": "Sách có rất nhiều 'lá sách', tức là các trang giấy. Câu đố khai thác việc từ 'lá' vừa dùng cho cây cối vừa dùng cho giấy."
+  },
+  {
+    "id": 24,
+    "question": "Cái gì có đầu mà không có tóc?",
+    "options": ["Cây búa", "Cái đinh", "Con cá", "Cái ghim"],
+    "correctIndex": 1,
+    "explanation": "Đinh có phần gọi là 'đầu đinh' nhưng tất nhiên không có tóc. Đây là kiểu đố quen thuộc dùng bộ phận của đồ vật trùng với từ chỉ cơ thể người."
+  },
+  {
+    "id": 25,
+    "question": "Cái gì càng đếm càng thiếu?",
+    "options": ["Tiền lẻ", "Ngón tay", "Răng", "Thời gian"],
+    "correctIndex": 3,
+    "explanation": "Khi bạn ngồi đếm thời gian, từng giây phút trôi qua sẽ làm quỹ thời gian còn lại ít đi. Câu đố mang tính triết lý nhẹ, dùng nghịch lý để tạo ấn tượng."
+  },
+  {
+    "id": 26,
+    "question": "Ai luôn đi ngủ với giày dép?",
+    "options": ["Người lính", "Con ngựa", "Người đi đường", "Cái giường"],
+    "correctIndex": 1,
+    "explanation": "Ngựa khi ngủ vẫn đứng và luôn mang móng, ví như đôi giày tự nhiên của nó. Câu đố vui vì người nghe thường nghĩ đến con người trước."
+  },
+  {
+    "id": 27,
+    "question": "Loại quả nào ai cũng sợ ăn trúng?",
+    "options": ["Quả mít", "Quả lừa", "Quả bưởi", "Quả táo"],
+    "correctIndex": 1,
+    "explanation": "Người ta sợ 'ăn quả lừa' vì đây là thành ngữ chỉ việc bị lừa gạt, bị mắc bẫy. Câu đố chơi chữ bằng cách lấy nghĩa bóng của từ 'quả'."
+  },
+  {
+    "id": 28,
+    "question": "Con gì càng to càng nhỏ?",
+    "options": ["Con voi", "Con số", "Con cá", "Con gà"],
+    "correctIndex": 1,
+    "explanation": "Trong toán học, số càng to về số lượng chữ số hoặc giá trị thì khi chia nhỏ đơn vị có thể biểu diễn thành phần nhỏ hơn. Nhưng câu đố mẹo phổ biến hiểu 'con số' là thứ càng thêm vào thì khoảng trống trên giấy lại ít đi, đánh lừa bằng cách không hỏi con vật thật."
+  },
+  {
+    "id": 29,
+    "question": "Cái gì ban ngày không thấy, ban đêm mới thấy rõ?",
+    "options": ["Sao", "Mặt trời", "Mây", "Núi"],
+    "correctIndex": 0,
+    "explanation": "Ban ngày ánh sáng mặt trời quá mạnh nên ta khó nhìn thấy sao trên bầu trời. Đến đêm, sao mới hiện rõ, nên đáp án là các vì sao."
+  },
+  {
+    "id": 30,
+    "question": "Cái gì càng đầy càng nhẹ?",
+    "options": ["Bóng bay", "Túi gạo", "Ly nước", "Cái hộp sắt"],
+    "correctIndex": 0,
+    "explanation": "Bóng bay khi bơm đầy khí nhẹ như heli hoặc không khí thì căng lên nhưng vẫn nhẹ, thậm chí có thể bay. Câu đố làm người nghe liên tưởng sai rằng 'đầy' luôn phải nặng hơn."
+  },
+  {
+    "id": 31,
+    "question": "Cái gì luôn ở phía trước bạn nhưng bạn không bao giờ nhìn thấy?",
+    "options": ["Tương lai", "Mũi", "Con đường", "Gương"],
+    "correctIndex": 0,
+    "explanation": "Tương lai luôn ở trước mặt theo nghĩa thời gian, nhưng con người không thể nhìn thấy chính xác nó. Đây là câu đố dùng nghĩa trừu tượng thay vì vật thể cụ thể."
+  },
+  {
+    "id": 32,
+    "question": "Thứ gì bỏ vào nước không ướt?",
+    "options": ["Muối", "Đá", "Bóng của bạn", "Giấy"],
+    "correctIndex": 2,
+    "explanation": "Bóng của bạn phản chiếu trên mặt nước nhưng bản thân cái bóng không phải vật chất nên không bị ướt. Đây là câu đố mẹo dựa vào hiện tượng ánh sáng."
+  },
+  {
+    "id": 33,
+    "question": "Cái gì có thể đi khắp thế giới mà vẫn ở một góc?",
+    "options": ["Con tem", "Bản đồ", "Quả địa cầu", "Tờ báo"],
+    "correctIndex": 0,
+    "explanation": "Tem được dán ở góc phong bì nhưng lá thư có thể đi vòng quanh thế giới. Câu đố dùng hình ảnh rất nhỏ để tạo đáp án bất ngờ."
+  },
+  {
+    "id": 34,
+    "question": "Cái gì càng chạy càng đứng yên?",
+    "options": ["Đồng hồ", "Con chó", "Xe đạp", "Máy in"],
+    "correctIndex": 0,
+    "explanation": "Đồng hồ vẫn 'chạy' theo cách nói quen thuộc, nghĩa là hoạt động liên tục, nhưng nó đứng yên tại chỗ. Đây là dạng đố khai thác từ đa nghĩa trong tiếng Việt."
+  },
+  {
+    "id": 35,
+    "question": "Cái gì có thể lấp đầy căn phòng mà không chiếm chỗ?",
+    "options": ["Không khí", "Ánh sáng", "Âm thanh", "Mùi hương"],
+    "correctIndex": 1,
+    "explanation": "Ánh sáng có thể chiếu đầy cả căn phòng nhưng không chiếm không gian theo kiểu vật thể rắn. Câu đố khiến người nghe nghĩ đến thứ hữu hình trước tiên."
+  },
+  {
+    "id": 36,
+    "question": "Thứ gì càng chia càng nhiều?",
+    "options": ["Tiền bạc", "Niềm vui", "Cái bánh", "Cái ghế"],
+    "correctIndex": 1,
+    "explanation": "Niềm vui, kiến thức hay tình thương khi chia sẻ thường lan tỏa nhiều hơn chứ không mất đi như vật chất. Câu đố dùng logic cảm xúc để đảo ngược suy nghĩ thông thường."
+  },
+  {
+    "id": 37,
+    "question": "Cái gì càng khô càng ướt?",
+    "options": ["Cái nắng", "Khăn tắm", "Cái quạt", "Cục đá"],
+    "correctIndex": 1,
+    "explanation": "Khăn tắm dùng để lau nước cho người khác nên càng 'làm khô' người thì chính nó càng ướt. Đây là câu đố mẹo rất chuẩn về quan hệ ngược."
+  },
+  {
+    "id": 38,
+    "question": "Con gì sinh ra đã mang nhà trên lưng?",
+    "options": ["Con cua", "Con ốc", "Con tôm", "Con nhện"],
+    "correctIndex": 1,
+    "explanation": "Ốc có chiếc vỏ cứng gắn liền với cơ thể, giống như luôn mang nhà theo mình. Câu này vừa là đố vui vừa là quan sát tự nhiên."
+  },
+  {
+    "id": 39,
+    "question": "Cái gì có cổ, có miệng nhưng không ăn uống?",
+    "options": ["Cái chai", "Cái nồi", "Cái bàn", "Cái lược"],
+    "correctIndex": 0,
+    "explanation": "Chai có 'cổ chai' và 'miệng chai' nhưng không phải cơ thể sống nên không ăn uống. Câu đố dựa vào cách gọi hình dạng của đồ vật."
+  },
+  {
+    "id": 40,
+    "question": "Cái gì có tai mà không nghe?",
+    "options": ["Cái ấm", "Con mèo", "Tai nghe", "Cái trống"],
+    "correctIndex": 0,
+    "explanation": "Nhiều loại ấm, nồi hoặc chén có phần quai gọi là 'tai ấm'. Đó chỉ là tên bộ phận cầm nắm chứ không có chức năng nghe."
+  },
+  {
+    "id": 41,
+    "question": "Cái gì có miệng mà không nói?",
+    "options": ["Con người", "Cái giếng", "Cái loa", "Cái radio"],
+    "correctIndex": 1,
+    "explanation": "Ta thường gọi phần trên của giếng là 'miệng giếng'. Nó là lối mở của chiếc giếng chứ không phải miệng để phát âm."
+  },
+  {
+    "id": 42,
+    "question": "Thứ gì bạn phá ngay khi vừa nói tên nó ra?",
+    "options": ["Lời thề", "Im lặng", "Bí mật", "Sự thật"],
+    "correctIndex": 1,
+    "explanation": "Nếu bạn đang im lặng mà lại nói ra từ 'im lặng', thì ngay lập tức sự im lặng đã bị phá vỡ. Đây là câu đố logic ngắn nhưng rất hiệu quả."
+  },
+  {
+    "id": 43,
+    "question": "Cái gì càng cắt càng dài?",
+    "options": ["Con đường", "Giấy", "Dây điện", "Áo quần"],
+    "correctIndex": 0,
+    "explanation": "Khi nói 'cắt đường' trong đời thường, ta thường hiểu là đi đường tắt, khiến quãng đường thực tế ngắn hơn nhưng tiến độ đi lại tốt hơn. Câu đố mẹo này dùng nghĩa khác của từ 'cắt'."
+  },
+  {
+    "id": 44,
+    "question": "Cái gì ăn giấy, nhả chữ?",
+    "options": ["Máy in", "Bút máy", "Tập vở", "Kẹp giấy"],
+    "correctIndex": 0,
+    "explanation": "Máy in đưa giấy trắng vào và in ra chữ, hình ảnh lên giấy. Nói vui là nó 'ăn giấy, nhả chữ', tạo ra cách nhân hóa dí dỏm."
+  },
+  {
+    "id": 45,
+    "question": "Cái gì bỏ đi thì sống, giữ lại thì chết?",
+    "options": ["Hơi thở", "Nước mắt", "Tiền bạc", "Bài tập"],
+    "correctIndex": 0,
+    "explanation": "Con người phải thở ra đều đặn; nếu giữ hơi quá lâu sẽ ngạt. Câu đố thành công vì biến hành động sinh học bình thường thành nghịch lý ngôn ngữ."
+  },
+  {
+    "id": 46,
+    "question": "Cái gì chỉ có thể nhìn thấy khi nhắm mắt?",
+    "options": ["Giấc mơ", "Bóng tối", "Trí tưởng tượng", "Cả A và C"],
+    "correctIndex": 3,
+    "explanation": "Khi nhắm mắt, con người có thể mơ hoặc tưởng tượng ra hình ảnh trong đầu. Vì cả giấc mơ lẫn trí tưởng tượng đều phù hợp nên đáp án đúng là phương án gộp."
+  },
+  {
+    "id": 47,
+    "question": "Con gì có cánh mà không biết bay, có chân mà không biết đi?",
+    "options": ["Con gà luộc", "Con bướm", "Con chim sẻ", "Con dơi"],
+    "correctIndex": 0,
+    "explanation": "Gà luộc từng là con vật có cánh và chân, nhưng khi đã thành món ăn thì không còn bay hay đi được nữa. Câu đố đánh lừa vì người nghe hay chọn động vật sống."
+  },
+  {
+    "id": 48,
+    "question": "Cái gì càng ăn càng đói?",
+    "options": ["Lửa", "Người", "Xe máy", "Máy tính"],
+    "correctIndex": 0,
+    "explanation": "Lửa 'ăn' nhiên liệu như củi, xăng, gas; càng cháy mạnh lại càng cần thêm nhiên liệu. Đây là cách nhân hóa tự nhiên rất phổ biến trong câu đố mẹo."
+  },
+  {
+    "id": 49,
+    "question": "Cái gì càng lớn càng bé?",
+    "options": ["Em bé", "Con cua", "Áo trẻ em", "Ảnh chụp trên màn hình"],
+    "correctIndex": 3,
+    "explanation": "Khi phóng to hoặc thu nhỏ ảnh trên màn hình, cảm giác về đối tượng thay đổi theo khung nhìn. Câu này thiên về mẹo ngôn ngữ và góc nhìn hơn là một vật cụ thể tuyệt đối."
+  },
+  {
+    "id": 50,
+    "question": "Ai có nhà rộng nhất nhưng không ở được?",
+    "options": ["Kiến trúc sư", "Con ốc", "Bản đồ", "Nghĩa trang"],
+    "correctIndex": 2,
+    "explanation": "Bản đồ có thể chứa cả thế giới, tức là 'nhà' của vô số nơi, nhưng bản thân nó không phải chỗ ở. Câu đố này chơi theo nghĩa mở rộng của chữ 'nhà'."
+  },
+  {
+    "id": 51,
+    "question": "Cái gì có mũi mà không ngửi được?",
+    "options": ["Máy bay", "Con voi", "Chiếc thuyền", "Cái kéo"],
+    "correctIndex": 0,
+    "explanation": "Máy bay có phần đầu gọi là 'mũi máy bay', nhưng đó chỉ là tên cấu tạo chứ không dùng để ngửi mùi. Đây là dạng đố quen thuộc về bộ phận đồ vật."
+  },
+  {
+    "id": 52,
+    "question": "Cái gì có lưỡi mà không nếm được?",
+    "options": ["Con người", "Con chó", "Cái cuốc", "Cái muỗng"],
+    "correctIndex": 2,
+    "explanation": "Lưỡi cuốc là phần kim loại mỏng để đào đất, hoàn toàn không có cảm giác nếm. Câu đố đánh vào phản xạ liên tưởng đến lưỡi trong miệng."
+  },
+  {
+    "id": 53,
+    "question": "Cái gì có mặt mà không có mũi miệng?",
+    "options": ["Mặt bàn", "Con người", "Búp bê", "Chiếc mặt nạ"],
+    "correctIndex": 0,
+    "explanation": "Mặt bàn là bề mặt của chiếc bàn, dùng từ 'mặt' theo nghĩa mặt phẳng chứ không phải khuôn mặt. Đây là kiểu chơi chữ rất phổ biến trong tiếng Việt."
+  },
+  {
+    "id": 54,
+    "question": "Loài cá nào không sống dưới nước?",
+    "options": ["Cá voi", "Cá ngựa", "Cá độ", "Cá thu"],
+    "correctIndex": 2,
+    "explanation": "Cá độ là cách nói vui, thực chất chỉ hành vi cá cược chứ không phải loài cá thật. Câu đố dựa vào từ 'cá' xuất hiện trong một cụm từ hoàn toàn khác nghĩa sinh học."
+  },
+  {
+    "id": 55,
+    "question": "Con gì ai cũng có nhưng không ai nhìn thấy trực tiếp?",
+    "options": ["Con ngươi", "Con tim", "Con mắt", "Con đường"],
+    "correctIndex": 0,
+    "explanation": "Ai cũng có con ngươi trong mắt, nhưng nếu không dùng gương hay thiết bị hỗ trợ thì không thể nhìn trực tiếp bằng mắt thường của chính mình. Câu đố tạo thú vị bằng chính cơ thể người."
+  },
+  {
+    "id": 56,
+    "question": "Cái gì có thể mở ra mà không cần chìa khóa?",
+    "options": ["Miệng", "Cửa sổ", "Tâm trí", "Cả A và C"],
+    "correctIndex": 3,
+    "explanation": "Miệng có thể mở ra tự nhiên, còn tâm trí cũng có thể 'mở' theo nghĩa sẵn sàng tiếp nhận điều mới. Vì cả hai đều phù hợp nên phương án gộp là chính xác nhất."
+  },
+  {
+    "id": 57,
+    "question": "Cái gì càng nói càng mất?",
+    "options": ["Tiền", "Hơi", "Niềm tin", "Lời hay"],
+    "correctIndex": 1,
+    "explanation": "Khi nói liên tục, ta tiêu hao hơi thở và dễ mệt. Câu đố dựa vào nghĩa rất đời thường của việc 'mất hơi' khi nói nhiều."
+  },
+  {
+    "id": 58,
+    "question": "Cái gì chỉ xuất hiện khi trời nắng mà lại sợ ánh sáng?",
+    "options": ["Cái bóng", "Mặt trời", "Cầu vồng", "Mây trắng"],
+    "correctIndex": 0,
+    "explanation": "Bóng chỉ rõ khi có ánh sáng, nhưng nếu ánh sáng phủ đều hoặc thay đổi góc chiếu, bóng có thể mờ hoặc biến mất. Câu này chơi với mối quan hệ giữa ánh sáng và cái bóng."
+  },
+  {
+    "id": 59,
+    "question": "Thứ gì không cánh mà bay, không chân mà chạy?",
+    "options": ["Mây", "Gió", "Khói", "Cả A, B, C"],
+    "correctIndex": 3,
+    "explanation": "Mây bay trên trời, gió chạy qua đồng, khói bay lên cao dù không có cánh hay chân thật sự. Đây là kiểu đố hình tượng nên phương án tổng hợp là hợp lý nhất."
+  },
+  {
+    "id": 60,
+    "question": "Cái gì càng lau càng ướt?",
+    "options": ["Khăn lau", "Giấy", "Sàn nhà", "Chổi"],
+    "correctIndex": 0,
+    "explanation": "Khăn lau dùng để thấm nước từ bề mặt khác, nên trong quá trình lau nó sẽ ngày càng ướt hơn. Câu đố tương tự logic với khăn tắm nhưng trong ngữ cảnh khác."
+  },
+  {
+    "id": 61,
+    "question": "Cái gì có thể lên mà không xuống được bằng chân?",
+    "options": ["Điểm số", "Cầu thang", "Xe buýt", "Con dốc"],
+    "correctIndex": 0,
+    "explanation": "Điểm số có thể tăng lên theo nghĩa thành tích, nhưng không 'xuống bằng chân' như di chuyển vật lý. Câu đố tạo mẹo bằng cách trộn nghĩa trừu tượng và nghĩa cụ thể."
+  },
+  {
+    "id": 62,
+    "question": "Cái gì nằm im nhưng luôn chỉ đường?",
+    "options": ["Biển báo", "La bàn", "Bản đồ", "Cả A và B"],
+    "correctIndex": 3,
+    "explanation": "Biển báo đứng yên vẫn hướng dẫn giao thông, còn la bàn nằm yên vẫn chỉ phương hướng. Vì cả hai đều đáp ứng yêu cầu nên phương án gộp là đúng."
+  },
+  {
+    "id": 63,
+    "question": "Cái gì càng bớt càng nhiều?",
+    "options": ["Rắc rối", "Khoảng trống", "Đất trong hố", "Cả B và C"],
+    "correctIndex": 3,
+    "explanation": "Bớt đồ ra thì khoảng trống nhiều hơn; bớt đất khỏi hố thì cái hố lớn hơn. Câu đố này dùng cùng lúc hai hình ảnh để nhấn mạnh nghịch lý."
+  },
+  {
+    "id": 64,
+    "question": "Cái gì có đuôi mà không chạy?",
+    "options": ["Đuôi xe", "Con mèo", "Con chó", "Đuôi tóc"],
+    "correctIndex": 0,
+    "explanation": "Xe có phần đuôi xe nhưng bản thân cái 'đuôi' ấy không phải con vật để chạy. Câu đố tận dụng việc từ 'đuôi' được dùng trong nhiều ngữ cảnh."
+  },
+  {
+    "id": 65,
+    "question": "Cái gì có thể vỡ dù không bao giờ rơi?",
+    "options": ["Ly thủy tinh", "Lời hứa", "Cái gương", "Quả trứng"],
+    "correctIndex": 1,
+    "explanation": "Lời hứa có thể bị thất hứa, tức là bị 'vỡ' theo nghĩa bóng, dù không phải vật thể rơi xuống. Đây là câu đố thiên về ngôn ngữ và cảm xúc."
+  },
+  {
+    "id": 66,
+    "question": "Cái gì bạn càng nắm chặt càng dễ mất?",
+    "options": ["Cát", "Tiền", "Nước", "Khói"],
+    "correctIndex": 0,
+    "explanation": "Cát lọt qua kẽ tay rất nhanh, đặc biệt khi bạn bóp quá chặt. Câu đố dùng hình ảnh quen thuộc để gợi thêm ý nghĩa về sự cố chấp."
+  },
+  {
+    "id": 67,
+    "question": "Ai có thể đi xuyên tường mà không bị đau?",
+    "options": ["Siêu nhân", "Ánh sáng", "Cái bóng", "Gió"],
+    "correctIndex": 1,
+    "explanation": "Ánh sáng có thể đi qua kính, khe hở hoặc một số vật liệu trong suốt mà không bị cản trở như con người. Câu đố này hơi khoa học nhưng vẫn giữ chất mẹo."
+  },
+  {
+    "id": 68,
+    "question": "Cái gì ai cũng mở mỗi sáng mà không phải cửa?",
+    "options": ["Mắt", "TV", "Điện thoại", "Quạt"],
+    "correctIndex": 0,
+    "explanation": "Mỗi sáng ngủ dậy, người ta mở mắt ra trước tiên. Câu đố chơi chữ rất đơn giản nhưng hiệu quả nhờ đánh vào thói quen hàng ngày."
+  },
+  {
+    "id": 69,
+    "question": "Cái gì đóng lại thì tối, mở ra thì sáng?",
+    "options": ["Cửa sổ", "Mắt", "Đèn pin", "Cả A và B"],
+    "correctIndex": 3,
+    "explanation": "Đóng cửa sổ thì ít ánh sáng vào phòng, nhắm mắt thì mọi thứ tối lại với bản thân người đó. Cả hai đều đúng theo những ngữ cảnh khác nhau."
+  },
+  {
+    "id": 70,
+    "question": "Cái gì có thể bay mà không phải chim?",
+    "options": ["Máy bay", "Thời gian", "Giá cả", "Cả A, B, C"],
+    "correctIndex": 3,
+    "explanation": "Máy bay bay thật, thời gian 'bay' theo nghĩa trôi rất nhanh, giá cả 'bay' theo nghĩa tăng hoặc mất vèo đi. Đây là câu đố dựa vào đa nghĩa rất rõ."
+  },
+  {
+    "id": 71,
+    "question": "Cái gì có thể chạy nhưng không có chân?",
+    "options": ["Nước", "Máy tính", "Đồng hồ", "Cả A, B, C"],
+    "correctIndex": 3,
+    "explanation": "Nước chảy, máy tính chạy chương trình, đồng hồ chạy thời gian. Từ 'chạy' ở đây có nhiều nghĩa nên phương án tổng hợp mới là đáp án đầy đủ."
+  },
+  {
+    "id": 72,
+    "question": "Cái gì càng học càng nguội?",
+    "options": ["Nồi canh", "Trà nóng", "Bài học", "Cả A và B"],
+    "correctIndex": 3,
+    "explanation": "Nếu để vừa học vừa quên uống, nồi canh hay ly trà nóng sẽ nguội dần theo thời gian. Câu đố cố ý đánh lạc hướng sang việc 'học' kiến thức, trong khi mẹo nằm ở bối cảnh xung quanh."
+  },
+  {
+    "id": 73,
+    "question": "Cái gì không biết nói nhưng luôn trả lời?",
+    "options": ["Tiếng vang", "Điện thoại", "Google", "Cái trống"],
+    "correctIndex": 0,
+    "explanation": "Tiếng vang lặp lại âm thanh của bạn, giống như đang trả lời dù không có ý thức. Đây là một trong những câu đố mẹo kinh điển."
+  },
+  {
+    "id": 74,
+    "question": "Cái gì càng nhìn càng không thấy?",
+    "options": ["Bóng tối", "Mặt trời", "Sương mù", "Kính mờ"],
+    "correctIndex": 0,
+    "explanation": "Trong bóng tối, càng cố nhìn thì vẫn không thấy rõ vì thiếu ánh sáng. Câu đố chơi trên nghịch lý giữa hành động nhìn và điều kiện để nhìn."
+  },
+  {
+    "id": 75,
+    "question": "Cái gì ai cũng có hai nhưng lại thường dùng một?",
+    "options": ["Tay", "Mắt", "Tai", "Mũi"],
+    "correctIndex": 1,
+    "explanation": "Con người có hai mắt, nhưng khi ngắm bắn, soi lỗ nhỏ hay nhìn qua kính ngắm thường chỉ dùng một mắt. Câu đố mẹo này chấp nhận thói quen sử dụng đặc biệt."
+  },
+  {
+    "id": 76,
+    "question": "Cái gì càng cho đi càng nặng lòng?",
+    "options": ["Quà", "Tình cảm", "Tiền", "Cái ghế"],
+    "correctIndex": 1,
+    "explanation": "Tình cảm cho đi nhiều đôi khi khiến con người gắn bó hơn, lo lắng hơn, tức là 'nặng lòng' hơn. Câu đố dùng nghĩa tinh thần chứ không phải cân nặng vật lý."
+  },
+  {
+    "id": 77,
+    "question": "Cái gì càng giữ càng dễ mất giá trị?",
+    "options": ["Rau tươi", "Bí mật", "Tiền giấy cũ", "Cả A và C"],
+    "correctIndex": 3,
+    "explanation": "Rau để lâu sẽ héo, tiền giấy cũ có thể rách hoặc mất giá trị sử dụng. Câu đố này dựa vào thực tế bảo quản, nên đáp án tổng hợp hợp lý hơn."
+  },
+  {
+    "id": 78,
+    "question": "Cái gì ở trong nhà mà luôn ở ngoài cửa?",
+    "options": ["Đôi dép", "Chó giữ nhà", "Cái chuông", "Tấm thảm chùi chân"],
+    "correctIndex": 3,
+    "explanation": "Thảm chùi chân thuộc đồ dùng trong nhà nhưng thường đặt ngay ngoài cửa ra vào. Câu hỏi nghe mâu thuẫn nhưng đáp án lại rất đời thường."
+  },
+  {
+    "id": 79,
+    "question": "Cái gì càng thẳng càng dễ cong nghĩa?",
+    "options": ["Câu nói", "Thước kẻ", "Con đường", "Cái cây"],
+    "correctIndex": 0,
+    "explanation": "Nói quá thẳng đôi khi khiến người nghe hiểu lệch cảm xúc hoặc tự ái, tức là ý nghĩa bị 'cong' đi trong giao tiếp. Đây là đố chơi chữ thiên về nghĩa bóng."
+  },
+  {
+    "id": 80,
+    "question": "Cái gì có thể ăn nhưng không ai nhai?",
+    "options": ["Ăn ảnh", "Ăn cơm", "Ăn bánh", "Ăn trái cây"],
+    "correctIndex": 0,
+    "explanation": "Ăn ảnh là cụm từ chỉ người lên hình đẹp, hoàn toàn không liên quan đến ăn uống thật. Câu đố khai thác thành ngữ quen thuộc rất gọn."
+  },
+  {
+    "id": 81,
+    "question": "Thứ gì càng kéo càng gần nhưng không cầm được?",
+    "options": ["Khoảng cách", "Mối quan hệ", "Dây thừng", "Cánh cửa"],
+    "correctIndex": 1,
+    "explanation": "Người ta thường nói 'kéo gần khoảng cách' hay 'kéo gần mối quan hệ' theo nghĩa tinh thần. Ở đây thứ được kéo gần mà không cầm nắm được rõ nhất là mối quan hệ."
+  },
+  {
+    "id": 82,
+    "question": "Cái gì vừa có thể đậu trên cây vừa có thể đậu trong nồi?",
+    "options": ["Hạt đậu", "Con chim", "Máy bay giấy", "Lá rụng"],
+    "correctIndex": 0,
+    "explanation": "Hạt đậu có thể nằm trên cây khi còn quả, và cũng có thể trở thành món đậu nấu trong nồi. Câu đố chơi trên từ 'đậu' vừa là danh từ vừa gợi động từ 'đậu'."
+  },
+  {
+    "id": 83,
+    "question": "Cái gì càng ngồi càng cao?",
+    "options": ["Ghế xoay nâng", "Xe đạp", "Sàn nhà", "Cầu thang"],
+    "correctIndex": 0,
+    "explanation": "Ghế xoay văn phòng có thể nâng lên khi điều chỉnh trong lúc đang ngồi. Câu đố không hoàn toàn thuần ngôn ngữ mà pha mẹo tình huống."
+  },
+  {
+    "id": 84,
+    "question": "Cái gì vừa dài vừa ngắn tùy người nói?",
+    "options": ["Câu chuyện", "Cây thước", "Sợi dây", "Con đường"],
+    "correctIndex": 0,
+    "explanation": "Một câu chuyện có thể bị kể dài dòng hoặc tóm ngắn tùy người kể. Câu đố khai thác đặc tính của ngôn ngữ chứ không phải kích thước thật."
+  },
+  {
+    "id": 85,
+    "question": "Cái gì càng mượn càng nghèo?",
+    "options": ["Tiền", "Lời hứa", "Thời gian", "Niềm vui"],
+    "correctIndex": 0,
+    "explanation": "Mượn tiền quá nhiều khiến bạn mắc nợ và nghèo đi vì phải trả cả gốc lẫn lãi. Đây là câu đố đơn giản nhưng có tính đời sống."
+  },
+  {
+    "id": 86,
+    "question": "Con gì có vòi mà không uống nước?",
+    "options": ["Con voi đá", "Con voi thật", "Con muỗi", "Con tôm"],
+    "correctIndex": 0,
+    "explanation": "Tượng voi đá có vòi nhưng không phải sinh vật sống nên không uống nước. Câu đố đánh lừa bằng cách khiến người nghe nghĩ ngay đến voi thật."
+  },
+  {
+    "id": 87,
+    "question": "Cái gì có thể té mà không đau?",
+    "options": ["Giá cổ phiếu", "Người đi bộ", "Cái ly", "Chiếc ghế"],
+    "correctIndex": 0,
+    "explanation": "Giá cổ phiếu hay giá hàng hóa có thể 'té' theo nghĩa giảm mạnh. Vì đó không phải cơ thể sống nên không cảm thấy đau."
+  },
+  {
+    "id": 88,
+    "question": "Cái gì có thể đứng mà không có chân?",
+    "options": ["Quan điểm", "Cái bàn", "Con người", "Con cò"],
+    "correctIndex": 0,
+    "explanation": "Một quan điểm có thể 'đứng vững' về mặt lập luận mà không liên quan đến đôi chân thật. Đây là kiểu chơi chữ dựa vào nghĩa bóng của động từ."
+  },
+  {
+    "id": 89,
+    "question": "Cái gì có thể nổ mà không cần thuốc nổ?",
+    "options": ["Bắp rang", "Bong bóng", "Tràng cười", "Cả B và C"],
+    "correctIndex": 3,
+    "explanation": "Bong bóng có thể nổ khi bị chích hoặc quá căng, còn một tràng cười có thể 'nổ ra' theo nghĩa bóng. Hai cách dùng khác nhau đều đúng nên phương án gộp là hợp lý."
+  },
+  {
+    "id": 90,
+    "question": "Cái gì có thể chín mà không cần nấu?",
+    "options": ["Trái cây", "Kế hoạch", "Tình yêu", "Cả A và B"],
+    "correctIndex": 3,
+    "explanation": "Trái cây chín tự nhiên, còn kế hoạch cũng có thể được gọi là 'chín muồi' khi đã đủ điều kiện. Câu đố dựa trên cả nghĩa đen lẫn nghĩa bóng của từ 'chín'."
+  },
+  {
+    "id": 91,
+    "question": "Cái gì càng đọc càng mỏng?",
+    "options": ["Quyển sách điện tử", "Tờ báo giấy", "Tin nhắn", "Sổ tay"],
+    "correctIndex": 1,
+    "explanation": "Báo giấy đọc xong thường bị gấp, nhàu hoặc bị lật dần qua từng trang, tạo cảm giác mỏng đi ở phần còn lại chưa đọc. Đây là câu đố mẹo dựa vào trải nghiệm cầm báo."
+  },
+  {
+    "id": 92,
+    "question": "Thứ gì vừa có thể cấy vừa có thể gặt nhưng không mọc ngoài đồng?",
+    "options": ["Tóc", "Điểm số", "Tiếng cười", "Con chữ"],
+    "correctIndex": 0,
+    "explanation": "Người ta có thể 'cấy tóc' trong thẩm mỹ, rồi sau này tóc dài có thể cắt đi như một cách 'gặt' vui miệng. Câu đố chơi trên sự chuyển nghĩa từ nông nghiệp sang đời sống."
+  },
+  {
+    "id": 93,
+    "question": "Cái gì càng nhớ càng xa?",
+    "options": ["Kỷ niệm", "Người thân", "Con đường", "Chiếc xe"],
+    "correctIndex": 0,
+    "explanation": "Kỷ niệm càng nhớ lại càng thấy nó thuộc về quá khứ xa xôi hơn, nhất là theo cảm nhận tâm lý. Đây là câu đố thiên về cảm xúc và thời gian."
+  },
+  {
+    "id": 94,
+    "question": "Cái gì có thể mòn dù không dùng tay chà?",
+    "options": ["Thời gian", "Đá", "Lòng kiên nhẫn", "Cả B và C"],
+    "correctIndex": 3,
+    "explanation": "Đá có thể bị bào mòn bởi nước gió, còn lòng kiên nhẫn cũng có thể bị bào mòn bởi áp lực. Câu đố dùng cả hình ảnh tự nhiên lẫn nghĩa bóng."
+  },
+  {
+    "id": 95,
+    "question": "Cái gì ai cũng muốn giữ nhưng lại phải buông mỗi ngày?",
+    "options": ["Hơi thở", "Công việc", "Tiền lương", "Quyển sách"],
+    "correctIndex": 0,
+    "explanation": "Con người cần hơi thở để sống nhưng phải thở ra liên tục, tức là phải buông ra chứ không thể giữ mãi. Đây là câu đố mẹo rất gọn nhưng đúng logic sinh học."
+  },
+  {
+    "id": 96,
+    "question": "Cái gì càng giấu càng lộ?",
+    "options": ["Lỗi nói dối", "Tiền vàng", "Hình xăm", "Quyển vở"],
+    "correctIndex": 0,
+    "explanation": "Khi cố che giấu một lời nói dối hoặc sai sót, người ta thường sơ hở nhiều hơn khiến sự việc lộ rõ. Câu đố nghiêng về tâm lý và giao tiếp."
+  },
+  {
+    "id": 97,
+    "question": "Cái gì có thể xanh, chín, già mà không phải người?",
+    "options": ["Lúa", "Kế hoạch", "Rau quả", "Cả A và C"],
+    "correctIndex": 3,
+    "explanation": "Lúa có lúa xanh, lúa chín, lúa già; nhiều loại rau quả cũng có các giai đoạn tương tự. Câu đố dùng những tính từ thường áp cho người để nói về cây trái."
+  },
+  {
+    "id": 98,
+    "question": "Cái gì càng ăn càng lạnh?",
+    "options": ["Kem", "Đá bào", "Sữa chua đông lạnh", "Cả A, B, C"],
+    "correctIndex": 3,
+    "explanation": "Kem, đá bào và sữa chua đông lạnh đều là món càng ăn càng thấy lạnh miệng. Đây là câu đố nhẹ nhàng, đáp án đúng là phương án bao quát."
+  },
+  {
+    "id": 99,
+    "question": "Cái gì vừa có thể mọc trên đầu vừa có thể mọc trong bài toán?",
+    "options": ["Tóc", "Số mũ", "Râu", "Cả A và B"],
+    "correctIndex": 3,
+    "explanation": "Tóc mọc trên đầu theo nghĩa đen, còn 'số mũ' mọc lên phía trên trong biểu thức toán học theo nghĩa vị trí. Câu đố tạo vui nhờ nối cơ thể với ký hiệu học."
+  },
+  {
+    "id": 100,
+    "question": "Cái gì càng sửa càng sai nếu không biết cách?",
+    "options": ["Bài văn", "Máy tính", "Lời nói", "Cả A, B, C"],
+    "correctIndex": 3,
+    "explanation": "Bài văn sửa bừa có thể lủng củng hơn, máy tính sửa sai chỗ có thể hỏng nặng, lời nói chữa cháy không khéo lại càng tệ. Vì cả ba đều hợp nên đáp án tổng hợp là tốt nhất."
+  },
+  {
+    "id": 101,
+    "question": "Cái gì có thể nặng tai mà không rơi vào tai?",
+    "options": ["Lời chê", "Bông tai", "Tai nghe", "Tiếng trống"],
+    "correctIndex": 0,
+    "explanation": "Nghe lời chê hay lời khó nghe thường được gọi là 'nặng tai', tức là khó chịu chứ không phải vật nặng thật. Đây là câu đố khai thác thành ngữ tiếng Việt."
+  },
+  {
+    "id": 102,
+    "question": "Cái gì có thể cay mắt mà không phải ớt?",
+    "options": ["Hành", "Khói", "Nước mắt", "Cả A và B"],
+    "correctIndex": 3,
+    "explanation": "Cắt hành làm cay mắt, khói cũng gây cay mắt dù không liên quan đến vị cay của thức ăn. Câu đố chơi trên cảm giác thực tế hơn là vị giác."
+  },
+  {
+    "id": 103,
+    "question": "Cái gì có thể chảy mà không có máu?",
+    "options": ["Nước mắt", "Mồ hôi", "Dòng người", "Cả A, B, C"],
+    "correctIndex": 3,
+    "explanation": "Nước mắt chảy, mồ hôi chảy, dòng người cũng 'chảy' theo nghĩa hình tượng. Câu đố dùng một động từ cho nhiều hiện tượng khác nhau."
+  },
+  {
+    "id": 104,
+    "question": "Cái gì có thể già đi mà không sống?",
+    "options": ["Rượu", "Pho mát", "Cái nhà cũ", "Cả A và C"],
+    "correctIndex": 3,
+    "explanation": "Rượu có thể được gọi là rượu già, nhà cửa cũng có thể già cỗi theo thời gian. Câu đố tách khái niệm 'già' khỏi sinh vật sống."
+  },
+  {
+    "id": 105,
+    "question": "Cái gì có thể trẻ lại mà không sinh ra lần nữa?",
+    "options": ["Làn da sau chăm sóc", "Đội hình bóng đá", "Phong cách ăn mặc", "Cả A, B, C"],
+    "correctIndex": 3,
+    "explanation": "Da có thể trông trẻ hơn, đội hình có thể được trẻ hóa, phong cách cũng có thể làm ai đó trẻ ra. Đây là câu đố dựa vào nghĩa mở rộng của tính từ 'trẻ'."
+  },
+  {
+    "id": 106,
+    "question": "Cái gì có thể ngọt tai mà không ăn được?",
+    "options": ["Lời hát", "Mía", "Bánh kẹo", "Sữa"],
+    "correctIndex": 0,
+    "explanation": "Người ta gọi giọng hát, lời nói dễ nghe là 'ngọt tai'. Đó là cách chuyển cảm giác vị giác sang thính giác, rất đặc trưng trong tiếng Việt."
+  },
+  {
+    "id": 107,
+    "question": "Cái gì có thể chua ngoa mà không phải trái cây?",
+    "options": ["Lời nói", "Chanh", "Me", "Cóc"],
+    "correctIndex": 0,
+    "explanation": "Chua ngoa là tính cách hoặc lời nói cay nghiệt, không liên quan đến vị chua thật. Câu đố dùng thành ngữ để đánh lừa người nghe nghĩ về đồ ăn."
+  },
+  {
+    "id": 108,
+    "question": "Cái gì có thể nóng mặt mà không sốt?",
+    "options": ["Xấu hổ", "Bị nắng", "Đứng gần bếp", "Cả A và B"],
+    "correctIndex": 3,
+    "explanation": "Xấu hổ khiến mặt nóng bừng theo cảm xúc, còn đi nắng cũng làm mặt nóng theo thể lý. Vì cả hai tình huống đều đúng nên đáp án gộp phù hợp nhất."
+  },
+  {
+    "id": 109,
+    "question": "Cái gì có thể lạnh lùng mà không ở tủ lạnh?",
+    "options": ["Ánh mắt", "Cục đá", "Ly nước", "Kem"],
+    "correctIndex": 0,
+    "explanation": "Lạnh lùng là trạng thái cảm xúc hoặc thái độ, ví dụ ánh mắt lạnh lùng, hoàn toàn không liên quan đến nhiệt độ thật. Đây là câu đố dựa trên nghĩa bóng."
+  },
+  {
+    "id": 110,
+    "question": "Cái gì có thể nặng lời mà không cân được?",
+    "options": ["Cuộc cãi vã", "Cục sắt", "Quả tạ", "Va li"],
+    "correctIndex": 0,
+    "explanation": "Nặng lời nghĩa là nói những câu khó nghe, xúc phạm hoặc gay gắt. Nó không có khối lượng vật lý nên không thể đem cân."
+  },
+  {
+    "id": 111,
+    "question": "Cái gì có thể nhẹ dạ mà không phải cơ quan trong người?",
+    "options": ["Một người", "Trái tim", "Lá phổi", "Dạ dày"],
+    "correctIndex": 0,
+    "explanation": "Nhẹ dạ là tính cách dễ tin, thiếu đề phòng, chứ không phải dạ dày nhẹ cân. Câu đố đánh vào việc chữ 'dạ' dễ khiến người nghe liên tưởng đến cơ thể."
+  },
+  {
+    "id": 112,
+    "question": "Cái gì có thể cứng đầu mà chẳng có sọ não?",
+    "options": ["Ý kiến bảo thủ", "Tảng đá", "Búa sắt", "Khúc gỗ"],
+    "correctIndex": 0,
+    "explanation": "Cứng đầu là cách nói về tính cách bướng bỉnh, không chịu thay đổi. Nó không cần một cái đầu vật lý theo đúng nghĩa đen."
+  },
+  {
+    "id": 113,
+    "question": "Cái gì có thể mềm lòng mà không phải nội tạng?",
+    "options": ["Con người", "Cái bánh", "Miếng bông", "Sáp ong"],
+    "correctIndex": 0,
+    "explanation": "Mềm lòng là trạng thái cảm xúc khi dễ cảm thông, dễ xiêu lòng. Từ 'lòng' ở đây mang nghĩa tinh thần chứ không phải lòng trong cơ thể."
+  },
+  {
+    "id": 114,
+    "question": "Cái gì có thể sáng dạ mà không phát ra ánh sáng?",
+    "options": ["Đứa trẻ thông minh", "Bóng đèn", "Mặt trời", "Đèn pin"],
+    "correctIndex": 0,
+    "explanation": "Sáng dạ nghĩa là nhanh hiểu, tiếp thu tốt, hoàn toàn không phải sáng theo nghĩa phát quang. Đây là lối chơi chữ rất tự nhiên trong tiếng Việt."
+  },
+  {
+    "id": 115,
+    "question": "Cái gì có thể tối dạ mà không mất điện?",
+    "options": ["Người chậm hiểu", "Căn phòng", "Con hẻm", "Bầu trời đêm"],
+    "correctIndex": 0,
+    "explanation": "Tối dạ là cách nói chỉ sự chậm hiểu, tiếp thu kém, chứ không phải thiếu ánh sáng thật. Câu đố dùng cặp đối lập với 'sáng dạ'."
+  },
+  {
+    "id": 116,
+    "question": "Cái gì có thể dài dòng mà không phải con sông?",
+    "options": ["Bài phát biểu", "Dây điện", "Con đường", "Cây cầu"],
+    "correctIndex": 0,
+    "explanation": "Dài dòng là lối nói lan man, không súc tích. Từ 'dòng' ở đây không phải dòng nước, nên câu đố có tính chơi chữ khá rõ."
+  },
+  {
+    "id": 117,
+    "question": "Cái gì có thể ngắn gọn mà không bị cắt đi?",
+    "options": ["Câu trả lời", "Sợi dây", "Cây bút", "Mảnh vải"],
+    "correctIndex": 0,
+    "explanation": "Một câu trả lời có thể ngắn gọn nhờ diễn đạt súc tích, không phải vì bị cắt bỏ vật lý. Câu đố này đối xứng với kiểu 'dài dòng'."
+  },
+  {
+    "id": 118,
+    "question": "Cái gì có thể sâu sắc mà không có độ sâu đo được?",
+    "options": ["Ý kiến", "Giếng nước", "Biển cả", "Hồ bơi"],
+    "correctIndex": 0,
+    "explanation": "Ý kiến, suy nghĩ hay bài viết có thể được nhận xét là sâu sắc, tức là có chiều sâu về trí tuệ. Độ sâu này không đo bằng mét như giếng hay biển."
+  },
+  {
+    "id": 119,
+    "question": "Cái gì có thể rộng lượng mà không chiếm diện tích lớn?",
+    "options": ["Tấm lòng", "Căn nhà", "Sân bóng", "Nhà kho"],
+    "correctIndex": 0,
+    "explanation": "Rộng lượng là phẩm chất bao dung, hào phóng của con người. Từ 'rộng' ở đây không nói về kích thước vật lý mà là chiều rộng của lòng người."
+  },
+  {
+    "id": 120,
+    "question": "Cái gì có thể hẹp hòi mà không nằm trong con hẻm?",
+    "options": ["Tính cách ích kỷ", "Con đường", "Chiếc ngõ", "Cái hộp"],
+    "correctIndex": 0,
+    "explanation": "Hẹp hòi là cách nói về sự ích kỷ, nhỏ nhen trong suy nghĩ hay cách cư xử. Nó không liên quan đến không gian chật hẹp thật sự, nên đây là một câu đố chơi chữ điển hình."
+  },
+  {
+    "id": 121,
+    "question": "Cái gì có thể cao thượng mà không đứng trên lầu?",
+    "options": ["Phẩm chất tốt", "Tòa nhà", "Ngọn núi", "Cái thang"],
+    "correctIndex": 0,
+    "explanation": "Cao thượng là cách nói về nhân cách đẹp, biết sống vì người khác và cư xử đáng kính. Chữ 'cao' ở đây không chỉ độ cao vật lý mà chỉ giá trị tinh thần, nên đáp án là phẩm chất tốt."
+  },
+  {
+    "id": 122,
+    "question": "Cái gì có thể thấp hèn mà không nằm dưới đất?",
+    "options": ["Hành vi xấu", "Cái hố", "Bậc thềm", "Tầng hầm"],
+    "correctIndex": 0,
+    "explanation": "Thấp hèn là cách đánh giá đạo đức hoặc cách cư xử, không phải vị trí thấp trong không gian. Câu đố chơi chữ bằng cách dùng từ chỉ độ cao để nói về phẩm giá con người."
+  },
+  {
+    "id": 123,
+    "question": "Cái gì có thể trong sáng mà không phải thủy tinh?",
+    "options": ["Tâm hồn", "Cốc nước", "Mặt kính", "Giọt sương"],
+    "correctIndex": 0,
+    "explanation": "Trong sáng là tính từ thường dùng để chỉ tâm hồn, suy nghĩ hoặc tình cảm thuần khiết, không vụ lợi. Nó không liên quan đến độ trong suốt vật lý như thủy tinh hay nước."
+  },
+  {
+    "id": 124,
+    "question": "Cái gì có thể đục nước béo cò mà không cần cái ao?",
+    "options": ["Mưu mẹo lợi dụng rối ren", "Con cò", "Hồ nước", "Cần câu"],
+    "correctIndex": 0,
+    "explanation": "‘Đục nước béo cò’ là thành ngữ chỉ việc lợi dụng lúc tình hình rối ren để trục lợi cho mình. Câu đố không hỏi về nước hay cò thật mà hỏi về nghĩa bóng của cả thành ngữ."
+  },
+  {
+    "id": 125,
+    "question": "Cái gì có thể chín chắn mà không phải trái cây?",
+    "options": ["Con người trưởng thành", "Quả xoài", "Quả chuối", "Bắp ngô"],
+    "correctIndex": 0,
+    "explanation": "Chín chắn là cách nói về sự trưởng thành trong suy nghĩ, lời nói và hành động. Nó dùng cùng chữ 'chín' như trái cây nhưng mang nghĩa hoàn toàn khác."
+  },
+  {
+    "id": 126,
+    "question": "Cái gì có thể non nớt mà không mọc ngoài vườn?",
+    "options": ["Suy nghĩ thiếu chín chắn", "Lá non", "Măng tre", "Rau cải"],
+    "correctIndex": 0,
+    "explanation": "Non nớt là từ chỉ sự thiếu kinh nghiệm, thiếu trưởng thành, thường dùng cho suy nghĩ hoặc ứng xử. Câu đố cố tình khiến người nghe liên tưởng đến cây trái còn non."
+  },
+  {
+    "id": 127,
+    "question": "Cái gì có thể vững vàng mà không làm bằng bê tông?",
+    "options": ["Bản lĩnh", "Cây cầu", "Bức tường", "Cột điện"],
+    "correctIndex": 0,
+    "explanation": "Vững vàng có thể dùng để chỉ tinh thần kiên định, không dao động trước khó khăn. Đây là nghĩa bóng, không nói đến độ chắc chắn của vật liệu xây dựng."
+  },
+  {
+    "id": 128,
+    "question": "Cái gì có thể lung lay mà không có bản lề?",
+    "options": ["Niềm tin", "Cánh cửa", "Cái quạt", "Ghế gỗ"],
+    "correctIndex": 0,
+    "explanation": "Niềm tin có thể bị lung lay khi gặp mâu thuẫn, thất vọng hoặc thông tin trái chiều. Sự 'lung lay' này thuộc về tâm lý chứ không phải rung lắc cơ học."
+  },
+  {
+    "id": 129,
+    "question": "Cái gì có thể rạn nứt mà không phải tường?",
+    "options": ["Tình cảm", "Mặt đất", "Ly sứ", "Mặt kính"],
+    "correctIndex": 0,
+    "explanation": "Một mối quan hệ có thể rạn nứt khi có mâu thuẫn, hiểu lầm hoặc mất lòng tin. Câu đố dùng từ vốn thường tả vết nứt vật lý để nói về cảm xúc."
+  },
+  {
+    "id": 130,
+    "question": "Cái gì có thể tan vỡ mà không cần rơi xuống sàn?",
+    "options": ["Trái tim", "Cái ly", "Cái chén", "Chiếc gương"],
+    "correctIndex": 0,
+    "explanation": "‘Trái tim tan vỡ’ là cách nói ẩn dụ cho nỗi đau tình cảm hoặc thất vọng sâu sắc. Nó không phải sự vỡ thật của một vật thể nên không cần rơi xuống đất."
+  },
+  {
+    "id": 131,
+    "question": "Cái gì có thể nở mà không phải hoa?",
+    "options": ["Nụ cười", "Quả bóng", "Lốp xe", "Áo phao"],
+    "correctIndex": 0,
+    "explanation": "Người ta thường nói ‘nở nụ cười’, nghĩa là gương mặt rạng rỡ lên. Đây là cách chuyển động từ quá trình nở của hoa sang biểu cảm của con người."
+  },
+  {
+    "id": 132,
+    "question": "Cái gì có thể úa mà không cần lá?",
+    "options": ["Tình yêu nhạt dần", "Vườn rau", "Cành hoa", "Lá chuối"],
+    "correctIndex": 0,
+    "explanation": "‘Úa’ trong nghĩa bóng có thể chỉ tình cảm phai nhạt, mất sức sống, không còn tươi mới như trước. Câu đố dùng từ vốn thuộc về cây cối để nói về cảm xúc."
+  },
+  {
+    "id": 133,
+    "question": "Cái gì có thể đơm hoa kết trái mà không phải cây?",
+    "options": ["Tình yêu và nỗ lực", "Giàn bầu", "Cây mít", "Cây xoài"],
+    "correctIndex": 0,
+    "explanation": "Thành ngữ ‘đơm hoa kết trái’ thường được dùng để nói về công sức, mối quan hệ hoặc một quá trình lâu dài cuối cùng đem lại kết quả tốt đẹp. Không nhất thiết phải là cây thật mới 'ra trái'."
+  },
+  {
+    "id": 134,
+    "question": "Cái gì có thể bén rễ mà không mọc dưới đất?",
+    "options": ["Thói quen", "Cây đậu", "Cỏ dại", "Cây mía"],
+    "correctIndex": 0,
+    "explanation": "Một thói quen hoặc một suy nghĩ có thể ‘bén rễ’ trong con người, nghĩa là ăn sâu, khó thay đổi. Đây là lối nói ẩn dụ rất phổ biến."
+  },
+  {
+    "id": 135,
+    "question": "Cái gì có thể đâm chồi mà không phải hạt giống?",
+    "options": ["Ý tưởng mới", "Hạt đậu", "Củ khoai", "Mầm tre"],
+    "correctIndex": 0,
+    "explanation": "Ý tưởng mới có thể được miêu tả là ‘đâm chồi’, tức là bắt đầu hình thành và phát triển. Câu đố dùng hình ảnh tăng trưởng của cây để diễn tả tư duy."
+  },
+  {
+    "id": 136,
+    "question": "Cái gì có thể chảy máu mà không phải vết thương thật?",
+    "options": ["Ví tiền", "Đầu gối", "Ngón tay", "Cánh tay"],
+    "correctIndex": 0,
+    "explanation": "Người ta hay nói ‘chảy máu ví’ khi phải chi một khoản tiền lớn, nhất là lúc mua sắm hoặc đóng phí. Đây là nghĩa bóng rất quen, không liên quan đến máu thật."
+  },
+  {
+    "id": 137,
+    "question": "Cái gì có thể đau đầu mà không có hộp sọ?",
+    "options": ["Bài toán khó", "Cục đá", "Chiếc bàn", "Bức tường"],
+    "correctIndex": 0,
+    "explanation": "Một vấn đề phức tạp có thể khiến người ta than là ‘đau đầu’. Bản thân bài toán không có đầu, nhưng nó gây ra cảm giác đau đầu cho người giải."
+  },
+  {
+    "id": 138,
+    "question": "Cái gì có thể mù mờ mà không có mắt?",
+    "options": ["Thông tin không rõ ràng", "Cái kính", "Đèn ngủ", "Màn sương"],
+    "correctIndex": 0,
+    "explanation": "Mù mờ là trạng thái thiếu rõ ràng, khó hiểu hoặc chưa minh bạch. Câu đố chơi chữ bằng cách khiến ta nghĩ đến sự mù lòa của đôi mắt."
+  },
+  {
+    "id": 139,
+    "question": "Cái gì có thể sáng tỏ mà không phát sáng?",
+    "options": ["Sự thật", "Mặt trời", "Đèn LED", "Ngọn nến"],
+    "correctIndex": 0,
+    "explanation": "Sự thật hay một vấn đề có thể trở nên sáng tỏ khi được giải thích rõ ràng. Chữ 'sáng' ở đây mang nghĩa hiểu biết, minh bạch, không phải ánh sáng vật lý."
+  },
+  {
+    "id": 140,
+    "question": "Cái gì có thể cạn lời mà không phải cái ao?",
+    "options": ["Người quá bất ngờ", "Cái giếng", "Con mương", "Mặt hồ"],
+    "correctIndex": 0,
+    "explanation": "‘Cạn lời’ là cách nói vui khi ai đó quá bất ngờ, bất lực hoặc không biết nói gì thêm. Nó không phải trạng thái khô cạn của nước thật."
+  },
+  {
+    "id": 141,
+    "question": "Cái gì có thể đầy ắp mà không cần đổ vào?",
+    "options": ["Ký ức", "Xô nước", "Bình xăng", "Cái chậu"],
+    "correctIndex": 0,
+    "explanation": "Ký ức hoặc lòng biết ơn có thể được miêu tả là ‘đầy ắp’, tức là rất nhiều, rất phong phú. Câu đố dùng hình ảnh vật chứa để mô tả trạng thái tinh thần."
+  },
+  {
+    "id": 142,
+    "question": "Cái gì có thể rỗng tuếch mà không bị khoét?",
+    "options": ["Lời nói sáo rỗng", "Khúc tre", "Quả bầu khô", "Ống nhựa"],
+    "correctIndex": 0,
+    "explanation": "Một lời nói có thể bị chê là rỗng tuếch khi thiếu nội dung, thiếu giá trị thực chất. Từ 'rỗng' ở đây không chỉ khoảng trống vật lý mà chỉ sự trống rỗng về ý nghĩa."
+  },
+  {
+    "id": 143,
+    "question": "Cái gì có thể ngọt ngào mà không phải món tráng miệng?",
+    "options": ["Lời nói dễ thương", "Bánh flan", "Kẹo", "Mật ong"],
+    "correctIndex": 0,
+    "explanation": "Ngọt ngào thường được dùng để mô tả giọng nói, cách cư xử hoặc tình cảm dịu dàng. Nó không liên quan trực tiếp đến vị ngọt của thức ăn."
+  },
+  {
+    "id": 144,
+    "question": "Cái gì có thể đắng lòng mà không cần nếm?",
+    "options": ["Kỷ niệm buồn", "Cà phê đen", "Mướp đắng", "Thuốc bắc"],
+    "correctIndex": 0,
+    "explanation": "Đắng lòng là cảm giác đau xót, chua chát trong tâm trạng khi chứng kiến hay trải qua chuyện buồn. Đây là kiểu dùng vị giác để nói về cảm xúc."
+  },
+  {
+    "id": 145,
+    "question": "Cái gì có thể chát mà không bỏ trong miệng?",
+    "options": ["Lời nhận xét", "Quả hồng xanh", "Lá ổi", "Nước trà đặc"],
+    "correctIndex": 0,
+    "explanation": "Người ta có thể nói một câu ‘chát’ để chỉ lời nói sắc, khó nghe hoặc có phần đanh đá. Đây là nghĩa mở rộng từ cảm giác vị chát sang giao tiếp."
+  },
+  {
+    "id": 146,
+    "question": "Cái gì có thể cay nghiệt mà không phải gia vị?",
+    "options": ["Lời nói ác ý", "Ớt hiểm", "Tiêu sọ", "Sa tế"],
+    "correctIndex": 0,
+    "explanation": "Cay nghiệt là tính từ chỉ lời nói hoặc thái độ khắt khe, độc địa. Chữ 'cay' ở đây không phải vị cay mà là cảm giác khó chịu về tinh thần."
+  },
+  {
+    "id": 147,
+    "question": "Cái gì có thể mặn mà mà không lấy từ biển?",
+    "options": ["Tình cảm đậm đà", "Muối", "Nước mắm", "Cá khô"],
+    "correctIndex": 0,
+    "explanation": "Mặn mà thường dùng để chỉ tình cảm sâu đậm, gắn bó hoặc nét duyên có sức hút. Nó không phải độ mặn vị giác từ muối hay nước biển."
+  },
+  {
+    "id": 148,
+    "question": "Cái gì có thể nhạt nhẽo mà không cần pha loãng?",
+    "options": ["Câu chuyện thiếu hấp dẫn", "Ly nước cam", "Bát canh", "Cốc trà"],
+    "correctIndex": 0,
+    "explanation": "Một câu chuyện, bài nói hoặc con người có thể bị nhận xét là nhạt nhẽo khi không tạo được hứng thú. Đây là cách mượn cảm giác vị giác để đánh giá nội dung."
+  },
+  {
+    "id": 149,
+    "question": "Cái gì có thể bốc hơi mà không cần đun nóng?",
+    "options": ["Tiền trong ví", "Nước trong nồi", "Cồn y tế", "Tinh dầu"],
+    "correctIndex": 0,
+    "explanation": "Người ta hay than tiền ‘bốc hơi’ rất nhanh sau mua sắm hoặc chi tiêu liên tục. Đây là nghĩa bóng chỉ sự biến mất nhanh chóng."
+  },
+  {
+    "id": 150,
+    "question": "Cái gì có thể đóng băng mà không bỏ vào tủ đá?",
+    "options": ["Không khí trong cuộc trò chuyện", "Nước lọc", "Viên đá", "Kem lạnh"],
+    "correctIndex": 0,
+    "explanation": "Một cuộc trò chuyện có thể ‘đóng băng’ khi bỗng nhiên trở nên im lặng, ngượng ngùng hoặc căng thẳng. Câu đố chuyển trạng thái vật lý sang bầu không khí giao tiếp."
+  },
+  {
+    "id": 151,
+    "question": "Cái gì có thể nóng lên mà không bật bếp?",
+    "options": ["Cuộc tranh luận", "Nồi canh", "Chảo dầu", "Ấm nước"],
+    "correctIndex": 0,
+    "explanation": "Một cuộc tranh luận có thể ‘nóng lên’ khi càng lúc càng gay gắt. Chữ 'nóng' ở đây diễn tả mức độ căng thẳng chứ không phải nhiệt độ thật."
+  },
+  {
+    "id": 152,
+    "question": "Cái gì có thể nguội lạnh mà không cần quạt?",
+    "options": ["Tình cảm", "Ly trà", "Bát súp", "Nồi cháo"],
+    "correctIndex": 0,
+    "explanation": "Tình cảm hoặc sự quan tâm có thể nguội lạnh khi không còn gắn bó như trước. Câu đố dùng trạng thái nhiệt độ để nói về cảm xúc."
+  },
+  {
+    "id": 153,
+    "question": "Cái gì có thể bùng nổ mà không cần châm lửa?",
+    "options": ["Cảm xúc bị dồn nén", "Pháo hoa", "Bình gas", "Củi khô"],
+    "correctIndex": 0,
+    "explanation": "Cảm xúc, sự giận dữ hoặc một xu hướng có thể bùng nổ khi đạt đến điểm giới hạn. Đó là nghĩa bóng hoàn toàn không cần lửa thật."
+  },
+  {
+    "id": 154,
+    "question": "Cái gì có thể xì hơi mà không phải quả bóng?",
+    "options": ["Tin đồn bị lộ", "Lốp xe", "Phao bơi", "Nệm hơi"],
+    "correctIndex": 0,
+    "explanation": "Khi một kế hoạch hoặc bí mật bị ‘xì hơi’, người ta muốn nói nó mất dần sức mạnh, sự kín đáo hoặc khí thế. Câu đố dùng hình ảnh vật bơm hơi để nói về tình huống xã hội."
+  },
+  {
+    "id": 155,
+    "question": "Cái gì có thể châm ngòi mà không phải que diêm?",
+    "options": ["Một câu nói kích động", "Bật lửa", "Pháo nổ", "Bếp gas"],
+    "correctIndex": 0,
+    "explanation": "Một câu nói, hành động hoặc sự kiện có thể châm ngòi cho xung đột hay phản ứng mạnh mẽ. Đây là cách nói hình tượng rất phổ biến."
+  },
+  {
+    "id": 156,
+    "question": "Cái gì có thể nổ tung mà không có xác pháo?",
+    "options": ["Cơn giận", "Pháo hoa", "Bình nén khí", "Lốp xe"],
+    "correctIndex": 0,
+    "explanation": "Cơn giận có thể ‘nổ tung’ khi con người không còn kiểm soát được cảm xúc. Đây là cách nói cường điệu để nhấn mạnh mức độ bộc phát."
+  },
+  {
+    "id": 157,
+    "question": "Cái gì có thể gãy mà không cần bẻ?",
+    "options": ["Kế hoạch", "Cành cây", "Thước nhựa", "Chiếc đũa"],
+    "correctIndex": 0,
+    "explanation": "Kế hoạch có thể ‘gãy’ giữa chừng khi bị đổ vỡ hoặc không thể tiếp tục. Từ 'gãy' ở đây mang nghĩa dang dở, thất bại."
+  },
+  {
+    "id": 158,
+    "question": "Cái gì có thể đổ mà không cần xô ngã?",
+    "options": ["Niềm tin", "Cây cột", "Chai nước", "Ghế nhựa"],
+    "correctIndex": 0,
+    "explanation": "Niềm tin có thể sụp đổ khi bị phản bội hoặc phát hiện sự thật trái ngược. Sự 'đổ' này thuộc về tinh thần, không phải vật thể ngã xuống."
+  },
+  {
+    "id": 159,
+    "question": "Cái gì có thể đứng hình mà không phải bức ảnh?",
+    "options": ["Người quá bất ngờ", "Khung tranh", "Máy ảnh", "Album ảnh"],
+    "correctIndex": 0,
+    "explanation": "‘Đứng hình’ là cách nói vui khi ai đó sững lại vì bất ngờ, hoảng hoặc không biết phản ứng sao. Nó không phải hình ảnh đứng yên theo nghĩa kỹ thuật."
+  },
+  {
+    "id": 160,
+    "question": "Cái gì có thể chạm đáy mà không lặn dưới nước?",
+    "options": ["Tâm trạng", "Tàu ngầm", "Cái xô", "Cái hồ"],
+    "correctIndex": 0,
+    "explanation": "Tâm trạng hoặc phong độ có thể ‘chạm đáy’ khi xuống mức thấp nhất. Đây là hình ảnh ẩn dụ rất thường gặp trong đời sống."
+  },
+  {
+    "id": 161,
+    "question": "Cái gì có thể leo thang mà không có chân?",
+    "options": ["Giá cả", "Con mèo", "Người thợ", "Cái ghế"],
+    "correctIndex": 0,
+    "explanation": "Giá cả, căng thẳng hoặc mâu thuẫn có thể ‘leo thang’, nghĩa là tăng dần lên mức cao hơn. Không có hành động leo thật nào diễn ra ở đây."
+  },
+  {
+    "id": 162,
+    "question": "Cái gì có thể tụt dốc mà không ngồi trên xe?",
+    "options": ["Phong độ", "Xe đạp", "Xe tải", "Tấm ván"],
+    "correctIndex": 0,
+    "explanation": "Phong độ, kết quả học tập hoặc tài chính có thể tụt dốc khi ngày càng xấu đi. Câu đố dùng hình ảnh đi xuống dốc để chỉ sự sa sút."
+  },
+  {
+    "id": 163,
+    "question": "Cái gì có thể rẽ hướng mà không cần vô lăng?",
+    "options": ["Cuộc đời", "Ô tô", "Xe máy", "Xe đạp"],
+    "correctIndex": 0,
+    "explanation": "Một cuộc đời, sự nghiệp hay lựa chọn có thể rẽ hướng khi thay đổi mục tiêu hoặc con đường đang theo đuổi. Đây là phép ẩn dụ rất quen thuộc."
+  },
+  {
+    "id": 164,
+    "question": "Cái gì có thể lạc đường mà không bước ra phố?",
+    "options": ["Suy nghĩ", "Con chó", "Người đi bộ", "Xe buýt"],
+    "correctIndex": 0,
+    "explanation": "Suy nghĩ có thể lạc hướng, lan man hoặc mất trọng tâm. Câu đố cố ý dùng từ 'lạc đường' để gợi hình ảnh đi lại thật."
+  },
+  {
+    "id": 165,
+    "question": "Cái gì có thể quay đầu mà không có cổ?",
+    "options": ["Tình thế", "Con người", "Con ngựa", "Chiếc xe"],
+    "correctIndex": 0,
+    "explanation": "Tình thế hoặc quyết định có thể quay đầu khi thay đổi hẳn hướng đi. Đây là cách dùng ẩn dụ của hành động quay đầu trong thực tế."
+  },
+  {
+    "id": 166,
+    "question": "Cái gì có thể dậm chân tại chỗ mà không có bàn chân?",
+    "options": ["Dự án trì trệ", "Con vịt", "Đứa trẻ", "Người chạy bộ"],
+    "correctIndex": 0,
+    "explanation": "Một dự án hoặc kế hoạch dậm chân tại chỗ nghĩa là không có tiến triển nào đáng kể. Không có chuyển động thật, chỉ có sự trì trệ về kết quả."
+  },
+  {
+    "id": 167,
+    "question": "Cái gì có thể bật đèn xanh mà không dùng điện?",
+    "options": ["Sự đồng ý", "Đèn giao thông", "Đèn ngủ", "Đèn pin"],
+    "correctIndex": 0,
+    "explanation": "‘Bật đèn xanh’ là thành ngữ chỉ việc cho phép, tạo điều kiện hoặc tỏ ý đồng tình. Đây là nghĩa bóng dựa trên tín hiệu giao thông."
+  },
+  {
+    "id": 168,
+    "question": "Cái gì có thể đèn đỏ mà không treo ngoài ngã tư?",
+    "options": ["Tín hiệu bị từ chối", "Xe buýt", "Cửa hàng điện", "Biển quảng cáo"],
+    "correctIndex": 0,
+    "explanation": "Trong giao tiếp hoặc công việc, ‘đèn đỏ’ có thể hiểu là báo hiệu phải dừng, không được tiếp tục hoặc bị cảnh báo. Không cần có cột đèn giao thông thật."
+  },
+  {
+    "id": 169,
+    "question": "Cái gì có thể mở đường mà không mang cuốc xẻng?",
+    "options": ["Người tiên phong", "Xe ủi", "Máy xúc", "Công nhân cầu đường"],
+    "correctIndex": 0,
+    "explanation": "Một người hoặc một ý tưởng có thể mở đường cho người khác đi sau, tức là tạo tiền lệ hay cơ hội mới. Đây là nghĩa bóng của hành động khai đường."
+  },
+  {
+    "id": 170,
+    "question": "Cái gì có thể bế tắc mà không có con đường thật?",
+    "options": ["Tình huống khó giải", "Ngõ cụt", "Cầu sập", "Đường kẹt xe"],
+    "correctIndex": 0,
+    "explanation": "Bế tắc là trạng thái không tìm ra lối ra, không giải quyết được vấn đề. Từ này vốn gợi hình ảnh con đường bị chặn nhưng thường dùng cho hoàn cảnh tinh thần hoặc công việc."
+  },
+  {
+    "id": 171,
+    "question": "Cái gì có thể lật kèo mà không cần cái bàn?",
+    "options": ["Tình thế thay đổi bất ngờ", "Chiếc ghế", "Mâm cơm", "Bàn học"],
+    "correctIndex": 0,
+    "explanation": "‘Lật kèo’ là cách nói vui khi tình thế đảo chiều hoặc một bên thay đổi cam kết, làm kết quả khác hẳn dự đoán. Nó không liên quan đến việc lật một đồ vật thật."
+  },
+  {
+    "id": 172,
+    "question": "Cái gì có thể xoay chuyển tình thế mà không cần trục quay?",
+    "options": ["Một quyết định đúng lúc", "Quạt máy", "Cối xay", "Bánh xe"],
+    "correctIndex": 0,
+    "explanation": "Một quyết định, hành động hoặc cơ hội có thể xoay chuyển tình thế, nghĩa là làm đổi chiều kết quả theo hướng khác. Đây là lối nói ẩn dụ quen thuộc."
+  },
+  {
+    "id": 173,
+    "question": "Cái gì có thể nắm bắt mà không cầm trên tay?",
+    "options": ["Cơ hội", "Quả bóng", "Chiếc cốc", "Cái bút"],
+    "correctIndex": 0,
+    "explanation": "Cơ hội là thứ có thể nắm bắt theo nghĩa tận dụng đúng lúc, chứ không phải cầm nắm vật lý. Câu đố chơi trên cụm từ rất quen trong tiếng Việt."
+  },
+  {
+    "id": 174,
+    "question": "Cái gì có thể tuột mất mà không rơi xuống đất?",
+    "options": ["Cơ hội", "Chiếc khăn", "Quyển sách", "Cây bút"],
+    "correctIndex": 0,
+    "explanation": "Cơ hội có thể tuột mất nếu không hành động kịp thời. Từ 'tuột' thường gắn với đồ vật trượt khỏi tay, nhưng ở đây là nghĩa bóng."
+  },
+  {
+    "id": 175,
+    "question": "Cái gì có thể chắp cánh mà không phải chim?",
+    "options": ["Ước mơ", "Máy bay", "Con diều", "Con bướm"],
+    "correctIndex": 0,
+    "explanation": "Người ta thường nói giáo dục, niềm tin hoặc tình yêu có thể chắp cánh cho ước mơ bay xa. Đây là hình ảnh ẩn dụ rất đẹp và phổ biến."
+  },
+  {
+    "id": 176,
+    "question": "Cái gì có thể cất cánh mà không ra sân bay?",
+    "options": ["Sự nghiệp", "Máy bay giấy", "Phi cơ", "Trực thăng"],
+    "correctIndex": 0,
+    "explanation": "Sự nghiệp hoặc ý tưởng có thể cất cánh khi bắt đầu phát triển mạnh, đạt thành công rõ rệt. Câu đố mượn hình ảnh máy bay để nói về bước chuyển tích cực."
+  },
+  {
+    "id": 177,
+    "question": "Cái gì có thể hạ cánh mà không có đường băng?",
+    "options": ["Cảm xúc sau khi phấn khích", "Máy bay", "Dù lượn", "Chim én"],
+    "correctIndex": 0,
+    "explanation": "Sau khi hồi hộp, vui quá hoặc suy nghĩ bay bổng, người ta có thể nói mình đã ‘hạ cánh’, tức là trở lại trạng thái bình tĩnh và thực tế hơn. Đây là nghĩa bóng hài hước."
+  },
+  {
+    "id": 178,
+    "question": "Cái gì có thể bay màu mà không dùng sơn?",
+    "options": ["Tiền lương", "Áo phông", "Bức tường", "Tờ giấy màu"],
+    "correctIndex": 0,
+    "explanation": "‘Bay màu’ là cách nói vui chỉ việc mất sạch, biến mất nhanh, nhất là tiền bạc hoặc hi vọng. Nó không phải chuyện màu sắc thật sự bị phai."
+  },
+  {
+    "id": 179,
+    "question": "Cái gì có thể lên màu mà không phải thuốc nhuộm?",
+    "options": ["Món đồ khi lên ảnh đẹp", "Tóc", "Mảnh vải", "Tường sơn"],
+    "correctIndex": 0,
+    "explanation": "Trong cách nói hiện nay, ‘lên màu’ có thể chỉ việc một món đồ, bức ảnh hay cách phối đồ trông đẹp hơn, nổi bật hơn. Đây là cách dùng mở rộng khá đời thường."
+  },
+  {
+    "id": 180,
+    "question": "Cái gì có thể bắt sóng mà không cần ăng-ten?",
+    "options": ["Người nhanh hiểu ý", "Tivi", "Radio", "Bộ phát Wi-Fi"],
+    "correctIndex": 0,
+    "explanation": "‘Bắt sóng’ trong giao tiếp nghĩa là hiểu nhanh tín hiệu, ẩn ý hoặc tâm trạng của người khác. Câu đố dùng ngôn ngữ công nghệ để diễn tả khả năng tinh ý."
+  },
+  {
+    "id": 181,
+    "question": "Cái gì có thể mất sóng mà không hết pin?",
+    "options": ["Sự ăn ý trong cuộc trò chuyện", "Điện thoại", "Máy bộ đàm", "Tivi"],
+    "correctIndex": 0,
+    "explanation": "Khi hai người không còn hiểu ý nhau hoặc cuộc trò chuyện bị ngắt quãng, ta hay nói là ‘mất sóng’. Đây là nghĩa bóng dựa trên hiện tượng thiết bị mất tín hiệu."
+  },
+  {
+    "id": 182,
+    "question": "Cái gì có thể quá tải mà không chở hàng?",
+    "options": ["Bộ não", "Xe tải", "Con tàu", "Thang máy"],
+    "correctIndex": 0,
+    "explanation": "Bộ não hoặc lịch làm việc có thể quá tải khi phải xử lý quá nhiều thứ cùng lúc. Câu đố chuyển khái niệm tải trọng vật lý sang áp lực tinh thần."
+  },
+  {
+    "id": 183,
+    "question": "Cái gì có thể treo mà không cần móc?",
+    "options": ["Máy tính bị đứng", "Áo khoác", "Bức tranh", "Chiếc nón"],
+    "correctIndex": 0,
+    "explanation": "Trong ngôn ngữ công nghệ, máy tính hay điện thoại ‘treo’ nghĩa là bị đứng, không phản hồi. Nó không phải hành động treo đồ vật lên tường."
+  },
+  {
+    "id": 184,
+    "question": "Cái gì có thể lag mà không cần mạng yếu?",
+    "options": ["Phản ứng chậm của con người", "Máy tính cũ", "Game online", "Điện thoại đời thấp"],
+    "correctIndex": 0,
+    "explanation": "Người ta hay đùa ai đó phản ứng chậm là ‘lag’, mượn từ ngôn ngữ game và công nghệ. Đây là kiểu chơi chữ hiện đại khá phổ biến."
+  },
+  {
+    "id": 185,
+    "question": "Cái gì có thể reset mà không bấm nút?",
+    "options": ["Tâm trạng sau khi nghỉ ngơi", "Điện thoại", "Máy tính", "Modem mạng"],
+    "correctIndex": 0,
+    "explanation": "Nghỉ ngơi, đi chơi hoặc ngủ một giấc có thể giúp con người như được ‘reset’ lại tinh thần. Đây là cách nói ẩn dụ từ công nghệ sang đời sống."
+  },
+  {
+    "id": 186,
+    "question": "Cái gì có thể sập nguồn mà không dùng điện?",
+    "options": ["Năng lượng của một người", "Máy tính", "Quạt máy", "Đèn bàn"],
+    "correctIndex": 0,
+    "explanation": "Khi quá mệt, con người có thể bị nói vui là ‘sập nguồn’, nghĩa là hết sạch năng lượng, chỉ muốn nghỉ. Câu đố mượn cách nói của thiết bị điện tử."
+  },
+  {
+    "id": 187,
+    "question": "Cái gì có thể nạp năng lượng mà không cắm sạc?",
+    "options": ["Cơ thể sau khi ngủ", "Điện thoại", "Máy tính bảng", "Tai nghe Bluetooth"],
+    "correctIndex": 0,
+    "explanation": "Ngủ, ăn uống hoặc thư giãn giúp cơ thể nạp lại năng lượng. Đây là lối nói hiện đại, dùng ngôn ngữ của pin và thiết bị cho con người."
+  },
+  {
+    "id": 188,
+    "question": "Cái gì có thể kết nối mà không cần dây cáp?",
+    "options": ["Tình bạn", "Máy in", "Màn hình", "Ổ cứng"],
+    "correctIndex": 0,
+    "explanation": "Con người có thể kết nối với nhau bằng cảm xúc, sự đồng cảm và giao tiếp, không cần bất kỳ loại cáp nào. Câu đố dùng thuật ngữ công nghệ để nói về quan hệ xã hội."
+  },
+  {
+    "id": 189,
+    "question": "Cái gì có thể ngắt kết nối mà không rút phích?",
+    "options": ["Sự lạnh nhạt giữa hai người", "Ổ điện", "Máy tính", "Modem"],
+    "correctIndex": 0,
+    "explanation": "Khi hai người không còn giao tiếp hay đồng cảm với nhau, ta có thể nói họ bị ngắt kết nối. Đây là nghĩa bóng rất dễ hiểu trong thời hiện đại."
+  },
+  {
+    "id": 190,
+    "question": "Cái gì có thể phát tín hiệu cầu cứu mà không hú còi?",
+    "options": ["Ánh mắt", "Xe cứu thương", "Tàu biển", "Cảnh báo cháy"],
+    "correctIndex": 0,
+    "explanation": "Ánh mắt, nét mặt hoặc cử chỉ của một người có thể phát ra tín hiệu cầu cứu rất rõ dù không nói thành lời. Câu đố chơi trên khái niệm 'tín hiệu'."
+  },
+  {
+    "id": 191,
+    "question": "Cái gì có thể chạm mốc mà không dùng thước?",
+    "options": ["Thành tích", "Cây cột", "Bức tường", "Dây ruy băng"],
+    "correctIndex": 0,
+    "explanation": "Thành tích, doanh số hay tuổi đời có thể chạm mốc khi đạt đến một ngưỡng đáng chú ý. Đây không phải hành động chạm vào một cái mốc vật lý."
+  },
+  {
+    "id": 192,
+    "question": "Cái gì có thể vượt ngưỡng mà không nhảy qua cửa?",
+    "options": ["Chỉ số hoặc cảm xúc", "Con mèo", "Đứa trẻ", "Người chạy xa"],
+    "correctIndex": 0,
+    "explanation": "Một chỉ số, sức chịu đựng hay cơn giận có thể vượt ngưỡng khi đi quá giới hạn cho phép. Câu đố dùng từ ‘ngưỡng’ theo nghĩa giới hạn, không phải bậc cửa."
+  },
+  {
+    "id": 193,
+    "question": "Cái gì có thể chạm ngõ mà không cần sang nhà gái?",
+    "options": ["Thành công mới bắt đầu đến gần", "Đoàn hỏi cưới", "Ông mai", "Khách đến chơi"],
+    "correctIndex": 0,
+    "explanation": "‘Chạm ngõ’ ngoài nghĩa cưới hỏi còn có thể hiểu bóng là mới tiến rất gần tới một điều gì đó nhưng chưa đạt hẳn. Đây là cách chơi trên một cụm từ văn hóa quen thuộc."
+  },
+  {
+    "id": 194,
+    "question": "Cái gì có thể về đích mà không tham gia chạy?",
+    "options": ["Dự án hoàn thành", "Vận động viên", "Xe đạp đua", "Ngựa đua"],
+    "correctIndex": 0,
+    "explanation": "Một dự án, kế hoạch hay bài tập có thể được nói là ‘về đích’ khi hoàn thành trọn vẹn. Đây là phép ẩn dụ từ cuộc đua sang công việc."
+  },
+  {
+    "id": 195,
+    "question": "Cái gì có thể tăng tốc mà không có động cơ?",
+    "options": ["Tiến độ công việc", "Xe máy", "Ô tô", "Tàu hỏa"],
+    "correctIndex": 0,
+    "explanation": "Tiến độ công việc hoặc nhịp học có thể tăng tốc khi làm nhanh hơn, gấp rút hơn. Chữ 'tốc' ở đây không cần đến máy móc thật."
+  },
+  {
+    "id": 196,
+    "question": "Cái gì có thể giảm nhiệt mà không cần đá lạnh?",
+    "options": ["Cuộc cãi vã", "Nồi nước", "Cốc trà", "Chảo nóng"],
+    "correctIndex": 0,
+    "explanation": "Một cuộc căng thẳng có thể giảm nhiệt khi mọi người bình tĩnh lại hoặc có người hòa giải. Đây là cách mượn nhiệt độ để mô tả mức độ xung đột."
+  },
+  {
+    "id": 197,
+    "question": "Cái gì có thể giữ lửa mà không cần củi?",
+    "options": ["Tình yêu và đam mê", "Bếp than", "Lò nướng", "Bật lửa"],
+    "correctIndex": 0,
+    "explanation": "Giữ lửa thường được dùng để nói về việc duy trì tình cảm, nhiệt huyết hoặc cảm hứng. Đây là nghĩa bóng rất quen thuộc trong tiếng Việt."
+  },
+  {
+    "id": 198,
+    "question": "Cái gì có thể nhóm lên hy vọng mà không bật diêm?",
+    "options": ["Một lời động viên", "Bếp gas", "Nến thơm", "Đuốc lửa"],
+    "correctIndex": 0,
+    "explanation": "Một lời động viên đúng lúc có thể nhóm lên hy vọng, tức là khơi dậy tinh thần tích cực trong người khác. Câu đố dùng hình ảnh nhóm lửa để nói về tâm lý."
+  },
+  {
+    "id": 199,
+    "question": "Cái gì có thể thắp sáng mà không cần bóng đèn?",
+    "options": ["Nụ cười", "Đèn pin", "Nến", "Đèn học"],
+    "correctIndex": 0,
+    "explanation": "Nụ cười có thể ‘thắp sáng’ khuôn mặt, bầu không khí hoặc tâm trạng của người đối diện theo nghĩa hình tượng. Đây là kiểu chơi chữ nhẹ nhàng, giàu hình ảnh."
+  },
+  {
+    "id": 200,
+    "question": "Cái gì có thể soi đường mà không phát ra tia sáng?",
+    "options": ["Kinh nghiệm", "Đèn pha", "Ngọn đuốc", "Đèn đường"],
+    "correctIndex": 0,
+    "explanation": "Kinh nghiệm, bài học hoặc lời khuyên có thể soi đường cho người khác, nghĩa là giúp họ định hướng và tránh sai lầm. Đây là cách dùng ẩn dụ rất đẹp của động từ 'soi đường'."
+  }
+]

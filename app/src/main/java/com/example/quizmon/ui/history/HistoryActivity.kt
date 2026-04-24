@@ -37,10 +37,9 @@ class HistoryActivity : AppCompatActivity() {
 
     private fun updateUI() {
         val preferenceManager = PreferenceManager(this)
-        findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
-        
-        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-//        findViewById<TextView>(R.id.tvCoins)?.text = prefs.getInt("current_coins", 0).toString()
+        // Cập nhật ID mới từ layout_taskhead
+        findViewById<TextView>(R.id.head_text_star)?.text = preferenceManager.getCoins().toString()
+        findViewById<TextView>(R.id.head_text_coin)?.text = preferenceManager.getXu().toString()
     }
 
     private fun setupTaskbar() {

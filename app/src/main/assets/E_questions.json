@@ -4,839 +4,1399 @@
     "question": "She ___ to school every day.",
     "options": ["go", "goes", "going", "gone"],
     "correctIndex": 1,
-    "explanation": "He/She/It trong thì hiện tại đơn thêm -s hoặc -es → goes."
+    "explanation": "Đáp án đúng là 'goes'. Câu này dùng thì hiện tại đơn để diễn tả thói quen lặp lại mỗi ngày, dấu hiệu là 'every day'. Với chủ ngữ ngôi thứ ba số ít như he, she, it, động từ thường phải thêm -s hoặc -es. Động từ 'go' kết thúc bằng -o nên thêm -es thành 'goes'. Các đáp án còn lại sai vì 'go' thiếu đuôi chia động từ, 'going' là dạng V-ing, còn 'gone' là quá khứ phân từ."
   },
   {
     "id": 2,
     "question": "I ___ a student.",
     "options": ["is", "am", "are", "be"],
     "correctIndex": 1,
-    "explanation": "Chủ ngữ I đi với 'am'."
+    "explanation": "Đáp án đúng là 'am'. Trong động từ to be ở hiện tại đơn, 'I' luôn đi với 'am'. 'Is' dùng cho he, she, it; 'are' dùng cho you, we, they; còn 'be' là nguyên mẫu nên không dùng trực tiếp trong mẫu câu này."
   },
   {
     "id": 3,
     "question": "They ___ football yesterday.",
     "options": ["play", "plays", "played", "playing"],
     "correctIndex": 2,
-    "explanation": "Yesterday → quá khứ đơn → played."
+    "explanation": "Đáp án đúng là 'played'. Từ 'yesterday' là dấu hiệu rõ của thì quá khứ đơn, nên động từ phải chia ở dạng quá khứ. 'Play' là động từ có quy tắc nên thêm -ed thành 'played'. 'Play' và 'plays' là hiện tại, còn 'playing' là V-ing nên không phù hợp."
   },
   {
     "id": 4,
     "question": "He ___ TV now.",
     "options": ["watch", "watches", "is watching", "watched"],
     "correctIndex": 2,
-    "explanation": "Now → hiện tại tiếp diễn → is watching."
+    "explanation": "Đáp án đúng là 'is watching'. Từ 'now' cho biết hành động đang diễn ra tại thời điểm nói, nên dùng thì hiện tại tiếp diễn. Cấu trúc là chủ ngữ + am/is/are + V-ing. Với 'he' ta dùng 'is', nên đáp án đúng là 'is watching'."
   },
   {
     "id": 5,
-    "question": "Plural of 'child' is ___",
+    "question": "Plural of 'child' is ___.",
     "options": ["childs", "childes", "children", "child"],
     "correctIndex": 2,
-    "explanation": "Child → children (dạng bất quy tắc)."
+    "explanation": "Đáp án đúng là 'children'. 'Child' là danh từ bất quy tắc nên dạng số nhiều không phải thêm -s hay -es như thông thường. 'Childs' và 'childes' đều sai chính tả và sai quy tắc. 'Child' vẫn là số ít."
   },
   {
     "id": 6,
     "question": "She ___ English well.",
     "options": ["speak", "speaks", "speaking", "spoke"],
     "correctIndex": 1,
-    "explanation": "He/She/It → thêm -s → speaks."
+    "explanation": "Đáp án đúng là 'speaks'. Câu diễn tả khả năng hoặc thói quen ở hiện tại nên dùng hiện tại đơn. Với chủ ngữ 'she', động từ thường phải thêm -s. Vì vậy 'speak' thành 'speaks'. 'Speaking' và 'spoke' không phù hợp với cấu trúc này."
   },
   {
     "id": 7,
     "question": "We ___ at home yesterday.",
     "options": ["are", "is", "were", "was"],
     "correctIndex": 2,
-    "explanation": "We + quá khứ của to be → were."
+    "explanation": "Đáp án đúng là 'were'. 'Yesterday' là dấu hiệu của quá khứ đơn. Với chủ ngữ 'we', động từ to be ở quá khứ là 'were'. 'Was' chỉ dùng với I, he, she, it trong quá khứ."
   },
   {
     "id": 8,
     "question": "I have ___ apple.",
     "options": ["a", "an", "the", "no article"],
     "correctIndex": 1,
-    "explanation": "Apple bắt đầu bằng nguyên âm → an."
+    "explanation": "Đáp án đúng là 'an'. Danh từ 'apple' bắt đầu bằng âm nguyên âm, nên mạo từ không xác định thích hợp là 'an'. 'A' dùng trước âm phụ âm. 'The' chỉ dùng khi người nghe đã biết rõ đối tượng nào, còn ở đây không có ngữ cảnh xác định."
   },
   {
     "id": 9,
     "question": "He can ___ swim.",
     "options": ["to", "-", "is", "are"],
     "correctIndex": 1,
-    "explanation": "Modal verb (can) + động từ nguyên thể."
+    "explanation": "Đáp án đúng là '-'. Sau động từ khuyết thiếu như can, could, should, must, ta dùng động từ nguyên mẫu không 'to'. Cấu trúc đúng là 'can swim'. Các đáp án 'to', 'is', 'are' đều sai ngữ pháp."
   },
   {
     "id": 10,
-    "question": "What is past of go?",
+    "question": "What is the past tense of 'go'?",
     "options": ["goed", "went", "gone", "going"],
     "correctIndex": 1,
-    "explanation": "Go → went (bất quy tắc)."
+    "explanation": "Đáp án đúng là 'went'. 'Go' là động từ bất quy tắc, nên dạng quá khứ đơn là 'went', không phải 'goed'. 'Gone' là quá khứ phân từ, thường dùng với have/has/had, còn 'going' là V-ing."
   },
   {
     "id": 11,
     "question": "She ___ a book now.",
     "options": ["read", "reads", "is reading", "readed"],
     "correctIndex": 2,
-    "explanation": "Now → hiện tại tiếp diễn."
+    "explanation": "Đáp án đúng là 'is reading'. 'Now' cho biết hành động đang xảy ra ở hiện tại nên phải dùng thì hiện tại tiếp diễn. Cấu trúc là 'is reading' với chủ ngữ 'she'. 'Readed' sai vì 'read' là động từ bất quy tắc."
   },
   {
     "id": 12,
     "question": "They ___ students.",
     "options": ["is", "are", "am", "be"],
     "correctIndex": 1,
-    "explanation": "They là số nhiều → are."
+    "explanation": "Đáp án đúng là 'are'. Chủ ngữ 'they' là số nhiều nên trong hiện tại đơn của động từ to be phải dùng 'are'. 'Is' dùng cho he, she, it; 'am' dùng cho I."
   },
   {
     "id": 13,
-    "question": "Opposite of big is ___",
+    "question": "Opposite of 'big' is ___.",
     "options": ["large", "huge", "small", "wide"],
     "correctIndex": 2,
-    "explanation": "Big ≠ small."
+    "explanation": "Đáp án đúng là 'small'. 'Big' nghĩa là lớn, còn từ trái nghĩa là 'small' nghĩa là nhỏ. 'Large' và 'huge' là từ gần nghĩa với big, không phải trái nghĩa. 'Wide' nghĩa là rộng."
   },
   {
     "id": 14,
     "question": "He ___ in Hanoi.",
     "options": ["live", "lives", "living", "lived"],
     "correctIndex": 1,
-    "explanation": "He + V-s → lives."
+    "explanation": "Đáp án đúng là 'lives'. Câu mô tả sự thật hoặc trạng thái hiện tại nên dùng hiện tại đơn. Với chủ ngữ 'he', động từ phải thêm -s. Vì vậy 'live' trở thành 'lives'."
   },
   {
     "id": 15,
-    "question": "Synonym of happy is ___",
+    "question": "Synonym of 'happy' is ___.",
     "options": ["sad", "angry", "joyful", "tired"],
     "correctIndex": 2,
-    "explanation": "Joyful = happy."
+    "explanation": "Đáp án đúng là 'joyful'. 'Joyful' mang nghĩa vui vẻ, hạnh phúc, gần nghĩa với 'happy'. 'Sad', 'angry', 'tired' đều không cùng nghĩa."
   },
   {
     "id": 16,
     "question": "She ___ TV every night.",
     "options": ["watch", "watches", "watching", "watched"],
     "correctIndex": 1,
-    "explanation": "Every night → hiện tại đơn."
+    "explanation": "Đáp án đúng là 'watches'. Cụm 'every night' cho thấy đây là thói quen lặp lại, nên dùng thì hiện tại đơn. Với chủ ngữ 'she', động từ 'watch' thêm -es thành 'watches' vì kết thúc bằng -ch."
   },
   {
     "id": 17,
     "question": "We ___ football yesterday.",
     "options": ["play", "plays", "played", "playing"],
     "correctIndex": 2,
-    "explanation": "Yesterday → quá khứ đơn."
+    "explanation": "Đáp án đúng là 'played'. Từ 'yesterday' yêu cầu dùng thì quá khứ đơn. Động từ 'play' là động từ có quy tắc nên thêm -ed thành 'played'."
   },
   {
     "id": 18,
     "question": "He ___ a car.",
     "options": ["have", "has", "had", "having"],
     "correctIndex": 1,
-    "explanation": "He + has."
+    "explanation": "Đáp án đúng là 'has'. Ở hiện tại đơn, chủ ngữ 'he' đi với 'has' khi dùng động từ 'have'. 'Have' dùng cho I, you, we, they; 'had' là quá khứ; 'having' là V-ing."
   },
   {
     "id": 19,
-    "question": "Cold opposite is ___",
+    "question": "Opposite of 'cold' is ___.",
     "options": ["hot", "warm", "cool", "ice"],
     "correctIndex": 0,
-    "explanation": "Cold ≠ hot."
+    "explanation": "Đáp án đúng là 'hot'. 'Cold' nghĩa là lạnh, từ trái nghĩa trực tiếp là 'hot' nghĩa là nóng. 'Warm' chỉ ấm, không trái nghĩa mạnh bằng 'hot'."
   },
   {
     "id": 20,
-    "question": "Fast synonym is ___",
+    "question": "Synonym of 'fast' is ___.",
     "options": ["quick", "slow", "late", "low"],
     "correctIndex": 0,
-    "explanation": "Fast = quick."
+    "explanation": "Đáp án đúng là 'quick'. 'Fast' và 'quick' đều có nghĩa là nhanh. 'Slow' là trái nghĩa, còn 'late' và 'low' không cùng nghĩa."
   },
-    {
-      "id": 21,
-      "question": "She is good ___ math.",
-      "options": ["in", "on", "at", "with"],
-      "correctIndex": 2,
-      "explanation": "We say 'good at' for skills."
-    },
-    {
-      "id": 22,
-      "question": "The book is ___ the table.",
-      "options": ["in", "on", "at", "by"],
-      "correctIndex": 1,
-      "explanation": "We use 'on' for surface."
-    },
-    {
-      "id": 23,
-      "question": "He is interested ___ music.",
-      "options": ["in", "on", "at", "for"],
-      "correctIndex": 0,
-      "explanation": "The correct structure is 'interested in'."
-    },
-    {
-      "id": 24,
-      "question": "I go ___ school every day.",
-      "options": ["to", "in", "on", "at"],
-      "correctIndex": 0,
-      "explanation": "We say 'go to school'."
-    },
-    {
-      "id": 25,
-      "question": "They live ___ Vietnam.",
-      "options": ["in", "on", "at", "by"],
-      "correctIndex": 0,
-      "explanation": "We use 'in' for countries."
-    },
-    {
-      "id": 26,
-      "question": "What is the opposite of 'hot'?",
-      "options": ["cold", "warm", "cool", "dry"],
-      "correctIndex": 0,
-      "explanation": "Hot opposite is cold."
-    },
-    {
-      "id": 27,
-      "question": "He ___ English very well.",
-      "options": ["speak", "speaks", "speaking", "spoke"],
-      "correctIndex": 1,
-      "explanation": "He/She/It → verb + s."
-    },
-    {
-      "id": 28,
-      "question": "We ___ football yesterday.",
-      "options": ["play", "plays", "played", "playing"],
-      "correctIndex": 2,
-      "explanation": "Yesterday → past simple."
-    },
-    {
-      "id": 29,
-      "question": "She ___ a new dress now.",
-      "options": ["wear", "wears", "is wearing", "wore"],
-      "correctIndex": 2,
-      "explanation": "Now → present continuous."
-    },
-    {
-      "id": 30,
-      "question": "What is synonym of 'fast'?",
-      "options": ["slow", "quick", "late", "low"],
-      "correctIndex": 1,
-      "explanation": "Fast = quick."
-    },
-    {
-      "id": 31,
-      "question": "He ___ to school every day.",
-      "options": ["go", "goes", "going", "gone"],
-      "correctIndex": 1,
-      "explanation": "He/She/It → goes."
-    },
-    {
-      "id": 32,
-      "question": "I ___ TV last night.",
-      "options": ["watch", "watched", "watching", "watches"],
-      "correctIndex": 1,
-      "explanation": "Last night → past tense."
-    },
-    {
-      "id": 33,
-      "question": "They ___ students.",
-      "options": ["is", "are", "am", "be"],
-      "correctIndex": 1,
-      "explanation": "Plural subject → are."
-    },
-    {
-      "id": 34,
-      "question": "She ___ a letter now.",
-      "options": ["write", "writes", "is writing", "wrote"],
-      "correctIndex": 2,
-      "explanation": "Now → present continuous."
-    },
-    {
-      "id": 35,
-      "question": "What is plural of 'man'?",
-      "options": ["mans", "mens", "men", "man"],
-      "correctIndex": 2,
-      "explanation": "Man → men is irregular plural."
-    },
-    {
-      "id": 36,
-      "question": "He is good ___ English.",
-      "options": ["in", "on", "at", "with"],
-      "correctIndex": 2,
-      "explanation": "Good at something."
-    },
-    {
-      "id": 37,
-      "question": "We ___ at school yesterday.",
-      "options": ["are", "was", "were", "is"],
-      "correctIndex": 2,
-      "explanation": "We + were in past."
-    },
-    {
-      "id": 38,
-      "question": "She ___ music every day.",
-      "options": ["listen", "listens", "listening", "listened"],
-      "correctIndex": 1,
-      "explanation": "He/She/It → listens."
-    },
-    {
-      "id": 39,
-      "question": "What is opposite of 'big'?",
-      "options": ["large", "huge", "small", "wide"],
-      "correctIndex": 2,
-      "explanation": "Big opposite is small."
-    },
-    {
-      "id": 40,
-      "question": "He can ___ swim.",
-      "options": ["to", "-", "is", "are"],
-      "correctIndex": 1,
-      "explanation": "Modal verb + base verb."
-    },
-    {
-      "id": 41,
-      "question": "What is the past tense of 'eat'?",
-      "options": ["eated", "ate", "eaten", "eats"],
-      "correctIndex": 1,
-      "explanation": "The correct past form of 'eat' is 'ate'."
-    },
-    {
-      "id": 42,
-      "question": "She ___ to music every day.",
-      "options": ["listen", "listens", "listening", "listened"],
-      "correctIndex": 1,
-      "explanation": "He/She/It takes verb + s in present simple."
-    },
-    {
-      "id": 43,
-      "question": "We ___ to school by bus.",
-      "options": ["go", "goes", "going", "gone"],
-      "correctIndex": 0,
-      "explanation": "We uses base verb in present simple."
-    },
-    {
-      "id": 44,
-      "question": "They ___ a movie last night.",
-      "options": ["watch", "watched", "watching", "watches"],
-      "correctIndex": 1,
-      "explanation": "Last night indicates past tense."
-    },
-    {
-      "id": 45,
-      "question": "He ___ a new car.",
-      "options": ["have", "has", "had", "having"],
-      "correctIndex": 1,
-      "explanation": "He/She/It uses 'has'."
-    },
-    {
-      "id": 46,
-      "question": "What is the opposite of 'cold'?",
-      "options": ["hot", "cool", "warm", "ice"],
-      "correctIndex": 0,
-      "explanation": "Cold opposite is hot."
-    },
-    {
-      "id": 47,
-      "question": "She is ___ than her sister.",
-      "options": ["tall", "taller", "tallest", "more tall"],
-      "correctIndex": 1,
-      "explanation": "Comparative form uses -er."
-    },
-    {
-      "id": 48,
-      "question": "I ___ my homework now.",
-      "options": ["do", "does", "am doing", "did"],
-      "correctIndex": 2,
-      "explanation": "Now indicates present continuous."
-    },
-    {
-      "id": 49,
-      "question": "They ___ in Hanoi.",
-      "options": ["live", "lives", "living", "lived"],
-      "correctIndex": 0,
-      "explanation": "Plural subject uses base verb."
-    },
-    {
-      "id": 50,
-      "question": "She ___ a letter yesterday.",
-      "options": ["write", "writes", "wrote", "writing"],
-      "correctIndex": 2,
-      "explanation": "Past form of write is wrote."
-    },
-    {
-      "id": 51,
-      "question": "What is the synonym of 'happy'?",
-      "options": ["sad", "angry", "joyful", "tired"],
-      "correctIndex": 2,
-      "explanation": "Joyful means happy."
-    },
-    {
-      "id": 52,
-      "question": "He ___ football every Sunday.",
-      "options": ["play", "plays", "played", "playing"],
-      "correctIndex": 1,
-      "explanation": "He/She/It + plays."
-    },
-    {
-      "id": 53,
-      "question": "We ___ in the park yesterday.",
-      "options": ["are", "was", "were", "is"],
-      "correctIndex": 2,
-      "explanation": "We + were in past tense."
-    },
-    {
-      "id": 54,
-      "question": "She ___ TV now.",
-      "options": ["watch", "watches", "is watching", "watched"],
-      "correctIndex": 2,
-      "explanation": "Now → present continuous."
-    },
-    {
-      "id": 55,
-      "question": "What is plural of 'man'?",
-      "options": ["mans", "mens", "men", "man"],
-      "correctIndex": 2,
-      "explanation": "Man → men is irregular plural."
-    },
-    {
-      "id": 56,
-      "question": "I ___ coffee every morning.",
-      "options": ["drink", "drinks", "drank", "drinking"],
-      "correctIndex": 0,
-      "explanation": "Present simple uses base verb."
-    },
-    {
-      "id": 57,
-      "question": "She ___ a book now.",
-      "options": ["read", "reads", "is reading", "readed"],
-      "correctIndex": 2,
-      "explanation": "Now → present continuous."
-    },
-    {
-      "id": 58,
-      "question": "They ___ students.",
-      "options": ["is", "are", "am", "be"],
-      "correctIndex": 1,
-      "explanation": "They is plural → are."
-    },
-    {
-      "id": 59,
-      "question": "He ___ in London.",
-      "options": ["live", "lives", "living", "lived"],
-      "correctIndex": 1,
-      "explanation": "He/She/It adds -s."
-    },
-    {
-      "id": 60,
-      "question": "What is the opposite of 'big'?",
-      "options": ["large", "huge", "small", "wide"],
-      "correctIndex": 2,
-      "explanation": "Big opposite is small."
-    },
-    {
-      "id": 61,
-      "question": "She ___ already finished her homework.",
-      "options": ["has", "have", "had", "having"],
-      "correctIndex": 0,
-      "explanation": "She/He/It uses 'has' in present perfect."
-    },
-    {
-      "id": 62,
-      "question": "They ___ in this city for 10 years.",
-      "options": ["live", "lives", "have lived", "lived"],
-      "correctIndex": 2,
-      "explanation": "For + time period → present perfect."
-    },
-    {
-      "id": 63,
-      "question": "He ___ when I arrived.",
-      "options": ["sleep", "sleeps", "was sleeping", "slept"],
-      "correctIndex": 2,
-      "explanation": "Past continuous for ongoing action."
-    },
-    {
-      "id": 64,
-      "question": "If it ___ tomorrow, I will stay home.",
-      "options": ["rain", "rains", "rained", "raining"],
-      "correctIndex": 1,
-      "explanation": "First conditional uses present simple after 'if'."
-    },
-    {
-      "id": 65,
-      "question": "I wish I ___ rich.",
-      "options": ["am", "was", "were", "be"],
-      "correctIndex": 2,
-      "explanation": "Wish → unreal present uses 'were'."
-    },
-    {
-      "id": 66,
-      "question": "She is the ___ student in class.",
-      "options": ["good", "better", "best", "well"],
-      "correctIndex": 2,
-      "explanation": "Superlative form uses 'best'."
-    },
-    {
-      "id": 67,
-      "question": "We ___ dinner when he came.",
-      "options": ["eat", "ate", "were eating", "eaten"],
-      "correctIndex": 2,
-      "explanation": "Past continuous for interrupted action."
-    },
-    {
-      "id": 68,
-      "question": "He ___ to Paris twice.",
-      "options": ["go", "goes", "has been", "went"],
-      "correctIndex": 2,
-      "explanation": "Experience → present perfect."
-    },
-    {
-      "id": 69,
-      "question": "They ___ TV at 8 pm yesterday.",
-      "options": ["watch", "watched", "were watching", "are watching"],
-      "correctIndex": 2,
-      "explanation": "Specific past time → past continuous."
-    },
-    {
-      "id": 70,
-      "question": "She ___ her keys, so she can't enter.",
-      "options": ["lose", "lost", "has lost", "losing"],
-      "correctIndex": 2,
-      "explanation": "Result in present → present perfect."
-    },
-    {
-      "id": 71,
-      "question": "He is interested ___ science.",
-      "options": ["in", "on", "at", "for"],
-      "correctIndex": 0,
-      "explanation": "Interested in something."
-    },
-    {
-      "id": 72,
-      "question": "We have lived here ___ 2020.",
-      "options": ["since", "for", "from", "by"],
-      "correctIndex": 0,
-      "explanation": "Since + point in time."
-    },
-    {
-      "id": 73,
-      "question": "They ___ already left.",
-      "options": ["has", "have", "had", "having"],
-      "correctIndex": 1,
-      "explanation": "They uses 'have'."
-    },
-    {
-      "id": 74,
-      "question": "I ___ my homework yet.",
-      "options": ["didn't finish", "haven't finished", "don't finish", "not finish"],
-      "correctIndex": 1,
-      "explanation": "Yet → present perfect negative."
-    },
-    {
-      "id": 75,
-      "question": "She ___ breakfast when I called.",
-      "options": ["has", "have", "was having", "had"],
-      "correctIndex": 2,
-      "explanation": "Past continuous action."
-    },
-    {
-      "id": 76,
-      "question": "If I ___ you, I would study harder.",
-      "options": ["am", "was", "were", "be"],
-      "correctIndex": 2,
-      "explanation": "Second conditional uses 'were'."
-    },
-    {
-      "id": 77,
-      "question": "He ___ the report by tomorrow.",
-      "options": ["finish", "finishes", "will finish", "finished"],
-      "correctIndex": 2,
-      "explanation": "Future prediction uses will."
-    },
-    {
-      "id": 78,
-      "question": "They ___ football every Sunday.",
-      "options": ["play", "plays", "played", "playing"],
-      "correctIndex": 0,
-      "explanation": "Habit → present simple."
-    },
-    {
-      "id": 79,
-      "question": "She ___ in London since 2010.",
-      "options": ["lives", "lived", "has lived", "living"],
-      "correctIndex": 2,
-      "explanation": "Since → present perfect."
-    },
-    {
-      "id": 80,
-      "question": "He ___ when the phone rang.",
-      "options": ["sleep", "sleeps", "was sleeping", "slept"],
-      "correctIndex": 2,
-      "explanation": "Interrupted action → past continuous."
-    },
-    {
-      "id": 81,
-      "question": "She will call you when she ___ home.",
-      "options": ["arrive", "arrives", "arrived", "arriving"],
-      "correctIndex": 1,
-      "explanation": "After 'when' in future meaning, we use present simple."
-    },
-    {
-      "id": 82,
-      "question": "They ___ a new house next year.",
-      "options": ["buy", "buys", "will buy", "bought"],
-      "correctIndex": 2,
-      "explanation": "Future intention uses 'will'."
-    },
-    {
-      "id": 83,
-      "question": "I ___ my keys. I can't find them.",
-      "options": ["lose", "lost", "have lost", "losing"],
-      "correctIndex": 2,
-      "explanation": "Present result → present perfect."
-    },
-    {
-      "id": 84,
-      "question": "He ___ dinner when I arrived.",
-      "options": ["has", "have", "was having", "had"],
-      "correctIndex": 2,
-      "explanation": "Past continuous for ongoing action."
-    },
-    {
-      "id": 85,
-      "question": "If it rains, we ___ at home.",
-      "options": ["stay", "stays", "will stay", "stayed"],
-      "correctIndex": 2,
-      "explanation": "First conditional: will + verb."
-    },
-    {
-      "id": 86,
-      "question": "She is the ___ girl in the class.",
-      "options": ["tall", "taller", "tallest", "more tall"],
-      "correctIndex": 2,
-      "explanation": "Superlative form uses -est."
-    },
-    {
-      "id": 87,
-      "question": "We ___ English for 5 years.",
-      "options": ["study", "studies", "have studied", "studied"],
-      "correctIndex": 2,
-      "explanation": "For + time → present perfect."
-    },
-    {
-      "id": 88,
-      "question": "He ___ TV at 9 pm yesterday.",
-      "options": ["watch", "watched", "was watching", "watches"],
-      "correctIndex": 2,
-      "explanation": "Specific past time → past continuous."
-    },
-    {
-      "id": 89,
-      "question": "They ___ already finished the exam.",
-      "options": ["has", "have", "had", "having"],
-      "correctIndex": 1,
-      "explanation": "They → have + past participle."
-    },
-    {
-      "id": 90,
-      "question": "I wish I ___ taller.",
-      "options": ["am", "was", "were", "be"],
-      "correctIndex": 2,
-      "explanation": "Wish about present unreal uses 'were'."
-    },
-    {
-      "id": 91,
-      "question": "She ___ in this company since 2015.",
-      "options": ["works", "worked", "has worked", "working"],
-      "correctIndex": 2,
-      "explanation": "Since + time → present perfect."
-    },
-    {
-      "id": 92,
-      "question": "They ___ football every weekend.",
-      "options": ["play", "plays", "played", "playing"],
-      "correctIndex": 0,
-      "explanation": "Habitual action → present simple."
-    },
-    {
-      "id": 93,
-      "question": "He ___ when I called him.",
-      "options": ["sleep", "sleeps", "was sleeping", "slept"],
-      "correctIndex": 2,
-      "explanation": "Interrupted action → past continuous."
-    },
-    {
-      "id": 94,
-      "question": "If I ___ rich, I would travel the world.",
-      "options": ["am", "was", "were", "be"],
-      "correctIndex": 2,
-      "explanation": "Second conditional uses 'were'."
-    },
-    {
-      "id": 95,
-      "question": "She ___ her homework already.",
-      "options": ["finish", "finished", "has finished", "finishing"],
-      "correctIndex": 2,
-      "explanation": "Already → present perfect."
-    },
-    {
-      "id": 96,
-      "question": "We ___ to the cinema tomorrow.",
-      "options": ["go", "goes", "will go", "went"],
-      "correctIndex": 2,
-      "explanation": "Future intention → will."
-    },
-    {
-      "id": 97,
-      "question": "He ___ English very well.",
-      "options": ["speak", "speaks", "speaking", "spoke"],
-      "correctIndex": 1,
-      "explanation": "He/She/It → verb + s."
-    },
-    {
-      "id": 98,
-      "question": "They ___ in Hanoi for 10 years.",
-      "options": ["live", "lives", "have lived", "lived"],
-      "correctIndex": 2,
-      "explanation": "For + duration → present perfect."
-    },
-    {
-      "id": 99,
-      "question": "She ___ TV when the phone rang.",
-      "options": ["watch", "watches", "was watching", "watched"],
-      "correctIndex": 2,
-      "explanation": "Interrupted action → past continuous."
-    },
-    {
-      "id": 100,
-      "question": "I ___ my homework yet.",
-      "options": ["didn't finish", "don't finish", "haven't finished", "not finish"],
-      "correctIndex": 2,
-      "explanation": "Yet → present perfect negative."
-    },
-    {
-      "id": 101,
-      "question": "You are in a store and want to ask the price. What do you say?",
-      "options": ["How old is it?", "How much is it?", "What time is it?", "Where is it?"],
-      "correctIndex": 1,
-      "explanation": "To ask about price, we use 'How much is it?'."
-    },
-    {
-      "id": 102,
-      "question": "Someone says 'Nice to meet you'. You reply:",
-      "options": ["Goodbye", "See you later", "Nice to meet you too", "Thank you"],
-      "correctIndex": 2,
-      "explanation": "Correct response is 'Nice to meet you too'."
-    },
-    {
-      "id": 103,
-      "question": "You don’t hear someone clearly. You say:",
-      "options": ["Repeat please", "Say again please", "Pardon?", "All are correct"],
-      "correctIndex": 3,
-      "explanation": "All options are used to ask for repetition."
-    },
-    {
-      "id": 104,
-      "question": "You want to ask for direction to the library:",
-      "options": ["Where library?", "How library?", "Can you tell me the way to the library?", "Library where?"],
-      "correctIndex": 2,
-      "explanation": "Polite structure: Can you tell me the way to...?"
-    },
-    {
-      "id": 105,
-      "question": "You are late for class. You say:",
-      "options": ["Sorry I'm late", "I am early", "Good morning", "See you"],
-      "correctIndex": 0,
-      "explanation": "Correct apology is 'Sorry I'm late'."
-    },
-    {
-      "id": 106,
-      "question": "What does 'Could you help me?' mean?",
-      "options": ["Asking for help politely", "Giving help", "Refusing help", "Asking time"],
-      "correctIndex": 0,
-      "explanation": "It is a polite request for help."
-    },
-    {
-      "id": 107,
-      "question": "You want someone to repeat. You say:",
-      "options": ["What?", "Excuse me?", "Sorry?", "All are correct"],
-      "correctIndex": 3,
-      "explanation": "All are polite ways to ask repetition."
-    },
-    {
-      "id": 108,
-      "question": "You meet a friend in the morning. You say:",
-      "options": ["Good night", "Good afternoon", "Good morning", "Goodbye"],
-      "correctIndex": 2,
-      "explanation": "Morning greeting is 'Good morning'."
-    },
-    {
-      "id": 109,
-      "question": "You want to offer help. You say:",
-      "options": ["Can I help you?", "Do you help me?", "Help me now", "I help you"],
-      "correctIndex": 0,
-      "explanation": "Correct polite offer: 'Can I help you?'."
-    },
-    {
-      "id": 110,
-      "question": "You don’t understand something. You say:",
-      "options": ["I don't understand", "I understand", "I know", "I see"],
-      "correctIndex": 0,
-      "explanation": "Correct expression is 'I don't understand'."
-    },
-    {
-      "id": 111,
-      "question": "Reading: 'Tom gets up at 6 am every day.' What does he do at 6 am?",
-      "options": ["Sleeps", "Wakes up", "Goes to school", "Eats lunch"],
-      "correctIndex": 1,
-      "explanation": "Gets up means wakes up."
-    },
-    {
-      "id": 112,
-      "question": "Reading: 'She is a teacher.' What is her job?",
-      "options": ["Doctor", "Student", "Teacher", "Nurse"],
-      "correctIndex": 2,
-      "explanation": "She is a teacher."
-    },
-    {
-      "id": 113,
-      "question": "Reading: 'They are playing football.' What are they doing?",
-      "options": ["Studying", "Sleeping", "Playing football", "Eating"],
-      "correctIndex": 2,
-      "explanation": "They are playing football."
-    },
-    {
-      "id": 114,
-      "question": "Reading: 'He is very happy today.' How does he feel?",
-      "options": ["Sad", "Angry", "Happy", "Tired"],
-      "correctIndex": 2,
-      "explanation": "He feels happy."
-    },
-    {
-      "id": 115,
-      "question": "You want to say thank you. You say:",
-      "options": ["Sorry", "Thank you", "Hello", "Bye"],
-      "correctIndex": 1,
-      "explanation": "Polite expression is 'Thank you'."
-    },
-    {
-      "id": 116,
-      "question": "You are leaving a place. You say:",
-      "options": ["Good morning", "Hello", "Goodbye", "Thanks"],
-      "correctIndex": 2,
-      "explanation": "Leaving → Goodbye."
-    },
-    {
-      "id": 117,
-      "question": "You want to ask someone's name. You say:",
-      "options": ["How are you?", "What is your name?", "Where are you?", "How old are you?"],
-      "correctIndex": 1,
-      "explanation": "Correct question is 'What is your name?'."
-    },
-    {
-      "id": 118,
-      "question": "Reading: 'The cat is under the table.' Where is the cat?",
-      "options": ["On the table", "In the table", "Under the table", "Behind the table"],
-      "correctIndex": 2,
-      "explanation": "It is under the table."
-    },
-    {
-      "id": 119,
-      "question": "You want to invite someone. You say:",
-      "options": ["Come here!", "Let's go!", "Would you like to come?", "Go away!"],
-      "correctIndex": 2,
-      "explanation": "Polite invitation: 'Would you like to come?'."
-    },
-    {
-      "id": 120,
-      "question": "Reading: 'She goes to school by bus every day.' How does she go to school?",
-      "options": ["By car", "By bus", "On foot", "By bike"],
-      "correctIndex": 1,
-      "explanation": "She goes by bus."
-    }
+  {
+    "id": 21,
+    "question": "She is good ___ math.",
+    "options": ["in", "on", "at", "with"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'at'. Cụm đúng trong tiếng Anh là 'good at something', dùng để nói ai đó giỏi một môn học, kỹ năng hoặc hoạt động nào đó. Vì vậy ta nói 'good at math'."
+  },
+  {
+    "id": 22,
+    "question": "The book is ___ the table.",
+    "options": ["in", "on", "at", "by"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'on'. Khi một vật nằm trên bề mặt của vật khác, ta dùng giới từ 'on'. 'The book is on the table' nghĩa là cuốn sách ở trên mặt bàn."
+  },
+  {
+    "id": 23,
+    "question": "He is interested ___ music.",
+    "options": ["in", "on", "at", "for"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'in'. Cụm cố định là 'be interested in', nghĩa là thích hoặc quan tâm đến điều gì đó. Vì vậy phải nói 'interested in music'."
+  },
+  {
+    "id": 24,
+    "question": "I go ___ school every day.",
+    "options": ["to", "in", "on", "at"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'to'. Cấu trúc đúng là 'go to school'. Động từ 'go' thường đi với 'to' để chỉ hướng đi đến một nơi nào đó."
+  },
+  {
+    "id": 25,
+    "question": "They live ___ Vietnam.",
+    "options": ["in", "on", "at", "by"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'in'. Với quốc gia, thành phố hoặc khu vực lớn, ta thường dùng giới từ 'in'. Vì Việt Nam là tên quốc gia nên phải dùng 'in Vietnam'."
+  },
+  {
+    "id": 26,
+    "question": "What is the opposite of 'hot'?",
+    "options": ["cold", "warm", "cool", "dry"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'cold'. 'Hot' nghĩa là nóng, trái nghĩa trực tiếp là 'cold' nghĩa là lạnh. 'Warm' và 'cool' chỉ mức nhiệt trung gian."
+  },
+  {
+    "id": 27,
+    "question": "He ___ English very well.",
+    "options": ["speak", "speaks", "speaking", "spoke"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'speaks'. Đây là hiện tại đơn diễn tả khả năng thường xuyên. Với chủ ngữ 'he', động từ phải thêm -s. Vì vậy ta dùng 'speaks'."
+  },
+  {
+    "id": 28,
+    "question": "We ___ football yesterday.",
+    "options": ["play", "plays", "played", "playing"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'played'. 'Yesterday' là trạng từ chỉ thời gian quá khứ, nên phải dùng quá khứ đơn. 'Played' là dạng quá khứ đúng của 'play'."
+  },
+  {
+    "id": 29,
+    "question": "She ___ a new dress now.",
+    "options": ["wear", "wears", "is wearing", "wore"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'is wearing'. Từ 'now' cho thấy hành động đang xảy ra ở hiện tại, nên cần dùng thì hiện tại tiếp diễn. Cấu trúc đúng là 'is wearing' với chủ ngữ 'she'."
+  },
+  {
+    "id": 30,
+    "question": "What is a synonym of 'fast'?",
+    "options": ["slow", "quick", "late", "low"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'quick'. 'Fast' và 'quick' đều mang nghĩa nhanh. 'Slow' là chậm, trái nghĩa với fast."
+  },
+  {
+    "id": 31,
+    "question": "He ___ to school every day.",
+    "options": ["go", "goes", "going", "gone"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'goes'. Câu nói về thói quen hàng ngày nên dùng hiện tại đơn. Chủ ngữ 'he' là ngôi thứ ba số ít, vì vậy động từ 'go' phải đổi thành 'goes'."
+  },
+  {
+    "id": 32,
+    "question": "I ___ TV last night.",
+    "options": ["watch", "watched", "watching", "watches"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'watched'. 'Last night' là dấu hiệu của quá khứ đơn. Động từ 'watch' là động từ có quy tắc nên thêm -ed thành 'watched'."
+  },
+  {
+    "id": 33,
+    "question": "They ___ students.",
+    "options": ["is", "are", "am", "be"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'are'. 'They' là chủ ngữ số nhiều nên dùng 'are' trong động từ to be ở hiện tại."
+  },
+  {
+    "id": 34,
+    "question": "She ___ a letter now.",
+    "options": ["write", "writes", "is writing", "wrote"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'is writing'. 'Now' báo hiệu hiện tại tiếp diễn. Cấu trúc đúng là 'is writing' vì chủ ngữ là 'she'."
+  },
+  {
+    "id": 35,
+    "question": "What is the plural of 'man'?",
+    "options": ["mans", "mens", "men", "man"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'men'. 'Man' là danh từ bất quy tắc, số nhiều của nó là 'men', không phải thêm -s như bình thường."
+  },
+  {
+    "id": 36,
+    "question": "He is good ___ English.",
+    "options": ["in", "on", "at", "with"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'at'. Cụm cố định là 'good at' khi nói ai giỏi một môn học hoặc kỹ năng. Vì vậy 'good at English' là cách dùng đúng."
+  },
+  {
+    "id": 37,
+    "question": "We ___ at school yesterday.",
+    "options": ["are", "was", "were", "is"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'were'. 'Yesterday' chỉ quá khứ và chủ ngữ 'we' trong quá khứ đi với 'were', không dùng 'was'."
+  },
+  {
+    "id": 38,
+    "question": "She ___ to music every day.",
+    "options": ["listen", "listens", "listening", "listened"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'listens'. Câu diễn tả thói quen hằng ngày nên dùng hiện tại đơn. Với chủ ngữ 'she', động từ phải thêm -s. Lưu ý trong câu đầy đủ là 'listen to music'."
+  },
+  {
+    "id": 39,
+    "question": "What is the opposite of 'big'?",
+    "options": ["large", "huge", "small", "wide"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'small'. 'Big' và 'small' là cặp từ trái nghĩa quen thuộc. 'Large' và 'huge' đều gần nghĩa với big."
+  },
+  {
+    "id": 40,
+    "question": "He can ___ swim.",
+    "options": ["to", "-", "is", "are"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là '-'. Sau động từ khuyết thiếu 'can', ta dùng động từ nguyên mẫu không 'to', vì vậy câu đúng là 'He can swim'."
+  },
+  {
+    "id": 41,
+    "question": "What is the past tense of 'eat'?",
+    "options": ["eated", "ate", "eaten", "eats"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'ate'. 'Eat' là động từ bất quy tắc, nên quá khứ đơn là 'ate'. 'Eaten' là quá khứ phân từ, dùng trong thì hoàn thành hoặc bị động."
+  },
+  {
+    "id": 42,
+    "question": "She ___ to music every day.",
+    "options": ["listen", "listens", "listening", "listened"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'listens'. 'Every day' là dấu hiệu của hiện tại đơn. Với chủ ngữ 'she', động từ phải thêm -s nên dùng 'listens'."
+  },
+  {
+    "id": 43,
+    "question": "We ___ to school by bus.",
+    "options": ["go", "goes", "going", "gone"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'go'. Chủ ngữ 'we' trong hiện tại đơn dùng động từ nguyên mẫu không thêm -s. Câu diễn tả thói quen hoặc phương tiện đi lại."
+  },
+  {
+    "id": 44,
+    "question": "They ___ a movie last night.",
+    "options": ["watch", "watched", "watching", "watches"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'watched'. 'Last night' là mốc thời gian quá khứ nên phải dùng quá khứ đơn. Động từ 'watch' thêm -ed thành 'watched'."
+  },
+  {
+    "id": 45,
+    "question": "He ___ a new car.",
+    "options": ["have", "has", "had", "having"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'has'. Với chủ ngữ ngôi thứ ba số ít như 'he', hiện tại đơn của 'have' là 'has'."
+  },
+  {
+    "id": 46,
+    "question": "What is the opposite of 'cold'?",
+    "options": ["hot", "cool", "warm", "ice"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'hot'. 'Cold' nghĩa là lạnh và từ trái nghĩa trực tiếp là 'hot' nghĩa là nóng."
+  },
+  {
+    "id": 47,
+    "question": "She is ___ than her sister.",
+    "options": ["tall", "taller", "tallest", "more tall"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'taller'. Từ 'than' là dấu hiệu của câu so sánh hơn. Với tính từ ngắn 'tall', ta thêm -er để tạo dạng so sánh hơn: 'taller'. 'Tallest' là so sánh nhất."
+  },
+  {
+    "id": 48,
+    "question": "I ___ my homework now.",
+    "options": ["do", "does", "am doing", "did"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'am doing'. 'Now' cho thấy hành động đang diễn ra tại thời điểm nói. Với chủ ngữ 'I', thì hiện tại tiếp diễn dùng 'am + V-ing', nên câu đúng là 'I am doing my homework now'."
+  },
+  {
+    "id": 49,
+    "question": "They ___ in Hanoi.",
+    "options": ["live", "lives", "living", "lived"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'live'. Chủ ngữ 'they' dùng hiện tại đơn với động từ nguyên mẫu không thêm -s. Câu diễn tả sự thật hoặc nơi ở hiện tại."
+  },
+  {
+    "id": 50,
+    "question": "She ___ a letter yesterday.",
+    "options": ["write", "writes", "wrote", "writing"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'wrote'. 'Yesterday' yêu cầu dùng thì quá khứ đơn. 'Write' là động từ bất quy tắc, quá khứ của nó là 'wrote'."
+  },
+  {
+    "id": 51,
+    "question": "What is the synonym of 'happy'?",
+    "options": ["sad", "angry", "joyful", "tired"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'joyful'. 'Joyful' mang nghĩa vui vẻ, hạnh phúc, là từ đồng nghĩa với 'happy'."
+  },
+  {
+    "id": 52,
+    "question": "He ___ football every Sunday.",
+    "options": ["play", "plays", "played", "playing"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'plays'. 'Every Sunday' diễn tả thói quen nên dùng hiện tại đơn. Với 'he', động từ phải thêm -s thành 'plays'."
+  },
+  {
+    "id": 53,
+    "question": "We ___ in the park yesterday.",
+    "options": ["are", "was", "were", "is"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'were'. Trong quá khứ đơn của động từ to be, 'we' đi với 'were'. Dấu hiệu là từ 'yesterday'."
+  },
+  {
+    "id": 54,
+    "question": "She ___ TV now.",
+    "options": ["watch", "watches", "is watching", "watched"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'is watching'. Từ 'now' cho biết hành động đang diễn ra nên dùng thì hiện tại tiếp diễn: 'is watching'."
+  },
+  {
+    "id": 55,
+    "question": "What is the plural of 'man'?",
+    "options": ["mans", "mens", "men", "man"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'men'. Đây là danh từ bất quy tắc, số nhiều của 'man' là 'men'."
+  },
+  {
+    "id": 56,
+    "question": "I ___ coffee every morning.",
+    "options": ["drink", "drinks", "drank", "drinking"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'drink'. 'Every morning' cho thấy thói quen nên dùng hiện tại đơn. Chủ ngữ 'I' dùng động từ nguyên mẫu không thêm -s."
+  },
+  {
+    "id": 57,
+    "question": "She ___ a book now.",
+    "options": ["read", "reads", "is reading", "readed"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'is reading'. Từ 'now' báo hiệu hiện tại tiếp diễn. 'Readed' sai vì 'read' là động từ bất quy tắc."
+  },
+  {
+    "id": 58,
+    "question": "They ___ students.",
+    "options": ["is", "are", "am", "be"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'are'. Chủ ngữ số nhiều 'they' đi với 'are' trong hiện tại đơn của động từ to be."
+  },
+  {
+    "id": 59,
+    "question": "He ___ in London.",
+    "options": ["live", "lives", "living", "lived"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'lives'. Câu diễn tả nơi ở hiện tại nên dùng hiện tại đơn. Với 'he', động từ phải thêm -s."
+  },
+  {
+    "id": 60,
+    "question": "What is the opposite of 'big'?",
+    "options": ["large", "huge", "small", "wide"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'small'. Đây là cặp trái nghĩa cơ bản: big - small."
+  },
+  {
+    "id": 61,
+    "question": "She ___ already finished her homework.",
+    "options": ["has", "have", "had", "having"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'has'. Trạng từ 'already' thường xuất hiện trong thì hiện tại hoàn thành. Với chủ ngữ 'she', trợ động từ đúng là 'has'. Câu hoàn chỉnh là 'She has already finished her homework'."
+  },
+  {
+    "id": 62,
+    "question": "They ___ in this city for 10 years.",
+    "options": ["live", "lives", "have lived", "lived"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'have lived'. Cụm 'for 10 years' chỉ khoảng thời gian kéo dài từ quá khứ đến hiện tại, nên thường dùng thì hiện tại hoàn thành. Chủ ngữ 'they' đi với 'have'."
+  },
+  {
+    "id": 63,
+    "question": "He ___ when I arrived.",
+    "options": ["sleep", "sleeps", "was sleeping", "slept"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'was sleeping'. Đây là mẫu câu một hành động đang diễn ra trong quá khứ thì một hành động khác xen vào. Hành động đang diễn ra dùng quá khứ tiếp diễn, còn hành động xen vào dùng quá khứ đơn: 'when I arrived'."
+  },
+  {
+    "id": 64,
+    "question": "If it ___ tomorrow, I will stay home.",
+    "options": ["rain", "rains", "rained", "raining"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'rains'. Đây là câu điều kiện loại 1. Sau 'if', ta dùng hiện tại đơn để nói điều kiện có thể xảy ra trong tương lai, còn mệnh đề chính dùng 'will'. Vì chủ ngữ là 'it', động từ phải là 'rains'."
+  },
+  {
+    "id": 65,
+    "question": "I wish I ___ rich.",
+    "options": ["am", "was", "were", "be"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'were'. Sau 'wish' để diễn tả điều không có thật ở hiện tại, ta thường dùng quá khứ giả định. Trong văn phong ngữ pháp chuẩn, ta dùng 'were' cho mọi ngôi trong cấu trúc này, kể cả với 'I'."
+  },
+  {
+    "id": 66,
+    "question": "She is the ___ student in class.",
+    "options": ["good", "better", "best", "well"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'best'. Có mạo từ 'the' và phạm vi so sánh 'in class', nên phải dùng so sánh nhất. 'Good' là tính từ gốc, 'better' là so sánh hơn, còn 'best' là so sánh nhất."
+  },
+  {
+    "id": 67,
+    "question": "We ___ dinner when he came.",
+    "options": ["eat", "ate", "were eating", "eaten"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'were eating'. Hành động 'ăn tối' đang diễn ra thì 'anh ấy đến' xen vào. Vì vậy hành động đang diễn ra dùng quá khứ tiếp diễn, còn hành động xen vào dùng quá khứ đơn."
+  },
+  {
+    "id": 68,
+    "question": "He ___ to Paris twice.",
+    "options": ["go", "goes", "has been", "went"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'has been'. Câu nói về kinh nghiệm đã từng đến đâu đó bao nhiêu lần cho tới hiện tại, nên dùng hiện tại hoàn thành. Cấu trúc đúng là 'has been to Paris twice'."
+  },
+  {
+    "id": 69,
+    "question": "They ___ TV at 8 pm yesterday.",
+    "options": ["watch", "watched", "were watching", "are watching"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'were watching'. Mốc thời gian cụ thể trong quá khứ 'at 8 pm yesterday' thường dùng để nhấn mạnh hành động đang diễn ra tại thời điểm đó, nên dùng quá khứ tiếp diễn."
+  },
+  {
+    "id": 70,
+    "question": "She ___ her keys, so she can't enter.",
+    "options": ["lose", "lost", "has lost", "losing"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'has lost'. Việc mất chìa khóa xảy ra trước nhưng kết quả vẫn còn ở hiện tại là 'she can't enter', nên dùng hiện tại hoàn thành để nhấn mạnh kết quả hiện tại."
+  },
+  {
+    "id": 71,
+    "question": "He is interested ___ science.",
+    "options": ["in", "on", "at", "for"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'in'. Cụm đúng là 'be interested in something', nghĩa là hứng thú hoặc quan tâm đến điều gì."
+  },
+  {
+    "id": 72,
+    "question": "We have lived here ___ 2020.",
+    "options": ["since", "for", "from", "by"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'since'. 'Since' đi với mốc thời gian bắt đầu, ví dụ since 2020, since Monday, since last year. 'For' đi với khoảng thời gian như for two years."
+  },
+  {
+    "id": 73,
+    "question": "They ___ already left.",
+    "options": ["has", "have", "had", "having"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'have'. Trạng từ 'already' thường dùng với thì hiện tại hoàn thành. Chủ ngữ 'they' đi với 'have', nên câu đúng là 'They have already left'."
+  },
+  {
+    "id": 74,
+    "question": "I ___ my homework yet.",
+    "options": ["didn't finish", "haven't finished", "don't finish", "not finish"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'haven't finished'. Trạng từ 'yet' thường dùng trong câu phủ định hoặc nghi vấn của thì hiện tại hoàn thành. Vì vậy cấu trúc đúng là 'I haven't finished my homework yet'."
+  },
+  {
+    "id": 75,
+    "question": "She ___ breakfast when I called.",
+    "options": ["has", "have", "was having", "had"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'was having'. Đây là cấu trúc hành động đang diễn ra trong quá khứ thì có hành động khác xen vào. 'When I called' là hành động ngắn xen vào, còn 'was having breakfast' là hành động đang tiếp diễn."
+  },
+  {
+    "id": 76,
+    "question": "If I ___ you, I would study harder.",
+    "options": ["am", "was", "were", "be"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'were'. Đây là câu điều kiện loại 2 diễn tả tình huống không có thật ở hiện tại. Sau 'if', ta dùng quá khứ đơn, và với động từ to be trong kiểu giả định, thường dùng 'were' cho mọi ngôi."
+  },
+  {
+    "id": 77,
+    "question": "He ___ the report by tomorrow.",
+    "options": ["finish", "finishes", "will finish", "finished"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'will finish'. 'By tomorrow' hướng tới thời điểm tương lai, nên trong bài tập cơ bản dạng này, đáp án phù hợp nhất là tương lai đơn với 'will'."
+  },
+  {
+    "id": 78,
+    "question": "They ___ football every Sunday.",
+    "options": ["play", "plays", "played", "playing"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'play'. 'Every Sunday' chỉ thói quen lặp lại nên dùng hiện tại đơn. Chủ ngữ 'they' dùng động từ nguyên mẫu."
+  },
+  {
+    "id": 79,
+    "question": "She ___ in London since 2010.",
+    "options": ["lives", "lived", "has lived", "living"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'has lived'. 'Since 2010' chỉ mốc thời gian bắt đầu kéo dài đến hiện tại, nên dùng hiện tại hoàn thành. Với 'she', ta dùng 'has'."
+  },
+  {
+    "id": 80,
+    "question": "He ___ when the phone rang.",
+    "options": ["sleep", "sleeps", "was sleeping", "slept"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'was sleeping'. Hành động ngủ đang diễn ra thì điện thoại reo, nên dùng quá khứ tiếp diễn cho hành động dài và quá khứ đơn cho hành động chen vào."
+  },
+  {
+    "id": 81,
+    "question": "She will call you when she ___ home.",
+    "options": ["arrive", "arrives", "arrived", "arriving"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'arrives'. Trong mệnh đề chỉ thời gian với 'when' mang nghĩa tương lai, tiếng Anh dùng hiện tại đơn chứ không dùng 'will'. Chủ ngữ 'she' đi với 'arrives'."
+  },
+  {
+    "id": 82,
+    "question": "They ___ a new house next year.",
+    "options": ["buy", "buys", "will buy", "bought"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'will buy'. 'Next year' là dấu hiệu của tương lai, nên dùng thì tương lai đơn với 'will'."
+  },
+  {
+    "id": 83,
+    "question": "I ___ my keys. I can't find them.",
+    "options": ["lose", "lost", "have lost", "losing"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'have lost'. Việc mất chìa khóa đã xảy ra trước, nhưng kết quả hiện tại là không tìm thấy chúng, nên dùng hiện tại hoàn thành."
+  },
+  {
+    "id": 84,
+    "question": "He ___ dinner when I arrived.",
+    "options": ["has", "have", "was having", "had"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'was having'. Hành động ăn tối đang diễn ra trong quá khứ thì người nói đến. Do đó dùng quá khứ tiếp diễn cho hành động đang diễn ra."
+  },
+  {
+    "id": 85,
+    "question": "If it rains, we ___ at home.",
+    "options": ["stay", "stays", "will stay", "stayed"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'will stay'. Đây là câu điều kiện loại 1: If + hiện tại đơn, ... will + động từ nguyên mẫu. Vì vậy mệnh đề chính phải là 'will stay'."
+  },
+  {
+    "id": 86,
+    "question": "She is the ___ girl in the class.",
+    "options": ["tall", "taller", "tallest", "more tall"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'tallest'. Có 'the' và phạm vi 'in the class', nên cần dạng so sánh nhất. Với tính từ ngắn 'tall', ta thêm -est thành 'tallest'."
+  },
+  {
+    "id": 87,
+    "question": "We ___ English for 5 years.",
+    "options": ["study", "studies", "have studied", "studied"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'have studied'. 'For 5 years' chỉ khoảng thời gian kéo dài đến hiện tại nên dùng hiện tại hoàn thành. Chủ ngữ 'we' đi với 'have'."
+  },
+  {
+    "id": 88,
+    "question": "He ___ TV at 9 pm yesterday.",
+    "options": ["watch", "watched", "was watching", "watches"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'was watching'. Một thời điểm cụ thể trong quá khứ như 'at 9 pm yesterday' thường đi với quá khứ tiếp diễn khi nhấn mạnh hành động đang xảy ra lúc đó."
+  },
+  {
+    "id": 89,
+    "question": "They ___ already finished the exam.",
+    "options": ["has", "have", "had", "having"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'have'. Trạng từ 'already' phù hợp với hiện tại hoàn thành. Chủ ngữ 'they' đi với 'have'. Câu hoàn chỉnh là 'They have already finished the exam'."
+  },
+  {
+    "id": 90,
+    "question": "I wish I ___ taller.",
+    "options": ["am", "was", "were", "be"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'were'. Sau 'wish' để diễn tả điều không thật ở hiện tại, ta dùng quá khứ giả định. Với động từ to be, 'were' là lựa chọn chuẩn cho mọi ngôi."
+  },
+  {
+    "id": 91,
+    "question": "She ___ in this company since 2015.",
+    "options": ["works", "worked", "has worked", "working"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'has worked'. 'Since 2015' cho thấy hành động bắt đầu trong quá khứ và kéo dài tới hiện tại, nên dùng hiện tại hoàn thành."
+  },
+  {
+    "id": 92,
+    "question": "They ___ football every weekend.",
+    "options": ["play", "plays", "played", "playing"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'play'. 'Every weekend' là thói quen nên dùng hiện tại đơn. Chủ ngữ số nhiều 'they' không thêm -s."
+  },
+  {
+    "id": 93,
+    "question": "He ___ when I called him.",
+    "options": ["sleep", "sleeps", "was sleeping", "slept"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'was sleeping'. Hành động ngủ đang diễn ra thì bị gián đoạn bởi hành động gọi điện, nên dùng quá khứ tiếp diễn."
+  },
+  {
+    "id": 94,
+    "question": "If I ___ rich, I would travel the world.",
+    "options": ["am", "was", "were", "be"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'were'. Đây là điều kiện loại 2, diễn tả giả định không có thật ở hiện tại. Với động từ to be trong loại câu này, 'were' là dạng chuẩn."
+  },
+  {
+    "id": 95,
+    "question": "She ___ her homework already.",
+    "options": ["finish", "finished", "has finished", "finishing"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'has finished'. Trạng từ 'already' thường đi với hiện tại hoàn thành. Với chủ ngữ 'she', ta dùng 'has finished'."
+  },
+  {
+    "id": 96,
+    "question": "We ___ to the cinema tomorrow.",
+    "options": ["go", "goes", "will go", "went"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'will go'. 'Tomorrow' là dấu hiệu tương lai, nên dùng tương lai đơn. Chủ ngữ 'we' đi với 'will go'."
+  },
+  {
+    "id": 97,
+    "question": "He ___ English very well.",
+    "options": ["speak", "speaks", "speaking", "spoke"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'speaks'. Đây là hiện tại đơn. Với chủ ngữ 'he', động từ thêm -s: 'speaks'."
+  },
+  {
+    "id": 98,
+    "question": "They ___ in Hanoi for 10 years.",
+    "options": ["live", "lives", "have lived", "lived"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'have lived'. 'For 10 years' chỉ khoảng thời gian kéo dài tới hiện tại, nên hiện tại hoàn thành là thì đúng."
+  },
+  {
+    "id": 99,
+    "question": "She ___ TV when the phone rang.",
+    "options": ["watch", "watches", "was watching", "watched"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'was watching'. Hành động xem TV đang diễn ra trong quá khứ thì điện thoại reo. Đây là mẫu quá khứ tiếp diễn + quá khứ đơn."
+  },
+  {
+    "id": 100,
+    "question": "I ___ my homework yet.",
+    "options": ["didn't finish", "don't finish", "haven't finished", "not finish"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'haven't finished'. 'Yet' trong câu phủ định thường dùng với thì hiện tại hoàn thành, nên cấu trúc chuẩn là 'haven't finished yet'."
+  },
+  {
+    "id": 101,
+    "question": "You are in a store and want to ask the price. What do you say?",
+    "options": ["How old is it?", "How much is it?", "What time is it?", "Where is it?"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'How much is it?'. Khi muốn hỏi giá tiền của một món đồ, mẫu câu tự nhiên và đúng nhất là 'How much is it?'. Các câu còn lại hỏi về tuổi, thời gian hoặc vị trí nên không phù hợp với ngữ cảnh mua sắm."
+  },
+  {
+    "id": 102,
+    "question": "Someone says 'Nice to meet you'. You reply:",
+    "options": ["Goodbye", "See you later", "Nice to meet you too", "Thank you"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'Nice to meet you too'. Đây là cách đáp lại lịch sự và tự nhiên khi lần đầu gặp ai đó. Câu này cho thấy bạn cũng vui vì được gặp người kia."
+  },
+  {
+    "id": 103,
+    "question": "You don’t hear someone clearly. You say:",
+    "options": ["Repeat please", "Say again please", "Pardon?", "All are correct"],
+    "correctIndex": 3,
+    "explanation": "Đáp án đúng là 'All are correct'. Cả ba cách nói đều có thể dùng để yêu cầu người khác nói lại. Tuy nhiên trong giao tiếp tự nhiên, 'Pardon?', 'Sorry?' hoặc 'Could you say that again, please?' thường lịch sự và tự nhiên hơn."
+  },
+  {
+    "id": 104,
+    "question": "You want to ask for directions to the library:",
+    "options": ["Where library?", "How library?", "Can you tell me the way to the library?", "Library where?"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'Can you tell me the way to the library?'. Đây là mẫu câu lịch sự và đầy đủ để hỏi đường. Các đáp án còn lại thiếu ngữ pháp và không tự nhiên trong tiếng Anh."
+  },
+  {
+    "id": 105,
+    "question": "You are late for class. You say:",
+    "options": ["Sorry I'm late", "I am early", "Good morning", "See you"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'Sorry I'm late'. Khi đến muộn, cách nói phù hợp là xin lỗi. Câu này vừa ngắn gọn vừa đúng ngữ cảnh."
+  },
+  {
+    "id": 106,
+    "question": "What does 'Could you help me?' mean?",
+    "options": ["Asking for help politely", "Giving help", "Refusing help", "Asking time"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'Asking for help politely'. Cấu trúc 'Could you...?' là một cách lịch sự để nhờ người khác làm gì đó. Ở đây người nói đang yêu cầu được giúp đỡ."
+  },
+  {
+    "id": 107,
+    "question": "You want someone to repeat. You say:",
+    "options": ["What?", "Excuse me?", "Sorry?", "All are correct"],
+    "correctIndex": 3,
+    "explanation": "Đáp án đúng là 'All are correct'. Cả ba câu đều có thể dùng để yêu cầu nhắc lại. Tuy vậy, 'Excuse me?' và 'Sorry?' thường lịch sự hơn 'What?'."
+  },
+  {
+    "id": 108,
+    "question": "You meet a friend in the morning. You say:",
+    "options": ["Good night", "Good afternoon", "Good morning", "Goodbye"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'Good morning'. Đây là lời chào đúng với thời gian buổi sáng. 'Good night' thường dùng khi tạm biệt vào buổi tối hoặc trước khi đi ngủ."
+  },
+  {
+    "id": 109,
+    "question": "You want to offer help. You say:",
+    "options": ["Can I help you?", "Do you help me?", "Help me now", "I help you"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'Can I help you?'. Đây là cách đề nghị giúp đỡ một cách lịch sự và tự nhiên. Các đáp án khác hoặc sai nghĩa, hoặc sai ngữ pháp."
+  },
+  {
+    "id": 110,
+    "question": "You don’t understand something. You say:",
+    "options": ["I don't understand", "I understand", "I know", "I see"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'I don't understand'. Đây là cách trực tiếp và đúng ngữ cảnh để nói rằng bạn chưa hiểu điều gì đó."
+  },
+  {
+    "id": 111,
+    "question": "Reading: 'Tom gets up at 6 am every day.' What does he do at 6 am?",
+    "options": ["Sleeps", "Wakes up", "Goes to school", "Eats lunch"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'Wakes up'. Cụm 'gets up' có nghĩa là thức dậy hoặc ra khỏi giường. Vì vậy vào lúc 6 giờ sáng, Tom thức dậy."
+  },
+  {
+    "id": 112,
+    "question": "Reading: 'She is a teacher.' What is her job?",
+    "options": ["Doctor", "Student", "Teacher", "Nurse"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'Teacher'. Câu đọc đã nói trực tiếp 'She is a teacher', nên nghề nghiệp của cô ấy là giáo viên."
+  },
+  {
+    "id": 113,
+    "question": "Reading: 'They are playing football.' What are they doing?",
+    "options": ["Studying", "Sleeping", "Playing football", "Eating"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'Playing football'. Câu cho biết rõ hành động họ đang thực hiện là chơi bóng đá."
+  },
+  {
+    "id": 114,
+    "question": "Reading: 'He is very happy today.' How does he feel?",
+    "options": ["Sad", "Angry", "Happy", "Tired"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'Happy'. Tính từ 'happy' mô tả cảm xúc vui vẻ, hạnh phúc. Vì vậy cảm xúc của anh ấy là vui."
+  },
+  {
+    "id": 115,
+    "question": "You want to say thank you. You say:",
+    "options": ["Sorry", "Thank you", "Hello", "Bye"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'Thank you'. Đây là cách bày tỏ lời cảm ơn một cách đơn giản và lịch sự."
+  },
+  {
+    "id": 116,
+    "question": "You are leaving a place. You say:",
+    "options": ["Good morning", "Hello", "Goodbye", "Thanks"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'Goodbye'. Khi rời đi, ta dùng lời chào tạm biệt. 'Hello' là lời chào khi gặp mặt, không phải khi rời đi."
+  },
+  {
+    "id": 117,
+    "question": "You want to ask someone's name. You say:",
+    "options": ["How are you?", "What is your name?", "Where are you?", "How old are you?"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'What is your name?'. Đây là câu hỏi trực tiếp và đúng mục đích để hỏi tên ai đó."
+  },
+  {
+    "id": 118,
+    "question": "Reading: 'The cat is under the table.' Where is the cat?",
+    "options": ["On the table", "In the table", "Under the table", "Behind the table"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'Under the table'. Câu văn nói rất rõ con mèo ở dưới gầm bàn. Từ 'under' nghĩa là ở bên dưới."
+  },
+  {
+    "id": 119,
+    "question": "You want to invite someone. You say:",
+    "options": ["Come here!", "Let's go!", "Would you like to come?", "Go away!"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'Would you like to come?'. Đây là cách mời ai đó một cách lịch sự. Các câu khác hoặc ra lệnh, hoặc không mang ý mời đúng ngữ cảnh."
+  },
+  {
+    "id": 120,
+    "question": "Reading: 'She goes to school by bus every day.' How does she go to school?",
+    "options": ["By car", "By bus", "On foot", "By bike"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'By bus'. Câu văn cho biết trực tiếp phương tiện cô ấy dùng để đi học là xe buýt."
+  },
+  {
+    "id": 121,
+    "question": "My father ___ to work at 7 a.m. every day.",
+    "options": ["go", "goes", "is going", "went"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'goes'. Cụm 'every day' cho thấy đây là thói quen nên dùng hiện tại đơn. Chủ ngữ 'my father' tương đương với 'he', vì vậy động từ phải thêm -es: 'goes'."
+  },
+  {
+    "id": 122,
+    "question": "We ___ lunch at the moment.",
+    "options": ["eat", "eats", "are eating", "ate"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'are eating'. Cụm 'at the moment' là dấu hiệu của hiện tại tiếp diễn, dùng cho hành động đang xảy ra ngay lúc nói. Với chủ ngữ 'we', ta dùng 'are eating'."
+  },
+  {
+    "id": 123,
+    "question": "She ___ her grandmother last weekend.",
+    "options": ["visit", "visits", "visited", "is visiting"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'visited'. 'Last weekend' là mốc thời gian quá khứ nên dùng quá khứ đơn. 'Visit' là động từ có quy tắc nên thêm -ed."
+  },
+  {
+    "id": 124,
+    "question": "There ___ two books on the desk.",
+    "options": ["is", "are", "am", "be"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'are'. Danh từ theo sau là 'two books' ở số nhiều, nên cấu trúc đúng là 'There are'. 'There is' chỉ dùng với danh từ số ít."
+  },
+  {
+    "id": 125,
+    "question": "I don't have ___ money with me.",
+    "options": ["some", "any", "many", "a"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'any'. Trong câu phủ định, ta thường dùng 'any' với danh từ không đếm được hoặc danh từ số nhiều. 'Money' là danh từ không đếm được, vì vậy 'I don't have any money' là đúng."
+  },
+  {
+    "id": 126,
+    "question": "How ___ students are there in your class?",
+    "options": ["much", "many", "old", "long"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'many'. 'Students' là danh từ đếm được số nhiều, nên khi hỏi số lượng phải dùng 'how many'. 'How much' dùng với danh từ không đếm được."
+  },
+  {
+    "id": 127,
+    "question": "This bag is ___ than that one.",
+    "options": ["cheap", "cheaper", "cheapest", "more cheap"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'cheaper'. Có từ 'than' nên đây là so sánh hơn. Với tính từ ngắn 'cheap', ta thêm -er thành 'cheaper'."
+  },
+  {
+    "id": 128,
+    "question": "Nam is the ___ boy in his family.",
+    "options": ["young", "younger", "youngest", "more young"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'youngest'. Có 'the' và phạm vi so sánh 'in his family', nên cần dùng so sánh nhất. Tính từ ngắn 'young' thêm -est thành 'youngest'."
+  },
+  {
+    "id": 129,
+    "question": "Would you like ___ orange juice?",
+    "options": ["drink", "drinks", "to drink", "drinking"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'to drink'. Sau 'would like', cấu trúc chuẩn là 'would like + to-infinitive'. Vì vậy ta nói 'Would you like to drink orange juice?'"
+  },
+  {
+    "id": 130,
+    "question": "He ___ play the guitar when he was ten.",
+    "options": ["can", "could", "should", "must"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'could'. 'Could' là dạng quá khứ của 'can', dùng để nói khả năng trong quá khứ. Vì câu nhắc đến 'when he was ten', nên 'could' là đúng nhất."
+  },
+  {
+    "id": 131,
+    "question": "My mother is cooking, and I am helping ___.",
+    "options": ["she", "her", "hers", "herself"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'her'. Sau động từ 'helping', ta cần tân ngữ. 'Her' là đại từ tân ngữ của 'she'. 'She' là chủ ngữ nên không dùng ở đây."
+  },
+  {
+    "id": 132,
+    "question": "___ you ever been to Da Nang?",
+    "options": ["Do", "Did", "Have", "Has"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'Have'. 'Ever' trong câu hỏi về trải nghiệm thường dùng với hiện tại hoàn thành. Chủ ngữ 'you' đi với 'have', nên câu đúng là 'Have you ever been to Da Nang?'"
+  },
+  {
+    "id": 133,
+    "question": "They were tired, ___ they went to bed early.",
+    "options": ["because", "so", "but", "or"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'so'. Mệnh đề đầu là nguyên nhân, mệnh đề sau là kết quả. 'They were tired, so they went to bed early' nghĩa là họ mệt nên họ đi ngủ sớm."
+  },
+  {
+    "id": 134,
+    "question": "I like English ___ it is interesting.",
+    "options": ["because", "so", "but", "and"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'because'. 'Because' dùng để giải thích lý do. Câu này có nghĩa là 'Tôi thích tiếng Anh vì nó thú vị'."
+  },
+  {
+    "id": 135,
+    "question": "She ___ to the market every morning, doesn't she?",
+    "options": ["go", "goes", "went", "going"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'goes'. Mệnh đề chính ở hiện tại đơn, chủ ngữ 'she' nên động từ phải thêm -es. Phần đuôi 'doesn't she?' cũng xác nhận rằng câu gốc dùng hiện tại đơn với động từ thường."
+  },
+  {
+    "id": 136,
+    "question": "The students ___ their homework before class started.",
+    "options": ["finish", "finished", "had finished", "have finished"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'had finished'. Có hai hành động trong quá khứ: làm xong bài tập và lớp học bắt đầu. Hành động xảy ra trước một hành động quá khứ khác thường dùng quá khứ hoàn thành."
+  },
+  {
+    "id": 137,
+    "question": "If she studies hard, she ___ the exam.",
+    "options": ["pass", "passes", "will pass", "passed"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'will pass'. Đây là câu điều kiện loại 1. Sau 'if' dùng hiện tại đơn, còn mệnh đề chính dùng 'will + động từ nguyên mẫu'."
+  },
+  {
+    "id": 138,
+    "question": "The baby is sleeping. Please don't ___ noise.",
+    "options": ["do", "make", "take", "bring"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'make'. Cụm tự nhiên trong tiếng Anh là 'make noise' nghĩa là gây ồn. Các động từ khác không kết hợp đúng trong trường hợp này."
+  },
+  {
+    "id": 139,
+    "question": "This is ___ interesting book I have ever read.",
+    "options": ["more", "most", "the most", "the more"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'the most'. Với tính từ dài như 'interesting', dạng so sánh nhất dùng 'the most'. Cấu trúc 'the most interesting book I have ever read' là hoàn toàn tự nhiên."
+  },
+  {
+    "id": 140,
+    "question": "She asked me ___ I liked coffee.",
+    "options": ["what", "if", "which", "who"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'if'. Khi chuyển câu hỏi Yes/No sang câu tường thuật, ta thường dùng 'if' hoặc 'whether'. Vì vậy 'She asked me if I liked coffee' là đúng."
+  },
+  {
+    "id": 141,
+    "question": "The window ___ by my brother yesterday.",
+    "options": ["breaks", "broke", "was broken", "is broken"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'was broken'. Câu có tác nhân 'by my brother' và thời gian 'yesterday', nên đây là câu bị động ở quá khứ đơn. Cấu trúc là was/were + past participle."
+  },
+  {
+    "id": 142,
+    "question": "Neither Lan nor her friends ___ coming to the party.",
+    "options": ["is", "are", "was", "be"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'are'. Với cấu trúc 'neither... nor...', động từ thường hòa hợp với chủ ngữ gần nó nhất. Chủ ngữ gần nhất là 'her friends' số nhiều, nên dùng 'are'."
+  },
+  {
+    "id": 143,
+    "question": "I prefer tea ___ coffee.",
+    "options": ["than", "to", "with", "from"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'to'. Cấu trúc cố định là 'prefer A to B', nghĩa là thích A hơn B. Vì vậy ta nói 'I prefer tea to coffee'."
+  },
+  {
+    "id": 144,
+    "question": "How long ___ you been learning English?",
+    "options": ["do", "did", "have", "are"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'have'. Câu hỏi về khoảng thời gian kéo dài đến hiện tại nên dùng hiện tại hoàn thành tiếp diễn hoặc hiện tại hoàn thành. Với chủ ngữ 'you', trợ động từ là 'have'."
+  },
+  {
+    "id": 145,
+    "question": "I am looking forward to ___ from you.",
+    "options": ["hear", "hearing", "heard", "to hear"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'hearing'. Sau 'look forward to', từ 'to' là giới từ chứ không phải dấu hiệu của động từ nguyên mẫu. Vì vậy phải dùng V-ing: 'looking forward to hearing from you'."
+  },
+  {
+    "id": 146,
+    "question": "He is not tall enough ___ basketball professionally.",
+    "options": ["play", "to play", "playing", "played"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'to play'. Cấu trúc đúng là 'adj + enough + to-infinitive'. Vì vậy ta nói 'not tall enough to play'."
+  },
+  {
+    "id": 147,
+    "question": "She said that she ___ busy then.",
+    "options": ["is", "was", "were", "has been"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'was'. Đây là câu tường thuật trong quá khứ, nên thì trong mệnh đề sau thường lùi thì. 'Is' lùi thành 'was' với chủ ngữ 'she'."
+  },
+  {
+    "id": 148,
+    "question": "You should ___ more vegetables.",
+    "options": ["eat", "eats", "to eat", "eating"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'eat'. Sau động từ khuyết thiếu 'should', ta dùng động từ nguyên mẫu không 'to'. Vì vậy câu đúng là 'You should eat more vegetables'."
+  },
+  {
+    "id": 149,
+    "question": "The test was ___ difficult that many students failed.",
+    "options": ["too", "so", "such", "enough"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'so'. Cấu trúc 'so + adjective + that + clause' dùng để diễn tả mức độ dẫn đến kết quả nào đó. Vì vậy 'so difficult that...' là cấu trúc đúng."
+  },
+  {
+    "id": 150,
+    "question": "It is important for students ___ on time.",
+    "options": ["arrive", "arrives", "to arrive", "arriving"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'to arrive'. Sau cấu trúc 'It is + adjective + for someone + to do something', ta dùng động từ nguyên mẫu có 'to'."
+  },
+  {
+    "id": 151,
+    "question": "By the time we got to the station, the train ___.",
+    "options": ["left", "has left", "had left", "was leaving"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'had left'. Hành động tàu rời ga xảy ra trước thời điểm chúng tôi đến, cả hai đều ở quá khứ. Hành động xảy ra trước một hành động quá khứ khác dùng quá khứ hoàn thành."
+  },
+  {
+    "id": 152,
+    "question": "This exercise is not as ___ as the previous one.",
+    "options": ["easy", "easier", "easiest", "more easy"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'easy'. Cấu trúc so sánh bằng phủ định là 'not as + adjective + as'. Vì vậy phải dùng tính từ nguyên thể 'easy', không dùng dạng so sánh hơn hay so sánh nhất."
+  },
+  {
+    "id": 153,
+    "question": "She speaks English ___ than I do.",
+    "options": ["good", "well", "better", "best"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'better'. Động từ 'speaks' cần bổ nghĩa bằng trạng từ, và có 'than' nên cần dạng so sánh hơn. 'Well' là trạng từ của 'good', dạng so sánh hơn là 'better'."
+  },
+  {
+    "id": 154,
+    "question": "My brother enjoys ___ comics in his free time.",
+    "options": ["read", "reads", "reading", "to read"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'reading'. Sau động từ 'enjoy', ta dùng V-ing. Vì vậy cấu trúc đúng là 'enjoys reading comics'."
+  },
+  {
+    "id": 155,
+    "question": "The more you practice, the ___ you become.",
+    "options": ["good", "better", "best", "well"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'better'. Đây là cấu trúc so sánh kép: 'The more..., the better...'. Nó diễn tả rằng bạn càng luyện tập nhiều thì bạn càng trở nên tốt hơn."
+  },
+  {
+    "id": 156,
+    "question": "She hasn't called me ___ last week.",
+    "options": ["for", "since", "from", "during"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'since'. 'Last week' đóng vai trò là mốc thời gian bắt đầu, nên dùng 'since'. 'For' dùng với khoảng thời gian như for a week."
+  },
+  {
+    "id": 157,
+    "question": "The man ___ lives next door is a doctor.",
+    "options": ["which", "who", "where", "whose"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'who'. Đại từ quan hệ 'who' dùng để thay thế cho người trong mệnh đề quan hệ. Ở đây nó thay cho 'the man'."
+  },
+  {
+    "id": 158,
+    "question": "We will go on a picnic if the weather ___ nice.",
+    "options": ["is", "was", "will be", "be"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'is'. Trong câu điều kiện loại 1, mệnh đề sau 'if' dùng hiện tại đơn, không dùng 'will'. Vì vậy phải là 'if the weather is nice'."
+  },
+  {
+    "id": 159,
+    "question": "He asked me where I ___.",
+    "options": ["live", "lived", "am living", "have lived"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'lived'. Đây là câu tường thuật ở quá khứ: 'He asked me...'. Khi lùi thì, hiện tại đơn 'live' thường chuyển thành quá khứ đơn 'lived'."
+  },
+  {
+    "id": 160,
+    "question": "My homework must ___ before 10 p.m.",
+    "options": ["finish", "finished", "be finished", "be finishing"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'be finished'. Vì bài tập là đối tượng được hoàn thành chứ không tự làm hành động, nên cần câu bị động. Sau 'must', cấu trúc bị động là 'must be + past participle'."
+  },
+  {
+    "id": 161,
+    "question": "Although it was raining, we ___ to the beach.",
+    "options": ["go", "went", "goes", "going"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'went'. Mệnh đề đầu ở quá khứ 'was raining', nên mệnh đề sau cũng cần ở quá khứ để diễn tả hành động đã xảy ra: 'we went to the beach'."
+  },
+  {
+    "id": 162,
+    "question": "He works ___ than his brother.",
+    "options": ["hard", "harder", "hardest", "more hard"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'harder'. Có 'than' nên cần so sánh hơn. 'Hard' trong vai trò trạng từ ngắn sẽ thêm -er thành 'harder'."
+  },
+  {
+    "id": 163,
+    "question": "I have never ___ sushi before.",
+    "options": ["eat", "ate", "eaten", "eating"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'eaten'. Sau 'have never', ta cần quá khứ phân từ để tạo thì hiện tại hoàn thành. Quá khứ phân từ của 'eat' là 'eaten'."
+  },
+  {
+    "id": 164,
+    "question": "Would you mind ___ the door?",
+    "options": ["open", "to open", "opening", "opened"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'opening'. Sau cấu trúc 'Would you mind', ta dùng V-ing. Câu này là một cách nhờ vả lịch sự: 'Would you mind opening the door?'"
+  },
+  {
+    "id": 165,
+    "question": "She is used to ___ up early.",
+    "options": ["get", "gets", "getting", "got"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'getting'. Sau cấu trúc 'be used to', nếu 'to' là giới từ mang nghĩa 'quen với', ta dùng danh từ hoặc V-ing. Vì vậy 'used to getting up early' là đúng."
+  },
+  {
+    "id": 166,
+    "question": "Neither of the answers ___ correct.",
+    "options": ["is", "are", "were", "be"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'is'. Chủ ngữ chính là 'Neither', được xem là số ít trong ngữ pháp chuẩn, nên đi với động từ số ít 'is'."
+  },
+  {
+    "id": 167,
+    "question": "He drives carefully, ___?",
+    "options": ["does he", "doesn't he", "is he", "isn't he"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'doesn't he'. Đây là câu hỏi đuôi. Mệnh đề chính khẳng định với động từ thường ở hiện tại đơn 'drives', nên đuôi phải phủ định với trợ động từ 'does': 'doesn't he?'"
+  },
+  {
+    "id": 168,
+    "question": "A new bridge ___ in this town next year.",
+    "options": ["build", "will build", "will be built", "built"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'will be built'. Cây cầu là đối tượng được xây, nên dùng câu bị động. Vì thời gian là 'next year', phải dùng bị động tương lai đơn: 'will be built'."
+  },
+  {
+    "id": 169,
+    "question": "I don't know ___ he is angry.",
+    "options": ["why", "what", "which", "where"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'why'. Câu cần một từ để hỏi về lý do. 'I don't know why he is angry' nghĩa là 'Tôi không biết tại sao anh ấy giận'."
+  },
+  {
+    "id": 170,
+    "question": "She studied hard ___ she could pass the exam.",
+    "options": ["because", "so that", "although", "but"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'so that'. Cấu trúc 'so that' diễn tả mục đích. Câu này có nghĩa là cô ấy học chăm chỉ để có thể vượt qua kỳ thi."
+  },
+  {
+    "id": 171,
+    "question": "The teacher made the students ___ the exercise again.",
+    "options": ["do", "to do", "doing", "did"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'do'. Sau động từ 'make' trong cấu trúc chủ động, ta dùng tân ngữ + động từ nguyên mẫu không 'to'. Vì vậy 'made the students do...' là đúng."
+  },
+  {
+    "id": 172,
+    "question": "This room needs ___.",
+    "options": ["clean", "to clean", "cleaning", "cleaned"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'cleaning'. Cấu trúc 'need + V-ing' có thể mang nghĩa bị động, tức là 'cần được dọn'. Vì vậy 'This room needs cleaning' là đúng và tự nhiên."
+  },
+  {
+    "id": 173,
+    "question": "I wish you ___ here with us now.",
+    "options": ["are", "were", "was", "be"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'were'. Đây là điều ước trái với hiện tại, nên sau 'wish' dùng quá khứ giả định. Với động từ to be, dạng chuẩn là 'were'."
+  },
+  {
+    "id": 174,
+    "question": "Not only the students but also the teacher ___ excited about the trip.",
+    "options": ["are", "is", "were", "be"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'is'. Với cấu trúc 'not only... but also...', động từ thường hòa hợp với chủ ngữ gần nó nhất. Chủ ngữ gần nhất là 'the teacher' số ít, nên dùng 'is'."
+  },
+  {
+    "id": 175,
+    "question": "The woman ___ son won the prize is very proud.",
+    "options": ["who", "which", "whose", "whom"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'whose'. 'Whose' là đại từ quan hệ chỉ sở hữu, nghĩa là 'có ...'. Ở đây là 'người phụ nữ có con trai giành giải thưởng'."
+  },
+  {
+    "id": 176,
+    "question": "He suggested ___ to the museum on Sunday.",
+    "options": ["go", "to go", "going", "went"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'going'. Sau động từ 'suggest', ta thường dùng V-ing hoặc that-clause. Vì vậy 'suggested going' là đúng."
+  },
+  {
+    "id": 177,
+    "question": "The weather was ___ cold for us to go swimming.",
+    "options": ["so", "such", "too", "enough"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'too'. Cấu trúc 'too + adjective + for someone + to do something' diễn tả mức độ quá... để làm gì. Vì vậy 'too cold for us to go swimming' là đúng."
+  },
+  {
+    "id": 178,
+    "question": "He denied ___ my pen.",
+    "options": ["take", "to take", "taking", "took"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'taking'. Sau động từ 'deny', ta dùng V-ing. Do đó cấu trúc đúng là 'denied taking my pen'."
+  },
+  {
+    "id": 179,
+    "question": "If only I ___ more time to finish this work.",
+    "options": ["have", "had", "will have", "having"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'had'. 'If only' dùng để diễn tả ao ước, tiếc nuối. Khi nói về điều không có thật ở hiện tại, ta dùng quá khứ đơn: 'If only I had more time...'"
+  },
+  {
+    "id": 180,
+    "question": "She told me ___ talk during the test.",
+    "options": ["don't", "not to", "to not", "didn't"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'not to'. Sau 'tell someone', khi muốn diễn tả lời yêu cầu/phủ định, ta dùng 'not to + verb'. Vì vậy 'told me not to talk' là đúng."
+  },
+  {
+    "id": 181,
+    "question": "Choose the correct sentence.",
+    "options": ["He don't like milk.", "He doesn't likes milk.", "He doesn't like milk.", "He not like milk."],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'He doesn't like milk.' Trong hiện tại đơn phủ định với chủ ngữ he/she/it, ta dùng 'doesn't + động từ nguyên mẫu'. Vì đã có 'doesn't', động từ chính phải giữ nguyên là 'like', không thêm -s."
+  },
+  {
+    "id": 182,
+    "question": "Choose the correct sentence.",
+    "options": ["There is three pens on the desk.", "There are three pens on the desk.", "There are three pen on the desk.", "There is three pen on the desk."],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'There are three pens on the desk.' Vì 'three pens' là danh từ số nhiều, phải dùng 'There are'. Đồng thời danh từ 'pen' cũng phải ở dạng số nhiều là 'pens'."
+  },
+  {
+    "id": 183,
+    "question": "What does 'borrow' mean?",
+    "options": ["Give something to someone", "Take something for a short time and return it later", "Buy something expensive", "Lose something"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'Take something for a short time and return it later'. 'Borrow' nghĩa là mượn, tức là lấy tạm một vật rồi sẽ trả lại sau. Nó khác với 'lend', nghĩa là cho mượn."
+  },
+  {
+    "id": 184,
+    "question": "Choose the best response: 'Thank you very much.'",
+    "options": ["I'm sorry.", "You're welcome.", "Never mind.", "No problem?"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'You're welcome.' Đây là câu đáp lịch sự, tự nhiên và phổ biến nhất khi ai đó cảm ơn bạn."
+  },
+  {
+    "id": 185,
+    "question": "Reading: 'Mai usually studies in the evening because it is quiet.' Why does Mai study in the evening?",
+    "options": ["Because she is busy", "Because it is quiet", "Because she is tired", "Because she likes morning"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'Because it is quiet'. Câu đọc đã cho lý do trực tiếp bằng từ 'because'. Mai học vào buổi tối vì khi đó yên tĩnh."
+  },
+  {
+    "id": 186,
+    "question": "Reading: 'John missed the bus, so he was late for work.' Why was John late?",
+    "options": ["Because he woke up early", "Because he missed the bus", "Because he took a taxi", "Because work started late"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'Because he missed the bus'. Liên từ 'so' nối nguyên nhân và kết quả. Nguyên nhân là John lỡ xe buýt, kết quả là anh ấy đi làm muộn."
+  },
+  {
+    "id": 187,
+    "question": "Choose the correct preposition: 'She is afraid ___ dogs.'",
+    "options": ["at", "of", "with", "for"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'of'. Cụm cố định là 'be afraid of', nghĩa là sợ cái gì hoặc con gì."
+  },
+  {
+    "id": 188,
+    "question": "Choose the correct preposition: 'He apologized ___ being late.'",
+    "options": ["for", "to", "at", "with"],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là 'for'. Cấu trúc đúng là 'apologize for something / for doing something'. Vì vậy ta nói 'apologized for being late'."
+  },
+  {
+    "id": 189,
+    "question": "She can speak English, ___ she cannot write it well.",
+    "options": ["and", "but", "so", "because"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'but'. Hai mệnh đề mang ý tương phản: cô ấy có thể nói tiếng Anh nhưng không viết tốt. 'But' là liên từ phù hợp để nối hai ý đối lập."
+  },
+  {
+    "id": 190,
+    "question": "We arrived ___ the airport at 6 o'clock.",
+    "options": ["in", "on", "at", "to"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'at'. Với địa điểm cụ thể như sân bay, trường học, trạm xe trong nhiều trường hợp đơn giản, giới từ tự nhiên là 'at'. Cụm chuẩn là 'arrive at the airport'."
+  },
+  {
+    "id": 191,
+    "question": "She has three cats, and ___ are very cute.",
+    "options": ["it", "they", "them", "their"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'they'. Chỗ trống đứng làm chủ ngữ cho động từ 'are', nên cần đại từ chủ ngữ số nhiều thay cho 'three cats'. 'They' là lựa chọn đúng."
+  },
+  {
+    "id": 192,
+    "question": "Which sentence is correct?",
+    "options": ["She enjoys to dance.", "She enjoys dance.", "She enjoys dancing.", "She enjoys danced."],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'She enjoys dancing.' Sau động từ 'enjoy', ta dùng V-ing. Vì vậy 'dancing' là dạng đúng."
+  },
+  {
+    "id": 193,
+    "question": "He is one of the most famous ___ in the country.",
+    "options": ["artist", "artists", "artistes", "artisting"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'artists'. Cấu trúc 'one of the most + adjective + plural noun' yêu cầu danh từ số nhiều. Vì vậy phải là 'artists'."
+  },
+  {
+    "id": 194,
+    "question": "I found the book ___ interesting that I read it in one day.",
+    "options": ["such", "so", "too", "enough"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'so'. Cấu trúc 'so + adjective + that + clause' diễn tả mức độ dẫn đến kết quả. Vì vậy 'so interesting that...' là hoàn toàn đúng."
+  },
+  {
+    "id": 195,
+    "question": "The teacher asked the students ___ their phones away.",
+    "options": ["put", "to put", "putting", "puts"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'to put'. Sau cấu trúc 'ask someone', khi yêu cầu ai làm gì, ta dùng 'to-infinitive': 'asked the students to put their phones away'."
+  },
+  {
+    "id": 196,
+    "question": "If she ___ earlier, she wouldn't have missed the train.",
+    "options": ["left", "had left", "leaves", "would leave"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'had left'. Đây là câu điều kiện loại 3 diễn tả điều kiện không có thật trong quá khứ. Mệnh đề if dùng quá khứ hoàn thành, mệnh đề chính dùng 'would have + past participle'."
+  },
+  {
+    "id": 197,
+    "question": "Choose the correct meaning of 'environment'.",
+    "options": ["A kind of food", "The natural world around us", "A school subject only", "A type of machine"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'The natural world around us'. 'Environment' thường chỉ môi trường sống xung quanh chúng ta, gồm không khí, nước, cây cối, động vật và điều kiện tự nhiên."
+  },
+  {
+    "id": 198,
+    "question": "Reading: 'Linda watered the plants because the weather was very hot.' Why did Linda water the plants?",
+    "options": ["Because it was raining", "Because the weather was very hot", "Because she was cleaning the garden", "Because she bought new plants"],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'Because the weather was very hot'. Câu văn cho biết rõ lý do bằng mệnh đề sau 'because'. Thời tiết quá nóng nên Linda tưới cây."
+  },
+  {
+    "id": 199,
+    "question": "Choose the best question for this answer: 'I usually go to school by bike.'",
+    "options": ["Where do you go to school?", "When do you go to school?", "How do you go to school?", "Why do you go to school?"],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là 'How do you go to school?'. Câu trả lời nói về phương tiện đi học 'by bike', nên câu hỏi phù hợp phải bắt đầu bằng 'How'."
+  },
+  {
+    "id": 200,
+    "question": "Choose the correct sentence.",
+    "options": ["If it will rain, we will stay home.", "If it rains, we will stay home.", "If it rained, we will stay home.", "If it raining, we stay home."],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là 'If it rains, we will stay home.' Đây là cấu trúc chuẩn của câu điều kiện loại 1: If + hiện tại đơn, will + động từ nguyên mẫu. Không dùng 'will' ở mệnh đề bắt đầu bằng 'if' trong kiểu câu này."
+  }
 ]

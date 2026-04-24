@@ -1,1 +1,2821 @@
-[]
+[
+  {
+    "id": 1,
+    "question": "Kinh tế chính trị Mác – Lênin do ai sáng lập?",
+    "options": [
+      "A.Smith và D.Ricardo",
+      "V.I.Lênin và A.Montchretien",
+      "F.Quesnay và W.Petty",
+      "C.Mác và Ph.Ăngghen"
+    ],
+    "correctIndex": 3,
+    "explanation": "Đáp án đúng là C.Mác và Ph.Ăngghen. Hai ông là những người sáng lập ra kinh tế chính trị Mác, sau này được V.I.Lênin kế thừa và phát triển trong điều kiện chủ nghĩa tư bản chuyển sang giai đoạn đế quốc chủ nghĩa, vì vậy môn học được gọi đầy đủ là Kinh tế chính trị Mác – Lênin."
+  },
+  {
+    "id": 2,
+    "question": "Đối tượng nghiên cứu của Kinh tế chính trị Mác – Lênin là:",
+    "options": [
+      "Các quy luật kỹ thuật trong quá trình sản xuất vật chất",
+      "Sự phát triển của lực lượng sản xuất trong mọi thời kỳ lịch sử",
+      "Các quan hệ xã hội của sản xuất và trao đổi trong một phương thức sản xuất",
+      "Các chính sách kinh tế của nhà nước trong nền kinh tế thị trường"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kinh tế chính trị Mác – Lênin không nghiên cứu mặt kỹ thuật đơn thuần mà tập trung vào các quan hệ xã hội nảy sinh trong quá trình sản xuất và trao đổi. Nói cách khác, đối tượng của nó là các quan hệ sản xuất và trao đổi gắn với một phương thức sản xuất nhất định."
+  },
+  {
+    "id": 3,
+    "question": "Kinh tế chính trị Mác – Lênin được hình thành dựa trên cơ sở nào?",
+    "options": [
+      "Phân tích các chính sách kinh tế của các quốc gia tư bản",
+      "Kế thừa và phát triển các giá trị khoa học của kinh tế chính trị trước đó",
+      "Nghiên cứu các tư tưởng triết học cổ đại về kinh tế",
+      "Tổng hợp các lý thuyết kinh tế hiện đại của phương Tây"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là kế thừa và phát triển các giá trị khoa học của kinh tế chính trị trước đó. C.Mác và Ph.Ăngghen đã tiếp thu có phê phán những thành tựu của kinh tế chính trị cổ điển Anh, đồng thời khắc phục các hạn chế của các trường phái trước để xây dựng hệ thống lý luận mới."
+  },
+  {
+    "id": 4,
+    "question": "Nội dung của phương pháp trừu tượng hóa khoa học là:",
+    "options": [
+      "Phân tích các hiện tượng kinh tế dựa trên cảm xúc và kinh nghiệm cá nhân",
+      "Tổng hợp tất cả các yếu tố kinh tế để xây dựng mô hình lý thuyết",
+      "Loại bỏ các yếu tố ngẫu nhiên để phát hiện bản chất và quy luật của đối tượng nghiên cứu",
+      "Nghiên cứu các quan hệ kinh tế bằng cách sử dụng thiết bị thí nghiệm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Phương pháp trừu tượng hóa khoa học là gạt bỏ những yếu tố ngẫu nhiên, bề ngoài, thứ yếu để tìm ra bản chất bên trong và quy luật vận động của hiện tượng kinh tế. Đây là phương pháp rất quan trọng trong kinh tế chính trị Mác – Lênin."
+  },
+  {
+    "id": 5,
+    "question": "Quy luật kinh tế trong Kinh tế chính trị Mác – Lênin được hiểu như thế nào?",
+    "options": [
+      "Sự tác động chủ quan của con người lên quá trình sản xuất",
+      "Các quy định do nhà nước ban hành để điều chỉnh hoạt động kinh tế",
+      "Những thay đổi ngẫu nhiên trong quan hệ sản xuất và trao đổi",
+      "Những mối liên hệ phản ánh bản chất, khách quan, lặp đi lặp lại của hiện tượng và quá trình kinh tế"
+    ],
+    "correctIndex": 3,
+    "explanation": "Quy luật kinh tế là những mối liên hệ bản chất, khách quan, tất yếu và lặp đi lặp lại trong các hiện tượng, quá trình kinh tế. Vì mang tính khách quan nên con người không thể tạo ra hay xóa bỏ tùy ý, mà chỉ có thể nhận thức và vận dụng đúng."
+  },
+  {
+    "id": 6,
+    "question": "Chủ nghĩa trọng thương có điểm gì hạn chế khi quan niệm về lợi nhuận?",
+    "options": [
+      "Cho rằng lợi nhuận chỉ đến từ thương nghiệp",
+      "Mục tiêu của hoạt động kinh tế là lợi nhuận",
+      "Lợi nhuận thương nghiệp là mua rẻ bán đắt",
+      "Lợi nhuận là trao đổi không ngang giá"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hạn chế cơ bản của chủ nghĩa trọng thương là xem lợi nhuận chủ yếu, thậm chí chỉ, phát sinh trong lĩnh vực lưu thông và thương nghiệp. Quan điểm này chưa thấy được vai trò quyết định của sản xuất trong việc tạo ra giá trị và lợi nhuận."
+  },
+  {
+    "id": 7,
+    "question": "Các nhà nghiên cứu kinh tế theo trường phái Mácxít có đặc điểm gì?",
+    "options": [
+      "Tìm hiểu về kinh tế thị trường xã hội chủ nghĩa thông qua cách tiếp cận của Các Mác",
+      "Nghiên cứu theo cách tiếp cận kinh tế chính trị của Các Mác",
+      "Nghiên cứu kinh tế kết hợp chính trị theo cách tiếp cận của Các Mác",
+      "Phân tích nền kinh tế xã hội chủ nghĩa dựa trên cách tiếp cận của Các Mác"
+    ],
+    "correctIndex": 1,
+    "explanation": "Các nhà nghiên cứu theo trường phái Mácxít tiếp cận nền kinh tế bằng phương pháp và lập trường của kinh tế chính trị Mác. Nghĩa là họ đi sâu vào bản chất các quan hệ sản xuất, lợi ích và quy luật vận động của nền kinh tế."
+  },
+  {
+    "id": 8,
+    "question": "Chủ nghĩa trọng thương ra đời trong bối cảnh như thế nào?",
+    "options": [
+      "Thời kỳ phương thức sản xuất phong kiến đang tan rã và phương thức sản xuất tư bản chủ nghĩa bắt đầu hình thành",
+      "Sau khi các phát kiến địa lý được thực hiện",
+      "Hoạt động ngoại thương là lĩnh vực hiệu quả nhất trong giai đoạn đó",
+      "Do sự phát triển chậm của sản xuất, buộc phải tích lũy vốn thông qua ngoại thương"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chủ nghĩa trọng thương ra đời trong thời kỳ cuối phong kiến, khi quan hệ sản xuất tư bản chủ nghĩa bắt đầu hình thành. Bối cảnh lịch sử đó làm cho thương mại, tiền tệ và tích lũy ban đầu của tư bản trở nên nổi bật."
+  },
+  {
+    "id": 9,
+    "question": "Chức năng phương pháp luận của Kinh tế chính trị Mác – Lênin thể hiện ở nội dung nào?",
+    "options": [
+      "Hướng dẫn cách xây dựng chính sách kinh tế cụ thể cho từng thời kỳ",
+      "Cung cấp nền tảng lý luận để hiểu sâu các khái niệm kinh tế",
+      "Đưa ra các giải pháp kỹ thuật để cải thiện năng suất lao động",
+      "Phân tích các yếu tố ngẫu nhiên trong quan hệ sản xuất và trao đổi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chức năng phương pháp luận nghĩa là môn học cung cấp cơ sở lý luận, cách tiếp cận và công cụ nhận thức để nghiên cứu các hiện tượng kinh tế. Nhờ đó người học hiểu sâu hơn bản chất các phạm trù và quy luật kinh tế."
+  },
+  {
+    "id": 10,
+    "question": "Vì sao trong thời kỳ cổ đại và trung đại, kinh tế chính trị chưa trở thành một môn khoa học?",
+    "options": [
+      "Vì trong giai đoạn này, tư tưởng tôn giáo chiếm ưu thế nên kinh tế chính trị phát triển thành một môn khoa học",
+      "Vì trong giai đoạn này, các phương pháp nghiên cứu kinh tế chưa được hình thành",
+      "Vì trong giai đoạn này, các khái niệm và phạm trù của kinh tế chính trị chưa xuất hiện",
+      "Vì trong giai đoạn này, nền kinh tế có trình độ phát triển rất thấp nên kinh tế chính trị chưa trở thành một môn khoa học"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ở thời kỳ cổ đại và trung đại, sản xuất hàng hóa và phân công lao động xã hội còn phát triển thấp, nên các quan hệ kinh tế chưa đủ phong phú và điển hình để hình thành một ngành khoa học độc lập. Vì vậy kinh tế chính trị chưa thể phát triển đầy đủ như một môn khoa học."
+  },
+  {
+    "id": 11,
+    "question": "Quy luật kinh tế khác với chính sách kinh tế ở điểm nào?",
+    "options": [
+      "Quy luật kinh tế chỉ áp dụng trong sản xuất, còn chính sách kinh tế áp dụng trong trao đổi",
+      "Quy luật kinh tế do nhà nước ban hành, còn chính sách kinh tế tự phát triển",
+      "Quy luật kinh tế thay đổi ngẫu nhiên, còn chính sách kinh tế ổn định",
+      "Quy luật kinh tế mang tính khách quan, còn chính sách kinh tế mang tính chủ quan"
+    ],
+    "correctIndex": 3,
+    "explanation": "Quy luật kinh tế tồn tại khách quan, không phụ thuộc ý muốn chủ quan của con người. Ngược lại, chính sách kinh tế là sản phẩm của hoạt động nhận thức và quản lý của con người, nên mang tính chủ quan và phải phù hợp với quy luật khách quan."
+  },
+  {
+    "id": 12,
+    "question": "Hạn chế của chủ nghĩa trọng nông là:",
+    "options": [
+      "Không nhận ra vai trò của thương mại trong nền kinh tế",
+      "Tập trung quá nhiều vào quan hệ xã hội thay vì sản xuất",
+      "Cho rằng chỉ có nông nghiệp tạo ra giá trị, bỏ qua các ngành khác",
+      "Không giải thích được sự phát triển của công nghệ trong sản xuất"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chủ nghĩa trọng nông đã tiến bộ hơn trọng thương khi nhấn mạnh vai trò của sản xuất, nhưng vẫn hạn chế ở chỗ cho rằng chỉ nông nghiệp mới tạo ra sản phẩm thuần túy. Quan điểm này bỏ qua vai trò của công nghiệp và các lĩnh vực sản xuất khác trong việc tạo ra giá trị."
+  },
+  {
+    "id": 13,
+    "question": "Vì sao các chính sách kinh tế được ban hành không phù hợp với các quy luật kinh tế?",
+    "options": [
+      "Con người không nhận thức được sự tồn tại của các quy luật kinh tế khách quan",
+      "Con người hiểu sai về thực trạng kinh tế và các quy luật kinh tế",
+      "Số liệu thu thập không chính xác và chịu tác động từ các quan điểm chính trị",
+      "Quy luật kinh tế khách quan quá phức tạp và khó để dự đoán"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi chủ thể quản lý nhận thức sai thực trạng nền kinh tế hoặc hiểu sai quy luật kinh tế, chính sách ban hành dễ rơi vào tình trạng không phù hợp. Bản thân quy luật kinh tế vẫn khách quan, vấn đề nằm ở nhận thức và vận dụng của con người."
+  },
+  {
+    "id": 14,
+    "question": "Theo Kinh tế chính trị Mác – Lênin, vì sao lợi nhuận không chỉ đến từ thương mại như chủ nghĩa trọng thương quan niệm?",
+    "options": [
+      "Vì chính sách nhà nước điều tiết hoạt động thương mại",
+      "Vì công nghệ hiện đại thay đổi cách thức trao đổi hàng hóa",
+      "Vì sản xuất đóng vai trò quyết định trong việc tạo ra giá trị",
+      "Vì lợi nhuận chủ yếu dựa trên sự cạnh tranh thị trường"
+    ],
+    "correctIndex": 2,
+    "explanation": "Theo quan điểm Mácxít, nguồn gốc cuối cùng của lợi nhuận phải được tìm trong sản xuất, nơi lao động tạo ra giá trị mới. Thương mại chỉ là khâu thực hiện giá trị, chứ không phải nơi quyết định tạo ra toàn bộ lợi nhuận."
+  },
+  {
+    "id": 15,
+    "question": "Vì sao chủ nghĩa trọng thương không giải thích được đầy đủ thực tiễn kinh tế thời kỳ tư bản sơ khai?",
+    "options": [
+      "Vì chỉ tập trung vào sản xuất nông nghiệp mà bỏ qua thương mại",
+      "Vì nhấn mạnh vai trò của sản xuất trong việc tạo ra lợi nhuận",
+      "Vì lý giải lợi nhuận dựa trên mua rẻ bán đắt mà thiếu cơ sở khoa học",
+      "Vì không quan tâm đến các quan hệ xã hội trong nền kinh tế"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chủ nghĩa trọng thương giải thích lợi nhuận chủ yếu bằng mua rẻ bán đắt và trao đổi không ngang giá. Cách giải thích đó chưa làm rõ bản chất tạo ra giá trị trong sản xuất nên không đủ sức giải thích thực tiễn kinh tế tư bản sơ khai."
+  },
+  {
+    "id": 16,
+    "question": "Dưới góc độ lý luận, vì sao chủ nghĩa trọng nông lại đề cao vai trò của lĩnh vực sản xuất nông nghiệp?",
+    "options": [
+      "Bởi vì chỉ có nông nghiệp mới tạo ra sản phẩm thuần túy, các ngành khác không có những lợi thế này",
+      "Bởi chỉ có nông nghiệp mới tạo ra được sản phẩm thuần túy",
+      "Bởi vì dân số tăng nhanh, lương thực ngày càng khan hiếm nên nông nghiệp trở nên quan trọng hơn",
+      "Bởi vì nông nghiệp là ngành quan trọng nhất tạo ra của cải vật chất cho xã hội"
+    ],
+    "correctIndex": 1,
+    "explanation": "Theo chủ nghĩa trọng nông, chỉ có nông nghiệp mới tạo ra sản phẩm thuần túy, tức phần dôi ra sau khi bù đắp chi phí. Chính quan niệm lý luận này làm họ đề cao tuyệt đối vai trò của nông nghiệp."
+  },
+  {
+    "id": 17,
+    "question": "Vì sao nói khi xuất hiện hệ thống lý luận của Adam Smith thì kinh tế chính trị mới chính thức trở thành môn khoa học?",
+    "options": [
+      "Vì Adam Smith là người đầu tiên đề xuất khái niệm Kinh tế chính trị",
+      "Vì Adam Smith đã xác định đúng đối tượng nghiên cứu của kinh tế chính trị, liên kết khái niệm đó với các nhà lập pháp và chính trị gia",
+      "Vì Adam Smith đã tiếp thu, hoàn thiện và mở rộng các kết quả từ trường phái trọng thương và trọng nông",
+      "Vì Adam Smith đã thiết lập các khái niệm và phạm trù để phân tích có hệ thống nền sản xuất tư bản chủ nghĩa"
+    ],
+    "correctIndex": 3,
+    "explanation": "Adam Smith có vai trò lớn vì đã xây dựng được hệ thống phạm trù và khái niệm dùng để phân tích một cách có hệ thống nền sản xuất tư bản chủ nghĩa. Nhờ đó kinh tế chính trị từ chỗ rời rạc đã phát triển thành một khoa học tương đối hoàn chỉnh."
+  },
+  {
+    "id": 18,
+    "question": "Vì sao cho đến nay vẫn còn tồn tại nhiều trường phái kinh tế khác nhau?",
+    "options": [
+      "Bởi các trường phái kinh tế có đối tượng và phương pháp nghiên cứu không giống nhau",
+      "Bởi các trường phái kinh tế xuất hiện ở các quốc gia có chế độ chính trị khác biệt",
+      "Bởi nền kinh tế quá phức tạp, dẫn đến việc mỗi trường phái sử dụng các phương pháp nghiên cứu khác nhau",
+      "Bởi các trường phái kinh tế khác nhau về đối tượng nghiên cứu, phương pháp nghiên cứu và chức năng nghiên cứu"
+    ],
+    "correctIndex": 3,
+    "explanation": "Các trường phái kinh tế khác nhau do khác nhau về đối tượng tiếp cận, phương pháp nghiên cứu và cả chức năng mà họ nhấn mạnh. Vì vậy cùng nghiên cứu kinh tế nhưng mỗi trường phái lại đưa ra hệ thống lý luận và cách giải thích riêng."
+  },
+  {
+    "id": 19,
+    "question": "Đâu là lý do khiến Đảng ta ban hành nhiều chủ trương, chính sách kinh tế kìm hãm sự phát triển của nền kinh tế trong giai đoạn trước đổi mới?",
+    "options": [
+      "Vì Đảng ta chưa nhận thức đúng đắn về các quy luật kinh tế khách quan",
+      "Vì chịu ảnh hưởng từ mô hình kinh tế của Trung Quốc",
+      "Vì nền kinh tế còn chưa phát triển, khiến các chính sách kinh tế không phát huy hiệu quả",
+      "Vì Đảng ta thiếu các cơ quan tư vấn, tham mưu về kinh tế"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyên nhân cốt lõi là do nhận thức chưa đầy đủ, chưa đúng đắn về các quy luật kinh tế khách quan trong thời kỳ đó. Khi chính sách đi ngược hoặc không phù hợp quy luật kinh tế, nền kinh tế dễ bị kìm hãm."
+  },
+  {
+    "id": 20,
+    "question": "Theo Các Mác, sản xuất hàng hóa là:",
+    "options": [
+      "Hoạt động sản xuất để tự cung tự cấp trong gia đình",
+      "Hoạt động sản xuất nhằm mục đích trao đổi, mua bán",
+      "Hoạt động sản xuất chỉ phục vụ nhu cầu cá nhân",
+      "Hoạt động sản xuất không cần phân công lao động"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sản xuất hàng hóa là kiểu tổ chức sản xuất mà sản phẩm được làm ra trước hết để trao đổi, mua bán trên thị trường. Điểm phân biệt của nó với sản xuất tự cung tự cấp là mục đích trao đổi chứ không phải chỉ để người sản xuất tự sử dụng."
+  },
+  {
+    "id": 21,
+    "question": "Theo Kinh tế chính trị Mác – Lênin, hàng hóa là:",
+    "options": [
+      "Sản phẩm tự nhiên, thỏa mãn nhu cầu của con người thông qua trao đổi mua bán",
+      "Công cụ lao động dùng trong sản xuất, thỏa mãn nhu cầu của con người thông qua trao đổi mua bán",
+      "Sản phẩm của lao động nhằm thỏa mãn nhu cầu của con người thông qua trao đổi, mua bán",
+      "Tài nguyên thiên nhiên có sẵn trong xã hội, thỏa mãn nhu cầu của con người thông qua trao đổi mua bán"
+    ],
+    "correctIndex": 2,
+    "explanation": "Hàng hóa phải là sản phẩm của lao động và được làm ra để thỏa mãn nhu cầu của con người thông qua trao đổi, mua bán. Những vật có ích nhưng không phải sản phẩm của lao động hoặc không nhằm mục đích trao đổi thì không phải hàng hóa theo nghĩa kinh tế chính trị."
+  },
+  {
+    "id": 22,
+    "question": "Thuộc tính giá trị sử dụng của hàng hóa là:",
+    "options": [
+      "Công dụng thỏa mãn nhu cầu của con người",
+      "Lượng lao động xã hội kết tinh trong hàng hóa",
+      "Tỷ lệ trao đổi giữa các hàng hóa",
+      "Giá cả biểu hiện bằng tiền"
+    ],
+    "correctIndex": 0,
+    "explanation": "Giá trị sử dụng là công dụng của hàng hóa, tức khả năng thỏa mãn một nhu cầu nào đó của con người. Đây là thuộc tính tự nhiên – vật chất của hàng hóa và là điều kiện để hàng hóa có thể được trao đổi."
+  },
+  {
+    "id": 23,
+    "question": "Theo Kinh tế chính trị Mác - Lênin, giá trị của hàng hóa là:",
+    "options": [
+      "Công dụng của sản phẩm đối với người tiêu dùng",
+      "Giá cả thị trường của hàng hóa",
+      "Lao động xã hội kết tinh trong hàng hóa",
+      "Số lượng hàng hóa được sản xuất"
+    ],
+    "correctIndex": 2,
+    "explanation": "Giá trị hàng hóa là lao động xã hội của người sản xuất hàng hóa kết tinh trong hàng hóa. Vì vậy giá trị không phải là giá cả thị trường hay công dụng, mà là nội dung xã hội ẩn sau sản phẩm hàng hóa."
+  },
+  {
+    "id": 24,
+    "question": "Theo Kinh tế chính trị Mác – Lênin, lượng giá trị của hàng hóa là:",
+    "options": [
+      "Số lượng sản phẩm được sản xuất trong một giờ",
+      "Giá cả thị trường của hàng hóa",
+      "Lượng lao động xã hội cần thiết để sản xuất ra hàng hóa",
+      "Thời gian lao động cá biệt của từng người sản xuất"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lượng giá trị của hàng hóa được đo bằng thời gian lao động xã hội cần thiết để sản xuất ra hàng hóa đó. Không phải hao phí cá biệt của từng người mà là mức hao phí được xã hội chấp nhận trong điều kiện trung bình."
+  },
+  {
+    "id": 25,
+    "question": "Theo Các Mác, bản chất tiền tệ là:",
+    "options": [
+      "Một loại hàng hóa đặc biệt được tách ra làm vật ngang giá chung",
+      "Công cụ quản lý kinh tế của nhà nước, tách ra làm vật ngang giá chung",
+      "Sản phẩm tự nhiên không cần lao động, tách ra làm vật ngang giá chung",
+      "Phương tiện lưu thông tích trữ giá trị, tách ra làm vật ngang giá chung"
+    ],
+    "correctIndex": 0,
+    "explanation": "Theo Mác, tiền là một hàng hóa đặc biệt được tách ra từ thế giới hàng hóa để làm vật ngang giá chung. Từ đó tiền có thể biểu hiện giá trị của mọi hàng hóa khác và thực hiện các chức năng tiền tệ."
+  },
+  {
+    "id": 26,
+    "question": "Theo kinh tế chính trị Mác – Lênin, thị trường được định nghĩa như thế nào?",
+    "options": [
+      "Nơi sản xuất hàng hóa để tự cung tự cấp, là nơi giúp các chủ thể đưa ra quyết định",
+      "Là nơi mà nhà nước thực hiện nhiệm vụ quản lý và can thiệp vào quá trình kinh tế",
+      "Tổng hòa quan hệ kinh tế đáp ứng nhu cầu thông qua trao đổi, mua bán",
+      "Khu vực lưu trữ tiền tệ và hàng hóa và là nơi giúp các chủ thể ra quyết định"
+    ],
+    "correctIndex": 2,
+    "explanation": "Thị trường không chỉ là một địa điểm cụ thể mà là tổng hòa các quan hệ kinh tế diễn ra thông qua trao đổi, mua bán để đáp ứng nhu cầu. Cách hiểu này bao quát cả chủ thể, đối tượng, giá cả và các quan hệ cung cầu."
+  },
+  {
+    "id": 27,
+    "question": "Yêu cầu của quy luật giá trị là:",
+    "options": [
+      "Sản xuất và trao đổi dựa trên hao phí lao động cá biệt",
+      "Sản xuất không cần quan tâm đến trao đổi",
+      "Sản xuất và trao đổi dựa trên hao phí lao động xã hội cần thiết",
+      "Trao đổi hàng hóa theo giá trị tự nhiên"
+    ],
+    "correctIndex": 2,
+    "explanation": "Quy luật giá trị đòi hỏi sản xuất và trao đổi hàng hóa phải dựa trên cơ sở hao phí lao động xã hội cần thiết. Người sản xuất nào có hao phí cá biệt cao hơn mức xã hội cần thiết sẽ bất lợi trong cạnh tranh."
+  },
+  {
+    "id": 28,
+    "question": "Vai trò của người tiêu dùng thể hiện như thế nào?",
+    "options": [
+      "Sản xuất hàng hóa để bán trên thị trường",
+      "Điều tiết giá cả thị trường",
+      "Mua hàng hóa, dịch vụ để thỏa mãn nhu cầu",
+      "Quản lý các chủ thể trung gian"
+    ],
+    "correctIndex": 2,
+    "explanation": "Người tiêu dùng là chủ thể mua hàng hóa và dịch vụ để thỏa mãn nhu cầu của mình. Thông qua nhu cầu và sức mua, họ còn gián tiếp tác động đến cơ cấu sản xuất và định hướng hoạt động của doanh nghiệp."
+  },
+  {
+    "id": 29,
+    "question": "Sự tách biệt về kinh tế giữa các chủ thể sản xuất dựa trên cơ sở nào?",
+    "options": [
+      "Sự tách biệt về năng suất lao động",
+      "Sự tách biệt về sở hữu",
+      "Sự tách biệt trong phân chia ngành nghề trong xã hội",
+      "Sự phát triển của tiền tệ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Một trong hai điều kiện ra đời của sản xuất hàng hóa là sự tách biệt tương đối về kinh tế giữa những người sản xuất. Cơ sở của sự tách biệt này là sự khác nhau về quyền sở hữu đối với tư liệu sản xuất và sản phẩm lao động."
+  },
+  {
+    "id": 30,
+    "question": "Theo kinh tế chính trị Mác – Lênin, giá trị trao đổi là:",
+    "options": [
+      "Công dụng của hàng hóa đối với người tiêu dùng",
+      "Lượng lao động cá biệt để sản xuất hàng hóa",
+      "Tỷ lệ trao đổi giữa các giá trị sử dụng khác nhau",
+      "Giá cả thị trường của hàng hóa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Giá trị trao đổi là hình thức biểu hiện của giá trị, được thể hiện ở tỷ lệ trao đổi giữa hàng hóa này với hàng hóa khác. Nhờ có giá trị chung bên trong mà các hàng hóa có giá trị sử dụng khác nhau vẫn trao đổi được với nhau."
+  },
+  {
+    "id": 31,
+    "question": "Thời gian lao động xã hội cần thiết là:",
+    "options": [
+      "Thời gian cần thiết để sản xuất sản phẩm trong điều kiện trung bình của xã hội",
+      "Thời gian lao động tối đa để tạo ra hàng hóa trong điều kiện trung bình của xã hội",
+      "Thời gian lao động cá biệt của từng người sản xuất trong điều kiện trung bình của xã hội",
+      "Thời gian lao động không phụ thuộc vào điều kiện xã hội"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thời gian lao động xã hội cần thiết là thời gian cần để sản xuất ra một hàng hóa trong điều kiện sản xuất bình thường của xã hội, với trình độ kỹ thuật, tay nghề và cường độ lao động trung bình. Đây là thước đo lượng giá trị của hàng hóa."
+  },
+  {
+    "id": 32,
+    "question": "Đâu là khuyết tật của nền kinh tế thị trường?",
+    "options": [
+      "Không thúc đẩy năng suất lao động",
+      "Loại bỏ sự cạnh tranh giữa các chủ thể",
+      "Giảm phân công lao động xã hội",
+      "Tiềm ẩn rủi ro khủng hoảng kinh tế"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kinh tế thị trường có nhiều ưu thế nhưng cũng tiềm ẩn những khuyết tật như phân hóa giàu nghèo, độc quyền, ô nhiễm môi trường và đặc biệt là nguy cơ khủng hoảng kinh tế. Vì vậy cần có vai trò quản lý, điều tiết của Nhà nước."
+  },
+  {
+    "id": 33,
+    "question": "Nền kinh tế thị trường có ưu thế:",
+    "options": [
+      "Tạo động lực sáng tạo cho các chủ thể kinh tế",
+      "Không có sự phân hóa giàu nghèo",
+      "Loại bỏ hoàn toàn nguy cơ khủng hoảng",
+      "Không cần sự điều tiết của nhà nước"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ưu thế nổi bật của kinh tế thị trường là tạo động lực cạnh tranh, sáng tạo và nâng cao hiệu quả sử dụng nguồn lực. Chính cạnh tranh và tín hiệu thị trường thúc đẩy các chủ thể không ngừng đổi mới để tồn tại và phát triển."
+  },
+  {
+    "id": 34,
+    "question": "Cạnh tranh trong nội bộ ngành là:",
+    "options": [
+      "Ganh đua giữa các chủ thể trong cùng một ngành",
+      "Ganh đua giữa các ngành sản xuất khác nhau",
+      "Hợp tác giữa các doanh nghiệp trong cùng ngành",
+      "Sự di chuyển nguồn lực giữa các quốc gia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cạnh tranh trong nội bộ ngành là sự ganh đua giữa các doanh nghiệp sản xuất cùng một loại hàng hóa trong cùng ngành. Mục tiêu là giành điều kiện thuận lợi hơn về sản xuất, tiêu thụ và lợi nhuận."
+  },
+  {
+    "id": 35,
+    "question": "Quy luật lưu thông tiền tệ yêu cầu:",
+    "options": [
+      "Lượng tiền phải cao hơn nhu cầu sản xuất",
+      "Lượng tiền lưu thông phải phù hợp với lưu thông hàng hóa",
+      "Lượng tiền không liên quan đến hàng hóa",
+      "Lượng tiền chỉ phục vụ thanh toán quốc tế"
+    ],
+    "correctIndex": 1,
+    "explanation": "Quy luật lưu thông tiền tệ đòi hỏi lượng tiền trong lưu thông phải phù hợp với nhu cầu của lưu thông hàng hóa. Nếu phát hành tiền vượt quá nhu cầu này sẽ dễ dẫn đến lạm phát và rối loạn lưu thông."
+  },
+  {
+    "id": 36,
+    "question": "Quy luật cung cầu điều tiết mối quan hệ giữa:",
+    "options": [
+      "Sản xuất và tiêu dùng hàng hóa",
+      "Lao động cụ thể và lao động trừu tượng",
+      "Cung và cầu trên thị trường",
+      "Năng suất lao động và cường độ lao động"
+    ],
+    "correctIndex": 2,
+    "explanation": "Quy luật cung cầu phản ánh mối quan hệ giữa lượng hàng hóa được đưa ra thị trường và lượng nhu cầu có khả năng thanh toán. Sự biến động của cung và cầu tác động trực tiếp đến giá cả và điều chỉnh sản xuất."
+  },
+  {
+    "id": 37,
+    "question": "Chức năng phương tiện lưu thông của tiền là:",
+    "options": [
+      "Đo lường giá trị của hàng hóa",
+      "Thanh toán các khoản nợ quốc tế",
+      "Dự trữ tiền cho lưu thông",
+      "Làm trung gian trong trao đổi hàng hóa"
+    ],
+    "correctIndex": 3,
+    "explanation": "Khi thực hiện chức năng phương tiện lưu thông, tiền đóng vai trò làm trung gian trong quá trình trao đổi hàng hóa. Nhờ đó quá trình trao đổi không còn diễn ra trực tiếp hàng đổi hàng như trước."
+  },
+  {
+    "id": 38,
+    "question": "Cường độ lao động là:",
+    "options": [
+      "Năng lực sản xuất của người lao động",
+      "Số lượng sản phẩm được tiêu thụ trên thị trường",
+      "Mức độ khẩn trương, tích cực của lao động trong sản xuất",
+      "Thời gian lao động xã hội cần thiết để sản xuất"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cường độ lao động phản ánh mức độ khẩn trương, nặng nhọc và tích cực của hoạt động lao động trong một đơn vị thời gian. Tăng cường độ lao động nghĩa là hao phí sức lao động nhiều hơn trong cùng một khoảng thời gian."
+  },
+  {
+    "id": 39,
+    "question": "Vai trò của nhà nước trong kinh tế thị trường là:",
+    "options": [
+      "Sản xuất hàng hóa để cạnh tranh với doanh nghiệp",
+      "Quản lý kinh tế và khắc phục khuyết tật của thị trường",
+      "Tiêu dùng hàng hóa để định hướng sản xuất",
+      "Làm trung gian kết nối cung và cầu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong kinh tế thị trường, Nhà nước không đứng ngoài mà có vai trò quản lý vĩ mô, định hướng và khắc phục những khuyết tật của thị trường. Vai trò này thể hiện qua pháp luật, chính sách, quy hoạch và các công cụ điều tiết khác."
+  },
+  {
+    "id": 40,
+    "question": "Đặc trưng nào sau đây là đặc trưng phổ biến của nền kinh tế thị trường?",
+    "options": [
+      "Không có sự tham gia của nhà nước",
+      "Chỉ có một hình thức sở hữu duy nhất",
+      "Giá cả được hình thành theo nguyên tắc thị trường",
+      "Không có cạnh tranh giữa các chủ thể"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đặc trưng phổ biến của kinh tế thị trường là giá cả được hình thành chủ yếu theo quan hệ cung cầu và nguyên tắc thị trường. Đây là tín hiệu quan trọng để các chủ thể ra quyết định sản xuất, phân phối và tiêu dùng."
+  },
+  {
+    "id": 41,
+    "question": "Hình thái giá trị giản đơn là:",
+    "options": [
+      "Trao đổi dựa trên vật ngang giá chung cố định",
+      "Trao đổi ngẫu nhiên giữa các hàng hóa trong thời kỳ sơ khai",
+      "Trao đổi giữa nhiều hàng hóa với tỷ lệ cố định",
+      "Trao đổi thông qua tiền tệ hiện đại"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hình thái giá trị giản đơn là hình thái ban đầu của sự biểu hiện giá trị, trong đó một hàng hóa biểu hiện giá trị của mình ở một hàng hóa khác. Nó gắn với trao đổi còn ngẫu nhiên, rời rạc ở giai đoạn sơ khai."
+  },
+  {
+    "id": 42,
+    "question": "Điểm chung giữa các hàng hóa trong trao đổi là:",
+    "options": [
+      "Giá trị sử dụng giống nhau",
+      "Có cùng công dụng cho người tiêu dùng",
+      "Được sản xuất bởi cùng một ngành nghề",
+      "Đều là sản phẩm của lao động xã hội"
+    ],
+    "correctIndex": 3,
+    "explanation": "Các hàng hóa có thể rất khác nhau về công dụng nhưng vẫn trao đổi được vì chúng đều là sản phẩm của lao động xã hội. Chính điểm chung này là cơ sở để so sánh và trao đổi giữa các hàng hóa."
+  },
+  {
+    "id": 43,
+    "question": "Hình thái giá trị đầy đủ khác hình thái giá trị giản đơn ở chỗ:",
+    "options": [
+      "Một hàng hóa được trao đổi với nhiều hàng hóa khác",
+      "Chỉ trao đổi ngẫu nhiên giữa hai hàng hóa",
+      "Dùng tiền làm vật ngang giá chung",
+      "Không cần lao động để sản xuất hàng hóa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ở hình thái giá trị đầy đủ, giá trị của một hàng hóa được biểu hiện ở nhiều hàng hóa khác nhau, chứ không chỉ trong một hàng hóa duy nhất như hình thái giản đơn. Đây là bước phát triển cao hơn trong quá trình hình thành tiền tệ."
+  },
+  {
+    "id": 44,
+    "question": "Quy luật cạnh tranh giữa các ngành nhằm mục đích:",
+    "options": [
+      "Giảm năng suất lao động trong từng ngành",
+      "Tìm nơi đầu tư có lợi nhất bằng cách di chuyển các nguồn lực",
+      "Loại bỏ sự hợp tác giữa các doanh nghiệp",
+      "Giữ nguyên giá trị thị trường của hàng hóa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cạnh tranh giữa các ngành thúc đẩy tư bản và các nguồn lực di chuyển đến nơi có tỷ suất lợi nhuận cao hơn. Nhờ đó hình thành xu hướng phân bổ lại nguồn lực nhằm tìm nơi đầu tư có lợi nhất."
+  },
+  {
+    "id": 45,
+    "question": "Công thức xác định số tiền cần thiết cho lưu thông là:",
+    "options": [
+      "Tổng giá cả hàng hóa chia cho số vòng lưu thông của tiền",
+      "Tổng giá trị sử dụng của hàng hóa nhân với năng suất lao động",
+      "Lượng lao động cá biệt chia cho thời gian sản xuất",
+      "Giá trị hàng hóa nhân với cường độ lao động"
+    ],
+    "correctIndex": 0,
+    "explanation": "Theo lý luận kinh tế chính trị Mác – Lênin, số tiền cần thiết cho lưu thông tỷ lệ thuận với tổng giá cả hàng hóa và tỷ lệ nghịch với tốc độ lưu thông của tiền. Vì vậy công thức đúng là lấy tổng giá cả hàng hóa chia cho số vòng lưu thông của tiền."
+  },
+  {
+    "id": 46,
+    "question": "Tiền làm chức năng tiền tệ thế giới phải đáp ứng yêu cầu:",
+    "options": [
+      "Tiền phải có đủ giá trị và được công nhận quốc tế",
+      "Tiền chỉ cần làm phương tiện lưu thông trong nước",
+      "Tiền không cần có giá trị thực tế",
+      "Tiền chỉ dùng để đo lường giá trị hàng hóa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi làm chức năng tiền tệ thế giới, tiền phải là vật ngang giá chung được thừa nhận trong phạm vi quốc tế và phải có giá trị thực. Trong lịch sử, vàng từng đảm nhiệm vai trò này rất rõ."
+  },
+  {
+    "id": 47,
+    "question": "Mâu thuẫn giữa lao động cụ thể và lao động trừu tượng thể hiện ở điểm nào?",
+    "options": [
+      "Khi sản phẩm không phù hợp nhu cầu xã hội hoặc hao phí cá biệt vượt mức xã hội chấp nhận",
+      "Khi năng suất lao động tăng làm giảm giá trị hàng hóa hoặc khi sản phẩm không phù hợp nhu cầu xã hội",
+      "Khi giá cả thị trường không phản ánh giá trị hàng hóa và khi sản phẩm không phù hợp nhu cầu xã hội",
+      "Khi tiền tệ không thực hiện chức năng thước đo giá trị hoặc hao phí cá biệt vượt mức xã hội chấp nhận"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mâu thuẫn này bộc lộ khi lao động tư nhân của người sản xuất không được xã hội thừa nhận. Điều đó xảy ra nếu sản phẩm không phù hợp nhu cầu xã hội hoặc hao phí lao động cá biệt cao hơn mức lao động xã hội cần thiết."
+  },
+  {
+    "id": 48,
+    "question": "Vì sao các hàng hóa có giá trị sử dụng khác nhau lại trao đổi được với nhau?",
+    "options": [
+      "Vì chúng có cùng công dụng cho người tiêu dùng",
+      "Vì chúng không cần giá trị sử dụng để trao đổi",
+      "Vì chúng được sản xuất bởi cùng một ngành nghề",
+      "Vì chúng đều chứa lao động xã hội giống nhau"
+    ],
+    "correctIndex": 3,
+    "explanation": "Các hàng hóa khác nhau về công dụng nhưng có thể trao đổi vì đều là kết quả của lao động xã hội. Chính lao động xã hội kết tinh trong hàng hóa là cơ sở chung làm cho chúng có thể so sánh và trao đổi."
+  },
+  {
+    "id": 49,
+    "question": "Hiện nay, các nhà cung cấp hàng hóa và dịch vụ chú trọng đến việc cải thiện chất lượng sản phẩm để đem lại nhiều lợi ích và trải nghiệm tốt hơn cho khách hàng cho thấy họ đang tập trung vào thuộc tính nào của hàng hóa?",
+    "options": [
+      "Giá trị hàng hóa",
+      "Giá trị sử dụng",
+      "Giá trị trao đổi",
+      "Giá trị thị trường"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi doanh nghiệp nâng chất lượng và trải nghiệm cho khách hàng, họ đang chú trọng đến công dụng và khả năng thỏa mãn nhu cầu của sản phẩm. Đó chính là thuộc tính giá trị sử dụng của hàng hóa."
+  },
+  {
+    "id": 50,
+    "question": "Hiện nay các ngành nghề như: Tài chính, y tế, hớt tóc, du lịch, ăn uống, vận chuyển, đào tạo,…được nhà nước xếp vào loại hình kinh doanh nào?",
+    "options": [
+      "Sản xuất",
+      "Dịch vụ",
+      "Nông nghiệp",
+      "Thương mại"
+    ],
+    "correctIndex": 1,
+    "explanation": "Những hoạt động như tài chính, y tế, du lịch, vận chuyển hay đào tạo không tạo ra sản phẩm vật thể hữu hình để lưu kho mà cung ứng lợi ích trực tiếp cho người sử dụng. Vì vậy chúng được xếp vào loại hình kinh doanh dịch vụ."
+  },
+  {
+    "id": 51,
+    "question": "Hiện nay, nhà nước quy định các cấp bậc công nhân kỹ thuật. Điều này liên quan đến nội dung nào trong môn kinh tế chính trị?",
+    "options": [
+      "Phân công lao động xã hội và chuyên môn hóa",
+      "Lao động phức tạp và lao động giản đơn",
+      "Lao động cụ thể và lao động trừu tượng",
+      "Lao động trừu tượng và lao động giản đơn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Việc phân cấp bậc công nhân kỹ thuật phản ánh sự khác nhau về trình độ tay nghề, đào tạo và độ phức tạp của lao động. Trong kinh tế chính trị, đó là sự phân biệt giữa lao động phức tạp và lao động giản đơn."
+  },
+  {
+    "id": 52,
+    "question": "Hiện nay, mức lạm phát thường được đo lường thông qua chỉ số nào?",
+    "options": [
+      "Chỉ số INDEX",
+      "Chỉ số giá trị trao đổi",
+      "Chỉ số giá trị",
+      "Chỉ số CPI"
+    ],
+    "correctIndex": 3,
+    "explanation": "Trên thực tế, lạm phát thường được theo dõi qua chỉ số giá tiêu dùng CPI. Chỉ số này phản ánh mức biến động bình quân giá cả của một rổ hàng hóa và dịch vụ tiêu dùng theo thời gian."
+  },
+  {
+    "id": 53,
+    "question": "Hiện nay, việc trao đổi tiền tệ giữa hai quốc gia cần căn cứ yếu tố nào?",
+    "options": [
+      "Quy định của ngân hàng nhà nước Việt Nam",
+      "Tỷ giá của đồng USD",
+      "Tỷ giá trao đổi giữa hai đồng tiền",
+      "Tương quan sức mạnh kinh tế của hai quốc gia"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi chuyển đổi tiền tệ giữa hai quốc gia, căn cứ trực tiếp là tỷ giá hối đoái giữa hai đồng tiền đó. Tỷ giá cho biết một đơn vị tiền tệ này đổi được bao nhiêu đơn vị tiền tệ kia."
+  },
+  {
+    "id": 54,
+    "question": "Thị trường gắn kết nền kinh tế quốc gia với nền kinh tế thế giới vì:",
+    "options": [
+      "Tạo ra quan hệ sản xuất tự cấp tự túc",
+      "Loại bỏ sự cạnh tranh giữa các quốc gia",
+      "Kết nối các quan hệ kinh tế trong và ngoài nước thông qua trao đổi",
+      "Không cần sự tham gia của tiền tệ và tự vận động theo quy luật"
+    ],
+    "correctIndex": 2,
+    "explanation": "Thị trường là nơi kết nối các chủ thể và quan hệ kinh tế thông qua mua bán, trao đổi. Chính vì vậy, nó gắn kết nền kinh tế trong nước với khu vực và thế giới, mở rộng lưu thông hàng hóa, dịch vụ, vốn và lao động."
+  },
+  {
+    "id": 55,
+    "question": "Theo Các Mác, vàng lại trở thành vật ngang giá chung phổ biến vì:",
+    "options": [
+      "Nó có giá trị tự nhiên không cần lao động và được xã hội công nhận",
+      "Nó được xã hội công nhận và có giá trị do lao động tạo ra",
+      "Nó không tham gia trao đổi hàng hóa",
+      "Nó chỉ dùng để cất trữ mà không lưu thông"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vàng trở thành vật ngang giá chung phổ biến vì bản thân nó là hàng hóa có giá trị, được tạo ra bởi lao động và được xã hội thừa nhận rộng rãi. Nhờ những đặc tính đó, vàng từng đóng vai trò tiền tệ trong lịch sử."
+  },
+  {
+    "id": 56,
+    "question": "Vì sao hàng hóa phải có hai thuộc tính là giá trị sử dụng và giá trị?",
+    "options": [
+      "Để đáp ứng nhu cầu cá nhân mà không cần trao đổi",
+      "Để giảm giá cả hàng hóa trên thị trường",
+      "Để tăng năng suất lao động của người sản xuất",
+      "Để tham gia trao đổi trên thị trường"
+    ],
+    "correctIndex": 3,
+    "explanation": "Một vật muốn trở thành hàng hóa phải vừa có công dụng đối với người khác, tức có giá trị sử dụng, vừa chứa lao động xã hội, tức có giá trị. Chỉ khi có đủ hai thuộc tính đó nó mới có thể đi vào trao đổi trên thị trường."
+  },
+  {
+    "id": 57,
+    "question": "Tổng cục thống kê Việt Nam công bố chỉ số CPI như thế nào?",
+    "options": [
+      "Theo tháng và theo quý",
+      "Theo quý và theo năm",
+      "Theo năm",
+      "Theo tháng, quý và năm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Trong thực tiễn thống kê, CPI được theo dõi và công bố theo tháng, quý và năm để phục vụ quản lý kinh tế vĩ mô. Việc công bố ở nhiều mốc thời gian giúp đánh giá diễn biến giá cả ngắn hạn và dài hạn."
+  },
+  {
+    "id": 58,
+    "question": "Nếu căn cứ vào tính chất và cơ chế vận hành, thị trường ở Việt Nam hiện nay được xếp là loại hình thị trường nào?",
+    "options": [
+      "Thị trường độc quyền nhóm",
+      "Thị trường cạnh tranh hoàn hảo",
+      "Thị trường có điều tiết",
+      "Thị trường độc quyền hoàn toàn"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nền kinh tế ở Việt Nam hiện nay vận hành theo cơ chế thị trường nhưng có sự quản lý, điều tiết của Nhà nước. Vì vậy có thể xếp là thị trường có điều tiết."
+  },
+  {
+    "id": 59,
+    "question": "Vì sao lao động cụ thể tạo ra giá trị sử dụng?",
+    "options": [
+      "Vì nó là lao động hao phí sức lực nói chung nên tạo ra giá trị sử dụng và giá trị",
+      "Vì nó sản xuất sản phẩm dưới hình thức cụ thể của những nghề nghiệp chuyên môn nhất định",
+      "Vì hàng hóa cần có hai thuộc tính giá trị sử dụng và giá trị nên lao động tạo ra hai thuộc tính này",
+      "Vì nó chỉ tạo ra giá trị mà không tạo giá trị sử dụng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lao động cụ thể là lao động dưới những hình thức nghề nghiệp chuyên môn nhất định như may, dệt, xây, cắt tóc. Chính tính cụ thể đó làm ra những công dụng nhất định của sản phẩm, tức tạo ra giá trị sử dụng."
+  },
+  {
+    "id": 60,
+    "question": "Vì sao các sàn giao dịch chứng khoán (như HOSE) ở Việt Nam đóng vai trò quan trọng trong kinh tế hiện đại?",
+    "options": [
+      "Vì chúng không liên quan đến sản xuất hàng hóa",
+      "Vì chúng là chủ thể trung gian kết nối cung cầu nguồn vốn có hiệu quả",
+      "Vì chúng chỉ phục vụ lợi ích cá nhân",
+      "Vì chúng không chịu ảnh hưởng của quy luật kinh tế"
+    ],
+    "correctIndex": 1,
+    "explanation": "Các sàn giao dịch chứng khoán là thiết chế trung gian quan trọng giúp kết nối người có vốn và người cần vốn. Nhờ đó nguồn vốn được huy động và phân bổ hiệu quả hơn cho hoạt động đầu tư và sản xuất kinh doanh."
+  },
+  {
+    "id": 61,
+    "question": "Vì sao người tiêu dùng có vai trò định hướng sản xuất?",
+    "options": [
+      "Vì họ sản xuất hàng hóa để bán trên thị trường",
+      "Vì nhu cầu của họ ảnh hưởng đến quyết định sản xuất",
+      "Vì họ điều tiết giá cả thị trường",
+      "Vì họ quản lý các chủ thể trung gian"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nhu cầu và thị hiếu của người tiêu dùng quyết định hàng hóa nào được thị trường chấp nhận. Doanh nghiệp phải căn cứ vào đó để lựa chọn sản phẩm, quy mô và chất lượng sản xuất, nên người tiêu dùng có vai trò định hướng sản xuất."
+  },
+  {
+    "id": 62,
+    "question": "Theo kinh tế chính trị Mác – Lênin, vì sao dịch vụ là hàng hóa vô hình?",
+    "options": [
+      "Vì nó không cần lao động để sản xuất",
+      "Vì nó chỉ phục vụ sản xuất, không phục vụ tiêu dùng và không cất trữ được",
+      "Vì nó cũng do lao động tạo ra, thỏa mãn nhu cầu nhưng không cất trữ được",
+      "Vì nó không có giá trị sử dụng cho xã hội"
+    ],
+    "correctIndex": 2,
+    "explanation": "Dịch vụ cũng do lao động tạo ra và có khả năng thỏa mãn nhu cầu của con người nên vẫn là hàng hóa. Tuy nhiên nó mang tính vô hình và thường không thể cất trữ như hàng hóa vật thể."
+  },
+  {
+    "id": 63,
+    "question": "Theo Các Mác, tiền có thể làm chức năng thước đo giá trị vì:",
+    "options": [
+      "Nó không cần có giá trị thực tế do quy ước của cộng đồng thừa nhận",
+      "Nó có giá trị do hao phí lao động tạo ra để so sánh với hàng hóa khác",
+      "Nó dùng để lưu thông trong nước và quốc tế",
+      "Nó không liên quan đến trao đổi hàng hóa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tiền chỉ có thể làm thước đo giá trị khi bản thân nó cũng là hàng hóa có giá trị. Vì có giá trị do lao động tạo ra nên tiền có thể dùng để biểu hiện và so sánh giá trị của các hàng hóa khác."
+  },
+  {
+    "id": 64,
+    "question": "Theo Các Mác, tiền tệ xuất hiện do:",
+    "options": [
+      "Chính sách quản lý của nhà nước",
+      "Nhu cầu cất trữ tài sản cá nhân",
+      "Sự phát triển của sản xuất và trao đổi hàng hóa",
+      "Sự xuất hiện của dịch vụ hiện đại"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tiền tệ không ra đời do ý chí chủ quan hay mệnh lệnh hành chính, mà là kết quả khách quan của quá trình phát triển sản xuất và trao đổi hàng hóa. Khi trao đổi phát triển, nhu cầu về một vật ngang giá chung trở nên tất yếu."
+  },
+  {
+    "id": 65,
+    "question": "Vì sao năng suất lao động ảnh hưởng đến lượng giá trị hàng hóa?",
+    "options": [
+      "Vì nó tăng giá trị sử dụng của hàng hóa",
+      "Vì nó làm giảm thời gian lao động xã hội cần thiết",
+      "Vì nó không liên quan đến lao động trừu tượng",
+      "Vì nó tăng giá cả thị trường của hàng hóa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi năng suất lao động tăng, trong cùng một thời gian có thể sản xuất ra nhiều sản phẩm hơn, nên thời gian lao động xã hội cần thiết cho một đơn vị hàng hóa giảm xuống. Do đó lượng giá trị của một đơn vị hàng hóa cũng giảm."
+  },
+  {
+    "id": 66,
+    "question": "Theo Các Mác, lạm phát xảy ra khi in quá nhiều tiền, để chống lạm phát, các nước nên thực hiện biện pháp nào?",
+    "options": [
+      "Hạn chế phát hành tiền vào lưu thông",
+      "Phát hành thêm tiền vào lưu thông",
+      "Chống đầu cơ, tích trữ",
+      "Ngân hàng trung ương mua các giấy tờ có giá để hút tiền từ lưu thông vào hệ thống ngân hàng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nếu lạm phát gắn với việc phát hành tiền vượt quá nhu cầu lưu thông thì biện pháp trực tiếp nhất là hạn chế phát hành tiền vào lưu thông. Các biện pháp khác có thể hỗ trợ, nhưng về nguyên lý Mácxít, phải kiểm soát lượng tiền phát hành."
+  },
+  {
+    "id": 67,
+    "question": "Vì sao tăng cường độ lao động không làm thay đổi lượng giá trị của một đơn vị hàng hóa?",
+    "options": [
+      "Vì nó chỉ tăng tổng lượng giá trị của tất cả hàng hóa, không ảnh hưởng giá trị đơn vị",
+      "Vì nó làm giảm thời gian lao động xã hội cần thiết, không ảnh hưởng giá trị đơn vị",
+      "Vì nó không liên quan đến lao động trừu tượng vì vậy không ảnh hưởng giá trị đơn vị",
+      "Vì nó chỉ ảnh hưởng đến giá trị sử dụng của hàng hóa vì vậy không ảnh hưởng giá trị đơn vị"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tăng cường độ lao động làm cho trong cùng một đơn vị thời gian người lao động hao phí sức lao động nhiều hơn và tạo ra nhiều giá trị hơn. Nhưng đồng thời số lượng sản phẩm cũng tăng tương ứng, nên lượng giá trị tính trên một đơn vị hàng hóa về cơ bản không đổi."
+  },
+  {
+    "id": 68,
+    "question": "Các Mác định nghĩa giá trị thặng dư là:",
+    "options": [
+      "Là giá trị mới do lao động tạo ra vượt quá giá trị sức lao động",
+      "Là giá trị tư liệu sản xuất chuyển vào sản phẩm",
+      "Là giá trị sử dụng của hàng hóa trên thị trường",
+      "Là giá trị tiền công mà nhà tư bản trả cho công nhân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Theo C.Mác, giá trị thặng dư là phần giá trị mới do lao động của công nhân tạo ra vượt quá giá trị sức lao động của họ và bị nhà tư bản chiếm không. Đây là phạm trù trung tâm để giải thích bản chất bóc lột trong chủ nghĩa tư bản."
+  },
+  {
+    "id": 69,
+    "question": "Công thức nào là công thức chung của tư bản?",
+    "options": [
+      "H-T-H",
+      "T-H-T’",
+      "T-T-H",
+      "H-H-T"
+    ],
+    "correctIndex": 1,
+    "explanation": "Công thức chung của tư bản là T-H-T’, tức tiền được ứng ra để mua hàng hóa rồi bán đi nhằm thu về số tiền lớn hơn ban đầu. Điểm khác biệt quyết định nằm ở mục đích tăng giá trị, thể hiện ở T’ lớn hơn T."
+  },
+  {
+    "id": 70,
+    "question": "Theo Các Mác, điều kiện nào để sức lao động trở thành hàng hóa?",
+    "options": [
+      "Người lao động có đủ tư liệu sản xuất và được tự do về thân thể",
+      "Người lao động được tự do về thân thể và không có đủ tư liệu sản xuất cần thiết để nuôi sống bản thân",
+      "Người lao động được tự do về thân thể và muốn bán sức lao động của mình",
+      "Người lao động được tự do về thân thể và phải ký hợp đồng lao động"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sức lao động chỉ trở thành hàng hóa khi người lao động vừa tự do về thân thể, vừa không có tư liệu sản xuất cần thiết để tự tổ chức sản xuất. Khi đó họ buộc phải bán sức lao động cho nhà tư bản để sinh sống."
+  },
+  {
+    "id": 71,
+    "question": "Lợi tức là:",
+    "options": [
+      "Phần giá trị tư liệu sinh hoạt của công nhân",
+      "Phần giá trị thặng dư do máy móc tạo ra",
+      "Phần lợi nhuận mà nhà tư bản thương nghiệp thu được",
+      "Phần lợi nhuận bình quân mà người đi vay trả cho người cho vay"
+    ],
+    "correctIndex": 3,
+    "explanation": "Lợi tức là phần thu nhập mà người đi vay phải trả cho người cho vay để được sử dụng tư bản tiền tệ trong một thời gian nhất định. Xét về bản chất, đây là một bộ phận của lợi nhuận bình quân được nhường lại cho chủ sở hữu tư bản cho vay."
+  },
+  {
+    "id": 72,
+    "question": "Tỷ suất giá trị thặng dư được tính như thế nào?",
+    "options": [
+      "Tỷ lệ giữa giá trị thặng dư và tư bản bất biến",
+      "Tỷ lệ giữa giá trị thặng dư và tư bản khả biến",
+      "Tỷ lệ giữa giá trị hàng hóa và chi phí sản xuất",
+      "Tỷ lệ giữa lợi nhuận và tư bản cố định"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tỷ suất giá trị thặng dư phản ánh trình độ bóc lột của tư bản đối với lao động làm thuê và được tính bằng m/v, tức giá trị thặng dư chia cho tư bản khả biến. Vì tư bản khả biến là bộ phận dùng để mua sức lao động nên đây là tỷ lệ phù hợp nhất."
+  },
+  {
+    "id": 73,
+    "question": "Theo Các Mác, lợi nhuận được xác định như thế nào?",
+    "options": [
+      "Chênh lệch giữa giá trị hàng hóa và chi phí sản xuất",
+      "Giá trị tư liệu sản xuất chuyển vào sản phẩm",
+      "Giá trị sức lao động mà công nhân tạo ra",
+      "Giá trị tiền công trả cho công nhân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trong biểu hiện bề ngoài, lợi nhuận là phần chênh lệch giữa giá trị hàng hóa và chi phí sản xuất tư bản chủ nghĩa. Bản chất của nó vẫn là hình thức biến tướng của giá trị thặng dư."
+  },
+  {
+    "id": 74,
+    "question": "Theo Các Mác, bản chất của tiền công là:",
+    "options": [
+      "Giá trị mà nhà tư bản trả vượt quá sức lao động",
+      "Giá trị tư liệu sản xuất chuyển vào sản phẩm",
+      "Giá cả của hàng hóa sức lao động",
+      "Giá trị lợi nhuận mà nhà tư bản thu được"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tiền công trong chủ nghĩa tư bản không phải là giá cả của lao động mà là giá cả của hàng hóa sức lao động. Hình thức này che giấu quan hệ bóc lột, khiến người ta tưởng như nhà tư bản trả công cho toàn bộ lao động của công nhân."
+  },
+  {
+    "id": 75,
+    "question": "Tư bản bất biến là:",
+    "options": [
+      "Bộ phận tư bản dùng để mua sức lao động và không thay đổi trong quá trình sản xuất",
+      "Bộ phận tư bản tạo ra giá trị thặng dư trong quá trình sản xuất",
+      "Bộ phận tư bản chuyển nguyên vẹn vào sản phẩm trong quá trình sản xuất",
+      "Bộ phận tư bản thay đổi giá trị trong quá trình sản xuất"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tư bản bất biến là bộ phận tư bản đầu tư vào tư liệu sản xuất như máy móc, nguyên vật liệu, nhà xưởng. Trong quá trình sản xuất, giá trị của nó chỉ được bảo tồn và chuyển dần hoặc chuyển nguyên vẹn vào sản phẩm, chứ không tạo ra giá trị mới."
+  },
+  {
+    "id": 76,
+    "question": "Tích lũy tư bản là:",
+    "options": [
+      "Là quá trình chuyển hóa giá trị thặng dư thành tư bản phụ thêm",
+      "Là quá trình sử dụng toàn bộ giá trị thặng dư cho tiêu dùng cá nhân",
+      "Là quá trình giảm quy mô sản xuất của các nhà tư bản",
+      "Là không sử dụng sức lao động trong sản xuất, chỉ sử dụng vốn tích lũy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tích lũy tư bản là quá trình biến một phần giá trị thặng dư thành tư bản mới để mở rộng quy mô sản xuất. Đây là quy luật vận động đặc trưng của chủ nghĩa tư bản vì mục tiêu tối đa hóa giá trị thặng dư."
+  },
+  {
+    "id": 77,
+    "question": "Theo Các Mác, chi phí sản xuất là:",
+    "options": [
+      "Tổng giá trị hàng hóa bán ra trên thị trường",
+      "Giá trị máy móc cố định trong sản xuất",
+      "Giá trị thặng dư mà nhà tư bản thu được",
+      "Giá trị bù lại tư liệu sản xuất và sức lao động đã sử dụng"
+    ],
+    "correctIndex": 3,
+    "explanation": "Chi phí sản xuất tư bản chủ nghĩa là phần tư bản mà nhà tư bản phải ứng ra để bù lại tư liệu sản xuất đã tiêu dùng và sức lao động đã sử dụng, tức k = c + v. Nó không bao gồm phần giá trị thặng dư do công nhân tạo ra."
+  },
+  {
+    "id": 78,
+    "question": "Theo Các Mác, bộ phận nào là tư bản khả biến?",
+    "options": [
+      "Tiền công",
+      "Nguyên vật liệu",
+      "Nhà xưởng",
+      "Máy móc, nguyên vật liệu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tư bản khả biến là bộ phận tư bản dùng để mua sức lao động, trên thực tế biểu hiện dưới hình thức tiền công. Bộ phận này được gọi là khả biến vì thông qua lao động sống, nó không chỉ bảo tồn mà còn làm tăng giá trị, tạo ra giá trị thặng dư."
+  },
+  {
+    "id": 79,
+    "question": "Thời gian lao động tất yếu là:",
+    "options": [
+      "Thời gian cần thiết để tái sản xuất giá trị sức lao động",
+      "Thời gian công nhân làm việc vượt quá hợp đồng",
+      "Thời gian lao động không tạo ra giá trị mới",
+      "Thời gian nhà tư bản quản lý sản xuất"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thời gian lao động tất yếu là phần thời gian lao động trong ngày mà công nhân tạo ra một lượng giá trị bằng với giá trị sức lao động của mình. Nói cách khác, đây là phần thời gian cần để tái sản xuất giá trị sức lao động."
+  },
+  {
+    "id": 80,
+    "question": "Nguồn gốc của giá trị thặng dư là:",
+    "options": [
+      "Do mua rẻ bán đắt trên thị trường",
+      "Do hao phí sức lao động của công nhân",
+      "Do máy móc tạo ra giá trị mới",
+      "Do giá trị tự nhiên của tư liệu sản xuất"
+    ],
+    "correctIndex": 1,
+    "explanation": "Giá trị thặng dư chỉ có thể phát sinh trong quá trình sản xuất từ lao động sống của công nhân làm thuê. Máy móc và tư liệu sản xuất không tạo ra giá trị mới, còn lưu thông chỉ thực hiện chứ không sinh ra giá trị thặng dư."
+  },
+  {
+    "id": 81,
+    "question": "Giá trị của sức lao động được đo bằng:",
+    "options": [
+      "Giá trị tư liệu sinh hoạt cần thiết để tái sản xuất sức lao động",
+      "Giá trị tư liệu sinh hoạt để nuôi người công nhân và con cái của họ",
+      "Giá trị tư liệu sinh hoạt để đào tạo người lao động",
+      "Tiền lương tối thiểu của người công nhân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Giá trị sức lao động được quyết định bởi giá trị những tư liệu sinh hoạt cần thiết để duy trì, tái sản xuất sức lao động của người công nhân. Trong nội hàm đó có cả yếu tố nuôi sống gia đình và chi phí đào tạo, nhưng đáp án tổng quát và đúng nhất là phương án A."
+  },
+  {
+    "id": 82,
+    "question": "Địa tô tư bản chủ nghĩa là:",
+    "options": [
+      "Phần giá trị sức lao động trong nông nghiệp",
+      "Phần lợi nhuận từ việc mua bán đất đai",
+      "Phần giá trị thặng dư mà nhà tư bản nông nghiệp trả cho địa chủ",
+      "Phần chi phí sản xuất trong nông nghiệp"
+    ],
+    "correctIndex": 2,
+    "explanation": "Địa tô tư bản chủ nghĩa là phần giá trị thặng dư còn lại sau khi nhà tư bản nông nghiệp đã thu lợi nhuận bình quân và phải nộp cho địa chủ do quyền sở hữu ruộng đất. Đây là hình thức biểu hiện quan hệ bóc lột trong nông nghiệp tư bản chủ nghĩa."
+  },
+  {
+    "id": 83,
+    "question": "Bộ phận nào là tư bản khả biến?",
+    "options": [
+      "Bộ phận tư bản dùng để mua tư liệu sản xuất",
+      "Bộ phận tư bản dùng để mua sức lao động",
+      "Bộ phận tư bản không tham gia sản xuất",
+      "Bộ phận tư bản cố định trong sản xuất"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tư bản khả biến là bộ phận tư bản dùng để mua sức lao động. Nó được gọi là khả biến vì trong quá trình sản xuất, thông qua lao động sống, bộ phận này tạo ra giá trị mới lớn hơn giá trị của bản thân nó."
+  },
+  {
+    "id": 84,
+    "question": "Giá trị thặng dư tuyệt đối là:",
+    "options": [
+      "Giá trị thặng dư thu được do kéo dài ngày lao động",
+      "Giá trị thặng dư thu được do tăng năng suất lao động",
+      "Giá trị thặng dư thu được do giảm chi phí sản xuất",
+      "Giá trị thặng dư thu được do giảm giá trị sức lao động"
+    ],
+    "correctIndex": 0,
+    "explanation": "Giá trị thặng dư tuyệt đối được tạo ra bằng cách kéo dài thời gian lao động thặng dư trong khi thời gian lao động tất yếu không đổi. Cách điển hình là kéo dài ngày lao động hoặc tăng thời gian làm thêm."
+  },
+  {
+    "id": 85,
+    "question": "Các Mác định nghĩa tư bản là:",
+    "options": [
+      "Là giá trị không liên quan đến sản xuất",
+      "Là giá trị mang lại giá trị thặng dư",
+      "Là giá trị cố định trong sản xuất",
+      "Là giá trị chỉ dùng để tiêu dùng cá nhân"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong lý luận của Mác, tư bản là giá trị đem lại giá trị thặng dư thông qua việc bóc lột lao động làm thuê. Vì vậy không phải mọi khoản tiền hay mọi tài sản đều là tư bản."
+  },
+  {
+    "id": 86,
+    "question": "Ý nghĩa của tỷ suất lợi nhuận là:",
+    "options": [
+      "Phản ánh quy mô của kinh doanh",
+      "Phản ánh mức doanh lợi đầu tư tư bản",
+      "Phản ánh quy mô giá trị thặng dư thu được",
+      "Phản ánh quy mô lợi nhuận"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tỷ suất lợi nhuận cho biết mức doanh lợi của việc đầu tư tư bản, tức một đơn vị tư bản đem lại bao nhiêu lợi nhuận. Vì vậy nó là chỉ tiêu quan trọng để các nhà tư bản so sánh hiệu quả đầu tư giữa các ngành."
+  },
+  {
+    "id": 87,
+    "question": "Trong phương pháp sản xuất giá trị thặng dư tương đối, nhà tư bản dùng cách gì để hạ thấp giá trị sức lao động?",
+    "options": [
+      "Hạ thấp tiền công",
+      "Giảm năng suất lao động trong các ngành sản xuất tư liệu sản xuất",
+      "Tăng năng suất lao động trong các ngành sản xuất tư liệu sinh hoạt",
+      "Tăng năng suất lao động trong các ngành sản xuất tư liệu sản xuất"
+    ],
+    "correctIndex": 2,
+    "explanation": "Để tạo ra giá trị thặng dư tương đối, nhà tư bản tìm cách giảm giá trị sức lao động bằng cách tăng năng suất lao động trong các ngành sản xuất ra tư liệu sinh hoạt cho công nhân. Khi giá trị tư liệu sinh hoạt giảm, giá trị sức lao động cũng giảm theo."
+  },
+  {
+    "id": 88,
+    "question": "Để thực hiện tái sản xuất mở rộng, nhà tư bản phải biến một bộ phận giá trị thặng dư thành:",
+    "options": [
+      "Tư bản bất biến và tư bản cố định phụ thêm",
+      "Tư bản khả biến phụ thêm và tư bản cố định phụ thêm",
+      "Tư bản bất biến và tư bản khả biến phụ thêm",
+      "Tư bản cố định phụ thêm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tái sản xuất mở rộng đòi hỏi nhà tư bản phải bổ sung cả tư liệu sản xuất và sức lao động, tức phải chuyển một phần giá trị thặng dư thành tư bản bất biến và tư bản khả biến phụ thêm. Chỉ tăng một phía thì không thể mở rộng sản xuất một cách đầy đủ."
+  },
+  {
+    "id": 89,
+    "question": "Về mặt lượng, mối quan hệ giữa chi phí sản xuất và giá trị của hàng hóa như thế nào?",
+    "options": [
+      "Chi phí sản xuất bằng giá trị hàng hóa",
+      "Chi phí sản xuất lớn hơn giá trị hàng hóa",
+      "Chi phí sản xuất nhỏ hơn giá trị hàng hóa",
+      "Chi phí sản xuất bằng hoặc nhỏ hơn giá trị hàng hóa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Giá trị hàng hóa bằng c + v + m, còn chi phí sản xuất tư bản chủ nghĩa chỉ bằng c + v. Do đó về mặt lượng, chi phí sản xuất luôn nhỏ hơn giá trị hàng hóa một khoản đúng bằng giá trị thặng dư."
+  },
+  {
+    "id": 90,
+    "question": "Thu nhập của người cho vay được gọi là:",
+    "options": [
+      "Lợi nhuận",
+      "Cổ tức",
+      "Địa tô",
+      "Lợi tức"
+    ],
+    "correctIndex": 3,
+    "explanation": "Người cho vay tư bản tiền tệ nhận được lợi tức. Đây là phần thu nhập do người đi vay trả để được quyền sử dụng số tư bản vay trong thời gian nhất định."
+  },
+  {
+    "id": 91,
+    "question": "Hàng hóa sức lao động khi được sử dụng sẽ tạo ra lượng giá trị mới như thế nào?",
+    "options": [
+      "Lớn hơn giá trị bản thân nó",
+      "Bằng giá trị bản thân nó",
+      "Nhỏ hơn giá trị bản thân nó",
+      "Lớn hơn giá trị sử dụng bản thân nó"
+    ],
+    "correctIndex": 0,
+    "explanation": "Điểm đặc biệt của hàng hóa sức lao động là khi được sử dụng trong sản xuất, nó có khả năng tạo ra lượng giá trị mới lớn hơn giá trị của bản thân nó. Chính đặc điểm này là cơ sở của giá trị thặng dư."
+  },
+  {
+    "id": 92,
+    "question": "Tốc độ chu chuyển tư bản được tính như thế nào?",
+    "options": [
+      "Số vòng chu chuyển của tư bản trong thời gian 1 tháng",
+      "Số vòng chu chuyển của tư bản trong thời gian 3 tháng",
+      "Số vòng chu chuyển của tư bản trong thời gian 6 tháng",
+      "Số vòng chu chuyển của tư bản trong thời gian 12 tháng"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tốc độ chu chuyển tư bản thường được tính bằng số vòng chu chuyển của tư bản trong một năm, tức trong 12 tháng. Cách tính này giúp so sánh tốc độ vận động của tư bản giữa các ngành và doanh nghiệp."
+  },
+  {
+    "id": 93,
+    "question": "Hàng hóa sức lao động có tính chất gì khác với hàng hóa thông thường?",
+    "options": [
+      "Mang tính chất tinh thần và vật chất",
+      "Mang tính chất vật chất và lịch sử",
+      "Mang tính chất tinh thần và lịch sử",
+      "Mang tính chất tinh thần và tự do"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sức lao động gắn với con người nên ngoài yếu tố vật chất còn chịu tác động của yếu tố tinh thần, văn hóa, lịch sử và xã hội. Trong các phương án cho sẵn, đáp án gần nhất với nội dung lý luận là 'tinh thần và lịch sử'."
+  },
+  {
+    "id": 94,
+    "question": "Phương án nào dưới đây là không đúng về phương pháp sản xuất giá trị thặng dư tuyệt đối?",
+    "options": [
+      "Giá trị sức lao động không đổi",
+      "Thời gian lao động tất yếu thay đổi",
+      "Ngày lao động thay đổi",
+      "Thời gian lao động thặng dư thay đổi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong sản xuất giá trị thặng dư tuyệt đối, giả định giá trị sức lao động không đổi nên thời gian lao động tất yếu không đổi. Nhà tư bản tăng giá trị thặng dư bằng cách kéo dài ngày lao động, làm thời gian lao động thặng dư tăng lên."
+  },
+  {
+    "id": 95,
+    "question": "Chọn đáp án không đúng về tích luỹ tư bản:",
+    "options": [
+      "Tích lũy tư bản là biến một phần giá trị thặng dư thành tư bản",
+      "Nguồn gốc của tích lũy tư bản là giá trị thặng dư",
+      "Động cơ của tích lũy tư bản là giá trị thặng dư",
+      "Tích lũy tư bản là sự tiết kiệm tư bản"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tích lũy tư bản không phải đơn thuần là tiết kiệm tư bản, mà là quá trình chuyển hóa giá trị thặng dư thành tư bản phụ thêm để mở rộng sản xuất. Ba phương án còn lại đều phản ánh đúng bản chất và động lực của tích lũy tư bản."
+  },
+  {
+    "id": 96,
+    "question": "Phân chia tư bản thành tư bản bất biến và tư bản khả biến căn cứ vào:",
+    "options": [
+      "Vai trò của các bộ phận này trong quá trình sản xuất ra giá trị",
+      "Vai trò của các bộ phận này trong quá trình sản xuất ra giá trị sử dụng",
+      "Vai trò của các bộ phận này trong quá trình sản xuất ra sản phẩm",
+      "Vai trò của các bộ phận này trong quá trình sản xuất ra giá trị thặng dư"
+    ],
+    "correctIndex": 3,
+    "explanation": "C.Mác chia tư bản thành bất biến và khả biến căn cứ vào vai trò khác nhau của từng bộ phận trong quá trình sản xuất giá trị thặng dư. Tư bản bất biến không tạo ra giá trị thặng dư, còn tư bản khả biến là nguồn trực tiếp sinh ra giá trị thặng dư."
+  },
+  {
+    "id": 97,
+    "question": "Khi hình thành lợi nhuận bình quân thì giá trị hàng hóa sẽ chuyển hóa thành:",
+    "options": [
+      "Giá cả bình quân",
+      "Giá trị thị trường",
+      "Giá cả sản xuất",
+      "Giá trị sản xuất"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi cạnh tranh giữa các ngành làm hình thành tỷ suất lợi nhuận bình quân, giá trị hàng hóa chuyển hóa thành giá cả sản xuất. Giá cả sản xuất bằng chi phí sản xuất cộng với lợi nhuận bình quân."
+  },
+  {
+    "id": 98,
+    "question": "Giữa giá trị thặng dư tương đối và giá trị thặng dư siêu ngạch có điểm chung nào giống nhau?",
+    "options": [
+      "Đều làm tăng năng suất lao động",
+      "Đều làm tăng năng suất lao động xã hội",
+      "Đều làm tăng năng suất lao động cá biệt",
+      "Đều làm giảm năng suất lao động xã hội và giảm chi phí sản xuất"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cả giá trị thặng dư tương đối và giá trị thặng dư siêu ngạch đều gắn với việc nâng cao năng suất lao động. Điểm khác nhau là giá trị thặng dư tương đối gắn với năng suất lao động xã hội, còn siêu ngạch gắn với ưu thế cá biệt của một doanh nghiệp."
+  },
+  {
+    "id": 99,
+    "question": "Tại sao công thức T – H – T’ được coi là công thức chung của tư bản?",
+    "options": [
+      "Vì mọi loại hình tư bản nói chung đều vận động theo công thức này",
+      "Vì đây là công thức tạo ra giá trị sử dụng",
+      "Vì đây là công thức mà các nhà tư bản thường xuyên áp dụng trong giai đoạn chủ nghĩa tư bản tự do cạnh tranh",
+      "Vì công thức này tồn tại trong mọi phương thức sản xuất"
+    ],
+    "correctIndex": 0,
+    "explanation": "T-H-T’ được coi là công thức chung của tư bản vì nó phản ánh logic vận động chung của tư bản: ứng tiền ra để thu về số tiền lớn hơn. Dù tư bản tồn tại dưới hình thức nào, mục tiêu cuối cùng vẫn là làm tăng giá trị."
+  },
+  {
+    "id": 100,
+    "question": "Vai trò của tích lũy tư bản đối với sự phát triển của doanh nghiệp nước ta hiện nay?",
+    "options": [
+      "Tạo cơ sở cho quá trình tích lũy vốn ở mỗi doanh nghiệp",
+      "Tạo cơ sở cho quá trình tiết kiệm vốn ở mỗi doanh nghiệp",
+      "Tạo cơ sở cho việc nâng cao chất lượng vốn ở mỗi doanh nghiệp",
+      "Tạo cơ sở cho việc mua bán, sáp nhập của doanh nghiệp"
+    ],
+    "correctIndex": 0,
+    "explanation": "Xét trong thực tiễn doanh nghiệp, tích lũy tư bản tạo cơ sở để doanh nghiệp tăng quy mô vốn, tái đầu tư và mở rộng sản xuất. Đây là điều kiện quan trọng để nâng cao năng lực cạnh tranh và phát triển lâu dài."
+  },
+  {
+    "id": 101,
+    "question": "Vì sao Các Mác nói: Cấu tạo hữu cơ tăng là nguyên nhân gây ra nạn thất nghiệp?",
+    "options": [
+      "Vì nền kinh tế suy thoái dẫn đến nạn thất nghiệp",
+      "Vì chi phí thuê nhân công đắt hơn so với sử dụng máy móc",
+      "Vì người lao động không đáp ứng được yêu cầu của sản xuất",
+      "Vì máy móc được sử dụng để thay thế lao động của người công nhân"
+    ],
+    "correctIndex": 3,
+    "explanation": "Khi cấu tạo hữu cơ của tư bản tăng, tỷ trọng tư bản đầu tư vào máy móc, công nghệ và tư liệu sản xuất tăng lên so với phần dành cho sức lao động. Điều đó dẫn đến xu hướng thay thế lao động sống bằng máy móc, làm xuất hiện thất nghiệp tương đối."
+  },
+  {
+    "id": 102,
+    "question": "Các Mác nói tư bản cho vay được gọi là hàng hóa đặc biệt vì:",
+    "options": [
+      "Sau khi sử dụng, tư bản cho vay không bị mất giá trị sử dụng",
+      "Sau khi sử dụng, tư bản cho vay không bị mất giá trị",
+      "Sau khi sử dụng, giá trị và giá trị sử dụng được bảo tồn",
+      "Sau khi sử dụng, giá trị tư bản cho vay được bảo tồn và còn tăng thêm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Tư bản cho vay là hàng hóa đặc biệt vì khi được sử dụng trong kinh doanh, nó không chỉ bảo tồn giá trị ban đầu mà còn có khả năng sinh ra giá trị tăng thêm. Chính khả năng mang lại lợi tức làm nên tính đặc biệt của loại hàng hóa này."
+  },
+  {
+    "id": 103,
+    "question": "Trong tái sản xuất giản đơn, giá trị thặng dư được sử dụng như thế nào?",
+    "options": [
+      "Nhà tư bản sử dụng hết giá trị thặng dư để tái đầu tư",
+      "Nhà tư bản sử dụng hết giá trị thặng dư cho tiêu dùng cá nhân",
+      "Nhà tư bản chia giá trị thặng dư ra thành quỹ tích lũy và quỹ tiêu dùng",
+      "Công nhân sử dụng hết giá trị thặng dư cho tiêu dùng cá nhân"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong tái sản xuất giản đơn, quy mô sản xuất không thay đổi nên nhà tư bản không dùng giá trị thặng dư để mở rộng tư bản. Toàn bộ giá trị thặng dư được dùng cho tiêu dùng cá nhân của nhà tư bản."
+  },
+  {
+    "id": 104,
+    "question": "Khi chưa hình thành tỷ suất lợi nhuận bình quân, ngành có tỷ suất lợi nhuận thấp hơn có xu hướng:",
+    "options": [
+      "Di chuyển vào ngành có tỷ suất lợi nhuận cao hơn",
+      "Di chuyển vào ngành tỷ suất lợi nhuận tương tự",
+      "Thay đổi cấu tạo hữu cơ của ngành mình để thu được nhiều giá trị thặng dư hơn",
+      "Tăng ca kíp, tăng giờ làm để thu được nhiều giá trị thặng dư hơn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi các ngành có tỷ suất lợi nhuận khác nhau, tư bản sẽ có xu hướng chuyển từ ngành lợi nhuận thấp sang ngành lợi nhuận cao. Chính sự di chuyển này là cơ sở để dần hình thành tỷ suất lợi nhuận bình quân."
+  },
+  {
+    "id": 105,
+    "question": "Hiện nay, các doanh nghiệp Việt Nam có xu hướng sử dụng máy móc để thay thế lao động chân tay, điều này sẽ dẫn đến kết quả như thế nào?",
+    "options": [
+      "Cấu tạo hữu cơ của doanh nghiệp đó tăng",
+      "Cấu tạo hữu cơ của doanh nghiệp đó giảm",
+      "Tích tụ tư bản của doanh nghiệp đó giảm",
+      "Tập trung tư bản của doanh nghiệp đó tăng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi doanh nghiệp tăng đầu tư vào máy móc và công nghệ để thay thế lao động chân tay, tỷ trọng tư bản bất biến so với tư bản khả biến tăng lên. Điều đó làm cấu tạo hữu cơ của tư bản tăng."
+  },
+  {
+    "id": 106,
+    "question": "Hình thức trả lương nào là phổ biến đối với nhân viên văn phòng ở nước ta hiện nay?",
+    "options": [
+      "Khoán công việc",
+      "Theo khối lượng công việc",
+      "Theo thời gian",
+      "Theo sản phẩm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đối với lao động văn phòng, kết quả lao động thường khó lượng hóa trực tiếp bằng số sản phẩm cụ thể nên hình thức trả lương phổ biến là trả lương theo thời gian. Đây là cách tính phù hợp với tính chất công việc quản lý, hành chính và chuyên môn."
+  },
+  {
+    "id": 107,
+    "question": "Ở Việt Nam, cơ quan nào chịu trách nhiệm tính toán tiền lương tối thiểu hàng năm?",
+    "options": [
+      "Quốc hội",
+      "Chính phủ",
+      "Bộ Lao động thương binh và xã hội",
+      "Hội đồng tiền lương quốc gia"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hội đồng tiền lương quốc gia là cơ quan có chức năng nghiên cứu, thương lượng và khuyến nghị mức lương tối thiểu để trình Chính phủ xem xét, quyết định. Vì vậy trong thực tiễn, đây là cơ quan chịu trách nhiệm tính toán và đề xuất mức lương tối thiểu hằng năm."
+  },
+  {
+    "id": 108,
+    "question": "Vì sao các doanh nghiệp Việt Nam hiện nay thường áp dụng hình thức trả lương qua tài khoản ngân hàng?",
+    "options": [
+      "Vì sự tiện lợi và an toàn, minh bạch",
+      "Vì sự tiện lợi, an toàn, minh bạch và giảm bớt nhân lực cho bộ máy kế toán",
+      "Vì nhà nước quy định phải trả lương qua tài khoản ngân hàng để minh bạch các khoản thanh toán",
+      "Vì nhanh chóng, bảo mật và an toàn và theo quy định của nhà nước"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trả lương qua tài khoản giúp doanh nghiệp và người lao động thuận tiện hơn trong thanh toán, bảo đảm an toàn, minh bạch dòng tiền và giảm khối lượng công việc thủ công cho bộ phận kế toán. Vì vậy đây là hình thức ngày càng phổ biến trong thực tế."
+  },
+  {
+    "id": 109,
+    "question": "Tại sao lại xuất hiện lợi nhuận bình quân?",
+    "options": [
+      "Vì các ngành không cạnh tranh với nhau",
+      "Vì công nhân là yếu tố quyết định tỷ suất lợi nhuận",
+      "Vì lợi nhuận bình quân không phụ thuộc giá trị thặng dư",
+      "Vì tư bản di chuyển tự do giữa các ngành để đạt tỷ suất lợi nhuận trung bình"
+    ],
+    "correctIndex": 3,
+    "explanation": "Lợi nhuận bình quân xuất hiện do sự cạnh tranh giữa các ngành làm cho tư bản tự do di chuyển đến nơi có lợi nhuận cao hơn. Quá trình đó san bằng tỷ suất lợi nhuận giữa các ngành, hình thành lợi nhuận bình quân."
+  },
+  {
+    "id": 110,
+    "question": "Tăng tốc độ chu chuyển tư bản ảnh hưởng như thế nào đến tỷ suất lợi nhuận?",
+    "options": [
+      "Tỷ suất lợi nhuận sẽ chuyển thành lợi nhuận bình quân",
+      "Tỷ suất lợi nhuận không đổi",
+      "Tỷ suất lợi nhuận giảm",
+      "Tỷ suất lợi nhuận tăng"
+    ],
+    "correctIndex": 3,
+    "explanation": "Khi tốc độ chu chuyển của tư bản tăng, trong một năm cùng một lượng tư bản khả biến có thể quay vòng nhiều lần và bóc lột lao động nhiều lần hơn. Do đó khối lượng giá trị thặng dư hàng năm tăng lên, kéo theo tỷ suất lợi nhuận có xu hướng tăng."
+  },
+  {
+    "id": 111,
+    "question": "Đâu là hình thức trả lương phổ biến đối với công nhân dệt may ở nước ta hiện nay?",
+    "options": [
+      "Theo hình thức khoán việc",
+      "Theo tính chất phức tạp của công việc",
+      "Theo thời gian",
+      "Theo sản phẩm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Trong ngành dệt may, sản lượng lao động thường có thể đo đếm tương đối rõ nên hình thức trả lương theo sản phẩm rất phổ biến. Cách này gắn thu nhập với kết quả lao động trực tiếp của công nhân."
+  },
+  {
+    "id": 112,
+    "question": "Tại sao chi phí sản xuất lại không bao gồm giá trị thặng dư?",
+    "options": [
+      "Vì chi phí sản xuất chỉ liên quan đến tư bản bất biến",
+      "Vì giá trị thặng dư có được không cần đến chi phí sản xuất",
+      "Vì giá trị thặng dư là phần chênh lệch giữa giá trị hàng hóa và chi phí sản xuất",
+      "Vì chi phí sản xuất không cần sức lao động"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chi phí sản xuất của nhà tư bản chỉ gồm phần vốn ứng ra để mua tư liệu sản xuất và sức lao động, tức c + v. Giá trị thặng dư là phần dôi ra do lao động tạo thêm nên nằm ngoài chi phí sản xuất, chính là phần chênh lệch giữa giá trị hàng hóa và chi phí sản xuất."
+  },
+  {
+    "id": 113,
+    "question": "Hàng năm, các doanh nghiệp thường dùng lợi nhuận thu được để trích lập quỹ đầu tư phát triển. Việc trích lập quỹ như vậy phản ánh nội dung nào trong học thuyết giá trị thặng dư của Các Mác?",
+    "options": [
+      "Chu chuyển tư bản",
+      "Tuần hoàn tư bản",
+      "Tích tụ tư bản",
+      "Tập trung tư bản"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi doanh nghiệp dùng lợi nhuận của chính mình để tăng quy mô vốn, đó là biểu hiện của tích tụ tư bản. Tích tụ là sự lớn lên của tư bản cá biệt bằng con đường tích lũy giá trị thặng dư do chính doanh nghiệp tạo ra."
+  },
+  {
+    "id": 114,
+    "question": "Vì sao lợi tức ngân hàng là một phần của giá trị thặng dư?",
+    "options": [
+      "Vì doanh nghiệp vay vốn chia sẻ lợi nhuận bình quân từ giá trị thặng dư",
+      "Vì ngân hàng tự tạo ra giá trị thặng dư từ tiền gửi",
+      "Vì nguồn gốc giá trị thặng dư do vay vốn mà có được",
+      "Vì ngân hàng có được lợi nhuận từ trung gian cho vay và đi vay"
+    ],
+    "correctIndex": 0,
+    "explanation": "Doanh nghiệp đi vay dùng vốn vào sản xuất, kinh doanh để thu lợi nhuận, mà bản chất lợi nhuận là hình thức biến tướng của giá trị thặng dư. Lợi tức ngân hàng là phần lợi nhuận ấy được chia lại cho người cho vay hoặc tổ chức tín dụng."
+  },
+  {
+    "id": 115,
+    "question": "Tại sao trong nông nghiệp Việt Nam hiện nay vẫn tồn tại địa tô chênh lệch?",
+    "options": [
+      "Vì đất đai không tạo ra giá trị thặng dư",
+      "Vì có sự khác biệt về màu mỡ của đất và đầu tư thâm canh",
+      "Vì giá thuê đất giá thấp nên hình thành địa tô chênh lệch",
+      "Vì địa tô chênh lệch do nhà nước quy định tùy theo địa phương"
+    ],
+    "correctIndex": 1,
+    "explanation": "Địa tô chênh lệch tồn tại do các mảnh đất có điều kiện tự nhiên, vị trí và mức đầu tư thâm canh khác nhau, làm cho năng suất và lợi nhuận khác nhau. Điều này vẫn có ý nghĩa thực tiễn trong nông nghiệp hiện nay."
+  },
+  {
+    "id": 116,
+    "question": "Tại sao các doanh nghiệp vừa và nhỏ ở Việt Nam hiện nay gặp nhiều khó khăn trong quá trình tích lũy tư bản?",
+    "options": [
+      "Vì họ tham gia nền kinh tế thị trường ở mức độ nhỏ",
+      "Vì giá trị thặng dư ít do năng suất lao động thấp và quy mô nhỏ",
+      "Vì họ ít đầu tư, trang bị máy móc thiết bị",
+      "Vì vốn chủ yếu đi vay nên không có nhiều lợi nhuận để tích lũy"
+    ],
+    "correctIndex": 1,
+    "explanation": "Do quy mô nhỏ, công nghệ và năng suất còn hạn chế nên nhiều doanh nghiệp vừa và nhỏ tạo ra ít giá trị thặng dư hơn, dẫn đến khả năng tích lũy tư bản yếu. Đây là khó khăn mang tính quy luật trong cạnh tranh thị trường."
+  },
+  {
+    "id": 117,
+    "question": "Nếu doanh nghiệp kinh doanh thu được lợi nhuận bình quân nhỏ hơn lợi tức phải trả, điều này sẽ dẫn đến kết quả gì?",
+    "options": [
+      "Doanh nghiệp được kéo dài thời gian trả lợi tức",
+      "Doanh nghiệp bị lỗ",
+      "Doanh nghiệp có lãi ít",
+      "Doanh nghiệp không phải trả lợi tức vì thua lỗ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nếu số lợi nhuận bình quân thu được không đủ để bù phần lợi tức phải trả cho vốn vay thì phần chênh lệch âm sẽ làm doanh nghiệp bị lỗ. Khi đó hoạt động kinh doanh không còn bảo đảm hiệu quả tài chính."
+  },
+  {
+    "id": 118,
+    "question": "Tỷ suất lợi nhuận có xu hướng giảm trong một số ngành công nghiệp lạc hậu vì:",
+    "options": [
+      "Công nhân không tạo ra giá trị thặng dư",
+      "Các ngành này mức độ cạnh tranh ít",
+      "Cấu tạo hữu cơ tư bản cao và chu chuyển tư bản chậm",
+      "Tỷ suất lợi nhuận không liên quan đến năng suất lao động"
+    ],
+    "correctIndex": 2,
+    "explanation": "Theo lý luận Mác, tỷ suất lợi nhuận chịu ảnh hưởng của cấu tạo hữu cơ tư bản và tốc độ chu chuyển tư bản. Khi cấu tạo hữu cơ cao và chu chuyển chậm, tỷ suất lợi nhuận có xu hướng giảm."
+  },
+  {
+    "id": 119,
+    "question": "Hiện nay, tại các đô thị lớn, nhu cầu thuê mặt bằng của các thương hiệu lớn như FPT, Thế giới di động,… đang tăng cao. Theo lý luận địa tô của Các Mác, giá cả cho thuê phụ thuộc vào yếu tố nào?",
+    "options": [
+      "Phụ thuộc vào độ nổi tiếng của thương hiệu đi thuê",
+      "Phụ thuộc vào vị trí mặt bằng và mật độ dân cư nơi thuê",
+      "Phụ thuộc vào mật độ dân cư nơi thuê",
+      "Phụ thuộc vào giá cả quy định của nhà nước đối với mặt bằng cho thuê"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong thực tế cho thuê mặt bằng thương mại, vị trí và điều kiện sinh lợi của đất đóng vai trò quyết định mức giá thuê. Điều này tương ứng với cách lý giải của địa tô chênh lệch trong kinh tế chính trị Mác."
+  },
+  {
+    "id": 120,
+    "question": "Đặc điểm nào là sự khác biệt giữa công ty cổ phần và các loại hình công ty khác?",
+    "options": [
+      "Có khả năng phát hành cổ phiếu",
+      "Có khả năng phát hành trái phiếu, tín phiếu",
+      "Có khả năng phát hành công trái, chứng chỉ quỹ",
+      "Có khả năng phát hành chứng chỉ quỹ, trái phiếu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Công ty cổ phần khác với nhiều loại hình doanh nghiệp khác ở khả năng phát hành cổ phiếu để huy động vốn. Cổ phiếu là căn cứ xác lập quyền sở hữu của cổ đông đối với công ty."
+  },
+  {
+    "id": 121,
+    "question": "Xu hướng mua bán, sáp nhập doanh nghiệp phản ánh nội dung nào trong học thuyết giá trị thặng dư của Các Mác?",
+    "options": [
+      "Chu chuyển tư bản",
+      "Tuần hoàn tư bản",
+      "Tích tụ tư bản",
+      "Tập trung tư bản"
+    ],
+    "correctIndex": 3,
+    "explanation": "Mua bán và sáp nhập doanh nghiệp làm cho nhiều tư bản cá biệt hợp lại thành một tư bản lớn hơn, đó là tập trung tư bản. Khác với tích tụ, tập trung không nhất thiết dựa vào giá trị thặng dư mới tạo ra từ nội bộ doanh nghiệp."
+  },
+  {
+    "id": 122,
+    "question": "Dựa vào lý luận giá trị thặng dư của Các Mác, hoa hồng, chiết khấu trong bán hàng hiện nay bản chất là:",
+    "options": [
+      "Lợi nhuận",
+      "Lợi nhuận thương nghiệp",
+      "Lợi tức thương nghiệp",
+      "Lợi nhuận bán hàng trước thuế"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hoa hồng và chiết khấu trong hoạt động lưu thông thương mại là những khoản thu gắn với chức năng tiêu thụ hàng hóa. Xét theo lý luận Mác, chúng là những hình thức biểu hiện của lợi nhuận thương nghiệp."
+  },
+  {
+    "id": 123,
+    "question": "Tại sao các doanh nghiệp Việt Nam hiện nay như Viettel có thể đạt giá trị thặng dư siêu ngạch trong lĩnh vực viễn thông?",
+    "options": [
+      "Vì viễn thông là ngành công nghệ cao nên mang lại lợi nhuận siêu ngạch",
+      "Vì viễn thông là lĩnh vực ít có sự cạnh tranh",
+      "Vì cải tiến công nghệ tạo giá trị cá biệt thấp hơn giá trị xã hội",
+      "Vì giá trị thặng dư siêu ngạch không liên quan đến sức lao động"
+    ],
+    "correctIndex": 2,
+    "explanation": "Giá trị thặng dư siêu ngạch xuất hiện khi doanh nghiệp có năng suất lao động cá biệt cao hơn mức trung bình xã hội, làm cho giá trị cá biệt của hàng hóa thấp hơn giá trị xã hội. Cải tiến công nghệ là con đường quan trọng để đạt được kết quả này."
+  },
+  {
+    "id": 124,
+    "question": "Hiện nay ở Việt Nam, theo quy định của Luật lao động, thời gian làm thêm giờ trong 01 năm không được vượt quá 200 giờ. Quy định này nhằm mục đích gì?",
+    "options": [
+      "Nhằm tuân thủ các cam kết quốc tế về lao động khi Việt Nam hội nhập kinh tế quốc tế",
+      "Nhằm bảo vệ người lao động không phải làm việc quá sức, để có thời gian tái tạo sức lao động",
+      "Nhằm giúp cho doanh nghiệp giảm bớt chi phí nhân công do trả lương làm thêm giờ cao",
+      "Nhằm giúp doanh nghiệp phải áp dụng máy móc để thay thế người lao động"
+    ],
+    "correctIndex": 1,
+    "explanation": "Giới hạn thời gian làm thêm nhằm bảo vệ sức khỏe, quyền lợi và khả năng tái sản xuất sức lao động của người lao động. Đây cũng là cách ngăn việc kéo dài quá mức ngày lao động để gia tăng giá trị thặng dư tuyệt đối."
+  },
+  {
+    "id": 125,
+    "question": "Khái niệm độc quyền trong Kinh tế chính trị Mác-Lênin được định nghĩa là:",
+    "options": [
+      "Liên minh giữa các doanh nghiệp lớn, có khả năng thâu tóm việc sản xuất và tiêu thụ một số loại hàng hoá, có khả năng định ra giá cả độc quyền, nhằm thu lợi nhuận độc quyền cao",
+      "Liên minh giữa các doanh nghiệp lớn, nắm trong tay phần lớn hàng hoá và việc tiêu thụ, có khả năng định ra giá cả độc quyền, nhằm thu lợi nhuận độc quyền cao",
+      "Liên minh giữa các doanh nghiệp lớn, nắm trong tay phần lớn việc sản xuất một số loại hàng hoá, có khả năng định ra giá cả độc quyền",
+      "Liên minh giữa các doanh nghiệp lớn, có khả năng định ra giá cả độc quyền, nhằm thu lợi nhuận độc quyền"
+    ],
+    "correctIndex": 0,
+    "explanation": "Độc quyền là sự liên minh của các doanh nghiệp lớn có khả năng chi phối sản xuất và tiêu thụ một số loại hàng hóa, từ đó áp đặt giá cả độc quyền để thu lợi nhuận độc quyền cao. Phương án A là đầy đủ nhất về nội dung khái niệm."
+  },
+  {
+    "id": 126,
+    "question": "Giá cả độc quyền có thể được phân thành:",
+    "options": [
+      "Giá cả độc quyền cao và giá cả độc quyền thấp",
+      "Giá cả độc quyền cao và giá cả độc quyền siêu ngạch",
+      "Giá cả độc quyền và giá cạnh tranh",
+      "Giá cả độc quyền hoàn hảo và giá cả độc quyền không hoàn hảo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Theo lý luận Mác – Lênin, giá cả độc quyền thường được chia thành hai loại cơ bản là giá cả độc quyền cao và giá cả độc quyền thấp. Đây là công cụ để các tổ chức độc quyền thu lợi nhuận độc quyền cao."
+  },
+  {
+    "id": 127,
+    "question": "Một trong những nguyên nhân chính dẫn đến sự hình thành độc quyền là:",
+    "options": [
+      "Chi phí sản xuất thấp, bóc lột lao động làm thuê nhiều hình thành các tổ chức độc quyền",
+      "Sự phát triển của lực lượng sản xuất thúc đẩy sự hình thành các tổ chức độc quyền",
+      "Sự phát triển của lực lượng sản xuất thúc đẩy gia nhập thị trường trên thế giới",
+      "Sự phát triển của thị trường thúc đầy sự hình thành các tổ chức độc quyền"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sự phát triển của lực lượng sản xuất làm xuất hiện yêu cầu tập trung sản xuất, tích tụ và tập trung tư bản ở quy mô lớn. Đó là một trong những nguyên nhân quan trọng dẫn tới sự hình thành các tổ chức độc quyền."
+  },
+  {
+    "id": 128,
+    "question": "Nguyên nhân nào dẫn đến sự hình thành độc quyền nhà nước trong chủ nghĩa tư bản?",
+    "options": [
+      "Sự cạnh tranh tự do giữa các công ty",
+      "Sự phát triển của công nghệ thông tin",
+      "Sự tích tụ và tập trung vốn càng lớn thì tích tụ và tập trung sản xuất càng cao, sinh ra những cơ cấu kinh tế to lớn đòi hỏi phải có một sự điều tiết từ một trung tâm đối với sản xuất và phân phối",
+      "Sự tích tụ và tập trung vốn càng lớn thì tích tụ và tập trung sản xuất càng cao, sinh ra những cơ cấu kinh tế to lớn đòi hỏi phải có một sự điều tiết từ một trung tâm kinh tế lớn đối với các hoạt động của doanh nghiệp"
+    ],
+    "correctIndex": 2,
+    "explanation": "Độc quyền nhà nước ra đời khi sự tập trung sản xuất và tư bản ở quy mô lớn tạo nên những cơ cấu kinh tế rộng lớn, vượt quá khả năng tự điều tiết của thị trường. Khi đó cần có sự can thiệp tập trung từ nhà nước để phục vụ lợi ích của chủ nghĩa tư bản độc quyền."
+  },
+  {
+    "id": 129,
+    "question": "Hình thức đầu tư thông qua việc cho một nước khác vay để thu lợi tức, mua cổ phần, cổ phiếu, trái phiếu, các giấy tờ có giá trị khác, quỹ đầu tư chứng khoán hay thông qua các định chế tài chính trung gian khác mà nhà đầu tư không trực tiếp tham gia quản lý hoạt động đầu tư được gọi là:",
+    "options": [
+      "Đầu tư trực tiếp",
+      "Đầu tư xuyên quốc gia",
+      "Đầu tư gián tiếp",
+      "Đầu tư ủy quyền"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi nhà đầu tư bỏ vốn ra nhưng không trực tiếp tham gia quản lý hoạt động đầu tư ở nơi nhận vốn, đó là đầu tư gián tiếp. Hình thức này phổ biến qua mua chứng khoán, trái phiếu hoặc cho vay để thu lợi tức."
+  },
+  {
+    "id": 130,
+    "question": "Tổ chức nào có quyền lực mạnh mẽ đứng sau các đảng phái, đóng vai trò kết nối về mặt nhân sự giữa tổ chức độc quyền và nhà nước?",
+    "options": [
+      "Các hội chủ chính trị",
+      "Tổ chức liên hiệp quốc",
+      "Các hội chủ xí nghiệp",
+      "Các hội chủ lớn"
+    ],
+    "correctIndex": 3,
+    "explanation": "Trong chủ nghĩa tư bản độc quyền nhà nước, các hội chủ lớn có ảnh hưởng mạnh đến bộ máy chính trị, đứng sau các đảng phái và làm cầu nối nhân sự giữa tổ chức độc quyền với nhà nước. Đây là một biểu hiện của sự gắn kết quyền lực kinh tế và quyền lực nhà nước."
+  },
+  {
+    "id": 131,
+    "question": "Hình thức xuất khẩu tư bản nhằm xây dựng các xí nghiệp mới hoặc mua lại những xí nghiệp đang hoạt động ở nước nhận đầu tư, từ đó trực tiếp kinh doanh và thu lợi nhuận cao, biến chúng thành chi nhánh của công ty mẹ ở quốc gia gốc được gọi là gì?",
+    "options": [
+      "Đầu tư trực tiếp",
+      "Đầu tư gián tiếp",
+      "Đầu tư xuyên quốc gia",
+      "Đầu tư đa quốc gia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi chủ đầu tư trực tiếp xây dựng hoặc mua lại doanh nghiệp và trực tiếp tổ chức quản lý, kinh doanh tại nước nhận đầu tư, đó là đầu tư trực tiếp. Hình thức này gắn với mục tiêu kiểm soát hoạt động sản xuất kinh doanh để thu lợi nhuận cao."
+  },
+  {
+    "id": 132,
+    "question": "Khi tích tụ và tập trung trong lĩnh vực ngân hàng phát triển đến mức độ cao sẽ dẫn đến kết quả như thế nào?",
+    "options": [
+      "Hình thành các tổ chức độc quyền công nghiệp",
+      "Hình thành các tổ chức độc quyền trong ngân hàng",
+      "Hình thành một ngân hàng độc quyền quốc gia",
+      "Hình thành một ngân hàng độc quyền xuyên quốc gia"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi quá trình tích tụ và tập trung vốn trong lĩnh vực ngân hàng phát triển cao, các ngân hàng lớn liên kết và thâu tóm nhau, từ đó hình thành các tổ chức độc quyền ngân hàng. Đây là một đặc điểm nổi bật của chủ nghĩa tư bản độc quyền."
+  },
+  {
+    "id": 133,
+    "question": "Độc quyền nhà nước trong chủ nghĩa tư bản hình thành nhằm phục vụ lợi ích của:",
+    "options": [
+      "Các tổ chức độc quyền tư nhân và tiếp tục duy trì, phát triển chủ nghĩa tư bản",
+      "Các tổ chức độc quyền nhà nước và tiếp tục duy trì, phát triển chủ nghĩa tư bản",
+      "Các tổ chức độc quyền lớn và tiếp tục duy trì, phát triển chủ nghĩa tư bản",
+      "Các doanh nghiệp tư nhân lớn để tiếp tục duy trì, phát triển chủ nghĩa tư bản"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bản chất của độc quyền nhà nước trong chủ nghĩa tư bản là sự kết hợp sức mạnh của nhà nước với sức mạnh của các tổ chức độc quyền tư nhân. Mục tiêu cuối cùng vẫn là bảo vệ và phát triển chủ nghĩa tư bản."
+  },
+  {
+    "id": 134,
+    "question": "Mục đích của hình thức tổ chức độc quyền Conglomerate là gì?",
+    "options": [
+      "Mục đích là thu lợi nhuận độc quyền cao",
+      "Mục đích là thu lợi nhuận từ kinh doanh dịch vụ",
+      "Mục đích là thu lợi nhuận từ mua và bán hàng hóa từ ưu thế của tổ chức độc quyền",
+      "Mục đích là thu lợi nhuận từ kinh doanh chứng khoán"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dù tồn tại dưới hình thức nào, các tổ chức độc quyền đều hướng tới mục tiêu cơ bản là thu lợi nhuận độc quyền cao. Conglomerate cũng không nằm ngoài logic vận động đó."
+  },
+  {
+    "id": 135,
+    "question": "Sự hợp nhất giữa tư bản ngân hàng của một số ít ngân hàng độc quyền lớn nhất với tư bản của những liên minh độc quyền các nhà công nghiệp dẫn đến kết quả:",
+    "options": [
+      "Hình thành tư bản liên minh độc quyền công nghiệp",
+      "Hình thành tư bản liên minh độc quyền ngân hàng",
+      "Hình thành tư bản tài chính",
+      "Hình thành tư bản độc quyền nhà nước công nghiệp và ngân hàng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sự dung hợp giữa tư bản ngân hàng và tư bản công nghiệp tạo ra tư bản tài chính. Đây là một đặc trưng nổi bật của giai đoạn chủ nghĩa tư bản độc quyền."
+  },
+  {
+    "id": 136,
+    "question": "Cơ chế điều tiết kinh tế của chủ nghĩa tư bản giai đoạn độc quyền nhà nước thể hiện:",
+    "options": [
+      "Cơ chế thị trường có sự điều tiết của nhà nước nhằm phục vụ lợi ích của toàn dân",
+      "Cơ chế thị trường có sự điều tiết của nhà nước nhằm phục vụ lợi ích của chủ nghĩa tư bản độc quyền",
+      "Cơ chế thị trường có sự điều tiết của cơ quan tư pháp nhằm phục vụ lợi ích của chủ nghĩa tư bản độc quyền",
+      "Cơ chế thị trường có sự điều tiết của cơ quan lập pháp của nhà nước nhằm phục vụ lợi ích của chủ nghĩa tư bản độc quyền"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ở giai đoạn độc quyền nhà nước, nền kinh tế vẫn vận hành theo cơ chế thị trường nhưng có sự điều tiết mạnh hơn của nhà nước. Tuy nhiên sự điều tiết đó chủ yếu phục vụ lợi ích của chủ nghĩa tư bản độc quyền chứ không phải lợi ích của toàn dân."
+  },
+  {
+    "id": 137,
+    "question": "Khi sản xuất càng phát triển thì lực lượng sản xuất xã hội hoá ngày càng cao, nhưng quan hệ sản xuất lại dựa trên chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất. Để mở đường cho lực lượng sản xuất tiếp tục phát triển, nhà nước tư sản cần phải điều chỉnh yếu tố nào?",
+    "options": [
+      "Các tổ chức chính trị xã hội",
+      "Các quan hệ xã hội",
+      "Các tổ chức đảng",
+      "Quan hệ sản xuất"
+    ],
+    "correctIndex": 3,
+    "explanation": "Khi mâu thuẫn giữa lực lượng sản xuất đã xã hội hóa cao với quan hệ sản xuất tư nhân tư bản chủ nghĩa trở nên gay gắt, nhà nước tư sản buộc phải điều chỉnh quan hệ sản xuất ở mức độ nhất định. Mục đích là tạo điều kiện cho chủ nghĩa tư bản tiếp tục tồn tại và phát triển."
+  },
+  {
+    "id": 138,
+    "question": "Các thành viên trong cùng một tổ chức độc quyền cạnh tranh với nhau nhằm mục đích gì?",
+    "options": [
+      "Chiếm tỷ lệ cổ phần khống chế, để chi phối và phân chia lợi nhuận",
+      "Chiếm địa vị chi phối, phân chia lợi nhuận độc quyền",
+      "Chiếm tỷ lệ cổ phần khống chế, từ đó chiếm địa vị chi phối, khống chế thị trường",
+      "Chiếm tỷ lệ cổ phần khống chế, từ đó chiếm địa vị chi phối và phân chia lợi ích có lợi hơn"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ngay trong nội bộ tổ chức độc quyền vẫn tồn tại cạnh tranh vì các thành viên đều muốn giành quyền chi phối lớn hơn và phân chia lợi ích có lợi hơn cho mình. Điều này cho thấy độc quyền không thủ tiêu cạnh tranh."
+  },
+  {
+    "id": 139,
+    "question": "Cuối thế kỷ XIX đầu thế kỷ XX, luồng vốn xuất khẩu tư bản có đặc điểm như thế nào?",
+    "options": [
+      "Luồng vốn chủ yếu từ các nước tư bản sang các nước thuộc địa và phụ thuộc",
+      "Luồng vốn chủ yếu xuất khẩu qua lại giữa các nước tư bản với nhau",
+      "Luồng vốn xuất khẩu tư bản tập trung chủ yếu vào lĩnh vực sản xuất vũ khí",
+      "Luồng vốn xuất khẩu tư bản tập trung vào lĩnh vực sản xuất công nghiệp"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ở giai đoạn đầu của chủ nghĩa tư bản độc quyền, xuất khẩu tư bản chủ yếu diễn ra từ các nước tư bản phát triển sang thuộc địa và nước phụ thuộc. Mục tiêu là khai thác tài nguyên, lao động rẻ và mở rộng phạm vi thống trị."
+  },
+  {
+    "id": 140,
+    "question": "Độc quyền nhà nước trong chủ nghĩa tư bản là sự thống nhất của các quá trình:",
+    "options": [
+      "Kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của cán bộ nhà nước trong một cơ chế thống nhất",
+      "Tăng sức mạnh của các tổ chức độc quyền, tăng vai trò can thiệp của nhà nước vào kinh tế, kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của nhà nước trong một cơ chế thống nhất",
+      "Kết hợp sức mạnh của độc quyền nhà nước với độc quyền tư nhân trong một cơ chế thống nhất",
+      "Tăng sức mạnh của các tổ chức kinh tế, tăng vai trò can thiệp của nhà nước vào thị trường, kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của nhà nước trong một cơ chế thống nhất của xã hội nhất định"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khái niệm độc quyền nhà nước trong chủ nghĩa tư bản nhấn mạnh ba quá trình gắn bó với nhau: tăng sức mạnh của tổ chức độc quyền, tăng vai trò can thiệp của nhà nước vào kinh tế và sự kết hợp hai sức mạnh đó trong một cơ chế thống nhất. Phương án B phản ánh đúng và đầy đủ nhất."
+  },
+  {
+    "id": 141,
+    "question": "Hiện nay, độc quyền cũng bắt đầu xuất hiện ở cả những nước đang phát triển, đó là kết quả của:",
+    "options": [
+      "Sự phát triển kinh tế một cách nhanh chóng của các nước này",
+      "Sự ưu đãi của nhà nước cho các tập đoàn kinh tế tư nhân",
+      "Sự thâm nhập của các công ty xuyên quốc gia vào các nước này",
+      "Sự tích tụ và tập trung vốn của các công ty ở các nước này"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ở nhiều nước đang phát triển, sự xuất hiện của yếu tố độc quyền gắn chặt với quá trình thâm nhập và chi phối của các công ty xuyên quốc gia. Đây là biểu hiện mới của chủ nghĩa tư bản hiện đại trên phạm vi toàn cầu."
+  },
+  {
+    "id": 142,
+    "question": "Để giám sát việc sử dụng tiền vay của các tổ chức độc quyền công nghiệp, các tổ chức độc quyền ngân hàng áp dụng biện pháp gì?",
+    "options": [
+      "Cử đại diện của mình vào các cơ quan quản lý của độc quyền công nghiệp để theo dõi việc sử dụng tiền vay",
+      "Yêu cầu các tổ chức độc quyền công nghiệp báo cáo hàng tháng",
+      "Giám sát việc luân chuyển tiền của tổ chức độc quyền công nghiệp qua hệ thống ngân hàng",
+      "Cử đại diện của mình vào cơ quan tài chính quốc gia để giám sát việc sử dụng tiền vay"
+    ],
+    "correctIndex": 0,
+    "explanation": "Một biện pháp điển hình là ngân hàng cử đại diện tham gia các cơ quan quản lý của tổ chức độc quyền công nghiệp để trực tiếp kiểm soát việc sử dụng vốn vay. Điều này phản ánh sự gắn kết chặt chẽ giữa tư bản ngân hàng và tư bản công nghiệp."
+  },
+  {
+    "id": 143,
+    "question": "Cạnh tranh giữa các tổ chức độc quyền trong cùng một ngành và giữa các tổ chức độc quyền khác ngành có liên quan đến nguồn lực đầu vào thường kết thúc như thế nào?",
+    "options": [
+      "Một sự thỏa hiệp hoặc bằng sự phá sản của một bên",
+      "Một sự thỏa hiệp, liên kết để cùng nhau phát triển mạnh thêm",
+      "Sự phá sản của một bên và chỉ còn một số doanh nghiệp lớn",
+      "Không kết thúc trong từng thời điểm cạnh tranh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cạnh tranh giữa các tổ chức độc quyền có thể rất gay gắt nhưng thường kết thúc hoặc bằng một sự thỏa hiệp phân chia thị trường, hoặc bằng sự thất bại, phá sản của một bên. Đây là quy luật vận động điển hình của cạnh tranh độc quyền."
+  },
+  {
+    "id": 144,
+    "question": "Trong những thập kỷ gần đây, luồng vốn xuất khẩu tư bản có đặc điểm như thế nào?",
+    "options": [
+      "Luồng vốn chủ yếu từ các nước tư bản phát triển sang các nước kém phát triển",
+      "Luồng vốn chủ yếu xuất khẩu qua lại giữa các nước tư bản phát triển với nhau",
+      "Luồng vốn xuất khẩu tư bản chủ yếu từ các nước đang phát triển",
+      "Luồng vốn xuất khẩu tư bản tập trung vào lĩnh vực sản xuất công nghiệp"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong giai đoạn gần đây, xuất khẩu tư bản diễn ra mạnh mẽ giữa các nước tư bản phát triển với nhau. Điều này phản ánh sự quốc tế hóa sâu rộng của tư bản trong bối cảnh toàn cầu hóa."
+  },
+  {
+    "id": 145,
+    "question": "Trong chủ nghĩa tư bản sự xuất hiện của độc quyền sẽ dẫn đến cạnh tranh như thế nào?",
+    "options": [
+      "Thủ tiêu được cạnh tranh",
+      "Giúp cạnh tranh không gay gắt",
+      "Làm cho cạnh tranh trở nên đa dạng và gay gắt hơn",
+      "Trì hoãn được cạnh tranh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Độc quyền không thủ tiêu cạnh tranh mà chỉ làm biến đổi hình thức cạnh tranh, khiến nó trở nên đa dạng hơn và gay gắt hơn. Cạnh tranh diễn ra giữa các tổ chức độc quyền với nhau, giữa độc quyền và ngoài độc quyền, cũng như ngay trong nội bộ độc quyền."
+  },
+  {
+    "id": 146,
+    "question": "Vì sao các tổ chức độc quyền thu được lợi nhuận độc quyền cao?",
+    "options": [
+      "Vì các tổ chức độc quyền khống chế giá bán hàng hóa thấp và giá mua hàng hóa cao",
+      "Vì các tổ chức độc quyền khống chế giá bán hàng hóa cao và giá mua hàng hóa thấp",
+      "Vì các tổ chức độc quyền khống chế giá bán hàng hóa cao và giá mua hàng hóa cao",
+      "Vì các tổ chức độc quyền khống chế giá bán hàng hóa sức lao động cao"
+    ],
+    "correctIndex": 1,
+    "explanation": "Các tổ chức độc quyền có thể áp đặt giá bán độc quyền cao đối với hàng hóa đầu ra và ép giá mua độc quyền thấp đối với đầu vào. Nhờ đó họ thu được lợi nhuận độc quyền cao vượt mức bình thường."
+  },
+  {
+    "id": 147,
+    "question": "Tại sao trong cơ cấu của độc quyền nhà nước, nhà nước lại trở thành một tập thể tư bản khổng lồ?",
+    "options": [
+      "Vì nhà nước là đại diện giai cấp tư sản",
+      "Vì nhà nước quốc hữu hóa những doanh nghiệp",
+      "Vì nhà nước tập trung quản lý doanh nghiệp, không làm nhiệm vụ quản lý nhà nước",
+      "Vì nhà nước cũng là chủ sở hữu những doanh nghiệp, là nhà tư bản tập thể"
+    ],
+    "correctIndex": 3,
+    "explanation": "Trong chủ nghĩa tư bản độc quyền nhà nước, nhà nước không chỉ quản lý mà còn trực tiếp sở hữu và kinh doanh thông qua các doanh nghiệp nhà nước. Vì vậy nhà nước trở thành một nhà tư bản tập thể khổng lồ."
+  },
+  {
+    "id": 148,
+    "question": "Biện pháp nào là một trong những cách thức để hình thành doanh nghiệp thuộc sở hữu nhà nước?",
+    "options": [
+      "Nhà nước mua lại toàn bộ các doanh nghiệp nhà nước",
+      "Nhà nước mua cổ phần của các doanh nghiệp nhà nước",
+      "Nhà nước xây dựng doanh nghiệp mới bằng vốn của ngân sách",
+      "Nhà nước mở rộng doanh nghiệp nhà nước bằng vốn tích lũy của các doanh nghiệp nhà nước"
+    ],
+    "correctIndex": 2,
+    "explanation": "Một con đường trực tiếp để hình thành doanh nghiệp thuộc sở hữu nhà nước là Nhà nước dùng vốn ngân sách để xây dựng doanh nghiệp mới. Đây là phương án chuẩn xác nhất trong các lựa chọn đã cho."
+  },
+  {
+    "id": 149,
+    "question": "Độc quyền nhà nước trong chủ nghĩa tư bản có đặc điểm như thế nào?",
+    "options": [
+      "Tăng sức mạnh của các tổ chức độc quyền, tăng vai trò can thiệp của nhà nước vào kinh tế, kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của nhà nước",
+      "Giảm sức mạnh của các tổ chức độc quyền, tăng vai trò can thiệp của nhà nước vào kinh tế, kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của nhà nước",
+      "Tăng sức mạnh của các tổ chức độc quyền, giảm vai trò can thiệp của nhà nước vào kinh tế, kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của nhà nước",
+      "Giảm sức mạnh của các tổ chức độc quyền, giảm vai trò can thiệp của nhà nước vào kinh tế, kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của nhà nước"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đặc điểm nổi bật của độc quyền nhà nước là sự gia tăng đồng thời sức mạnh của các tổ chức độc quyền và vai trò can thiệp kinh tế của nhà nước, trên cơ sở kết hợp sức mạnh của độc quyền tư nhân với sức mạnh của nhà nước. Đây là biểu hiện điển hình của chủ nghĩa tư bản hiện đại."
+  },
+  {
+    "id": 150,
+    "question": "Trong chủ nghĩa tư bản, các hội chủ xí nghiệp có vai trò như thế nào khi trở thành lực lượng chính trị, kinh tế to lớn?",
+    "options": [
+      "Đối thủ cạnh tranh của tư bản độc quyền nhà nước",
+      "Tiền thân của tư bản độc quyền nhà nước",
+      "Chỗ dựa cho độc quyền nhà nước",
+      "Không có vai trò cụ thể trong tư bản độc quyền nhà nước"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi các hội chủ xí nghiệp trở thành lực lượng chính trị và kinh tế lớn, chúng trở thành chỗ dựa quan trọng cho chủ nghĩa tư bản độc quyền nhà nước. Thông qua đó, quyền lực kinh tế có điều kiện tác động sâu hơn vào quyền lực nhà nước."
+  },
+  {
+    "id": 151,
+    "question": "Cuộc khủng hoảng kinh tế năm 1873 trong toàn bộ thế giới tư bản chủ nghĩa làm phá sản hàng loạt các doanh nghiệp vừa và nhỏ, các doanh nghiệp lớn muốn tiếp tục tồn tại và phát triển thì phải thực hiện biện pháp nào?",
+    "options": [
+      "Thúc đẩy nhanh quá trình tích tụ",
+      "Thúc đẩy nhanh quá trình tập trung sản xuất",
+      "Tăng cường khai thác giá trị thặng dư",
+      "Thúc đẩy nhanh quá trình tích tụ và tập trung sản xuất"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sau khủng hoảng, để tồn tại và phát triển, các doanh nghiệp lớn buộc phải đẩy nhanh cả tích tụ lẫn tập trung sản xuất nhằm mở rộng quy mô và nâng cao sức cạnh tranh. Đây là một trong những tiền đề dẫn tới sự hình thành độc quyền."
+  },
+  {
+    "id": 152,
+    "question": "Vì sao nói độc quyền không thủ tiêu cạnh tranh, trái lại, độc quyền làm cho cạnh tranh trở nên đa dạng, gay gắt hơn?",
+    "options": [
+      "Vì bên cạnh sự cạnh tranh giữa các chủ thể sản xuất kinh doanh nhỏ và vừa còn có thêm sự cạnh tranh giữa các tổ chức độc quyền với nhau",
+      "Vì sự cạnh tranh giữa các chủ thể sản xuất kinh doanh trong xã hội ngày càng gay gắt",
+      "Vì bên cạnh sự cạnh tranh của nhà nước có thêm sự cạnh tranh giữa các tổ chức độc quyền với nhau",
+      "Vì bên cạnh sự cạnh tranh giữa các chủ thể kinh tế có thêm sự cạnh tranh giữa các tổ chức độc quyền với nhau"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sự xuất hiện của độc quyền không xóa bỏ cạnh tranh mà làm xuất hiện thêm nhiều tầng nấc cạnh tranh mới, đặc biệt là cạnh tranh giữa các tổ chức độc quyền với nhau. Do đó cạnh tranh trở nên phức tạp và gay gắt hơn."
+  },
+  {
+    "id": 153,
+    "question": "Khi chủ nghĩa tư bản thực hiện xã hội hóa sản xuất sẽ dẫn đến kết quả gì?",
+    "options": [
+      "Thúc đẩy quá trình xã hội hóa sản xuất cả về chiều rộng và chiều sâu",
+      "Thúc đẩy quá trình tư nhân hóa sản xuất cả về chiều rộng và chiều sâu",
+      "Kìm hãm quá trình xã hội hóa sản xuất cả về chiều rộng và chiều sâu",
+      "Thúc đẩy và kìm hãm quá trình xã hội hóa sản xuất cả về chiều rộng và chiều cao"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quá trình phát triển của chủ nghĩa tư bản, nhất là ở giai đoạn độc quyền, làm cho sản xuất ngày càng mang tính xã hội hóa cao hơn cả về phạm vi lẫn mức độ liên kết. Vì vậy kết quả cơ bản là thúc đẩy xã hội hóa sản xuất cả về chiều rộng và chiều sâu."
+  },
+  {
+    "id": 154,
+    "question": "Tại sao mục đích của nền sản xuất tư bản chủ nghĩa chủ yếu tập trung vào lợi ích của thiểu số giai cấp tư sản?",
+    "options": [
+      "Vì cơ sở kinh tế của chủ nghĩa tư bản dựa trên chế độ công hữu về tư liệu sản xuất",
+      "Vì cơ sở kinh tế của chủ nghĩa tư bản dựa trên chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất",
+      "Vì cơ sở văn hóa - xã hội của chủ nghĩa tư bản dựa trên chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất",
+      "Vì cơ sở chính trị của chủ nghĩa tư bản là dựa trên sự dối trá về quyền dân chủ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Do cơ sở kinh tế của chủ nghĩa tư bản là chế độ chiếm hữu tư nhân tư bản chủ nghĩa về tư liệu sản xuất, nên kết quả của sản xuất chủ yếu phục vụ lợi ích của giai cấp tư sản. Đây là nguyên nhân sâu xa khiến mục tiêu của nền sản xuất này mang tính giai cấp rõ rệt."
+  },
+  {
+    "id": 155,
+    "question": "Khi sự mở rộng của các liên minh độc quyền quốc tế gặp phải rào cản quốc gia và xung đột lợi ích với các đối thủ trên thị trường toàn cầu, nhà nước tư sản sẽ xử lý như thế nào?",
+    "options": [
+      "Điều tiết các quan hệ chính trị và kinh tế trong nước",
+      "Điều tiết các quan hệ chính trị quốc tế",
+      "Điều tiết các quan hệ chính trị và kinh tế quốc tế",
+      "Điều tiết các quan hệ kinh tế quốc tế"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi lợi ích của các liên minh độc quyền vươn ra phạm vi toàn cầu, nhà nước tư sản cũng mở rộng vai trò điều tiết sang cả quan hệ chính trị và kinh tế quốc tế. Điều này nhằm hỗ trợ vị thế cạnh tranh và lợi ích của tư bản trong môi trường quốc tế."
+  },
+  {
+    "id": 156,
+    "question": "Vì sao khoa học kỹ thuật phát triển, tác động của các quy luật kinh tế thị trường thì các doanh nghiệp thường chọn xu hướng tích tụ, tập trung sản xuất?",
+    "options": [
+      "Vì các doanh nghiệp muốn tồn tại và phát triển, giành ưu thế cạnh tranh",
+      "Vì các doanh nghiệp muốn tập trung sản xuất, giành ưu thế cạnh tranh trên thị trường",
+      "Vì các doanh nghiệp muốn tồn tại và phát triển nên họ tập trung sản xuất",
+      "Vì các doanh nghiệp muốn tập trung sản xuất quy mô lớn để giành ưu thế cạnh tranh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trong điều kiện cạnh tranh gay gắt và khoa học kỹ thuật phát triển nhanh, doanh nghiệp muốn tồn tại và phát triển buộc phải mở rộng quy mô, tích tụ và tập trung sản xuất để nâng cao năng suất và sức cạnh tranh. Phương án A phản ánh đầy đủ nhất động lực đó."
+  },
+  {
+    "id": 157,
+    "question": "Nếu xem xét theo thời điểm diễn ra các cuộc cách mạng công nghiệp, sự xuất hiện của các tổ chức độc quyền tương ứng với cuộc cách mạng công nghiệp lần thứ mấy?",
+    "options": [
+      "Cách mạng công nghiệp 1.0",
+      "Cách mạng công nghiệp 2.0",
+      "Cách mạng công nghiệp 3.0",
+      "Cách mạng công nghiệp 4.0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Các tổ chức độc quyền xuất hiện mạnh vào cuối thế kỷ XIX, đầu thế kỷ XX, gắn với bước phát triển mới của lực lượng sản xuất và tập trung tư bản trong thời kỳ cách mạng công nghiệp lần thứ hai. Vì vậy đáp án đúng là 2.0."
+  },
+  {
+    "id": 158,
+    "question": "Trong suốt quá trình phát triển của nhân loại, lợi ích nào đóng vai trò quyết định trong việc thúc đẩy hoạt động của từng cá nhân, tổ chức và cả xã hội?",
+    "options": [
+      "Lợi ích vật chất",
+      "Lợi ích tinh thần",
+      "Lợi ích chính trị",
+      "Lợi ích xã hội"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lợi ích vật chất giữ vai trò quyết định vì nó gắn trực tiếp với nhu cầu tồn tại và phát triển của con người. Trong hoạt động kinh tế, đây là động lực cơ bản thúc đẩy cá nhân, tổ chức và toàn xã hội hành động."
+  },
+  {
+    "id": 159,
+    "question": "Trong nền kinh tế thị trường, Nhà nước sử dụng công cụ nào để can thiệp nhằm đảm bảo sự hài hòa giữa các mối quan hệ lợi ích kinh tế trong xã hội?",
+    "options": [
+      "Nhà tù, trại giam",
+      "Các tập đoàn nhà nước",
+      "Các loại hình phạt hành chính",
+      "Công cụ giáo dục, pháp luật, hành chính, kinh tế"
+    ],
+    "correctIndex": 3,
+    "explanation": "Để điều hòa các quan hệ lợi ích, Nhà nước sử dụng tổng hợp nhiều công cụ như giáo dục, pháp luật, hành chính và kinh tế. Đây là hệ thống công cụ vừa định hướng vừa ràng buộc các chủ thể hành động phù hợp lợi ích chung."
+  },
+  {
+    "id": 160,
+    "question": "Tổ chức nào đảm nhận vai trò đảm bảo quyền lợi cho người lao động trong doanh nghiệp?",
+    "options": [
+      "Đoàn thanh niên",
+      "Chi bộ",
+      "Công đoàn",
+      "Hội phụ nữ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Công đoàn là tổ chức đại diện và bảo vệ quyền, lợi ích hợp pháp, chính đáng của người lao động trong doanh nghiệp. Đây là thiết chế quan trọng để điều hòa quan hệ lao động trong kinh tế thị trường."
+  },
+  {
+    "id": 161,
+    "question": "Mô hình liên kết giữa 4 nhà trong nông nghiệp: nhà nông - nhà doanh nghiệp - nhà khoa học - nhà nước, hình thành nên:",
+    "options": [
+      "Lợi ích tập thể",
+      "Lợi ích nhóm",
+      "Nhóm lợi ích",
+      "Lợi ích nhà nước"
+    ],
+    "correctIndex": 2,
+    "explanation": "Liên kết 4 nhà là sự gắn kết giữa nhiều chủ thể để cùng theo đuổi và phối hợp lợi ích trong một lĩnh vực cụ thể. Vì vậy nó được xem là biểu hiện của nhóm lợi ích."
+  },
+  {
+    "id": 162,
+    "question": "Theo Kinh tế chính trị Mác – Lênin, kinh tế thị trường phát triển qua các giai đoạn nào?",
+    "options": [
+      "Kinh tế thị trường tự do, kinh tế thị trường sơ khai và kinh tế thị trường hiện đại",
+      "Kinh tế thị trường sơ khai, kinh tế thị trường hiện đại và kinh tế thị trường tự do",
+      "Kinh tế thị trường sơ khai, kinh tế thị trường tự do và kinh tế thị trường hiện đại",
+      "Kinh tế thị trường sơ khai, kinh tế thị trường tự do và kinh tế thị trường cận đại"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kinh tế thị trường thường được khái quát qua ba giai đoạn cơ bản: sơ khai, tự do và hiện đại. Trình tự này phản ánh đúng quá trình phát triển lịch sử của kinh tế thị trường."
+  },
+  {
+    "id": 163,
+    "question": "Theo Kinh tế chính trị Mác – Lênin, kinh tế thị trường phát triển qua mấy giai đoạn cơ bản?",
+    "options": [
+      "Hai giai đoạn",
+      "Ba giai đoạn",
+      "Bốn giai đoạn",
+      "Năm giai đoạn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Theo cách phân chia thông dụng trong giáo trình, kinh tế thị trường phát triển qua ba giai đoạn cơ bản: sơ khai, tự do và hiện đại. Vì vậy đáp án đúng là ba giai đoạn."
+  },
+  {
+    "id": 164,
+    "question": "Trong quan hệ sản xuất của nền kinh tế thị trường, địa vị của chủ thể kinh tế được quyết định bởi yếu tố nào?",
+    "options": [
+      "Quan hệ sở hữu về tư liệu sản xuất",
+      "Quan hệ phân phối sản phẩm",
+      "Quan hệ quản lý",
+      "Quan hệ kinh tế"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trong hệ thống quan hệ sản xuất, quan hệ sở hữu về tư liệu sản xuất giữ vai trò quyết định địa vị của các chủ thể kinh tế. Từ đó mới chi phối quan hệ quản lý và phân phối."
+  },
+  {
+    "id": 165,
+    "question": "Trong nền kinh tế thị trường, Nhà nước có vai trò điều hòa lợi ích giữa cá nhân, doanh nghiệp - xã hội, phát triển lượng sản xuất, khoa học - công nghệ để thực hiện nhiệm vụ:",
+    "options": [
+      "Nâng cao tiêu dùng cho các khách thể kinh tế",
+      "Rút ngắn khoảng cách giàu nghèo",
+      "Nâng cao thu nhập cho các chủ thể kinh tế",
+      "Nâng cao thu nhập cho các khách thể kinh tế"
+    ],
+    "correctIndex": 1,
+    "explanation": "Một nhiệm vụ quan trọng của Nhà nước trong điều hòa lợi ích là giảm bất bình đẳng và rút ngắn khoảng cách giàu nghèo, qua đó bảo đảm ổn định xã hội và phát triển bền vững. Các chính sách phát triển lực lượng sản xuất và khoa học công nghệ cũng hướng tới mục tiêu này."
+  },
+  {
+    "id": 166,
+    "question": "Các cá nhân, tổ chức hoạt động trong cùng ngành, cùng lĩnh vực liên kết với nhau trong hành động để thực hiện tốt hơn lợi ích riêng hình thành nên:",
+    "options": [
+      "Lợi ích tập thể",
+      "Lợi ích nhóm",
+      "Nhóm lợi ích",
+      "Lợi ích nhà nước"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi các cá nhân, tổ chức cùng lĩnh vực liên kết với nhau để bảo vệ hoặc thúc đẩy lợi ích riêng, đó là sự hình thành nhóm lợi ích. Đây là một hiện tượng phổ biến trong kinh tế thị trường."
+  },
+  {
+    "id": 167,
+    "question": "Trong điều kiện kinh tế thị trường định hướng xã hội chủ nghĩa hiện nay, phương thức thực hiện lợi ích kinh tế trong các quan hệ lợi ích chủ yếu là:",
+    "options": [
+      "Thực hiện lợi ích kinh tế theo nguyên tắc thị trường; theo vai trò của các tổ chức xã hội",
+      "Thực hiện lợi ích kinh tế theo vai trò của các tổ chức xã hội; theo chính sách của nhà nước",
+      "Theo chính sách của nhà nước; theo vai trò của các tổ chức xã hội",
+      "Thực hiện lợi ích kinh tế theo nguyên tắc thị trường; theo chính sách của nhà nước và vai trò của các tổ chức xã hội"
+    ],
+    "correctIndex": 3,
+    "explanation": "Trong nền kinh tế thị trường định hướng xã hội chủ nghĩa, việc thực hiện lợi ích kinh tế diễn ra thông qua cả ba kênh: nguyên tắc thị trường, chính sách của Nhà nước và vai trò của các tổ chức xã hội. Đây là cơ chế bảo đảm tính hiệu quả đi cùng định hướng xã hội."
+  },
+  {
+    "id": 168,
+    "question": "Trong nền kinh tế thị trường định hướng xã hội chủ nghĩa, Nhà nước cần có chính sách gì để đảm bảo sự hài hòa lợi ích giữa cá nhân, doanh nghiệp và xã hội?",
+    "options": [
+      "Chính sách phân phối thu nhập",
+      "Chính sách tiền tệ",
+      "Chính sách giáo dục",
+      "Chính sách doanh nghiệp"
+    ],
+    "correctIndex": 0,
+    "explanation": "Để hài hòa lợi ích giữa các chủ thể, Nhà nước cần có chính sách phân phối thu nhập hợp lý. Đây là công cụ trực tiếp giúp điều tiết chênh lệch lợi ích và gắn tăng trưởng với công bằng xã hội."
+  },
+  {
+    "id": 169,
+    "question": "Khi giải quyết mâu thuẫn giữa các lợi ích kinh tế phải đảm bảo nguyên tắc nào?",
+    "options": [
+      "Có sự tham gia của một bên liên quan, có nhân nhượng và phải đặt lợi ích đất nước lên trên hết",
+      "Có sự tham gia của các bên liên quan, có nhân nhượng và phải đặt lợi ích đất nước lên trên hết",
+      "Có sự tham gia của các bên liên quan và phải đặt lợi ích đất nước lên trên hết",
+      "Có sự tham gia của các bên liên quan, có nhân nhượng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Việc giải quyết mâu thuẫn lợi ích phải có sự tham gia của các bên liên quan, có sự nhân nhượng cần thiết và phải đặt lợi ích quốc gia, dân tộc lên trên hết. Đây là nguyên tắc bảo đảm vừa đúng đắn vừa khả thi."
+  },
+  {
+    "id": 170,
+    "question": "Trong nền kinh tế thị trường, điều kiện quan trọng nhất để thực hiện lợi ích kinh tế giữa người lao động và người sử dụng lao động là gì?",
+    "options": [
+      "Tạo lập sự thống nhất trong quan hệ lợi ích của cả hai bên",
+      "Tạo lập sự bền vững trong quan hệ lợi ích của cả hai bên",
+      "Tạo lập sự tương quan trong lợi ích kinh tế của cả hai bên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Điều kiện quan trọng nhất là tạo lập sự thống nhất trong quan hệ lợi ích giữa người lao động và người sử dụng lao động. Khi hai bên thấy được lợi ích gắn bó với nhau, quan hệ lao động mới ổn định và bền vững."
+  },
+  {
+    "id": 171,
+    "question": "Khi mâu thuẫn về lợi ích kinh tế giữa người lao động và người sử dụng lao động xảy ra, người lao động có được phép đấu tranh không?",
+    "options": [
+      "Có, nhưng phải tuân thủ pháp luật",
+      "Có, nhưng phải thành lập tổ chức",
+      "Không, phải tuân thủ pháp luật",
+      "Không, phải đảm bảo trật tự xã hội"
+    ],
+    "correctIndex": 0,
+    "explanation": "Người lao động có quyền đấu tranh để bảo vệ lợi ích hợp pháp của mình, nhưng việc đó phải diễn ra trong khuôn khổ pháp luật. Đây là nguyên tắc quan trọng để bảo đảm quyền lợi và giữ ổn định xã hội."
+  },
+  {
+    "id": 172,
+    "question": "Để đảm bảo hài hòa các quan hệ lợi ích trong nền kinh tế, cần có vai trò điều tiết của:",
+    "options": [
+      "Đoàn thanh niên",
+      "Các bộ, ngành",
+      "Nhà nước",
+      "Doanh nghiệp"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trong nền kinh tế thị trường, Nhà nước là chủ thể có vai trò điều tiết vĩ mô và bảo đảm hài hòa các quan hệ lợi ích. Nhà nước sử dụng pháp luật, chính sách và các công cụ quản lý để thực hiện chức năng này."
+  },
+  {
+    "id": 173,
+    "question": "Mô hình kinh tế tổng quát trong suốt thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam là mô hình:",
+    "options": [
+      "Kinh tế thị trường",
+      "Kinh tế thị trường định hướng xã hội",
+      "Kinh tế thị trường định hướng xã hội chủ nghĩa",
+      "Kinh tế thị trường định hướng chủ nghĩa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đảng ta xác định mô hình kinh tế tổng quát trong thời kỳ quá độ ở Việt Nam là nền kinh tế thị trường định hướng xã hội chủ nghĩa. Đây là mô hình vừa tuân theo quy luật thị trường, vừa bảo đảm mục tiêu xã hội chủ nghĩa."
+  },
+  {
+    "id": 174,
+    "question": "Để kiểm soát, ngăn ngừa các quan hệ lợi ích có ảnh hưởng tiêu cực đối với sự phát triển xã hội, nhà nước phải thực hiện nhiệm vụ đặc biệt cần thiết là:",
+    "options": [
+      "Nâng cao hiệu lực, hiệu quả của hoạt động thanh tra, kiểm tra",
+      "Nâng cao hiệu lực, hiệu quả của hoạt động thanh tra, kiểm tra và xử lý vi phạm",
+      "Nâng cao hiệu lực, hiệu quả của hoạt động xử lý vi phạm",
+      "Thường xuyên hoạt động thanh tra, kiểm tra và xử lý vi phạm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Muốn ngăn ngừa các quan hệ lợi ích tiêu cực, Nhà nước không chỉ cần thanh tra, kiểm tra mà còn phải xử lý vi phạm nghiêm minh. Vì vậy đáp án đầy đủ và đúng nhất là phương án B."
+  },
+  {
+    "id": 175,
+    "question": "Hiện nay, các công ty cổ phần phân phối cổ tức cho cổ đông thông qua số lượng cổ phần mà các cổ đông nắm giữ. Hình thức phân phối đó thuộc loại hình nào?",
+    "options": [
+      "Phân phối theo lao động",
+      "Phân phối theo vốn góp",
+      "Phân phối theo kết quả đầu ra",
+      "Phân phối theo phúc lợi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cổ tức được chia dựa trên số vốn mà cổ đông góp vào doanh nghiệp thông qua cổ phần. Vì vậy đây là hình thức phân phối theo vốn góp."
+  },
+  {
+    "id": 176,
+    "question": "Tác dụng của việc các chủ thể kinh tế theo đuổi lợi ích kinh tế chính đáng, tích cực lao động sản xuất, nâng cao tay nghề, cải tiến công cụ lao động và tìm cách nâng cao hiệu quả sử dụng các nguồn lực để đáp ứng nhu cầu xã hội là:",
+    "options": [
+      "Thúc đẩy sự phát triển của xã hội, của nền kinh tế và nâng cao đời sống của người dân",
+      "Thúc đẩy sự phát triển của người lao động, của xã hội và nâng cao đời sống của người dân",
+      "Thúc đẩy sự phát triển của lực lượng sản xuất, của nền kinh tế và nâng cao đời sống của người dân",
+      "Thúc đẩy sự phát triển của con người, của nền kinh tế và nâng cao đời sống của người dân"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi các chủ thể theo đuổi lợi ích kinh tế một cách chính đáng, họ có xu hướng nâng cao tay nghề, cải tiến công cụ và sử dụng nguồn lực hiệu quả hơn. Điều đó trực tiếp thúc đẩy lực lượng sản xuất phát triển, kéo theo tăng trưởng kinh tế và cải thiện đời sống nhân dân."
+  },
+  {
+    "id": 177,
+    "question": "Vì sao trong nền kinh tế thị trường, các chủ thể kinh tế bên cạnh quan hệ lợi ích kinh tế thống nhất lại vừa có thể có mâu thuẫn với nhau?",
+    "options": [
+      "Vì kết quả sản xuất kinh doanh là xác định nên chủ thể này có nhiều thì chủ thể khác sẽ có ít",
+      "Vì trong quá trình sản xuất kinh doanh thu nhập của chủ thể này tăng lên thì thu nhập của chủ thể khác giảm xuống",
+      "Vì các chủ thể kinh tế luôn muốn có nhiều lợi nhuận họ cạnh tranh với nhau. Do đó thu nhập của chủ thể này tăng lên thì thu nhập chủ thể khác giảm xuống",
+      "Vì tại một thời điểm kết quả hoạt động sản xuất, kinh doanh là xác định. Do đó, thu nhập của chủ thể này tăng lên thì thu nhập của chủ thể khác giảm xuống"
+    ],
+    "correctIndex": 3,
+    "explanation": "Các chủ thể kinh tế vừa thống nhất vừa mâu thuẫn vì trong một thời điểm nhất định, kết quả hoạt động sản xuất kinh doanh có giới hạn. Khi một chủ thể giành được phần lợi ích lớn hơn thì phần lợi ích của chủ thể khác có thể bị thu hẹp."
+  },
+  {
+    "id": 178,
+    "question": "Mục tiêu của mô hình kinh tế thị trường định hướng xã hội chủ nghĩa của Việt Nam là hướng tới hệ giá trị:",
+    "options": [
+      "Dân giàu, nước mạnh, dân chủ, công bằng, văn minh",
+      "Dân giàu, xã hội công bằng, dân chủ, văn minh",
+      "Dân giàu, xã hội văn minh, văn hóa phát triển",
+      "Dân giàu, hội nhập thành công, ngôi nhà chung phát triển"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mục tiêu tổng quát mà nền kinh tế thị trường định hướng xã hội chủ nghĩa hướng tới là xây dựng một xã hội 'dân giàu, nước mạnh, dân chủ, công bằng, văn minh'. Đây là hệ giá trị trung tâm được xác định trong các văn kiện của Đảng."
+  },
+  {
+    "id": 179,
+    "question": "Vì sao trong kinh tế thị trường, Việt Nam cần phải hoàn thiện thị trường hàng hóa sức lao động?",
+    "options": [
+      "Vì đó là yếu tố quyết định mức độ thu nhập của người lao động theo đúng định hướng xã hội chủ nghĩa",
+      "Vì đó là một trong các loại thị trường cần thiết trong nền kinh tế thị trường định hướng xã hội chủ nghĩa",
+      "Vì thị trường này cần cạnh tranh tự do mới kích thích người lao động nâng cao tay nghề",
+      "Vì trình độ của người lao động không thể giống nhau hay bằng nhau trong thực tiễn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thị trường sức lao động là một bộ phận quan trọng của hệ thống thị trường trong nền kinh tế thị trường hiện đại. Vì vậy Việt Nam cần hoàn thiện thị trường này để nền kinh tế vận hành đầy đủ, đồng bộ và hiệu quả hơn."
+  },
+  {
+    "id": 180,
+    "question": "Nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam với sự hoạt động kinh tế của các chủ thể, hướng tới góp phần xác lập một hệ giá trị toàn diện bao gồm:",
+    "options": [
+      "Dân giàu, nước mạnh, xã hội dân chủ, công bằng, văn minh",
+      "Phát triển, bình đẳng, dân chủ, đoàn kết, văn minh",
+      "Dân giàu, tự chủ, tự do, công bằng, hiệu quả",
+      "Dân biết, dân bàn, dân làm, dân kiểm tra, dân hưởng thụ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hệ giá trị toàn diện mà nền kinh tế thị trường định hướng xã hội chủ nghĩa hướng tới vẫn là 'dân giàu, nước mạnh, dân chủ, công bằng, văn minh'. Phương án A là cách diễn đạt đúng nhất với nội dung chuẩn."
+  },
+  {
+    "id": 181,
+    "question": "Tại sao cần phải xử lý kịp thời các mâu thuẫn phát sinh từ lợi ích kinh tế?",
+    "options": [
+      "Vì mâu thuẫn là khách quan, nếu không được giải quyết sẽ ảnh hưởng trực tiếp đến động lực của các hoạt động kinh tế",
+      "Vì mâu thuẫn là chủ quan, nếu không được giải quyết sẽ ảnh hưởng trực tiếp đến các hoạt động kinh kinh doanh",
+      "Vì mâu thuẫn là khách quan, nếu không được giải quyết sẽ ảnh hưởng trực tiếp đến động lực của các hoạt động dịch vụ",
+      "Vì mâu thuẫn là khách quan, nếu được giải quyết sẽ ảnh hưởng trực tiếp đến động lực của các hoạt động tiêu dùng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mâu thuẫn lợi ích là hiện tượng khách quan trong kinh tế thị trường. Nếu không được giải quyết kịp thời, nó sẽ làm suy giảm động lực của các chủ thể và cản trở hoạt động kinh tế."
+  },
+  {
+    "id": 182,
+    "question": "Vì sao lợi ích cá nhân là cơ sở, nền tảng của các lợi ích khác?",
+    "options": [
+      "Vì cá nhân cấu thành nên tập thể, giai cấp và tạo động lực thúc đẩy sự phát triển của xã hội",
+      "Vì nhu cầu cơ bản, sống còn trước hết thuộc về cá nhân và là động lục thúc đẩy sự phát triển của xã hội",
+      "Vì nhu cầu cơ bản, sống còn trước hết thuộc về cá nhân và cá nhân cấu thành nên tập thể, giai cấp, xã hội",
+      "Vì cá nhân là nền tảng xã hội, sống còn trước hết thuộc về cá nhân và cá nhân cấu thành nên tập thể, giai cấp, xã hội"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lợi ích cá nhân là nền tảng vì nhu cầu sống còn trước hết thuộc về từng cá nhân, đồng thời chính cá nhân là những đơn vị cấu thành nên tập thể, giai cấp và xã hội. Do đó lợi ích cá nhân là cơ sở để hình thành và thực hiện các lợi ích khác."
+  },
+  {
+    "id": 183,
+    "question": "Vì sao không có mô hình kinh tế thị trường chung cho mọi quốc gia và mọi giai đoạn phát triển?",
+    "options": [
+      "Mỗi nền kinh tế thị trường vừa có những đặc trưng tất yếu không thể thiếu của nền kinh tế thị trường nói chung, vừa có những đặc trưng phản ánh điều kiện lịch sử, chính trị, kinh tế, xã hội của quốc gia đó",
+      "Mỗi nền kinh tế thị trường vừa có những đặc trưng tất yếu không thể thiếu của nền kinh tế thị trường nói chung vừa có đặc trưng phản ánh điều kiện chính trị của quốc gia đó",
+      "Mỗi nền kinh tế thị trường vừa có những đặc trưng tất yếu không thể thiếu của nền kinh tế thị trường nói chung vừa có đặc trưng phản ánh điều kiện kinh tế của quốc gia đó",
+      "Mỗi nền kinh tế thị trường vừa có những đặc trưng tất yếu không thể thiếu của nền kinh tế thị trường vừa có đặc trưng phản ánh điều kiện xã hội của quốc gia đó"
+    ],
+    "correctIndex": 0,
+    "explanation": "Không có một mô hình kinh tế thị trường duy nhất cho mọi quốc gia vì mỗi nước có hoàn cảnh lịch sử, chính trị, kinh tế và xã hội khác nhau. Bên cạnh các đặc trưng chung, mỗi mô hình đều mang dấu ấn riêng của quốc gia đó."
+  },
+  {
+    "id": 184,
+    "question": "Vì sao Đảng và nhà nước ta tạo điều kiện cho kinh tế tư nhân phát triển?",
+    "options": [
+      "Vì kinh tế tư nhân chạy theo lợi nhuận tự phát, đây là động lực của sự tăng trưởng kinh tế",
+      "Vì kinh tế tư nhân phát triển tự phát theo các quy luật của thị trường nhằm tối đa hóa lợi nhuận",
+      "Vì kinh tế tư nhân là động lực của sự phát triển kinh tế, tạo việc làm, đóng góp vào sự tăng trưởng của nền kinh tế",
+      "Vì kinh tế tư nhân góp phần tạo công ăn việc làm cho người dân"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đảng và Nhà nước tạo điều kiện cho kinh tế tư nhân phát triển vì đây là một động lực quan trọng của nền kinh tế, có khả năng tạo việc làm, huy động nguồn lực xã hội và đóng góp vào tăng trưởng. Phương án C đầy đủ hơn các lựa chọn còn lại."
+  },
+  {
+    "id": 185,
+    "question": "Nước ta thực hiện Luật thuế thu nhập cá nhân nhằm mục đích gì?",
+    "options": [
+      "Tăng nguồn thu cho ngân sách nhà nước và thực hiện chính sách an sinh xã hội",
+      "Tăng nguồn thu cho ngân sách nhà nước và điều tiết thu nhập",
+      "Tăng nguồn thu cho ngân sách nhà nước và dùng để phân phối lại cho các đối tượng có thu nhập thấp hơn",
+      "Tăng nguồn thu cho ngân sách nhà nước và dùng để thực hiện chính sách phúc lợi xã hội"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thuế thu nhập cá nhân vừa là nguồn thu của ngân sách nhà nước, vừa là công cụ quan trọng để điều tiết thu nhập giữa các tầng lớp dân cư. Đây là mục đích trực tiếp và chuẩn xác nhất của sắc thuế này."
+  },
+  {
+    "id": 186,
+    "question": "Trong nền kinh tế thị trường hiện nay nhà nước cần làm gì để bảo vệ lợi ích hợp pháp của các chủ thể kinh tế?",
+    "options": [
+      "Tạo môi trường chính trị ổn định, phát triển, văn minh, xây dựng hệ thống pháp luật đồng bộ",
+      "Xây dựng hệ thống pháp luật đầy đủ, đồng bộ nhất là pháp luật liên quan đến sở hữu",
+      "Xây dựng kết cấu hạ tầng kinh tế, chính trị, pháp luật đồng bộ",
+      "Xây dựng môi trường văn hóa phù hợp, văn minh, phát triển"
+    ],
+    "correctIndex": 1,
+    "explanation": "Để bảo vệ lợi ích hợp pháp của các chủ thể kinh tế, điều cốt lõi là xây dựng và hoàn thiện hệ thống pháp luật đầy đủ, đồng bộ, đặc biệt là pháp luật về sở hữu và hợp đồng. Đây là nền tảng pháp lý cho sự vận hành minh bạch của thị trường."
+  },
+  {
+    "id": 187,
+    "question": "Trong nền kinh tế thị trường hiện nay nhà nước cần làm gì để điều hòa lợi ích giữa cá nhân – doanh nghiệp và xã hội?",
+    "options": [
+      "Có chính sách phân phối thu nhập hợp lý",
+      "Giải quyết kịp thời mâu thuẫn khi phát sinh",
+      "Gắn tăng trưởng kinh tế và giải quyết các vấn đề xã hội",
+      "Có chính sách thuế lũy tiến phù hợp"
+    ],
+    "correctIndex": 2,
+    "explanation": "Điều hòa lợi ích giữa cá nhân, doanh nghiệp và xã hội đòi hỏi Nhà nước phải gắn tăng trưởng kinh tế với giải quyết các vấn đề xã hội. Đây là cách tiếp cận bao quát hơn so với từng công cụ đơn lẻ như thuế hay phân phối thu nhập."
+  },
+  {
+    "id": 188,
+    "question": "Vì sao trong nền kinh tế thị trường các quan hệ lợi ích kinh tế có sự thống nhất với nhau?",
+    "options": [
+      "Vì một bộ phận có thể trở thành chủ thể cấu thành của chủ thể khác. Do đó, lợi ích của chủ thể này được thực hiện thì lợi ích của chủ thể khác cũng trực tiếp hoặc gián tiếp không được thực hiện",
+      "Vì một chủ thể có thể trở thành bộ phận cấu thành của chủ thể khác. Do đó, lợi ích của chủ thể này được thực hiện thì lợi ích của chủ thể khác cũng trực tiếp hoặc gián tiếp được thực hiện",
+      "Vì một chủ thể có thể trở thành bộ phận cấu thành của chủ thể khác",
+      "Vì một chủ thể có thể trở thành bộ phận cấu thành của chủ thể khác. Do đó, lợi ích của chủ thể này được thực hiện thì lợi ích của chủ thể khác cũng trực tiếp hoặc gián tiếp bị mất đi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Quan hệ lợi ích có tính thống nhất vì trong nhiều trường hợp một chủ thể là bộ phận cấu thành của chủ thể khác. Do đó khi lợi ích của chủ thể này được thực hiện thì lợi ích của chủ thể kia cũng có thể được thực hiện trực tiếp hoặc gián tiếp."
+  },
+  {
+    "id": 189,
+    "question": "Trong nền kinh tế thị trường hiện nay, lợi ích cá nhân chính đáng có cần được pháp luật tôn trọng, bảo vệ không? Vì sao?",
+    "options": [
+      "Có, vì lợi ích cá nhân là cơ sở để thực hiện các lợi ích khác, vì cá nhân là chủ thể của xã hội",
+      "Có, vì lợi ích cá nhân là lợi ích chung nhất của xã hội, cá nhân cấu thành nên tập thể, giai cấp, xã hội",
+      "Có, vì lợi ích cá nhân là cơ sở để thực hiện các lợi ích khác, vì cá nhân cấu thành nên tập thể, giai cấp, xã hội",
+      "Không, vì lợi ích cá nhân làm ảnh hưởng đến lợi ích xã hội"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lợi ích cá nhân chính đáng phải được pháp luật tôn trọng và bảo vệ vì nó là cơ sở để thực hiện các lợi ích khác, đồng thời cá nhân là bộ phận cấu thành của tập thể, giai cấp và xã hội. Bảo vệ đúng lợi ích cá nhân là điều kiện để phát huy động lực phát triển."
+  },
+  {
+    "id": 190,
+    "question": "Tại sao trong kinh tế thị trường một chủ thể có thể trở thành bộ phận cấu thành của chủ thể khác và lợi ích của chủ thể này được thực hiện thì lợi ích của chủ thể khác cũng trực tiếp hoặc gián tiếp được thực hiện?",
+    "options": [
+      "Vì các quan hệ lợi ích kinh tế giữa các chủ thể có tính chất mâu thuẫn nhau",
+      "Vì mâu thuẫn của các nền kinh tế",
+      "Vì quan hệ lợi ích kinh tế giữa các chủ thể có sự thống nhất với nhau",
+      "Vì lợi ích kinh tế giữa các nền kinh tế thống nhất với nhau"
+    ],
+    "correctIndex": 2,
+    "explanation": "Điều này xảy ra vì các quan hệ lợi ích kinh tế giữa các chủ thể không chỉ mâu thuẫn mà còn có sự thống nhất nhất định. Chính sự thống nhất đó làm cho việc thực hiện lợi ích của chủ thể này có thể hỗ trợ lợi ích của chủ thể khác."
+  },
+  {
+    "id": 191,
+    "question": "Vì sao Đảng và Nhà nước ta cần phải hoàn thiện thể chế và phát triển đồng bộ các loại thị trường?",
+    "options": [
+      "Vì đó là cơ hội để tăng cường ngoại giao với các nước trong khu vực và thế giới",
+      "Vì trong thời kỳ quá độ lên chủ nghĩa xã hội nước ta cần hoàn thiện các luật liên quan đến thị trường",
+      "Vì cần có đầy đủ, đồng bộ các loại thị trường và các yếu tố thị trường như hàng hóa, giá cả, cạnh tranh, cung – cầu",
+      "Vì thị trường hàng hóa rất cần thiết cho nhu cầu phát triển của con người"
+    ],
+    "correctIndex": 2,
+    "explanation": "Một nền kinh tế thị trường hiện đại không thể vận hành hiệu quả nếu thiếu đồng bộ các loại thị trường và các yếu tố thị trường như hàng hóa, giá cả, cạnh tranh, cung cầu. Vì vậy hoàn thiện thể chế và phát triển đồng bộ thị trường là yêu cầu tất yếu."
+  },
+  {
+    "id": 192,
+    "question": "Vì sao thành phần kinh tế nhà nước ở nước ta giữ vai trò chủ đạo?",
+    "options": [
+      "Vì kinh tế nhà nước giữ vai trò quan trọng trong việc dẫn đường, định hướng, hỗ trợ các thành phần kinh tế khác cùng phát triển",
+      "Vì kinh tế nhà nước dựa trên chế độ sở hữu tập thể về tư liệu sản xuất, đây là một trong những đặc trưng của chủ nghĩa xã hội",
+      "Vì kinh tế nhà nước là thành phần kinh tế đảm bảo cho quá trình định hướng xã hội chủ nghĩa của nền kinh tế thị trường",
+      "Vì kinh tế nhà nước dựa trên chế độ sở hữu tư nhân về tư liệu sản xuất, đây là một trong những đặc trưng của chủ nghĩa xã hội"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kinh tế nhà nước giữ vai trò chủ đạo vì là lực lượng vật chất quan trọng để Nhà nước định hướng, dẫn dắt và hỗ trợ các thành phần kinh tế khác cùng phát triển. Phương án A phản ánh rõ chức năng này trong thực tiễn."
+  },
+  {
+    "id": 193,
+    "question": "Việt Nam thực hiện đa dạng hóa các loại hình sở hữu và thành phần kinh tế nhằm mục đích gì?",
+    "options": [
+      "Khai thác và huy động mọi nguồn lực của các thành phần kinh tế để phát triển kinh tế",
+      "Thừa nhận và khuyến khích các thành phần kinh tế tư nhân phát triển",
+      "Các thành phần kinh tế cạnh tranh bình đẳng với nhau, không phân biệt đối xử",
+      "Huy động được nguồn thu lớn cho ngân sách nhà nước"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đa dạng hóa sở hữu và thành phần kinh tế nhằm huy động tối đa mọi nguồn lực trong xã hội cho phát triển kinh tế. Đây là yêu cầu khách quan của quá trình phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa."
+  },
+  {
+    "id": 194,
+    "question": "Nhiệm vụ quan trọng để phát triển nền kinh tế thị trường định hướng xã hội chủ nghĩa ở nước ta hiện nay là:",
+    "options": [
+      "Hoàn thiện thể chế kinh tế thị trường, phát triển văn hoá, phát triển khoa học công nghệ",
+      "Hoàn thiện thể chế xã hội chủ nghĩa",
+      "Hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa",
+      "Hoàn thiện định hướng xã hội chủ nghĩa, phát triển kinh tế nhiều thành phần"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nhiệm vụ trọng tâm, trực tiếp và có tính bao quát nhất hiện nay là hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa. Đây là nền tảng để xử lý đồng bộ các vấn đề về sở hữu, thị trường, cạnh tranh và phân phối."
+  },
+  {
+    "id": 195,
+    "question": "Vì sao Nhà nước Việt Nam phải can thiệp vào quá trình phát triển kinh tế của đất nước?",
+    "options": [
+      "Cần khắc phục những hạn chế và khuyết tật của nền kinh tế thị trường, giảm phân hóa giàu nghèo, bất bình đẳng trong xã hội",
+      "Cần khắc phục những hạn chế, khuyết tật của kinh tế thị trường và định hướng nền kinh tế thị trường phát triển theo mục tiêu đã định",
+      "Cần hành lang pháp lý để phát triển đa dạng các loại thị trường, các yếu tố thị trường và các quy định của pháp luật trong lĩnh vực kinh tế",
+      "Cần giảm bớt tính cạnh tranh của thị trường tự do và định hướng nền kinh tế phát triển theo mục tiêu đã định"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nhà nước phải can thiệp vì kinh tế thị trường có những hạn chế, khuyết tật vốn có và cần được định hướng phát triển theo mục tiêu xã hội chủ nghĩa đã xác định. Phương án B vừa nêu đúng lý do kinh tế vừa nêu rõ vai trò định hướng."
+  },
+  {
+    "id": 196,
+    "question": "Đặc trưng cơ bản của nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam là gì?",
+    "options": [
+      "Có một hình thức sở hữu và nhiều thành phần kinh tế",
+      "Có nhiều hình thức sở hữu và nhiều thành phần kinh tế",
+      "Có nhiều hình thức sở hữu và một thành phần kinh tế",
+      "Có một hình thức sở hữu và một thành phần kinh tế"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nền kinh tế thị trường định hướng xã hội chủ nghĩa ở Việt Nam có nhiều hình thức sở hữu và nhiều thành phần kinh tế cùng tồn tại, phát triển lâu dài. Đây là một đặc trưng cơ bản của mô hình kinh tế nước ta hiện nay."
+  },
+  {
+    "id": 197,
+    "question": "Hiện nay, đất nước ta cần thực hiện những gì để hoàn thiện thể chế về sở hữu trong nền kinh tế thị trường định hướng xã hội chủ nghĩa?",
+    "options": [
+      "Thực thi có hiệu quả quyền tài sản",
+      "Công khai, minh bạch quyền tài sản",
+      "Bảo vệ có hiệu quả quyền tài sản",
+      "Thể chế hóa đầy đủ quyền tài sản"
+    ],
+    "correctIndex": 3,
+    "explanation": "Muốn hoàn thiện thể chế về sở hữu, trước hết phải thể chế hóa đầy đủ quyền tài sản trong hệ thống pháp luật. Đây là bước nền tảng để sau đó mới có thể công khai, bảo vệ và thực thi quyền tài sản hiệu quả."
+  },
+  {
+    "id": 198,
+    "question": "Cuộc cách mạng công nghiệp nào sử dụng năng lượng nước và hơi nước để chuyển từ lao động thủ công sang lao động máy móc?",
+    "options": [
+      "Cách mạng công nghiệp lần thứ nhất",
+      "Cách mạng công nghiệp lần thứ hai",
+      "Cách mạng công nghiệp lần thứ ba",
+      "Cách mạng công nghiệp lần thứ tư"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng công nghiệp lần thứ nhất gắn với việc sử dụng năng lượng nước và hơi nước để cơ khí hóa sản xuất. Đây là bước ngoặt chuyển từ lao động thủ công sang lao động máy móc."
+  },
+  {
+    "id": 199,
+    "question": "Cuộc cách mạng công nghiệp nào sử dụng năng lượng điện và động cơ điện để tạo ra các dây chuyền sản xuất có tính chuyên môn hóa cao?",
+    "options": [
+      "Cách mạng công nghiệp lần thứ nhất",
+      "Cách mạng công nghiệp lần thứ hai",
+      "Cách mạng công nghiệp lần thứ ba",
+      "Cách mạng công nghiệp lần thứ tư"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cách mạng công nghiệp lần thứ hai gắn với điện năng, động cơ điện và sản xuất hàng loạt theo dây chuyền. Đây là giai đoạn chuyên môn hóa và tiêu chuẩn hóa sản xuất phát triển mạnh."
+  },
+  {
+    "id": 200,
+    "question": "Nội dung nào sau đây là biểu hiện của cuộc cách mạng công nghiệp lần thứ ba?",
+    "options": [
+      "Hệ thống mạng, máy tính cá nhân, thiết bị điện tử sử dụng công nghệ số",
+      "Sự xuất hiện các công nghệ mới có tính đột phá về chất như trí tuệ nhân tạo, big data, in 3D",
+      "Những phát minh về công nghệ và sản phẩm mới được ra đời và phổ biến như điện, xăng dầu, động cơ đốt trong",
+      "Thực hiện cơ giới hóa sản xuất bằng việc sử dụng năng lượng nước và hơi nước"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng công nghiệp lần thứ ba là cuộc cách mạng số đầu tiên, gắn với điện tử, máy tính, công nghệ thông tin và tự động hóa. Vì vậy phương án A phản ánh đúng nhất nội dung của giai đoạn này."
+  },
+  {
+    "id": 201,
+    "question": "Trong giai đoạn hiện nay, nhà nước ta khẳng định nền kinh tế nào được ưu tiên hàng đầu gắn liền với đẩy mạnh ứng dụng khoa học-công nghệ?",
+    "options": [
+      "Kinh tế thương nghiệp",
+      "Kinh tế tri thức",
+      "Kinh tế nông nghiệp",
+      "Kinh tế công nghiệp"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong bối cảnh hiện nay, phát triển kinh tế tri thức được xem là định hướng ưu tiên gắn chặt với ứng dụng khoa học và công nghệ. Đây là con đường quan trọng để nâng cao chất lượng tăng trưởng và năng lực cạnh tranh."
+  },
+  {
+    "id": 202,
+    "question": "Việt Nam bắt đầu quá trình công nghiệp hóa khi các nước công nghiệp phát triển trên thế giới đang trong cuộc cách mạng công nghiệp nào?",
+    "options": [
+      "Cách mạng công nghiệp lần thứ nhất",
+      "Cách mạng công nghiệp lần thứ hai",
+      "Cách mạng công nghiệp lần thứ ba",
+      "Cách mạng công nghiệp lần thứ tư"
+    ],
+    "correctIndex": 2,
+    "explanation": "Việt Nam bắt đầu đẩy mạnh công nghiệp hóa trong bối cảnh thế giới đã bước vào cách mạng công nghiệp lần thứ ba. Điều này tạo ra cả cơ hội đi tắt đón đầu lẫn nhiều thách thức về khoảng cách phát triển."
+  },
+  {
+    "id": 203,
+    "question": "Mô hình công nghiệp hóa nào ưu tiên phát triển công nghiệp nặng?",
+    "options": [
+      "Mô hình công nghiệp hóa kiểu Liên xô",
+      "Mô hình công nghiệp hóa cổ điển",
+      "Mô hình công nghiệp hóa Nhật Bản",
+      "Mô hình công nghiệp hóa các nước công nghiệp mới"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mô hình công nghiệp hóa kiểu Liên Xô ưu tiên phát triển công nghiệp nặng trước, xem đó là nền tảng vật chất kỹ thuật của toàn bộ nền kinh tế. Đây là đặc trưng nổi bật nhất của mô hình này."
+  },
+  {
+    "id": 204,
+    "question": "Nội dung nào diễn đạt đúng về khái niệm hội nhập kinh tế quốc tế?",
+    "options": [
+      "Là quá trình tạo ra liên kết và sự phụ thuộc lẫn nhau ngày càng tăng giữa các quốc gia trên quy mô toàn cầu",
+      "Là quá trình quốc gia đó thực hiện gắn kết nền kinh tế của mình với nền kinh tế thế giới",
+      "Là sự gia tăng nhanh chóng các hoạt động kinh tế vượt qua biên giới quốc gia",
+      "Là quá trình các quốc gia bị lôi cuốn vào hệ thống phân công lao động quốc tế"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hội nhập kinh tế quốc tế là quá trình một quốc gia chủ động gắn kết nền kinh tế của mình với nền kinh tế thế giới ở các cấp độ khác nhau. Phương án B diễn đạt đúng nhất bản chất của khái niệm này."
+  },
+  {
+    "id": 205,
+    "question": "Nội dung nào thể hiện đúng về toàn cầu hoá:",
+    "options": [
+      "Diễn ra trên nhiều phương diện như kinh tế, chính trị, văn hoá, xã hội",
+      "Liên kết chính trị giữa các nước thành một chỉnh thể thống nhất",
+      "Làm cho thế giới trở thành bộ phận của các nước",
+      "Toàn cầu hoá tốt, không xấu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Toàn cầu hóa là quá trình diễn ra trên nhiều lĩnh vực, không chỉ kinh tế mà còn cả chính trị, văn hóa và xã hội. Vì vậy phương án A là mô tả đầy đủ và đúng nhất."
+  },
+  {
+    "id": 206,
+    "question": "Vì sao toàn cầu hóa làm cho hội nhập kinh tế quốc tế trở thành xu thế tất yếu khách quan?",
+    "options": [
+      "Vì toàn cầu hoá kinh tế khiến cho nền kinh tế các nước tách biệt nền kinh tế toàn cầu",
+      "Vì toàn cầu hoá kinh tế lôi cuốn tất cả các nước vào hệ thống phân công lao động quốc tế",
+      "Vì toàn cầu hoá kinh tế tạo cơ hội cho các nước đảm bảo an ninh quốc phòng",
+      "Vì toàn cầu hoá kinh tế là động lực thúc đẩy các lĩnh vực khác"
+    ],
+    "correctIndex": 1,
+    "explanation": "Toàn cầu hóa kinh tế lôi cuốn các nước vào hệ thống phân công lao động quốc tế và mạng lưới liên kết ngày càng chặt chẽ. Vì vậy hội nhập kinh tế quốc tế trở thành xu thế khách quan mà các quốc gia khó có thể đứng ngoài."
+  },
+  {
+    "id": 207,
+    "question": "Các mức độ hội nhập kinh tế quốc tế từ thấp đến cao?",
+    "options": [
+      "Thoả thuận thương mại ưu đãi (PTA), Thị trường chung, Khu vực mậu dịch tự do (FTA), Liên minh thuế quan (CU), Liên minh kinh tế - tiền tệ",
+      "Thoả thuận thương mại ưu đãi (PTA), Khu vực mậu dịch tự do (FTA), Liên minh thuế quan (CU), Thị trường chung, Liên minh kinh tế - tiền tệ",
+      "Khu vực mậu dịch tự do (FTA), Thoả thuận thương mại ưu đãi (PTA), Liên minh thuế quan (CU), Thị trường chung, Liên minh kinh tế - tiền tệ",
+      "Thoả thuận thương mại ưu đãi (PTA), Liên minh thuế quan (CU), Khu vực mậu dịch tự do (FTA), Liên minh kinh tế - tiền tệ, Thị trường chung"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trình tự phổ biến từ thấp đến cao là PTA, FTA, liên minh thuế quan, thị trường chung và cuối cùng là liên minh kinh tế - tiền tệ. Đây là thang bậc phản ánh mức độ liên kết kinh tế ngày càng sâu rộng."
+  },
+  {
+    "id": 208,
+    "question": "Dấu mốc đầu tiên của tiến trình hội nhập kinh tế quốc tế của Việt Nam là dấu mốc nào?",
+    "options": [
+      "Gia nhập Hiệp hội các quốc gia Đông Nam Á (ASEAN)",
+      "Tham gia Khu vực Thương mại tự do Asean (AFTA)",
+      "Tham gia diễn đàn Hợp tác Kinh tế châu Á – Thái Bình Dương (APEC)",
+      "Chính thức trở thành thành viên của Tổ chức Thương mại thế giới (WTO)"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gia nhập ASEAN là dấu mốc mở đầu quan trọng cho tiến trình hội nhập kinh tế quốc tế của Việt Nam. Từ nền tảng đó, Việt Nam tiếp tục tham gia AFTA, APEC, WTO và nhiều FTA thế hệ mới."
+  },
+  {
+    "id": 209,
+    "question": "Chủ thể nào dẫn dắt và hỗ trợ quá trình hội nhập kinh tế quốc tế ở Việt Nam?",
+    "options": [
+      "Nhân dân",
+      "Doanh nghiệp",
+      "Nhà nước",
+      "Đội ngũ trí thức"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nhà nước là chủ thể dẫn dắt, định hướng và hỗ trợ quá trình hội nhập kinh tế quốc tế thông qua chiến lược, chính sách, đàm phán và hoàn thiện thể chế. Đây là vai trò vĩ mô không thể thay thế."
+  },
+  {
+    "id": 210,
+    "question": "Chủ thể nào là lực lượng nòng cốt trong quá trình hội nhập kinh tế quốc tế ở Việt Nam?",
+    "options": [
+      "Nhà nước và doanh nghiệp",
+      "Doanh nghiệp và doanh nhân",
+      "Doanh nhân và toàn dân",
+      "Toàn dân và đội ngũ trí thức"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong hội nhập kinh tế quốc tế, doanh nghiệp và doanh nhân là lực lượng trực tiếp tham gia sản xuất, kinh doanh, cạnh tranh và khai thác cơ hội từ thị trường quốc tế. Vì vậy họ là lực lượng nòng cốt của quá trình này."
+  },
+  {
+    "id": 211,
+    "question": "Nhiệm vụ trọng tâm trong xây dựng nền kinh tế độc lập, tự chủ là:",
+    "options": [
+      "Hoàn thiện thể chế kinh tế thị trường định hướng xã hội chủ nghĩa",
+      "Chuyển dịch cơ cấu kinh tế theo hướng hiện đại",
+      "Đẩy mạnh công nghiệp hoá, hiện đại hoá",
+      "Hội nhập kinh tế quốc tế"
+    ],
+    "correctIndex": 2,
+    "explanation": "Muốn xây dựng nền kinh tế độc lập, tự chủ thì nhiệm vụ trọng tâm là đẩy mạnh công nghiệp hóa, hiện đại hóa. Đây là con đường tạo nền tảng vật chất, kỹ thuật và năng lực nội sinh cho nền kinh tế."
+  },
+  {
+    "id": 212,
+    "question": "Nội dung nào là đặc trưng của cuộc cách mạng công nghiệp lần thứ ba?",
+    "options": [
+      "Cơ khí hóa với máy chạy bằng thủy lực và hơi nước",
+      "Động cơ điện và dây chuyền lắp ráp, sản xuất hàng loạt",
+      "Kỷ nguyên máy tính và tự động hóa",
+      "Các hệ thống liên kết thế giới thực và ảo"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cách mạng công nghiệp lần thứ ba gắn với sự ra đời của máy tính, điện tử và tự động hóa. Vì vậy đáp án đúng là kỷ nguyên máy tính và tự động hóa."
+  },
+  {
+    "id": 213,
+    "question": "Công nghiệp hóa là:",
+    "options": [
+      "Là quá trình chuyển đổi từ chủ nghĩa tư bản lên chủ nghĩa xã hội",
+      "Là quá trình chuyển biến từ nước nông nghiệp sang nước công nghiệp",
+      "Là quá trình chuyển biến văn minh nông nghiệp sang văn minh tri thức",
+      "Là quá trình chuyển đổi từ sản xuất nhỏ lên sản xuất lớn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Công nghiệp hóa được hiểu khái quát là quá trình chuyển biến căn bản nền kinh tế từ trình độ nông nghiệp lạc hậu sang nền kinh tế công nghiệp với cơ sở vật chất kỹ thuật hiện đại hơn. Trong các phương án cho sẵn, B là phù hợp nhất."
+  },
+  {
+    "id": 214,
+    "question": "Cách mạng công nghiệp là:",
+    "options": [
+      "Sự phát triển nhảy vọt về chất trình độ tư liệu lao động trên cơ sở những phát minh đột phá về kỹ thuật và công nghệ",
+      "Là sự phát triển của các ngành công nghiệp, dịch vụ trên cơ sở ứng dụng thành tựu khoa học công nghệ",
+      "Là sự phát triển các ngành công nghệ cao, công nghệ xanh, thân thiện với môi trường",
+      "Là quá trình công nghiệp hóa ở các nước lạc hậu lên thành các nước phát triển"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng công nghiệp là bước phát triển nhảy vọt về chất của tư liệu lao động trên cơ sở các phát minh kỹ thuật, công nghệ đột phá. Chính bước nhảy này làm thay đổi sâu sắc lực lượng sản xuất và đời sống xã hội."
+  },
+  {
+    "id": 215,
+    "question": "Internet kết nối vạn vật có đặc điểm nào nổi bật?",
+    "options": [
+      "Chuyển từ lao động thủ công sang lao động sử dụng máy móc",
+      "Chuyển từ máy chạy bằng hơi nước sang máy móc chạy bằng năng lượng điện",
+      "Sử dụng công nghệ thông tin và máy tính để tự động hóa sản xuất",
+      "Liên kết giữa thế giới thực và thế giới ảo, để thực hiện công việc thông minh và hiệu quả nhất"
+    ],
+    "correctIndex": 3,
+    "explanation": "Internet vạn vật là đặc trưng nổi bật của giai đoạn công nghiệp 4.0, nơi thế giới thực và thế giới ảo được kết nối liên tục để tối ưu hóa hoạt động. Vì vậy phương án D là chính xác nhất."
+  },
+  {
+    "id": 216,
+    "question": "Thách thức lớn nhất đối với các nước đang phát triển trong bối cảnh cuộc cách mạng công nghiệp lần thứ tư là:",
+    "options": [
+      "Khoảng cách chênh lệch về trình độ lực lượng sản xuất so với các nước phát triển ngày càng lớn",
+      "Nền kinh tế ngày càng bị phụ thuộc vào bên ngoài, nhất là bị phụ thuộc vào các nước lớn",
+      "Tỉ lệ thất nghiệp ngày càng gia tăng, khoảng cách chênh lệch thu nhập giữa các quốc gia ngày càng lớn",
+      "Nợ nước ngoài của các quốc gia tăng cao"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thách thức lớn nhất là nguy cơ tụt hậu xa hơn khi khoảng cách về trình độ lực lượng sản xuất giữa các nước đang phát triển với các nước phát triển ngày càng nới rộng. Đây là thách thức mang tính nền tảng và lâu dài."
+  },
+  {
+    "id": 217,
+    "question": "Nhiệm vụ hàng đầu của các doanh nghiệp sản xuất nếu muốn thành công trong cuộc cách mạng công nghiệp lần thứ tư và góp phần cùng đất nước thực hiện thành công sự nghiệp công nghiệp hóa, hiện đại hóa là:",
+    "options": [
+      "Đầu tư công nghệ, vận dụng những thành tựu của cuộc cách mạng công nghiệp 4.0 vào kinh doanh đồng thời phải học hỏi cách thức kinh doanh trong bối cảnh mới",
+      "Ứng dụng phù hợp những thành tựu của cuộc cách mạng công nghiệp lần thứ tư",
+      "Khai thác tối đa tài nguyên thiên nhiên phục vụ cho sự phát triển công ty, ứng dụng những thành tựu của cuộc cách mạng công nghiệp lần thứ tư",
+      "Khai thác mạnh mẽ tài nguyên thiên nhiên quốc gia phục vụ sản xuất, từng bước hoàn thiện quản trị sản xuất của đơn vị"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trong bối cảnh 4.0, doanh nghiệp muốn thành công phải đầu tư công nghệ, đổi mới quản trị và vận dụng thành tựu mới vào sản xuất kinh doanh. Phương án A đầy đủ hơn vì nhấn mạnh cả đổi mới công nghệ lẫn thích ứng mô hình kinh doanh."
+  },
+  {
+    "id": 218,
+    "question": "Đâu là nút thắt mang tính vĩ mô của nền kinh tế Việt Nam khi thực hiện hội nhập kinh tế quốc tế hiện nay?",
+    "options": [
+      "Chất lượng nguồn nhân lực",
+      "Đánh giá bối cảnh quốc tế",
+      "Xác định vị thế của đất nước",
+      "Tăng trưởng kinh tế thấp"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chất lượng nguồn nhân lực là một nút thắt vĩ mô quan trọng vì nó quyết định khả năng tiếp nhận công nghệ, nâng cao năng suất và cạnh tranh trong hội nhập. Nếu không cải thiện yếu tố này, nhiều cơ hội hội nhập sẽ khó chuyển hóa thành kết quả thực tế."
+  },
+  {
+    "id": 219,
+    "question": "Cuộc cách mạng công nghiệp lần thứ nhất có đặc trưng nào sau đây?",
+    "options": [
+      "Sử dụng năng lượng nước và hơi nước để cơ khí hóa sản xuất",
+      "Sử dụng năng lượng điện và động cơ điện để tạo ra dây chuyền sản xuất",
+      "Sử dụng công nghệ thông tin và máy tính để tự động hóa sản xuất",
+      "Liên kết thế giới thực và ảo để thực hiện sản xuất thông minh và hiệu quả"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đặc trưng của cuộc cách mạng công nghiệp lần thứ nhất là cơ khí hóa dựa trên năng lượng nước và hơi nước. Đây là điểm khởi đầu của sản xuất đại công nghiệp."
+  },
+  {
+    "id": 220,
+    "question": "Vì sao Việt Nam trong quá trình thực hiện công nghiệp hóa, hiện đại hóa đất nước cần phải thận trọng trong từng bước đi?",
+    "options": [
+      "Vì để tránh những tác động tiêu cực của cuộc cách mạng công nghiệp",
+      "Vì để quá trình công nghiệp hóa, hiện đại hóa diễn ra nhanh hơn",
+      "Vì để quá trình công nghiệp hóa, hiện đại hóa diễn ra sâu rộng trong nền kinh tế đất nước",
+      "Vì để nhằm đạt được các mục tiêu phát triển đất nước"
+    ],
+    "correctIndex": 3,
+    "explanation": "Việt Nam cần thận trọng trong từng bước đi để bảo đảm quá trình công nghiệp hóa, hiện đại hóa phù hợp với điều kiện thực tiễn và mục tiêu phát triển đất nước. Sự thận trọng giúp tránh sai lầm chiến lược và sử dụng hiệu quả nguồn lực."
+  },
+  {
+    "id": 221,
+    "question": "Vì sao trước tác động đa chiều của cuộc cách mạng công nghiệp lần thứ tư, Việt Nam cần xây dựng kịch bản ứng phó những tác động tiêu cực khi tiến hành công nghiệp hóa, hiện đại hóa đất nước?",
+    "options": [
+      "Vì sẽ giúp đất nước khai thác tốt các nguồn lực để phát triển đất nước",
+      "Vì sẽ giúp đất nước hạn chế thấp nhất những tác động tiêu cực của cách mạng công nghiệp lần thứ tư",
+      "Vì cách mạng công nghiệp lần thứ tư mang đến sự phát triển cho các quốc gia",
+      "Vì nền kinh tế của mỗi nước không có khả năng thích nghi với mọi sự thay đổi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Xây dựng kịch bản ứng phó giúp Việt Nam chủ động trước các rủi ro như thất nghiệp công nghệ, tụt hậu số và phụ thuộc công nghệ. Mục tiêu là giảm thiểu đến mức thấp nhất những tác động tiêu cực của cách mạng công nghiệp 4.0."
+  },
+  {
+    "id": 222,
+    "question": "Vì sao trong bối cảnh cách mạng công nghiệp lần thứ tư, Chính phủ phải thay đổi phương thức quản trị?",
+    "options": [
+      "Vì có sự hình thành Chính phủ điện tử",
+      "Vì cách mạng công nghiệp cần phải số hóa phương thức quản trị của chính phủ",
+      "Vì khi có sự phát triển của công nghệ mới, sự hình thành hệ thống tin học hóa trong quản lý, dẫn đến cần thay đổi phương thức quản trị",
+      "Vì cách mạng công nghiệp đòi hỏi Chính phủ phải thay đổi phương thức quản trị ngành công nghiệp"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sự phát triển của công nghệ mới và hệ thống tin học hóa trong quản lý đòi hỏi Chính phủ phải đổi mới phương thức quản trị để vận hành hiệu quả hơn. Đây là cơ sở cho chuyển đổi số, chính phủ điện tử và quản trị hiện đại."
+  },
+  {
+    "id": 223,
+    "question": "Vì sao cuộc cách mạng công nghiệp lần thứ tư tác động và làm thay đổi thể chế quản lý kinh doanh ở các doanh nghiệp nhà nước?",
+    "options": [
+      "Vì cách mạng công nghiệp dẫn đến doanh nghiệp phải cải tiến quản lý sản xuất, thay đổi hình thức tổ chức doanh nghiệp",
+      "Vì khi có cách mạng công nghiệp diễn ra thì nó làm mọi thứ phải thay đổi theo",
+      "Vì cách mạng công nghiệp lần thứ tư đòi hỏi số hóa hoạt động sản xuất kinh doanh",
+      "Vì cách mạng công nghiệp lần thứ tư đòi hỏi quản lý sản xuất phải thay đổi cho phù hợp"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cách mạng công nghiệp 4.0 làm thay đổi sâu sắc phương thức sản xuất và quản trị doanh nghiệp, trong đó số hóa hoạt động sản xuất kinh doanh là yêu cầu cốt lõi. Vì vậy thể chế và cơ chế quản lý trong doanh nghiệp nhà nước cũng phải thay đổi tương ứng."
+  },
+  {
+    "id": 224,
+    "question": "Chính phủ Việt Nam đã có những chính sách xã hội nào để đảm bảo công bằng xã hội trước những tác động tiêu cực của cách mạng công nghiệp lần thứ tư?",
+    "options": [
+      "Nhà nước thực hiện chính sách hỗ trợ người khuyết tật, tăng thu nhập cho các hộ gia đình",
+      "Nhà nước điều chỉnh mức lương cơ bản, tăng tuổi nghỉ hưu cho người lao động",
+      "Nhà nước điều chỉnh chính sách phân phối thu nhập và an sinh xã hội",
+      "Nhà nước giảm tỷ lệ thất nghiệp và trợ cấp xã hội"
+    ],
+    "correctIndex": 2,
+    "explanation": "Để ứng phó với tác động tiêu cực của cách mạng công nghiệp 4.0, Nhà nước cần điều chỉnh chính sách phân phối thu nhập và an sinh xã hội nhằm bảo đảm công bằng, hỗ trợ các nhóm dễ bị tổn thương. Đây là giải pháp mang tính hệ thống hơn các biện pháp đơn lẻ."
+  },
+  {
+    "id": 225,
+    "question": "Nước ta phải thực hiện quá trình công nghiệp hóa, hiện đại hóa như thế nào để phù hợp với các quy luật khách quan?",
+    "options": [
+      "Tích cực, chủ động và đẩy nhanh quá trình công nghiệp hóa, hiện đại hóa đất nước",
+      "Đẩy nhanh quá trình công nghiệp hóa, hiện đại hóa để bắt kịp với các nước phát triển",
+      "Để cho quá trình công nghiệp hóa, hiện đại hóa diễn ra một cách tự nhiên, không cần có sự can thiệp của nhà nước",
+      "Tích cực, chủ động và có bước đi phù hợp với từng giai đoạn phát triển của đất nước"
+    ],
+    "correctIndex": 3,
+    "explanation": "Công nghiệp hóa, hiện đại hóa phải được tiến hành một cách tích cực, chủ động nhưng có bước đi phù hợp với điều kiện và từng giai đoạn phát triển của đất nước. Đây là yêu cầu để bảo đảm tính thực tiễn và tuân theo quy luật khách quan."
+  },
+  {
+    "id": 226,
+    "question": "Vì sao quá trình công nghiệp hóa, hiện đại hóa ở nước ta phải gắn với phát triển kinh tế tri thức?",
+    "options": [
+      "Vì tri thức, chất xám hiện nay giữ vai trò quyết định sự phát triển kinh tế",
+      "Vì kinh tế tri thức là một xu thế tất yếu của thế giới hiện nay, Việt Nam không thể nằm ngoài xu thế này",
+      "Vì kinh tế tri thức là có tác động đến quá trình công nghiệp hóa, hiện đại hóa",
+      "Vì kinh tế tri thức giúp tri thức hóa quá trình công nghiệp hóa, hiện đại hóa"
+    ],
+    "correctIndex": 3,
+    "explanation": "Công nghiệp hóa, hiện đại hóa ngày nay không thể tách rời tri thức, công nghệ và đổi mới sáng tạo. Gắn với kinh tế tri thức chính là tri thức hóa quá trình công nghiệp hóa, hiện đại hóa để nâng cao chất lượng và hiệu quả phát triển."
+  },
+  {
+    "id": 227,
+    "question": "Vì sao trong quá trình công nghiệp hóa, hiện đại hóa, quy luật cung - cầu vẫn còn phát huy tác dụng?",
+    "options": [
+      "Vì Đảng và Nhà nước ta xác định quy luật cung cầu là quy luật của nền kinh tế nước ta",
+      "Vì nước ta vẫn sử dụng kinh tế thị trường nên quy luật cung - cầu vẫn còn phát huy tác dụng",
+      "Vì Đảng và Nhà nước ta xác định nền kinh tế nước ta phụ thuộc hoàn toàn vào quy luật cung cầu",
+      "Vì công nghiệp hóa, hiện đại hóa phải dựa trên quy luật cung cầu để điều tiết nền kinh tế"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong thời kỳ công nghiệp hóa, hiện đại hóa, nền kinh tế Việt Nam vẫn vận hành theo cơ chế thị trường nên quy luật cung – cầu vẫn tác động mạnh mẽ. Đây là quy luật khách quan của kinh tế hàng hóa và kinh tế thị trường."
+  },
+  {
+    "id": 228,
+    "question": "Vì sao trong quá trình thực hiện cuộc cách mạng công nghiệp lần thứ tư, các yếu tố của cách mạng công nghiệp lần thứ ba vẫn tồn tại?",
+    "options": [
+      "Vì những thành tựu của cách mạng công nghiệp lần thứ ba vẫn còn cần thiết trong quá trình phát triển của đất nước ta",
+      "Vì phải hoàn tất cách mạng công nghiệp lần thứ ba xong mới chuyển sang cách mạng công nghiệp lần thứ tư",
+      "Vì thành tựu của các cuộc cách mạng công nghiệp tồn tại vĩnh viễn",
+      "Vì cách mạng công nghiệp lần thứ ba phù hợp cho các nước đang phát triển như Việt Nam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Các cuộc cách mạng công nghiệp không phủ định sạch trơn lẫn nhau mà kế thừa nhiều thành tựu trước đó. Vì vậy những yếu tố của cách mạng công nghiệp lần thứ ba vẫn tiếp tục tồn tại và cần thiết trong giai đoạn 4.0."
+  },
+  {
+    "id": 229,
+    "question": "Vì sao trong quá trình thực hiện công nghiệp hóa, hiện đại hóa, Việt Nam vẫn cần có vai trò quản lý và điều tiết nền kinh tế của nhà nước?",
+    "options": [
+      "Vì công nghiệp hóa, hiện đại hóa cần nhà nước xây dựng kế hoạch và chiến lược trong từng giai đoạn",
+      "Vì Hiến pháp nước ta đã quy định nhà nước có vai trò quản lý nền kinh tế",
+      "Vì công nghiệp hóa, hiện đại hóa cần nhà nước phân bổ nguồn lực",
+      "Vì công nghiệp hóa, hiện đại hóa vẫn sử dụng kinh tế thị trường"
+    ],
+    "correctIndex": 3,
+    "explanation": "Công nghiệp hóa, hiện đại hóa ở Việt Nam diễn ra trong điều kiện phát triển kinh tế thị trường định hướng xã hội chủ nghĩa. Vì vậy Nhà nước vẫn phải quản lý và điều tiết để khắc phục khuyết tật thị trường và bảo đảm đúng định hướng phát triển."
+  },
+  {
+    "id": 230,
+    "question": "Vì sao khẳng định hội nhập kinh tế quốc tế tạo động lực thúc đẩy chuyển dịch cơ cấu kinh tế theo hướng hợp lý, hiện đại và hiệu quả hơn?",
+    "options": [
+      "Vì qua đó hình thành ngành mũi nhọn để nâng cao năng lực cạnh tranh",
+      "Vì qua đó thực hiện phân công lao động quốc tế",
+      "Vì qua đó tiếp cận thị trường quốc tế và nguồn tín dụng",
+      "Vì qua đó tiếp cận phương thức quản trị mới, tăng năng lực cạnh tranh"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hội nhập kinh tế quốc tế giúp nền kinh tế tiếp cận công nghệ, phương thức quản trị mới và áp lực cạnh tranh cao hơn, từ đó thúc đẩy chuyển dịch cơ cấu theo hướng hiện đại và hiệu quả. Phương án D phản ánh rõ tác động này."
+  },
+  {
+    "id": 231,
+    "question": "Vì sao khi Việt Nam ký các hiệp định thương mại tự do, cam kết cắt giảm thuế quan,... phải chọn lộ trình cắt giảm từ từ, từng bước chứ không cắt giảm một lần?",
+    "options": [
+      "Vì cắt giảm thuế quan một lần sẽ ảnh hưởng đến nguồn thu ngân sách vì vậy phải có lộ trình phù hợp",
+      "Vì phải cho các doanh nghiệp trong nước có thời gian chuẩn bị, củng cố dần năng lực sản xuất để chịu được sức ép cạnh tranh",
+      "Vì hệ thống thông quan của Việt Nam chưa phát triển tương xứng, còn nhiều thủ tục phức tạp",
+      "Vì biểu thuế quan của Việt Nam cần có thời gian để điều chỉnh, tránh thất thu ngân sách"
+    ],
+    "correctIndex": 1,
+    "explanation": "Việc cắt giảm thuế quan theo lộ trình giúp doanh nghiệp trong nước có thời gian thích ứng, nâng cao năng lực cạnh tranh và giảm sốc khi mở cửa thị trường. Đây là lý do quan trọng nhất của cách tiếp cận từng bước."
+  },
+  {
+    "id": 232,
+    "question": "Vì sao trong quá trình hội nhập kinh tế quốc tế, các nước đang phát triển và kém phát triển phải đối mặt với không ít rủi ro, thách thức?",
+    "options": [
+      "Vì chủ nghĩa tư bản đang biến quá trình toàn cầu hoá thành tự do hoá và áp đặt chính trị theo quỹ đạo tư bản chủ nghĩa",
+      "Vì chủ nghĩa tư bản đang biến quá trình hội nhập thành tự do hoá và áp đặt chính trị theo quỹ đạo tư bản chủ nghĩa",
+      "Vì chủ nghĩa tư bản đang biến quá trình toàn cầu hoá thành tự do hoá kinh tế và áp đặt chính trị theo quỹ đạo tư bản chủ nghĩa",
+      "Vì chủ nghĩa tư bản đang biến quá trình toàn cầu hoá thành tự do hoá kinh tế và áp đặt kinh tế theo quỹ đạo tư bản chủ nghĩa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Một trong những nguyên nhân khiến các nước đang phát triển gặp nhiều rủi ro là do các cường quốc tư bản có xu hướng biến toàn cầu hóa thành quá trình tự do hóa kinh tế gắn với áp đặt chính trị theo quỹ đạo của họ. Điều này làm gia tăng sự lệ thuộc và bất bình đẳng trong hội nhập."
+  },
+  {
+    "id": 233,
+    "question": "Vì sao hội nhập kinh tế quốc tế là phương thức phát triển phổ biến của các nước, nhất là các nước đang phát triển và kém phát triển?",
+    "options": [
+      "Vì đây là cơ hội để tiếp cận và sử dụng các nguồn lực, kinh nghiệm sẵn có từ nhiều quốc gia phát triển trên thế giới",
+      "Vì đây là cơ hội để các quốc gia chậm phát triển và kém phát triển vượt lên trước các quốc gia tiên tiến khác",
+      "Vì đây là cơ hội phát triển rút ngắn, đảm bảo định hướng xã hội chủ nghĩa",
+      "Vì đây là cơ hội để thoát khỏi tình trạng nợ nước ngoài"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hội nhập kinh tế quốc tế tạo điều kiện cho các nước tiếp cận thị trường, vốn, công nghệ, tri thức quản lý và kinh nghiệm phát triển từ thế giới. Đây là cơ hội quan trọng để rút ngắn khoảng cách phát triển, nhất là với các nước đang và kém phát triển."
+  },
+  {
+    "id": 234,
+    "question": "Con đường công nghiệp hoá kiểu Liên Xô (cũ) thường ưu tiên phát triển ngành nào sau đây?",
+    "options": [
+      "Nông nghiệp",
+      "Công nghiệp nặng",
+      "Công nghiệp nhẹ",
+      "Dịch vụ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Con đường công nghiệp hóa kiểu Liên Xô ưu tiên công nghiệp nặng vì coi đây là nền tảng vật chất kỹ thuật của nền kinh tế quốc dân. Đây là đặc trưng rất điển hình của mô hình này."
+  },
+  {
+    "id": 235,
+    "question": "Việc tích cực tham gia các liên kết quốc tế và thực hiện nghiêm túc các cam kết có ý nghĩa như thế nào trong hội nhập kinh tế quốc tế của Việt Nam?",
+    "options": [
+      "Nâng cao uy tín, vai trò, tạo dựng lòng tin trong cộng đồng quốc tế",
+      "Tạo điều kiện để bỏ qua các mức độ thấp, tiến thẳng lên các mức độ cao",
+      "Đạt được sự bình đẳng trong trao đổi mậu dịch – thương mại",
+      "Được tiếp cận và giao lưu nhiều hơn với thế giới bên ngoài"
+    ],
+    "correctIndex": 0,
+    "explanation": "Việc tham gia tích cực và thực hiện nghiêm túc các cam kết quốc tế giúp Việt Nam nâng cao uy tín, vị thế và tạo dựng lòng tin với các đối tác quốc tế. Đây là nền tảng quan trọng để hội nhập ngày càng sâu rộng và hiệu quả hơn."
+  }
+]

@@ -4,839 +4,1399 @@
     "question": "Công thức hóa học của nước là gì?",
     "options": ["H2O", "O2", "CO2", "NaCl"],
     "correctIndex": 0,
-    "explanation": "Nước gồm 2 nguyên tử H và 1 nguyên tử O."
+    "explanation": "Nước có công thức H2O vì mỗi phân tử nước được tạo bởi 2 nguyên tử hiđro liên kết với 1 nguyên tử oxi. Tỉ lệ 2:1 này quyết định tính chất đặc trưng của nước và giúp phân biệt nước với các chất khác như oxi hay cacbon đioxit."
   },
   {
     "id": 2,
-    "question": "Kí hiệu của nguyên tố hiđro là gì?",
+    "question": "Kí hiệu hóa học của nguyên tố hiđro là gì?",
     "options": ["H", "He", "Hy", "Ho"],
     "correctIndex": 0,
-    "explanation": "Hiđro có kí hiệu là H."
+    "explanation": "Hiđro có kí hiệu hóa học là H. Đây là nguyên tố nhẹ nhất trong bảng tuần hoàn, có số hiệu nguyên tử bằng 1, nghĩa là trong hạt nhân của mỗi nguyên tử hiđro có 1 proton."
   },
   {
     "id": 3,
-    "question": "Khí nào cần thiết cho sự hô hấp?",
-    "options": ["Oxi", "Nitơ", "CO2", "Heli"],
+    "question": "Khí nào cần thiết cho sự hô hấp của đa số sinh vật?",
+    "options": ["Oxi", "Nitơ", "Cacbon đioxit", "Heli"],
     "correctIndex": 0,
-    "explanation": "Oxi cần cho hô hấp của sinh vật."
+    "explanation": "Oxi là khí cần thiết cho hô hấp vì nó tham gia vào quá trình oxi hóa các chất dinh dưỡng trong cơ thể để giải phóng năng lượng. Nếu thiếu oxi, nhiều tế bào không thể hoạt động bình thường."
   },
   {
     "id": 4,
-    "question": "NaCl là công thức của chất nào?",
-    "options": ["Đường", "Muối ăn", "Nước", "Axit"],
+    "question": "NaCl là công thức hóa học của chất nào?",
+    "options": ["Đường", "Muối ăn", "Nước", "Axit clohidric"],
     "correctIndex": 1,
-    "explanation": "NaCl là muối ăn."
+    "explanation": "NaCl là natri clorua, còn gọi là muối ăn. Chất này được tạo bởi ion Na+ và Cl-, thường dùng trong thực phẩm và cũng là một hợp chất ion rất quen thuộc trong hóa học."
   },
   {
     "id": 5,
-    "question": "Nguyên tố nào là khí hiếm?",
+    "question": "Nguyên tố nào dưới đây thuộc nhóm khí hiếm?",
     "options": ["Oxi", "Nitơ", "Argon", "Hiđro"],
     "correctIndex": 2,
-    "explanation": "Argon thuộc nhóm khí hiếm."
+    "explanation": "Argon là khí hiếm vì lớp electron ngoài cùng của nó đã bền vững, nên rất khó phản ứng hóa học. Các khí hiếm thường ít tham gia phản ứng và tồn tại ở dạng đơn nguyên tử."
   },
   {
     "id": 6,
-    "question": "pH của nước tinh khiết là bao nhiêu?",
+    "question": "pH của nước tinh khiết ở điều kiện thường xấp xỉ bằng bao nhiêu?",
     "options": ["7", "1", "14", "5"],
     "correctIndex": 0,
-    "explanation": "Nước có pH = 7 là trung tính."
+    "explanation": "Nước tinh khiết có pH xấp xỉ 7 nên được xem là trung tính. Điều đó có nghĩa là nồng độ ion H+ và OH- trong nước gần như bằng nhau ở điều kiện thường."
   },
   {
     "id": 7,
     "question": "Fe là kí hiệu của nguyên tố nào?",
     "options": ["Sắt", "Đồng", "Vàng", "Nhôm"],
     "correctIndex": 0,
-    "explanation": "Fe là kí hiệu của sắt."
+    "explanation": "Fe là kí hiệu của sắt, xuất phát từ tên Latin là Ferrum. Sắt là kim loại phổ biến, có vai trò quan trọng trong xây dựng, cơ khí và nhiều phản ứng hóa học."
   },
   {
     "id": 8,
-    "question": "CO2 là gì?",
-    "options": ["Oxi", "Khí cacbonic", "CO", "Metan"],
+    "question": "CO2 là chất khí nào?",
+    "options": ["Oxi", "Khí cacbonic", "Cacbon monoxit", "Metan"],
     "correctIndex": 1,
-    "explanation": "CO2 là khí cacbonic."
+    "explanation": "CO2 là cacbon đioxit, thường gọi là khí cacbonic. Phân tử này gồm 1 nguyên tử cacbon và 2 nguyên tử oxi, thường sinh ra khi đốt cháy hoàn toàn nhiên liệu chứa cacbon."
   },
   {
     "id": 9,
-    "question": "Chất nào là kim loại?",
+    "question": "Chất nào dưới đây là kim loại?",
     "options": ["Oxi", "Sắt", "Lưu huỳnh", "Clo"],
     "correctIndex": 1,
-    "explanation": "Sắt là kim loại."
+    "explanation": "Sắt là kim loại vì có tính dẫn điện, dẫn nhiệt, có ánh kim và có thể dát mỏng hoặc kéo sợi ở mức độ nhất định. Các chất còn lại trong đáp án là phi kim."
   },
   {
     "id": 10,
-    "question": "Công thức của metan là gì?",
+    "question": "Công thức phân tử của metan là gì?",
     "options": ["CH4", "CO2", "H2O", "C2H6"],
     "correctIndex": 0,
-    "explanation": "Metan có công thức CH4."
+    "explanation": "Metan có công thức CH4, gồm 1 nguyên tử cacbon liên kết với 4 nguyên tử hiđro. Đây là hiđrocacbon đơn giản nhất và là thành phần chính của khí thiên nhiên."
   },
   {
     "id": 11,
-    "question": "HCl là gì?",
-    "options": ["Axit", "Bazơ", "Muối", "Khí"],
+    "question": "HCl trong dung dịch nước được xếp vào loại chất nào?",
+    "options": ["Axit", "Bazơ", "Muối", "Oxit"],
     "correctIndex": 0,
-    "explanation": "HCl là axit clohidric."
+    "explanation": "HCl là axit clohidric. Khi tan trong nước, HCl phân li tạo ion H+, vì vậy nó thể hiện đầy đủ tính chất của một axit mạnh."
   },
   {
     "id": 12,
-    "question": "NaOH là gì?",
+    "question": "NaOH thuộc loại chất nào?",
     "options": ["Axit", "Bazơ", "Muối", "Khí"],
     "correctIndex": 1,
-    "explanation": "NaOH là bazơ mạnh."
+    "explanation": "NaOH là natri hiđroxit, một bazơ mạnh. Trong nước, chất này phân li tạo ion Na+ và OH-, làm dung dịch có tính bazơ rõ rệt."
   },
   {
     "id": 13,
-    "question": "Chất nào là axit?",
-    "options": ["NaOH", "HCl", "NaCl", "H2O"],
+    "question": "Chất nào sau đây là axit?",
+    "options": ["NaOH", "HCl", "NaCl", "KOH"],
     "correctIndex": 1,
-    "explanation": "HCl là axit."
+    "explanation": "HCl là axit vì khi tan trong nước, nó tạo ra ion H+. NaOH và KOH là bazơ, còn NaCl là muối trung hòa."
   },
   {
     "id": 14,
-    "question": "Chất nào là bazơ?",
-    "options": ["HCl", "NaOH", "CO2", "O2"],
+    "question": "Chất nào sau đây là bazơ?",
+    "options": ["HCl", "NaOH", "CO2", "SO2"],
     "correctIndex": 1,
-    "explanation": "NaOH là bazơ."
+    "explanation": "NaOH là bazơ vì khi hòa tan trong nước, nó giải phóng ion OH-. CO2 và SO2 là oxit axit, còn HCl là axit."
   },
   {
     "id": 15,
-    "question": "Kí hiệu của oxi là gì?",
+    "question": "Kí hiệu hóa học của oxi là gì?",
     "options": ["O", "Ox", "Oi", "Om"],
     "correctIndex": 0,
-    "explanation": "O là oxi."
+    "explanation": "Kí hiệu của nguyên tố oxi là O. Trong nhiều chất, oxi thường có hóa trị II và là nguyên tố rất quan trọng đối với sự sống cũng như quá trình cháy."
   },
   {
     "id": 16,
     "question": "Số hiệu nguyên tử của cacbon là bao nhiêu?",
     "options": ["6", "8", "12", "14"],
     "correctIndex": 0,
-    "explanation": "Cacbon có 6 proton."
+    "explanation": "Cacbon có số hiệu nguyên tử là 6, nghĩa là hạt nhân nguyên tử cacbon có 6 proton. Trong nguyên tử trung hòa, số electron cũng bằng 6."
   },
   {
     "id": 17,
-    "question": "CO là gì?",
-    "options": ["CO2", "Khí độc cacbon monoxit", "Oxi", "Metan"],
+    "question": "CO là chất khí nào?",
+    "options": ["Cacbon đioxit", "Cacbon monoxit", "Oxi", "Metan"],
     "correctIndex": 1,
-    "explanation": "CO là khí độc."
+    "explanation": "CO là cacbon monoxit, một chất khí không màu, không mùi nhưng rất độc. Nó thường sinh ra khi quá trình cháy của nhiên liệu chứa cacbon diễn ra không hoàn toàn."
   },
   {
     "id": 18,
-    "question": "Kim loại lỏng ở nhiệt độ thường là gì?",
+    "question": "Kim loại nào ở trạng thái lỏng ở nhiệt độ thường?",
     "options": ["Sắt", "Thủy ngân", "Nhôm", "Đồng"],
     "correctIndex": 1,
-    "explanation": "Thủy ngân là kim loại lỏng."
+    "explanation": "Thủy ngân là kim loại lỏng ở nhiệt độ thường. Tính chất đặc biệt này khiến nó từng được dùng trong nhiệt kế và một số thiết bị đo, dù hiện nay cần hạn chế vì độc tính."
   },
   {
     "id": 19,
-    "question": "H2SO4 là gì?",
-    "options": ["Axit sunfuric", "Bazơ", "Muối", "Khí"],
+    "question": "H2SO4 là tên của chất nào?",
+    "options": ["Axit sunfuric", "Bazơ natri", "Muối ăn", "Khí hiđro"],
     "correctIndex": 0,
-    "explanation": "H2SO4 là axit sunfuric."
+    "explanation": "H2SO4 là axit sunfuric, một axit mạnh và rất quan trọng trong công nghiệp hóa chất. Nó có khả năng ăn mòn mạnh và cần được sử dụng cẩn thận."
   },
   {
     "id": 20,
-    "question": "Khí nào là khí hiếm?",
+    "question": "Khí nào dưới đây là khí hiếm?",
     "options": ["Neon", "Oxi", "Hiđro", "Clo"],
     "correctIndex": 0,
-    "explanation": "Neon là khí hiếm."
+    "explanation": "Neon là khí hiếm vì có cấu hình electron bền, ít phản ứng. Nó thường được dùng trong đèn quảng cáo nhờ khả năng phát sáng khi có dòng điện chạy qua."
   },
-    {
-      "id": 21,
-      "question": "Nguyên tử gồm những thành phần nào?",
-      "options": ["Proton, neutron, electron", "Electron, ion, phân tử", "Proton, phân tử, neutron", "Ion, electron, hạt nhân"],
-      "correctIndex": 0,
-      "explanation": "Nguyên tử gồm proton, neutron và electron."
-    },
-    {
-      "id": 22,
-      "question": "Hạt mang điện dương trong nguyên tử là gì?",
-      "options": ["Electron", "Neutron", "Proton", "Ion âm"],
-      "correctIndex": 2,
-      "explanation": "Proton mang điện dương."
-    },
-    {
-      "id": 23,
-      "question": "Hạt không mang điện trong nguyên tử là gì?",
-      "options": ["Proton", "Electron", "Neutron", "Ion"],
-      "correctIndex": 2,
-      "explanation": "Neutron không mang điện."
-    },
-    {
-      "id": 24,
-      "question": "Electron mang điện gì?",
-      "options": ["Dương", "Âm", "Không mang điện", "Trung hòa"],
-      "correctIndex": 1,
-      "explanation": "Electron mang điện âm."
-    },
-    {
-      "id": 25,
-      "question": "Số proton trong nguyên tử gọi là gì?",
-      "options": ["Số khối", "Số hiệu nguyên tử", "Số neutron", "Hóa trị"],
-      "correctIndex": 1,
-      "explanation": "Số proton = số hiệu nguyên tử."
-    },
-    {
-      "id": 26,
-      "question": "Nguyên tố nào là phi kim?",
-      "options": ["Sắt", "Đồng", "Oxi", "Nhôm"],
-      "correctIndex": 2,
-      "explanation": "Oxi là phi kim."
-    },
-    {
-      "id": 27,
-      "question": "Dung dịch axit có pH như thế nào?",
-      "options": [">7", "<7", "=7", "=14"],
-      "correctIndex": 1,
-      "explanation": "Axit có pH nhỏ hơn 7."
-    },
-    {
-      "id": 28,
-      "question": "Dung dịch bazơ có pH như thế nào?",
-      "options": ["<7", ">7", "=7", "=0"],
-      "correctIndex": 1,
-      "explanation": "Bazơ có pH lớn hơn 7."
-    },
-    {
-      "id": 29,
-      "question": "Phản ứng giữa axit và bazơ gọi là gì?",
-      "options": ["Oxi hóa", "Trung hòa", "Phân hủy", "Thế"],
-      "correctIndex": 1,
-      "explanation": "Axit + bazơ → phản ứng trung hòa."
-    },
-    {
-      "id": 30,
-      "question": "Sản phẩm của phản ứng trung hòa thường là gì?",
-      "options": ["Muối và nước", "Khí và nước", "Kim loại", "Axit"],
-      "correctIndex": 0,
-      "explanation": "Trung hòa tạo muối và nước."
-    },
-    {
-      "id": 31,
-      "question": "Oxi có hóa trị bao nhiêu trong hợp chất?",
-      "options": ["I", "II", "III", "IV"],
-      "correctIndex": 1,
-      "explanation": "Oxi thường có hóa trị II."
-    },
-    {
-      "id": 32,
-      "question": "Hiđro có hóa trị bao nhiêu?",
-      "options": ["I", "II", "III", "IV"],
-      "correctIndex": 0,
-      "explanation": "Hiđro có hóa trị I."
-    },
-    {
-      "id": 33,
-      "question": "Kim loại thường có tính chất gì?",
-      "options": ["Dẫn điện", "Không dẫn điện", "Không sáng", "Không dẻo"],
-      "correctIndex": 0,
-      "explanation": "Kim loại dẫn điện tốt."
-    },
-    {
-      "id": 34,
-      "question": "Phi kim thường có tính chất gì?",
-      "options": ["Dẫn điện tốt", "Không dẫn điện tốt", "Có ánh kim mạnh", "Dẻo cao"],
-      "correctIndex": 1,
-      "explanation": "Phi kim dẫn điện kém."
-    },
-    {
-      "id": 35,
-      "question": "Chất nào là hợp chất?",
-      "options": ["O2", "Fe", "H2O", "N2"],
-      "correctIndex": 2,
-      "explanation": "H2O là hợp chất."
-    },
-    {
-      "id": 36,
-      "question": "Chất nào là đơn chất?",
-      "options": ["H2O", "CO2", "O2", "NaCl"],
-      "correctIndex": 2,
-      "explanation": "O2 là đơn chất."
-    },
-    {
-      "id": 37,
-      "question": "Phản ứng tỏa nhiệt là gì?",
-      "options": ["Hấp thụ nhiệt", "Giải phóng nhiệt", "Không đổi nhiệt", "Phân hủy"],
-      "correctIndex": 1,
-      "explanation": "Tỏa nhiệt là giải phóng nhiệt."
-    },
-    {
-      "id": 38,
-      "question": "Phản ứng thu nhiệt là gì?",
-      "options": ["Giải phóng nhiệt", "Hấp thụ nhiệt", "Không đổi", "Tạo muối"],
-      "correctIndex": 1,
-      "explanation": "Thu nhiệt là hấp thụ nhiệt."
-    },
-    {
-      "id": 39,
-      "question": "Không khí gồm chủ yếu là khí nào?",
-      "options": ["Oxi", "CO2", "Nitơ", "Heli"],
-      "correctIndex": 2,
-      "explanation": "Nitơ chiếm khoảng 78% không khí."
-    },
-    {
-      "id": 40,
-      "question": "Oxi chiếm khoảng bao nhiêu % trong không khí?",
-      "options": ["21%", "78%", "1%", "50%"],
-      "correctIndex": 0,
-      "explanation": "Oxi chiếm khoảng 21%."
-    },
-    {
-      "id": 41,
-      "question": "Phản ứng hóa học là gì?",
-      "options": ["Sự biến đổi chất này thành chất khác", "Sự thay đổi hình dạng", "Sự hòa tan", "Sự bay hơi"],
-      "correctIndex": 0,
-      "explanation": "Phản ứng hóa học là quá trình biến đổi chất."
-    },
-    {
-      "id": 42,
-      "question": "Dấu hiệu của phản ứng hóa học là gì?",
-      "options": ["Đổi màu", "Tạo khí", "Tạo kết tủa", "Tất cả đúng"],
-      "correctIndex": 3,
-      "explanation": "Phản ứng hóa học có thể tạo khí, kết tủa, đổi màu."
-    },
-    {
-      "id": 43,
-      "question": "Phản ứng oxi hóa là gì?",
-      "options": ["Nhận oxi", "Mất oxi", "Không đổi", "Hòa tan"],
-      "correctIndex": 0,
-      "explanation": "Oxi hóa là sự nhận oxi."
-    },
-    {
-      "id": 44,
-      "question": "Phản ứng khử là gì?",
-      "options": ["Nhận oxi", "Mất oxi", "Tạo muối", "Tạo nước"],
-      "correctIndex": 1,
-      "explanation": "Khử là sự mất oxi."
-    },
-    {
-      "id": 45,
-      "question": "Kim loại nào phản ứng mạnh với nước?",
-      "options": ["Na", "Fe", "Cu", "Ag"],
-      "correctIndex": 0,
-      "explanation": "Natri phản ứng mạnh với nước."
-    },
-    {
-      "id": 46,
-      "question": "Chất nào không tan trong nước?",
-      "options": ["Muối ăn", "Đường", "Cát", "Cồn"],
-      "correctIndex": 2,
-      "explanation": "Cát không tan trong nước."
-    },
-    {
-      "id": 47,
-      "question": "Dung dịch là gì?",
-      "options": ["Hỗn hợp đồng nhất", "Hỗn hợp không đồng nhất", "Kim loại", "Phi kim"],
-      "correctIndex": 0,
-      "explanation": "Dung dịch là hỗn hợp đồng nhất."
-    },
-    {
-      "id": 48,
-      "question": "Chất tan là gì?",
-      "options": ["Chất bị hòa tan", "Dung môi", "Khí", "Kim loại"],
-      "correctIndex": 0,
-      "explanation": "Chất tan là chất bị hòa tan."
-    },
-    {
-      "id": 49,
-      "question": "Dung môi phổ biến nhất là gì?",
-      "options": ["Nước", "Rượu", "Xăng", "Dầu"],
-      "correctIndex": 0,
-      "explanation": "Nước là dung môi phổ biến nhất."
-    },
-    {
-      "id": 50,
-      "question": "Quá trình hòa tan là gì?",
-      "options": ["Chất tan phân tán trong dung môi", "Tạo khí", "Tạo kết tủa", "Bay hơi"],
-      "correctIndex": 0,
-      "explanation": "Hòa tan là chất tan phân tán trong dung môi."
-    },
-    {
-      "id": 51,
-      "question": "Chất nào dẫn điện tốt?",
-      "options": ["Kim loại", "Phi kim", "Khí", "Nước tinh khiết"],
-      "correctIndex": 0,
-      "explanation": "Kim loại dẫn điện tốt."
-    },
-    {
-      "id": 52,
-      "question": "Nước tinh khiết có dẫn điện không?",
-      "options": ["Có mạnh", "Không", "Rất mạnh", "Tùy lúc"],
-      "correctIndex": 1,
-      "explanation": "Nước tinh khiết dẫn điện rất kém."
-    },
-    {
-      "id": 53,
-      "question": "Kim loại có tính chất gì?",
-      "options": ["Dẻo", "Giòn", "Không dẫn điện", "Không sáng"],
-      "correctIndex": 0,
-      "explanation": "Kim loại thường dẻo."
-    },
-    {
-      "id": 54,
-      "question": "Phi kim có tính chất gì?",
-      "options": ["Dẫn điện tốt", "Giòn", "Dẻo", "Ánh kim mạnh"],
-      "correctIndex": 1,
-      "explanation": "Phi kim thường giòn."
-    },
-    {
-      "id": 55,
-      "question": "Phản ứng cháy cần gì?",
-      "options": ["Oxi", "Nitơ", "Heli", "Argon"],
-      "correctIndex": 0,
-      "explanation": "Phản ứng cháy cần oxi."
-    },
-    {
-      "id": 56,
-      "question": "Sản phẩm của cháy hoàn toàn thường là gì?",
-      "options": ["CO2 và H2O", "CO và H2", "O2", "NaCl"],
-      "correctIndex": 0,
-      "explanation": "Cháy hoàn toàn tạo CO2 và H2O."
-    },
-    {
-      "id": 57,
-      "question": "Chất nào làm quỳ tím hóa đỏ?",
-      "options": ["Bazơ", "Axit", "Muối", "Nước"],
-      "correctIndex": 1,
-      "explanation": "Axit làm quỳ tím hóa đỏ."
-    },
-    {
-      "id": 58,
-      "question": "Chất nào làm quỳ tím hóa xanh?",
-      "options": ["Axit", "Bazơ", "Muối", "Khí"],
-      "correctIndex": 1,
-      "explanation": "Bazơ làm quỳ tím hóa xanh."
-    },
-    {
-      "id": 59,
-      "question": "Muối ăn có công thức là gì?",
-      "options": ["NaCl", "KCl", "HCl", "NaOH"],
-      "correctIndex": 0,
-      "explanation": "Muối ăn là NaCl."
-    },
-    {
-      "id": 60,
-      "question": "Oxi có tính chất gì?",
-      "options": ["Không duy trì sự cháy", "Duy trì sự cháy", "Không màu", "Không mùi"],
-      "correctIndex": 1,
-      "explanation": "Oxi duy trì sự cháy."
-    },
-    {
-      "id": 61,
-      "question": "Phương trình hóa học dùng để làm gì?",
-      "options": ["Biểu diễn phản ứng hóa học", "Tính khối lượng", "Tính nhiệt độ", "Đo thể tích"],
-      "correctIndex": 0,
-      "explanation": "Phương trình hóa học biểu diễn phản ứng."
-    },
-    {
-      "id": 62,
-      "question": "Hệ số trong phương trình hóa học dùng để làm gì?",
-      "options": ["Cân bằng số nguyên tử", "Tăng tốc phản ứng", "Tạo chất mới", "Đo pH"],
-      "correctIndex": 0,
-      "explanation": "Hệ số giúp cân bằng phương trình."
-    },
-    {
-      "id": 63,
-      "question": "Chất phản ứng là gì?",
-      "options": ["Chất ban đầu", "Chất tạo thành", "Dung môi", "Khí"],
-      "correctIndex": 0,
-      "explanation": "Chất phản ứng là chất ban đầu."
-    },
-    {
-      "id": 64,
-      "question": "Sản phẩm phản ứng là gì?",
-      "options": ["Chất tạo thành", "Chất ban đầu", "Dung môi", "Bazơ"],
-      "correctIndex": 0,
-      "explanation": "Sản phẩm là chất tạo thành."
-    },
-    {
-      "id": 65,
-      "question": "Định luật bảo toàn khối lượng nói gì?",
-      "options": ["Khối lượng không đổi", "Khối lượng tăng", "Khối lượng giảm", "Không xác định"],
-      "correctIndex": 0,
-      "explanation": "Tổng khối lượng trước và sau phản ứng bằng nhau."
-    },
-    {
-      "id": 66,
-      "question": "Mol là gì?",
-      "options": ["Đơn vị lượng chất", "Đơn vị khối lượng", "Đơn vị thể tích", "Đơn vị nhiệt độ"],
-      "correctIndex": 0,
-      "explanation": "Mol là đơn vị lượng chất."
-    },
-    {
-      "id": 67,
-      "question": "1 mol chứa bao nhiêu hạt?",
-      "options": ["6.022×10^23", "3.14", "9.8", "1"],
-      "correctIndex": 0,
-      "explanation": "Số Avogadro là 6.022×10^23."
-    },
-    {
-      "id": 68,
-      "question": "Khối lượng mol là gì?",
-      "options": ["Khối lượng 1 mol chất", "Khối lượng nguyên tử", "Thể tích chất", "Số mol"],
-      "correctIndex": 0,
-      "explanation": "Khối lượng mol là khối lượng của 1 mol chất."
-    },
-    {
-      "id": 69,
-      "question": "Thể tích mol khí ở điều kiện chuẩn là bao nhiêu?",
-      "options": ["22.4 lít", "24 lít", "1 lít", "10 lít"],
-      "correctIndex": 0,
-      "explanation": "1 mol khí = 22.4 lít (đktc)."
-    },
-    {
-      "id": 70,
-      "question": "Công thức tính số mol là gì?",
-      "options": ["n = m/M", "n = m×M", "n = V×M", "n = P×V"],
-      "correctIndex": 0,
-      "explanation": "n = khối lượng / khối lượng mol."
-    },
-    {
-      "id": 71,
-      "question": "Dung dịch bão hòa là gì?",
-      "options": ["Không thể hòa tan thêm chất tan", "Có ít chất tan", "Không có dung môi", "Không ổn định"],
-      "correctIndex": 0,
-      "explanation": "Dung dịch bão hòa không hòa tan thêm chất."
-    },
-    {
-      "id": 72,
-      "question": "Dung dịch chưa bão hòa là gì?",
-      "options": ["Có thể hòa tan thêm chất", "Không hòa tan thêm", "Không có dung môi", "Rắn"],
-      "correctIndex": 0,
-      "explanation": "Có thể hòa tan thêm chất tan."
-    },
-    {
-      "id": 73,
-      "question": "Sự bay hơi là gì?",
-      "options": ["Chất lỏng thành khí", "Khí thành lỏng", "Rắn thành khí", "Không đổi"],
-      "correctIndex": 0,
-      "explanation": "Bay hơi là chuyển từ lỏng sang khí."
-    },
-    {
-      "id": 74,
-      "question": "Sự ngưng tụ là gì?",
-      "options": ["Khí thành lỏng", "Lỏng thành khí", "Rắn thành khí", "Khí thành rắn"],
-      "correctIndex": 0,
-      "explanation": "Ngưng tụ là khí → lỏng."
-    },
-    {
-      "id": 75,
-      "question": "Sự nóng chảy là gì?",
-      "options": ["Rắn thành lỏng", "Lỏng thành khí", "Khí thành rắn", "Không đổi"],
-      "correctIndex": 0,
-      "explanation": "Nóng chảy là rắn → lỏng."
-    },
-    {
-      "id": 76,
-      "question": "Sự đông đặc là gì?",
-      "options": ["Lỏng thành rắn", "Rắn thành lỏng", "Khí thành lỏng", "Khí thành rắn"],
-      "correctIndex": 0,
-      "explanation": "Đông đặc là lỏng → rắn."
-    },
-    {
-      "id": 77,
-      "question": "Kim loại nào phản ứng mạnh nhất với nước?",
-      "options": ["Na", "Fe", "Cu", "Ag"],
-      "correctIndex": 0,
-      "explanation": "Na phản ứng mạnh với nước."
-    },
-    {
-      "id": 78,
-      "question": "Khí nào làm đục nước vôi trong?",
-      "options": ["CO2", "O2", "H2", "N2"],
-      "correctIndex": 0,
-      "explanation": "CO2 tạo kết tủa CaCO3."
-    },
-    {
-      "id": 79,
-      "question": "Chất nào là oxit?",
-      "options": ["CO2", "HCl", "NaCl", "NaOH"],
-      "correctIndex": 0,
-      "explanation": "CO2 là oxit."
-    },
-    {
-      "id": 80,
-      "question": "Oxit axit là gì?",
-      "options": ["Oxit của phi kim", "Oxit của kim loại", "Bazơ", "Muối"],
-      "correctIndex": 0,
-      "explanation": "Oxit axit thường là oxit phi kim."
-    },
-    {
-      "id": 81,
-      "question": "Oxit bazơ là gì?",
-      "options": ["Oxit của kim loại", "Oxit của phi kim", "Axit", "Muối"],
-      "correctIndex": 0,
-      "explanation": "Oxit bazơ thường là oxit của kim loại."
-    },
-    {
-      "id": 82,
-      "question": "CO2 thuộc loại oxit nào?",
-      "options": ["Oxit bazơ", "Oxit axit", "Oxit trung tính", "Muối"],
-      "correctIndex": 1,
-      "explanation": "CO2 là oxit axit."
-    },
-    {
-      "id": 83,
-      "question": "Chất nào là oxit trung tính?",
-      "options": ["CO", "CO2", "Na2O", "H2O"],
-      "correctIndex": 0,
-      "explanation": "CO là oxit trung tính."
-    },
-    {
-      "id": 84,
-      "question": "Axit làm đổi màu quỳ tím thành gì?",
-      "options": ["Xanh", "Đỏ", "Vàng", "Không đổi"],
-      "correctIndex": 1,
-      "explanation": "Axit làm quỳ tím chuyển đỏ."
-    },
-    {
-      "id": 85,
-      "question": "Bazơ làm quỳ tím chuyển màu gì?",
-      "options": ["Đỏ", "Xanh", "Vàng", "Không đổi"],
-      "correctIndex": 1,
-      "explanation": "Bazơ làm quỳ tím chuyển xanh."
-    },
-    {
-      "id": 86,
-      "question": "Muối là gì?",
-      "options": ["Sản phẩm axit + bazơ", "Kim loại", "Phi kim", "Khí"],
-      "correctIndex": 0,
-      "explanation": "Muối tạo từ phản ứng trung hòa."
-    },
-    {
-      "id": 87,
-      "question": "Phản ứng thế là gì?",
-      "options": ["Nguyên tử thay thế nhau", "Tạo khí", "Hòa tan", "Bay hơi"],
-      "correctIndex": 0,
-      "explanation": "Phản ứng thế là sự thay thế nguyên tử."
-    },
-    {
-      "id": 88,
-      "question": "Phản ứng phân hủy là gì?",
-      "options": ["1 chất thành nhiều chất", "Nhiều chất thành 1 chất", "Không đổi", "Hòa tan"],
-      "correctIndex": 0,
-      "explanation": "Phân hủy là 1 chất → nhiều chất."
-    },
-    {
-      "id": 89,
-      "question": "Phản ứng hóa hợp là gì?",
-      "options": ["Nhiều chất tạo 1 chất", "1 chất tạo nhiều chất", "Không đổi", "Bay hơi"],
-      "correctIndex": 0,
-      "explanation": "Hóa hợp là nhiều chất → 1 chất."
-    },
-    {
-      "id": 90,
-      "question": "Chất nào là bazơ mạnh?",
-      "options": ["NaOH", "HCl", "CO2", "NaCl"],
-      "correctIndex": 0,
-      "explanation": "NaOH là bazơ mạnh."
-    },
-    {
-      "id": 91,
-      "question": "Chất nào là axit mạnh?",
-      "options": ["HCl", "NaOH", "NaCl", "O2"],
-      "correctIndex": 0,
-      "explanation": "HCl là axit mạnh."
-    },
-    {
-      "id": 92,
-      "question": "Kim loại nào phản ứng mạnh nhất trong nhóm kiềm?",
-      "options": ["Na", "K", "Li", "Cs"],
-      "correctIndex": 3,
-      "explanation": "Cs phản ứng mạnh nhất nhóm kiềm."
-    },
-    {
-      "id": 93,
-      "question": "Sự gỉ sắt là hiện tượng gì?",
-      "options": ["Oxi hóa", "Khử", "Hòa tan", "Bay hơi"],
-      "correctIndex": 0,
-      "explanation": "Gỉ sắt là oxi hóa sắt."
-    },
-    {
-      "id": 94,
-      "question": "Chất nào gây mưa axit?",
-      "options": ["SO2", "O2", "N2", "He"],
-      "correctIndex": 0,
-      "explanation": "SO2 gây mưa axit."
-    },
-    {
-      "id": 95,
-      "question": "Chất nào dùng khử trùng nước?",
-      "options": ["Clo", "Oxi", "Nitơ", "CO2"],
-      "correctIndex": 0,
-      "explanation": "Clo dùng khử trùng nước."
-    },
-    {
-      "id": 96,
-      "question": "Chất nào nhẹ hơn không khí?",
-      "options": ["H2", "O2", "CO2", "Cl2"],
-      "correctIndex": 0,
-      "explanation": "Hiđro nhẹ hơn không khí."
-    },
-    {
-      "id": 97,
-      "question": "Khí nào làm đục nước vôi trong?",
-      "options": ["CO2", "O2", "H2", "N2"],
-      "correctIndex": 0,
-      "explanation": "CO2 tạo kết tủa CaCO3."
-    },
-    {
-      "id": 98,
-      "question": "Chất nào không cháy?",
-      "options": ["CO2", "O2", "H2", "C"],
-      "correctIndex": 0,
-      "explanation": "CO2 không duy trì sự cháy."
-    },
-    {
-      "id": 99,
-      "question": "Kim loại nào dẫn điện tốt nhất?",
-      "options": ["Ag", "Fe", "Cu", "Al"],
-      "correctIndex": 0,
-      "explanation": "Bạc dẫn điện tốt nhất."
-    },
-    {
-      "id": 100,
-      "question": "Nước là hợp chất hay đơn chất?",
-      "options": ["Hợp chất", "Đơn chất", "Kim loại", "Phi kim"],
-      "correctIndex": 0,
-      "explanation": "Nước là hợp chất H2O."
-    },
-    {
-      "id": 101,
-      "question": "Phản ứng: Zn + 2HCl → ZnCl2 + H2 thuộc loại phản ứng nào?",
-      "options": ["Phản ứng thế", "Phản ứng hóa hợp", "Phản ứng phân hủy", "Phản ứng trung hòa"],
-      "correctIndex": 0,
-      "explanation": "Kim loại Zn thay thế H trong axit → phản ứng thế."
-    },
-    {
-      "id": 102,
-      "question": "Trong phản ứng oxi hóa - khử, chất khử là chất như thế nào?",
-      "options": ["Nhường electron", "Nhận electron", "Không đổi", "Tạo muối"],
-      "correctIndex": 0,
-      "explanation": "Chất khử là chất nhường electron."
-    },
-    {
-      "id": 103,
-      "question": "Trong phản ứng oxi hóa - khử, chất oxi hóa là chất như thế nào?",
-      "options": ["Nhường electron", "Nhận electron", "Không đổi", "Phân hủy"],
-      "correctIndex": 1,
-      "explanation": "Chất oxi hóa là chất nhận electron."
-    },
-    {
-      "id": 104,
-      "question": "Fe + CuSO4 → FeSO4 + Cu là phản ứng gì?",
-      "options": ["Phản ứng thế", "Phản ứng hóa hợp", "Phản ứng phân hủy", "Phản ứng trung hòa"],
-      "correctIndex": 0,
-      "explanation": "Fe đẩy Cu ra khỏi muối → phản ứng thế."
-    },
-    {
-      "id": 105,
-      "question": "Dung dịch nào dẫn điện tốt nhất?",
-      "options": ["NaCl tan trong nước", "Nước cất", "Đường tan", "Dầu ăn"],
-      "correctIndex": 0,
-      "explanation": "Dung dịch điện li mạnh dẫn điện tốt."
-    },
-    {
-      "id": 106,
-      "question": "Chất điện li mạnh là gì?",
-      "options": ["Phân li hoàn toàn trong nước", "Không phân li", "Bay hơi", "Không tan"],
-      "correctIndex": 0,
-      "explanation": "Điện li mạnh phân li hoàn toàn."
-    },
-    {
-      "id": 107,
-      "question": "Chất điện li yếu là gì?",
-      "options": ["Phân li một phần", "Phân li hoàn toàn", "Không tan", "Không phản ứng"],
-      "correctIndex": 0,
-      "explanation": "Điện li yếu chỉ phân li một phần."
-    },
-    {
-      "id": 108,
-      "question": "Phản ứng: H2 + O2 → H2O là loại phản ứng gì?",
-      "options": ["Hóa hợp", "Thế", "Phân hủy", "Trung hòa"],
-      "correctIndex": 0,
-      "explanation": "Hai chất tạo 1 chất → hóa hợp."
-    },
-    {
-      "id": 109,
-      "question": "Cân bằng phương trình: Al + O2 → Al2O3, hệ số Al là bao nhiêu?",
-      "options": ["2", "3", "4", "6"],
-      "correctIndex": 1,
-      "explanation": "Phương trình cân bằng: 4Al + 3O2 → 2Al2O3."
-    },
-    {
-      "id": 110,
-      "question": "Trong phản ứng cháy, chất nào là chất oxi hóa?",
-      "options": ["O2", "CO2", "H2O", "C"],
-      "correctIndex": 0,
-      "explanation": "Oxi là chất oxi hóa."
-    },
-    {
-      "id": 111,
-      "question": "Kim loại nào phản ứng với nước ở nhiệt độ thường?",
-      "options": ["Na", "Fe", "Cu", "Ag"],
-      "correctIndex": 0,
-      "explanation": "Na phản ứng mạnh với nước."
-    },
-    {
-      "id": 112,
-      "question": "Phản ứng tạo kết tủa là gì?",
-      "options": ["Tạo chất rắn không tan", "Tạo khí", "Bay hơi", "Hòa tan"],
-      "correctIndex": 0,
-      "explanation": "Kết tủa là chất rắn không tan."
-    },
-    {
-      "id": 113,
-      "question": "AgNO3 + NaCl → AgCl + NaNO3, chất kết tủa là gì?",
-      "options": ["AgCl", "NaNO3", "AgNO3", "NaCl"],
-      "correctIndex": 0,
-      "explanation": "AgCl là kết tủa trắng."
-    },
-    {
-      "id": 114,
-      "question": "Trong phản ứng: Fe2O3 + 3CO → 2Fe + 3CO2, CO đóng vai trò gì?",
-      "options": ["Chất khử", "Chất oxi hóa", "Muối", "Bazơ"],
-      "correctIndex": 0,
-      "explanation": "CO bị oxi hóa → là chất khử."
-    },
-    {
-      "id": 115,
-      "question": "Chất nào bị oxi hóa trong phản ứng Fe + CuSO4?",
-      "options": ["Fe", "Cu", "SO4", "H"],
-      "correctIndex": 0,
-      "explanation": "Fe bị oxi hóa thành Fe2+."
-    },
-    {
-      "id": 116,
-      "question": "Trong phản ứng oxi hóa - khử, sự khử là gì?",
-      "options": ["Nhận electron", "Nhường electron", "Tạo muối", "Bay hơi"],
-      "correctIndex": 0,
-      "explanation": "Khử là nhận electron."
-    },
-    {
-      "id": 117,
-      "question": "Chất nào có tính khử mạnh?",
-      "options": ["Kim loại kiềm", "Khí hiếm", "CO2", "H2O"],
-      "correctIndex": 0,
-      "explanation": "Kim loại kiềm dễ nhường electron."
-    },
-    {
-      "id": 118,
-      "question": "Trong phản ứng: 2K + 2H2O → 2KOH + H2, khí tạo ra là gì?",
-      "options": ["H2", "O2", "CO2", "Cl2"],
-      "correctIndex": 0,
-      "explanation": "Khí H2 được giải phóng."
-    },
-    {
-      "id": 119,
-      "question": "Phản ứng trung hòa luôn tạo ra gì?",
-      "options": ["Muối và nước", "Khí", "Kim loại", "Oxit"],
-      "correctIndex": 0,
-      "explanation": "Axit + bazơ → muối + nước."
-    },
-    {
-      "id": 120,
-      "question": "Phản ứng nào sau đây là phản ứng oxi hóa - khử?",
-      "options": ["Fe + CuSO4 → FeSO4 + Cu", "HCl + NaOH → NaCl + H2O", "NaCl + AgNO3 → AgCl + NaNO3", "H2O → H2 + O2 (điện phân)"],
-      "correctIndex": 3,
-      "explanation": "Điện phân nước là phản ứng oxi hóa - khử."
-    }
+  {
+    "id": 21,
+    "question": "Nguyên tử gồm những hạt cơ bản nào?",
+    "options": ["Proton, neutron, electron", "Electron, ion, phân tử", "Proton, phân tử, neutron", "Ion, electron, hạt nhân"],
+    "correctIndex": 0,
+    "explanation": "Nguyên tử gồm hạt nhân ở giữa và lớp vỏ electron bên ngoài. Trong hạt nhân có proton và neutron, còn electron chuyển động xung quanh hạt nhân."
+  },
+  {
+    "id": 22,
+    "question": "Hạt mang điện tích dương trong nguyên tử là gì?",
+    "options": ["Electron", "Neutron", "Proton", "Nguyên tử"],
+    "correctIndex": 2,
+    "explanation": "Proton là hạt mang điện tích dương và nằm trong hạt nhân nguyên tử. Số proton quyết định nguyên tử thuộc nguyên tố hóa học nào."
+  },
+  {
+    "id": 23,
+    "question": "Hạt không mang điện trong nguyên tử là gì?",
+    "options": ["Proton", "Electron", "Neutron", "Ion dương"],
+    "correctIndex": 2,
+    "explanation": "Neutron là hạt không mang điện và nằm trong hạt nhân. Neutron góp phần tạo nên khối lượng nguyên tử và ảnh hưởng đến tính bền của hạt nhân."
+  },
+  {
+    "id": 24,
+    "question": "Electron mang điện tích gì?",
+    "options": ["Dương", "Âm", "Không mang điện", "Trung hòa"],
+    "correctIndex": 1,
+    "explanation": "Electron mang điện tích âm và chuyển động xung quanh hạt nhân nguyên tử. Chính electron tham gia trực tiếp vào sự hình thành liên kết hóa học."
+  },
+  {
+    "id": 25,
+    "question": "Số proton trong hạt nhân nguyên tử được gọi là gì?",
+    "options": ["Số khối", "Số hiệu nguyên tử", "Số neutron", "Hóa trị"],
+    "correctIndex": 1,
+    "explanation": "Số proton bằng số hiệu nguyên tử, là đại lượng đặc trưng cho mỗi nguyên tố. Nhờ số hiệu nguyên tử, ta xác định được vị trí của nguyên tố trong bảng tuần hoàn."
+  },
+  {
+    "id": 26,
+    "question": "Nguyên tố nào sau đây là phi kim?",
+    "options": ["Sắt", "Đồng", "Oxi", "Nhôm"],
+    "correctIndex": 2,
+    "explanation": "Oxi là phi kim vì không có những tính chất điển hình của kim loại như dẫn điện tốt hay ánh kim mạnh. Oxi thường tồn tại ở dạng phân tử O2 trong tự nhiên."
+  },
+  {
+    "id": 27,
+    "question": "Dung dịch axit có giá trị pH như thế nào?",
+    "options": ["> 7", "< 7", "= 7", "= 14"],
+    "correctIndex": 1,
+    "explanation": "Dung dịch axit có pH nhỏ hơn 7 vì nồng độ ion H+ trong dung dịch lớn hơn so với dung dịch trung tính. pH càng nhỏ thì tính axit thường càng mạnh."
+  },
+  {
+    "id": 28,
+    "question": "Dung dịch bazơ có giá trị pH như thế nào?",
+    "options": ["< 7", "> 7", "= 7", "= 0"],
+    "correctIndex": 1,
+    "explanation": "Dung dịch bazơ có pH lớn hơn 7 do chứa nhiều ion OH-. pH càng lớn thì tính bazơ thường càng rõ, nếu so trong cùng điều kiện."
+  },
+  {
+    "id": 29,
+    "question": "Phản ứng giữa axit và bazơ gọi là phản ứng gì?",
+    "options": ["Oxi hóa", "Trung hòa", "Phân hủy", "Thế"],
+    "correctIndex": 1,
+    "explanation": "Phản ứng giữa axit và bazơ gọi là phản ứng trung hòa. Trong phản ứng này, ion H+ của axit kết hợp với ion OH- của bazơ tạo thành nước, đồng thời sinh ra muối."
+  },
+  {
+    "id": 30,
+    "question": "Sản phẩm thường gặp của phản ứng trung hòa là gì?",
+    "options": ["Muối và nước", "Khí và nước", "Kim loại và khí", "Axit và bazơ"],
+    "correctIndex": 0,
+    "explanation": "Phản ứng trung hòa thường tạo ra muối và nước. Ví dụ, HCl tác dụng với NaOH tạo NaCl và H2O."
+  },
+  {
+    "id": 31,
+    "question": "Trong đa số hợp chất, oxi thường có hóa trị bao nhiêu?",
+    "options": ["I", "II", "III", "IV"],
+    "correctIndex": 1,
+    "explanation": "Oxi thường có hóa trị II, nghĩa là nó thường tạo 2 liên kết hoặc tương ứng có số oxi hóa -2 trong nhiều hợp chất. Đây là kiến thức cơ bản khi lập công thức hóa học."
+  },
+  {
+    "id": 32,
+    "question": "Hiđro thường có hóa trị bao nhiêu trong hợp chất?",
+    "options": ["I", "II", "III", "IV"],
+    "correctIndex": 0,
+    "explanation": "Hiđro thường có hóa trị I trong phần lớn hợp chất thông thường. Khi kết hợp với phi kim hoặc gốc axit, tỉ lệ liên kết thường phản ánh hóa trị này."
+  },
+  {
+    "id": 33,
+    "question": "Kim loại thường có tính chất vật lí nào nổi bật?",
+    "options": ["Dẫn điện tốt", "Không dẫn điện", "Không có ánh kim", "Tan hoàn toàn trong nước"],
+    "correctIndex": 0,
+    "explanation": "Kim loại thường dẫn điện tốt do có electron tự do chuyển động trong mạng tinh thể kim loại. Đây là lí do kim loại được dùng làm dây dẫn điện và các thiết bị kỹ thuật."
+  },
+  {
+    "id": 34,
+    "question": "Phi kim thường có đặc điểm nào sau đây?",
+    "options": ["Dẫn điện tốt", "Dẫn điện kém", "Có ánh kim mạnh", "Rất dẻo"],
+    "correctIndex": 1,
+    "explanation": "Phi kim thường dẫn điện kém, ngoại trừ một số trường hợp đặc biệt như than chì. So với kim loại, phi kim thường giòn hơn và không có ánh kim điển hình."
+  },
+  {
+    "id": 35,
+    "question": "Chất nào sau đây là hợp chất?",
+    "options": ["O2", "Fe", "H2O", "N2"],
+    "correctIndex": 2,
+    "explanation": "H2O là hợp chất vì nó được tạo nên từ hai nguyên tố khác nhau là hiđro và oxi. O2 và N2 là đơn chất phân tử, còn Fe là đơn chất kim loại."
+  },
+  {
+    "id": 36,
+    "question": "Chất nào sau đây là đơn chất?",
+    "options": ["H2O", "CO2", "O2", "NaCl"],
+    "correctIndex": 2,
+    "explanation": "O2 là đơn chất vì chỉ gồm một nguyên tố hóa học là oxi. Dù phân tử có hai nguyên tử, chúng vẫn thuộc cùng một nguyên tố nên vẫn là đơn chất."
+  },
+  {
+    "id": 37,
+    "question": "Phản ứng tỏa nhiệt là phản ứng như thế nào?",
+    "options": ["Hấp thụ nhiệt", "Giải phóng nhiệt", "Không trao đổi nhiệt", "Làm tan chất rắn"],
+    "correctIndex": 1,
+    "explanation": "Phản ứng tỏa nhiệt là phản ứng giải phóng năng lượng dưới dạng nhiệt ra môi trường. Nhiều phản ứng cháy là ví dụ điển hình của phản ứng tỏa nhiệt."
+  },
+  {
+    "id": 38,
+    "question": "Phản ứng thu nhiệt là phản ứng như thế nào?",
+    "options": ["Giải phóng nhiệt", "Hấp thụ nhiệt", "Không đổi nhiệt", "Tạo kết tủa"],
+    "correctIndex": 1,
+    "explanation": "Phản ứng thu nhiệt là phản ứng cần hấp thụ nhiệt từ môi trường để xảy ra. Một số quá trình phân hủy hoặc chuyển trạng thái cần cung cấp nhiệt liên tục."
+  },
+  {
+    "id": 39,
+    "question": "Không khí gồm chủ yếu là khí nào?",
+    "options": ["Oxi", "Cacbon đioxit", "Nitơ", "Heli"],
+    "correctIndex": 2,
+    "explanation": "Nitơ chiếm khoảng 78% thể tích không khí, lớn hơn nhiều so với oxi. Chính vì vậy, nitơ được xem là thành phần chủ yếu của không khí."
+  },
+  {
+    "id": 40,
+    "question": "Oxi chiếm khoảng bao nhiêu phần trăm thể tích của không khí?",
+    "options": ["21%", "78%", "1%", "50%"],
+    "correctIndex": 0,
+    "explanation": "Oxi chiếm khoảng 21% thể tích không khí. Tỉ lệ này đủ lớn để duy trì hô hấp và sự cháy, nhưng không phải là thành phần nhiều nhất."
+  },
+  {
+    "id": 41,
+    "question": "Phản ứng hóa học là gì?",
+    "options": ["Sự biến đổi chất này thành chất khác", "Sự thay đổi hình dạng", "Sự nóng chảy", "Sự bay hơi"],
+    "correctIndex": 0,
+    "explanation": "Phản ứng hóa học là quá trình trong đó chất ban đầu biến đổi thành chất mới có thành phần và tính chất khác. Đây là sự thay đổi về bản chất hóa học, không chỉ là biến đổi vật lí."
+  },
+  {
+    "id": 42,
+    "question": "Dấu hiệu thường gặp của phản ứng hóa học là gì?",
+    "options": ["Đổi màu", "Sinh ra khí", "Xuất hiện kết tủa", "Tất cả đều đúng"],
+    "correctIndex": 3,
+    "explanation": "Phản ứng hóa học có thể biểu hiện qua nhiều dấu hiệu như đổi màu, thoát khí, tạo kết tủa hoặc tỏa nhiệt. Tuy nhiên, không phải phản ứng nào cũng xuất hiện đầy đủ tất cả các dấu hiệu này."
+  },
+  {
+    "id": 43,
+    "question": "Theo cách hiểu phổ thông ở bậc cơ bản, phản ứng oxi hóa là quá trình gì?",
+    "options": ["Chất nhận oxi", "Chất mất oxi", "Chất tan trong nước", "Chất bay hơi"],
+    "correctIndex": 0,
+    "explanation": "Ở mức độ cơ bản, phản ứng oxi hóa thường được hiểu là quá trình một chất kết hợp thêm với oxi. Ở mức nâng cao hơn, oxi hóa còn được hiểu là quá trình nhường electron."
+  },
+  {
+    "id": 44,
+    "question": "Theo cách hiểu phổ thông ở bậc cơ bản, phản ứng khử là quá trình gì?",
+    "options": ["Nhận oxi", "Mất oxi", "Tạo muối", "Tạo nước"],
+    "correctIndex": 1,
+    "explanation": "Theo cách giải thích cơ bản, phản ứng khử là quá trình chất mất oxi. Ở chương trình nâng cao hơn, khử được hiểu là quá trình nhận electron."
+  },
+  {
+    "id": 45,
+    "question": "Kim loại nào phản ứng mạnh với nước lạnh?",
+    "options": ["Na", "Fe", "Cu", "Ag"],
+    "correctIndex": 0,
+    "explanation": "Natri phản ứng rất mạnh với nước lạnh, tạo natri hiđroxit và giải phóng khí hiđro. Phản ứng này tỏa nhiều nhiệt nên natri có thể chuyển động trên mặt nước."
+  },
+  {
+    "id": 46,
+    "question": "Chất nào dưới đây không tan trong nước?",
+    "options": ["Muối ăn", "Đường", "Cát", "Cồn etylic"],
+    "correctIndex": 2,
+    "explanation": "Cát chủ yếu là silic đioxit ở dạng hạt lớn nên không tan trong nước. Ngược lại, muối ăn, đường và cồn đều tan hoặc trộn lẫn tốt với nước."
+  },
+  {
+    "id": 47,
+    "question": "Dung dịch là gì?",
+    "options": ["Hỗn hợp đồng nhất", "Hỗn hợp không đồng nhất", "Một kim loại tinh khiết", "Một chất khí"],
+    "correctIndex": 0,
+    "explanation": "Dung dịch là hỗn hợp đồng nhất của chất tan và dung môi. Trong dung dịch, các tiểu phân chất tan phân bố đều nên ta không thể phân biệt bằng mắt thường."
+  },
+  {
+    "id": 48,
+    "question": "Chất tan là gì?",
+    "options": ["Chất bị hòa tan trong dung môi", "Chất làm hòa tan chất khác", "Chất không tan", "Chất tạo kết tủa"],
+    "correctIndex": 0,
+    "explanation": "Chất tan là chất bị hòa tan trong dung môi để tạo thành dung dịch. Ví dụ, trong nước muối, NaCl là chất tan còn nước là dung môi."
+  },
+  {
+    "id": 49,
+    "question": "Dung môi phổ biến nhất trong đời sống và hóa học là gì?",
+    "options": ["Nước", "Rượu", "Xăng", "Dầu ăn"],
+    "correctIndex": 0,
+    "explanation": "Nước là dung môi phổ biến nhất vì có khả năng hòa tan nhiều chất và hiện diện rất rộng rãi trong tự nhiên. Vì vậy, nhiều phản ứng hóa học xảy ra trong môi trường nước."
+  },
+  {
+    "id": 50,
+    "question": "Quá trình hòa tan là gì?",
+    "options": ["Chất tan phân tán đều trong dung môi", "Tạo khí", "Tạo kết tủa", "Phân hủy chất"],
+    "correctIndex": 0,
+    "explanation": "Hòa tan là quá trình các tiểu phân của chất tan phân tán vào giữa các phân tử dung môi, tạo thành hỗn hợp đồng nhất. Quá trình này có thể xảy ra nhanh hay chậm tùy theo nhiệt độ, khuấy trộn và bản chất chất tan."
+  },
+  {
+    "id": 51,
+    "question": "Chất nào dẫn điện tốt nhất trong các lựa chọn sau?",
+    "options": ["Kim loại", "Phi kim", "Khí ở điều kiện thường", "Nước tinh khiết"],
+    "correctIndex": 0,
+    "explanation": "Kim loại dẫn điện tốt vì có electron tự do chuyển động. Nước tinh khiết hầu như không dẫn điện, còn phần lớn phi kim và khí ở điều kiện thường dẫn điện kém."
+  },
+  {
+    "id": 52,
+    "question": "Nước tinh khiết có dẫn điện tốt không?",
+    "options": ["Dẫn điện rất tốt", "Hầu như không", "Tốt hơn kim loại", "Luôn phát sáng khi có dòng điện"],
+    "correctIndex": 1,
+    "explanation": "Nước tinh khiết dẫn điện rất kém vì gần như không có nhiều ion tự do. Nước trong thực tế thường dẫn điện tốt hơn do có hòa tan muối khoáng hoặc các chất điện li khác."
+  },
+  {
+    "id": 53,
+    "question": "Kim loại thường có tính chất cơ học nào sau đây?",
+    "options": ["Dẻo", "Giòn", "Rất dễ vỡ", "Không thể dát mỏng"],
+    "correctIndex": 0,
+    "explanation": "Kim loại thường có tính dẻo, nghĩa là có thể dát mỏng hoặc kéo thành sợi. Tính chất này giúp kim loại được ứng dụng rộng rãi trong sản xuất vật liệu và dây dẫn."
+  },
+  {
+    "id": 54,
+    "question": "Phi kim rắn thường có tính chất nào?",
+    "options": ["Dẻo", "Giòn", "Dẫn điện rất tốt", "Có ánh kim mạnh"],
+    "correctIndex": 1,
+    "explanation": "Nhiều phi kim ở trạng thái rắn thường giòn, không dẻo như kim loại. Vì vậy chúng dễ vỡ khi chịu tác động cơ học."
+  },
+  {
+    "id": 55,
+    "question": "Phản ứng cháy cần có chất nào?",
+    "options": ["Oxi", "Nitơ", "Heli", "Argon"],
+    "correctIndex": 0,
+    "explanation": "Phản ứng cháy cần oxi để chất cháy bị oxi hóa và giải phóng năng lượng. Nếu thiếu oxi, sự cháy không diễn ra hoặc diễn ra không hoàn toàn."
+  },
+  {
+    "id": 56,
+    "question": "Khi đốt cháy hoàn toàn một hiđrocacbon, sản phẩm thường là gì?",
+    "options": ["CO2 và H2O", "CO và H2", "O2 và H2", "NaCl và H2O"],
+    "correctIndex": 0,
+    "explanation": "Hiđrocacbon chỉ chứa cacbon và hiđro nên khi cháy hoàn toàn trong oxi, cacbon tạo CO2 còn hiđro tạo H2O. Đây là dấu hiệu đặc trưng của phản ứng cháy hoàn toàn hiđrocacbon."
+  },
+  {
+    "id": 57,
+    "question": "Chất nào làm quỳ tím hóa đỏ?",
+    "options": ["Bazơ", "Axit", "Muối trung hòa", "Nước cất"],
+    "correctIndex": 1,
+    "explanation": "Axit làm quỳ tím hóa đỏ vì dung dịch axit có nhiều ion H+. Đây là cách nhận biết nhanh tính axit của một dung dịch trong phòng thí nghiệm."
+  },
+  {
+    "id": 58,
+    "question": "Chất nào làm quỳ tím hóa xanh?",
+    "options": ["Axit", "Bazơ", "Muối trung hòa", "Khí hiếm"],
+    "correctIndex": 1,
+    "explanation": "Bazơ làm quỳ tím hóa xanh do dung dịch bazơ chứa ion OH-. Màu xanh của quỳ tím là một trong những dấu hiệu nhận biết dung dịch có tính bazơ."
+  },
+  {
+    "id": 59,
+    "question": "Muối ăn có công thức hóa học là gì?",
+    "options": ["NaCl", "KCl", "HCl", "NaOH"],
+    "correctIndex": 0,
+    "explanation": "Muối ăn là natri clorua, có công thức NaCl. Đây là hợp chất ion gồm cation natri và anion clorua."
+  },
+  {
+    "id": 60,
+    "question": "Oxi có vai trò gì đối với sự cháy?",
+    "options": ["Không duy trì sự cháy", "Duy trì sự cháy", "Làm tắt mọi ngọn lửa", "Không liên quan"],
+    "correctIndex": 1,
+    "explanation": "Oxi không tự cháy nhưng duy trì sự cháy của nhiều chất khác. Vì vậy trong các thí nghiệm hoặc trong thực tế, muốn dập lửa người ta thường tìm cách giảm lượng oxi tiếp xúc với vật cháy."
+  },
+  {
+    "id": 61,
+    "question": "Phương trình hóa học dùng để làm gì?",
+    "options": ["Biểu diễn phản ứng hóa học", "Đo nhiệt độ", "Xác định màu sắc", "Tính pH trực tiếp"],
+    "correctIndex": 0,
+    "explanation": "Phương trình hóa học dùng để biểu diễn ngắn gọn phản ứng hóa học bằng công thức của các chất tham gia và sản phẩm. Nó còn cho biết tỉ lệ số phân tử hoặc số mol giữa các chất."
+  },
+  {
+    "id": 62,
+    "question": "Hệ số trong phương trình hóa học có vai trò chính gì?",
+    "options": ["Cân bằng số nguyên tử", "Làm phản ứng nhanh hơn", "Tăng khối lượng chất", "Tạo màu cho dung dịch"],
+    "correctIndex": 0,
+    "explanation": "Hệ số được dùng để cân bằng phương trình sao cho số nguyên tử của mỗi nguyên tố ở hai vế bằng nhau. Điều này thể hiện định luật bảo toàn khối lượng trong phản ứng hóa học."
+  },
+  {
+    "id": 63,
+    "question": "Chất phản ứng là gì?",
+    "options": ["Chất ban đầu tham gia phản ứng", "Chất tạo thành sau phản ứng", "Dung môi của phản ứng", "Chất xúc tác"],
+    "correctIndex": 0,
+    "explanation": "Chất phản ứng là những chất có mặt ban đầu và bị biến đổi trong quá trình phản ứng. Chúng còn được gọi là chất tham gia phản ứng."
+  },
+  {
+    "id": 64,
+    "question": "Sản phẩm phản ứng là gì?",
+    "options": ["Chất được tạo thành sau phản ứng", "Chất ban đầu", "Chất xúc tác", "Môi trường phản ứng"],
+    "correctIndex": 0,
+    "explanation": "Sản phẩm phản ứng là chất mới được tạo ra sau khi phản ứng xảy ra. Sản phẩm thường có thành phần và tính chất khác với chất ban đầu."
+  },
+  {
+    "id": 65,
+    "question": "Định luật bảo toàn khối lượng phát biểu như thế nào?",
+    "options": ["Tổng khối lượng các chất trước phản ứng bằng tổng khối lượng các chất sau phản ứng", "Khối lượng luôn tăng sau phản ứng", "Khối lượng luôn giảm sau phản ứng", "Khối lượng phụ thuộc màu sắc"],
+    "correctIndex": 0,
+    "explanation": "Định luật bảo toàn khối lượng khẳng định tổng khối lượng của các chất được bảo toàn trong phản ứng hóa học. Điều này đúng vì nguyên tử không tự sinh ra hay mất đi, chỉ sắp xếp lại."
+  },
+  {
+    "id": 66,
+    "question": "Mol là gì?",
+    "options": ["Đơn vị lượng chất", "Đơn vị khối lượng", "Đơn vị thể tích", "Đơn vị áp suất"],
+    "correctIndex": 0,
+    "explanation": "Mol là đơn vị đo lượng chất trong hóa học. Một mol chứa số hạt rất lớn, bằng số Avogadro, giúp chuyển đổi giữa thế giới vi mô và các đại lượng đo được trong phòng thí nghiệm."
+  },
+  {
+    "id": 67,
+    "question": "Một mol chất chứa bao nhiêu hạt vi mô?",
+    "options": ["6,022 x 10^23", "3,14 x 10^2", "9,8 x 10^3", "1,00 x 10^6"],
+    "correctIndex": 0,
+    "explanation": "Một mol chứa 6,022 x 10^23 hạt, gọi là số Avogadro. Các hạt này có thể là nguyên tử, phân tử, ion hoặc electron tùy từng trường hợp."
+  },
+  {
+    "id": 68,
+    "question": "Khối lượng mol là gì?",
+    "options": ["Khối lượng của 1 mol chất", "Khối lượng của 1 nguyên tử", "Số mol trong 1 gam", "Khối lượng riêng của chất"],
+    "correctIndex": 0,
+    "explanation": "Khối lượng mol là khối lượng của 1 mol chất và thường có đơn vị g/mol. Ví dụ, khối lượng mol của nước H2O là 18 g/mol."
+  },
+  {
+    "id": 69,
+    "question": "Ở điều kiện tiêu chuẩn theo chương trình phổ thông, 1 mol khí có thể tích xấp xỉ bao nhiêu?",
+    "options": ["22,4 lít", "24 lít", "10 lít", "44,8 lít"],
+    "correctIndex": 0,
+    "explanation": "Theo cách dùng phổ biến trong bài tập cơ bản, 1 mol khí ở điều kiện tiêu chuẩn có thể tích khoảng 22,4 lít. Đại lượng này giúp tính nhanh số mol khí từ thể tích."
+  },
+  {
+    "id": 70,
+    "question": "Công thức tính số mol theo khối lượng là gì?",
+    "options": ["n = m / M", "n = m x M", "n = V / M", "n = pH / 7"],
+    "correctIndex": 0,
+    "explanation": "Số mol được tính bằng công thức n = m / M, trong đó m là khối lượng chất và M là khối lượng mol. Đây là công thức cơ bản trong các bài toán hóa học định lượng."
+  },
+  {
+    "id": 71,
+    "question": "Dung dịch bão hòa là gì?",
+    "options": ["Dung dịch không thể hòa tan thêm chất tan ở điều kiện xác định", "Dung dịch không có dung môi", "Dung dịch chứa rất ít chất tan", "Dung dịch luôn có kết tủa"],
+    "correctIndex": 0,
+    "explanation": "Dung dịch bão hòa là dung dịch đã hòa tan tối đa lượng chất tan có thể ở một nhiệt độ xác định. Nếu thêm chất tan nữa, phần dư sẽ không tan tiếp."
+  },
+  {
+    "id": 72,
+    "question": "Dung dịch chưa bão hòa là gì?",
+    "options": ["Dung dịch còn có thể hòa tan thêm chất tan", "Dung dịch không thể hòa tan thêm", "Dung dịch không có chất tan", "Dung dịch đang sôi"],
+    "correctIndex": 0,
+    "explanation": "Dung dịch chưa bão hòa vẫn còn khả năng hòa tan thêm chất tan ở điều kiện đang xét. Điều này cho thấy lượng chất tan hiện có chưa đạt đến giới hạn hòa tan."
+  },
+  {
+    "id": 73,
+    "question": "Sự bay hơi là quá trình chuyển trạng thái nào?",
+    "options": ["Lỏng thành khí", "Khí thành lỏng", "Rắn thành lỏng", "Khí thành rắn"],
+    "correctIndex": 0,
+    "explanation": "Bay hơi là quá trình chất lỏng chuyển thành hơi hoặc khí. Quá trình này xảy ra trên bề mặt chất lỏng và diễn ra ở nhiều nhiệt độ khác nhau."
+  },
+  {
+    "id": 74,
+    "question": "Sự ngưng tụ là quá trình chuyển trạng thái nào?",
+    "options": ["Khí thành lỏng", "Lỏng thành khí", "Rắn thành khí", "Lỏng thành rắn"],
+    "correctIndex": 0,
+    "explanation": "Ngưng tụ là quá trình chất khí hoặc hơi chuyển thành chất lỏng. Ví dụ quen thuộc là hơi nước gặp lạnh tạo thành những giọt nước."
+  },
+  {
+    "id": 75,
+    "question": "Sự nóng chảy là quá trình gì?",
+    "options": ["Rắn thành lỏng", "Lỏng thành khí", "Khí thành rắn", "Lỏng thành rắn"],
+    "correctIndex": 0,
+    "explanation": "Nóng chảy là quá trình chất rắn chuyển thành chất lỏng khi được cung cấp nhiệt đến nhiệt độ nóng chảy thích hợp. Ví dụ, nước đá tan thành nước."
+  },
+  {
+    "id": 76,
+    "question": "Sự đông đặc là quá trình gì?",
+    "options": ["Lỏng thành rắn", "Rắn thành lỏng", "Khí thành lỏng", "Rắn thành khí"],
+    "correctIndex": 0,
+    "explanation": "Đông đặc là quá trình chất lỏng chuyển thành chất rắn khi mất nhiệt. Ví dụ quen thuộc là nước đóng băng thành nước đá."
+  },
+  {
+    "id": 77,
+    "question": "Trong các kim loại sau, kim loại nào phản ứng mạnh với nước lạnh nhất?",
+    "options": ["Na", "Fe", "Cu", "Ag"],
+    "correctIndex": 0,
+    "explanation": "Na phản ứng rất mạnh với nước lạnh, mạnh hơn nhiều so với sắt, đồng hay bạc. Phản ứng tạo NaOH và khí H2, đồng thời tỏa nhiệt lớn."
+  },
+  {
+    "id": 78,
+    "question": "Khí nào làm đục nước vôi trong?",
+    "options": ["CO2", "O2", "H2", "N2"],
+    "correctIndex": 0,
+    "explanation": "CO2 làm đục nước vôi trong vì phản ứng với Ca(OH)2 tạo kết tủa trắng CaCO3. Đây là phản ứng nhận biết cacbon đioxit rất thường dùng."
+  },
+  {
+    "id": 79,
+    "question": "Chất nào dưới đây là một oxit?",
+    "options": ["CO2", "HCl", "NaCl", "NaOH"],
+    "correctIndex": 0,
+    "explanation": "CO2 là oxit vì là hợp chất của oxi với một nguyên tố khác là cacbon. HCl là axit, NaCl là muối, còn NaOH là bazơ."
+  },
+  {
+    "id": 80,
+    "question": "Oxit axit thường là oxit của nguyên tố nào?",
+    "options": ["Phi kim", "Kim loại kiềm", "Kim loại kiềm thổ", "Mọi kim loại"],
+    "correctIndex": 0,
+    "explanation": "Oxit axit thường là oxit của phi kim, ví dụ CO2, SO2, SO3. Chúng có thể tác dụng với nước tạo axit hoặc tác dụng với bazơ tạo muối."
+  },
+  {
+    "id": 81,
+    "question": "Oxit bazơ thường là oxit của nguyên tố nào?",
+    "options": ["Kim loại", "Phi kim", "Khí hiếm", "Halogen"],
+    "correctIndex": 0,
+    "explanation": "Oxit bazơ thường là oxit của kim loại, như Na2O, CaO, CuO. Nhiều oxit bazơ có thể tác dụng với axit để tạo muối và nước."
+  },
+  {
+    "id": 82,
+    "question": "CO2 thuộc loại oxit nào?",
+    "options": ["Oxit bazơ", "Oxit axit", "Oxit trung tính", "Muối"],
+    "correctIndex": 1,
+    "explanation": "CO2 là oxit axit vì có thể tác dụng với nước tạo axit cacbonic yếu và tác dụng với bazơ tạo muối cacbonat hoặc hiđrocacbonat."
+  },
+  {
+    "id": 83,
+    "question": "Chất nào sau đây là oxit trung tính?",
+    "options": ["CO", "CO2", "Na2O", "SO3"],
+    "correctIndex": 0,
+    "explanation": "CO được xem là oxit trung tính trong chương trình cơ bản vì nó không thể hiện rõ tính axit hay bazơ như CO2 hoặc Na2O. Do đó nó không được xếp vào oxit axit hay oxit bazơ thông thường."
+  },
+  {
+    "id": 84,
+    "question": "Axit làm quỳ tím đổi thành màu gì?",
+    "options": ["Xanh", "Đỏ", "Vàng", "Không đổi"],
+    "correctIndex": 1,
+    "explanation": "Axit làm quỳ tím chuyển sang màu đỏ. Đây là một phép thử đơn giản để nhận biết môi trường axit."
+  },
+  {
+    "id": 85,
+    "question": "Bazơ làm quỳ tím đổi thành màu gì?",
+    "options": ["Đỏ", "Xanh", "Vàng", "Không đổi"],
+    "correctIndex": 1,
+    "explanation": "Bazơ làm quỳ tím chuyển sang màu xanh do đặc trưng của môi trường bazơ. Đây là kiến thức nhận biết rất thường gặp trong bài tập hóa học cơ bản."
+  },
+  {
+    "id": 86,
+    "question": "Muối thường được hiểu là chất tạo thành khi axit phản ứng với chất nào?",
+    "options": ["Bazơ", "Phi kim", "Khí hiếm", "Nước cất"],
+    "correctIndex": 0,
+    "explanation": "Trong phản ứng trung hòa, axit phản ứng với bazơ tạo ra muối và nước. Vì vậy muối thường được xem là sản phẩm đặc trưng của phản ứng axit - bazơ."
+  },
+  {
+    "id": 87,
+    "question": "Phản ứng thế là phản ứng như thế nào?",
+    "options": ["Nguyên tử của đơn chất thay thế nguyên tử của một nguyên tố trong hợp chất", "Một chất bị phân hủy thành nhiều chất", "Nhiều chất tạo thành một chất", "Chỉ xảy ra với khí"],
+    "correctIndex": 0,
+    "explanation": "Phản ứng thế là phản ứng trong đó nguyên tử của một đơn chất thay thế nguyên tử của một nguyên tố có trong hợp chất. Ví dụ, Zn đẩy H ra khỏi HCl tạo ZnCl2 và H2."
+  },
+  {
+    "id": 88,
+    "question": "Phản ứng phân hủy là phản ứng như thế nào?",
+    "options": ["Một chất tạo thành nhiều chất mới", "Nhiều chất tạo thành một chất", "Hai chất đổi chỗ cho nhau", "Kim loại tác dụng với axit"],
+    "correctIndex": 0,
+    "explanation": "Phản ứng phân hủy là phản ứng mà từ một chất ban đầu tạo ra hai hay nhiều chất mới. Quá trình này thường cần nhiệt, ánh sáng hoặc dòng điện."
+  },
+  {
+    "id": 89,
+    "question": "Phản ứng hóa hợp là phản ứng như thế nào?",
+    "options": ["Nhiều chất tạo thành một chất mới", "Một chất tạo nhiều chất", "Axit tác dụng với bazơ", "Muối tác dụng với kim loại"],
+    "correctIndex": 0,
+    "explanation": "Phản ứng hóa hợp là phản ứng trong đó hai hay nhiều chất kết hợp tạo thành một chất mới. Ví dụ, H2 và O2 phản ứng tạo nước."
+  },
+  {
+    "id": 90,
+    "question": "Chất nào dưới đây là bazơ mạnh?",
+    "options": ["NaOH", "HCl", "CO2", "NaCl"],
+    "correctIndex": 0,
+    "explanation": "NaOH là bazơ mạnh vì phân li gần như hoàn toàn trong nước tạo ion OH-. Do đó dung dịch NaOH có tính bazơ mạnh và dẫn điện tốt."
+  },
+  {
+    "id": 91,
+    "question": "Chất nào dưới đây là axit mạnh?",
+    "options": ["HCl", "NaOH", "NaCl", "O2"],
+    "correctIndex": 0,
+    "explanation": "HCl là axit mạnh vì phân li gần như hoàn toàn trong nước tạo ion H+ và Cl-. Tính axit của HCl thể hiện rõ qua khả năng làm quỳ tím hóa đỏ và phản ứng với bazơ."
+  },
+  {
+    "id": 92,
+    "question": "Kim loại nào phản ứng mạnh nhất trong các kim loại kiềm dưới đây?",
+    "options": ["Li", "Na", "K", "Cs"],
+    "correctIndex": 3,
+    "explanation": "Trong nhóm kim loại kiềm, tính kim loại và mức độ hoạt động hóa học tăng dần từ trên xuống dưới. Vì vậy xesi (Cs) phản ứng mạnh nhất trong các lựa chọn đã cho."
+  },
+  {
+    "id": 93,
+    "question": "Sự gỉ sắt là một quá trình gì?",
+    "options": ["Oxi hóa", "Khử", "Hòa tan vật lí", "Bay hơi"],
+    "correctIndex": 0,
+    "explanation": "Gỉ sắt là quá trình sắt bị oxi hóa chậm trong không khí ẩm, tạo ra các hợp chất oxit hoặc hiđroxit sắt. Hiện tượng này làm kim loại bị ăn mòn và giảm độ bền."
+  },
+  {
+    "id": 94,
+    "question": "Chất khí nào là nguyên nhân quan trọng gây mưa axit?",
+    "options": ["SO2", "O2", "N2", "He"],
+    "correctIndex": 0,
+    "explanation": "SO2 khi vào khí quyển có thể bị oxi hóa và hòa tan trong nước mưa tạo thành các axit như H2SO3 hoặc H2SO4. Vì vậy khí này là một nguyên nhân chính gây mưa axit."
+  },
+  {
+    "id": 95,
+    "question": "Chất nào thường được dùng để khử trùng nước trong xử lí nước sinh hoạt?",
+    "options": ["Clo", "Oxi", "Nitơ", "CO2"],
+    "correctIndex": 0,
+    "explanation": "Clo có tính oxi hóa mạnh nên có khả năng tiêu diệt nhiều vi khuẩn và vi sinh vật gây bệnh trong nước. Vì vậy nó thường được sử dụng trong xử lí nước sinh hoạt với liều lượng kiểm soát."
+  },
+  {
+    "id": 96,
+    "question": "Chất khí nào nhẹ hơn không khí rõ rệt?",
+    "options": ["H2", "O2", "CO2", "Cl2"],
+    "correctIndex": 0,
+    "explanation": "Hiđro có khối lượng mol rất nhỏ nên nhẹ hơn không khí rất nhiều. Vì vậy trước đây hiđro từng được dùng để bơm khí cầu, dù cần chú ý vì dễ cháy."
+  },
+  {
+    "id": 97,
+    "question": "Khí nào tiếp tục làm đục nước vôi trong khi sục vừa đủ?",
+    "options": ["CO2", "O2", "H2", "N2"],
+    "correctIndex": 0,
+    "explanation": "CO2 phản ứng với nước vôi trong tạo kết tủa CaCO3 làm dung dịch bị đục. Đây là phản ứng định tính quan trọng để nhận biết CO2."
+  },
+  {
+    "id": 98,
+    "question": "Chất nào dưới đây không cháy và thường được dùng để dập lửa?",
+    "options": ["CO2", "O2", "H2", "C"],
+    "correctIndex": 0,
+    "explanation": "CO2 không cháy và không duy trì sự cháy, nên có thể được dùng trong bình chữa cháy. Khi phủ lên vùng cháy, nó giúp cách li vật cháy với oxi trong không khí."
+  },
+  {
+    "id": 99,
+    "question": "Kim loại nào dẫn điện tốt nhất trong các lựa chọn sau?",
+    "options": ["Ag", "Fe", "Cu", "Al"],
+    "correctIndex": 0,
+    "explanation": "Bạc (Ag) là kim loại dẫn điện tốt nhất trong các kim loại thông dụng. Tuy nhiên vì giá thành cao nên trong thực tế đồng thường được dùng nhiều hơn làm dây dẫn."
+  },
+  {
+    "id": 100,
+    "question": "Nước được xếp vào loại nào?",
+    "options": ["Hợp chất", "Đơn chất", "Kim loại", "Phi kim"],
+    "correctIndex": 0,
+    "explanation": "Nước là hợp chất vì được tạo bởi hai nguyên tố khác nhau là hiđro và oxi. Mỗi phân tử nước có công thức H2O."
+  },
+  {
+    "id": 101,
+    "question": "Phản ứng Zn + 2HCl -> ZnCl2 + H2 thuộc loại phản ứng nào?",
+    "options": ["Phản ứng thế", "Phản ứng hóa hợp", "Phản ứng phân hủy", "Phản ứng trung hòa"],
+    "correctIndex": 0,
+    "explanation": "Trong phản ứng này, kẽm đã thay thế hiđro trong axit clohidric để tạo thành muối kẽm clorua và khí hiđro. Vì có sự thay thế nguyên tử như vậy nên đây là phản ứng thế."
+  },
+  {
+    "id": 102,
+    "question": "Trong phản ứng oxi hóa - khử, chất khử là chất như thế nào?",
+    "options": ["Nhường electron", "Nhận electron", "Không thay đổi số oxi hóa", "Tạo nước"],
+    "correctIndex": 0,
+    "explanation": "Chất khử là chất nhường electron cho chất khác, vì vậy bản thân nó bị oxi hóa. Nói cách khác, chất khử làm cho chất khác bị khử."
+  },
+  {
+    "id": 103,
+    "question": "Trong phản ứng oxi hóa - khử, chất oxi hóa là chất như thế nào?",
+    "options": ["Nhường electron", "Nhận electron", "Không tham gia phản ứng", "Chỉ là chất khí"],
+    "correctIndex": 1,
+    "explanation": "Chất oxi hóa là chất nhận electron từ chất khác và vì vậy bản thân nó bị khử. Nó có vai trò làm cho chất kia bị oxi hóa."
+  },
+  {
+    "id": 104,
+    "question": "Phản ứng Fe + CuSO4 -> FeSO4 + Cu thuộc loại phản ứng nào?",
+    "options": ["Phản ứng thế", "Phản ứng hóa hợp", "Phản ứng phân hủy", "Phản ứng trung hòa"],
+    "correctIndex": 0,
+    "explanation": "Sắt đã đẩy đồng ra khỏi dung dịch muối đồng(II) sunfat để tạo thành muối sắt(II) sunfat và kim loại đồng. Đây là ví dụ kinh điển của phản ứng thế giữa kim loại mạnh hơn với muối của kim loại yếu hơn."
+  },
+  {
+    "id": 105,
+    "question": "Dung dịch nào dưới đây dẫn điện tốt nhất?",
+    "options": ["NaCl tan trong nước", "Nước cất", "Đường tan trong nước", "Dầu ăn"],
+    "correctIndex": 0,
+    "explanation": "NaCl tan trong nước tạo ion Na+ và Cl- tự do nên dẫn điện tốt. Đường tan nhưng không phân li thành ion, còn nước cất và dầu ăn dẫn điện rất kém."
+  },
+  {
+    "id": 106,
+    "question": "Chất điện li mạnh là chất như thế nào?",
+    "options": ["Phân li hoàn toàn hoặc gần như hoàn toàn thành ion trong nước", "Không phân li trong nước", "Không tan trong nước", "Không tham gia phản ứng"],
+    "correctIndex": 0,
+    "explanation": "Chất điện li mạnh tạo ra nhiều ion khi tan trong nước nên dung dịch dẫn điện tốt. Ví dụ điển hình là các axit mạnh, bazơ mạnh và nhiều muối tan."
+  },
+  {
+    "id": 107,
+    "question": "Chất điện li yếu là chất như thế nào?",
+    "options": ["Chỉ phân li một phần thành ion trong nước", "Phân li hoàn toàn", "Không bao giờ tan", "Là kim loại nguyên chất"],
+    "correctIndex": 0,
+    "explanation": "Chất điện li yếu chỉ có một phần phân tử phân li thành ion khi hòa tan trong nước. Vì số ion tạo ra ít hơn nên dung dịch của chúng dẫn điện yếu hơn chất điện li mạnh."
+  },
+  {
+    "id": 108,
+    "question": "Phản ứng H2 + O2 -> H2O thuộc loại phản ứng nào?",
+    "options": ["Hóa hợp", "Thế", "Phân hủy", "Trung hòa"],
+    "correctIndex": 0,
+    "explanation": "Hai chất đơn giản là hiđro và oxi kết hợp với nhau tạo thành một chất mới là nước. Vì từ nhiều chất tạo thành một chất nên đây là phản ứng hóa hợp."
+  },
+  {
+    "id": 109,
+    "question": "Cân bằng phương trình Al + O2 -> Al2O3, hệ số của Al là bao nhiêu?",
+    "options": ["2", "3", "4", "6"],
+    "correctIndex": 2,
+    "explanation": "Phương trình cân bằng đúng là 4Al + 3O2 -> 2Al2O3. Do đó hệ số của nhôm là 4, không phải 3."
+  },
+  {
+    "id": 110,
+    "question": "Trong phản ứng cháy, chất nào thường đóng vai trò chất oxi hóa?",
+    "options": ["O2", "CO2", "H2O", "C"],
+    "correctIndex": 0,
+    "explanation": "Trong đa số phản ứng cháy, oxi nhận electron từ chất cháy nên đóng vai trò chất oxi hóa. Chính vì vậy oxi duy trì sự cháy nhưng bản thân nó không phải chất cháy thông thường."
+  },
+  {
+    "id": 111,
+    "question": "Kim loại nào phản ứng với nước ở nhiệt độ thường trong các lựa chọn sau?",
+    "options": ["Na", "Fe", "Cu", "Ag"],
+    "correctIndex": 0,
+    "explanation": "Na phản ứng mạnh với nước ở nhiệt độ thường, còn Fe, Cu và Ag không phản ứng như vậy trong điều kiện này. Đây là một dấu hiệu cho thấy natri có tính hoạt động hóa học cao."
+  },
+  {
+    "id": 112,
+    "question": "Phản ứng tạo kết tủa là phản ứng tạo ra gì?",
+    "options": ["Chất rắn không tan xuất hiện trong dung dịch", "Chất khí có mùi", "Nhiệt độ luôn giảm", "Chất lỏng nguyên chất"],
+    "correctIndex": 0,
+    "explanation": "Kết tủa là chất rắn không tan hoặc rất ít tan, xuất hiện khi hai dung dịch phản ứng với nhau. Sự xuất hiện chất rắn này là dấu hiệu dễ quan sát của phản ứng hóa học."
+  },
+  {
+    "id": 113,
+    "question": "Trong phản ứng AgNO3 + NaCl -> AgCl + NaNO3, chất kết tủa là gì?",
+    "options": ["AgCl", "NaNO3", "AgNO3", "NaCl"],
+    "correctIndex": 0,
+    "explanation": "AgCl là chất kết tủa màu trắng vì bạc clorua không tan trong nước. NaNO3 vẫn tan nên nằm trong dung dịch sau phản ứng."
+  },
+  {
+    "id": 114,
+    "question": "Trong phản ứng Fe2O3 + 3CO -> 2Fe + 3CO2, CO đóng vai trò gì?",
+    "options": ["Chất khử", "Chất oxi hóa", "Muối", "Bazơ"],
+    "correctIndex": 0,
+    "explanation": "CO lấy oxi từ Fe2O3 để tạo thành CO2 nên CO đã làm oxit sắt bị khử thành sắt kim loại. Vì nhường khả năng nhận oxi theo cách hiểu cơ bản và bị oxi hóa, CO là chất khử."
+  },
+  {
+    "id": 115,
+    "question": "Trong phản ứng Fe + CuSO4 -> FeSO4 + Cu, chất nào bị oxi hóa?",
+    "options": ["Fe", "Cu2+", "SO4^2-", "Nước"],
+    "correctIndex": 0,
+    "explanation": "Fe từ số oxi hóa 0 tăng lên +2 trong FeSO4, nghĩa là sắt đã nhường electron và bị oxi hóa. Ion Cu2+ nhận electron nên bị khử thành Cu kim loại."
+  },
+  {
+    "id": 116,
+    "question": "Trong phản ứng oxi hóa - khử, sự khử là gì?",
+    "options": ["Nhận electron", "Nhường electron", "Tạo muối", "Tạo khí"],
+    "correctIndex": 0,
+    "explanation": "Sự khử là quá trình nhận electron, làm số oxi hóa của chất giảm xuống. Khái niệm này luôn đi cùng với sự oxi hóa trong cùng một phản ứng."
+  },
+  {
+    "id": 117,
+    "question": "Nhóm chất nào thường có tính khử mạnh?",
+    "options": ["Kim loại kiềm", "Khí hiếm", "CO2", "Nước"],
+    "correctIndex": 0,
+    "explanation": "Kim loại kiềm rất dễ nhường electron nên có tính khử mạnh. Chính vì vậy chúng phản ứng mạnh với nước và nhiều phi kim."
+  },
+  {
+    "id": 118,
+    "question": "Trong phản ứng 2K + 2H2O -> 2KOH + H2, khí tạo thành là gì?",
+    "options": ["H2", "O2", "CO2", "Cl2"],
+    "correctIndex": 0,
+    "explanation": "Kali phản ứng với nước tạo ra bazơ KOH và giải phóng khí hiđro H2. Đây là phản ứng rất mạnh, có thể gây bốc cháy do nhiệt lượng tỏa ra lớn."
+  },
+  {
+    "id": 119,
+    "question": "Phản ứng trung hòa luôn tạo ra những sản phẩm điển hình nào?",
+    "options": ["Muối và nước", "Khí và kim loại", "Oxit và nước", "Chỉ một muối"],
+    "correctIndex": 0,
+    "explanation": "Trong phản ứng trung hòa, ion H+ của axit kết hợp với ion OH- của bazơ tạo nước, phần còn lại tạo muối. Vì vậy muối và nước là hai sản phẩm điển hình."
+  },
+  {
+    "id": 120,
+    "question": "Phản ứng nào sau đây chắc chắn là phản ứng oxi hóa - khử?",
+    "options": ["HCl + NaOH -> NaCl + H2O", "NaCl + AgNO3 -> AgCl + NaNO3", "CaCO3 -> CaO + CO2", "Fe + CuSO4 -> FeSO4 + Cu"],
+    "correctIndex": 3,
+    "explanation": "Trong phản ứng Fe + CuSO4 -> FeSO4 + Cu, sắt bị oxi hóa từ 0 lên +2 còn đồng bị khử từ +2 về 0. Đây là sự thay đổi số oxi hóa rõ ràng nên chắc chắn là phản ứng oxi hóa - khử."
+  },
+  {
+    "id": 121,
+    "question": "Liên kết ion thường hình thành giữa những nguyên tử nào?",
+    "options": ["Kim loại và phi kim", "Hai phi kim giống nhau", "Hai khí hiếm", "Hai kim loại"],
+    "correctIndex": 0,
+    "explanation": "Liên kết ion thường hình thành khi nguyên tử kim loại nhường electron cho nguyên tử phi kim nhận electron. Kết quả là tạo ra ion dương và ion âm hút nhau bằng lực tĩnh điện."
+  },
+  {
+    "id": 122,
+    "question": "Liên kết cộng hóa trị thường hình thành khi các nguyên tử làm gì?",
+    "options": ["Dùng chung electron", "Trao đổi proton", "Mất toàn bộ hạt nhân", "Tạo ra neutron"],
+    "correctIndex": 0,
+    "explanation": "Liên kết cộng hóa trị được hình thành khi các nguyên tử dùng chung một hay nhiều cặp electron. Kiểu liên kết này rất phổ biến trong các hợp chất của phi kim như H2O, CO2, CH4."
+  },
+  {
+    "id": 123,
+    "question": "Nguyên tử trung hòa điện khi nào?",
+    "options": ["Số proton bằng số electron", "Số neutron bằng số proton", "Số proton lớn hơn số electron", "Không có neutron"],
+    "correctIndex": 0,
+    "explanation": "Nguyên tử trung hòa điện khi tổng điện tích dương bằng tổng điện tích âm, tức số proton bằng số electron. Nếu hai số này không bằng nhau, hạt sẽ trở thành ion."
+  },
+  {
+    "id": 124,
+    "question": "Ion dương được tạo ra khi nguyên tử như thế nào?",
+    "options": ["Mất bớt electron", "Nhận thêm electron", "Mất proton", "Nhận neutron"],
+    "correctIndex": 0,
+    "explanation": "Khi nguyên tử mất electron, số proton lớn hơn số electron nên hạt mang điện tích dương. Hạt đó được gọi là cation hay ion dương."
+  },
+  {
+    "id": 125,
+    "question": "Ion âm được tạo ra khi nguyên tử như thế nào?",
+    "options": ["Nhận thêm electron", "Mất electron", "Mất neutron", "Tăng số khối"],
+    "correctIndex": 0,
+    "explanation": "Khi nguyên tử nhận thêm electron, số electron nhiều hơn số proton nên hạt mang điện âm. Hạt này được gọi là anion hay ion âm."
+  },
+  {
+    "id": 126,
+    "question": "Số khối của nguyên tử được tính bằng gì?",
+    "options": ["Tổng số proton và neutron", "Tổng số proton và electron", "Tổng số electron và neutron", "Chỉ số proton"],
+    "correctIndex": 0,
+    "explanation": "Số khối A bằng tổng số proton và neutron trong hạt nhân. Vì khối lượng electron rất nhỏ nên thường không tính vào số khối."
+  },
+  {
+    "id": 127,
+    "question": "Các đồng vị của cùng một nguyên tố khác nhau ở điểm nào?",
+    "options": ["Số neutron", "Số proton", "Số electron của nguyên tử trung hòa", "Tính chất hóa học cơ bản hoàn toàn khác"],
+    "correctIndex": 0,
+    "explanation": "Các đồng vị có cùng số proton nhưng khác số neutron nên khác nhau về số khối. Vì số proton không đổi nên tính chất hóa học cơ bản của chúng gần giống nhau."
+  },
+  {
+    "id": 128,
+    "question": "Nguyên tố có số hiệu nguyên tử 8 là nguyên tố nào?",
+    "options": ["Oxi", "Nitơ", "Lưu huỳnh", "Cacbon"],
+    "correctIndex": 0,
+    "explanation": "Nguyên tố có số hiệu nguyên tử 8 là oxi, nghĩa là mỗi nguyên tử oxi có 8 proton trong hạt nhân. Trong trạng thái trung hòa, nó cũng có 8 electron."
+  },
+  {
+    "id": 129,
+    "question": "Nhóm nào trong bảng tuần hoàn chứa các kim loại kiềm?",
+    "options": ["Nhóm IA", "Nhóm VIIA", "Nhóm VIIIA", "Nhóm IIA"],
+    "correctIndex": 0,
+    "explanation": "Nhóm IA gồm các kim loại kiềm như Li, Na, K. Chúng có 1 electron lớp ngoài cùng nên rất dễ nhường electron và phản ứng mạnh."
+  },
+  {
+    "id": 130,
+    "question": "Halogen là tên gọi chung của nhóm nguyên tố nào?",
+    "options": ["Nhóm VIIA", "Nhóm IA", "Nhóm IIA", "Nhóm VIIIA"],
+    "correctIndex": 0,
+    "explanation": "Halogen là các nguyên tố thuộc nhóm VIIA như F, Cl, Br, I. Chúng là phi kim mạnh, thường nhận thêm 1 electron để đạt cấu hình bền."
+  },
+  {
+    "id": 131,
+    "question": "Khí hiếm nằm ở nhóm nào trong bảng tuần hoàn?",
+    "options": ["Nhóm VIIIA", "Nhóm IA", "Nhóm VIA", "Nhóm IIIA"],
+    "correctIndex": 0,
+    "explanation": "Khí hiếm nằm ở nhóm VIIIA vì lớp electron ngoài cùng đã bền vững. Nhờ đó chúng rất ít phản ứng hóa học trong điều kiện thông thường."
+  },
+  {
+    "id": 132,
+    "question": "Nguyên tố nào dưới đây thuộc nhóm halogen?",
+    "options": ["Cl", "Ne", "Na", "Mg"],
+    "correctIndex": 0,
+    "explanation": "Cl là clo, một nguyên tố halogen thuộc nhóm VIIA. Halogen thường tồn tại ở dạng phân tử hai nguyên tử như Cl2 trong đơn chất."
+  },
+  {
+    "id": 133,
+    "question": "Nguyên tố nào dưới đây thuộc nhóm kim loại kiềm thổ?",
+    "options": ["Mg", "Na", "Cl", "Ar"],
+    "correctIndex": 0,
+    "explanation": "Mg là magie, thuộc nhóm IIA, còn gọi là kim loại kiềm thổ. Các kim loại kiềm thổ có 2 electron lớp ngoài cùng và hoạt động hóa học mạnh."
+  },
+  {
+    "id": 134,
+    "question": "Công thức của vôi sống là gì?",
+    "options": ["CaO", "Ca(OH)2", "CaCO3", "CaCl2"],
+    "correctIndex": 0,
+    "explanation": "Vôi sống là canxi oxit, có công thức CaO. Chất này phản ứng với nước tạo thành vôi tôi là Ca(OH)2 và tỏa nhiều nhiệt."
+  },
+  {
+    "id": 135,
+    "question": "Công thức của vôi tôi là gì?",
+    "options": ["Ca(OH)2", "CaO", "CaCO3", "CaSO4"],
+    "correctIndex": 0,
+    "explanation": "Vôi tôi là canxi hiđroxit, công thức Ca(OH)2. Dung dịch của nó còn được gọi là nước vôi trong khi phần tan đủ ít và trong suốt."
+  },
+  {
+    "id": 136,
+    "question": "Đá vôi chủ yếu chứa chất nào?",
+    "options": ["CaCO3", "NaCl", "SiO2", "MgO"],
+    "correctIndex": 0,
+    "explanation": "Đá vôi chủ yếu chứa canxi cacbonat CaCO3. Chất này bị nhiệt phân ở nhiệt độ cao để tạo vôi sống và khí CO2."
+  },
+  {
+    "id": 137,
+    "question": "Phản ứng CaCO3 -> CaO + CO2 thuộc loại phản ứng nào?",
+    "options": ["Phân hủy", "Hóa hợp", "Thế", "Trung hòa"],
+    "correctIndex": 0,
+    "explanation": "Một chất là CaCO3 bị tách thành hai chất mới là CaO và CO2 nên đây là phản ứng phân hủy. Phản ứng này xảy ra khi nung đá vôi ở nhiệt độ cao."
+  },
+  {
+    "id": 138,
+    "question": "Dung dịch Ca(OH)2 được dùng để nhận biết khí nào?",
+    "options": ["CO2", "O2", "H2", "N2"],
+    "correctIndex": 0,
+    "explanation": "Ca(OH)2 hay nước vôi trong được dùng để nhận biết CO2 vì khí này làm xuất hiện kết tủa trắng CaCO3. Đây là phản ứng rất phổ biến trong hóa học vô cơ cơ bản."
+  },
+  {
+    "id": 139,
+    "question": "Muối cacbonat tác dụng với axit thường tạo ra khí gì?",
+    "options": ["CO2", "O2", "H2", "Cl2"],
+    "correctIndex": 0,
+    "explanation": "Muối cacbonat gặp axit thường giải phóng khí CO2. Ví dụ, CaCO3 tác dụng với HCl tạo CaCl2, H2O và CO2."
+  },
+  {
+    "id": 140,
+    "question": "Dãy chất nào đều là axit?",
+    "options": ["HCl, H2SO4, HNO3", "NaOH, KOH, Ba(OH)2", "NaCl, KNO3, CaCO3", "CO2, SO2, NO"],
+    "correctIndex": 0,
+    "explanation": "HCl, H2SO4 và HNO3 đều là các axit quen thuộc. Chúng có điểm chung là khi tan trong nước đều có khả năng tạo ion H+."
+  },
+  {
+    "id": 141,
+    "question": "Dãy chất nào đều là bazơ?",
+    "options": ["NaOH, KOH, Ca(OH)2", "HCl, H2SO4, HNO3", "NaCl, KCl, CaCl2", "CO2, SO2, P2O5"],
+    "correctIndex": 0,
+    "explanation": "NaOH, KOH và Ca(OH)2 đều là bazơ vì trong công thức có nhóm OH gắn với kim loại và có khả năng tạo ion OH- trong nước."
+  },
+  {
+    "id": 142,
+    "question": "Dãy chất nào đều là muối?",
+    "options": ["NaCl, KNO3, CaCO3", "HCl, NaOH, H2O", "CO2, SO2, NO2", "Fe, Cu, Al"],
+    "correctIndex": 0,
+    "explanation": "NaCl, KNO3 và CaCO3 đều là muối vì được tạo từ cation kim loại kết hợp với anion gốc axit. Chúng không mang đầy đủ tính chất riêng của axit hay bazơ."
+  },
+  {
+    "id": 143,
+    "question": "Axit nitric có công thức hóa học là gì?",
+    "options": ["HNO3", "HNO2", "H2SO4", "NaNO3"],
+    "correctIndex": 0,
+    "explanation": "Axit nitric có công thức HNO3. Đây là một axit mạnh, đồng thời có tính oxi hóa mạnh trong nhiều phản ứng hóa học."
+  },
+  {
+    "id": 144,
+    "question": "Muối kali nitrat có công thức là gì?",
+    "options": ["KNO3", "NaNO3", "KCl", "Ca(NO3)2"],
+    "correctIndex": 0,
+    "explanation": "KNO3 là kali nitrat, gồm ion K+ và NO3-. Muối này còn được biết đến trong một số ứng dụng phân bón và hóa chất."
+  },
+  {
+    "id": 145,
+    "question": "Khí amoniac có công thức là gì?",
+    "options": ["NH3", "NO2", "N2O", "NH4Cl"],
+    "correctIndex": 0,
+    "explanation": "Amoniac có công thức NH3, là khí không màu, mùi khai đặc trưng và tan nhiều trong nước. Dung dịch amoniac có tính bazơ yếu."
+  },
+  {
+    "id": 146,
+    "question": "Muối amoni clorua có công thức là gì?",
+    "options": ["NH4Cl", "NH3", "NaCl", "CaCl2"],
+    "correctIndex": 0,
+    "explanation": "NH4Cl là amoni clorua, gồm cation amoni NH4+ và anion clorua Cl-. Đây là một muối amoni quen thuộc trong hóa học."
+  },
+  {
+    "id": 147,
+    "question": "Khí nào có mùi khai đặc trưng?",
+    "options": ["NH3", "CO2", "O2", "N2"],
+    "correctIndex": 0,
+    "explanation": "NH3 có mùi khai đặc trưng, rất dễ nhận biết. Vì tan mạnh trong nước nên nó có thể gây kích ứng mắt và đường hô hấp."
+  },
+  {
+    "id": 148,
+    "question": "Phân đạm urê có công thức gần đúng là gì?",
+    "options": ["CO(NH2)2", "NH4Cl", "NaNO3", "K2SO4"],
+    "correctIndex": 0,
+    "explanation": "Urê có công thức CO(NH2)2 và là một loại phân bón rất phổ biến nhờ hàm lượng nitơ cao. Khi vào đất, urê dần chuyển hóa để cây hấp thụ."
+  },
+  {
+    "id": 149,
+    "question": "Khí nào góp phần gây hiệu ứng nhà kính mạnh trong các lựa chọn sau?",
+    "options": ["CO2", "O2", "N2", "He"],
+    "correctIndex": 0,
+    "explanation": "CO2 là một trong những khí nhà kính quan trọng vì có khả năng giữ nhiệt trong khí quyển. Nồng độ CO2 tăng lên là một nguyên nhân của biến đổi khí hậu."
+  },
+  {
+    "id": 150,
+    "question": "Phản ứng cháy không hoàn toàn của nhiên liệu chứa cacbon có thể tạo ra khí độc nào?",
+    "options": ["CO", "CO2", "O2", "N2"],
+    "correctIndex": 0,
+    "explanation": "Khi cháy không hoàn toàn, cacbon không bị oxi hóa hết thành CO2 mà có thể tạo CO. Cacbon monoxit rất độc vì cản trở máu vận chuyển oxi."
+  },
+  {
+    "id": 151,
+    "question": "Công thức của etanol là gì?",
+    "options": ["C2H5OH", "CH3OH", "CH3COOH", "C2H4"],
+    "correctIndex": 0,
+    "explanation": "Etanol có công thức C2H5OH. Đây là ancol etylic, có trong rượu và được dùng làm dung môi, nhiên liệu sinh học hoặc chất sát khuẩn trong những điều kiện thích hợp."
+  },
+  {
+    "id": 152,
+    "question": "Công thức của axit axetic là gì?",
+    "options": ["CH3COOH", "C2H5OH", "HCOOH", "CH4"],
+    "correctIndex": 0,
+    "explanation": "Axit axetic có công thức CH3COOH, là thành phần chính tạo vị chua của giấm ăn. Đây là một axit hữu cơ yếu nhưng rất quen thuộc trong đời sống."
+  },
+  {
+    "id": 153,
+    "question": "Giấm ăn có vị chua chủ yếu do chứa chất nào?",
+    "options": ["Axit axetic", "Etanol", "Đường glucozơ", "Muối ăn"],
+    "correctIndex": 0,
+    "explanation": "Giấm ăn chứa axit axetic nên có vị chua đặc trưng. Nồng độ axit axetic trong giấm thường không quá cao để phù hợp sử dụng trong thực phẩm."
+  },
+  {
+    "id": 154,
+    "question": "Khí etilen có công thức là gì?",
+    "options": ["C2H4", "C2H6", "CH4", "C3H8"],
+    "correctIndex": 0,
+    "explanation": "Etilen có công thức C2H4 và thuộc loại hiđrocacbon không no vì có liên kết đôi C=C. Đây là nguyên liệu quan trọng trong công nghiệp hóa dầu."
+  },
+  {
+    "id": 155,
+    "question": "Khí axetilen có công thức là gì?",
+    "options": ["C2H2", "C2H4", "C2H6", "CH4"],
+    "correctIndex": 0,
+    "explanation": "Axetilen có công thức C2H2 và chứa liên kết ba giữa hai nguyên tử cacbon. Chất này cháy cho ngọn lửa rất nóng, từng được dùng trong hàn cắt kim loại."
+  },
+  {
+    "id": 156,
+    "question": "Hiđrocacbon no đơn giản nhất là chất nào?",
+    "options": ["CH4", "C2H4", "C2H2", "C6H6"],
+    "correctIndex": 0,
+    "explanation": "CH4 là metan, hiđrocacbon no đơn giản nhất vì chỉ có một nguyên tử cacbon và các liên kết đơn. Nó thuộc dãy đồng đẳng ankan."
+  },
+  {
+    "id": 157,
+    "question": "Metan thuộc loại hiđrocacbon nào?",
+    "options": ["Hiđrocacbon no", "Hiđrocacbon không no", "Hiđrocacbon thơm", "Ancol"],
+    "correctIndex": 0,
+    "explanation": "Metan chỉ có liên kết đơn giữa các nguyên tử nên thuộc loại hiđrocacbon no. Các hiđrocacbon no đơn giản thường ít phản ứng cộng hơn hiđrocacbon không no."
+  },
+  {
+    "id": 158,
+    "question": "Etilen thuộc loại hiđrocacbon nào?",
+    "options": ["Hiđrocacbon không no", "Hiđrocacbon no", "Ancol", "Axit hữu cơ"],
+    "correctIndex": 0,
+    "explanation": "Etilen có liên kết đôi C=C nên là hiđrocacbon không no. Liên kết đôi làm cho etilen có thể tham gia phản ứng cộng dễ hơn ankan."
+  },
+  {
+    "id": 159,
+    "question": "Axit axetic làm quỳ tím chuyển sang màu gì?",
+    "options": ["Đỏ", "Xanh", "Không đổi", "Đen"],
+    "correctIndex": 0,
+    "explanation": "Dù là axit yếu, axit axetic vẫn có khả năng làm quỳ tím hóa đỏ. Điều này cho thấy dung dịch của nó có tính axit."
+  },
+  {
+    "id": 160,
+    "question": "Rượu etylic phản ứng với natri tạo ra khí gì?",
+    "options": ["H2", "O2", "CO2", "N2"],
+    "correctIndex": 0,
+    "explanation": "Rượu etylic tác dụng với natri tạo natri etylat và giải phóng khí hiđro. Phản ứng này chứng minh trong phân tử ancol có nguyên tử hiđro linh động ở nhóm -OH."
+  },
+  {
+    "id": 161,
+    "question": "Chất béo thuộc loại hợp chất nào?",
+    "options": ["Este", "Axit vô cơ", "Muối trung hòa", "Oxit bazơ"],
+    "correctIndex": 0,
+    "explanation": "Chất béo là este của glixerol với các axit béo. Vì vậy khi thủy phân trong môi trường bazơ, chất béo tạo glixerol và muối của axit béo."
+  },
+  {
+    "id": 162,
+    "question": "Phản ứng xà phòng hóa là phản ứng của chất béo với chất nào?",
+    "options": ["Bazơ", "Axit mạnh", "Khí clo", "Muối ăn"],
+    "correctIndex": 0,
+    "explanation": "Xà phòng hóa là phản ứng thủy phân chất béo trong môi trường bazơ như NaOH hoặc KOH. Sản phẩm tạo ra là glixerol và muối natri hoặc kali của axit béo, tức xà phòng."
+  },
+  {
+    "id": 163,
+    "question": "Glucozơ thuộc loại chất nào?",
+    "options": ["Cacbohiđrat", "Ancol đơn chức", "Muối", "Kim loại"],
+    "correctIndex": 0,
+    "explanation": "Glucozơ là một monosaccarit, thuộc nhóm cacbohiđrat. Đây là nguồn cung cấp năng lượng quan trọng cho cơ thể sống."
+  },
+  {
+    "id": 164,
+    "question": "Tinh bột thuộc loại chất nào?",
+    "options": ["Polisaccarit", "Monosaccarit", "Axit amin", "Este"],
+    "correctIndex": 0,
+    "explanation": "Tinh bột là polisaccarit, tức là chất có phân tử gồm nhiều mắt xích glucozơ liên kết với nhau. Đây là chất dự trữ năng lượng phổ biến ở thực vật."
+  },
+  {
+    "id": 165,
+    "question": "Protein được cấu tạo chủ yếu từ các đơn vị nào?",
+    "options": ["Axit amin", "Glucozơ", "Axit béo", "Kim loại kiềm"],
+    "correctIndex": 0,
+    "explanation": "Protein là đại phân tử được tạo bởi nhiều axit amin liên kết với nhau bằng liên kết peptit. Cấu trúc và trình tự axit amin quyết định chức năng của protein."
+  },
+  {
+    "id": 166,
+    "question": "Polime là chất có đặc điểm gì?",
+    "options": ["Phân tử rất lớn gồm nhiều mắt xích lặp lại", "Luôn là kim loại", "Chỉ tồn tại ở thể khí", "Không tan trong mọi dung môi"],
+    "correctIndex": 0,
+    "explanation": "Polime là hợp chất có phân tử khối lớn, được tạo từ nhiều đơn vị nhỏ lặp lại gọi là mắt xích. Nhựa, cao su và tơ tổng hợp là những ví dụ quen thuộc về polime."
+  },
+  {
+    "id": 167,
+    "question": "PVC là tên viết tắt của polime nào?",
+    "options": ["Polivinyl clorua", "Polietilen", "Polipropilen", "Polistiren"],
+    "correctIndex": 0,
+    "explanation": "PVC là polivinyl clorua, một loại nhựa nhiệt dẻo phổ biến. Nó được dùng nhiều trong ống dẫn nước, vỏ dây điện và vật liệu xây dựng."
+  },
+  {
+    "id": 168,
+    "question": "PE là tên viết tắt của polime nào?",
+    "options": ["Polietilen", "Polivinyl clorua", "Poliacrilonitrin", "Poliamit"],
+    "correctIndex": 0,
+    "explanation": "PE là polietilen, được tạo thành từ phản ứng trùng hợp etilen. Đây là loại nhựa rất phổ biến trong túi nilon, chai lọ và bao bì."
+  },
+  {
+    "id": 169,
+    "question": "Tơ nilon thuộc nhóm vật liệu nào?",
+    "options": ["Tơ tổng hợp", "Tơ thiên nhiên", "Kim loại", "Gốm"],
+    "correctIndex": 0,
+    "explanation": "Tơ nilon là tơ tổng hợp vì được điều chế bằng con đường hóa học từ các monome thích hợp. Nó có độ bền cao, nhẹ và được dùng nhiều trong dệt may."
+  },
+  {
+    "id": 170,
+    "question": "Phản ứng trùng hợp là phản ứng gì?",
+    "options": ["Nhiều phân tử nhỏ liên kết tạo phân tử lớn", "Một phân tử lớn tách thành nhiều phân tử nhỏ", "Axit tác dụng với bazơ", "Kim loại tác dụng với axit"],
+    "correctIndex": 0,
+    "explanation": "Trùng hợp là quá trình nhiều phân tử nhỏ giống hoặc gần giống nhau liên kết lại tạo polime. Ví dụ, etilen trùng hợp tạo polietilen."
+  },
+  {
+    "id": 171,
+    "question": "Kim loại nào thường được dùng làm dây dẫn điện trong gia đình?",
+    "options": ["Đồng", "Natri", "Sắt gỉ", "Lưu huỳnh"],
+    "correctIndex": 0,
+    "explanation": "Đồng được dùng nhiều làm dây dẫn điện vì dẫn điện tốt, bền và giá hợp lí hơn bạc. Ngoài ra đồng cũng dễ kéo thành sợi mảnh."
+  },
+  {
+    "id": 172,
+    "question": "Nhôm có tính chất nổi bật nào khiến nó được dùng làm vỏ máy bay và đồ gia dụng?",
+    "options": ["Nhẹ và bền", "Rất nặng", "Tan mạnh trong nước", "Giòn như thủy tinh"],
+    "correctIndex": 0,
+    "explanation": "Nhôm có khối lượng riêng nhỏ nên nhẹ, đồng thời có độ bền khá tốt và chống ăn mòn nhờ lớp oxit mỏng bảo vệ. Vì vậy nó được dùng rộng rãi trong nhiều lĩnh vực."
+  },
+  {
+    "id": 173,
+    "question": "Hợp kim là gì?",
+    "options": ["Vật liệu gồm kim loại trộn với một hay nhiều nguyên tố khác", "Một kim loại nguyên chất tuyệt đối", "Một loại phi kim", "Một dung dịch axit"],
+    "correctIndex": 0,
+    "explanation": "Hợp kim là vật liệu có thành phần chính là kim loại nhưng có thêm nguyên tố khác để cải thiện tính chất. Ví dụ, thép là hợp kim của sắt với cacbon và một số nguyên tố khác."
+  },
+  {
+    "id": 174,
+    "question": "Thép là hợp kim chủ yếu của sắt với nguyên tố nào?",
+    "options": ["Cacbon", "Oxi", "Clo", "Lưu huỳnh"],
+    "correctIndex": 0,
+    "explanation": "Thép là hợp kim của sắt với cacbon và có thể thêm một số nguyên tố khác. Lượng cacbon thích hợp giúp thép cứng và bền hơn sắt nguyên chất."
+  },
+  {
+    "id": 175,
+    "question": "Ăn mòn kim loại là quá trình gì?",
+    "options": ["Kim loại bị phá hủy dần do tác dụng của môi trường", "Kim loại chuyển thành nhựa", "Kim loại nóng chảy ngay lập tức", "Kim loại luôn sáng hơn"],
+    "correctIndex": 0,
+    "explanation": "Ăn mòn kim loại là quá trình kim loại bị oxi hóa và phá hủy dần dưới tác dụng của môi trường xung quanh. Quá trình này gây thiệt hại lớn trong đời sống và công nghiệp."
+  },
+  {
+    "id": 176,
+    "question": "Biện pháp nào giúp hạn chế gỉ sắt hiệu quả?",
+    "options": ["Sơn phủ bề mặt", "Ngâm nước muối", "Để ngoài mưa nắng", "Cạo hết lớp bảo vệ"],
+    "correctIndex": 0,
+    "explanation": "Sơn phủ giúp cách li sắt với không khí ẩm và oxi, từ đó làm chậm quá trình gỉ. Ngoài ra còn có các biện pháp khác như mạ kẽm hoặc dùng hợp kim chống gỉ."
+  },
+  {
+    "id": 177,
+    "question": "Mạ kẽm cho sắt nhằm mục đích chính gì?",
+    "options": ["Chống ăn mòn", "Tăng độ tan trong nước", "Làm sắt thành phi kim", "Giảm độ bền cơ học"],
+    "correctIndex": 0,
+    "explanation": "Lớp kẽm phủ ngoài có tác dụng bảo vệ sắt khỏi tiếp xúc trực tiếp với môi trường. Ngoài ra kẽm còn hoạt động hóa học mạnh hơn sắt nên có thể bảo vệ điện hóa cho sắt trong một số trường hợp."
+  },
+  {
+    "id": 178,
+    "question": "Nhiên liệu hóa thạch gồm nhóm chất nào?",
+    "options": ["Than đá, dầu mỏ, khí thiên nhiên", "Nước, muối, đường", "Gỗ, giấy, tinh bột", "Sắt, nhôm, đồng"],
+    "correctIndex": 0,
+    "explanation": "Nhiên liệu hóa thạch bao gồm than đá, dầu mỏ và khí thiên nhiên. Chúng hình thành qua thời gian rất dài từ xác sinh vật cổ, nên không phải nguồn tài nguyên tái tạo nhanh."
+  },
+  {
+    "id": 179,
+    "question": "Thành phần chính của khí thiên nhiên là gì?",
+    "options": ["Metan", "Etilen", "Hiđro", "Oxi"],
+    "correctIndex": 0,
+    "explanation": "Khí thiên nhiên chứa chủ yếu là metan CH4. Nhờ khả năng cháy tốt và tỏa nhiều nhiệt, metan được dùng làm nhiên liệu trong sinh hoạt và công nghiệp."
+  },
+  {
+    "id": 180,
+    "question": "Dầu mỏ là hỗn hợp chủ yếu của những chất nào?",
+    "options": ["Nhiều hiđrocacbon khác nhau", "Muối khoáng", "Protein", "Kim loại nóng chảy"],
+    "correctIndex": 0,
+    "explanation": "Dầu mỏ là hỗn hợp phức tạp của nhiều hiđrocacbon lỏng, rắn và khí hòa tan trong nhau. Từ dầu mỏ, người ta chưng cất phân đoạn để thu xăng, dầu hỏa, dầu diesel và nhiều sản phẩm khác."
+  },
+  {
+    "id": 181,
+    "question": "Chưng cất phân đoạn dầu mỏ dựa chủ yếu vào sự khác nhau về đại lượng nào?",
+    "options": ["Nhiệt độ sôi", "Màu sắc", "Khả năng hút ẩm", "Độ cứng"],
+    "correctIndex": 0,
+    "explanation": "Các phân đoạn dầu mỏ được tách nhờ sự khác nhau về nhiệt độ sôi. Chất có nhiệt độ sôi thấp bay hơi trước, sau đó được ngưng tụ và thu riêng."
+  },
+  {
+    "id": 182,
+    "question": "Khí LPG dùng trong bếp gas gia đình chủ yếu chứa gì?",
+    "options": ["Propan và butan", "Metan và etilen", "CO2 và O2", "N2 và He"],
+    "correctIndex": 0,
+    "explanation": "LPG là khí dầu mỏ hóa lỏng, chủ yếu gồm propan và butan. Các khí này dễ hóa lỏng dưới áp suất nên thuận tiện cho việc chứa và vận chuyển."
+  },
+  {
+    "id": 183,
+    "question": "Khi đun nóng đường lâu, hiện tượng chuyển sang màu nâu rồi đen chủ yếu là do gì?",
+    "options": ["Đường bị phân hủy và than hóa", "Đường biến thành muối", "Đường tan tốt hơn", "Đường chuyển thành kim loại"],
+    "correctIndex": 0,
+    "explanation": "Khi đun quá lâu, đường bị biến đổi hóa học, trước hết chuyển màu do caramen hóa rồi tiếp tục phân hủy, tạo cacbon và các chất khác. Đây không còn là biến đổi vật lí đơn thuần."
+  },
+  {
+    "id": 184,
+    "question": "Quá trình nào sau đây là biến đổi hóa học?",
+    "options": ["Sắt bị gỉ", "Nước đá tan", "Nước bay hơi", "Muối ăn hòa tan trong nước"],
+    "correctIndex": 0,
+    "explanation": "Sắt bị gỉ tạo ra chất mới là các hợp chất của sắt nên đó là biến đổi hóa học. Các hiện tượng còn lại chủ yếu là biến đổi vật lí vì không tạo ra chất mới."
+  },
+  {
+    "id": 185,
+    "question": "Quá trình nào sau đây là biến đổi vật lí?",
+    "options": ["Nước đá tan thành nước", "Đốt cháy than", "Sắt bị gỉ", "Giấm tác dụng với baking soda"],
+    "correctIndex": 0,
+    "explanation": "Nước đá tan chỉ là sự chuyển trạng thái từ rắn sang lỏng, không tạo ra chất mới nên là biến đổi vật lí. Các quá trình còn lại đều tạo ra chất mới."
+  },
+  {
+    "id": 186,
+    "question": "Chất chỉ thị nào thường dùng để nhận biết môi trường axit và bazơ trong phòng thí nghiệm trường học?",
+    "options": ["Quỳ tím", "Cát", "Đồng", "Than chì"],
+    "correctIndex": 0,
+    "explanation": "Quỳ tím là chất chỉ thị màu đơn giản, dễ sử dụng để nhận biết môi trường axit hoặc bazơ. Trong axit nó chuyển đỏ, còn trong bazơ nó chuyển xanh."
+  },
+  {
+    "id": 187,
+    "question": "Phenolphtalein trong dung dịch bazơ thường có màu gì?",
+    "options": ["Hồng", "Xanh", "Vàng", "Không màu đậm"],
+    "correctIndex": 0,
+    "explanation": "Phenolphtalein không màu trong môi trường axit hoặc trung tính nhưng chuyển hồng trong môi trường bazơ. Vì vậy nó được dùng nhiều trong chuẩn độ axit - bazơ."
+  },
+  {
+    "id": 188,
+    "question": "Giấy pH dùng để làm gì?",
+    "options": ["Ước lượng độ axit hoặc bazơ của dung dịch", "Cân khối lượng chất", "Đo thể tích khí", "Đốt cháy chất"],
+    "correctIndex": 0,
+    "explanation": "Giấy pH đổi màu theo độ axit hoặc bazơ của dung dịch, từ đó giúp ước lượng giá trị pH. Đây là công cụ nhanh, tiện lợi trong kiểm tra môi trường dung dịch."
+  },
+  {
+    "id": 189,
+    "question": "Dung dịch có pH = 7 được xem là môi trường gì?",
+    "options": ["Trung tính", "Axit mạnh", "Bazơ mạnh", "Oxi hóa mạnh"],
+    "correctIndex": 0,
+    "explanation": "Môi trường có pH bằng 7 được xem là trung tính ở điều kiện thường. Khi đó nồng độ H+ và OH- xấp xỉ bằng nhau."
+  },
+  {
+    "id": 190,
+    "question": "Dung dịch có pH = 2 thuộc loại nào?",
+    "options": ["Axit", "Bazơ", "Trung tính", "Muối không tan"],
+    "correctIndex": 0,
+    "explanation": "pH = 2 nhỏ hơn 7 rất nhiều nên dung dịch này có tính axit rõ rệt. Giá trị pH càng nhỏ thì tính axit thường càng mạnh."
+  },
+  {
+    "id": 191,
+    "question": "Dung dịch có pH = 12 thuộc loại nào?",
+    "options": ["Bazơ", "Axit", "Trung tính", "Khí hiếm"],
+    "correctIndex": 0,
+    "explanation": "pH = 12 lớn hơn 7 nên đây là dung dịch bazơ. Mức pH này cho thấy dung dịch chứa lượng ion OH- khá lớn."
+  },
+  {
+    "id": 192,
+    "question": "Khi pha loãng dung dịch axit bằng nước, cần làm theo cách nào để an toàn hơn?",
+    "options": ["Rót từ từ axit vào nước", "Rót nước thật nhanh vào axit đậm đặc", "Đổ đồng thời cả hai", "Làm trong bình kín hoàn toàn"],
+    "correctIndex": 0,
+    "explanation": "Khi pha loãng axit, phải rót từ từ axit vào nước để nhiệt sinh ra được phân tán tốt hơn, giảm nguy cơ bắn tóe. Không nên làm ngược lại với axit đậm đặc vì dễ gây nguy hiểm."
+  },
+  {
+    "id": 193,
+    "question": "Thiết bị bảo hộ nào quan trọng khi làm thí nghiệm hóa học?",
+    "options": ["Kính bảo hộ", "Tai nghe nhạc", "Găng len mùa đông", "Giày đi biển"],
+    "correctIndex": 0,
+    "explanation": "Kính bảo hộ giúp bảo vệ mắt khỏi hóa chất bắn vào hoặc mảnh vỡ thủy tinh. Trong thực hành hóa học, đây là một trong những dụng cụ an toàn rất quan trọng."
+  },
+  {
+    "id": 194,
+    "question": "Nếu vô tình làm đổ hóa chất lên tay trong phòng thí nghiệm, việc ưu tiên đầu tiên thường là gì?",
+    "options": ["Rửa ngay bằng nhiều nước", "Chờ hóa chất khô", "Lau bằng khăn khô trước", "Tiếp tục làm thí nghiệm"],
+    "correctIndex": 0,
+    "explanation": "Rửa ngay bằng nhiều nước giúp làm loãng và loại bớt hóa chất bám trên da, giảm nguy cơ tổn thương. Sau đó cần báo ngay cho giáo viên hoặc người phụ trách phòng thí nghiệm."
+  },
+  {
+    "id": 195,
+    "question": "Trong phòng thí nghiệm, không nên ngửi trực tiếp hóa chất mà nên làm gì?",
+    "options": ["Dùng tay phẩy nhẹ hơi về phía mũi", "Đưa mũi sát miệng ống nghiệm", "Lắc mạnh rồi ngửi", "Hít thật sâu ngay lập tức"],
+    "correctIndex": 0,
+    "explanation": "Cách ngửi an toàn là dùng tay phẩy nhẹ hơi chất về phía mũi để chỉ nhận biết mùi ở mức cần thiết. Ngửi trực tiếp có thể hít phải hơi độc hoặc hơi kích ứng mạnh."
+  },
+  {
+    "id": 196,
+    "question": "Khi đun ống nghiệm chứa chất lỏng, nên hướng miệng ống nghiệm về đâu?",
+    "options": ["Không hướng vào người", "Hướng vào mặt mình", "Hướng vào bạn bên cạnh", "Hướng vào bàn thí nghiệm"],
+    "correctIndex": 0,
+    "explanation": "Miệng ống nghiệm phải hướng về phía không có người để tránh nguy hiểm nếu chất lỏng sôi bắn ra. Đây là nguyên tắc an toàn rất cơ bản khi đun nóng ống nghiệm."
+  },
+  {
+    "id": 197,
+    "question": "Chất xúc tác có vai trò gì trong phản ứng hóa học?",
+    "options": ["Làm tăng tốc độ phản ứng mà không bị tiêu hao đáng kể sau phản ứng", "Làm phản ứng dừng hẳn", "Biến sản phẩm thành chất phản ứng", "Làm thay đổi định luật bảo toàn khối lượng"],
+    "correctIndex": 0,
+    "explanation": "Chất xúc tác giúp phản ứng xảy ra nhanh hơn bằng cách tạo con đường phản ứng thuận lợi hơn, nhưng bản thân nó không bị tiêu hao đáng kể sau phản ứng. Tuy nhiên xúc tác không làm thay đổi bản chất cân bằng số nguyên tử."
+  },
+  {
+    "id": 198,
+    "question": "Yếu tố nào thường làm tăng tốc độ hòa tan của chất rắn trong nước?",
+    "options": ["Khuấy và tăng nhiệt độ", "Để yên hoàn toàn trong lạnh", "Giảm diện tích tiếp xúc", "Loại bỏ dung môi"],
+    "correctIndex": 0,
+    "explanation": "Khuấy giúp chất tan tiếp xúc với dung môi tốt hơn, còn tăng nhiệt độ thường làm các phân tử chuyển động nhanh hơn nên hòa tan nhanh hơn. Nghiền nhỏ chất rắn cũng là cách làm tăng tốc độ hòa tan."
+  },
+  {
+    "id": 199,
+    "question": "Phản ứng tạo ra khí hiđro khi kim loại tác dụng với axit xảy ra khi kim loại đứng như thế nào so với hiđro trong dãy hoạt động hóa học?",
+    "options": ["Đứng trước hiđro", "Đứng sau hiđro", "Bằng hiđro", "Không phụ thuộc vị trí"],
+    "correctIndex": 0,
+    "explanation": "Kim loại đứng trước hiđro trong dãy hoạt động hóa học có thể đẩy hiđro ra khỏi dung dịch axit, tạo muối và khí H2. Các kim loại đứng sau hiđro thường không phản ứng theo kiểu đó với axit loãng thông thường."
+  },
+  {
+    "id": 200,
+    "question": "Vì sao cần cân bằng phương trình hóa học trước khi tính toán theo phương trình?",
+    "options": ["Vì hệ số cho biết đúng tỉ lệ mol giữa các chất", "Để phương trình nhìn đẹp hơn", "Để đổi tên chất", "Vì nếu không cân bằng thì phản ứng sẽ không xảy ra"],
+    "correctIndex": 0,
+    "explanation": "Cân bằng phương trình giúp số nguyên tử của mỗi nguyên tố ở hai vế bằng nhau, phù hợp với định luật bảo toàn khối lượng. Quan trọng hơn, hệ số sau cân bằng cho biết tỉ lệ mol chính xác giữa các chất, là cơ sở để giải bài toán hóa học."
+  }
 ]

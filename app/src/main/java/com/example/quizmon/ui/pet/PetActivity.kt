@@ -41,7 +41,7 @@ class PetActivity : AppCompatActivity() {
                     pref.savePetLevel(nextLevel)
                     petFarm = getFramesByLevel(nextLevel)
                     currentPet = 0
-                    updateCoinDisplay()
+                    updateHeaderStats()
                     Toast.makeText(this,
                         "Tăng cấp Thành công", Toast.LENGTH_SHORT).show()
                 }else{
@@ -89,14 +89,16 @@ class PetActivity : AppCompatActivity() {
         val level = pref.getPetLevel()
         petFarm = getFramesByLevel(level)
         currentPet = 0
-        updateCoinDisplay()
+        updateHeaderStats()
     }
-    //cập nhập số coin thành số màn hình
-    private fun updateCoinDisplay(){
-        val textcoin = findViewById<TextView>(R.id.textcoin)
+    
+    // Đồng bộ với ID mới từ layout_taskhead
+    private fun updateHeaderStats(){
         val preferenceManager = PreferenceManager(this)
-        textcoin.text = preferenceManager.getCoins().toString()
+        findViewById<TextView>(R.id.head_text_star)?.text = preferenceManager.getCoins().toString()
+        findViewById<TextView>(R.id.head_text_coin)?.text = preferenceManager.getXu().toString()
     }
+    
     private val FramesLevel1 = intArrayOf(R.drawable.dragon_c1_f1, R.drawable.dragon_c1_f2)
     private val FramesLevel2 = intArrayOf(R.drawable.dragon_c2_f1, R.drawable.dragon_c2_f2)
     private val FramesLevel3 = intArrayOf(R.drawable.dragon_pet_2, R.drawable.dragon_pet_1)

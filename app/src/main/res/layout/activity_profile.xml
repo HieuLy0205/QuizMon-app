@@ -4,6 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <!-- Header dùng chung -->
+    <include
+        android:id="@+id/taskhead"
+        layout="@layout/layout_taskhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -117,6 +124,10 @@
         </LinearLayout>
     </ScrollView>
 
-    <include layout="@layout/layout_taskbar" />
+    <include
+        android:id="@+id/taskbar"
+        layout="@layout/layout_taskbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp" />
 
 </LinearLayout>

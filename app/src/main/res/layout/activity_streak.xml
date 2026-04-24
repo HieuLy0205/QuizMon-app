@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#EDF1F4">
 
-    <!-- Header Section (Phần nền hồng phía trên) -->
+    <!-- Header Section (Phần nền màu) -->
     <View
         android:id="@+id/header_bg"
         android:layout_width="match_parent"
@@ -15,16 +15,15 @@
         android:background="#F8BBD0"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <!-- Thanh trạng thái phía trên (TaskHead) -->
+    <include
+        android:id="@+id/taskhead"
+        layout="@layout/layout_taskhead"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background"
-        android:alpha="0.3"
-        android:contentDescription="@null"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Nút Quay lại (Chỉ mũi tên đen, không nền) -->
+    <!-- Nút Quay lại -->
     <ImageView
         android:id="@+id/btnBack"
         android:layout_width="48dp"
@@ -39,89 +38,8 @@
         android:focusable="true"
         android:contentDescription="@string/btn_back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskhead"
         app:tint="#000000" />
-
-    <!-- Top Bar Stats (Đã chuyển về bên phải) -->
-    <LinearLayout
-        android:id="@+id/topBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="12dp"
-        android:gravity="center_vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
-
-        <!-- Nhóm Sao -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="34dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/bg_stats_bar"
-            android:gravity="center_vertical"
-            android:paddingHorizontal="8dp">
-            <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:src="@drawable/sao_shop_map" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="@string/default_star_count"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Nhóm Xu -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="34dp"
-            android:layout_marginEnd="8dp"
-            android:background="@drawable/bg_stats_bar"
-            android:gravity="center_vertical"
-            android:paddingHorizontal="8dp">
-            <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:src="@drawable/su_shop_map" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="@string/default_coin_count"
-                android:textStyle="bold" />
-            <ImageView
-                android:layout_width="14dp"
-                android:layout_height="14dp"
-                android:src="@android:drawable/ic_input_add"
-                app:tint="#4CAF50" />
-        </LinearLayout>
-
-        <!-- Nhóm Thời gian -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="34dp"
-            android:background="@drawable/bg_stats_bar"
-            android:gravity="center_vertical"
-            android:paddingHorizontal="8dp">
-            <ImageView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:src="@drawable/tim3_shop_map" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:text="@string/default_time"
-                android:textStyle="bold" />
-            <ImageView
-                android:layout_width="14dp"
-                android:layout_height="14dp"
-                android:src="@android:drawable/ic_input_add"
-                app:tint="#4CAF50" />
-        </LinearLayout>
-    </LinearLayout>
 
     <!-- Avatar Section -->
     <com.google.android.material.imageview.ShapeableImageView
@@ -152,18 +70,7 @@
         app:layout_constraintTop_toBottomOf="@id/header_bg"
         app:layout_constraintStart_toEndOf="@id/ivAvatar" />
 
-    <ImageView
-        android:id="@+id/btnEdit"
-        android:layout_width="32dp"
-        android:layout_height="32dp"
-        android:layout_marginEnd="20dp"
-        android:src="@android:drawable/ic_menu_edit"
-        android:padding="6dp"
-        android:background="@drawable/bg_stats_bar"
-        app:layout_constraintBottom_toBottomOf="@id/ivAvatar"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <!-- Tabs Layout (Thành tích, Thống kê, Mua hàng) -->
+    <!-- Tabs Layout (Chỉ còn Thành tích và Thống kê) -->
     <LinearLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
@@ -174,35 +81,65 @@
         app:layout_constraintTop_toBottomOf="@id/tvName">
 
         <LinearLayout
+            android:id="@+id/tabThanhTich"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:orientation="vertical">
-            <ImageView android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/hoso_taskbar" />
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thành tích" android:textSize="12sp" android:textStyle="bold" />
-            <View android:layout_width="80dp" android:layout_height="3dp" android:background="#333333" android:layout_marginTop="4dp" />
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+            <ImageView
+                android:id="@+id/ivTabThanhTich"
+                android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/hoso_taskbar" />
+            <TextView
+                android:id="@+id/tvTabThanhTich"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thành tích" android:textSize="12sp" android:textStyle="bold" />
+            <View
+                android:id="@+id/indicatorThanhTich"
+                android:layout_width="80dp" android:layout_height="3dp" android:background="#333333" android:layout_marginTop="4dp" />
         </LinearLayout>
 
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
-            <ImageView android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/lichsu_taskbar" android:alpha="0.4" />
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thống kê" android:textSize="12sp" android:textColor="#999999" />
-        </LinearLayout>
-
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
-            <ImageView android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/shop_taskbar" android:alpha="0.4" />
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mua hàng" android:textSize="12sp" android:textColor="#999999" />
+        <LinearLayout
+            android:id="@+id/tabThongKe"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
+            <ImageView
+                android:id="@+id/ivTabThongKe"
+                android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/lichsu_taskbar" android:alpha="0.4" />
+            <TextView
+                android:id="@+id/tvTabThongKe"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thống kê" android:textSize="12sp" android:textColor="#999999" />
+            <View
+                android:id="@+id/indicatorThongKe"
+                android:layout_width="80dp" android:layout_height="3dp" android:background="#333333" android:layout_marginTop="4dp" android:visibility="invisible" />
         </LinearLayout>
     </LinearLayout>
 
+    <!-- Container cho Fragment Thống kê -->
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:layout_constraintBottom_toTopOf="@id/taskbar" />
+
     <!-- Scrollable Content (Danh sách Thành tích) -->
     <ScrollView
-        android:id="@+id/content_scroll"
+        android:id="@+id/layoutThanhTich"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
         app:layout_constraintTop_toBottomOf="@id/tabLayout"
-        app:layout_constraintBottom_toTopOf="@id/bottom_taskbar">
+        app:layout_constraintBottom_toTopOf="@id/taskbar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -227,10 +164,10 @@
                     android:layout_weight="1" android:layout_marginStart="16dp" android:orientation="vertical">
                     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chiến binh" android:textStyle="bold" android:textColor="#455A64" android:textSize="15sp" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="0%" android:textStyle="bold" android:textColor="#455A64" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="14%" android:textStyle="bold" android:textColor="#455A64" />
                     </RelativeLayout>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thắng 100 trận đấu" android:textSize="12sp" android:textColor="#78909C" />
-                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="14" android:progressTint="#008BC34A" />
+                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="14" android:progressTint="#8BC34A" />
                 </LinearLayout>
             </LinearLayout>
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
@@ -244,7 +181,7 @@
                 android:paddingVertical="12dp">
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="60dp" android:layout_height="60dp"
-                    android:src="@drawable/dragon_c2_f1"
+                    android:src="@drawable/dragon_pet_2"
                     android:padding="4dp" app:shapeAppearanceOverlay="@style/CircleImage"
                     android:background="#F0F0F0" />
                 <LinearLayout
@@ -252,10 +189,10 @@
                     android:layout_weight="1" android:layout_marginStart="16dp" android:orientation="vertical">
                     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Người hâm mộ" android:textStyle="bold" android:textColor="#455A64" android:textSize="15sp" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="0%" android:textStyle="bold" android:textColor="#455A64" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="40%" android:textStyle="bold" android:textColor="#455A64" />
                     </RelativeLayout>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đăng nhập 7 ngày liên tiếp" android:textSize="12sp" android:textColor="#78909C" />
-                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="5" android:progressTint="#008BC34A" />
+                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="40" android:progressTint="#FFC107" />
                 </LinearLayout>
             </LinearLayout>
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
@@ -269,7 +206,7 @@
                 android:paddingVertical="12dp">
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="60dp" android:layout_height="60dp"
-                    android:src="@drawable/dragon_c2_f1"
+                    android:src="@drawable/dragon_pet_4"
                     android:padding="4dp" app:shapeAppearanceOverlay="@style/CircleImage"
                     android:background="#F0F0F0" />
                 <LinearLayout
@@ -277,10 +214,10 @@
                     android:layout_weight="1" android:layout_marginStart="16dp" android:orientation="vertical">
                     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thợ săn" android:textStyle="bold" android:textColor="#455A64" android:textSize="15sp" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="0%" android:textStyle="bold" android:textColor="#455A64" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="20%" android:textStyle="bold" android:textColor="#455A64" />
                     </RelativeLayout>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thu thập 50 loại thú cưng" android:textSize="12sp" android:textColor="#78909C" />
-                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="2" android:progressTint="#008BC34A" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thu thập 10 loại thú cưng" android:textSize="12sp" android:textColor="#78909C" />
+                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="20" android:progressTint="#2196F3" />
                 </LinearLayout>
             </LinearLayout>
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
@@ -294,7 +231,7 @@
                 android:paddingVertical="12dp">
                 <com.google.android.material.imageview.ShapeableImageView
                     android:layout_width="60dp" android:layout_height="60dp"
-                    android:src="@drawable/dragon_c2_f1"
+                    android:src="@drawable/dragon_pet_6"
                     android:padding="4dp" app:shapeAppearanceOverlay="@style/CircleImage"
                     android:background="#F0F0F0" />
                 <LinearLayout
@@ -302,51 +239,47 @@
                     android:layout_weight="1" android:layout_marginStart="16dp" android:orientation="vertical">
                     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đam mê" android:textStyle="bold" android:textColor="#455A64" android:textSize="15sp" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="0%" android:textStyle="bold" android:textColor="#455A64" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="65%" android:textStyle="bold" android:textColor="#455A64" />
                     </RelativeLayout>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chơi hơn 1000 câu hỏi" android:textSize="12sp" android:textColor="#78909C" />
-                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="1" android:progressTint="#008BC34A" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trả lời 500 câu hỏi" android:textSize="12sp" android:textColor="#78909C" />
+                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="65" android:progressTint="#E91E63" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
+
+            <!-- Item 5: Bậc thầy -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingVertical="12dp">
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="60dp" android:layout_height="60dp"
+                    android:src="@drawable/dragon_pet_8"
+                    android:padding="4dp" app:shapeAppearanceOverlay="@style/CircleImage"
+                    android:background="#F0F0F0" />
+                <LinearLayout
+                    android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:layout_marginStart="16dp" android:orientation="vertical">
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bậc thầy" android:textStyle="bold" android:textColor="#455A64" android:textSize="15sp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="5%" android:textStyle="bold" android:textColor="#455A64" />
+                    </RelativeLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hoàn thành 20 ải khó" android:textSize="12sp" android:textColor="#78909C" />
+                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="5" android:progressTint="#9C27B0" />
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
 
-    <!-- Taskbar (Cố định ở dưới cùng) -->
-    <LinearLayout
-        android:id="@+id/bottom_taskbar"
+    <!-- Taskbar (Thanh điều hướng dưới) -->
+    <include
+        android:id="@+id/taskbar"
+        layout="@layout/layout_taskbar"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:background="#FFFFFF"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:elevation="8dp"
-        app:layout_constraintBottom_toBottomOf="parent">
-
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
-            <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/hoso_taskbar" />
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hồ sơ" android:textSize="11sp" android:textStyle="bold" />
-        </LinearLayout>
-
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
-            <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/lichsu_taskbar" android:alpha="0.5" />
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lịch sử" android:textSize="11sp" android:textColor="#999999" />
-        </LinearLayout>
-
-        <FrameLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1.2">
-            <View android:layout_width="55dp" android:layout_height="55dp" android:layout_gravity="center" android:background="@drawable/bg_stats_bar" />
-            <ImageView android:layout_width="32dp" android:layout_height="32dp" android:layout_gravity="center" android:src="@drawable/home_taskbar" />
-        </FrameLayout>
-
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
-            <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/shop_taskbar" android:alpha="0.5" />
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cửa hàng" android:textSize="11sp" android:textColor="#999999" />
-        </LinearLayout>
-
-        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:orientation="vertical">
-            <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@android:drawable/ic_menu_sort_by_size" android:alpha="0.5" />
-            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Menu" android:textSize="11sp" android:textColor="#999999" />
-        </LinearLayout>
-    </LinearLayout>
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
