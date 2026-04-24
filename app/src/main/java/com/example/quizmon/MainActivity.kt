@@ -112,8 +112,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
 
         // Cập nhật đúng ID mới từ layout_taskhead
-        findViewById<TextView>(R.id.head_text_coin)?.text = preferenceManager.getCoins().toString()
-        findViewById<TextView>(R.id.tvStreakCount)?.text = streakManager.getCurrentStreak().toString()
+        val textCoin = findViewById<TextView>(R.id.head_text_coin)
+        textCoin.text = preferenceManager.getCoins().toString()
+        val textXu = findViewById<TextView>(R.id.head_text_xu)
+        textXu.text = preferenceManager.getXu().toString()
+
     }
 
     private fun setupTaskbar() {

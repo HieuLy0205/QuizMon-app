@@ -90,8 +90,10 @@ class activity_shop : AppCompatActivity() {
     private fun updateHeaderStats() {
         val preferenceManager = PreferenceManager(this)
         // Cập nhật đúng ID mới từ layout_taskhead
-        findViewById<TextView>(R.id.head_text_star)?.text = preferenceManager.getCoins().toString()
-        findViewById<TextView>(R.id.head_text_coin)?.text = preferenceManager.getXu().toString()
+        val textCoin = findViewById<TextView>(R.id.head_text_coin)
+        textCoin.text = preferenceManager.getCoins().toString()
+        val textXu = findViewById<TextView>(R.id.head_text_xu)
+        textXu.text = preferenceManager.getXu().toString()
     }
 
 }

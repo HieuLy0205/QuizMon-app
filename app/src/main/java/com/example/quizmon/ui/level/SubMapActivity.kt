@@ -21,7 +21,7 @@ class SubMapActivity : AppCompatActivity() {
     private lateinit var rvSubMap: RecyclerView
     private lateinit var adapter: SubMapAdapter
     private lateinit var pbStarProgress: ProgressBar
-    private lateinit var tvTotalStars: TextView
+    private lateinit var tvTotalXu: TextView
     private lateinit var tvTotalCoins: TextView
     private lateinit var starIcons: List<ImageView>
 
@@ -44,7 +44,7 @@ class SubMapActivity : AppCompatActivity() {
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
         btnBack.setOnClickListener { finish() }
 
-        tvTotalStars = findViewById(R.id.head_text_star)
+        tvTotalXu = findViewById(R.id.head_text_xu)
         tvTotalCoins = findViewById(R.id.head_text_coin)
         
         pbStarProgress = findViewById(R.id.pbStarProgress)
@@ -96,7 +96,7 @@ class SubMapActivity : AppCompatActivity() {
         
         // Cập nhật Xu (Coins) và Sao (Stars) vào Header
         tvTotalCoins.text = mainPrefs.getInt("current_coins", 0).toString()
-        tvTotalStars.text = currentScore.toString()
+        tvTotalXu.text = currentScore.toString()
 
         val progress = currentScore.coerceIn(0, 100)
         pbStarProgress.progress = progress

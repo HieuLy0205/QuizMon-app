@@ -7,12 +7,15 @@
     <!-- Thanh trạng thái phía trên (Căn giữa toàn bộ nhóm) -->
     <LinearLayout
         android:id="@+id/topBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="398dp"
+        android:layout_height="95dp"
+        android:background="@drawable/background_taskhead"
+        android:gravity="center"
         android:orientation="horizontal"
         android:paddingVertical="14dp"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
 
         <!-- Ngôi sao / Điểm -->
         <LinearLayout
@@ -20,24 +23,34 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/bg_stats_bar"
-            android:paddingStart="8dp"
-            android:paddingEnd="10dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
             android:paddingTop="5dp"
+            android:paddingEnd="12dp"
             android:paddingBottom="5dp"
-            android:gravity="center_vertical">
+            android:backgroundTint="@color/node_locked_start">
+
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:src="@drawable/sao_shop_map"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:src="@drawable/sao_shop_map" />
+
             <TextView
-                android:id="@+id/head_text_star"
+                android:id="@+id/head_text_coin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:text="0"
-                android:textStyle="bold"
-                android:textColor="#F57C00" />
+                android:textColor="#100F0E"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="1dp"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@color/home_green"
+                android:contentDescription="@null" />
         </LinearLayout>
 
         <!-- Xu / Tiền -->
@@ -46,24 +59,34 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/bg_stats_bar"
-            android:paddingStart="8dp"
-            android:paddingEnd="10dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
             android:paddingTop="5dp"
+            android:paddingEnd="12dp"
             android:paddingBottom="5dp"
-            android:gravity="center_vertical">
+            android:backgroundTint="@color/node_locked_start">
+
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:src="@drawable/su_shop_map"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:src="@drawable/su_shop_map" />
+
             <TextView
-                android:id="@+id/head_text_coin"
+                android:id="@+id/head_text_xu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:text="0"
-                android:textStyle="bold"
-                android:textColor="#FBC02D" />
+                android:textColor="#100F0E"
+                android:textStyle="bold" />
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="1dp"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@color/home_green"
+                android:contentDescription="@null" />
         </LinearLayout>
 
         <!-- Kinh nghiệm (Exp) -->
@@ -72,23 +95,26 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/bg_stats_bar"
-            android:paddingStart="8dp"
-            android:paddingEnd="10dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
             android:paddingTop="5dp"
+            android:paddingEnd="12dp"
             android:paddingBottom="5dp"
-            android:gravity="center_vertical">
+            android:backgroundTint="@color/node_locked_start">
+
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:src="@drawable/diem_shop_map"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:src="@drawable/diem_shop_map" />
+
             <TextView
                 android:id="@+id/head_text_exp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:text="0"
-                android:textColor="#E91E63"
+                android:textColor="#070607"
                 android:textStyle="bold" />
         </LinearLayout>
 
@@ -98,16 +124,19 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/bg_stats_bar"
-            android:paddingStart="8dp"
-            android:paddingEnd="10dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
             android:paddingTop="5dp"
+            android:paddingEnd="12dp"
             android:paddingBottom="5dp"
-            android:gravity="center_vertical">
+            android:backgroundTint="@color/node_locked_start">
+
             <ImageView
                 android:layout_width="22dp"
                 android:layout_height="22dp"
-                android:src="@drawable/tim3_shop_map"
-                android:contentDescription="@null" />
+                android:contentDescription="@null"
+                android:src="@drawable/tim3_shop_map" />
+
             <TextView
                 android:id="@+id/head_text_heart"
                 android:layout_width="wrap_content"

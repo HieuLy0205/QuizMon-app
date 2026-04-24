@@ -95,9 +95,9 @@ class PetActivity : AppCompatActivity() {
     // Đồng bộ với ID mới từ layout_taskhead
     private fun updateHeaderStats(){
         val preferenceManager = PreferenceManager(this)
-        findViewById<TextView>(R.id.head_text_star)?.text = preferenceManager.getCoins().toString()
-        findViewById<TextView>(R.id.head_text_coin)?.text = preferenceManager.getXu().toString()
-    }
+        val textcoin = findViewById<TextView>(R.id.textcoin)
+        textcoin.text=preferenceManager.getCoins().toString()
+      }
     
     private val FramesLevel1 = intArrayOf(R.drawable.dragon_c1_f1, R.drawable.dragon_c1_f2)
     private val FramesLevel2 = intArrayOf(R.drawable.dragon_c2_f1, R.drawable.dragon_c2_f2)

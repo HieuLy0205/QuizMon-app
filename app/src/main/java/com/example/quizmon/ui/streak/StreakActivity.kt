@@ -109,8 +109,10 @@ class StreakActivity : AppCompatActivity() {
 
     private fun updateHeaderStats() {
         val pref = PreferenceManager(this)
-        findViewById<TextView>(R.id.head_text_star)?.text = pref.getCoins().toString()
-        findViewById<TextView>(R.id.head_text_coin)?.text = pref.getXu().toString()
+        val textCoin = findViewById<TextView>(R.id.head_text_coin)
+        textCoin.text = pref.getCoins().toString()
+        val textXu = findViewById<TextView>(R.id.head_text_xu)
+        textXu.text = pref.getXu().toString()
     }
 
     override fun onResume() {
