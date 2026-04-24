@@ -38,7 +38,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="10dp"
-            android:src="@drawable/icon_ruong_mang" />
+            android:src="@drawable/icon_ruong_mau" />
 
         <ImageView
             android:id="@+id/chest3"
