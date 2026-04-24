@@ -4,14 +4,18 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import com.example.quizmon.R
+import com.example.quizmon.data.model.OverallStatistics
 import com.example.quizmon.data.repository.StatisticsRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.text.SimpleDateFormat
+import java.util.*
 
 class StatisticsFragment : Fragment() {
 
@@ -32,11 +36,23 @@ class StatisticsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         repository = StatisticsRepository(requireContext())
 
         initViews(view)
         loadStatistics()
+
+        // 1. Xử lý nút mũi tên (btnBack) để quay về màn hình chính
+        view.findViewById<View>(R.id.btnBack)?.setOnClickListener {
+            activity?.finish()
+        }
+
+        // 2. Xử lý Tab "Thành tích" (Vị trí 0) để quay lại màn hình StreakActivity
+        val tabLayout = view.findViewById<LinearLayout>(R.id.tabLayout)
+        val tabThanhTich = tabLayout?.getChildAt(0)
+
+        tabThanhTich?.setOnClickListener {
+            activity?.finish()
+        }
     }
 
     private fun initViews(view: View) {
@@ -56,17 +72,16 @@ class StatisticsFragment : Fragment() {
         }
     }
 
-    private fun updateUI(overall: com.example.quizmon.data.model.OverallStatistics) {
-        // Cập nhật dữ liệu từ repository vào giao diện mới
-        tvLevelsValue.text = "${overall.totalCorrect / 5}" // Giả định logic tính level
-        tvQuestionsValue.text = "${overall.totalQuestions}"
-        
-        val rate = if (overall.totalQuestions > 0) {
-            (overall.totalCorrect * 100) / overall.totalQuestions
-        } else 0
-        tvRateValue.text = "$rate%"
-        
-        tvSinceValue.text = "Tháng 4 2024"
+    private fun updateUI(overall: OverallStatistics) {
+        tvLevelsValue.text = overall.levelsCompleted.toString()
+
+        val dateFormat = SimpleDateFormat("MMMM, yyyy", Locale("vi", "VN"))
+        val joinDate = overall.startDate ?: Date()
+        tvSinceValue.text = dateFormat.format(joinDate)
+
+        tvQuestionsValue.text = overall.totalQuestions.toString()
+        tvRateValue.text = "${overall.overallAccuracy}%"
+        tvName.text = "Người chơi QuizMon"
     }
 
     companion object {

@@ -1,1 +1,842 @@
-[]
+[
+  {
+    "id": 1,
+    "question": "She ___ to school every day.",
+    "options": ["go", "goes", "going", "gone"],
+    "correctIndex": 1,
+    "explanation": "He/She/It trong thì hiện tại đơn thêm -s hoặc -es → goes."
+  },
+  {
+    "id": 2,
+    "question": "I ___ a student.",
+    "options": ["is", "am", "are", "be"],
+    "correctIndex": 1,
+    "explanation": "Chủ ngữ I đi với 'am'."
+  },
+  {
+    "id": 3,
+    "question": "They ___ football yesterday.",
+    "options": ["play", "plays", "played", "playing"],
+    "correctIndex": 2,
+    "explanation": "Yesterday → quá khứ đơn → played."
+  },
+  {
+    "id": 4,
+    "question": "He ___ TV now.",
+    "options": ["watch", "watches", "is watching", "watched"],
+    "correctIndex": 2,
+    "explanation": "Now → hiện tại tiếp diễn → is watching."
+  },
+  {
+    "id": 5,
+    "question": "Plural of 'child' is ___",
+    "options": ["childs", "childes", "children", "child"],
+    "correctIndex": 2,
+    "explanation": "Child → children (dạng bất quy tắc)."
+  },
+  {
+    "id": 6,
+    "question": "She ___ English well.",
+    "options": ["speak", "speaks", "speaking", "spoke"],
+    "correctIndex": 1,
+    "explanation": "He/She/It → thêm -s → speaks."
+  },
+  {
+    "id": 7,
+    "question": "We ___ at home yesterday.",
+    "options": ["are", "is", "were", "was"],
+    "correctIndex": 2,
+    "explanation": "We + quá khứ của to be → were."
+  },
+  {
+    "id": 8,
+    "question": "I have ___ apple.",
+    "options": ["a", "an", "the", "no article"],
+    "correctIndex": 1,
+    "explanation": "Apple bắt đầu bằng nguyên âm → an."
+  },
+  {
+    "id": 9,
+    "question": "He can ___ swim.",
+    "options": ["to", "-", "is", "are"],
+    "correctIndex": 1,
+    "explanation": "Modal verb (can) + động từ nguyên thể."
+  },
+  {
+    "id": 10,
+    "question": "What is past of go?",
+    "options": ["goed", "went", "gone", "going"],
+    "correctIndex": 1,
+    "explanation": "Go → went (bất quy tắc)."
+  },
+  {
+    "id": 11,
+    "question": "She ___ a book now.",
+    "options": ["read", "reads", "is reading", "readed"],
+    "correctIndex": 2,
+    "explanation": "Now → hiện tại tiếp diễn."
+  },
+  {
+    "id": 12,
+    "question": "They ___ students.",
+    "options": ["is", "are", "am", "be"],
+    "correctIndex": 1,
+    "explanation": "They là số nhiều → are."
+  },
+  {
+    "id": 13,
+    "question": "Opposite of big is ___",
+    "options": ["large", "huge", "small", "wide"],
+    "correctIndex": 2,
+    "explanation": "Big ≠ small."
+  },
+  {
+    "id": 14,
+    "question": "He ___ in Hanoi.",
+    "options": ["live", "lives", "living", "lived"],
+    "correctIndex": 1,
+    "explanation": "He + V-s → lives."
+  },
+  {
+    "id": 15,
+    "question": "Synonym of happy is ___",
+    "options": ["sad", "angry", "joyful", "tired"],
+    "correctIndex": 2,
+    "explanation": "Joyful = happy."
+  },
+  {
+    "id": 16,
+    "question": "She ___ TV every night.",
+    "options": ["watch", "watches", "watching", "watched"],
+    "correctIndex": 1,
+    "explanation": "Every night → hiện tại đơn."
+  },
+  {
+    "id": 17,
+    "question": "We ___ football yesterday.",
+    "options": ["play", "plays", "played", "playing"],
+    "correctIndex": 2,
+    "explanation": "Yesterday → quá khứ đơn."
+  },
+  {
+    "id": 18,
+    "question": "He ___ a car.",
+    "options": ["have", "has", "had", "having"],
+    "correctIndex": 1,
+    "explanation": "He + has."
+  },
+  {
+    "id": 19,
+    "question": "Cold opposite is ___",
+    "options": ["hot", "warm", "cool", "ice"],
+    "correctIndex": 0,
+    "explanation": "Cold ≠ hot."
+  },
+  {
+    "id": 20,
+    "question": "Fast synonym is ___",
+    "options": ["quick", "slow", "late", "low"],
+    "correctIndex": 0,
+    "explanation": "Fast = quick."
+  },
+    {
+      "id": 21,
+      "question": "She is good ___ math.",
+      "options": ["in", "on", "at", "with"],
+      "correctIndex": 2,
+      "explanation": "We say 'good at' for skills."
+    },
+    {
+      "id": 22,
+      "question": "The book is ___ the table.",
+      "options": ["in", "on", "at", "by"],
+      "correctIndex": 1,
+      "explanation": "We use 'on' for surface."
+    },
+    {
+      "id": 23,
+      "question": "He is interested ___ music.",
+      "options": ["in", "on", "at", "for"],
+      "correctIndex": 0,
+      "explanation": "The correct structure is 'interested in'."
+    },
+    {
+      "id": 24,
+      "question": "I go ___ school every day.",
+      "options": ["to", "in", "on", "at"],
+      "correctIndex": 0,
+      "explanation": "We say 'go to school'."
+    },
+    {
+      "id": 25,
+      "question": "They live ___ Vietnam.",
+      "options": ["in", "on", "at", "by"],
+      "correctIndex": 0,
+      "explanation": "We use 'in' for countries."
+    },
+    {
+      "id": 26,
+      "question": "What is the opposite of 'hot'?",
+      "options": ["cold", "warm", "cool", "dry"],
+      "correctIndex": 0,
+      "explanation": "Hot opposite is cold."
+    },
+    {
+      "id": 27,
+      "question": "He ___ English very well.",
+      "options": ["speak", "speaks", "speaking", "spoke"],
+      "correctIndex": 1,
+      "explanation": "He/She/It → verb + s."
+    },
+    {
+      "id": 28,
+      "question": "We ___ football yesterday.",
+      "options": ["play", "plays", "played", "playing"],
+      "correctIndex": 2,
+      "explanation": "Yesterday → past simple."
+    },
+    {
+      "id": 29,
+      "question": "She ___ a new dress now.",
+      "options": ["wear", "wears", "is wearing", "wore"],
+      "correctIndex": 2,
+      "explanation": "Now → present continuous."
+    },
+    {
+      "id": 30,
+      "question": "What is synonym of 'fast'?",
+      "options": ["slow", "quick", "late", "low"],
+      "correctIndex": 1,
+      "explanation": "Fast = quick."
+    },
+    {
+      "id": 31,
+      "question": "He ___ to school every day.",
+      "options": ["go", "goes", "going", "gone"],
+      "correctIndex": 1,
+      "explanation": "He/She/It → goes."
+    },
+    {
+      "id": 32,
+      "question": "I ___ TV last night.",
+      "options": ["watch", "watched", "watching", "watches"],
+      "correctIndex": 1,
+      "explanation": "Last night → past tense."
+    },
+    {
+      "id": 33,
+      "question": "They ___ students.",
+      "options": ["is", "are", "am", "be"],
+      "correctIndex": 1,
+      "explanation": "Plural subject → are."
+    },
+    {
+      "id": 34,
+      "question": "She ___ a letter now.",
+      "options": ["write", "writes", "is writing", "wrote"],
+      "correctIndex": 2,
+      "explanation": "Now → present continuous."
+    },
+    {
+      "id": 35,
+      "question": "What is plural of 'man'?",
+      "options": ["mans", "mens", "men", "man"],
+      "correctIndex": 2,
+      "explanation": "Man → men is irregular plural."
+    },
+    {
+      "id": 36,
+      "question": "He is good ___ English.",
+      "options": ["in", "on", "at", "with"],
+      "correctIndex": 2,
+      "explanation": "Good at something."
+    },
+    {
+      "id": 37,
+      "question": "We ___ at school yesterday.",
+      "options": ["are", "was", "were", "is"],
+      "correctIndex": 2,
+      "explanation": "We + were in past."
+    },
+    {
+      "id": 38,
+      "question": "She ___ music every day.",
+      "options": ["listen", "listens", "listening", "listened"],
+      "correctIndex": 1,
+      "explanation": "He/She/It → listens."
+    },
+    {
+      "id": 39,
+      "question": "What is opposite of 'big'?",
+      "options": ["large", "huge", "small", "wide"],
+      "correctIndex": 2,
+      "explanation": "Big opposite is small."
+    },
+    {
+      "id": 40,
+      "question": "He can ___ swim.",
+      "options": ["to", "-", "is", "are"],
+      "correctIndex": 1,
+      "explanation": "Modal verb + base verb."
+    },
+    {
+      "id": 41,
+      "question": "What is the past tense of 'eat'?",
+      "options": ["eated", "ate", "eaten", "eats"],
+      "correctIndex": 1,
+      "explanation": "The correct past form of 'eat' is 'ate'."
+    },
+    {
+      "id": 42,
+      "question": "She ___ to music every day.",
+      "options": ["listen", "listens", "listening", "listened"],
+      "correctIndex": 1,
+      "explanation": "He/She/It takes verb + s in present simple."
+    },
+    {
+      "id": 43,
+      "question": "We ___ to school by bus.",
+      "options": ["go", "goes", "going", "gone"],
+      "correctIndex": 0,
+      "explanation": "We uses base verb in present simple."
+    },
+    {
+      "id": 44,
+      "question": "They ___ a movie last night.",
+      "options": ["watch", "watched", "watching", "watches"],
+      "correctIndex": 1,
+      "explanation": "Last night indicates past tense."
+    },
+    {
+      "id": 45,
+      "question": "He ___ a new car.",
+      "options": ["have", "has", "had", "having"],
+      "correctIndex": 1,
+      "explanation": "He/She/It uses 'has'."
+    },
+    {
+      "id": 46,
+      "question": "What is the opposite of 'cold'?",
+      "options": ["hot", "cool", "warm", "ice"],
+      "correctIndex": 0,
+      "explanation": "Cold opposite is hot."
+    },
+    {
+      "id": 47,
+      "question": "She is ___ than her sister.",
+      "options": ["tall", "taller", "tallest", "more tall"],
+      "correctIndex": 1,
+      "explanation": "Comparative form uses -er."
+    },
+    {
+      "id": 48,
+      "question": "I ___ my homework now.",
+      "options": ["do", "does", "am doing", "did"],
+      "correctIndex": 2,
+      "explanation": "Now indicates present continuous."
+    },
+    {
+      "id": 49,
+      "question": "They ___ in Hanoi.",
+      "options": ["live", "lives", "living", "lived"],
+      "correctIndex": 0,
+      "explanation": "Plural subject uses base verb."
+    },
+    {
+      "id": 50,
+      "question": "She ___ a letter yesterday.",
+      "options": ["write", "writes", "wrote", "writing"],
+      "correctIndex": 2,
+      "explanation": "Past form of write is wrote."
+    },
+    {
+      "id": 51,
+      "question": "What is the synonym of 'happy'?",
+      "options": ["sad", "angry", "joyful", "tired"],
+      "correctIndex": 2,
+      "explanation": "Joyful means happy."
+    },
+    {
+      "id": 52,
+      "question": "He ___ football every Sunday.",
+      "options": ["play", "plays", "played", "playing"],
+      "correctIndex": 1,
+      "explanation": "He/She/It + plays."
+    },
+    {
+      "id": 53,
+      "question": "We ___ in the park yesterday.",
+      "options": ["are", "was", "were", "is"],
+      "correctIndex": 2,
+      "explanation": "We + were in past tense."
+    },
+    {
+      "id": 54,
+      "question": "She ___ TV now.",
+      "options": ["watch", "watches", "is watching", "watched"],
+      "correctIndex": 2,
+      "explanation": "Now → present continuous."
+    },
+    {
+      "id": 55,
+      "question": "What is plural of 'man'?",
+      "options": ["mans", "mens", "men", "man"],
+      "correctIndex": 2,
+      "explanation": "Man → men is irregular plural."
+    },
+    {
+      "id": 56,
+      "question": "I ___ coffee every morning.",
+      "options": ["drink", "drinks", "drank", "drinking"],
+      "correctIndex": 0,
+      "explanation": "Present simple uses base verb."
+    },
+    {
+      "id": 57,
+      "question": "She ___ a book now.",
+      "options": ["read", "reads", "is reading", "readed"],
+      "correctIndex": 2,
+      "explanation": "Now → present continuous."
+    },
+    {
+      "id": 58,
+      "question": "They ___ students.",
+      "options": ["is", "are", "am", "be"],
+      "correctIndex": 1,
+      "explanation": "They is plural → are."
+    },
+    {
+      "id": 59,
+      "question": "He ___ in London.",
+      "options": ["live", "lives", "living", "lived"],
+      "correctIndex": 1,
+      "explanation": "He/She/It adds -s."
+    },
+    {
+      "id": 60,
+      "question": "What is the opposite of 'big'?",
+      "options": ["large", "huge", "small", "wide"],
+      "correctIndex": 2,
+      "explanation": "Big opposite is small."
+    },
+    {
+      "id": 61,
+      "question": "She ___ already finished her homework.",
+      "options": ["has", "have", "had", "having"],
+      "correctIndex": 0,
+      "explanation": "She/He/It uses 'has' in present perfect."
+    },
+    {
+      "id": 62,
+      "question": "They ___ in this city for 10 years.",
+      "options": ["live", "lives", "have lived", "lived"],
+      "correctIndex": 2,
+      "explanation": "For + time period → present perfect."
+    },
+    {
+      "id": 63,
+      "question": "He ___ when I arrived.",
+      "options": ["sleep", "sleeps", "was sleeping", "slept"],
+      "correctIndex": 2,
+      "explanation": "Past continuous for ongoing action."
+    },
+    {
+      "id": 64,
+      "question": "If it ___ tomorrow, I will stay home.",
+      "options": ["rain", "rains", "rained", "raining"],
+      "correctIndex": 1,
+      "explanation": "First conditional uses present simple after 'if'."
+    },
+    {
+      "id": 65,
+      "question": "I wish I ___ rich.",
+      "options": ["am", "was", "were", "be"],
+      "correctIndex": 2,
+      "explanation": "Wish → unreal present uses 'were'."
+    },
+    {
+      "id": 66,
+      "question": "She is the ___ student in class.",
+      "options": ["good", "better", "best", "well"],
+      "correctIndex": 2,
+      "explanation": "Superlative form uses 'best'."
+    },
+    {
+      "id": 67,
+      "question": "We ___ dinner when he came.",
+      "options": ["eat", "ate", "were eating", "eaten"],
+      "correctIndex": 2,
+      "explanation": "Past continuous for interrupted action."
+    },
+    {
+      "id": 68,
+      "question": "He ___ to Paris twice.",
+      "options": ["go", "goes", "has been", "went"],
+      "correctIndex": 2,
+      "explanation": "Experience → present perfect."
+    },
+    {
+      "id": 69,
+      "question": "They ___ TV at 8 pm yesterday.",
+      "options": ["watch", "watched", "were watching", "are watching"],
+      "correctIndex": 2,
+      "explanation": "Specific past time → past continuous."
+    },
+    {
+      "id": 70,
+      "question": "She ___ her keys, so she can't enter.",
+      "options": ["lose", "lost", "has lost", "losing"],
+      "correctIndex": 2,
+      "explanation": "Result in present → present perfect."
+    },
+    {
+      "id": 71,
+      "question": "He is interested ___ science.",
+      "options": ["in", "on", "at", "for"],
+      "correctIndex": 0,
+      "explanation": "Interested in something."
+    },
+    {
+      "id": 72,
+      "question": "We have lived here ___ 2020.",
+      "options": ["since", "for", "from", "by"],
+      "correctIndex": 0,
+      "explanation": "Since + point in time."
+    },
+    {
+      "id": 73,
+      "question": "They ___ already left.",
+      "options": ["has", "have", "had", "having"],
+      "correctIndex": 1,
+      "explanation": "They uses 'have'."
+    },
+    {
+      "id": 74,
+      "question": "I ___ my homework yet.",
+      "options": ["didn't finish", "haven't finished", "don't finish", "not finish"],
+      "correctIndex": 1,
+      "explanation": "Yet → present perfect negative."
+    },
+    {
+      "id": 75,
+      "question": "She ___ breakfast when I called.",
+      "options": ["has", "have", "was having", "had"],
+      "correctIndex": 2,
+      "explanation": "Past continuous action."
+    },
+    {
+      "id": 76,
+      "question": "If I ___ you, I would study harder.",
+      "options": ["am", "was", "were", "be"],
+      "correctIndex": 2,
+      "explanation": "Second conditional uses 'were'."
+    },
+    {
+      "id": 77,
+      "question": "He ___ the report by tomorrow.",
+      "options": ["finish", "finishes", "will finish", "finished"],
+      "correctIndex": 2,
+      "explanation": "Future prediction uses will."
+    },
+    {
+      "id": 78,
+      "question": "They ___ football every Sunday.",
+      "options": ["play", "plays", "played", "playing"],
+      "correctIndex": 0,
+      "explanation": "Habit → present simple."
+    },
+    {
+      "id": 79,
+      "question": "She ___ in London since 2010.",
+      "options": ["lives", "lived", "has lived", "living"],
+      "correctIndex": 2,
+      "explanation": "Since → present perfect."
+    },
+    {
+      "id": 80,
+      "question": "He ___ when the phone rang.",
+      "options": ["sleep", "sleeps", "was sleeping", "slept"],
+      "correctIndex": 2,
+      "explanation": "Interrupted action → past continuous."
+    },
+    {
+      "id": 81,
+      "question": "She will call you when she ___ home.",
+      "options": ["arrive", "arrives", "arrived", "arriving"],
+      "correctIndex": 1,
+      "explanation": "After 'when' in future meaning, we use present simple."
+    },
+    {
+      "id": 82,
+      "question": "They ___ a new house next year.",
+      "options": ["buy", "buys", "will buy", "bought"],
+      "correctIndex": 2,
+      "explanation": "Future intention uses 'will'."
+    },
+    {
+      "id": 83,
+      "question": "I ___ my keys. I can't find them.",
+      "options": ["lose", "lost", "have lost", "losing"],
+      "correctIndex": 2,
+      "explanation": "Present result → present perfect."
+    },
+    {
+      "id": 84,
+      "question": "He ___ dinner when I arrived.",
+      "options": ["has", "have", "was having", "had"],
+      "correctIndex": 2,
+      "explanation": "Past continuous for ongoing action."
+    },
+    {
+      "id": 85,
+      "question": "If it rains, we ___ at home.",
+      "options": ["stay", "stays", "will stay", "stayed"],
+      "correctIndex": 2,
+      "explanation": "First conditional: will + verb."
+    },
+    {
+      "id": 86,
+      "question": "She is the ___ girl in the class.",
+      "options": ["tall", "taller", "tallest", "more tall"],
+      "correctIndex": 2,
+      "explanation": "Superlative form uses -est."
+    },
+    {
+      "id": 87,
+      "question": "We ___ English for 5 years.",
+      "options": ["study", "studies", "have studied", "studied"],
+      "correctIndex": 2,
+      "explanation": "For + time → present perfect."
+    },
+    {
+      "id": 88,
+      "question": "He ___ TV at 9 pm yesterday.",
+      "options": ["watch", "watched", "was watching", "watches"],
+      "correctIndex": 2,
+      "explanation": "Specific past time → past continuous."
+    },
+    {
+      "id": 89,
+      "question": "They ___ already finished the exam.",
+      "options": ["has", "have", "had", "having"],
+      "correctIndex": 1,
+      "explanation": "They → have + past participle."
+    },
+    {
+      "id": 90,
+      "question": "I wish I ___ taller.",
+      "options": ["am", "was", "were", "be"],
+      "correctIndex": 2,
+      "explanation": "Wish about present unreal uses 'were'."
+    },
+    {
+      "id": 91,
+      "question": "She ___ in this company since 2015.",
+      "options": ["works", "worked", "has worked", "working"],
+      "correctIndex": 2,
+      "explanation": "Since + time → present perfect."
+    },
+    {
+      "id": 92,
+      "question": "They ___ football every weekend.",
+      "options": ["play", "plays", "played", "playing"],
+      "correctIndex": 0,
+      "explanation": "Habitual action → present simple."
+    },
+    {
+      "id": 93,
+      "question": "He ___ when I called him.",
+      "options": ["sleep", "sleeps", "was sleeping", "slept"],
+      "correctIndex": 2,
+      "explanation": "Interrupted action → past continuous."
+    },
+    {
+      "id": 94,
+      "question": "If I ___ rich, I would travel the world.",
+      "options": ["am", "was", "were", "be"],
+      "correctIndex": 2,
+      "explanation": "Second conditional uses 'were'."
+    },
+    {
+      "id": 95,
+      "question": "She ___ her homework already.",
+      "options": ["finish", "finished", "has finished", "finishing"],
+      "correctIndex": 2,
+      "explanation": "Already → present perfect."
+    },
+    {
+      "id": 96,
+      "question": "We ___ to the cinema tomorrow.",
+      "options": ["go", "goes", "will go", "went"],
+      "correctIndex": 2,
+      "explanation": "Future intention → will."
+    },
+    {
+      "id": 97,
+      "question": "He ___ English very well.",
+      "options": ["speak", "speaks", "speaking", "spoke"],
+      "correctIndex": 1,
+      "explanation": "He/She/It → verb + s."
+    },
+    {
+      "id": 98,
+      "question": "They ___ in Hanoi for 10 years.",
+      "options": ["live", "lives", "have lived", "lived"],
+      "correctIndex": 2,
+      "explanation": "For + duration → present perfect."
+    },
+    {
+      "id": 99,
+      "question": "She ___ TV when the phone rang.",
+      "options": ["watch", "watches", "was watching", "watched"],
+      "correctIndex": 2,
+      "explanation": "Interrupted action → past continuous."
+    },
+    {
+      "id": 100,
+      "question": "I ___ my homework yet.",
+      "options": ["didn't finish", "don't finish", "haven't finished", "not finish"],
+      "correctIndex": 2,
+      "explanation": "Yet → present perfect negative."
+    },
+    {
+      "id": 101,
+      "question": "You are in a store and want to ask the price. What do you say?",
+      "options": ["How old is it?", "How much is it?", "What time is it?", "Where is it?"],
+      "correctIndex": 1,
+      "explanation": "To ask about price, we use 'How much is it?'."
+    },
+    {
+      "id": 102,
+      "question": "Someone says 'Nice to meet you'. You reply:",
+      "options": ["Goodbye", "See you later", "Nice to meet you too", "Thank you"],
+      "correctIndex": 2,
+      "explanation": "Correct response is 'Nice to meet you too'."
+    },
+    {
+      "id": 103,
+      "question": "You don’t hear someone clearly. You say:",
+      "options": ["Repeat please", "Say again please", "Pardon?", "All are correct"],
+      "correctIndex": 3,
+      "explanation": "All options are used to ask for repetition."
+    },
+    {
+      "id": 104,
+      "question": "You want to ask for direction to the library:",
+      "options": ["Where library?", "How library?", "Can you tell me the way to the library?", "Library where?"],
+      "correctIndex": 2,
+      "explanation": "Polite structure: Can you tell me the way to...?"
+    },
+    {
+      "id": 105,
+      "question": "You are late for class. You say:",
+      "options": ["Sorry I'm late", "I am early", "Good morning", "See you"],
+      "correctIndex": 0,
+      "explanation": "Correct apology is 'Sorry I'm late'."
+    },
+    {
+      "id": 106,
+      "question": "What does 'Could you help me?' mean?",
+      "options": ["Asking for help politely", "Giving help", "Refusing help", "Asking time"],
+      "correctIndex": 0,
+      "explanation": "It is a polite request for help."
+    },
+    {
+      "id": 107,
+      "question": "You want someone to repeat. You say:",
+      "options": ["What?", "Excuse me?", "Sorry?", "All are correct"],
+      "correctIndex": 3,
+      "explanation": "All are polite ways to ask repetition."
+    },
+    {
+      "id": 108,
+      "question": "You meet a friend in the morning. You say:",
+      "options": ["Good night", "Good afternoon", "Good morning", "Goodbye"],
+      "correctIndex": 2,
+      "explanation": "Morning greeting is 'Good morning'."
+    },
+    {
+      "id": 109,
+      "question": "You want to offer help. You say:",
+      "options": ["Can I help you?", "Do you help me?", "Help me now", "I help you"],
+      "correctIndex": 0,
+      "explanation": "Correct polite offer: 'Can I help you?'."
+    },
+    {
+      "id": 110,
+      "question": "You don’t understand something. You say:",
+      "options": ["I don't understand", "I understand", "I know", "I see"],
+      "correctIndex": 0,
+      "explanation": "Correct expression is 'I don't understand'."
+    },
+    {
+      "id": 111,
+      "question": "Reading: 'Tom gets up at 6 am every day.' What does he do at 6 am?",
+      "options": ["Sleeps", "Wakes up", "Goes to school", "Eats lunch"],
+      "correctIndex": 1,
+      "explanation": "Gets up means wakes up."
+    },
+    {
+      "id": 112,
+      "question": "Reading: 'She is a teacher.' What is her job?",
+      "options": ["Doctor", "Student", "Teacher", "Nurse"],
+      "correctIndex": 2,
+      "explanation": "She is a teacher."
+    },
+    {
+      "id": 113,
+      "question": "Reading: 'They are playing football.' What are they doing?",
+      "options": ["Studying", "Sleeping", "Playing football", "Eating"],
+      "correctIndex": 2,
+      "explanation": "They are playing football."
+    },
+    {
+      "id": 114,
+      "question": "Reading: 'He is very happy today.' How does he feel?",
+      "options": ["Sad", "Angry", "Happy", "Tired"],
+      "correctIndex": 2,
+      "explanation": "He feels happy."
+    },
+    {
+      "id": 115,
+      "question": "You want to say thank you. You say:",
+      "options": ["Sorry", "Thank you", "Hello", "Bye"],
+      "correctIndex": 1,
+      "explanation": "Polite expression is 'Thank you'."
+    },
+    {
+      "id": 116,
+      "question": "You are leaving a place. You say:",
+      "options": ["Good morning", "Hello", "Goodbye", "Thanks"],
+      "correctIndex": 2,
+      "explanation": "Leaving → Goodbye."
+    },
+    {
+      "id": 117,
+      "question": "You want to ask someone's name. You say:",
+      "options": ["How are you?", "What is your name?", "Where are you?", "How old are you?"],
+      "correctIndex": 1,
+      "explanation": "Correct question is 'What is your name?'."
+    },
+    {
+      "id": 118,
+      "question": "Reading: 'The cat is under the table.' Where is the cat?",
+      "options": ["On the table", "In the table", "Under the table", "Behind the table"],
+      "correctIndex": 2,
+      "explanation": "It is under the table."
+    },
+    {
+      "id": 119,
+      "question": "You want to invite someone. You say:",
+      "options": ["Come here!", "Let's go!", "Would you like to come?", "Go away!"],
+      "correctIndex": 2,
+      "explanation": "Polite invitation: 'Would you like to come?'."
+    },
+    {
+      "id": 120,
+      "question": "Reading: 'She goes to school by bus every day.' How does she go to school?",
+      "options": ["By car", "By bus", "On foot", "By bike"],
+      "correctIndex": 1,
+      "explanation": "She goes by bus."
+    }
+]

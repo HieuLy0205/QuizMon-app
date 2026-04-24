@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.SharedPreferences
 import com.example.quizmon.data.model.Statistics
 import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import java.util.*
 
 class StatisticsLocalDataSource(context: Context) {
@@ -64,5 +63,20 @@ class StatisticsLocalDataSource(context: Context) {
 
     fun getLongestStreak(): Int {
         return prefs.getInt("longest_streak", 0)
+    }
+
+    fun getStartDate(): Long {
+        val firstTime = prefs.getLong("start_date", 0L)
+        if (firstTime == 0L) {
+            val now = System.currentTimeMillis()
+            prefs.edit().putLong("start_date", now).apply()
+            return now
+        }
+        return firstTime
+    }
+
+    fun getLevelsCompleted(): Int {
+        // Giả sử mỗi lần hoàn thành 1 Quiz sẽ tăng số này lên
+        return getAllStats().count { it.totalQuestions > 0 }
     }
 }

@@ -61,9 +61,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Bắt sự kiện cho cụm Streak
+        // Trong MainActivity.kt
         val layoutStreak = findViewById<FrameLayout>(R.id.layoutStreak)
         layoutStreak?.setOnClickListener {
-            val intent = Intent(this, StreakActivity::class.java)
+            // Mở màn hình Thành tích đầu tiên
+            val intent = Intent(this, com.example.quizmon.ui.streak.StreakActivity::class.java)
             startActivity(intent)
         }
 

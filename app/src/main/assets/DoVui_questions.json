@@ -1,14 +1,1442 @@
 [
   {
     "id": 1,
-    "question": "Trong phạm vi môn học, chủ nghĩa xã hội khoa học được nghiên cứu theo gốc độ nào?",
+    "question": "Bạn đang đi trên thuyền, thuyền bị thủng một lỗ to và sắp chìm giữa dòng sông đầy cá ăn thịt. Cách đơn giản nhất để thoát nạn là gì?",
     "options": [
-      "Lý luận nghiên cứu chủ nghĩa Mác",
-      "Lý luận về sự phát triển của các hình thái kinh tế xã hội",
-      "Chủ nghĩa Mác - Lênin",
-      "Một trong ba bộ phận hợp thành chủ nghĩa Mác – Lênin"
+      "Nhảy xuống sông bơi thật nhanh",
+      "Lấy tay bịt lỗ thủng",
+      "Đừng tưởng tượng nữa",
+      "Kêu cứu thật to"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vì đây là tình huống bạn đang tưởng tượng, nên chỉ cần ngừng tưởng tượng là xong."
+  },
+  {
+    "id": 2,
+    "question": "Một con đười ươi cầm 2 con dao, sau vài phút nó nằm vật xuống đất chết luôn. Tại sao?",
+    "options": [
+      "Nó bị thợ săn bắn",
+      "Nó tự đâm vào ngực mình",
+      "Nó bị trúng độc",
+      "Nó bị ngã từ trên cây"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đười ươi có thói quen tự đấm vào ngực mình, khi cầm dao nó sẽ tự đâm vào chính mình."
+  },
+  {
+    "id": 3,
+    "question": "Cầu trọng tải 10 tấn, xe tải nặng 12 tấn. Làm sao bác tài qua được cầu mà không bớt hàng?",
+    "options": [
+      "Chạy xe thật nhanh qua cầu",
+      "Bơm thêm hơi vào lốp xe",
+      "Bác tài đi bộ qua cầu, bỏ xe lại",
+      "Đi qua cầu vào ban đêm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Câu đố chữ: 'Bác tài' đi qua cầu chứ không phải chiếc xe tải qua cầu."
+  },
+  {
+    "id": 4,
+    "question": "Trên đồng cỏ có 6 con bò, nhưng đếm đi đếm lại chỉ thấy có 12 cái chân. Tại sao?",
+    "options": [
+      "Bò bị thiếu chân",
+      "Chúng đang đứng dưới nước",
+      "Con bò này cưỡi lên lưng con bò kia",
+      "Đếm nhầm"
+    ],
+    "correctIndex": 2,
+    "explanation": "6 con bò cưỡi lên nhau theo vòng tròn nên mỗi con chỉ thò ra 2 chân."
+  },
+  {
+    "id": 5,
+    "question": "Trong ngày mùa đông giá rét, bạn có 1 que diêm và vào phòng có đèn dầu, bếp củi, bếp dầu. Bạn thắp gì trước tiên?",
+    "options": [
+      "Cây đèn dầu",
+      "Bếp củi",
+      "Bếp dầu",
+      "Que diêm"
     ],
     "correctIndex": 3,
-    "explanation": "Chủ nghĩa xã hội khoa học là một trong ba bộ phận hợp thành chủ nghĩa Mác - Lênin."
+    "explanation": "Bạn phải thắp que diêm trước thì mới có lửa để thắp các thứ khác."
+  },
+  {
+    "id": 6,
+    "question": "Một tử tù được chọn 1 trong 3 căn phòng: Phòng lửa cháy, phòng sát thủ giương súng, phòng sư tử nhịn đói 3 năm. Phòng nào an toàn nhất?",
+    "options": [
+      "Phòng lửa cháy",
+      "Phòng sát thủ",
+      "Phòng sư tử",
+      "Không phòng nào cả"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sư tử nhịn đói 3 năm thì đã chết từ lâu rồi."
+  },
+  {
+    "id": 7,
+    "question": "2 vịt đi trước 2 vịt, 2 vịt đi sau 2 vịt, 2 vịt đi giữa 2 vịt. Hỏi có mấy con vịt?",
+    "options": [
+      "2 con",
+      "4 con",
+      "6 con",
+      "8 con"
+    ],
+    "correctIndex": 1,
+    "explanation": "4 con vịt xếp thành một hàng dọc."
+  },
+  {
+    "id": 8,
+    "question": "Cái gì đen khi bạn mua nó, đỏ khi dùng nó và xám xịt khi vứt nó đi?",
+    "options": [
+      "Quả dưa hấu",
+      "Hòn than",
+      "Sắt thép",
+      "Bút chì"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hòn than lúc chưa đốt màu đen, đang cháy màu đỏ và khi thành tro màu xám."
+  },
+  {
+    "id": 9,
+    "question": "Xã nào đông dân nhất?",
+    "options": [
+      "Xã Tiên",
+      "Xã Hội",
+      "Xã Đàn",
+      "Xã Huyện"
+    ],
+    "correctIndex": 1,
+    "explanation": "Xã hội bao gồm tất cả mọi người nên là đông nhất."
+  },
+  {
+    "id": 10,
+    "question": "Lịch nào dài nhất?",
+    "options": [
+      "Lịch vạn niên",
+      "Lịch treo tường",
+      "Lịch sử",
+      "Lịch âm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lịch sử kéo dài từ quá khứ đến tận tương lai."
+  },
+  {
+    "id": 11,
+    "question": "Con đường nào dài nhất?",
+    "options": [
+      "Đường quốc lộ 1A",
+      "Đường đời",
+      "Đường mòn Hồ Chí Minh",
+      "Đường sắt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đường đời là hành trình cả đời của một con người."
+  },
+  {
+    "id": 12,
+    "question": "Quần rộng nhất là quần gì?",
+    "options": [
+      "Quần ống loe",
+      "Quần đùi",
+      "Quần đảo",
+      "Quần bò"
+    ],
+    "correctIndex": 2,
+    "explanation": "Quần đảo là vùng biển có nhiều đảo, diện tích rất lớn."
+  },
+  {
+    "id": 13,
+    "question": "Cái gì mà đi thì nằm, đứng cũng nằm, nhưng nằm lại đứng?",
+    "options": [
+      "Cái giường",
+      "Bàn chân",
+      "Cái bóng",
+      "Con mắt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi bạn đi hoặc đứng, bàn chân nằm ngang trên đất; khi bạn nằm, bàn chân lại dựng đứng."
+  },
+  {
+    "id": 14,
+    "question": "Môn gì càng thắng càng thua?",
+    "options": [
+      "Môn bóng đá",
+      "Môn đua xe đạp",
+      "Môn cờ vua",
+      "Môn bơi lội"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong đua xe đạp, bạn phải đạp lên cái 'thắng' (phanh) thì xe sẽ chạy chậm lại (thua)."
+  },
+  {
+    "id": 15,
+    "question": "Con gì đập thì sống, không đập thì chết?",
+    "options": [
+      "Con muỗi",
+      "Con tim",
+      "Con gà",
+      "Con cá"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tim ngừng đập thì sự sống sẽ kết thúc."
+  },
+  {
+    "id": 16,
+    "question": "Có 1 đàn chuột điếc đi ngang qua. Hỏi có mấy con?",
+    "options": [
+      "1 con",
+      "12 con",
+      "24 con",
+      "Không có con nào"
+    ],
+    "correctIndex": 2,
+    "explanation": "Điếc là hư tai, hư tai là hai tư (24)."
+  },
+  {
+    "id": 17,
+    "question": "Bỏ ngoài nướng trong, ăn ngoài bỏ trong là quả gì?",
+    "options": [
+      "Quả chuối",
+      "Quả mít",
+      "Bắp ngô",
+      "Quả dừa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi ăn ngô, ta bóc lớp bọc ngoài rồi nướng, sau đó ăn hạt (ngoài) và bỏ lõi (trong)."
+  },
+  {
+    "id": 18,
+    "question": "Trong một cuộc thi chạy, nếu bạn vượt qua người thứ 2 bạn sẽ đứng thứ mấy?",
+    "options": [
+      "Thứ nhất",
+      "Thứ hai",
+      "Thứ ba",
+      "Thứ tư"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bạn chiếm chỗ của người thứ 2 nên bạn đứng thứ 2."
+  },
+  {
+    "id": 19,
+    "question": "Sở thú bị cháy, con gì chạy ra đầu tiên?",
+    "options": [
+      "Con sư tử",
+      "Con voi",
+      "Con chim",
+      "Con người"
+    ],
+    "correctIndex": 3,
+    "explanation": "Con người có khả năng mở cửa và chạy thoát nhanh nhất."
+  },
+  {
+    "id": 20,
+    "question": "Cái gì tay trái cầm được còn tay phải cầm không được?",
+    "options": [
+      "Cái bát",
+      "Tay phải",
+      "Cái thìa",
+      "Bút chì"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tay phải không thể tự cầm lấy chính nó."
+  },
+  {
+    "id": 21,
+    "question": "Từ gì mà 100% người dân Việt Nam đều phát âm sai?",
+    "options": [
+      "Từ 'Ngu'",
+      "Từ 'Sai'",
+      "Từ 'Khó'",
+      "Từ 'Nghiêng'"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đó chính là từ 'Sai'."
+  },
+  {
+    "id": 22,
+    "question": "Nắng ba năm ta chưa hề bỏ bạn. Đó là cái gì?",
+    "options": [
+      "Cái mũ",
+      "Cái bóng",
+      "Cái áo",
+      "Đôi giày"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hễ có nắng (ánh sáng) là có cái bóng đi theo."
+  },
+  {
+    "id": 23,
+    "question": "Cái gì người mua biết, người dùng không bao giờ biết?",
+    "options": [
+      "Bánh kẹo",
+      "Quan tài",
+      "Quần áo",
+      "Tiền bạc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Người dùng quan tài là người đã khuất nên không thể biết."
+  },
+  {
+    "id": 24,
+    "question": "Tại sao khi bắn súng người ta lại nhắm một mắt?",
+    "options": [
+      "Vì thói quen",
+      "Nhắm hai mắt thì không thấy đường",
+      "Để nhìn rõ hơn",
+      "Vì súng nặng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nhắm hai mắt thì sẽ tối đen, không bắn được."
+  },
+  {
+    "id": 25,
+    "question": "Loại nước giải khát nào chứa sắt và canxi?",
+    "options": [
+      "Nước cam",
+      "Nước suối",
+      "Cafe",
+      "Nước tăng lực"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ca là Canxi, Fe là Sắt (Ca-Fe)."
+  },
+  {
+    "id": 26,
+    "question": "Cái gì Adam có 2 mà Eva chỉ có 1?",
+    "options": [
+      "Cái chân",
+      "Chữ A",
+      "Con mắt",
+      "Xương sườn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong chữ 'Adam' có 2 chữ 'a', trong 'Eva' có 1 chữ 'a'."
+  },
+  {
+    "id": 27,
+    "question": "Càng chơi càng ra nước là môn gì?",
+    "options": [
+      "Bơi lội",
+      "Chơi cờ",
+      "Đá bóng",
+      "Kéo co"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong chơi cờ, các bước di chuyển gọi là các 'nước' cờ."
+  },
+  {
+    "id": 28,
+    "question": "Bệnh gì bác sĩ bó tay?",
+    "options": [
+      "Bệnh tim",
+      "Bệnh đau bụng",
+      "Bệnh gãy tay",
+      "Bệnh nan y"
+    ],
+    "correctIndex": 2,
+    "explanation": "Gãy tay thì bác sĩ phải thực hiện thủ thuật 'bó tay' (bó bột)."
+  },
+  {
+    "id": 29,
+    "question": "Rồng bay ở đâu và đáp ở đâu tại Việt Nam?",
+    "options": [
+      "Hà Nội và Sài Gòn",
+      "Thăng Long và Hạ Long",
+      "Đà Nẵng và Huế",
+      "Nha Trang và Vũng Tàu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thăng Long (Rồng bay lên) và Hạ Long (Rồng đáp xuống)."
+  },
+  {
+    "id": 30,
+    "question": "Vua gọi hoàng hậu bằng gì?",
+    "options": [
+      "Bằng nàng",
+      "Bằng miệng",
+      "Bằng tên",
+      "Bằng tâu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vua dùng miệng để gọi."
+  },
+  {
+    "id": 31,
+    "question": "Cái đầu giống mèo, chân giống mèo, tai giống mèo nhưng không phải con mèo. Là con gì?",
+    "options": [
+      "Con hổ",
+      "Con báo",
+      "Con mèo con",
+      "Gấu trúc"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đó chính là con của con mèo."
+  },
+  {
+    "id": 32,
+    "question": "Cái gì luôn ở phía trước bạn mà bạn không bao giờ nhìn thấy?",
+    "options": [
+      "Cái mũi",
+      "Tương lai",
+      "Chân trời",
+      "Cái gáy"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tương lai là những gì sắp tới, chưa xảy ra."
+  },
+  {
+    "id": 33,
+    "question": "Cái gì bạn không mượn mà phải trả?",
+    "options": [
+      "Tiền nợ",
+      "Lời xin lỗi",
+      "Lời cảm ơn",
+      "Sách vở"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi nhận được sự giúp đỡ, ta trả lại bằng lời cảm ơn."
+  },
+  {
+    "id": 34,
+    "question": "Lúc nào thì đồng hồ gõ 13 tiếng?",
+    "options": [
+      "Lúc 1 giờ trưa",
+      "Lúc nửa đêm",
+      "Lúc đồng hồ bị hỏng",
+      "Lúc giao thừa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đồng hồ bình thường chỉ gõ tối đa 12 tiếng, 13 tiếng là hỏng."
+  },
+  {
+    "id": 35,
+    "question": "Bố mẹ có 6 người con trai, mỗi người con trai có 1 em gái. Gia đình có mấy người?",
+    "options": [
+      "14 người",
+      "9 người",
+      "13 người",
+      "7 người"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gồm 2 bố mẹ + 6 con trai + 1 cô út (em gái chung của 6 anh)."
+  },
+  {
+    "id": 36,
+    "question": "Tôi chu du khắp thế giới mà tôi vẫn ở nguyên một chỗ, tôi là ai?",
+    "options": [
+      "Con chim",
+      "Cái máy bay",
+      "Tem thư",
+      "Đám mây"
+    ],
+    "correctIndex": 2,
+    "explanation": "Con tem dán lên bì thư đi khắp nơi nhưng nó vẫn đứng yên trên góc phong bì."
+  },
+  {
+    "id": 37,
+    "question": "Con gì bỏ cái đuôi thành con ngựa?",
+    "options": [
+      "Con chó",
+      "Con mèo",
+      "Con bò",
+      "Con heo"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mèo là Mão, bỏ chữ 'o' (đuôi) thành Mã (ngựa)."
+  },
+  {
+    "id": 38,
+    "question": "Cái gì chứa nhiều nước nhất mà không bao giờ bị ướt?",
+    "options": [
+      "Ly thủy tinh",
+      "Bản đồ",
+      "Sa mạc",
+      "Đám mây"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trên bản đồ có các đại dương lớn nhưng nó chỉ là giấy/vải nên không ướt."
+  },
+  {
+    "id": 39,
+    "question": "Người da đen tắm biển đen thì bị gì?",
+    "options": [
+      "Bị đen thêm",
+      "Bị trắng ra",
+      "Bị ướt",
+      "Bị chìm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tắm biển thì chắc chắn là bị ướt."
+  },
+  {
+    "id": 40,
+    "question": "Nhà Lan có 3 anh em: Nhất Hào, Nhị Hào. Người thứ 3 tên gì?",
+    "options": [
+      "Tam Hào",
+      "Lan",
+      "Ba Hào",
+      "Tùng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đầu câu đã nói 'Nhà Lan' nên người còn lại là Lan."
+  },
+  {
+    "id": 41,
+    "question": "Con gì càng to càng nhỏ?",
+    "options": [
+      "Con voi",
+      "Con cua",
+      "Con kiến",
+      "Con chim"
+    ],
+    "correctIndex": 1,
+    "explanation": "Con cua có cái 'càng' to thì con cua đó 'nhỏ' (cách chơi chữ)."
+  },
+  {
+    "id": 42,
+    "question": "Cái gì khi xài thì quăng đi, không xài thì lấy lại?",
+    "options": [
+      "Cái rác",
+      "Cái neo thuyền",
+      "Cần câu",
+      "Quả bóng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi đậu thuyền thì quăng neo xuống, khi đi thì kéo neo lên."
+  },
+  {
+    "id": 43,
+    "question": "Có 3 người mù chung một cây dù, hỏi người nào ướt?",
+    "options": [
+      "Người thứ nhất",
+      "Cả ba người",
+      "Không ai ướt",
+      "Người đứng ngoài"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trời 'âm u' chứ chưa có mưa nên không ai ướt."
+  },
+  {
+    "id": 44,
+    "question": "Vua hôn gọi là gì?",
+    "options": [
+      "Hoàng hôn",
+      "Vương hôn",
+      "Thần hôn",
+      "Long hôn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách chơi chữ: Hoàng (vua) + hôn = Hoàng hôn."
+  },
+  {
+    "id": 45,
+    "question": "Làm thế nào để cái cân tự cân chính nó?",
+    "options": [
+      "Đặt lên một cái cân khác",
+      "Lật ngược cái cân lại",
+      "Tháo rời các bộ phận",
+      "Không thể làm được"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi lật ngược, trọng lượng của bàn cân sẽ đè lên bộ phận cảm biến."
+  },
+  {
+    "id": 46,
+    "question": "Quả gì không bao giờ có thể ăn được?",
+    "options": [
+      "Quả đấm",
+      "Quả bóng",
+      "Quả cân",
+      "Cả 3 phương án trên"
+    ],
+    "correctIndex": 3,
+    "explanation": "Đây đều là các loại quả không phải trái cây."
+  },
+  {
+    "id": 47,
+    "question": "Con mèo nào cực kỳ sợ chuột?",
+    "options": [
+      "Mèo mướp",
+      "Mèo máy Doraemon",
+      "Mèo Tom",
+      "Mèo rừng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Doraemon rất sợ chuột vì từng bị chuột gặm mất tai."
+  },
+  {
+    "id": 48,
+    "question": "Cái gì không có chân, không có đuôi, không có cơ thể nhưng có nhiều đầu?",
+    "options": [
+      "Con rồng",
+      "Cầu thang",
+      "Quả núi",
+      "Dòng sông"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cầu thang có các bậc thang gọi là các 'đầu' thang."
+  },
+  {
+    "id": 49,
+    "question": "Con gì ăn lửa với nước than?",
+    "options": [
+      "Con rồng",
+      "Con tàu hỏa (hơi nước)",
+      "Con thiêu thân",
+      "Con tê giác"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tàu hỏa thời xưa chạy bằng cách đốt than và dùng nước tạo hơi."
+  },
+  {
+    "id": 50,
+    "question": "Trên nhấp dưới giật là đang làm gì?",
+    "options": [
+      "Đang may quần áo",
+      "Đang câu cá",
+      "Đang nhảy dây",
+      "Đang đánh đàn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cử động của tay cầm cần câu và cá cắn câu giật phao."
+  },
+  {
+    "id": 51,
+    "question": "Cái gì của người con gái lúc nào cũng ẩm ướt?",
+    "options": [
+      "Mắt",
+      "Lưỡi",
+      "Tay",
+      "Tóc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cái lưỡi luôn được bao phủ bởi nước bọt để giúp nhai nuốt và nếm thức ăn."
+  },
+  {
+    "id": 52,
+    "question": "Cái gì dài như trái chuối, cầm một lúc thì nó chảy nước ra?",
+    "options": [
+      "Quả kem",
+      "Que kem",
+      "Cái đá",
+      "Củ cải"
+    ],
+    "correctIndex": 1,
+    "explanation": "Que kem gặp nhiệt độ từ tay và môi trường sẽ tan chảy thành nước."
+  },
+  {
+    "id": 53,
+    "question": "Những loài thú nào sau đây ăn cơm?",
+    "options": [
+      "Sư tử",
+      "Cọp",
+      "Hà mã",
+      "Voi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đây là cách đố vui, 'Sư tử' ở đây ám chỉ người vợ (Sư tử Hà Đông) trong gia đình."
+  },
+  {
+    "id": 54,
+    "question": "Chứng minh: Con gái bằng con dê?",
+    "options": [
+      "Vì cùng tuổi",
+      "Vì đều thích ăn cỏ",
+      "Con gái = thần tiên = tiền thân = trước khỉ = con dê",
+      "Không thể chứng minh"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đây là cách chơi chữ: Con gái được ví là thần tiên, thần tiên là tiền thân, tiền thân là trước khỉ (Thân), trước Thân là Mùi (con dê)."
+  },
+  {
+    "id": 55,
+    "question": "Câu nói nào mà người vui nhìn thấy sẽ buồn, người buồn nhìn thấy sẽ vui?",
+    "options": [
+      "Chúc mừng năm mới",
+      "Mọi chuyện rồi sẽ qua đi",
+      "Anh yêu em",
+      "Cố gắng lên"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vì niềm vui hay nỗi buồn đều không tồn tại mãi mãi, câu nói này nhắc nhở chúng ta về sự thay đổi."
+  },
+  {
+    "id": 56,
+    "question": "Hai người đào trong hai giờ được một cái hố. Một người đào trong một giờ được mấy cái hố?",
+    "options": [
+      "1 cái hố",
+      "0.5 cái hố",
+      "2 cái hố",
+      "Không có hố nào"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dù đào bao nhiêu lâu thì kết quả vẫn là một cái hố (chỉ là kích thước khác nhau)."
+  },
+  {
+    "id": 57,
+    "question": "Bên trái đường có nhà xanh, bên phải có nhà đỏ. Vậy Nhà Trắng ở đâu?",
+    "options": [
+      "Ở giữa",
+      "Ở Mỹ",
+      "Ở Việt Nam",
+      "Ở cạnh nhà xanh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nhà Trắng (White House) là dinh thự của Tổng thống Mỹ."
+  },
+  {
+    "id": 58,
+    "question": "Tại sao con chó không bao giờ cắn được đuôi của chính mình?",
+    "options": [
+      "Vì nó không thích",
+      "Vì nó đau",
+      "Vì đuôi nó không đủ dài",
+      "Vì nó sợ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khoảng cách và chiều dài đuôi khiến nó không thể tự cắn được."
+  },
+  {
+    "id": 59,
+    "question": "Tay cầm cục thịt nắn nắn, tay vỗ mông là đang làm gì?",
+    "options": [
+      "Đang làm thịt",
+      "Đang ru con ngủ",
+      "Bà mẹ đang cho con bú",
+      "Đang massage"
+    ],
+    "correctIndex": 2,
+    "explanation": "Hành động chăm sóc con nhỏ của bà mẹ."
+  },
+  {
+    "id": 60,
+    "question": "Cái gì bằng cái vung, vùng xuống ao, đào chẳng thấy, lấy chẳng được?",
+    "options": [
+      "Cái đĩa",
+      "Mặt trăng",
+      "Hòn đá",
+      "Con cá"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đó là hình ảnh phản chiếu của mặt trăng dưới mặt nước."
+  },
+  {
+    "id": 61,
+    "question": "Con trai và đàn ong có điểm gì khác nhau cơ bản?",
+    "options": [
+      "Màu sắc",
+      "Con trai sống dưới nước, đàn ong sống trên cây",
+      "Kích thước",
+      "Tiếng kêu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Con trai là loài nhuyễn thể dưới nước, còn ong là côn trùng bay."
+  },
+  {
+    "id": 62,
+    "question": "Cái gì trong trắng ngoài xanh, trồng đậu trồng hành rồi thả heo vào?",
+    "options": [
+      "Bánh dày",
+      "Bánh giò",
+      "Bánh chưng",
+      "Bánh tét"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mô tả nguyên liệu làm bánh chưng: lá dong xanh, gạo nếp trắng, đậu xanh, hành và thịt heo."
+  },
+  {
+    "id": 63,
+    "question": "Làm sao để lấy nhánh cây mà không làm động con chim đang đậu trên đó?",
+    "options": [
+      "Leo thật nhẹ nhàng",
+      "Dùng sào",
+      "Đợi con chim bay đi",
+      "Rung cây"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi chim đã bay đi thì bạn có thể lấy nhánh cây thoải mái."
+  },
+  {
+    "id": 64,
+    "question": "5 chia 3 bằng 2 khi nào?",
+    "options": [
+      "Khi làm toán đố",
+      "Khi tính nhầm",
+      "Khi làm sai",
+      "Không bao giờ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chỉ khi làm sai phép tính thì mới có kết quả đó."
+  },
+  {
+    "id": 65,
+    "question": "Hoa gì biết ăn, biết nói, biết hát?",
+    "options": [
+      "Hoa hồng",
+      "Hoa hướng dương",
+      "Hoa hậu",
+      "Hoa ly"
+    ],
+    "correctIndex": 2,
+    "explanation": "Hoa hậu là danh hiệu dành cho người phụ nữ đẹp."
+  },
+  {
+    "id": 66,
+    "question": "Một người tiêu tiền như nước nhưng bây giờ lại là triệu phú. Tại sao?",
+    "options": [
+      "Vì ông ta giỏi",
+      "Vì trước đây ông ta là tỷ phú",
+      "Vì ông ta trúng số",
+      "Vì ông ta tiết kiệm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tiêu bớt tiền của tỷ phú thì sẽ còn lại triệu phú."
+  },
+  {
+    "id": 67,
+    "question": "Xác chết treo cổ ở nóc nhà, dưới chân có vũng nước lớn. Người đó đã leo lên bằng cách nào?",
+    "options": [
+      "Dùng thang",
+      "Nhảy lên",
+      "Đứng lên tảng đá lạnh",
+      "Được người khác giúp"
+    ],
+    "correctIndex": 2,
+    "explanation": "Người đó đứng lên tảng đá, khi đá tan thành nước thì bị treo cổ."
+  },
+  {
+    "id": 68,
+    "question": "Bà đó chết bay lên trời. Hỏi bà ấy chết năm bao nhiêu tuổi?",
+    "options": [
+      "73 tuổi",
+      "83 tuổi",
+      "93 tuổi",
+      "103 tuổi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bà đó là bò đá, bả bay là bảy ba (73)."
+  },
+  {
+    "id": 69,
+    "question": "Có một đàn chim đậu trên cành, người thợ săn bắn cái 'rằm'. Hỏi chết mấy con?",
+    "options": [
+      "1 con",
+      "5 con",
+      "15 con",
+      "0 con"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rằm có nghĩa là ngày 15, ám chỉ chết 15 con."
+  },
+  {
+    "id": 70,
+    "question": "Con kiến bò lên tai con voi nói gì mà con voi nằm lăn ra chết?",
+    "options": [
+      "Anh sắp chết rồi",
+      "Em đã có thai với anh",
+      "Vĩnh biệt anh",
+      "Chào anh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đây là một câu đố vui phi thực tế."
+  },
+  {
+    "id": 71,
+    "question": "Thuyền chở tối đa 2 người. 3 người Mỹ đen và 3 người Mỹ trắng ngồi lên mà không chìm. Tại sao?",
+    "options": [
+      "Vì họ nhẹ",
+      "Vì thuyền to",
+      "Chỉ có 2 người là ba của người Mỹ đen và ba của người Mỹ trắng",
+      "Vì họ biết bơi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Câu đố chữ: 'Ba người' ở đây là người cha."
+  },
+  {
+    "id": 72,
+    "question": "Tàu điện đi về hướng Nam, gió hướng Tây Bắc. Khói từ con tàu theo hướng nào?",
+    "options": [
+      "Hướng Nam",
+      "Hướng Bắc",
+      "Không có hướng nào",
+      "Hướng Đông"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tàu điện chạy bằng điện nên không có khói."
+  },
+  {
+    "id": 73,
+    "question": "Làm thế nào để không đụng phải ngón tay khi bạn đập búa vào một cái móng tay?",
+    "options": [
+      "Đeo găng tay",
+      "Nhắm mắt lại",
+      "Cầm búa bằng cả hai tay",
+      "Dùng kìm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi cả hai tay đều cầm búa thì không còn tay nào để bị đập trúng."
+  },
+  {
+    "id": 74,
+    "question": "Miệng rộng nhưng không bao giờ nói một từ. Đó là gì?",
+    "options": [
+      "Cái hang",
+      "Cái thùng",
+      "Con sông",
+      "Miệng núi lửa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sông có 'miệng' (cửa sông) nhưng không biết nói."
+  },
+  {
+    "id": 75,
+    "question": "Giáo viên đánh những đứa trẻ trong lớp nhưng không bố mẹ nào phản ứng. Tại sao?",
+    "options": [
+      "Vì giáo viên đúng",
+      "Vì đây là trại mồ côi",
+      "Vì bố mẹ không biết",
+      "Vì đó là trò chơi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trẻ mồ côi không có bố mẹ ở bên để bảo vệ."
+  },
+  {
+    "id": 76,
+    "question": "Cái gì luôn đi đến mà không bao giờ đến nơi?",
+    "options": [
+      "Cái bóng",
+      "Ngày mai",
+      "Gió",
+      "Đám mây"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ngày mai luôn ở phía trước, khi đến nơi thì nó đã trở thành ngày hôm nay."
+  },
+  {
+    "id": 77,
+    "question": "Thời điểm lý tưởng nhất để ăn trưa là khi nào?",
+    "options": [
+      "12 giờ trưa",
+      "Khi thấy đói",
+      "Sau bữa ăn sáng",
+      "Khi tan làm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Theo trình tự các bữa ăn trong ngày."
+  },
+  {
+    "id": 78,
+    "question": "Có 3 quả táo trên bàn, bạn lấy đi 2 quả. Hỏi bạn còn bao nhiêu quả táo?",
+    "options": [
+      "1 quả",
+      "2 quả",
+      "3 quả",
+      "0 quả"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bạn lấy đi 2 quả thì chúng đang ở trên tay bạn."
+  },
+  {
+    "id": 79,
+    "question": "30 chia cho 1/2 rồi cộng thêm 10 bằng bao nhiêu?",
+    "options": [
+      "25",
+      "40",
+      "70",
+      "15"
+    ],
+    "correctIndex": 2,
+    "explanation": "30 : 0.5 = 60. Sau đó 60 + 10 = 70."
+  },
+  {
+    "id": 80,
+    "question": "Con số lớn nhất chỉ có duy nhất hai chữ số là số nào?",
+    "options": [
+      "99",
+      "9^9",
+      "10",
+      "9+9"
+    ],
+    "correctIndex": 1,
+    "explanation": "9 mũ 9 là một con số cực lớn so với 99."
+  },
+  {
+    "id": 81,
+    "question": "Làm sao để cho nước từ hai bình vào chung một chậu mà vẫn biết nước nào của bình nào?",
+    "options": [
+      "Dùng vách ngăn",
+      "Pha màu",
+      "Đông đá nước trước khi cho vào",
+      "Không làm được"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi nước thành đá, chúng sẽ giữ nguyên hình dạng hoặc khối riêng biệt."
+  },
+  {
+    "id": 82,
+    "question": "Một anh chàng có 3 cọng tóc, anh ta bứt 1 cọng ở giữa để làm gì?",
+    "options": [
+      "Cho đẹp",
+      "Để bổ luống (rẽ ngôi) giữa",
+      "Vì nó ngứa",
+      "Vì nó dài"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bứt cọng ở giữa để tạo khoảng trống phân chia hai bên."
+  },
+  {
+    "id": 83,
+    "question": "Ba thằng Què đi trước một thằng què. Hỏi có mấy thằng què?",
+    "options": [
+      "1 thằng què",
+      "2 thằng què",
+      "3 thằng què",
+      "4 thằng què"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tên của người đi trước là 'Ba'."
+  },
+  {
+    "id": 84,
+    "question": "Mèo trắng là bạn mèo đen. Một thời gian sau gặp lại, mèo trắng sẽ nói gì với mèo đen?",
+    "options": [
+      "Chào bạn",
+      "Tôi nhớ bạn",
+      "Mèo không biết nói",
+      "Meo meo"
+    ],
+    "correctIndex": 2,
+    "explanation": "Động vật không sử dụng ngôn ngữ của con người."
+  },
+  {
+    "id": 85,
+    "question": "Con rết 100 chân đi ngang qua bãi phân trâu. Hỏi nó còn mấy chân?",
+    "options": [
+      "100 chân",
+      "98 chân",
+      "0 chân",
+      "1 chân"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nó dùng 2 chân để bịt mũi vì thối."
+  },
+  {
+    "id": 86,
+    "question": "Đối lại câu 'Đất lành chim đậu' một cách trái nghĩa?",
+    "options": [
+      "Đất xấu chim bay",
+      "Đất dữ chim đi",
+      "Đất gỗ chim đi",
+      "Đất nghèo chim bỏ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cách chơi chữ: Lành (ngon) đối với Gỗ (cứng), Đậu đối với Đi."
+  },
+  {
+    "id": 87,
+    "question": "Bố người da đen, mẹ người da trắng vừa sinh em bé. Em bé đó có hàm răng màu gì?",
+    "options": [
+      "Màu trắng",
+      "Màu đen",
+      "Chưa có răng",
+      "Màu vàng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trẻ sơ sinh khi mới chào đời chưa mọc răng."
+  },
+  {
+    "id": 88,
+    "question": "Tại sao có những người đi taxi nhưng họ lại không phải trả tiền?",
+    "options": [
+      "Vì họ là người nhà",
+      "Vì họ là tài xế taxi",
+      "Vì họ đi miễn phí",
+      "Vì họ trốn vé"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tài xế là người lái xe để kiếm tiền chứ không phải khách trả tiền."
+  },
+  {
+    "id": 89,
+    "question": "Ba người lùn đi vào hang. Người giữa cầm xẻng, người sau cầm xô, người trước cầm gì?",
+    "options": [
+      "Cầm đèn",
+      "Cầm đầu",
+      "Cầm gậy",
+      "Không cầm gì"
+    ],
+    "correctIndex": 1,
+    "explanation": "Người đi đầu tiên thường được gọi là kẻ 'cầm đầu' (thủ lĩnh)."
+  },
+  {
+    "id": 90,
+    "question": "Trên cây lê có 2 cành, mỗi cành có 2 nhánh nhỏ... Hỏi trên cây có mấy quả táo?",
+    "options": [
+      "8 quả",
+      "16 quả",
+      "0 quả",
+      "4 quả"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cây lê không thể ra quả táo."
+  },
+  {
+    "id": 91,
+    "question": "Làm sao chia 3 quả táo cho 3 người mà vẫn còn 1 quả trong rổ?",
+    "options": [
+      "Cắt đôi quả táo",
+      "Đưa cho người cuối cùng cả cái rổ đựng táo",
+      "Không chia nữa",
+      "Lấy thêm táo"
+    ],
+    "correctIndex": 1,
+    "explanation": "Người thứ ba nhận quả táo nằm trong rổ."
+  },
+  {
+    "id": 92,
+    "question": "Câu nói nào giúp bạn bảo toàn tính mạng khi gặp nhà vua?",
+    "options": [
+      "Tôi nói thật",
+      "Tôi nói dối",
+      "Tôi sẽ bị treo cổ",
+      "Tôi xin hàng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đây là một nghịch lý logic khiến nhà vua không thể xử tử bạn theo luật đã đề ra."
+  },
+  {
+    "id": 93,
+    "question": "Cắt khúc vải làm 100 đoạn, mỗi lần cắt mất 5 giây. Hỏi mất bao lâu để cắt xong?",
+    "options": [
+      "500 giây",
+      "495 giây",
+      "450 giây",
+      "505 giây"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đoạn cuối cùng không cần cắt (99 lần cắt x 5 giây)."
+  },
+  {
+    "id": 94,
+    "question": "Làm sao để qua cầu khi có con gấu hung dữ ở giữa chỉ ngủ 5 phút?",
+    "options": [
+      "Chạy thật nhanh",
+      "Bơi qua sông",
+      "Đi đến giữa cầu rồi quay mặt ngược lại",
+      "Đợi gấu đi chỗ khác"
+    ],
+    "correctIndex": 2,
+    "explanation": "Gấu thức dậy sẽ tưởng bạn từ bên kia sang và đuổi bạn về phía đích."
+  },
+  {
+    "id": 95,
+    "question": "Con gấu trúc có ao ước gì mà không bao giờ thực hiện được?",
+    "options": [
+      "Được ăn thịt",
+      "Được bay",
+      "Được chụp hình màu",
+      "Được đi học"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vì gấu trúc chỉ có hai màu đen và trắng."
+  },
+  {
+    "id": 96,
+    "question": "Cái gì của chồng mà vợ thích cầm nhất?",
+    "options": [
+      "Tay",
+      "Tiền",
+      "Áo",
+      "Nhẫn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Câu đố vui thực tế về cuộc sống gia đình."
+  },
+  {
+    "id": 97,
+    "question": "Tại sao anh chàng sống ở tầng 50 chỉ đi thang máy đến tầng 35 rồi đi bộ nốt?",
+    "options": [
+      "Để tập thể dục",
+      "Vì anh ta sợ độ cao",
+      "Vì thang máy chỉ lên đến tầng 35",
+      "Vì anh ta quên chìa khóa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Hạn chế kỹ thuật của thang máy trong tòa nhà đó."
+  },
+  {
+    "id": 98,
+    "question": "Con gì đầu dê mình ốc?",
+    "options": [
+      "Con quái vật",
+      "Con dốc",
+      "Con ốc sên",
+      "Con dê núi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Câu đố chữ: Dê (Đầu) + Ốc (Mình) tạo thành từ 'Dốc'."
+  },
+  {
+    "id": 99,
+    "question": "1 phút suy tư bằng bao nhiêu năm không ngủ?",
+    "options": [
+      "1 năm",
+      "4 năm",
+      "15 năm",
+      "0 năm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Câu đố chữ: 1p' => 4 = 1505 (Một phút suy tư bằng một năm không ngủ)."
+  },
+  {
+    "id": 100,
+    "question": "Núi nào bị chặt ra từng khúc?",
+    "options": [
+      "Núi Fansipan",
+      "Núi Trường Sơn",
+      "Núi Thái Sơn",
+      "Núi Ngũ Hành Sơn"
+    ],
+    "correctIndex": 2,
+    "explanation": "Thái (chặt) + Sơn (núi)."
+  },
+  {
+    "id": 101,
+    "question": "Hãy đối lại một câu trái nghĩa với câu này: 'Đất lành chim đậu'?",
+    "options": [
+      "Đất xấu chim bay",
+      "Đất dữ chim đi",
+      "Đất gỗ chim đi",
+      "Đất nghèo chim bỏ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cách chơi chữ: Lành (ngon) đối với Gỗ (cứng), Đậu đối với Đi."
+  },
+  {
+    "id": 102,
+    "question": "Con gì càng to càng nhỏ?",
+    "options": [
+      "Con voi",
+      "Con cua",
+      "Con kiến",
+      "Con cá"
+    ],
+    "correctIndex": 1,
+    "explanation": "Con cua có cái 'càng' to thì con cua đó 'nhỏ' (cách chơi chữ)."
+  },
+  {
+    "id": 103,
+    "question": "Cái gì khi xài thì quăng đi, không xài thì lấy lại?",
+    "options": [
+      "Cái rác",
+      "Cái neo thuyền",
+      "Cái lưới",
+      "Lưỡi câu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi đậu thuyền thì quăng neo xuống, khi đi thì kéo neo lên."
+  },
+  {
+    "id": 104,
+    "question": "Tôi chu du khắp thế giới mà tôi vẫn ở nguyên một chỗ, tôi là ai?",
+    "options": [
+      "Đám mây",
+      "Cơn gió",
+      "Tem thư",
+      "Chiếc máy bay"
+    ],
+    "correctIndex": 2,
+    "explanation": "Con tem được dán trên phong bì đi khắp nơi nhưng nó vẫn ở yên trên góc phong bì."
+  },
+  {
+    "id": 105,
+    "question": "Con gì bỏ cái đuôi thành con ngựa?",
+    "options": [
+      "Con bò",
+      "Con mèo",
+      "Con chó",
+      "Con dê"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mèo là Mão, bỏ chữ 'o' (đuôi) thành Mã (ngựa)."
+  },
+  {
+    "id": 106,
+    "question": "Cái gì chứa nhiều nước nhất mà không ướt?",
+    "options": [
+      "Ly nước",
+      "Bản đồ",
+      "Đám mây",
+      "Thùng phi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trên bản đồ có các đại dương lớn nhưng bản đồ chỉ là giấy nên không ướt."
+  },
+  {
+    "id": 107,
+    "question": "Trời đang âm u, có 3 thằng mù chung một cây dù, hỏi thằng nào ướt?",
+    "options": [
+      "Người ở giữa",
+      "Người đi đầu",
+      "Không thằng nào cả",
+      "Cả ba thằng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trời 'âm u' là trời sắp mưa chứ chưa có mưa nên không ai bị ướt."
+  },
+  {
+    "id": 108,
+    "question": "Người da đen tắm biển đen, vậy họ bị gì?",
+    "options": [
+      "Bị đen thêm",
+      "Bị trắng ra",
+      "Bị ướt",
+      "Bị ngứa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Dù da màu gì hay biển màu gì thì tắm xong cũng bị ướt."
+  },
+  {
+    "id": 109,
+    "question": "1 kg bông gòn và 1 kg sắt, kg nào nặng hơn?",
+    "options": [
+      "Sắt nặng hơn",
+      "Bông gòn nặng hơn",
+      "Bằng nhau",
+      "Tùy môi trường"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cả hai đều nặng đúng 1 kg."
+  },
+  {
+    "id": 110,
+    "question": "Nhà Lan có 3 anh em, người đầu là Nhất Hào, người thứ hai là Nhị Hào. Người thứ 3 tên gì?",
+    "options": [
+      "Tam Hào",
+      "Ba Hào",
+      "Lan",
+      "Lâm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ngay từ đầu đã nói là 'Nhà Lan' nên người thứ ba chính là Lan."
+  },
+  {
+    "id": 111,
+    "question": "Bố da đen, mẹ da trắng vừa sinh em bé. Em bé đó có hàm răng màu gì?",
+    "options": [
+      "Trắng",
+      "Đen",
+      "Chưa có răng",
+      "Vàng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trẻ sơ sinh mới sinh ra chưa mọc răng."
+  },
+  {
+    "id": 112,
+    "question": "Tại sao có những người đi taxi nhưng họ lại không trả tiền?",
+    "options": [
+      "Vì họ đi chùa",
+      "Vì họ trốn vé",
+      "Vì họ là tài xế taxi",
+      "Vì họ đi nhờ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tài xế lái xe để kiếm tiền, không phải trả tiền vé."
+  },
+  {
+    "id": 113,
+    "question": "3 người lùn đi vào hang. Người sau cầm xô, người giữa cầm xẻng, người trước cầm gì?",
+    "options": [
+      "Cầm đuốc",
+      "Cầm đầu",
+      "Cầm gậy",
+      "Không cầm gì"
+    ],
+    "correctIndex": 1,
+    "explanation": "Người đi đầu tiên của một nhóm thường được gọi là kẻ 'cầm đầu'."
+  },
+  {
+    "id": 114,
+    "question": "Cây lê có 2 cành, mỗi cành có 2 nhánh lớn... Hỏi trên cây có mấy quả táo?",
+    "options": [
+      "4 quả",
+      "8 quả",
+      "0 quả",
+      "12 quả"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cây lê thì không bao giờ ra quả táo."
+  },
+  {
+    "id": 115,
+    "question": "Làm sao chia 3 quả táo cho 3 người mà vẫn còn một quả trong rổ?",
+    "options": [
+      "Cắt đôi quả táo",
+      "Lấy thêm táo",
+      "Đưa nguyên rổ có quả táo cuối cho người thứ 3",
+      "Không chia nữa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Người cuối cùng nhận quả táo kèm theo cái rổ."
+  },
+  {
+    "id": 116,
+    "question": "Ở xứ nọ, nói thật bị chém đầu, nói dối bị treo cổ. Phải nói gì để gặp vua mà không chết?",
+    "options": [
+      "Tôi là người tốt",
+      "Tôi muốn sống",
+      "Tôi sẽ bị treo cổ",
+      "Vua vạn tuế"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đây là một nghịch lý logic khiến quân lính không thể thi hành án phạt nào cả."
+  },
+  {
+    "id": 117,
+    "question": "Cắt khúc vải làm 100 đoạn, mỗi đoạn mất 5 giây. Hỏi mất bao lâu để cắt xong?",
+    "options": [
+      "500 giây",
+      "495 giây",
+      "505 giây",
+      "450 giây"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chỉ cần 99 lần cắt là ra được 100 đoạn. 99 x 5 = 495 giây."
+  },
+  {
+    "id": 118,
+    "question": "Làm sao qua cầu khi có gấu hung dữ ở giữa chỉ ngủ 5 phút (bằng thời gian bạn đi nửa cầu)?",
+    "options": [
+      "Chạy thật nhanh",
+      "Đợi gấu đi mất",
+      "Đi đến giữa cầu và quay mặt ngược lại",
+      "Bơi qua sông"
+    ],
+    "correctIndex": 2,
+    "explanation": "Gấu thức dậy thấy bạn từ bên kia sang nên sẽ đuổi bạn về phía đích."
+  },
+  {
+    "id": 119,
+    "question": "Con gấu trúc ao ước gì mà không bao giờ thực hiện được?",
+    "options": [
+      "Được đi học",
+      "Được chụp hình màu",
+      "Được bay",
+      "Được ăn thịt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vì gấu trúc chỉ có hai màu đen và trắng, chụp hình màu cũng chỉ ra trắng đen."
+  },
+  {
+    "id": 120,
+    "question": "Con gì ăn lửa với nước than?",
+    "options": [
+      "Con rồng",
+      "Con thiêu thân",
+      "Con tàu hỏa (hơi nước)",
+      "Con quái vật"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tàu hỏa chạy bằng đầu máy hơi nước đốt than và dùng nước để tạo áp suất."
   }
 ]
