@@ -17,7 +17,6 @@ class PreferenceManager(context: Context) {
     fun getCoins(): Int {
         return sharedPreferences.getInt("current_coins", 0)
     }
-
     fun addCoin(amount: Int) {
         val current = getCoins()
         //savecoins là ghi đề

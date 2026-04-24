@@ -21,13 +21,6 @@ import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
 
 class activity_shop : AppCompatActivity() {
-    private var isPet1Visible = true
-
-    private lateinit var textcoin: TextView
-    private lateinit var btn_goi_api1: Button
-    private lateinit var btn_goi_api3: Button
-    private lateinit var btn_goi_api2: Button
-    private lateinit var btn_goi_api4: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,9 +32,7 @@ class activity_shop : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        
         setupTaskbar()
-
         //Bắt đầu nút Rương mạng
         findViewById<Button>(R.id.btn_goi_api1).setOnClickListener {
             val intent = Intent(this, shop_tim::class.java)
@@ -94,6 +85,13 @@ class activity_shop : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         updateCoinDisplay()
+        updateXuDisplay()
+    }
+
+    private fun updateXuDisplay() {
+        val textxu = findViewById<TextView>(R.id.textxu)
+        val preferenceManager = PreferenceManager(this)
+        textxu.text = preferenceManager.getXu().toString()
     }
 
     private fun updateCoinDisplay() {

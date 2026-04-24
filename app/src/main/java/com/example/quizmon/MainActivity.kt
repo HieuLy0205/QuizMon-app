@@ -104,12 +104,10 @@ class MainActivity : AppCompatActivity() {
                         view.performClick()
                     }
                 }
-
                 else -> return@setOnTouchListener false
             }
             true
         }
-
         ivFloatingPet.setOnClickListener {
             startActivity(Intent(this, PetActivity::class.java))
         }
@@ -119,11 +117,9 @@ class MainActivity : AppCompatActivity() {
         super.onResume()
         updateCoinDisplay()
         updateUI()
-
         findViewById<FrameLayout>(R.id.layoutStreak)?.startAnimation(
             AnimationUtils.loadAnimation(this, R.anim.streak_bounce)
         )
-
         findViewById<ImageView>(R.id.ivFloatingPet)?.startAnimation(
             AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
         )

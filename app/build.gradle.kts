@@ -55,6 +55,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("io.coil-kt:coil:2.6.0")
     implementation("androidx.appcompat:appcompat:1.3.1")
     implementation("com.google.android.gms:play-services-base:17.6.0")
 }

@@ -8,9 +8,9 @@ import com.example.quizmon.R
 
 //lớp dữ liệu cho từng ô nạp tiên
 class PaymentItem(
-    val image: Int,
-    val text: String,
-    val amount: Int
+    val image: Int, //lưu trữ hình ảnh nạp
+    val text: String, //lưu trữ tên nạp
+    val amount: Int //lưu trử giá trị nạp
 )
 //lớp adapter cho thanh toán
 class PaymentAdapter(

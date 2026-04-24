@@ -16,6 +16,7 @@ import com.example.quizmon.R
 import com.example.quizmon.ui.notification.NotificationHelper
 import com.example.quizmon.ui.pet.PetActivity
 import com.example.quizmon.ui.shop.activity_shop
+import com.example.quizmon.ui.shop.PreferenceManager
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -109,6 +110,22 @@ class SettingsActivity : AppCompatActivity() {
             }
         }
     }
+    override fun onResume() {
+        super.onResume()
+        updateCoinDisplay()
+        updateXuDisplay()
+    }
+    private fun updateXuDisplay() {
+        val textxu = findViewById<TextView>(R.id.textxu)
+        val preferenceManager = PreferenceManager(this)
+        textxu.text = preferenceManager.getXu().toString()
+
+    }
+    private fun updateCoinDisplay(){
+        val textcoin = findViewById<TextView>(R.id.textcoin)
+        val preferenceManager = PreferenceManager(this)
+        textcoin.text = preferenceManager.getCoins().toString()
+    }
 
     private fun setupTaskbar() {
         // Highlight Menu bằng thanh gỗ
@@ -137,5 +154,6 @@ class SettingsActivity : AppCompatActivity() {
         findViewById<LinearLayout>(R.id.nav_history).setOnClickListener {
             // Lịch sử
         }
+
     }
 }
