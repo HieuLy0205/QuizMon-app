@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         val layoutStreak = findViewById<FrameLayout>(R.id.layoutStreak)
         layoutStreak?.setOnClickListener {
             // Mở màn hình Thành tích đầu tiên
-            val intent = Intent(this, com.example.quizmon.ui.streak.StreakActivity::class.java)
+            val intent = Intent(this, StreakActivity::class.java)
             startActivity(intent)
         }
 
@@ -118,6 +118,7 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         updateCoinDisplay()
+        updateXuDisplay()
         updateUI()
         findViewById<FrameLayout>(R.id.layoutStreak)?.startAnimation(
             AnimationUtils.loadAnimation(this, R.anim.streak_bounce)
@@ -168,7 +169,13 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateCoinDisplay() {
         val preferenceManager = PreferenceManager(this)
-        findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
+        val textCoin = findViewById<TextView>(R.id.textcoin)
+        textCoin.text = preferenceManager.getCoins().toString()
+    }
+    private fun updateXuDisplay(){
+        val preferenceManager = PreferenceManager(this)
+        val textXu = findViewById<TextView>(R.id.textxu)
+        textXu.text = preferenceManager.getXu().toString()
     }
 
     private fun openProfileFlow() {
