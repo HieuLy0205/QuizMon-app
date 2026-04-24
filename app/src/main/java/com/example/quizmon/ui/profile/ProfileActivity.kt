@@ -96,9 +96,9 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun updateHeaderStats() {
         val pref = PreferenceManager(this)
-        val textCoin = findViewById<TextView>(R.id.head_text_coin)
+        val textCoin = findViewById<TextView>(R.id.textcoins)
         textCoin.text = pref.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.head_text_xu)
+        val textXu = findViewById<TextView>(R.id.textxu)
         textXu.text = pref.getXu().toString()
     }
 

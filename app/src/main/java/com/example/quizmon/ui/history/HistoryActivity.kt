@@ -38,9 +38,9 @@ class HistoryActivity : AppCompatActivity() {
     private fun updateUI() {
         val preferenceManager = PreferenceManager(this)
         // Cập nhật ID mới từ layout_taskhead
-        val textCoin = findViewById<TextView>(R.id.head_text_coin)
+        val textCoin = findViewById<TextView>(R.id.textcoins)
         textCoin.text = preferenceManager.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.head_text_xu)
+        val textXu = findViewById<TextView>(R.id.textxu)
         textXu.text = preferenceManager.getXu().toString()
      }
 
