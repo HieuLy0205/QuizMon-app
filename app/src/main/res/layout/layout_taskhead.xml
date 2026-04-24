@@ -37,7 +37,7 @@
                 android:src="@drawable/sao_shop_map" />
 
             <TextView
-                android:id="@+id/head_text_coin"
+                android:id="@+id/textcoins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -73,7 +73,7 @@
                 android:src="@drawable/su_shop_map" />
 
             <TextView
-                android:id="@+id/head_text_xu"
+                android:id="@+id/textxu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
