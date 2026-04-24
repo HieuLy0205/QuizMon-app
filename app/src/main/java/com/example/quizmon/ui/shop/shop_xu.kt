@@ -13,27 +13,29 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.material.button.MaterialButton
 
 class shop_xu: AppCompatActivity() {
-
-    private lateinit var imgQr: ImageView
     private  var selectedItem: PaymentItem? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shop_xu)
         val recyclerView = findViewById<RecyclerView>(R.id.rlvmenhgia)
-        val imgQr = findViewById<ImageView>(R.id.imgQR)
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
         val btnConfirmPaymenttn = findViewById<MaterialButton>(R.id.btnConfirmPayment)
         val preferenceManager = PreferenceManager(this)
 
         recyclerView.layoutManager = GridLayoutManager(this, 3)
+        //khai báo list payment. để khai báo list này mình cần một fantion để khai báo
+//        var list = listOf<Int>(1, 2, 3, 4, 5)
         val listpayment = listOf(
             PaymentItem(R.drawable.icon_payment_10, "10đ", 20),
             PaymentItem(R.drawable.icon_payment_20, "20đ", 50),
             PaymentItem(R.drawable.icon_payment_50,"50đ", 110),
             PaymentItem(R.drawable.icon_payment_100,"100đ", 240),
-            PaymentItem(R.drawable.icon_payment_500,"500đ", 1200),
+            PaymentItem(R.drawable.icon_payment_200,"200đ", 1200),
+            PaymentItem(R.drawable.icon_payment_500,"500đ", 1200)
         )
+
+        // bộ sử lý thứ nhất: nhấn vào ô danh sách RecyclerView hành động sẻ bắt qua Paymentadapter.
         val adapter = PaymentAdapter(listpayment) { item ->
             selectedItem = item
             // Gọi hàm xử lý hiện QR
@@ -46,17 +48,33 @@ class shop_xu: AppCompatActivity() {
             if (selectedItem == null) {
                 Toast.makeText(this, "chọn loại thẻ thanh toán", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
-            }else
+            }else {
                 preferenceManager.addXu(selectedItem!!.amount)
-                Toast.makeText(this, "thanh toán thành công ${selectedItem!!.amount}đ", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    this,
+                    "thanh toán thành công ${selectedItem!!.amount}đ",
+                    Toast.LENGTH_SHORT
+                ).show()
+            }
         }
     }
+    //nói đến thanh toán: đây là bộ sử lý giao diện
+
     private fun SetupQr() {
-        val imgQr = findViewById<ImageView>(R.id.imgQR)
+        val imgQr = findViewById<ImageView>(R.id.imgQRpay)
+        val imgQrmomo = findViewById<ImageView>(R.id.imgQR)
         val item = selectedItem ?: return
         //Tạo link thay số tài khoản
-        val qrLink = "https://img.vietqr.io/image/MB-123456789-compact.png?amount=${item.amount}&addInfo=NAPXU_ID123"
-        imgQr.load(qrLink)
+        val qrLink = "https://img.vietqr.io/image/ICB-0342061314-compact.png?amount=${item.amount}&addInfo=NAPXU_VNPAY_${item.text}"
+        val qrLink1 = "https://img.vietqr.io/image/momo-0346541884-compact.png?amount=${item.amount}&addInfo=NAPXU_MOMO_${item.text}"
+        imgQrmomo.setOnClickListener {
+            imgQrmomo.load(qrLink1)
+            Toast.makeText(this, "thanh toán QRmomo", Toast.LENGTH_SHORT).show()
+        }
+        imgQr.setOnClickListener {
+            imgQr.load(qrLink)
+            Toast.makeText(this, "thanh toán QRvnpay", Toast.LENGTH_SHORT).show()
+        }
     }
     private fun showPaymentDialog(item: PaymentItem) {
         Toast.makeText(this, "Bạn chọn nạp: ${item.text}", Toast.LENGTH_SHORT).show()

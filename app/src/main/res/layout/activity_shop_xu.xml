@@ -138,13 +138,22 @@
                     app:cardElevation="4dp">
 
                     <ImageView
+                        android:id="@+id/imgQRpay"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="16dp"
-                        android:src="@drawable/logo_vietthel"
+                        android:src="@drawable/logo_vnpay"
                         android:contentDescription="Viettel" />
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="@string/text_notepaymenthv"
+                >
+
+            </TextView>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnConfirmPayment"

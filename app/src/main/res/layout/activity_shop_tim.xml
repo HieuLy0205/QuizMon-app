@@ -140,7 +140,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="16dp"
-                        android:src="@drawable/logo_vietthel"
+                        android:src="@drawable/logo_vnpay"
                         android:contentDescription="Viettel" />
                 </com.google.android.material.card.MaterialCardView>
             </LinearLayout>
