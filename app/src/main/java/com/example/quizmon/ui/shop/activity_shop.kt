@@ -84,20 +84,14 @@ class activity_shop : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        updateCoinDisplay()
-        updateXuDisplay()
+        updateHeaderStats()
     }
 
-    private fun updateXuDisplay() {
-        val textxu = findViewById<TextView>(R.id.textxu)
+    private fun updateHeaderStats() {
         val preferenceManager = PreferenceManager(this)
-        textxu.text = preferenceManager.getXu().toString()
-    }
-
-    private fun updateCoinDisplay() {
-        val textcoin = findViewById<TextView>(R.id.textcoin)
-        val preferenceManager = PreferenceManager(this)
-        textcoin.text = preferenceManager.getCoins().toString()
+        // Cập nhật đúng ID mới từ layout_taskhead
+        findViewById<TextView>(R.id.head_text_star)?.text = preferenceManager.getCoins().toString()
+        findViewById<TextView>(R.id.head_text_coin)?.text = preferenceManager.getXu().toString()
     }
 
 }

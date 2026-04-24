@@ -1,0 +1,1907 @@
+[
+  {
+    "id": 1,
+    "question": "Khi nhận được một tin nhắn hoặc email thông báo trúng thưởng một khoản tiền lớn từ một công ty lạ, bạn nên làm gì?",
+    "options": [
+      "Nhấn vào đường link ngay để nhận thưởng",
+      "Gọi điện cho người thân để khoe và mượn tiền đóng phí nhận thưởng",
+      "Xóa tin nhắn và chặn người gửi",
+      "Cung cấp thông tin cá nhân để kiểm tra độ chính xác"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đây là hình thức lừa đảo phổ biến trên môi trường số. Kẻ gian thường tạo cảm giác bạn đang gặp may hiếm có để khiến bạn mất cảnh giác, sau đó dụ bấm vào đường link độc hại, nộp các khoản phí giả hoặc cung cấp thông tin cá nhân, mã OTP và tài khoản ngân hàng. Cách xử lý an toàn nhất là không tương tác, xóa tin nhắn và chặn người gửi. Nếu nội dung mạo danh doanh nghiệp lớn, bạn chỉ nên kiểm tra qua kênh chính thức của doanh nghiệp đó."
+  },
+  {
+    "id": 2,
+    "question": "5 x 5 = ?",
+    "options": ["20", "25", "30", "35"],
+    "correctIndex": 1,
+    "explanation": "Phép nhân 5 với 5 cho kết quả bằng 25. Có thể hiểu đơn giản là lấy số 5 cộng với chính nó 5 lần: 5 + 5 + 5 + 5 + 5 = 25. Đây là một phép tính cơ bản trong bảng cửu chương."
+  },
+  {
+    "id": 3,
+    "question": "Theo Hiến pháp 2013, nước Cộng hòa xã hội chủ nghĩa Việt Nam là một nước:",
+    "options": [
+      "Dân chủ nhân dân",
+      "Độc lập, có chủ quyền, thống nhất và toàn vẹn lãnh thổ",
+      "Cộng hòa dân chủ",
+      "Xã hội chủ nghĩa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Theo Điều 1 Hiến pháp năm 2013, nước Cộng hòa xã hội chủ nghĩa Việt Nam là một nước độc lập, có chủ quyền, thống nhất và toàn vẹn lãnh thổ. Nội dung này khẳng định vị thế pháp lý, chính trị và lãnh thổ của quốc gia, bao gồm đất liền, hải đảo, vùng biển và vùng trời."
+  },
+  {
+    "id": 4,
+    "question": "Ai là người có quyền công bố Hiến pháp, luật, pháp lệnh?",
+    "options": ["Thủ tướng Chính phủ", "Chủ tịch Quốc hội", "Chủ tịch nước", "Tổng Bí thư"],
+    "correctIndex": 2,
+    "explanation": "Theo quy định của Hiến pháp năm 2013, Chủ tịch nước là người có quyền công bố Hiến pháp, luật và pháp lệnh. Đây là một trong những nhiệm vụ quan trọng thể hiện vai trò nguyên thủ quốc gia trong hệ thống chính trị Việt Nam."
+  },
+  {
+    "id": 5,
+    "question": "Cơ quan nào là cơ quan hành chính nhà nước cao nhất?",
+    "options": ["Quốc hội", "Chính phủ", "Tòa án nhân dân tối cao", "Văn phòng Chủ tịch nước"],
+    "correctIndex": 1,
+    "explanation": "Theo Điều 94 Hiến pháp năm 2013, Chính phủ là cơ quan hành chính nhà nước cao nhất của nước Cộng hòa xã hội chủ nghĩa Việt Nam. Chính phủ thực hiện quyền hành pháp, đồng thời là cơ quan chấp hành của Quốc hội."
+  },
+  {
+    "id": 6,
+    "question": "Quốc hội bầu Chủ tịch nước trong số các đại biểu Quốc hội theo đề nghị của?",
+    "options": ["Thủ tướng Chính phủ", "Ủy ban Thường vụ Quốc hội", "Chủ tịch Quốc hội", "Tổng Bí thư"],
+    "correctIndex": 1,
+    "explanation": "Theo quy định của Hiến pháp năm 2013, Quốc hội bầu Chủ tịch nước trong số các đại biểu Quốc hội theo đề nghị của Ủy ban Thường vụ Quốc hội. Quy trình này nhằm bảo đảm tính hợp hiến và chặt chẽ trong hoạt động của bộ máy nhà nước."
+  },
+  {
+    "id": 7,
+    "question": "Thủ đô Việt Nam là gì?",
+    "options": ["Hà Nội", "Đà Nẵng", "Huế", "Sài Gòn"],
+    "correctIndex": 0,
+    "explanation": "Hà Nội là thủ đô của Việt Nam. Đây là trung tâm chính trị, hành chính quốc gia, đồng thời là một trong những trung tâm lớn về văn hóa, giáo dục, khoa học và kinh tế của cả nước."
+  },
+  {
+    "id": 8,
+    "question": "Trong tình huống bạn đang rất bận nhưng một người bạn thân gọi điện kể lể chuyện buồn trong thời gian dài, cách xử lý khôn khéo nhất là?",
+    "options": [
+      "Nghe hết câu chuyện mặc cho công việc bị trễ",
+      "Cắt ngang lời bạn và dập máy ngay lập tức",
+      "Lắng nghe một chút, sau đó nhẹ nhàng hẹn sẽ gọi lại vào thời gian cụ thể khác",
+      "Nói dối là điện thoại sắp hết pin"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đây là cách ứng xử vừa tôn trọng cảm xúc của bạn bè, vừa bảo vệ quỹ thời gian và công việc của bản thân. Việc lắng nghe một phần giúp người kia cảm thấy được quan tâm, còn việc hẹn thời gian cụ thể thể hiện trách nhiệm và sự chân thành hơn là né tránh hoặc nói dối."
+  },
+  {
+    "id": 9,
+    "question": "Bộ phim hoạt hình nào có nhân vật chính là chú mèo máy đến từ tương lai?",
+    "options": ["Pokemon", "Doraemon", "Conan", "Naruto"],
+    "correctIndex": 1,
+    "explanation": "Doraemon là bộ phim hoạt hình nổi tiếng của Nhật Bản với nhân vật chính là chú mèo máy màu xanh đến từ tương lai. Doraemon thường dùng các bảo bối trong túi thần kỳ để giúp Nobita, qua đó truyền tải nhiều bài học về tình bạn, trách nhiệm và cách trưởng thành."
+  },
+  {
+    "id": 10,
+    "question": "Nhân vật Sherlock Holmes nổi tiếng với nghề nghiệp gì?",
+    "options": ["Bác sĩ", "Thám tử", "Nhà báo", "Luật sư"],
+    "correctIndex": 1,
+    "explanation": "Sherlock Holmes là một thám tử hư cấu nổi tiếng do nhà văn Arthur Conan Doyle sáng tạo. Nhân vật này được biết đến nhờ khả năng suy luận logic, quan sát chi tiết và giải quyết những vụ án phức tạp."
+  },
+  {
+    "id": 11,
+    "question": "Bộ phim 'Titanic' xoay quanh thảm họa của phương tiện nào?",
+    "options": ["Máy bay", "Tàu thủy", "Tàu hỏa", "Tàu ngầm"],
+    "correctIndex": 1,
+    "explanation": "Phim 'Titanic' kể về thảm họa chìm của con tàu biển RMS Titanic trong chuyến hải trình đầu tiên. Ngoài yếu tố lịch sử, phim còn nổi bật với câu chuyện tình cảm giữa Jack và Rose, khiến tác phẩm trở thành một trong những bộ phim nổi tiếng nhất thế giới."
+  },
+  {
+    "id": 12,
+    "question": "Trong loạt phim 'Harry Potter', trường học phép thuật mà Harry theo học tên là gì?",
+    "options": ["Hogwarts", "Narnia", "Avalon", "Camelot"],
+    "correctIndex": 0,
+    "explanation": "Hogwarts là ngôi trường đào tạo phù thủy và pháp sư trong thế giới Harry Potter. Trường được chia thành bốn nhà là Gryffindor, Slytherin, Ravenclaw và Hufflepuff, đồng thời là bối cảnh chính của phần lớn câu chuyện."
+  },
+  {
+    "id": 13,
+    "question": "Nhân vật nào nổi tiếng với câu nói 'Em là công chúa Elsa' trong phim hoạt hình Disney?",
+    "options": ["Moana", "Anna", "Elsa", "Rapunzel"],
+    "correctIndex": 2,
+    "explanation": "Elsa là một trong hai nhân vật chính của phim hoạt hình 'Frozen'. Cô nổi tiếng với khả năng tạo băng tuyết và hình tượng một nhân vật mạnh mẽ, độc lập, biết học cách kiểm soát cảm xúc và năng lực của mình."
+  },
+  {
+    "id": 14,
+    "question": "Bộ phim hoạt hình 'Tom and Jerry' chủ yếu kể về mối quan hệ giữa những con vật nào?",
+    "options": ["Mèo và chuột", "Chó và mèo", "Vịt và thỏ", "Khỉ và voi"],
+    "correctIndex": 0,
+    "explanation": "Tom and Jerry là series hoạt hình kinh điển xoay quanh cuộc rượt đuổi hài hước giữa mèo Tom và chuột Jerry. Dù ít lời thoại, phim vẫn hấp dẫn nhờ tiết tấu nhanh, biểu cảm sinh động và các tình huống gây cười sáng tạo."
+  },
+  {
+    "id": 15,
+    "question": "Trong điện ảnh, 'đạo diễn' là người chủ yếu làm công việc gì?",
+    "options": [
+      "Thiết kế poster quảng cáo",
+      "Chỉ đạo diễn xuất và cách kể câu chuyện trên màn ảnh",
+      "Bán vé xem phim",
+      "Làm phụ đề tự động"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đạo diễn là người định hướng tổng thể cho bộ phim, từ cách kể chuyện, góc quay, diễn xuất, nhịp điệu đến cảm xúc của tác phẩm. Họ phối hợp với biên kịch, quay phim, diễn viên và nhiều bộ phận khác để biến kịch bản thành sản phẩm hoàn chỉnh."
+  },
+  {
+    "id": 16,
+    "question": "Trong phim hoạt hình 'The Lion King', Simba là con của ai?",
+    "options": ["Scar", "Mufasa", "Timon", "Pumbaa"],
+    "correctIndex": 1,
+    "explanation": "Simba là con trai của vua sư tử Mufasa. Câu chuyện của Simba là hành trình trưởng thành, vượt qua mặc cảm và học cách chấp nhận trách nhiệm để trở thành nhà lãnh đạo xứng đáng."
+  },
+  {
+    "id": 17,
+    "question": "Khi xem một bộ phim có nội dung bạo lực, điều quan trọng là gì?",
+    "options": [
+      "Bắt chước ngay các cảnh đánh nhau",
+      "Phân biệt rõ giữa nội dung giải trí và hành vi ngoài đời thực",
+      "Cho rằng mọi hành động trong phim đều đúng",
+      "Xem mà không cần quan tâm độ tuổi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phim ảnh là sản phẩm nghệ thuật và giải trí, không phải khuôn mẫu để sao chép hành vi. Người xem cần phân biệt rõ giữa nội dung hư cấu với đời sống thật, đồng thời chú ý phân loại độ tuổi để tránh ảnh hưởng tiêu cực đến nhận thức và hành vi."
+  },
+  {
+    "id": 18,
+    "question": "Nhân vật người nhện nổi tiếng trong điện ảnh có tên tiếng Anh là gì?",
+    "options": ["Bat Man", "Spider-Man", "Iron Man", "Super Man"],
+    "correctIndex": 1,
+    "explanation": "Spider-Man là tên tiếng Anh của nhân vật Người Nhện, một siêu anh hùng rất nổi tiếng của Marvel. Nhân vật này được yêu thích vì hình tượng gần gũi: một người trẻ phải học cách cân bằng giữa cuộc sống cá nhân và trách nhiệm với cộng đồng."
+  },
+  {
+    "id": 19,
+    "question": "Hoạt hình 'Up' của Pixar nổi tiếng với hình ảnh ngôi nhà bay bằng gì?",
+    "options": ["Cánh quạt", "Khinh khí cầu", "Tên lửa", "Nhiều quả bóng bay"],
+    "correctIndex": 3,
+    "explanation": "Trong phim 'Up', ngôi nhà của ông Carl được nâng lên nhờ hàng nghìn quả bóng bay. Hình ảnh này không chỉ độc đáo về mặt thị giác mà còn tượng trưng cho ước mơ, ký ức và hành trình bước tiếp sau mất mát."
+  },
+  {
+    "id": 20,
+    "question": "Một lợi ích lớn của việc đọc sách là gì?",
+    "options": [
+      "Giúp mở rộng hiểu biết và phát triển tư duy",
+      "Làm giảm hoàn toàn mọi áp lực trong cuộc sống",
+      "Khiến không cần giao tiếp với ai",
+      "Thay thế hoàn toàn trải nghiệm thực tế"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đọc sách giúp con người tiếp cận tri thức, trải nghiệm gián tiếp nhiều góc nhìn và rèn luyện khả năng suy nghĩ sâu. Sách không thay thế hoàn toàn thực tế, nhưng là công cụ quan trọng để học hỏi, phản biện và phát triển bản thân."
+  },
+  {
+    "id": 21,
+    "question": "Khi muốn quản lý thời gian tốt hơn, việc nào sau đây hữu ích nhất?",
+    "options": [
+      "Làm việc theo cảm hứng và không cần kế hoạch",
+      "Ghi danh sách việc cần làm và ưu tiên việc quan trọng",
+      "Chờ đến sát hạn mới bắt đầu",
+      "Nhận tất cả mọi việc dù không đủ thời gian"
+    ],
+    "correctIndex": 1,
+    "explanation": "Quản lý thời gian hiệu quả cần có danh sách việc làm, xác định mức độ ưu tiên và chia quỹ thời gian hợp lý. Cách này giúp giảm quên việc, hạn chế trì hoãn và nâng cao hiệu suất trong học tập cũng như công việc."
+  },
+  {
+    "id": 22,
+    "question": "Nếu làm sai và ảnh hưởng đến người khác, cách ứng xử phù hợp nhất là gì?",
+    "options": [
+      "Im lặng để không ai biết",
+      "Đổ lỗi cho hoàn cảnh",
+      "Thành thật xin lỗi và tìm cách khắc phục",
+      "Tránh mặt người bị ảnh hưởng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Biết nhận lỗi và chủ động khắc phục là dấu hiệu của sự trưởng thành và trách nhiệm. Một lời xin lỗi chân thành cần đi kèm hành động sửa sai, vì điều đó thể hiện sự tôn trọng với người khác và giúp xây dựng lòng tin."
+  },
+  {
+    "id": 23,
+    "question": "Khi tranh luận với người khác, điều nào giúp cuộc trò chuyện tích cực hơn?",
+    "options": [
+      "Ngắt lời liên tục để chứng minh mình đúng",
+      "Lắng nghe, trình bày rõ ý kiến và tôn trọng quan điểm khác biệt",
+      "Nói to hơn để áp đảo",
+      "Công kích cá nhân người đối diện"
+    ],
+    "correctIndex": 1,
+    "explanation": "Một cuộc tranh luận lành mạnh tập trung vào vấn đề chứ không phải công kích con người. Việc lắng nghe, phản hồi có lý lẽ và tôn trọng sự khác biệt giúp hai bên hiểu nhau hơn và tìm ra giải pháp tốt hơn."
+  },
+  {
+    "id": 24,
+    "question": "Kỹ năng nào quan trọng khi làm việc nhóm?",
+    "options": [
+      "Chỉ làm theo ý mình",
+      "Từ chối chia sẻ thông tin",
+      "Phối hợp, giao tiếp và có trách nhiệm với phần việc được giao",
+      "Để toàn bộ công việc cho người khác"
+    ],
+    "correctIndex": 2,
+    "explanation": "Làm việc nhóm hiệu quả đòi hỏi mỗi thành viên biết giao tiếp rõ ràng, phối hợp với nhau và chịu trách nhiệm với phần việc của mình. Khi mọi người cùng tin tưởng và hỗ trợ lẫn nhau, kết quả chung sẽ tốt hơn nhiều."
+  },
+  {
+    "id": 25,
+    "question": "Khi cảm thấy căng thẳng kéo dài, bạn nên làm gì trước tiên?",
+    "options": [
+      "Cố chịu đựng mà không chia sẻ với ai",
+      "Nghỉ ngơi hợp lý, điều chỉnh sinh hoạt và tìm người đáng tin để trao đổi",
+      "Bỏ ăn và thức khuya nhiều hơn",
+      "Tự ý dùng thuốc không rõ nguồn gốc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi căng thẳng kéo dài, việc đầu tiên nên làm là nhận diện tình trạng của mình và chủ động chăm sóc bản thân. Nghỉ ngơi, ngủ đủ, vận động nhẹ, chia sẻ với người tin cậy hoặc tìm chuyên gia hỗ trợ là các bước an toàn và hữu ích hơn việc cố chịu đựng hoặc xử lý cực đoan."
+  },
+  {
+    "id": 26,
+    "question": "Thói quen nào giúp bảo vệ sức khỏe tốt hơn?",
+    "options": [
+      "Thức khuya thường xuyên",
+      "Ăn uống thất thường",
+      "Tập thể dục đều đặn và ngủ đủ giấc",
+      "Ngồi liên tục cả ngày"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tập thể dục đều đặn kết hợp giấc ngủ đầy đủ giúp cơ thể phục hồi, tăng sức đề kháng, ổn định tinh thần và cải thiện chất lượng sống. Đây là nền tảng quan trọng hơn nhiều so với các giải pháp ngắn hạn hoặc thói quen thiếu lành mạnh."
+  },
+  {
+    "id": 27,
+    "question": "Khi gặp tin giả trên mạng xã hội, bạn nên làm gì?",
+    "options": [
+      "Chia sẻ ngay vì thấy hấp dẫn",
+      "Bình luận xúc phạm người đăng",
+      "Kiểm tra nguồn tin trước khi tin hoặc chia sẻ",
+      "Mặc định cho rằng tin nào nhiều người xem cũng đúng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tin giả thường lan nhanh vì đánh vào cảm xúc sợ hãi, tò mò hoặc phẫn nộ. Cách đúng là kiểm tra nguồn, đối chiếu với báo chí chính thống hoặc cơ quan có thẩm quyền, rồi mới quyết định có nên tin hoặc chia sẻ hay không."
+  },
+  {
+    "id": 28,
+    "question": "Nếu nhận được cuộc gọi tự xưng là công an yêu cầu chuyển tiền để 'xác minh', bạn nên làm gì?",
+    "options": [
+      "Làm theo ngay vì sợ liên lụy",
+      "Chuyển một phần trước để thể hiện hợp tác",
+      "Ngắt cuộc gọi và liên hệ cơ quan chức năng qua kênh chính thức",
+      "Gửi ảnh căn cước để chứng minh mình vô tội"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cơ quan chức năng không làm việc theo cách yêu cầu chuyển tiền qua điện thoại để xác minh. Đây là thủ đoạn lừa đảo phổ biến. Bạn cần bình tĩnh ngắt máy, không cung cấp thông tin cá nhân hay tài chính, sau đó liên hệ qua số điện thoại hoặc địa chỉ chính thức của cơ quan liên quan."
+  },
+  {
+    "id": 29,
+    "question": "Một mật khẩu an toàn thường có đặc điểm nào?",
+    "options": [
+      "Ngắn, dễ nhớ như 123456",
+      "Chỉ gồm ngày sinh",
+      "Có độ dài tốt, gồm chữ hoa, chữ thường, số và ký tự đặc biệt",
+      "Dùng chung cho mọi tài khoản"
+    ],
+    "correctIndex": 2,
+    "explanation": "Mật khẩu mạnh giúp giảm nguy cơ bị đoán hoặc bị tấn công tự động. Nên dùng mật khẩu đủ dài, kết hợp nhiều loại ký tự, tránh thông tin cá nhân dễ đoán và không dùng chung một mật khẩu cho nhiều tài khoản."
+  },
+  {
+    "id": 30,
+    "question": "Khi sử dụng mạng xã hội, điều gì thể hiện sự văn minh số?",
+    "options": [
+      "Bình luận miệt thị người khác khi không đồng ý",
+      "Tôn trọng người khác và chịu trách nhiệm với nội dung mình đăng",
+      "Đăng thông tin riêng tư của người khác để gây chú ý",
+      "Chia sẻ ảnh không xin phép"
+    ],
+    "correctIndex": 1,
+    "explanation": "Văn minh số là biết ứng xử có trách nhiệm trên không gian mạng. Điều đó bao gồm tôn trọng quyền riêng tư, dùng ngôn từ phù hợp, kiểm chứng thông tin và hiểu rằng mọi nội dung mình đăng tải đều có thể ảnh hưởng tới người khác."
+  },
+  {
+    "id": 31,
+    "question": "Hành tinh nào được gọi là 'Hành tinh Đỏ'?",
+    "options": ["Sao Kim", "Sao Hỏa", "Sao Mộc", "Sao Thủy"],
+    "correctIndex": 1,
+    "explanation": "Sao Hỏa thường được gọi là Hành tinh Đỏ vì bề mặt chứa nhiều oxit sắt, khiến nó có màu đỏ đặc trưng khi quan sát từ xa. Đây là một trong những hành tinh được con người nghiên cứu nhiều nhất về khả năng tồn tại sự sống trong quá khứ."
+  },
+  {
+    "id": 32,
+    "question": "Nước sôi ở nhiệt độ bao nhiêu độ C trong điều kiện áp suất khí quyển thông thường?",
+    "options": ["0", "50", "100", "212"],
+    "correctIndex": 2,
+    "explanation": "Trong điều kiện áp suất khí quyển tiêu chuẩn ở mực nước biển, nước sôi ở 100 độ C. Tuy nhiên, nhiệt độ sôi có thể thay đổi theo áp suất, ví dụ ở vùng núi cao áp suất thấp thì nước có thể sôi ở nhiệt độ thấp hơn."
+  },
+  {
+    "id": 33,
+    "question": "Cơ quan nào trong cơ thể người có chức năng bơm máu đi khắp cơ thể?",
+    "options": ["Phổi", "Gan", "Tim", "Thận"],
+    "correctIndex": 2,
+    "explanation": "Tim là cơ quan đóng vai trò như một máy bơm sinh học, đưa máu chứa oxy và chất dinh dưỡng đi nuôi khắp cơ thể. Việc duy trì sức khỏe tim mạch rất quan trọng đối với hoạt động sống của con người."
+  },
+  {
+    "id": 34,
+    "question": "Thực vật hấp thụ khí nào để quang hợp?",
+    "options": ["Oxy", "Nitơ", "Carbon dioxide", "Hydro"],
+    "correctIndex": 2,
+    "explanation": "Trong quá trình quang hợp, thực vật hấp thụ khí carbon dioxide, sử dụng năng lượng ánh sáng để tạo ra chất hữu cơ và thải ra oxy. Đây là quá trình rất quan trọng đối với cân bằng sinh thái và sự sống trên Trái Đất."
+  },
+  {
+    "id": 35,
+    "question": "Nguồn năng lượng tự nhiên nào sau đây là năng lượng tái tạo?",
+    "options": ["Than đá", "Dầu mỏ", "Năng lượng mặt trời", "Khí đốt hóa thạch"],
+    "correctIndex": 2,
+    "explanation": "Năng lượng mặt trời là nguồn năng lượng tái tạo vì có thể được khai thác liên tục từ bức xạ của Mặt Trời. Khác với nhiên liệu hóa thạch, nó ít gây ô nhiễm hơn và có ý nghĩa lớn trong phát triển bền vững."
+  },
+  {
+    "id": 36,
+    "question": "Đâu là trạng thái vật chất cơ bản thường gặp?",
+    "options": ["Rắn, lỏng, khí", "Nóng, lạnh, ấm", "Sáng, tối, mờ", "Cứng, mềm, dẻo"],
+    "correctIndex": 0,
+    "explanation": "Ba trạng thái vật chất cơ bản thường gặp là rắn, lỏng và khí. Chúng khác nhau về cách sắp xếp và chuyển động của các hạt vật chất. Ngoài ra, trong khoa học còn có trạng thái plasma và một số trạng thái đặc biệt khác."
+  },
+  {
+    "id": 37,
+    "question": "Bộ phận nào của cây thường có chức năng hút nước và muối khoáng?",
+    "options": ["Lá", "Rễ", "Hoa", "Quả"],
+    "correctIndex": 1,
+    "explanation": "Rễ là bộ phận giúp cây bám vào đất và hút nước cùng muối khoáng từ môi trường. Sau đó, các chất này được vận chuyển lên thân và lá để phục vụ quá trình sống và phát triển."
+  },
+  {
+    "id": 38,
+    "question": "Hiện tượng Trái Đất quay quanh Mặt Trời tạo nên điều gì?",
+    "options": ["Ngày và đêm", "Các mùa trong năm", "Thủy triều", "Động đất"],
+    "correctIndex": 1,
+    "explanation": "Sự chuyển động của Trái Đất quanh Mặt Trời kết hợp với trục nghiêng của Trái Đất là nguyên nhân chính tạo nên các mùa trong năm. Còn hiện tượng ngày và đêm chủ yếu do Trái Đất tự quay quanh trục của nó."
+  },
+  {
+    "id": 39,
+    "question": "Vitamin nào thường liên quan đến việc cơ thể tổng hợp khi tiếp xúc ánh nắng hợp lý?",
+    "options": ["Vitamin A", "Vitamin C", "Vitamin D", "Vitamin K"],
+    "correctIndex": 2,
+    "explanation": "Vitamin D có vai trò hỗ trợ hấp thu canxi và tốt cho xương. Cơ thể con người có thể tổng hợp vitamin D khi da tiếp xúc với ánh nắng ở mức độ phù hợp. Tuy nhiên, cần tránh phơi nắng quá mức gây hại cho da."
+  },
+  {
+    "id": 40,
+    "question": "Máu có màu đỏ chủ yếu nhờ chất nào?",
+    "options": ["Canxi", "Hemoglobin", "Insulin", "Melanin"],
+    "correctIndex": 1,
+    "explanation": "Hemoglobin là chất chứa sắt trong hồng cầu, có chức năng vận chuyển oxy và tạo nên màu đỏ đặc trưng của máu. Đây là thành phần rất quan trọng trong hệ tuần hoàn."
+  },
+  {
+    "id": 41,
+    "question": "Châu lục nào có diện tích lớn nhất thế giới?",
+    "options": ["Châu Âu", "Châu Phi", "Châu Á", "Châu Nam Cực"],
+    "correctIndex": 2,
+    "explanation": "Châu Á là châu lục có diện tích lớn nhất thế giới và cũng là nơi có dân số đông nhất. Đây là khu vực rất đa dạng về văn hóa, khí hậu, địa hình và trình độ phát triển kinh tế."
+  },
+  {
+    "id": 42,
+    "question": "Sông dài nhất Việt Nam là sông nào tính trong phạm vi lãnh thổ Việt Nam?",
+    "options": ["Sông Hồng", "Sông Đồng Nai", "Sông Mã", "Sông Đà"],
+    "correctIndex": 1,
+    "explanation": "Sông Đồng Nai là con sông nội địa dài nhất Việt Nam nếu xét phần lớn chiều dài chảy trong lãnh thổ nước ta. Con sông này có vai trò quan trọng đối với đời sống, sản xuất và phát triển kinh tế của khu vực phía Nam."
+  },
+  {
+    "id": 43,
+    "question": "Đỉnh núi cao nhất Việt Nam là gì?",
+    "options": ["Fansipan", "Langbiang", "Bạch Mã", "Ba Vì"],
+    "correctIndex": 0,
+    "explanation": "Fansipan là đỉnh núi cao nhất Việt Nam, nằm ở dãy Hoàng Liên Sơn. Nơi đây thường được gọi là 'nóc nhà Đông Dương' và là điểm đến nổi tiếng của du lịch leo núi và khám phá thiên nhiên."
+  },
+  {
+    "id": 44,
+    "question": "Quốc gia nào được mệnh danh là xứ sở hoa anh đào?",
+    "options": ["Hàn Quốc", "Trung Quốc", "Nhật Bản", "Thái Lan"],
+    "correctIndex": 2,
+    "explanation": "Nhật Bản được biết đến rộng rãi là xứ sở hoa anh đào. Hoa anh đào không chỉ đẹp về mặt cảnh quan mà còn gắn với nhiều giá trị văn hóa, lễ hội và tinh thần thẩm mỹ của người Nhật."
+  },
+  {
+    "id": 45,
+    "question": "Sa mạc Sahara nằm chủ yếu ở châu lục nào?",
+    "options": ["Châu Phi", "Châu Á", "Châu Mỹ", "Châu Âu"],
+    "correctIndex": 0,
+    "explanation": "Sa mạc Sahara nằm ở Bắc Phi và là một trong những sa mạc nóng lớn nhất thế giới. Khu vực này có khí hậu khắc nghiệt với nhiệt độ cao, lượng mưa rất ít và hệ sinh thái đặc thù."
+  },
+  {
+    "id": 46,
+    "question": "Thủ đô của Pháp là thành phố nào?",
+    "options": ["Rome", "Madrid", "Paris", "Berlin"],
+    "correctIndex": 2,
+    "explanation": "Paris là thủ đô của Pháp, nổi tiếng với các công trình như tháp Eiffel, bảo tàng Louvre và đời sống nghệ thuật phong phú. Đây là một trong những thành phố có ảnh hưởng lớn về văn hóa và du lịch."
+  },
+  {
+    "id": 47,
+    "question": "Biển nào nằm ở phía Đông Việt Nam?",
+    "options": ["Biển Đỏ", "Biển Đông", "Địa Trung Hải", "Biển Baltic"],
+    "correctIndex": 1,
+    "explanation": "Phía Đông của Việt Nam giáp Biển Đông. Đây là vùng biển có vị trí chiến lược quan trọng về kinh tế, giao thương, quốc phòng và tài nguyên thiên nhiên."
+  },
+  {
+    "id": 48,
+    "question": "Đâu là một quốc gia thuộc khu vực Đông Nam Á?",
+    "options": ["Brazil", "Ai Cập", "Lào", "Canada"],
+    "correctIndex": 2,
+    "explanation": "Lào là một quốc gia thuộc khu vực Đông Nam Á và có đường biên giới đất liền với Việt Nam. Khu vực Đông Nam Á gồm nhiều nước có sự đa dạng văn hóa, ngôn ngữ và điều kiện tự nhiên."
+  },
+  {
+    "id": 49,
+    "question": "Châu lục nào được bao phủ phần lớn bởi băng tuyết?",
+    "options": ["Châu Phi", "Châu Nam Cực", "Châu Úc", "Châu Âu"],
+    "correctIndex": 1,
+    "explanation": "Châu Nam Cực là châu lục được bao phủ phần lớn bởi băng tuyết quanh năm. Đây là nơi có khí hậu cực kỳ lạnh, dân cư thường trú gần như không có, chủ yếu là các trạm nghiên cứu khoa học."
+  },
+  {
+    "id": 50,
+    "question": "Dãy núi Himalaya nổi tiếng vì điều gì?",
+    "options": [
+      "Là dãy núi có nhiều núi lửa nhất",
+      "Có đỉnh Everest cao nhất thế giới",
+      "Nằm hoàn toàn ở châu Phi",
+      "Là dãy núi thấp nhất thế giới"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dãy Himalaya nổi tiếng vì có đỉnh Everest, ngọn núi cao nhất thế giới so với mực nước biển. Đây là khu vực địa hình hùng vĩ, có ảnh hưởng lớn đến khí hậu và nguồn nước của nhiều quốc gia châu Á."
+  },
+  {
+    "id": 51,
+    "question": "Ngô Quyền nổi tiếng trong lịch sử Việt Nam với chiến thắng nào?",
+    "options": ["Chiến thắng Bạch Đằng", "Chiến thắng Điện Biên Phủ", "Chiến thắng Chi Lăng", "Chiến thắng Đống Đa"],
+    "correctIndex": 0,
+    "explanation": "Ngô Quyền nổi tiếng với chiến thắng Bạch Đằng năm 938, đánh bại quân Nam Hán. Chiến thắng này có ý nghĩa lịch sử rất lớn vì mở ra thời kỳ độc lập lâu dài cho dân tộc sau nhiều thế kỷ bị đô hộ."
+  },
+  {
+    "id": 52,
+    "question": "Vị anh hùng dân tộc gắn với cuộc khởi nghĩa Lam Sơn là ai?",
+    "options": ["Trần Hưng Đạo", "Lê Lợi", "Quang Trung", "Hai Bà Trưng"],
+    "correctIndex": 1,
+    "explanation": "Lê Lợi là lãnh tụ cuộc khởi nghĩa Lam Sơn chống quân Minh. Sau thắng lợi, ông lên ngôi hoàng đế, mở ra triều Hậu Lê. Cuộc khởi nghĩa thể hiện ý chí giành độc lập mạnh mẽ của dân tộc Việt Nam."
+  },
+  {
+    "id": 53,
+    "question": "Hai Bà Trưng khởi nghĩa chống lại ách đô hộ của thế lực nào?",
+    "options": ["Nhà Tống", "Nhà Hán", "Nhà Đường", "Nhà Minh"],
+    "correctIndex": 1,
+    "explanation": "Hai Bà Trưng lãnh đạo cuộc khởi nghĩa chống ách đô hộ của nhà Hán vào năm 40. Đây là một trong những mốc son quan trọng của lịch sử Việt Nam, đồng thời thể hiện vai trò nổi bật của phụ nữ trong đấu tranh dân tộc."
+  },
+  {
+    "id": 54,
+    "question": "Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại đâu?",
+    "options": ["Quảng trường Ba Đình", "Hồ Gươm", "Dinh Độc Lập", "Bến Nhà Rồng"],
+    "correctIndex": 0,
+    "explanation": "Ngày 2 tháng 9 năm 1945, Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập tại Quảng trường Ba Đình, Hà Nội. Sự kiện này khai sinh nước Việt Nam Dân chủ Cộng hòa, nay là nước Cộng hòa xã hội chủ nghĩa Việt Nam."
+  },
+  {
+    "id": 55,
+    "question": "Chiến thắng Điện Biên Phủ diễn ra vào năm nào?",
+    "options": ["1945", "1954", "1968", "1975"],
+    "correctIndex": 1,
+    "explanation": "Chiến thắng Điện Biên Phủ diễn ra năm 1954. Đây là thắng lợi có ý nghĩa quốc tế to lớn, góp phần chấm dứt chiến tranh xâm lược của thực dân Pháp ở Đông Dương và cổ vũ phong trào giải phóng dân tộc trên thế giới."
+  },
+  {
+    "id": 56,
+    "question": "Vua Quang Trung gắn với chiến thắng nào dịp Tết Kỷ Dậu 1789?",
+    "options": ["Bạch Đằng", "Ngọc Hồi - Đống Đa", "Điện Biên Phủ", "Rạch Gầm - Xoài Mút"],
+    "correctIndex": 1,
+    "explanation": "Chiến thắng Ngọc Hồi - Đống Đa năm 1789 là một trong những chiến công lẫy lừng của vua Quang Trung. Ông đã đánh tan quân Thanh, bảo vệ nền độc lập dân tộc bằng tài cầm quân xuất sắc và hành quân thần tốc."
+  },
+  {
+    "id": 57,
+    "question": "Ai là tác giả của 'Bình Ngô đại cáo'?",
+    "options": ["Nguyễn Du", "Nguyễn Trãi", "Lê Quý Đôn", "Chu Văn An"],
+    "correctIndex": 1,
+    "explanation": "Nguyễn Trãi là tác giả của 'Bình Ngô đại cáo', một áng văn chính luận nổi tiếng trong lịch sử dân tộc. Tác phẩm được xem như bản tuyên ngôn độc lập, khẳng định chủ quyền và tinh thần nhân nghĩa của Đại Việt."
+  },
+  {
+    "id": 58,
+    "question": "Sự kiện năm 1975 gắn với dấu mốc nào của Việt Nam?",
+    "options": [
+      "Khởi nghĩa Lam Sơn",
+      "Cách mạng Tháng Tám",
+      "Giải phóng miền Nam, thống nhất đất nước",
+      "Thành lập Đảng Cộng sản Việt Nam"
+    ],
+    "correctIndex": 2,
+    "explanation": "Năm 1975 đánh dấu thắng lợi của cuộc kháng chiến chống Mỹ, với sự kiện giải phóng miền Nam và thống nhất đất nước. Đây là cột mốc đặc biệt quan trọng trong lịch sử hiện đại Việt Nam."
+  },
+  {
+    "id": 59,
+    "question": "Ai là người được mệnh danh là 'Hưng Đạo Đại Vương'?",
+    "options": ["Trần Hưng Đạo", "Lý Thường Kiệt", "Ngô Quyền", "Đinh Bộ Lĩnh"],
+    "correctIndex": 0,
+    "explanation": "Trần Hưng Đạo là vị danh tướng kiệt xuất của dân tộc, nổi bật trong các cuộc kháng chiến chống quân Nguyên - Mông. Ông được tôn vinh là Hưng Đạo Đại Vương và là biểu tượng của lòng yêu nước, trí tuệ quân sự."
+  },
+  {
+    "id": 60,
+    "question": "Ai là người thống nhất 12 sứ quân?",
+    "options": ["Đinh Bộ Lĩnh", "Lê Hoàn", "Lý Công Uẩn", "Lê Lợi"],
+    "correctIndex": 0,
+    "explanation": "Đinh Bộ Lĩnh là người dẹp loạn 12 sứ quân và thống nhất đất nước vào thế kỷ X. Sau đó ông lên ngôi hoàng đế, đặt quốc hiệu là Đại Cồ Việt, mở đầu thời kỳ củng cố nền độc lập tự chủ."
+  },
+  {
+    "id": 61,
+    "question": "Tác giả của 'Truyện Kiều' là ai?",
+    "options": ["Nguyễn Trãi", "Nguyễn Du", "Hồ Xuân Hương", "Nam Cao"],
+    "correctIndex": 1,
+    "explanation": "Nguyễn Du là tác giả của 'Truyện Kiều', một kiệt tác văn học Việt Nam. Tác phẩm nổi bật bởi giá trị nhân đạo sâu sắc, nghệ thuật ngôn từ tinh tế và khả năng phản ánh số phận con người trong xã hội xưa."
+  },
+  {
+    "id": 62,
+    "question": "Nhân vật Chí Phèo là của nhà văn nào?",
+    "options": ["Nam Cao", "Tô Hoài", "Kim Lân", "Ngô Tất Tố"],
+    "correctIndex": 0,
+    "explanation": "Chí Phèo là nhân vật nổi tiếng trong tác phẩm cùng tên của nhà văn Nam Cao. Qua hình tượng này, tác giả phản ánh bi kịch bị tha hóa và khát vọng được làm người lương thiện của người nông dân nghèo trong xã hội cũ."
+  },
+  {
+    "id": 63,
+    "question": "Tác phẩm 'Dế Mèn phiêu lưu ký' gắn với tên tuổi nhà văn nào?",
+    "options": ["Tô Hoài", "Nguyễn Nhật Ánh", "Vũ Trọng Phụng", "Xuân Diệu"],
+    "correctIndex": 0,
+    "explanation": "'Dế Mèn phiêu lưu ký' là tác phẩm nổi tiếng của nhà văn Tô Hoài. Tác phẩm hấp dẫn nhiều thế hệ độc giả nhờ lối kể sinh động, giàu tưởng tượng và chứa đựng nhiều bài học về tính cách, trách nhiệm, tình bạn."
+  },
+  {
+    "id": 64,
+    "question": "Tác phẩm 'Lão Hạc' phản ánh sâu sắc điều gì?",
+    "options": [
+      "Cuộc sống xa hoa của tầng lớp quý tộc",
+      "Số phận đau khổ và lòng tự trọng của người nông dân nghèo",
+      "Những chuyến phiêu lưu kỳ ảo",
+      "Thế giới công nghệ tương lai"
+    ],
+    "correctIndex": 1,
+    "explanation": "'Lão Hạc' của Nam Cao khắc họa bi kịch của người nông dân nghèo nhưng vẫn giữ được nhân phẩm và lòng tự trọng. Tác phẩm cho thấy giá trị nhân đạo sâu sắc và tài năng phân tích tâm lý nhân vật của tác giả."
+  },
+  {
+    "id": 65,
+    "question": "Từ nào sau đây là một từ đồng nghĩa gần nghĩa với 'dũng cảm'?",
+    "options": ["Nhút nhát", "Can đảm", "Lười biếng", "Mơ hồ"],
+    "correctIndex": 1,
+    "explanation": "'Can đảm' là từ đồng nghĩa gần nghĩa với 'dũng cảm'. Cả hai đều chỉ phẩm chất không sợ khó khăn, nguy hiểm và dám đối diện với thử thách."
+  },
+  {
+    "id": 66,
+    "question": "Biện pháp tu từ so sánh là gì?",
+    "options": [
+      "Gọi tên sự vật bằng một từ bất kỳ",
+      "Đối chiếu hai sự vật có nét tương đồng để làm nổi bật đặc điểm",
+      "Lặp lại nguyên văn một câu",
+      "Bỏ hết tính từ trong câu"
+    ],
+    "correctIndex": 1,
+    "explanation": "So sánh là biện pháp tu từ đối chiếu hai sự vật, hiện tượng có điểm giống nhau nhằm làm cho cách diễn đạt trở nên gợi hình, gợi cảm và dễ hiểu hơn. Đây là biện pháp được sử dụng rất phổ biến trong thơ văn."
+  },
+  {
+    "id": 67,
+    "question": "Trong câu 'Tre giữ làng, giữ nước, giữ mái nhà tranh', hình ảnh cây tre chủ yếu tượng trưng cho điều gì?",
+    "options": [
+      "Sự yếu đuối",
+      "Sự kiêu ngạo",
+      "Tinh thần bền bỉ và gắn bó của con người Việt Nam",
+      "Sự xa hoa"
+    ],
+    "correctIndex": 2,
+    "explanation": "Hình ảnh cây tre trong văn học Việt Nam thường gắn với sự bền bỉ, dẻo dai, mộc mạc và thủy chung. Nó tượng trưng cho phẩm chất kiên cường, gần gũi và giàu sức sống của con người Việt Nam qua nhiều thế hệ."
+  },
+  {
+    "id": 68,
+    "question": "Ai là tác giả bộ truyện thiếu nhi nổi tiếng với nhiều tác phẩm về tuổi học trò như 'Kính vạn hoa'?",
+    "options": ["Nguyễn Nhật Ánh", "Tô Hoài", "Nam Cao", "Nguyễn Du"],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Nhật Ánh là nhà văn nổi tiếng với nhiều tác phẩm viết cho thiếu nhi và tuổi mới lớn. Các sáng tác của ông thường gần gũi, dí dỏm, giàu cảm xúc và gợi nhớ về ký ức học trò."
+  },
+  {
+    "id": 69,
+    "question": "Dấu câu nào thường dùng để kết thúc câu hỏi?",
+    "options": [".", ",", "?", "!"],
+    "correctIndex": 2,
+    "explanation": "Dấu hỏi chấm được dùng để kết thúc câu nghi vấn. Việc sử dụng đúng dấu câu giúp người đọc hiểu rõ mục đích của câu và làm cho văn bản mạch lạc, chính xác hơn."
+  },
+  {
+    "id": 70,
+    "question": "Một đoạn văn mạch lạc thường cần điều gì?",
+    "options": [
+      "Các câu không liên quan nhau",
+      "Ý chính rõ ràng và các câu liên kết logic",
+      "Dùng càng nhiều từ khó càng tốt",
+      "Không cần mở đầu và kết thúc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đoạn văn mạch lạc cần có chủ đề rõ ràng, các câu phục vụ cho chủ đề đó và được sắp xếp hợp lý. Sự liên kết về ý và cách dùng từ nối phù hợp giúp người đọc dễ theo dõi và hiểu đúng nội dung."
+  },
+  {
+    "id": 71,
+    "question": "Trong bóng đá, mỗi đội thường có bao nhiêu cầu thủ trên sân khi thi đấu chính thức?",
+    "options": ["9", "10", "11", "12"],
+    "correctIndex": 2,
+    "explanation": "Trong một trận bóng đá tiêu chuẩn, mỗi đội có 11 cầu thủ trên sân, bao gồm cả thủ môn. Việc phân chia vị trí hợp lý giữa phòng ngự, tiền vệ và tấn công ảnh hưởng lớn đến chiến thuật của đội bóng."
+  },
+  {
+    "id": 72,
+    "question": "Môn thể thao nào thường dùng vợt và quả cầu lông?",
+    "options": ["Bóng rổ", "Cầu lông", "Bóng chuyền", "Bơi lội"],
+    "correctIndex": 1,
+    "explanation": "Cầu lông là môn thể thao sử dụng vợt và quả cầu. Đây là môn vận động phổ biến, giúp rèn luyện sức bền, phản xạ, sự linh hoạt và có thể chơi giải trí hoặc thi đấu chuyên nghiệp."
+  },
+  {
+    "id": 73,
+    "question": "Khởi động trước khi tập thể thao có tác dụng gì?",
+    "options": [
+      "Không có tác dụng gì đáng kể",
+      "Giúp cơ thể làm quen vận động và giảm nguy cơ chấn thương",
+      "Làm mệt nhanh hơn",
+      "Thay thế hoàn toàn bài tập chính"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khởi động giúp tăng nhiệt cơ thể, làm nóng cơ bắp, khớp và hệ tim mạch trước khi vận động mạnh. Nhờ đó, cơ thể phản ứng linh hoạt hơn và nguy cơ chấn thương được giảm đáng kể."
+  },
+  {
+    "id": 74,
+    "question": "Trong bóng rổ, mục tiêu chính của người chơi là gì?",
+    "options": [
+      "Ném bóng vào rổ đối phương để ghi điểm",
+      "Giữ bóng càng lâu càng tốt",
+      "Chỉ chuyền bóng mà không ném",
+      "Đưa bóng ra ngoài sân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mục tiêu chính trong bóng rổ là đưa bóng vào rổ đối phương để ghi điểm. Môn thể thao này đòi hỏi tốc độ, kỹ năng phối hợp, khả năng quan sát và xử lý tình huống nhanh."
+  },
+  {
+    "id": 75,
+    "question": "Thói quen uống đủ nước có lợi ích gì?",
+    "options": [
+      "Giúp cơ thể duy trì hoạt động bình thường",
+      "Khiến không cần ăn uống hợp lý",
+      "Làm thay được giấc ngủ",
+      "Có thể thay hoàn toàn tập thể dục"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nước rất cần thiết cho nhiều hoạt động sống như điều hòa nhiệt độ, vận chuyển chất dinh dưỡng và hỗ trợ đào thải. Uống đủ nước giúp cơ thể hoạt động hiệu quả hơn, nhưng vẫn cần kết hợp với chế độ ăn và nghỉ ngơi hợp lý."
+  },
+  {
+    "id": 76,
+    "question": "Môn thể thao nào diễn ra trong hồ bơi?",
+    "options": ["Điền kinh", "Bơi lội", "Bóng đá", "Cờ vua"],
+    "correctIndex": 1,
+    "explanation": "Bơi lội là môn thể thao diễn ra trong nước, thường ở hồ bơi hoặc khu vực thi đấu chuyên dụng. Đây là môn giúp rèn luyện sức bền, tăng cường chức năng hô hấp và tốt cho nhiều nhóm tuổi."
+  },
+  {
+    "id": 77,
+    "question": "Một tinh thần thi đấu đẹp thường thể hiện ở điều gì?",
+    "options": [
+      "Gian lận để chiến thắng",
+      "Tôn trọng luật chơi, đối thủ và trọng tài",
+      "Cố tình gây chấn thương cho đối phương",
+      "Chỉ chấp nhận thắng, không chấp nhận học hỏi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tinh thần thể thao đẹp không chỉ nằm ở kết quả mà còn ở cách thi đấu. Việc tôn trọng luật lệ, đối thủ, đồng đội và trọng tài thể hiện nhân cách, sự chuyên nghiệp và văn hóa ứng xử trong thể thao."
+  },
+  {
+    "id": 78,
+    "question": "Đi bộ mỗi ngày ở mức phù hợp có thể mang lại lợi ích nào?",
+    "options": [
+      "Cải thiện sức khỏe tim mạch và tinh thần",
+      "Làm cơ thể yếu hơn",
+      "Không có tác động gì",
+      "Thay thế mọi hoạt động khác"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đi bộ đều đặn giúp cải thiện lưu thông máu, tăng sức bền, hỗ trợ kiểm soát cân nặng và giảm căng thẳng. Đây là một hình thức vận động đơn giản nhưng rất hiệu quả nếu duy trì thường xuyên."
+  },
+  {
+    "id": 79,
+    "question": "Trong cờ vua, quân nào quan trọng nhất vì nếu mất sẽ thua cuộc?",
+    "options": ["Hậu", "Xe", "Tượng", "Vua"],
+    "correctIndex": 3,
+    "explanation": "Trong cờ vua, vua là quân quan trọng nhất vì mục tiêu của ván cờ là chiếu hết vua đối phương. Mọi chiến thuật tấn công và phòng thủ đều xoay quanh việc bảo vệ vua và tạo sức ép lên vua đối phương."
+  },
+  {
+    "id": 80,
+    "question": "Khi tham gia hoạt động thể thao ngoài trời nắng nóng, điều nào là cần thiết?",
+    "options": [
+      "Không cần nghỉ ngơi",
+      "Bù nước và theo dõi dấu hiệu mệt quá sức",
+      "Mặc càng dày càng tốt",
+      "Cố tập thật lâu dù chóng mặt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi vận động ngoài trời nóng, cơ thể dễ mất nước và quá nhiệt. Việc uống nước hợp lý, nghỉ ngơi đúng lúc, mặc trang phục phù hợp và chú ý dấu hiệu mệt, choáng là rất quan trọng để bảo vệ sức khỏe."
+  },
+  {
+    "id": 81,
+    "question": "Thiết bị nào dùng để nhập văn bản vào máy tính phổ biến nhất?",
+    "options": ["Màn hình", "Bàn phím", "Loa", "Máy in"],
+    "correctIndex": 1,
+    "explanation": "Bàn phím là thiết bị nhập liệu phổ biến giúp người dùng gõ văn bản, nhập lệnh và thao tác với máy tính. Đây là một trong những thiết bị cơ bản nhất trong tin học."
+  },
+  {
+    "id": 82,
+    "question": "Biểu tượng 'thùng rác' trên máy tính thường dùng để làm gì?",
+    "options": [
+      "Mở trình duyệt web",
+      "Lưu trữ tạm các tệp đã xóa",
+      "Tắt máy tính ngay lập tức",
+      "Tăng âm lượng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thùng rác là nơi lưu tạm các tệp đã bị xóa, cho phép người dùng khôi phục nếu xóa nhầm. Đây là một cơ chế giúp giảm rủi ro mất dữ liệu do thao tác sai."
+  },
+  {
+    "id": 83,
+    "question": "Internet là gì?",
+    "options": [
+      "Một loại máy tính",
+      "Mạng kết nối các mạng máy tính trên toàn cầu",
+      "Một phần mềm gõ chữ",
+      "Tên khác của màn hình"
+    ],
+    "correctIndex": 1,
+    "explanation": "Internet là mạng lưới kết nối các hệ thống máy tính trên phạm vi toàn cầu, cho phép trao đổi thông tin, truy cập website, gửi email, học tập và làm việc trực tuyến. Nó đã trở thành hạ tầng thiết yếu của đời sống hiện đại."
+  },
+  {
+    "id": 84,
+    "question": "Đâu là hành vi sử dụng máy tính an toàn hơn?",
+    "options": [
+      "Cài phần mềm từ nguồn không rõ",
+      "Mở mọi tệp đính kèm trong email lạ",
+      "Cập nhật phần mềm và hệ điều hành định kỳ",
+      "Tắt hết các cảnh báo bảo mật"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cập nhật phần mềm và hệ điều hành giúp vá lỗ hổng bảo mật, cải thiện ổn định và giảm nguy cơ bị tấn công. Ngược lại, cài phần mềm không rõ nguồn gốc hay mở tệp lạ dễ khiến thiết bị bị nhiễm mã độc."
+  },
+  {
+    "id": 85,
+    "question": "Email thường được dùng để làm gì?",
+    "options": [
+      "Nấu ăn",
+      "Gửi và nhận thư điện tử",
+      "Đo nhiệt độ",
+      "Lái xe tự động"
+    ],
+    "correctIndex": 1,
+    "explanation": "Email là công cụ gửi và nhận thư điện tử qua Internet. Nó được sử dụng rộng rãi trong học tập, công việc và giao tiếp nhờ tính nhanh chóng, tiện lợi và có thể lưu trữ nội dung trao đổi."
+  },
+  {
+    "id": 86,
+    "question": "Tệp có phần mở rộng '.jpg' thường là loại tệp gì?",
+    "options": ["Âm thanh", "Hình ảnh", "Bảng tính", "Tệp nén"],
+    "correctIndex": 1,
+    "explanation": "'.jpg' là định dạng tệp hình ảnh phổ biến, thường dùng để lưu ảnh chụp hoặc hình ảnh có nhiều màu sắc. Đây là định dạng nén ảnh giúp giảm dung lượng khá hiệu quả."
+  },
+  {
+    "id": 87,
+    "question": "Trình duyệt web dùng để làm gì?",
+    "options": [
+      "Mở và xem các trang web",
+      "Giặt quần áo",
+      "Làm mát máy tính",
+      "Sạc pin điện thoại"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trình duyệt web là phần mềm dùng để truy cập và hiển thị các trang web trên Internet. Nhờ trình duyệt, người dùng có thể đọc tin tức, học online, xem video hoặc sử dụng nhiều dịch vụ số khác."
+  },
+  {
+    "id": 88,
+    "question": "Đâu là cách sao lưu dữ liệu hợp lý?",
+    "options": [
+      "Chỉ lưu duy nhất một bản trong máy",
+      "Không cần sao lưu nếu dữ liệu quan trọng",
+      "Lưu thêm bản sao ở ổ cứng khác hoặc dịch vụ đám mây",
+      "Đợi mất dữ liệu rồi mới sao lưu"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sao lưu dữ liệu giúp giảm thiểu rủi ro khi máy tính hỏng, bị mất hoặc nhiễm mã độc. Việc lưu thêm bản sao ở thiết bị khác hoặc dịch vụ đám mây là cách an toàn và phổ biến để bảo vệ dữ liệu quan trọng."
+  },
+  {
+    "id": 89,
+    "question": "Đâu là ví dụ về thiết bị lưu trữ dữ liệu?",
+    "options": ["USB", "Chuột máy tính", "Màn hình", "Webcam"],
+    "correctIndex": 0,
+    "explanation": "USB là một thiết bị lưu trữ dữ liệu di động, giúp người dùng chép, mang theo và chuyển tệp giữa các thiết bị. Ngoài USB còn có ổ cứng, thẻ nhớ và nhiều hình thức lưu trữ khác."
+  },
+  {
+    "id": 90,
+    "question": "Khi nhận tệp lạ qua email từ người không quen, bạn nên làm gì?",
+    "options": [
+      "Mở ngay để xem nội dung",
+      "Tải về và chia sẻ cho bạn bè",
+      "Cẩn trọng, không mở nếu chưa xác minh nguồn gửi",
+      "Tắt phần mềm diệt virus rồi mở"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tệp lạ từ người không quen có thể chứa mã độc, liên kết lừa đảo hoặc nội dung nguy hiểm. Cách an toàn là không mở khi chưa xác minh được người gửi và mục đích của tệp."
+  },
+  {
+    "id": 91,
+    "question": "Món phở của Việt Nam thường được chế biến với thành phần chính nào?",
+    "options": ["Bún và nước mắm", "Bánh phở và nước dùng", "Mì Ý và sốt cà chua", "Cơm và cà ri"],
+    "correctIndex": 1,
+    "explanation": "Phở là món ăn nổi tiếng của Việt Nam, thường gồm bánh phở, nước dùng và các loại thịt như bò hoặc gà, ăn kèm rau thơm. Điều làm nên đặc sắc của phở là nước dùng được ninh kỹ với gia vị tạo hương thơm đặc trưng."
+  },
+  {
+    "id": 92,
+    "question": "Bánh chưng truyền thống của Việt Nam thường gắn với dịp nào?",
+    "options": ["Tết Nguyên đán", "Trung thu", "Khai giảng", "Quốc tế thiếu nhi"],
+    "correctIndex": 0,
+    "explanation": "Bánh chưng là món ăn truyền thống gắn liền với Tết Nguyên đán của người Việt. Món bánh tượng trưng cho đất, thể hiện lòng biết ơn tổ tiên và gìn giữ nét đẹp văn hóa gia đình."
+  },
+  {
+    "id": 93,
+    "question": "Món ăn nào sau đây thường được làm từ gạo nếp lên men và lá dong không phải là cách mô tả chính xác bánh chưng?",
+    "options": [
+      "Bánh chưng làm chủ yếu từ gạo nếp, đậu xanh, thịt lợn",
+      "Bánh chưng thường được gói bằng lá dong",
+      "Bánh chưng được luộc trong nhiều giờ",
+      "Bánh chưng là món mì nước truyền thống"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bánh chưng không phải là món mì nước mà là loại bánh vuông truyền thống được làm từ gạo nếp, đậu xanh và thịt lợn, thường gói bằng lá dong. Đây là món ăn biểu tượng trong dịp Tết cổ truyền."
+  },
+  {
+    "id": 94,
+    "question": "Món sushi nổi tiếng gắn liền với ẩm thực nước nào?",
+    "options": ["Nhật Bản", "Ấn Độ", "Việt Nam", "Mexico"],
+    "correctIndex": 0,
+    "explanation": "Sushi là món ăn nổi tiếng của Nhật Bản, thường kết hợp cơm trộn giấm với hải sản, rau củ hoặc các nguyên liệu khác. Món ăn này thể hiện tính tinh tế và sự chú trọng đến nguyên liệu tươi của ẩm thực Nhật."
+  },
+  {
+    "id": 95,
+    "question": "Ăn quá nhiều đồ ngọt trong thời gian dài có thể gây tác động nào?",
+    "options": [
+      "Không ảnh hưởng gì",
+      "Có thể tăng nguy cơ sâu răng và ảnh hưởng sức khỏe",
+      "Giúp cơ thể khỏe mạnh hơn trong mọi trường hợp",
+      "Thay thế hoàn toàn bữa ăn chính"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tiêu thụ quá nhiều đồ ngọt trong thời gian dài có thể ảnh hưởng đến răng miệng, cân nặng và sức khỏe chuyển hóa. Chế độ ăn cân bằng vẫn là yếu tố quan trọng nhất để duy trì sức khỏe lâu dài."
+  },
+  {
+    "id": 96,
+    "question": "Món bún bò Huế nổi tiếng gắn với vùng nào của Việt Nam?",
+    "options": ["Huế", "Hải Phòng", "Cần Thơ", "Đà Lạt"],
+    "correctIndex": 0,
+    "explanation": "Bún bò Huế là món ăn nổi tiếng có nguồn gốc từ Huế. Món này đặc trưng bởi nước dùng đậm đà, vị cay thơm và sự kết hợp của bún cùng các loại thịt, chả và gia vị."
+  },
+  {
+    "id": 97,
+    "question": "Rau xanh trong bữa ăn thường có lợi vì lý do nào?",
+    "options": [
+      "Cung cấp chất xơ và nhiều vi chất",
+      "Thay thế hoàn toàn mọi loại thực phẩm khác",
+      "Làm cơ thể không cần uống nước",
+      "Chỉ có tác dụng trang trí"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rau xanh cung cấp chất xơ, vitamin và khoáng chất, hỗ trợ tiêu hóa và góp phần cân bằng dinh dưỡng. Một chế độ ăn hợp lý thường cần sự kết hợp đa dạng giữa rau, đạm, tinh bột và chất béo lành mạnh."
+  },
+  {
+    "id": 98,
+    "question": "Món pizza có nguồn gốc nổi tiếng từ nước nào?",
+    "options": ["Ý", "Pháp", "Việt Nam", "Hàn Quốc"],
+    "correctIndex": 0,
+    "explanation": "Pizza là món ăn nổi tiếng có nguồn gốc từ Ý. Từ một món ăn địa phương, pizza đã trở thành món phổ biến trên toàn thế giới với nhiều biến thể về đế bánh, sốt và nhân."
+  },
+  {
+    "id": 99,
+    "question": "Khi bảo quản thực phẩm sống và chín, điều quan trọng là gì?",
+    "options": [
+      "Để chung tất cả cho tiện",
+      "Tách riêng để hạn chế nhiễm chéo",
+      "Không cần che đậy",
+      "Để ngoài nhiệt độ phòng càng lâu càng tốt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tách riêng thực phẩm sống và chín giúp hạn chế nhiễm chéo vi khuẩn, một nguyên nhân phổ biến gây ngộ độc thực phẩm. Đây là nguyên tắc cơ bản trong an toàn vệ sinh thực phẩm."
+  },
+  {
+    "id": 100,
+    "question": "Bữa sáng hợp lý thường có ý nghĩa gì?",
+    "options": [
+      "Giúp cơ thể có năng lượng cho đầu ngày",
+      "Có thể bỏ thường xuyên mà không ảnh hưởng gì",
+      "Chỉ cần uống nước ngọt là đủ",
+      "Không liên quan đến học tập hay làm việc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bữa sáng giúp cơ thể bổ sung năng lượng sau một đêm dài, hỗ trợ sự tập trung và khả năng làm việc trong buổi sáng. Một bữa sáng cân đối sẽ tốt hơn so với bỏ bữa hoặc chỉ dùng thực phẩm nhiều đường."
+  },
+  {
+    "id": 101,
+    "question": "Màu đỏ và màu vàng pha với nhau thường tạo ra màu gì?",
+    "options": ["Xanh lá", "Cam", "Tím", "Nâu"],
+    "correctIndex": 1,
+    "explanation": "Trong pha màu cơ bản, đỏ và vàng thường tạo thành màu cam. Hiểu về màu sắc giúp ích trong hội họa, thiết kế, trang trí và nhiều hoạt động sáng tạo khác."
+  },
+  {
+    "id": 102,
+    "question": "Nhạc cụ nào có phím trắng đen và thường được dùng trong âm nhạc cổ điển lẫn hiện đại?",
+    "options": ["Trống", "Piano", "Sáo", "Kèn trumpet"],
+    "correctIndex": 1,
+    "explanation": "Piano là nhạc cụ phổ biến với hệ phím trắng đen, có thể biểu diễn độc tấu hoặc hòa tấu. Nhạc cụ này có dải âm rộng và được sử dụng trong nhiều thể loại âm nhạc khác nhau."
+  },
+  {
+    "id": 103,
+    "question": "Mỹ thuật giúp phát triển điều gì ở người học?",
+    "options": [
+      "Khả năng quan sát và sáng tạo",
+      "Chỉ khả năng ghi nhớ máy móc",
+      "Không có giá trị thực tế",
+      "Chỉ phù hợp với người lớn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mỹ thuật giúp rèn luyện khả năng quan sát, cảm thụ thẩm mỹ, biểu đạt ý tưởng và sáng tạo. Đây không chỉ là môn học nghệ thuật mà còn hỗ trợ phát triển tư duy linh hoạt và cảm xúc."
+  },
+  {
+    "id": 104,
+    "question": "Một bài hát thường gồm các yếu tố cơ bản nào?",
+    "options": [
+      "Lời ca và giai điệu",
+      "Chỉ có tiêu đề",
+      "Chỉ có nhạc cụ mà không cần âm thanh",
+      "Chỉ cần hình ảnh minh họa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Một bài hát thường gồm lời ca và giai điệu, ngoài ra còn có tiết tấu, hòa âm và cách thể hiện của người biểu diễn. Sự kết hợp hài hòa giữa các yếu tố này tạo nên cảm xúc và dấu ấn của bài hát."
+  },
+  {
+    "id": 105,
+    "question": "Trong nhiếp ảnh, ánh sáng có vai trò như thế nào?",
+    "options": [
+      "Không quan trọng",
+      "Rất quan trọng vì ảnh hưởng đến độ rõ, màu sắc và cảm xúc bức ảnh",
+      "Chỉ cần khi chụp đêm",
+      "Làm ảnh lúc nào cũng xấu đi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ánh sáng là yếu tố cốt lõi trong nhiếp ảnh vì quyết định độ sáng, độ tương phản, màu sắc và bầu không khí của bức ảnh. Người chụp giỏi thường biết tận dụng ánh sáng tự nhiên hoặc nhân tạo để tạo hiệu quả hình ảnh tốt hơn."
+  },
+  {
+    "id": 106,
+    "question": "Điệu múa hoặc bài biểu diễn nghệ thuật thường cần điều gì?",
+    "options": [
+      "Sự phối hợp nhịp nhàng giữa động tác và nhạc",
+      "Làm hoàn toàn ngẫu nhiên không cần tập luyện",
+      "Không cần biểu cảm",
+      "Không cần chú ý khán giả"
+    ],
+    "correctIndex": 0,
+    "explanation": "Một tiết mục biểu diễn đẹp thường cần sự phối hợp nhịp nhàng giữa động tác, âm nhạc, cảm xúc và luyện tập. Điều này giúp phần trình diễn rõ ý tưởng hơn và tạo được sự kết nối với người xem."
+  },
+  {
+    "id": 107,
+    "question": "Màu nào thường được xem là màu cơ bản trong hội họa phổ thông?",
+    "options": ["Đỏ", "Nâu", "Xám", "Đen nhạt"],
+    "correctIndex": 0,
+    "explanation": "Trong kiến thức mỹ thuật phổ thông, đỏ là một trong các màu cơ bản, bên cạnh vàng và xanh lam. Từ những màu này có thể pha ra nhiều màu khác nhau."
+  },
+  {
+    "id": 108,
+    "question": "Vẽ tranh phong cảnh thường tập trung vào điều gì?",
+    "options": [
+      "Cảnh vật thiên nhiên hoặc không gian xung quanh",
+      "Chỉ vẽ chữ",
+      "Chỉ vẽ máy móc công nghiệp",
+      "Không cần bố cục"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tranh phong cảnh thường miêu tả thiên nhiên, làng quê, thành phố hoặc một không gian cụ thể. Khi vẽ phong cảnh, bố cục, màu sắc, ánh sáng và chiều sâu là những yếu tố quan trọng."
+  },
+  {
+    "id": 109,
+    "question": "Một lợi ích của việc nghe nhạc phù hợp là gì?",
+    "options": [
+      "Có thể giúp thư giãn và cải thiện cảm xúc",
+      "Làm mất hoàn toàn khả năng tập trung trong mọi trường hợp",
+      "Thay thế hoàn toàn giao tiếp",
+      "Khiến không cần nghỉ ngơi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Âm nhạc phù hợp có thể giúp thư giãn, cải thiện tâm trạng và đôi khi hỗ trợ tập trung. Tuy nhiên, hiệu quả còn tùy vào thể loại nhạc, âm lượng và hoàn cảnh nghe."
+  },
+  {
+    "id": 110,
+    "question": "Trong sân khấu, 'khán giả' là ai?",
+    "options": ["Người xem buổi biểu diễn", "Người viết kịch bản", "Người dựng cảnh", "Người bán đèn"],
+    "correctIndex": 0,
+    "explanation": "Khán giả là những người theo dõi, thưởng thức buổi biểu diễn nghệ thuật. Sự đón nhận của khán giả có vai trò quan trọng trong việc lan tỏa giá trị và cảm xúc của tác phẩm."
+  },
+  {
+    "id": 111,
+    "question": "Khi qua đường, nguyên tắc an toàn cơ bản là gì?",
+    "options": [
+      "Chạy thật nhanh không cần quan sát",
+      "Quan sát kỹ, đi đúng nơi quy định và chú ý tín hiệu giao thông",
+      "Vừa đi vừa nhìn điện thoại",
+      "Băng qua chỗ xe đang chạy nhanh"
+    ],
+    "correctIndex": 1,
+    "explanation": "An toàn giao thông bắt đầu từ những thói quen nhỏ như quan sát kỹ, qua đường đúng nơi quy định và tuân thủ đèn tín hiệu. Điều này giúp giảm nguy cơ tai nạn cho cả người đi bộ lẫn người điều khiển phương tiện."
+  },
+  {
+    "id": 112,
+    "question": "Đèn đỏ trong giao thông có ý nghĩa gì?",
+    "options": ["Đi nhanh lên", "Dừng lại", "Đi chậm", "Rẽ tùy ý"],
+    "correctIndex": 1,
+    "explanation": "Đèn đỏ là tín hiệu yêu cầu các phương tiện phải dừng lại. Việc tuân thủ tín hiệu đèn giao thông giúp bảo đảm trật tự và an toàn cho mọi người tham gia giao thông."
+  },
+  {
+    "id": 113,
+    "question": "Khi đi xe máy, việc đội mũ bảo hiểm có ý nghĩa gì?",
+    "options": [
+      "Chỉ để đối phó khi có kiểm tra",
+      "Giúp giảm nguy cơ chấn thương đầu khi xảy ra tai nạn",
+      "Không có tác dụng thực tế",
+      "Chỉ cần đội khi đi xa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mũ bảo hiểm là thiết bị bảo vệ quan trọng giúp giảm lực tác động lên vùng đầu khi xảy ra va chạm. Đây là biện pháp đơn giản nhưng có giá trị lớn trong việc bảo vệ tính mạng và sức khỏe."
+  },
+  {
+    "id": 114,
+    "question": "Khi ngồi sau ô tô, thói quen an toàn nên có là gì?",
+    "options": [
+      "Không cần làm gì",
+      "Thắt dây an toàn nếu xe có trang bị",
+      "Mở cửa khi xe đang chạy",
+      "Đứng lên đi lại trong xe"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dây an toàn giúp giữ cơ thể ổn định khi xe phanh gấp hoặc va chạm, giảm nguy cơ chấn thương nghiêm trọng. Đây là nguyên tắc an toàn cần thực hiện ở cả ghế trước và ghế sau nếu xe có trang bị."
+  },
+  {
+    "id": 115,
+    "question": "Hành vi nào khi tham gia giao thông là nguy hiểm?",
+    "options": [
+      "Chấp hành biển báo",
+      "Đi đúng làn đường",
+      "Vừa lái xe vừa dùng điện thoại",
+      "Giảm tốc độ ở nơi đông người"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vừa lái xe vừa dùng điện thoại làm giảm tập trung, chậm phản ứng và tăng nguy cơ tai nạn. Đây là hành vi rất nguy hiểm, cần tránh tuyệt đối khi tham gia giao thông."
+  },
+  {
+    "id": 116,
+    "question": "Khi thấy người bị điện giật, điều nên làm đầu tiên là gì?",
+    "options": [
+      "Chạm vào nạn nhân ngay bằng tay trần",
+      "Tìm cách ngắt nguồn điện hoặc tách nạn nhân khỏi điện bằng vật cách điện an toàn",
+      "Đổ nước vào chỗ có điện",
+      "Bỏ đi vì sợ liên lụy"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi có tai nạn điện giật, việc ưu tiên là loại bỏ nguồn nguy hiểm trước khi cứu người. Chạm trực tiếp bằng tay trần có thể khiến người cứu cũng gặp nạn. Cần ngắt điện hoặc dùng vật cách điện phù hợp, sau đó gọi cấp cứu và hỗ trợ theo khả năng."
+  },
+  {
+    "id": 117,
+    "question": "Trong trường hợp có cháy nhỏ mới phát sinh, điều quan trọng là gì?",
+    "options": [
+      "Hoảng loạn chạy tán loạn",
+      "Bình tĩnh báo động và tìm cách xử lý an toàn hoặc gọi lực lượng hỗ trợ",
+      "Trốn im không báo ai",
+      "Quay video trước rồi tính sau"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi có cháy, sự bình tĩnh rất quan trọng. Cần báo cho người xung quanh, ngắt nguồn điện nếu an toàn, dùng phương tiện chữa cháy phù hợp khi đám cháy còn nhỏ và gọi lực lượng chức năng. Nếu không bảo đảm an toàn, cần ưu tiên thoát nạn."
+  },
+  {
+    "id": 118,
+    "question": "Số điện thoại khẩn cấp thường dùng để gọi cứu hỏa ở Việt Nam là?",
+    "options": ["111", "113", "114", "115"],
+    "correctIndex": 2,
+    "explanation": "Ở Việt Nam, số 114 là số khẩn cấp để gọi lực lượng phòng cháy chữa cháy và cứu nạn cứu hộ. Việc nhớ các số khẩn cấp cơ bản là kỹ năng hữu ích trong cuộc sống."
+  },
+  {
+    "id": 119,
+    "question": "Khi đi bơi ở nơi lạ, điều nên làm là gì?",
+    "options": [
+      "Nhảy xuống ngay để thử độ sâu",
+      "Quan sát cảnh báo, chỉ bơi ở nơi an toàn và có người giám sát nếu cần",
+      "Bơi một mình càng xa càng tốt",
+      "Đùa nghịch quá mức dưới nước"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bơi ở nơi lạ tiềm ẩn nhiều nguy cơ như nước sâu, dòng chảy mạnh hoặc vật cản dưới nước. Vì vậy cần quan sát kỹ khu vực, tuân thủ cảnh báo và chỉ bơi ở nơi được đánh giá an toàn."
+  },
+  {
+    "id": 120,
+    "question": "Nếu bị lạc ở nơi công cộng, cách xử lý phù hợp là gì?",
+    "options": [
+      "Đi theo người lạ bất kỳ",
+      "Hoảng loạn bỏ chạy",
+      "Đứng yên ở nơi an toàn hoặc tìm người có trách nhiệm để nhờ giúp",
+      "Tắt điện thoại và giấu thông tin"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi bị lạc, điều quan trọng là giữ bình tĩnh và tìm sự hỗ trợ từ người có trách nhiệm như bảo vệ, nhân viên hoặc cơ quan chức năng. Không nên đi theo người lạ hoặc chạy lung tung vì sẽ làm tình huống khó kiểm soát hơn."
+  },
+  {
+    "id": 121,
+    "question": "Hệ Mặt Trời có trung tâm là gì?",
+    "options": ["Mặt Trăng", "Trái Đất", "Mặt Trời", "Sao Hỏa"],
+    "correctIndex": 2,
+    "explanation": "Mặt Trời là trung tâm của Hệ Mặt Trời. Các hành tinh, trong đó có Trái Đất, chuyển động quanh Mặt Trời dưới tác động của lực hấp dẫn."
+  },
+  {
+    "id": 122,
+    "question": "Mặt Trăng phát sáng vì lý do nào?",
+    "options": [
+      "Tự tạo ra ánh sáng mạnh như Mặt Trời",
+      "Phản chiếu ánh sáng từ Mặt Trời",
+      "Được chiếu sáng bởi đèn thành phố",
+      "Phát sáng nhờ nước biển"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mặt Trăng không tự phát ra ánh sáng như Mặt Trời mà chủ yếu phản chiếu ánh sáng Mặt Trời. Vì vậy, hình dạng sáng tối của Mặt Trăng thay đổi theo vị trí tương đối giữa Mặt Trời, Trái Đất và Mặt Trăng."
+  },
+  {
+    "id": 123,
+    "question": "Hiện tượng ngày và đêm chủ yếu do điều gì gây ra?",
+    "options": [
+      "Trái Đất tự quay quanh trục",
+      "Mặt Trời quay quanh Trái Đất",
+      "Mặt Trăng che Mặt Trời",
+      "Gió trong khí quyển"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày và đêm xảy ra vì Trái Đất tự quay quanh trục của nó. Phần nào hướng về phía Mặt Trời sẽ là ban ngày, còn phần khuất ánh sáng là ban đêm."
+  },
+  {
+    "id": 124,
+    "question": "Dải Ngân Hà là gì?",
+    "options": [
+      "Một đại dương trên Trái Đất",
+      "Thiên hà chứa Hệ Mặt Trời",
+      "Tên một hành tinh",
+      "Một loại sao chổi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dải Ngân Hà là thiên hà chứa Hệ Mặt Trời của chúng ta. Nó gồm hàng trăm tỷ ngôi sao cùng khí, bụi và nhiều cấu trúc thiên văn khác."
+  },
+  {
+    "id": 125,
+    "question": "Sao chổi thường gây chú ý vì đặc điểm nào?",
+    "options": [
+      "Có đuôi sáng khi đến gần Mặt Trời",
+      "Luôn đứng yên một chỗ",
+      "Phát ra âm thanh lớn nghe rõ từ Trái Đất",
+      "Là vệ tinh nhân tạo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi đến gần Mặt Trời, sao chổi nóng lên và giải phóng khí, bụi tạo thành đuôi sáng đặc trưng. Đây là lý do sao chổi thường thu hút sự chú ý khi xuất hiện trên bầu trời."
+  },
+  {
+    "id": 126,
+    "question": "Thiết bị nào giúp con người quan sát bầu trời rõ hơn?",
+    "options": ["Kính thiên văn", "Máy sấy tóc", "Nồi cơm điện", "Máy in"],
+    "correctIndex": 0,
+    "explanation": "Kính thiên văn là thiết bị dùng để quan sát các thiên thể như Mặt Trăng, hành tinh, sao và thiên hà. Nó giúp thu được hình ảnh chi tiết hơn nhiều so với mắt thường."
+  },
+  {
+    "id": 127,
+    "question": "Trái Đất được gọi là 'hành tinh xanh' chủ yếu vì điều gì?",
+    "options": [
+      "Có nhiều biển và đại dương nhìn từ không gian",
+      "Luôn phủ toàn cây xanh ở mọi nơi",
+      "Có màu xanh do ban đêm",
+      "Được sơn màu xanh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi nhìn từ không gian, Trái Đất có màu xanh nổi bật vì bề mặt có nhiều đại dương. Nước bao phủ phần lớn diện tích hành tinh và đóng vai trò đặc biệt quan trọng đối với sự sống."
+  },
+  {
+    "id": 128,
+    "question": "Nhà du hành vũ trụ là người làm công việc gì?",
+    "options": [
+      "Lặn biển sâu",
+      "Tham gia các nhiệm vụ bay vào không gian",
+      "Điều khiển tàu hỏa",
+      "Khảo cổ học"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nhà du hành vũ trụ là người được đào tạo để thực hiện các nhiệm vụ trong không gian, như nghiên cứu khoa học, vận hành tàu vũ trụ hoặc làm việc trên trạm không gian. Công việc này đòi hỏi kỹ năng, sức khỏe và kỷ luật rất cao."
+  },
+  {
+    "id": 129,
+    "question": "Mưa sao băng là gì?",
+    "options": [
+      "Hiện tượng các thiên thạch nhỏ cháy sáng khi đi vào khí quyển Trái Đất",
+      "Mưa lớn kèm sấm sét",
+      "Sao thật rơi xuống đất nguyên vẹn",
+      "Ánh đèn thành phố phản chiếu lên mây"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mưa sao băng là hiện tượng nhiều thiên thạch nhỏ lao vào khí quyển Trái Đất và bốc cháy, tạo thành các vệt sáng. Đây là hiện tượng thiên văn đẹp, thường xuất hiện theo chu kỳ hằng năm."
+  },
+  {
+    "id": 130,
+    "question": "Mặt Trời là gì?",
+    "options": ["Một hành tinh", "Một ngôi sao", "Một vệ tinh", "Một đám mây khí không phát sáng"],
+    "correctIndex": 1,
+    "explanation": "Mặt Trời là một ngôi sao, có khả năng tự phát ra ánh sáng và nhiệt lượng. Năng lượng từ Mặt Trời là nguồn sống quan trọng đối với Trái Đất."
+  },
+  {
+    "id": 131,
+    "question": "Ngày Tết Nguyên đán ở Việt Nam thường gắn với hoạt động nào?",
+    "options": [
+      "Thăm hỏi, sum họp gia đình và chúc Tết",
+      "Chỉ ngủ cả ngày",
+      "Không được nói chuyện với ai",
+      "Bỏ qua tổ tiên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tết Nguyên đán là dịp đoàn tụ gia đình, tưởng nhớ tổ tiên và gửi lời chúc tốt đẹp cho năm mới. Đây là một trong những lễ truyền thống quan trọng nhất trong văn hóa Việt Nam."
+  },
+  {
+    "id": 132,
+    "question": "Tết Trung thu ở Việt Nam thường gắn với hình ảnh nào?",
+    "options": ["Bánh chưng", "Đèn lồng", "Hoa đào", "Lì xì đầu năm"],
+    "correctIndex": 1,
+    "explanation": "Tết Trung thu thường gắn với đèn lồng, múa lân, bánh trung thu và không khí vui tươi dành cho thiếu nhi. Đây là dịp lễ mang đậm nét văn hóa truyền thống."
+  },
+  {
+    "id": 133,
+    "question": "Hành động nhường ghế cho người già trên xe buýt thể hiện điều gì?",
+    "options": [
+      "Sự bất tiện không cần thiết",
+      "Sự lễ phép và tôn trọng người khác",
+      "Quyền lực cá nhân",
+      "Sự miễn cưỡng bắt buộc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nhường ghế cho người già, phụ nữ mang thai hoặc người cần hỗ trợ là hành động lịch sự, thể hiện sự quan tâm và tinh thần cộng đồng. Đây là một nét đẹp trong ứng xử nơi công cộng."
+  },
+  {
+    "id": 134,
+    "question": "Khi đến nơi công cộng như thư viện, bạn nên làm gì?",
+    "options": [
+      "Nói chuyện thật to",
+      "Giữ trật tự và tôn trọng không gian chung",
+      "Tự ý làm hỏng sách",
+      "Xả rác ra sàn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Không gian công cộng cần được sử dụng có ý thức. Giữ trật tự, sạch sẽ và tôn trọng người khác giúp mọi người cùng có trải nghiệm tốt hơn."
+  },
+  {
+    "id": 135,
+    "question": "Lời chào có ý nghĩa như thế nào trong giao tiếp?",
+    "options": [
+      "Không cần thiết",
+      "Giúp mở đầu cuộc giao tiếp lịch sự và tạo thiện cảm",
+      "Chỉ dùng với người quen rất thân",
+      "Là điều có thể thay thế bằng im lặng tuyệt đối"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lời chào là một biểu hiện cơ bản của phép lịch sự. Nó giúp mở đầu cuộc giao tiếp nhẹ nhàng, thể hiện sự tôn trọng và góp phần xây dựng quan hệ tích cực giữa người với người."
+  },
+  {
+    "id": 136,
+    "question": "Khi mượn đồ của người khác, cách ứng xử đúng là gì?",
+    "options": [
+      "Tự lấy mà không cần hỏi",
+      "Hỏi xin phép và giữ gìn cẩn thận",
+      "Dùng xong không cần trả",
+      "Cho người khác mượn tiếp mà không báo"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tài sản của người khác cần được tôn trọng. Việc xin phép trước khi mượn, sử dụng cẩn thận và trả lại đúng hẹn thể hiện sự đáng tin cậy và văn minh trong ứng xử."
+  },
+  {
+    "id": 137,
+    "question": "Giữ lời hứa quan trọng vì sao?",
+    "options": [
+      "Vì giúp xây dựng uy tín và niềm tin",
+      "Vì chỉ để tránh bị nhắc nhở",
+      "Không quan trọng lắm",
+      "Chỉ cần với người lạ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Giữ lời hứa thể hiện trách nhiệm và sự tôn trọng đối với người khác. Khi một người thường xuyên giữ lời, họ sẽ xây dựng được uy tín và niềm tin trong các mối quan hệ."
+  },
+  {
+    "id": 138,
+    "question": "Việc nói lời cảm ơn có tác dụng gì?",
+    "options": [
+      "Thể hiện sự ghi nhận và trân trọng",
+      "Làm cho giao tiếp phức tạp hơn",
+      "Chỉ mang tính hình thức vô nghĩa",
+      "Không cần trong đời sống hằng ngày"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lời cảm ơn tuy ngắn nhưng có giá trị lớn trong giao tiếp. Nó cho thấy bạn biết ghi nhận sự giúp đỡ hoặc thiện chí của người khác, từ đó làm cho mối quan hệ trở nên tích cực hơn."
+  },
+  {
+    "id": 139,
+    "question": "Xếp hàng nơi công cộng là hành vi thể hiện điều gì?",
+    "options": [
+      "Sự tôn trọng trật tự và quyền lợi của mọi người",
+      "Sự chậm chạp không cần thiết",
+      "Việc chỉ trẻ em mới phải làm",
+      "Không có ý nghĩa xã hội"
+    ],
+    "correctIndex": 0,
+    "explanation": "Xếp hàng là biểu hiện của ý thức cộng đồng và sự công bằng. Khi mọi người tuân thủ thứ tự, các hoạt động công cộng sẽ diễn ra văn minh, thuận lợi và ít xung đột hơn."
+  },
+  {
+    "id": 140,
+    "question": "Khi giao tiếp với người khác, việc nhìn vào màn hình điện thoại liên tục có thể gây cảm giác gì?",
+    "options": [
+      "Thể hiện sự tập trung cao",
+      "Có thể khiến đối phương cảm thấy không được tôn trọng",
+      "Là phép lịch sự phổ biến",
+      "Luôn giúp cuộc nói chuyện thú vị hơn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi trò chuyện, sự chú ý là một phần của tôn trọng. Việc liên tục nhìn điện thoại có thể khiến người đối diện cảm thấy bị xem nhẹ hoặc cuộc trò chuyện không được coi trọng."
+  },
+  {
+    "id": 141,
+    "question": "Việc tiết kiệm điện trong gia đình có lợi ích gì?",
+    "options": [
+      "Giúp giảm chi phí và góp phần bảo vệ môi trường",
+      "Không có tác động đáng kể",
+      "Chỉ có lợi cho nhà máy điện",
+      "Làm thiết bị bền hơn trong mọi trường hợp mà không cần bảo dưỡng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tiết kiệm điện giúp giảm tiền điện hằng tháng, đồng thời giảm áp lực lên hệ thống năng lượng và góp phần bảo vệ môi trường. Những thói quen nhỏ như tắt thiết bị khi không dùng đều có ý nghĩa tích cực."
+  },
+  {
+    "id": 142,
+    "question": "Phân loại rác tại nguồn giúp ích điều gì?",
+    "options": [
+      "Tăng hiệu quả tái chế và xử lý rác",
+      "Làm mọi việc rắc rối hơn mà không ích lợi",
+      "Khiến rác nhiều hơn",
+      "Không liên quan đến môi trường"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phân loại rác tại nguồn giúp tách rác tái chế, rác hữu cơ và rác khó xử lý, từ đó nâng cao hiệu quả thu gom và tái chế. Đây là một bước quan trọng trong bảo vệ môi trường sống."
+  },
+  {
+    "id": 143,
+    "question": "Trồng cây xanh có lợi ích nào sau đây?",
+    "options": [
+      "Giúp làm đẹp cảnh quan và hỗ trợ cải thiện môi trường",
+      "Làm không khí ô nhiễm hơn",
+      "Không có tác dụng thực tế",
+      "Chỉ phù hợp ở vùng núi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cây xanh giúp hấp thụ một phần khí carbon dioxide, tạo bóng mát, góp phần làm đẹp không gian và cải thiện môi trường sống. Ngoài ra, cây xanh còn có giá trị tinh thần và sinh thái lớn."
+  },
+  {
+    "id": 144,
+    "question": "Sử dụng túi vải thay cho túi nilon nhiều lần có ý nghĩa gì?",
+    "options": [
+      "Giúp giảm rác thải nhựa dùng một lần",
+      "Không có khác biệt gì",
+      "Làm tăng ô nhiễm hơn",
+      "Chỉ là xu hướng thời trang"
+    ],
+    "correctIndex": 0,
+    "explanation": "Túi vải hoặc các loại túi tái sử dụng giúp giảm nhu cầu dùng túi nilon một lần, qua đó giảm lượng rác thải nhựa ra môi trường. Đây là một thay đổi nhỏ nhưng thiết thực trong lối sống xanh."
+  },
+  {
+    "id": 145,
+    "question": "Không xả rác bừa bãi là việc làm như thế nào?",
+    "options": [
+      "Một hành động nhỏ nhưng thể hiện ý thức cộng đồng",
+      "Việc không cần thiết",
+      "Chỉ cần làm khi có camera",
+      "Chỉ áp dụng trong trường học"
+    ],
+    "correctIndex": 0,
+    "explanation": "Giữ gìn vệ sinh chung là trách nhiệm của mỗi người. Không xả rác bừa bãi giúp môi trường sạch đẹp, giảm ô nhiễm và thể hiện sự tôn trọng với cộng đồng."
+  },
+  {
+    "id": 146,
+    "question": "Nguồn nước sạch quan trọng vì sao?",
+    "options": [
+      "Là yếu tố thiết yếu cho sức khỏe và đời sống",
+      "Chỉ dùng để tắm rửa",
+      "Không cần thiết nếu có nước ngọt đóng chai",
+      "Không liên quan đến môi trường"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nước sạch cần thiết cho ăn uống, sinh hoạt, vệ sinh và sức khỏe cộng đồng. Bảo vệ nguồn nước là nhiệm vụ quan trọng vì ô nhiễm nước có thể gây hậu quả lâu dài cho con người và hệ sinh thái."
+  },
+  {
+    "id": 147,
+    "question": "Biến đổi khí hậu có thể gây ra tác động nào?",
+    "options": [
+      "Thời tiết cực đoan hơn ở nhiều nơi",
+      "Làm mọi nơi mát mẻ hơn",
+      "Không ảnh hưởng đến con người",
+      "Chỉ là chuyện của tương lai rất xa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Biến đổi khí hậu có thể làm gia tăng các hiện tượng thời tiết cực đoan như nắng nóng, mưa lớn, hạn hán và nước biển dâng. Đây là vấn đề toàn cầu cần sự chung tay của cộng đồng và các quốc gia."
+  },
+  {
+    "id": 148,
+    "question": "Tái sử dụng đồ vật khi còn dùng tốt giúp ích gì?",
+    "options": [
+      "Giảm lãng phí tài nguyên",
+      "Làm tăng lượng rác ngay lập tức",
+      "Không có giá trị",
+      "Chỉ phù hợp với đồ trang trí"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tái sử dụng giúp kéo dài vòng đời sản phẩm, giảm lượng rác thải và tiết kiệm tài nguyên. Đây là một nguyên tắc quan trọng trong lối sống tiêu dùng bền vững."
+  },
+  {
+    "id": 149,
+    "question": "Khi đi dã ngoại, hành động nào thể hiện ý thức bảo vệ thiên nhiên?",
+    "options": [
+      "Mang rác về đúng nơi quy định",
+      "Bẻ cành, khắc tên lên cây",
+      "Đốt lửa tùy tiện",
+      "Vứt chai nhựa xuống suối"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi tham gia hoạt động ngoài trời, việc không làm hư hại cây cối, không xả rác và tuân thủ quy định địa phương là cách thể hiện trách nhiệm với môi trường tự nhiên."
+  },
+  {
+    "id": 150,
+    "question": "Một trong những cách tiết kiệm nước là gì?",
+    "options": [
+      "Khóa vòi nước khi không sử dụng",
+      "Để nước chảy liên tục cho sạch nhà tắm",
+      "Rửa đồ với nước tràn tự do",
+      "Cho rằng nước sạch là vô tận"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khóa vòi nước khi không dùng là thói quen đơn giản nhưng hiệu quả để tiết kiệm tài nguyên nước. Những hành động nhỏ lặp lại hằng ngày có thể tạo ra khác biệt lớn về lâu dài."
+  },
+  {
+    "id": 151,
+    "question": "Trong tiếng Anh, từ 'apple' có nghĩa là gì?",
+    "options": ["Quả táo", "Quả cam", "Quả nho", "Quả chuối"],
+    "correctIndex": 0,
+    "explanation": "'Apple' trong tiếng Anh có nghĩa là quả táo. Đây là một từ vựng cơ bản, thường được dạy từ những bài học đầu tiên cho người mới học."
+  },
+  {
+    "id": 152,
+    "question": "Từ tiếng Anh nào có nghĩa là 'xin chào'?",
+    "options": ["Goodbye", "Hello", "Thanks", "Sorry"],
+    "correctIndex": 1,
+    "explanation": "'Hello' là cách chào phổ biến trong tiếng Anh. Đây là từ cơ bản trong giao tiếp hằng ngày và có thể dùng trong nhiều tình huống thân thiện."
+  },
+  {
+    "id": 153,
+    "question": "Trong tiếng Anh, 'book' nghĩa là gì?",
+    "options": ["Cái bàn", "Cuốn sách", "Cái bút", "Cái cặp"],
+    "correctIndex": 1,
+    "explanation": "'Book' nghĩa là cuốn sách. Đây là từ vựng rất thông dụng trong học tập và đời sống."
+  },
+  {
+    "id": 154,
+    "question": "Từ nào sau đây là một lời cảm ơn trong tiếng Anh?",
+    "options": ["Please", "Sorry", "Thanks", "Listen"],
+    "correctIndex": 2,
+    "explanation": "'Thanks' là cách nói cảm ơn trong tiếng Anh, thường dùng trong giao tiếp hàng ngày. Nói lời cảm ơn là một thói quen lịch sự trong nhiều nền văn hóa."
+  },
+  {
+    "id": 155,
+    "question": "Từ tiếng Anh 'school' nghĩa là gì?",
+    "options": ["Bệnh viện", "Trường học", "Nhà ga", "Siêu thị"],
+    "correctIndex": 1,
+    "explanation": "'School' nghĩa là trường học. Đây là từ cơ bản xuất hiện thường xuyên trong các chủ đề về giáo dục và sinh hoạt hằng ngày."
+  },
+  {
+    "id": 156,
+    "question": "Trong tiếng Anh, 'water' có nghĩa là gì?",
+    "options": ["Lửa", "Không khí", "Nước", "Đất"],
+    "correctIndex": 2,
+    "explanation": "'Water' có nghĩa là nước. Đây là một từ vựng thiết yếu và rất quen thuộc trong giao tiếp cũng như học tập."
+  },
+  {
+    "id": 157,
+    "question": "Câu 'How are you?' thường được dùng để làm gì?",
+    "options": [
+      "Hỏi thăm sức khỏe hoặc tình trạng của người khác",
+      "Hỏi đường đi",
+      "Xin lỗi ai đó",
+      "Yêu cầu im lặng"
+    ],
+    "correctIndex": 0,
+    "explanation": "'How are you?' là câu hỏi giao tiếp cơ bản trong tiếng Anh, thường dùng để hỏi thăm sức khỏe hoặc tình hình của người đối diện. Đây là cách mở đầu cuộc trò chuyện rất phổ biến."
+  },
+  {
+    "id": 158,
+    "question": "Từ tiếng Anh 'family' nghĩa là gì?",
+    "options": ["Bạn bè", "Gia đình", "Hàng xóm", "Lớp học"],
+    "correctIndex": 1,
+    "explanation": "'Family' nghĩa là gia đình. Từ này thường xuất hiện sớm trong chương trình học ngoại ngữ vì gắn với chủ đề gần gũi trong đời sống."
+  },
+  {
+    "id": 159,
+    "question": "Từ nào trong tiếng Anh chỉ màu xanh dương?",
+    "options": ["Blue", "Green", "Red", "Black"],
+    "correctIndex": 0,
+    "explanation": "'Blue' là từ tiếng Anh chỉ màu xanh dương. Phân biệt từ vựng chỉ màu sắc là một phần rất cơ bản trong quá trình học ngôn ngữ."
+  },
+  {
+    "id": 160,
+    "question": "Từ tiếng Anh 'teacher' nghĩa là gì?",
+    "options": ["Học sinh", "Giáo viên", "Bác sĩ", "Kỹ sư"],
+    "correctIndex": 1,
+    "explanation": "'Teacher' nghĩa là giáo viên, người hướng dẫn và giảng dạy học sinh. Đây là một từ quen thuộc trong môi trường học tập."
+  },
+  {
+    "id": 161,
+    "question": "Ngày 8/3 thường gắn với dịp gì?",
+    "options": [
+      "Ngày Quốc tế Phụ nữ",
+      "Ngày Nhà giáo Việt Nam",
+      "Ngày Quốc khánh",
+      "Ngày Tết Trung thu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 8 tháng 3 là Ngày Quốc tế Phụ nữ, dịp để tôn vinh vai trò, đóng góp của phụ nữ trong gia đình và xã hội, đồng thời nhắc tới những nỗ lực vì bình đẳng giới."
+  },
+  {
+    "id": 162,
+    "question": "Ngày Nhà giáo Việt Nam là ngày nào?",
+    "options": ["20/10", "22/12", "20/11", "27/7"],
+    "correctIndex": 2,
+    "explanation": "Ngày 20 tháng 11 là Ngày Nhà giáo Việt Nam. Đây là dịp để học sinh, phụ huynh và xã hội bày tỏ sự tri ân đối với những người làm công tác giáo dục."
+  },
+  {
+    "id": 163,
+    "question": "Ngày Quốc khánh Việt Nam là ngày nào?",
+    "options": ["30/4", "2/9", "1/5", "19/5"],
+    "correctIndex": 1,
+    "explanation": "Ngày 2 tháng 9 là Quốc khánh Việt Nam, gắn với sự kiện Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập năm 1945 tại Quảng trường Ba Đình."
+  },
+  {
+    "id": 164,
+    "question": "Ngày 1/6 thường được biết đến là ngày gì?",
+    "options": [
+      "Ngày Quốc tế Thiếu nhi",
+      "Ngày Phụ nữ Việt Nam",
+      "Ngày Thầy thuốc Việt Nam",
+      "Ngày Gia đình Việt Nam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 1 tháng 6 là Ngày Quốc tế Thiếu nhi, dịp dành sự quan tâm đặc biệt đến trẻ em, quyền được chăm sóc, học tập và vui chơi của các em."
+  },
+  {
+    "id": 165,
+    "question": "Ngày 27/7 ở Việt Nam gắn với dịp nào?",
+    "options": [
+      "Ngày Thương binh - Liệt sĩ",
+      "Ngày thành lập Quân đội nhân dân Việt Nam",
+      "Ngày Nhà giáo Việt Nam",
+      "Ngày Doanh nhân Việt Nam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 27 tháng 7 là Ngày Thương binh - Liệt sĩ, dịp tưởng nhớ, tri ân những người đã hy sinh và cống hiến vì độc lập, tự do của Tổ quốc."
+  },
+  {
+    "id": 166,
+    "question": "Ngày 22/12 gắn với sự kiện nào ở Việt Nam?",
+    "options": [
+      "Ngày thành lập Quân đội nhân dân Việt Nam",
+      "Ngày Quốc tế Lao động",
+      "Ngày Quốc khánh",
+      "Ngày Thầy thuốc Việt Nam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 22 tháng 12 là ngày thành lập Quân đội nhân dân Việt Nam. Đây là dịp tôn vinh truyền thống chiến đấu, xây dựng và trưởng thành của lực lượng quân đội."
+  },
+  {
+    "id": 167,
+    "question": "Ngày 30/4 ở Việt Nam thường được gọi là gì?",
+    "options": [
+      "Ngày Giải phóng miền Nam, thống nhất đất nước",
+      "Ngày Nhà giáo Việt Nam",
+      "Ngày Quốc tế Thiếu nhi",
+      "Ngày Phụ nữ Việt Nam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 30 tháng 4 là ngày Giải phóng miền Nam, thống nhất đất nước. Đây là mốc son lớn của lịch sử dân tộc Việt Nam trong thế kỷ XX."
+  },
+  {
+    "id": 168,
+    "question": "Ngày 1/5 là ngày gì?",
+    "options": ["Ngày Quốc tế Lao động", "Ngày Gia đình Việt Nam", "Ngày Quốc khánh", "Ngày Sách Việt Nam"],
+    "correctIndex": 0,
+    "explanation": "Ngày 1 tháng 5 là Ngày Quốc tế Lao động, dịp tôn vinh người lao động và nhắc nhớ về những quyền lợi chính đáng trong lao động."
+  },
+  {
+    "id": 169,
+    "question": "Ngày 20/10 ở Việt Nam là ngày gì?",
+    "options": ["Ngày Phụ nữ Việt Nam", "Ngày Quốc tế Phụ nữ", "Ngày Thanh niên", "Ngày gia nhập ASEAN"],
+    "correctIndex": 0,
+    "explanation": "Ngày 20 tháng 10 là Ngày Phụ nữ Việt Nam, dịp ghi nhận vai trò và đóng góp của phụ nữ Việt Nam trong gia đình và xã hội."
+  },
+  {
+    "id": 170,
+    "question": "Ngày 28/6 ở Việt Nam gắn với chủ đề nào?",
+    "options": ["Ngày Gia đình Việt Nam", "Ngày Nhà giáo Việt Nam", "Ngày Quốc khánh", "Ngày Báo chí Cách mạng Việt Nam"],
+    "correctIndex": 0,
+    "explanation": "Ngày 28 tháng 6 là Ngày Gia đình Việt Nam. Đây là dịp nhấn mạnh giá trị của gia đình như nền tảng quan trọng của xã hội và sự phát triển của mỗi cá nhân."
+  },
+  {
+    "id": 171,
+    "question": "Trong phép cộng 12 + 15, kết quả là bao nhiêu?",
+    "options": ["25", "26", "27", "28"],
+    "correctIndex": 2,
+    "explanation": "12 cộng 15 bằng 27. Có thể tách 15 thành 10 và 5, rồi tính 12 + 10 = 22, sau đó 22 + 5 = 27."
+  },
+  {
+    "id": 172,
+    "question": "Một giờ có bao nhiêu phút?",
+    "options": ["30", "45", "60", "90"],
+    "correctIndex": 2,
+    "explanation": "Một giờ có 60 phút. Đây là đơn vị đo thời gian cơ bản thường dùng trong đời sống, học tập và công việc."
+  },
+  {
+    "id": 173,
+    "question": "Một tam giác có bao nhiêu cạnh?",
+    "options": ["2", "3", "4", "5"],
+    "correctIndex": 1,
+    "explanation": "Tam giác là hình có 3 cạnh và 3 góc. Đây là một trong những hình cơ bản nhất trong hình học."
+  },
+  {
+    "id": 174,
+    "question": "1000 gram bằng bao nhiêu kilogram?",
+    "options": ["0.1", "1", "10", "100"],
+    "correctIndex": 1,
+    "explanation": "1000 gram bằng 1 kilogram. Đây là quy đổi đơn vị khối lượng rất cơ bản trong toán học và đời sống."
+  },
+  {
+    "id": 175,
+    "question": "Số nào là số chẵn?",
+    "options": ["13", "17", "20", "25"],
+    "correctIndex": 2,
+    "explanation": "20 là số chẵn vì chia hết cho 2. Các số chẵn thường có chữ số tận cùng là 0, 2, 4, 6 hoặc 8."
+  },
+  {
+    "id": 176,
+    "question": "Nếu có 3 táo và ăn 1 quả, còn lại bao nhiêu quả?",
+    "options": ["1", "2", "3", "4"],
+    "correctIndex": 1,
+    "explanation": "Nếu có 3 quả táo và ăn 1 quả thì còn lại 2 quả. Đây là phép trừ cơ bản: 3 - 1 = 2."
+  },
+  {
+    "id": 177,
+    "question": "Một hình vuông có mấy cạnh bằng nhau?",
+    "options": ["2", "3", "4", "Không có cạnh nào"],
+    "correctIndex": 2,
+    "explanation": "Hình vuông có 4 cạnh bằng nhau và 4 góc vuông. Đây là đặc điểm quan trọng để phân biệt hình vuông với các hình khác."
+  },
+  {
+    "id": 178,
+    "question": "Phân số 1/2 còn có thể hiểu là gì?",
+    "options": ["Một phần hai", "Một phần ba", "Hai phần một", "Bốn phần hai"],
+    "correctIndex": 0,
+    "explanation": "Phân số 1/2 được đọc là một phần hai, nghĩa là một phần trong hai phần bằng nhau của một đơn vị. Đây cũng là giá trị bằng 0,5 trong số thập phân."
+  },
+  {
+    "id": 179,
+    "question": "Kết quả của 9 x 3 là bao nhiêu?",
+    "options": ["18", "21", "27", "36"],
+    "correctIndex": 2,
+    "explanation": "9 nhân 3 bằng 27. Có thể hiểu là 9 được lấy 3 lần hoặc 3 được cộng với nhau 9 lần."
+  },
+  {
+    "id": 180,
+    "question": "Trong dãy số 2, 4, 6, 8, số tiếp theo hợp lý là gì?",
+    "options": ["9", "10", "11", "12"],
+    "correctIndex": 1,
+    "explanation": "Dãy số tăng đều mỗi lần 2 đơn vị: 2, 4, 6, 8, nên số tiếp theo là 10. Đây là một quy luật số học đơn giản."
+  },
+  {
+    "id": 181,
+    "question": "Khi có mục tiêu lớn, cách làm hiệu quả hơn thường là gì?",
+    "options": [
+      "Để đó và chờ có hứng mới làm",
+      "Chia mục tiêu thành các bước nhỏ, dễ thực hiện",
+      "Bỏ qua kế hoạch hoàn toàn",
+      "Chỉ nói về mục tiêu mà không hành động"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chia mục tiêu lớn thành các bước nhỏ giúp giảm cảm giác quá tải, dễ theo dõi tiến độ và tạo động lực khi hoàn thành từng phần. Đây là kỹ thuật hữu ích trong học tập, công việc và phát triển bản thân."
+  },
+  {
+    "id": 182,
+    "question": "Khi muốn hình thành một thói quen tốt, điều nào quan trọng?",
+    "options": [
+      "Làm thật nhiều trong một ngày rồi bỏ",
+      "Lặp lại đều đặn trong thời gian dài",
+      "Chỉ làm khi có người nhắc",
+      "Chờ đến khi hoàn hảo mới bắt đầu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thói quen tốt được hình thành nhờ sự lặp lại đều đặn và kiên trì, không phải nhờ những đợt cố gắng quá sức trong thời gian ngắn. Sự ổn định thường hiệu quả hơn cảm hứng nhất thời."
+  },
+  {
+    "id": 183,
+    "question": "Tự học hiệu quả thường cần điều gì?",
+    "options": [
+      "Môi trường tập trung và kế hoạch rõ ràng",
+      "Mở thật nhiều ứng dụng giải trí cùng lúc",
+      "Không cần mục tiêu cụ thể",
+      "Chỉ học khi sắp kiểm tra"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tự học hiệu quả cần mục tiêu rõ, không gian phù hợp, khả năng tập trung và kế hoạch ôn tập hợp lý. Khi có phương pháp, việc học sẽ bền vững và chủ động hơn."
+  },
+  {
+    "id": 184,
+    "question": "Khi bị chê trách, phản ứng nào thường tích cực hơn?",
+    "options": [
+      "Nổi giận ngay lập tức",
+      "Lắng nghe, chọn lọc góp ý hữu ích và cải thiện",
+      "Bỏ hết mọi việc",
+      "Trả đũa bằng lời lẽ nặng nề"
+    ],
+    "correctIndex": 1,
+    "explanation": "Không phải mọi lời chê đều đúng, nhưng biết lắng nghe và chọn lọc điều có ích sẽ giúp chúng ta trưởng thành hơn. Thái độ bình tĩnh và cầu thị thường mang lại kết quả tốt hơn phản ứng nóng vội."
+  },
+  {
+    "id": 185,
+    "question": "Một người có tư duy tích cực thường như thế nào?",
+    "options": [
+      "Luôn phủ nhận khó khăn",
+      "Biết nhìn khó khăn nhưng vẫn hướng đến cách giải quyết",
+      "Không cần chuẩn bị gì",
+      "Cho rằng mọi việc tự nhiên sẽ ổn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tư duy tích cực không có nghĩa là lạc quan mù quáng, mà là nhìn nhận thực tế đồng thời giữ niềm tin vào khả năng cải thiện tình huống. Điều này giúp con người kiên trì và chủ động hơn."
+  },
+  {
+    "id": 186,
+    "question": "Khi làm việc quan trọng, việc tắt bớt thông báo điện thoại có thể giúp gì?",
+    "options": [
+      "Tăng khả năng tập trung",
+      "Làm mất hết dữ liệu",
+      "Không có tác dụng gì",
+      "Khiến công việc khó hơn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thông báo liên tục dễ làm gián đoạn dòng tập trung. Việc tắt bớt thông báo trong thời gian làm việc sâu giúp não bộ duy trì sự chú ý tốt hơn và nâng cao hiệu suất."
+  },
+  {
+    "id": 187,
+    "question": "Thói quen ghi chép khi học có lợi ích gì?",
+    "options": [
+      "Giúp hệ thống lại thông tin và nhớ lâu hơn",
+      "Chỉ làm mất thời gian",
+      "Không phù hợp với bất kỳ ai",
+      "Thay thế hoàn toàn việc hiểu bài"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ghi chép giúp người học chọn lọc thông tin, tổ chức ý tưởng và tăng khả năng ghi nhớ. Khi ghi bằng cách hiểu và diễn đạt lại, hiệu quả học tập thường cao hơn."
+  },
+  {
+    "id": 188,
+    "question": "Khi cần từ chối một lời mời mà vẫn giữ lịch sự, bạn nên làm gì?",
+    "options": [
+      "Biến mất không trả lời",
+      "Từ chối rõ ràng, ngắn gọn và tôn trọng",
+      "Nói đồng ý rồi bỏ hẹn",
+      "Chê bai người mời"
+    ],
+    "correctIndex": 1,
+    "explanation": "Từ chối lịch sự là kỹ năng quan trọng trong giao tiếp. Sự rõ ràng giúp người khác không hiểu lầm, còn cách nói tôn trọng giúp giữ mối quan hệ tích cực."
+  },
+  {
+    "id": 189,
+    "question": "Một trong những dấu hiệu của người đáng tin cậy là gì?",
+    "options": [
+      "Hay thất hẹn và đổ lỗi",
+      "Nói ít làm ít",
+      "Nhất quán giữa lời nói và hành động",
+      "Chỉ tử tế khi có lợi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sự đáng tin cậy được tạo nên khi lời nói đi cùng hành động. Người nhất quán, có trách nhiệm và giữ lời thường nhận được niềm tin từ người xung quanh."
+  },
+  {
+    "id": 190,
+    "question": "Khi học một kỹ năng mới, sai sót ban đầu thường có ý nghĩa gì?",
+    "options": [
+      "Chứng tỏ bạn không nên học nữa",
+      "Là điều bình thường trong quá trình tiến bộ",
+      "Cho thấy kỹ năng đó vô ích",
+      "Nghĩa là phải bỏ cuộc ngay"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sai sót là một phần tự nhiên của quá trình học. Điều quan trọng không phải là tránh sai hoàn toàn, mà là biết rút kinh nghiệm, điều chỉnh và tiếp tục luyện tập."
+  },
+  {
+    "id": 191,
+    "question": "Nhân vật Pikachu thuộc loạt hoạt hình nào?",
+    "options": ["Doraemon", "Pokemon", "One Piece", "Shin cậu bé bút chì"],
+    "correctIndex": 1,
+    "explanation": "Pikachu là nhân vật biểu tượng của loạt Pokemon. Với ngoại hình đáng yêu và khả năng phát điện, Pikachu đã trở thành một trong những nhân vật hoạt hình nổi tiếng nhất thế giới."
+  },
+  {
+    "id": 192,
+    "question": "Trong truyện và phim hoạt hình 'Conan', Conan nổi tiếng với khả năng gì?",
+    "options": ["Nấu ăn", "Phá án", "Lái tàu vũ trụ", "Biểu diễn xiếc"],
+    "correctIndex": 1,
+    "explanation": "Conan Edogawa là nhân vật nổi tiếng với khả năng suy luận và phá án. Dù mang hình dáng của một cậu bé, Conan thực chất sở hữu trí tuệ sắc bén của một thám tử."
+  },
+  {
+    "id": 193,
+    "question": "Bộ phim 'Finding Nemo' kể về hành trình tìm kiếm ai?",
+    "options": ["Một chú chó", "Một cậu bé", "Một chú cá nhỏ tên Nemo", "Một nàng công chúa"],
+    "correctIndex": 2,
+    "explanation": "'Finding Nemo' là phim hoạt hình của Pixar kể về hành trình của cá hề Marlin đi tìm con trai mình là Nemo. Bộ phim nổi bật bởi thông điệp về gia đình, lòng dũng cảm và niềm tin."
+  },
+  {
+    "id": 194,
+    "question": "Nhân vật Woody và Buzz Lightyear thuộc bộ phim hoạt hình nào?",
+    "options": ["Cars", "Toy Story", "Frozen", "Coco"],
+    "correctIndex": 1,
+    "explanation": "Woody và Buzz Lightyear là hai nhân vật trung tâm của loạt phim 'Toy Story'. Tác phẩm kể về thế giới đồ chơi sống động, đồng thời truyền tải nhiều bài học về tình bạn, sự thay đổi và trưởng thành."
+  },
+  {
+    "id": 195,
+    "question": "Trong phim 'Kung Fu Panda', Po là con vật gì?",
+    "options": ["Hổ", "Gấu trúc", "Sư tử", "Khỉ"],
+    "correctIndex": 1,
+    "explanation": "Po là một chú gấu trúc trong phim 'Kung Fu Panda'. Nhân vật này được yêu thích vì tính cách hài hước, chân thành và hành trình từ một người bình thường trở thành chiến binh kung fu."
+  },
+  {
+    "id": 196,
+    "question": "Bộ phim hoạt hình 'Frozen' nổi bật với chủ đề nào?",
+    "options": [
+      "Tình chị em và sự chấp nhận bản thân",
+      "Chiến tranh ngoài hành tinh",
+      "Đua xe địa hình",
+      "Thám hiểm sa mạc"
+    ],
+    "correctIndex": 0,
+    "explanation": "'Frozen' không chỉ nổi tiếng vì âm nhạc và hình ảnh đẹp mà còn bởi thông điệp về tình chị em, tình yêu thương trong gia đình và hành trình chấp nhận chính mình của Elsa."
+  },
+  {
+    "id": 197,
+    "question": "Một bộ phim hoặc hoạt hình phù hợp cho trẻ em thường cần điều gì?",
+    "options": [
+      "Nội dung phù hợp lứa tuổi và có giá trị tích cực",
+      "Càng nhiều cảnh nguy hiểm càng tốt",
+      "Không cần phân loại độ tuổi",
+      "Chỉ cần hình ảnh đẹp, nội dung không quan trọng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nội dung phù hợp lứa tuổi giúp trẻ tiếp nhận thông tin một cách lành mạnh và an toàn. Những tác phẩm tốt thường vừa giải trí vừa có thông điệp tích cực về tình bạn, gia đình, lòng tốt hoặc trách nhiệm."
+  },
+  {
+    "id": 198,
+    "question": "Khi xem phim dựa trên sự kiện lịch sử, người xem nên lưu ý điều gì?",
+    "options": [
+      "Phim luôn chính xác tuyệt đối từng chi tiết",
+      "Nên phân biệt giữa yếu tố nghệ thuật và sự kiện lịch sử thực tế",
+      "Không cần tìm hiểu thêm",
+      "Mọi lời thoại đều là tài liệu gốc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phim lịch sử thường có sự kết hợp giữa dữ kiện thật và yếu tố hư cấu để tăng tính nghệ thuật. Vì vậy, người xem nên tham khảo thêm tài liệu đáng tin cậy nếu muốn hiểu chính xác bối cảnh và sự kiện lịch sử."
+  },
+  {
+    "id": 199,
+    "question": "Một câu chuyện phim hấp dẫn thường cần yếu tố nào?",
+    "options": [
+      "Nhân vật rõ nét và mâu thuẫn hợp lý",
+      "Không cần cốt truyện",
+      "Chỉ cần kỹ xảo đẹp",
+      "Càng khó hiểu càng tốt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Một câu chuyện phim hấp dẫn thường cần nhân vật có cá tính, mục tiêu rõ và mâu thuẫn đủ sức kéo người xem theo dõi. Kỹ xảo có thể hỗ trợ, nhưng cốt lõi vẫn là cách kể chuyện và cảm xúc."
+  },
+  {
+    "id": 200,
+    "question": "Bài học quan trọng có thể rút ra từ nhiều bộ phim, truyện và câu chuyện đời sống là gì?",
+    "options": [
+      "Sự tử tế, kiên trì và trách nhiệm thường tạo ra giá trị bền vững",
+      "May mắn quan trọng hơn mọi nỗ lực",
+      "Không cần học hỏi từ trải nghiệm",
+      "Chỉ người đặc biệt mới có thể thay đổi bản thân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dù thuộc thể loại phim ảnh, hoạt hình, lịch sử hay kỹ năng sống, nhiều câu chuyện hay đều gặp nhau ở một điểm chung: con người trưởng thành hơn nhờ sự tử tế, nỗ lực và trách nhiệm. Đây là những giá trị bền vững, có thể áp dụng trong học tập, công việc và các mối quan hệ hằng ngày."
+  }
+]

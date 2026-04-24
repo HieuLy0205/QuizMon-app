@@ -1,1 +1,2402 @@
-[]
+[
+  {
+    "id": 1,
+    "question": "CPU trong máy tính có vai trò chính là gì?",
+    "options": [
+      "Lưu trữ dữ liệu lâu dài",
+      "Xử lý lệnh và điều khiển hoạt động của hệ thống",
+      "Hiển thị hình ảnh ra màn hình",
+      "Kết nối máy tính với Internet"
+    ],
+    "correctIndex": 1,
+    "explanation": "CPU là bộ xử lý trung tâm, thường được xem là 'bộ não' của máy tính. Nó thực hiện các phép tính, xử lý lệnh từ hệ điều hành và ứng dụng, đồng thời phối hợp hoạt động giữa RAM, ổ cứng, card đồ họa và các thiết bị khác. CPU không phải nơi lưu trữ lâu dài dữ liệu, cũng không trực tiếp đảm nhiệm việc hiển thị hình ảnh hay kết nối mạng."
+  },
+  {
+    "id": 2,
+    "question": "RAM dùng để làm gì trong máy tính?",
+    "options": [
+      "Lưu trữ tạm thời dữ liệu và chương trình đang chạy",
+      "Lưu trữ hệ điều hành vĩnh viễn",
+      "Xử lý đồ họa 3D",
+      "Cấp nguồn điện cho bo mạch chủ"
+    ],
+    "correctIndex": 0,
+    "explanation": "RAM là bộ nhớ truy cập ngẫu nhiên, dùng để lưu tạm thời dữ liệu mà CPU cần truy cập nhanh trong lúc chương trình đang hoạt động. Khi tắt máy, dữ liệu trong RAM sẽ mất. Vì vậy RAM khác với SSD hoặc HDD là nơi lưu trữ lâu dài hệ điều hành, phần mềm và tập tin."
+  },
+  {
+    "id": 3,
+    "question": "Thiết bị nào thường được dùng để lưu trữ dữ liệu lâu dài?",
+    "options": [
+      "RAM",
+      "Cache",
+      "SSD",
+      "Register"
+    ],
+    "correctIndex": 2,
+    "explanation": "SSD là thiết bị lưu trữ không mất dữ liệu khi tắt nguồn, nên phù hợp để cài hệ điều hành, phần mềm và lưu tập tin lâu dài. Trong khi đó RAM, cache và register đều là các dạng bộ nhớ tạm phục vụ quá trình xử lý của CPU, tốc độ cao nhưng không dùng để lưu trữ bền vững."
+  },
+  {
+    "id": 4,
+    "question": "Hệ điều hành có chức năng chính nào sau đây?",
+    "options": [
+      "Chỉ dùng để gõ văn bản",
+      "Quản lý phần cứng và cung cấp môi trường cho phần mềm chạy",
+      "Chỉ dùng để kết nối Wi-Fi",
+      "Thay thế hoàn toàn mọi ứng dụng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hệ điều hành là lớp phần mềm nền tảng giúp quản lý tài nguyên phần cứng như CPU, RAM, ổ đĩa, thiết bị ngoại vi, đồng thời cung cấp giao diện và dịch vụ để các ứng dụng hoạt động. Nó không chỉ phục vụ soạn thảo văn bản hay kết nối mạng, mà là nền tảng chung cho toàn bộ hệ thống."
+  },
+  {
+    "id": 5,
+    "question": "Trong lập trình, biến (variable) dùng để làm gì?",
+    "options": [
+      "Lưu trữ giá trị có thể thay đổi trong chương trình",
+      "Làm cho máy tính chạy nhanh hơn về phần cứng",
+      "Tắt trình biên dịch",
+      "Xóa toàn bộ dữ liệu bộ nhớ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Biến là tên đại diện cho một vùng nhớ dùng để lưu dữ liệu trong chương trình. Giá trị của biến có thể thay đổi tùy theo logic xử lý. Đây là khái niệm nền tảng trong hầu hết mọi ngôn ngữ lập trình, giúp chương trình thao tác dữ liệu linh hoạt và dễ đọc hơn."
+  },
+  {
+    "id": 6,
+    "question": "Kiểu dữ liệu nào thường dùng để lưu giá trị đúng hoặc sai?",
+    "options": [
+      "String",
+      "Boolean",
+      "Float",
+      "Array"
+    ],
+    "correctIndex": 1,
+    "explanation": "Boolean là kiểu dữ liệu chỉ có hai giá trị cơ bản: đúng hoặc sai, thường biểu diễn là true và false. Nó rất quan trọng trong điều kiện rẽ nhánh, vòng lặp, kiểm tra logic và các phép so sánh trong lập trình. Các kiểu như String, Float hay Array phục vụ mục đích hoàn toàn khác."
+  },
+  {
+    "id": 7,
+    "question": "Cấu trúc điều kiện `if` trong lập trình được dùng để làm gì?",
+    "options": [
+      "Lặp vô hạn chương trình",
+      "Kiểm tra điều kiện và thực hiện nhánh lệnh tương ứng",
+      "Khai báo thư viện",
+      "Nén dữ liệu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Câu lệnh `if` cho phép chương trình kiểm tra một điều kiện logic. Nếu điều kiện đúng, một khối lệnh sẽ được thực thi; nếu sai, có thể bỏ qua hoặc chuyển sang nhánh `else`. Đây là cơ chế giúp chương trình ra quyết định thay vì chỉ chạy tuần tự một chiều."
+  },
+  {
+    "id": 8,
+    "question": "Vòng lặp `for` thường được sử dụng khi nào?",
+    "options": [
+      "Khi cần lặp một khối lệnh nhiều lần với số lần xác định hoặc dễ kiểm soát",
+      "Khi muốn tắt máy tính",
+      "Khi cài đặt hệ điều hành",
+      "Khi chỉ có đúng một lệnh duy nhất"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vòng lặp `for` phù hợp khi ta cần lặp một thao tác nhiều lần, đặc biệt khi có biến đếm hoặc biết trước số vòng lặp. Nó được dùng rộng rãi để duyệt mảng, tạo chuỗi dữ liệu, xử lý danh sách hoặc thực hiện tác vụ lặp có kiểm soát."
+  },
+  {
+    "id": 9,
+    "question": "Mảng (array) là gì?",
+    "options": [
+      "Một thiết bị phần cứng để tăng tốc mạng",
+      "Một tập hợp nhiều phần tử được lưu theo thứ tự",
+      "Một loại virus máy tính",
+      "Một giao thức truyền dữ liệu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mảng là cấu trúc dữ liệu lưu nhiều phần tử cùng nhóm trong một biến, thường truy cập qua chỉ số vị trí. Nó giúp quản lý dữ liệu dạng danh sách hiệu quả hơn so với việc tạo nhiều biến rời rạc. Mảng là nền tảng của rất nhiều thao tác xử lý dữ liệu trong lập trình."
+  },
+  {
+    "id": 10,
+    "question": "Hàm (function) trong lập trình mang lại lợi ích gì?",
+    "options": [
+      "Làm máy tính tiêu thụ nhiều điện hơn",
+      "Chia chương trình thành các khối tái sử dụng và dễ bảo trì",
+      "Xóa lỗi cú pháp tự động",
+      "Thay thế hoàn toàn cơ sở dữ liệu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hàm giúp đóng gói một nhóm lệnh có nhiệm vụ cụ thể thành đơn vị riêng biệt. Nhờ đó, lập trình viên có thể tái sử dụng logic, giảm lặp code, tăng tính rõ ràng và dễ kiểm thử. Khi hệ thống lớn dần, việc chia nhỏ thành các hàm là yếu tố rất quan trọng để bảo trì lâu dài."
+  },
+  {
+    "id": 11,
+    "question": "Ngôn ngữ nào thường được dùng phổ biến trong phát triển web frontend?",
+    "options": [
+      "JavaScript",
+      "SQL",
+      "Bash",
+      "C"
+    ],
+    "correctIndex": 0,
+    "explanation": "JavaScript là ngôn ngữ cốt lõi của frontend web, cho phép trang web tương tác động với người dùng như xử lý sự kiện, cập nhật giao diện mà không cần tải lại trang. HTML dùng để cấu trúc, CSS dùng để trình bày, còn JavaScript đảm nhiệm logic phía trình duyệt."
+  },
+  {
+    "id": 12,
+    "question": "HTML chủ yếu dùng để làm gì?",
+    "options": [
+      "Tạo cấu trúc nội dung cho trang web",
+      "Thiết kế cơ sở dữ liệu",
+      "Mã hóa video",
+      "Quản lý máy chủ Linux"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTML là ngôn ngữ đánh dấu dùng để mô tả cấu trúc nội dung của trang web như tiêu đề, đoạn văn, hình ảnh, liên kết, bảng và biểu mẫu. Nó không xử lý logic động hay kiểu dáng trình bày sâu, mà đóng vai trò là khung nội dung cơ bản của website."
+  },
+  {
+    "id": 13,
+    "question": "CSS có vai trò gì trong phát triển web?",
+    "options": [
+      "Tạo kiểu hiển thị và bố cục cho trang web",
+      "Xử lý truy vấn cơ sở dữ liệu",
+      "Biên dịch mã nguồn C++",
+      "Tạo máy ảo"
+    ],
+    "correctIndex": 0,
+    "explanation": "CSS kiểm soát cách nội dung HTML được hiển thị, bao gồm màu sắc, font chữ, khoảng cách, bố cục, hiệu ứng và khả năng responsive trên nhiều thiết bị. Nếu HTML là khung nội dung, thì CSS là phần quyết định giao diện và trải nghiệm nhìn của người dùng."
+  },
+  {
+    "id": 14,
+    "question": "Backend trong ứng dụng web thường đảm nhiệm việc gì?",
+    "options": [
+      "Xử lý logic nghiệp vụ, kết nối cơ sở dữ liệu và phục vụ dữ liệu cho frontend",
+      "Chỉ vẽ giao diện người dùng",
+      "Chỉ chỉnh màu sắc nút bấm",
+      "Thay thế hoàn toàn trình duyệt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Backend là phần chạy phía máy chủ, phụ trách xác thực người dùng, xử lý nghiệp vụ, lưu và truy xuất dữ liệu, gọi dịch vụ khác, cũng như trả kết quả về frontend qua API hoặc HTML động. Nó là lớp trung gian giữa giao diện người dùng và nguồn dữ liệu của hệ thống."
+  },
+  {
+    "id": 15,
+    "question": "API là gì?",
+    "options": [
+      "Một loại màn hình máy tính",
+      "Giao diện cho phép các phần mềm giao tiếp với nhau",
+      "Một phần của bàn phím",
+      "Chuẩn cắm ổ cứng"
+    ],
+    "correctIndex": 1,
+    "explanation": "API là tập hợp quy tắc và cách thức để một phần mềm hoặc dịch vụ cung cấp chức năng cho phần mềm khác sử dụng. Ví dụ, ứng dụng di động gọi API để lấy dữ liệu từ server. API giúp các hệ thống tích hợp với nhau theo cách có cấu trúc, rõ ràng và có thể mở rộng."
+  },
+  {
+    "id": 16,
+    "question": "REST API thường sử dụng giao thức nào?",
+    "options": [
+      "HTTP",
+      "SMTP",
+      "FTP bắt buộc",
+      "Bluetooth"
+    ],
+    "correctIndex": 0,
+    "explanation": "REST API thường được xây dựng trên HTTP, dùng các phương thức như GET, POST, PUT, PATCH, DELETE để thao tác tài nguyên. REST tận dụng đặc tính sẵn có của web nên rất phổ biến trong phát triển ứng dụng web, mobile và hệ thống tích hợp dịch vụ."
+  },
+  {
+    "id": 17,
+    "question": "Phương thức HTTP nào thường dùng để lấy dữ liệu?",
+    "options": [
+      "POST",
+      "DELETE",
+      "GET",
+      "PATCH"
+    ],
+    "correctIndex": 2,
+    "explanation": "GET là phương thức HTTP chuẩn để yêu cầu dữ liệu từ server mà không nhằm thay đổi trạng thái tài nguyên. Ví dụ, lấy danh sách sản phẩm hoặc thông tin người dùng. Trong thực tế, GET thường được xem là thao tác chỉ đọc, phù hợp cho truy vấn và hiển thị."
+  },
+  {
+    "id": 18,
+    "question": "JSON thường được dùng để làm gì?",
+    "options": [
+      "Trao đổi dữ liệu giữa các hệ thống dưới dạng văn bản có cấu trúc",
+      "Tăng tốc card đồ họa",
+      "Làm mát CPU",
+      "Mã hóa ổ cứng vật lý"
+    ],
+    "correctIndex": 0,
+    "explanation": "JSON là định dạng dữ liệu dạng văn bản nhẹ, dễ đọc với con người và dễ parse với máy. Nó thường được dùng trong API để truyền dữ liệu giữa frontend và backend, hoặc giữa các dịch vụ với nhau. Nhờ tính đơn giản và phổ biến, JSON gần như là chuẩn mặc định trong nhiều hệ thống hiện đại."
+  },
+  {
+    "id": 19,
+    "question": "SQL là ngôn ngữ dùng để làm gì?",
+    "options": [
+      "Thiết kế giao diện web",
+      "Truy vấn và quản lý cơ sở dữ liệu quan hệ",
+      "Biên dịch ứng dụng di động",
+      "Điều khiển chuột máy tính"
+    ],
+    "correctIndex": 1,
+    "explanation": "SQL là ngôn ngữ chuyên dùng để làm việc với cơ sở dữ liệu quan hệ, bao gồm truy vấn dữ liệu, thêm mới, cập nhật, xóa, tạo bảng và quản lý quyền truy cập. Nó là kỹ năng nền tảng trong backend, phân tích dữ liệu, hệ thống quản trị doanh nghiệp và rất nhiều ứng dụng khác."
+  },
+  {
+    "id": 20,
+    "question": "Lệnh SQL nào thường dùng để lấy dữ liệu từ bảng?",
+    "options": [
+      "INSERT",
+      "UPDATE",
+      "SELECT",
+      "DROP"
+    ],
+    "correctIndex": 2,
+    "explanation": "SELECT là lệnh được dùng để truy vấn dữ liệu từ một hoặc nhiều bảng trong cơ sở dữ liệu. Lập trình viên có thể kết hợp WHERE, ORDER BY, GROUP BY, JOIN và nhiều mệnh đề khác để lọc, sắp xếp, tổng hợp và kết hợp dữ liệu theo nhu cầu nghiệp vụ."
+  },
+  {
+    "id": 21,
+    "question": "Khóa chính (primary key) trong cơ sở dữ liệu dùng để làm gì?",
+    "options": [
+      "Xác định duy nhất mỗi bản ghi trong bảng",
+      "Mã hóa toàn bộ dữ liệu",
+      "Tăng tốc Internet",
+      "Thay thế sao lưu dữ liệu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Primary key là cột hoặc tập cột có giá trị duy nhất cho mỗi dòng trong bảng. Nó giúp phân biệt từng bản ghi, hỗ trợ liên kết giữa các bảng và đảm bảo tính toàn vẹn dữ liệu. Một bảng quan hệ được thiết kế tốt thường cần có khóa chính rõ ràng."
+  },
+  {
+    "id": 22,
+    "question": "Git là công cụ dùng để làm gì?",
+    "options": [
+      "Quản lý phiên bản mã nguồn",
+      "Thiết kế logo",
+      "Chạy máy ảo",
+      "Phát video trực tuyến"
+    ],
+    "correctIndex": 0,
+    "explanation": "Git là hệ thống quản lý phiên bản phân tán, cho phép theo dõi thay đổi mã nguồn theo thời gian, hỗ trợ làm việc nhóm, tạo nhánh, hợp nhất và quay lại các phiên bản trước. Đây là công cụ gần như bắt buộc trong quy trình phát triển phần mềm hiện đại."
+  },
+  {
+    "id": 23,
+    "question": "Lệnh `git commit` dùng để làm gì?",
+    "options": [
+      "Tải repository từ Internet",
+      "Lưu một mốc thay đổi vào lịch sử Git",
+      "Xóa toàn bộ nhánh hiện tại",
+      "Biên dịch dự án"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi dùng `git commit`, bạn ghi lại trạng thái hiện tại của những thay đổi đã được đưa vào staging area. Mỗi commit giống như một cột mốc trong lịch sử dự án, giúp theo dõi tiến trình phát triển, kiểm tra ai đã thay đổi gì và khôi phục lại khi cần."
+  },
+  {
+    "id": 24,
+    "question": "Branch trong Git là gì?",
+    "options": [
+      "Một bản sao logic của dòng phát triển để làm việc độc lập",
+      "Một ổ cứng vật lý",
+      "Một chuẩn cơ sở dữ liệu",
+      "Một loại tệp ảnh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Branch là nhánh phát triển độc lập trong Git, cho phép lập trình viên làm tính năng mới, sửa lỗi hoặc thử nghiệm mà không ảnh hưởng trực tiếp đến nhánh chính. Đây là cơ chế rất mạnh để hỗ trợ làm việc nhóm, code review và kiểm soát rủi ro khi phát triển."
+  },
+  {
+    "id": 25,
+    "question": "GitHub chủ yếu là gì?",
+    "options": [
+      "Một nền tảng lưu trữ và cộng tác mã nguồn dựa trên Git",
+      "Một trình duyệt web",
+      "Một ngôn ngữ lập trình",
+      "Một loại vi xử lý"
+    ],
+    "correctIndex": 0,
+    "explanation": "GitHub là nền tảng trực tuyến hỗ trợ lưu trữ repository Git và cộng tác phát triển phần mềm. Nó cung cấp pull request, issue tracking, code review, CI/CD và nhiều công cụ hỗ trợ quy trình làm việc nhóm. Git là công cụ lõi, còn GitHub là nền tảng dịch vụ xung quanh Git."
+  },
+  {
+    "id": 26,
+    "question": "Pull request thường được dùng để làm gì?",
+    "options": [
+      "Đề nghị hợp nhất thay đổi từ một nhánh vào nhánh khác sau khi review",
+      "Tắt server từ xa",
+      "Xóa lịch sử commit",
+      "Mã hóa mật khẩu người dùng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pull request là cơ chế để đề xuất hợp nhất code đã thay đổi vào nhánh đích, thường đi kèm với review, bình luận, kiểm tra tự động và xác nhận chất lượng. Đây là một phần quan trọng trong quy trình làm việc chuyên nghiệp, giúp nâng cao chất lượng code và phối hợp nhóm hiệu quả."
+  },
+  {
+    "id": 27,
+    "question": "IDE là viết tắt của điều gì?",
+    "options": [
+      "Integrated Development Environment",
+      "Internet Data Engine",
+      "Internal Device Emulator",
+      "Indexed Design Editor"
+    ],
+    "correctIndex": 0,
+    "explanation": "IDE là môi trường phát triển tích hợp, thường bao gồm trình soạn thảo mã, debug, gợi ý cú pháp, terminal, tích hợp Git và nhiều công cụ hỗ trợ lập trình. Những IDE phổ biến giúp lập trình viên làm việc nhanh hơn, giảm lỗi và tăng năng suất phát triển."
+  },
+  {
+    "id": 28,
+    "question": "Debugger trong IDE dùng để làm gì?",
+    "options": [
+      "Theo dõi quá trình chạy chương trình để tìm lỗi",
+      "Tự động thiết kế giao diện",
+      "Thay thế cơ sở dữ liệu",
+      "Mã hóa file PDF"
+    ],
+    "correctIndex": 0,
+    "explanation": "Debugger cho phép chạy chương trình từng bước, đặt breakpoint, xem giá trị biến, call stack và trạng thái thực thi. Nhờ đó, lập trình viên có thể xác định chính xác nơi phát sinh lỗi logic hoặc lỗi runtime thay vì chỉ đoán dựa trên kết quả cuối cùng."
+  },
+  {
+    "id": 29,
+    "question": "Framework là gì trong phát triển phần mềm?",
+    "options": [
+      "Một bộ khung cung cấp cấu trúc và công cụ để xây dựng ứng dụng",
+      "Một loại virus",
+      "Một thiết bị lưu điện",
+      "Một chuẩn dây mạng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Framework là bộ khung phát triển cung cấp sẵn cấu trúc, quy ước và công cụ giúp xây dựng phần mềm nhanh hơn, đồng bộ hơn. Ví dụ như React, Angular, Django, Spring. Việc dùng framework giúp giảm lặp lại nhiều phần nền tảng và tăng tính tổ chức của dự án."
+  },
+  {
+    "id": 30,
+    "question": "Thư viện (library) khác framework ở điểm nào nổi bật?",
+    "options": [
+      "Library thường được chương trình gọi khi cần, còn framework thường định hướng luồng ứng dụng",
+      "Library luôn nhanh hơn framework trong mọi trường hợp",
+      "Framework không chứa code",
+      "Library chỉ dùng cho game"
+    ],
+    "correctIndex": 0,
+    "explanation": "Điểm khác biệt thường được nhắc đến là inversion of control. Với library, lập trình viên chủ động gọi hàm của thư viện khi cần. Với framework, lập trình viên viết code theo cấu trúc mà framework định sẵn và framework sẽ gọi code của bạn ở các thời điểm phù hợp."
+  },
+  {
+    "id": 31,
+    "question": "React thường được dùng để làm gì?",
+    "options": [
+      "Xây dựng giao diện người dùng theo hướng component",
+      "Quản lý hệ điều hành",
+      "Tạo cơ sở dữ liệu quan hệ",
+      "Điều khiển router mạng vật lý"
+    ],
+    "correctIndex": 0,
+    "explanation": "React là thư viện JavaScript phổ biến để xây dựng giao diện người dùng, đặc biệt cho ứng dụng web một trang. Nó dựa trên mô hình component, giúp chia giao diện thành các phần nhỏ tái sử dụng được, dễ quản lý trạng thái và dễ mở rộng ở các ứng dụng lớn."
+  },
+  {
+    "id": 32,
+    "question": "Component trong React là gì?",
+    "options": [
+      "Một đơn vị giao diện và logic có thể tái sử dụng",
+      "Một loại phần cứng đặc biệt",
+      "Một câu lệnh SQL",
+      "Một giao thức bảo mật mạng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Component là khối xây dựng cơ bản trong React. Mỗi component có thể nhận dữ liệu đầu vào, quản lý trạng thái riêng và trả về giao diện cần hiển thị. Cách tổ chức này giúp code rõ ràng hơn, dễ tái sử dụng và chia nhỏ hệ thống thành những phần dễ kiểm soát."
+  },
+  {
+    "id": 33,
+    "question": "State trong frontend framework thường dùng để biểu diễn điều gì?",
+    "options": [
+      "Dữ liệu hiện tại ảnh hưởng đến giao diện và hành vi của component",
+      "Tên miền của website",
+      "Địa chỉ MAC của máy tính",
+      "Tốc độ quạt tản nhiệt"
+    ],
+    "correctIndex": 0,
+    "explanation": "State là dữ liệu nội tại hoặc hiện tại của component hay ứng dụng, ví dụ như nội dung ô nhập, trạng thái đăng nhập, danh sách sản phẩm đang hiển thị. Khi state thay đổi, giao diện thường được cập nhật theo. Đây là nền tảng của lập trình giao diện hiện đại theo hướng phản ứng."
+  },
+  {
+    "id": 34,
+    "question": "Node.js cho phép điều gì?",
+    "options": [
+      "Chạy JavaScript phía máy chủ",
+      "Chỉ chạy CSS ngoài trình duyệt",
+      "Thay thế hoàn toàn CPU",
+      "Chuyển đổi ổ HDD thành SSD"
+    ],
+    "correctIndex": 0,
+    "explanation": "Node.js là môi trường runtime cho JavaScript ngoài trình duyệt, giúp lập trình viên dùng JavaScript để xây backend, công cụ dòng lệnh, script tự động hóa và nhiều ứng dụng server-side khác. Điều này tạo ra lợi thế khi cùng một ngôn ngữ được dùng ở cả frontend lẫn backend."
+  },
+  {
+    "id": 35,
+    "question": "NPM thường được dùng để làm gì?",
+    "options": [
+      "Quản lý gói thư viện cho dự án JavaScript",
+      "Tăng xung nhịp CPU",
+      "Nén ảnh PNG",
+      "Cài hệ điều hành trên điện thoại"
+    ],
+    "correctIndex": 0,
+    "explanation": "NPM là trình quản lý gói phổ biến trong hệ sinh thái JavaScript và Node.js. Nó giúp cài thư viện, quản lý phiên bản phụ thuộc, chạy script của dự án và chia sẻ package. Hầu hết các dự án JavaScript hiện đại đều sử dụng NPM hoặc công cụ tương tự."
+  },
+  {
+    "id": 36,
+    "question": "TypeScript là gì?",
+    "options": [
+      "Phiên bản mở rộng của JavaScript có hệ thống kiểu dữ liệu tĩnh",
+      "Một cơ sở dữ liệu NoSQL",
+      "Một hệ điều hành mới",
+      "Một trình duyệt web"
+    ],
+    "correctIndex": 0,
+    "explanation": "TypeScript là superset của JavaScript, bổ sung khả năng khai báo kiểu dữ liệu và nhiều tính năng hỗ trợ phát triển quy mô lớn. Nhờ có type checking, lập trình viên phát hiện lỗi sớm hơn, tăng độ rõ ràng của code và cải thiện khả năng cộng tác trong các dự án phức tạp."
+  },
+  {
+    "id": 37,
+    "question": "Ưu điểm lớn của TypeScript trong dự án lớn là gì?",
+    "options": [
+      "Giúp phát hiện lỗi kiểu dữ liệu sớm và cải thiện khả năng bảo trì",
+      "Làm website tự động có doanh thu",
+      "Thay thế hoàn toàn cơ sở dữ liệu",
+      "Không cần biên dịch"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trong dự án lớn, TypeScript đặc biệt hữu ích vì giảm lỗi do truyền sai kiểu dữ liệu, giúp IDE gợi ý tốt hơn, dễ đọc API nội bộ và an toàn hơn khi refactor. Khi nhiều người cùng làm việc, các định nghĩa kiểu đóng vai trò như tài liệu sống cho codebase."
+  },
+  {
+    "id": 38,
+    "question": "Python nổi tiếng vì đặc điểm nào?",
+    "options": [
+      "Cú pháp dễ đọc và hệ sinh thái mạnh trong nhiều lĩnh vực",
+      "Chỉ chạy được trên điện thoại",
+      "Không hỗ trợ thư viện",
+      "Chỉ dùng để thiết kế game 3D"
+    ],
+    "correctIndex": 0,
+    "explanation": "Python được yêu thích nhờ cú pháp đơn giản, gần gũi, dễ học và có cộng đồng rất lớn. Nó được dùng trong web backend, khoa học dữ liệu, AI, tự động hóa, scripting, kiểm thử và giáo dục. Đây là một trong những ngôn ngữ đa dụng nhất hiện nay."
+  },
+  {
+    "id": 39,
+    "question": "Java nổi bật nhờ đặc điểm nào?",
+    "options": [
+      "Khả năng chạy trên nhiều nền tảng thông qua JVM",
+      "Chỉ dùng cho thiết bị IoT rất nhỏ",
+      "Không có lập trình hướng đối tượng",
+      "Không phù hợp cho hệ thống doanh nghiệp"
+    ],
+    "correctIndex": 0,
+    "explanation": "Java nổi bật với triết lý 'write once, run anywhere' nhờ JVM. Nó có hệ sinh thái rất mạnh trong backend doanh nghiệp, hệ thống lớn, ứng dụng Android đời đầu và các nền tảng cần tính ổn định cao. Java cũng là ngôn ngữ tiêu biểu cho lập trình hướng đối tượng."
+  },
+  {
+    "id": 40,
+    "question": "C++ thường được chọn khi nào?",
+    "options": [
+      "Khi cần hiệu năng cao và kiểm soát bộ nhớ sát phần cứng",
+      "Khi chỉ muốn viết HTML",
+      "Khi chỉ làm bảng tính",
+      "Khi không cần biên dịch"
+    ],
+    "correctIndex": 0,
+    "explanation": "C++ phù hợp cho các hệ thống yêu cầu hiệu năng và kiểm soát tài nguyên cao như game engine, hệ thống nhúng, phần mềm đồ họa, ứng dụng thời gian thực và một số thành phần lõi của trình duyệt hoặc hệ điều hành. Nó mạnh nhưng cũng đòi hỏi lập trình viên cẩn thận hơn trong quản lý bộ nhớ và độ phức tạp."
+  },
+  {
+    "id": 41,
+    "question": "Lập trình hướng đối tượng (OOP) tập trung vào điều gì?",
+    "options": [
+      "Tổ chức chương trình quanh đối tượng và dữ liệu kèm hành vi",
+      "Chỉ viết một hàm duy nhất",
+      "Loại bỏ hoàn toàn biến",
+      "Không dùng cấu trúc dữ liệu"
+    ],
+    "correctIndex": 0,
+    "explanation": "OOP tổ chức phần mềm dựa trên object, tức là những thực thể kết hợp giữa dữ liệu và hành vi. Các khái niệm như class, object, inheritance, encapsulation và polymorphism giúp mô hình hóa bài toán gần với thế giới thực và tăng khả năng tái sử dụng, mở rộng hệ thống."
+  },
+  {
+    "id": 42,
+    "question": "Encapsulation trong OOP có ý nghĩa gì?",
+    "options": [
+      "Đóng gói dữ liệu và kiểm soát cách truy cập vào dữ liệu đó",
+      "Tự động sao lưu dữ liệu ra Internet",
+      "Xóa toàn bộ thuộc tính của object",
+      "Biến class thành database"
+    ],
+    "correctIndex": 0,
+    "explanation": "Encapsulation là nguyên lý đóng gói dữ liệu và các phương thức thao tác dữ liệu trong cùng một đối tượng, đồng thời giới hạn truy cập trực tiếp từ bên ngoài. Nhờ vậy, nội bộ hệ thống được bảo vệ tốt hơn, giảm rủi ro thay đổi không kiểm soát và tăng tính an toàn của thiết kế."
+  },
+  {
+    "id": 43,
+    "question": "Inheritance trong OOP là gì?",
+    "options": [
+      "Cơ chế cho phép lớp con kế thừa thuộc tính và phương thức từ lớp cha",
+      "Một kiểu tấn công mạng",
+      "Một giao thức API",
+      "Một dạng vòng lặp"
+    ],
+    "correctIndex": 0,
+    "explanation": "Inheritance giúp tạo lớp mới dựa trên lớp đã có, tái sử dụng thuộc tính và hành vi chung. Điều này hữu ích khi nhiều đối tượng có đặc điểm giống nhau. Tuy nhiên, trong thiết kế hiện đại, kế thừa cần dùng cẩn thận để tránh hệ thống quá ràng buộc và khó bảo trì."
+  },
+  {
+    "id": 44,
+    "question": "Thuật toán là gì?",
+    "options": [
+      "Một tập hợp các bước rõ ràng để giải quyết một bài toán",
+      "Một thiết bị lưu điện",
+      "Một loại file ảnh",
+      "Một chương trình diệt virus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thuật toán là trình tự các bước xử lý xác định nhằm giải quyết một vấn đề. Trong lập trình, chất lượng thuật toán ảnh hưởng lớn đến tốc độ, tài nguyên sử dụng và khả năng mở rộng của phần mềm. Đây là khái niệm cốt lõi của khoa học máy tính."
+  },
+  {
+    "id": 45,
+    "question": "Độ phức tạp Big O dùng để mô tả điều gì?",
+    "options": [
+      "Mức tăng trưởng tài nguyên cần dùng khi đầu vào tăng",
+      "Dung lượng màn hình",
+      "Số lượng lập trình viên trong nhóm",
+      "Tốc độ Internet của công ty"
+    ],
+    "correctIndex": 0,
+    "explanation": "Big O mô tả cách thời gian chạy hoặc bộ nhớ sử dụng của thuật toán tăng theo kích thước đầu vào. Nó không cho biết thời gian tuyệt đối, mà cho cái nhìn tương đối để so sánh hiệu quả giữa các giải pháp. Đây là công cụ quan trọng khi phân tích thuật toán và tối ưu hệ thống."
+  },
+  {
+    "id": 46,
+    "question": "Cấu trúc dữ liệu nào hoạt động theo nguyên tắc vào trước ra trước?",
+    "options": [
+      "Stack",
+      "Queue",
+      "Tree",
+      "Set"
+    ],
+    "correctIndex": 1,
+    "explanation": "Queue hoạt động theo nguyên tắc FIFO, tức là phần tử vào trước sẽ ra trước. Mô hình này giống như hàng chờ trong đời thực. Nó thường được dùng trong xử lý tác vụ, hàng đợi tin nhắn, lịch trình hệ điều hành và các hệ thống cần xử lý tuần tự."
+  },
+  {
+    "id": 47,
+    "question": "Cấu trúc dữ liệu nào hoạt động theo nguyên tắc vào sau ra trước?",
+    "options": [
+      "Queue",
+      "Stack",
+      "Graph",
+      "Table"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stack hoạt động theo nguyên tắc LIFO, tức là phần tử thêm vào sau sẽ được lấy ra trước. Nó thường được dùng trong quản lý lời gọi hàm, undo thao tác, biểu thức toán học và nhiều thuật toán duyệt, quay lui hoặc xử lý ngăn xếp tác vụ."
+  },
+  {
+    "id": 48,
+    "question": "Hash table có ưu điểm chính nào?",
+    "options": [
+      "Tra cứu, thêm, xóa phần tử rất nhanh trong nhiều trường hợp",
+      "Luôn sắp xếp dữ liệu tự nhiên theo tăng dần",
+      "Không cần bộ nhớ",
+      "Chỉ lưu được số nguyên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hash table dùng hàm băm để ánh xạ khóa sang vị trí lưu trữ, nhờ đó nhiều thao tác tra cứu, thêm và xóa có thể đạt hiệu quả trung bình rất cao. Đây là cấu trúc dữ liệu quan trọng trong từ điển, cache, indexing và rất nhiều thư viện chuẩn."
+  },
+  {
+    "id": 49,
+    "question": "Đệ quy (recursion) là gì?",
+    "options": [
+      "Kỹ thuật hàm tự gọi lại chính nó để giải bài toán",
+      "Một loại card đồ họa",
+      "Một giao thức email",
+      "Một chuẩn cắm USB"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đệ quy là kỹ thuật chia bài toán thành các bài toán con cùng dạng, trong đó hàm sẽ tự gọi lại chính nó cho đến khi gặp điều kiện dừng. Đây là cách biểu diễn rất tự nhiên cho các bài toán như duyệt cây, giai thừa, Fibonacci, chia để trị và nhiều vấn đề toán học."
+  },
+  {
+    "id": 50,
+    "question": "Bug trong phần mềm là gì?",
+    "options": [
+      "Lỗi hoặc hành vi không đúng như mong đợi trong chương trình",
+      "Một loại tính năng cao cấp",
+      "Một chuẩn bảo mật web",
+      "Một mô hình dữ liệu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bug là lỗi trong thiết kế, logic, cú pháp, tích hợp hoặc vận hành khiến phần mềm hoạt động sai, gây kết quả không mong muốn hoặc làm hệ thống sập. Việc phát hiện, tái hiện và sửa bug là phần không thể thiếu trong quy trình phát triển phần mềm chuyên nghiệp."
+  },
+  {
+    "id": 51,
+    "question": "Testing trong phần mềm nhằm mục đích gì?",
+    "options": [
+      "Kiểm tra phần mềm có hoạt động đúng và phát hiện lỗi sớm",
+      "Làm tăng giá bán sản phẩm tự động",
+      "Thay thế hoàn toàn việc lập trình",
+      "Chỉ tạo giao diện đẹp hơn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Testing giúp xác minh phần mềm hoạt động đúng theo yêu cầu, giảm lỗi trước khi phát hành và tăng độ tin cậy của hệ thống. Kiểm thử còn giúp ngăn lỗi tái xuất hiện khi thay đổi code, đặc biệt quan trọng trong các dự án lớn có nhiều thành viên cùng phát triển."
+  },
+  {
+    "id": 52,
+    "question": "Unit test là loại kiểm thử nào?",
+    "options": [
+      "Kiểm thử một đơn vị nhỏ của chương trình như hàm hoặc module",
+      "Kiểm thử tốc độ Wi-Fi",
+      "Kiểm thử phần cứng màn hình",
+      "Kiểm thử chiến dịch marketing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unit test tập trung vào các đơn vị nhỏ nhất có thể kiểm tra độc lập, ví dụ một hàm, một lớp hoặc một module. Mục tiêu là đảm bảo logic cục bộ hoạt động đúng. Nếu được viết tốt, unit test giúp refactor an toàn và phát hiện lỗi rất sớm ngay từ tầng thấp."
+  },
+  {
+    "id": 53,
+    "question": "Integration test dùng để kiểm tra điều gì?",
+    "options": [
+      "Sự phối hợp giữa nhiều thành phần của hệ thống",
+      "Độ sáng màn hình",
+      "Thời lượng pin chuột",
+      "Chất lượng âm thanh loa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Integration test kiểm tra các module hoặc dịch vụ khi kết nối với nhau có hoạt động đúng không, ví dụ backend gọi database, API kết nối service khác hoặc frontend tương tác với backend. Nhiều lỗi thực tế xuất hiện không phải ở từng phần riêng lẻ mà ở sự tích hợp giữa chúng."
+  },
+  {
+    "id": 54,
+    "question": "CI/CD là gì?",
+    "options": [
+      "Quy trình tự động kiểm tra, tích hợp và triển khai phần mềm",
+      "Một loại ngôn ngữ lập trình",
+      "Một chuẩn cắm màn hình",
+      "Một kiểu tản nhiệt nước"
+    ],
+    "correctIndex": 0,
+    "explanation": "CI/CD là tập hợp thực hành và công cụ tự động hóa việc build, test và triển khai phần mềm. CI giúp tích hợp code thường xuyên và kiểm tra sớm, còn CD giúp phát hành hoặc triển khai nhanh hơn, ổn định hơn. Đây là nền tảng quan trọng của DevOps hiện đại."
+  },
+  {
+    "id": 55,
+    "question": "DevOps hướng tới điều gì?",
+    "options": [
+      "Kết hợp phát triển phần mềm và vận hành để giao hàng nhanh, ổn định hơn",
+      "Loại bỏ hoàn toàn kiểm thử",
+      "Chỉ tập trung thiết kế logo",
+      "Thay thế mọi lập trình viên bằng robot"
+    ],
+    "correctIndex": 0,
+    "explanation": "DevOps là cách tiếp cận nhằm thu hẹp khoảng cách giữa đội phát triển và đội vận hành, thúc đẩy tự động hóa, quan sát hệ thống, triển khai liên tục và phản hồi nhanh. Mục tiêu là cải thiện tốc độ giao phần mềm nhưng vẫn đảm bảo độ ổn định, chất lượng và khả năng phục hồi."
+  },
+  {
+    "id": 56,
+    "question": "Docker thường được dùng để làm gì?",
+    "options": [
+      "Đóng gói ứng dụng cùng môi trường chạy vào container",
+      "Thiết kế hình ảnh vector",
+      "Tạo bảng tính Excel",
+      "Tăng tốc RAM vật lý"
+    ],
+    "correctIndex": 0,
+    "explanation": "Docker cho phép đóng gói ứng dụng và các phụ thuộc của nó vào container, giúp chạy nhất quán giữa máy lập trình, môi trường test và production. Điều này giảm đáng kể lỗi kiểu 'chạy trên máy tôi thì được', đồng thời hỗ trợ triển khai và mở rộng hệ thống linh hoạt hơn."
+  },
+  {
+    "id": 57,
+    "question": "Container khác máy ảo ở điểm nào thường thấy?",
+    "options": [
+      "Container nhẹ hơn vì chia sẻ kernel với hệ điều hành host",
+      "Container luôn có giao diện đồ họa riêng",
+      "Máy ảo không có hệ điều hành",
+      "Container không thể chạy ứng dụng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Container thường nhẹ hơn máy ảo vì không cần mang theo cả một hệ điều hành riêng đầy đủ cho mỗi instance. Chúng chia sẻ kernel của host, nên khởi động nhanh và tốn ít tài nguyên hơn. Máy ảo thì cô lập mạnh hơn nhưng thường nặng hơn về tài nguyên."
+  },
+  {
+    "id": 58,
+    "question": "Cloud computing là gì?",
+    "options": [
+      "Cung cấp tài nguyên tính toán qua Internet theo nhu cầu",
+      "Lưu dữ liệu trên giấy",
+      "Chỉ là một loại phần mềm diệt virus",
+      "Công nghệ dùng để sửa màn hình"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cloud computing là mô hình cung cấp máy chủ, lưu trữ, cơ sở dữ liệu, AI, mạng và nhiều dịch vụ khác qua Internet. Người dùng có thể mở rộng hoặc thu hẹp tài nguyên linh hoạt, trả theo mức sử dụng và giảm gánh nặng đầu tư hạ tầng vật lý ban đầu."
+  },
+  {
+    "id": 59,
+    "question": "Ví dụ nào là nhà cung cấp dịch vụ cloud phổ biến?",
+    "options": [
+      "AWS",
+      "Notepad",
+      "Paint",
+      "WinRAR"
+    ],
+    "correctIndex": 0,
+    "explanation": "AWS là một trong những nền tảng điện toán đám mây lớn và phổ biến nhất thế giới, cung cấp rất nhiều dịch vụ như máy chủ ảo, lưu trữ, cơ sở dữ liệu, AI, giám sát và serverless. Ngoài AWS còn có Azure, Google Cloud và nhiều nhà cung cấp khác."
+  },
+  {
+    "id": 60,
+    "question": "Serverless có nghĩa là gì?",
+    "options": [
+      "Lập trình viên không cần quản lý máy chủ trực tiếp, nhưng máy chủ vẫn tồn tại phía nhà cung cấp",
+      "Ứng dụng chạy mà không cần Internet",
+      "Không có backend",
+      "Máy tính không cần CPU"
+    ],
+    "correctIndex": 0,
+    "explanation": "Serverless không có nghĩa là không có server, mà là lập trình viên không phải trực tiếp vận hành hạ tầng server. Nhà cung cấp cloud lo việc scale, cấp phát và vận hành. Lập trình viên chỉ tập trung viết hàm hoặc dịch vụ. Đây là mô hình phù hợp cho nhiều workload theo sự kiện."
+  },
+  {
+    "id": 61,
+    "question": "Cybersecurity là lĩnh vực tập trung vào điều gì?",
+    "options": [
+      "Bảo vệ hệ thống, dữ liệu và mạng khỏi tấn công hoặc truy cập trái phép",
+      "Thiết kế giao diện game",
+      "In tài liệu văn phòng",
+      "Sửa bàn phím cơ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cybersecurity là lĩnh vực bảo mật thông tin và hệ thống số. Nó bao gồm bảo vệ ứng dụng, mạng, máy chủ, dữ liệu và người dùng trước các mối đe dọa như malware, phishing, rò rỉ dữ liệu, tấn công web và xâm nhập trái phép. Đây là mảng cực kỳ quan trọng trong công nghệ hiện đại."
+  },
+  {
+    "id": 62,
+    "question": "Mật khẩu mạnh nên có đặc điểm nào?",
+    "options": [
+      "Dài, khó đoán, kết hợp nhiều loại ký tự và không dùng lại ở nhiều nơi",
+      "Chỉ gồm 123456",
+      "Chỉ dùng tên người dùng",
+      "Càng ngắn càng tốt để dễ nhớ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mật khẩu mạnh cần đủ dài, khó đoán, không chứa thông tin cá nhân dễ suy ra và lý tưởng là được tạo ngẫu nhiên. Việc dùng lại cùng một mật khẩu ở nhiều dịch vụ là rất rủi ro, vì nếu một nơi bị lộ thì các tài khoản khác cũng có thể bị chiếm quyền."
+  },
+  {
+    "id": 63,
+    "question": "Xác thực hai yếu tố (2FA) giúp tăng bảo mật như thế nào?",
+    "options": [
+      "Yêu cầu thêm một lớp xác minh ngoài mật khẩu",
+      "Loại bỏ hoàn toàn nhu cầu dùng mật khẩu",
+      "Làm máy tính chạy nhanh hơn",
+      "Tăng dung lượng ổ cứng"
+    ],
+    "correctIndex": 0,
+    "explanation": "2FA yêu cầu người dùng cung cấp thêm một yếu tố xác thực khác như mã OTP, khóa bảo mật hoặc ứng dụng xác thực, ngoài mật khẩu. Điều này làm giảm nguy cơ bị chiếm tài khoản khi mật khẩu bị lộ, vì kẻ tấn công vẫn thiếu yếu tố xác minh thứ hai."
+  },
+  {
+    "id": 64,
+    "question": "Phishing là hình thức gì?",
+    "options": [
+      "Lừa đảo nhằm đánh cắp thông tin nhạy cảm bằng cách giả mạo đáng tin",
+      "Một giao thức lập trình",
+      "Một kiểu nén dữ liệu",
+      "Một cấu trúc dữ liệu tuyến tính"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phishing là thủ đoạn lừa người dùng tiết lộ mật khẩu, mã OTP, thông tin thẻ hoặc dữ liệu nhạy cảm thông qua email, website, tin nhắn hoặc cuộc gọi giả mạo. Đây là một trong những hình thức tấn công phổ biến nhất vì nó khai thác yếu tố con người thay vì chỉ khai thác kỹ thuật."
+  },
+  {
+    "id": 65,
+    "question": "HTTPS giúp bảo vệ điều gì?",
+    "options": [
+      "Mã hóa dữ liệu truyền giữa trình duyệt và máy chủ",
+      "Tự động xóa virus khỏi máy tính",
+      "Nâng cấp RAM từ xa",
+      "Tăng độ phân giải màn hình"
+    ],
+    "correctIndex": 0,
+    "explanation": "HTTPS là phiên bản bảo mật của HTTP, sử dụng TLS/SSL để mã hóa dữ liệu khi truyền qua mạng. Nhờ đó, thông tin như mật khẩu, token hoặc dữ liệu cá nhân khó bị nghe lén hay sửa đổi hơn. HTTPS là yêu cầu gần như bắt buộc với các website hiện đại."
+  },
+  {
+    "id": 66,
+    "question": "Machine Learning là gì?",
+    "options": [
+      "Nhánh của AI cho phép máy học từ dữ liệu để đưa ra dự đoán hoặc quyết định",
+      "Một loại card mạng",
+      "Một ngôn ngữ đánh dấu web",
+      "Một tiêu chuẩn kết nối màn hình"
+    ],
+    "correctIndex": 0,
+    "explanation": "Machine Learning là lĩnh vực cho phép hệ thống học mẫu từ dữ liệu thay vì chỉ dựa vào luật viết sẵn hoàn toàn. Mô hình được huấn luyện trên dữ liệu và sau đó dùng để dự đoán, phân loại hoặc hỗ trợ ra quyết định. Nó được ứng dụng rộng rãi trong gợi ý sản phẩm, phát hiện gian lận, nhận dạng ảnh và nhiều lĩnh vực khác."
+  },
+  {
+    "id": 67,
+    "question": "Dữ liệu huấn luyện trong AI dùng để làm gì?",
+    "options": [
+      "Giúp mô hình học ra quy luật từ ví dụ",
+      "Chỉ để lưu trữ ảnh đại diện",
+      "Tăng tốc quạt CPU",
+      "Biên dịch mã Java"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dữ liệu huấn luyện là tập ví dụ mà mô hình sử dụng để học các mẫu, mối quan hệ hoặc đặc trưng trong bài toán. Chất lượng, số lượng và tính đại diện của dữ liệu ảnh hưởng trực tiếp đến hiệu quả của mô hình. Trong nhiều dự án AI, dữ liệu quan trọng không kém thuật toán."
+  },
+  {
+    "id": 68,
+    "question": "Deep Learning là gì?",
+    "options": [
+      "Một nhánh của Machine Learning sử dụng mạng nơ-ron nhiều tầng",
+      "Một kỹ thuật lắp ráp máy tính",
+      "Một giao thức truyền file",
+      "Một kiểu font chữ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Deep Learning là nhánh của Machine Learning dựa trên các mạng nơ-ron sâu với nhiều lớp xử lý. Nó đặc biệt mạnh trong các bài toán như nhận dạng hình ảnh, giọng nói, xử lý ngôn ngữ tự nhiên và generative AI. Tuy nhiên, mô hình deep learning thường cần dữ liệu và tài nguyên tính toán lớn."
+  },
+  {
+    "id": 69,
+    "question": "LLM là viết tắt của gì trong AI hiện đại?",
+    "options": [
+      "Large Language Model",
+      "Local Logic Machine",
+      "Linear Link Manager",
+      "Layered Load Module"
+    ],
+    "correctIndex": 0,
+    "explanation": "LLM là Large Language Model, tức mô hình ngôn ngữ lớn được huấn luyện trên lượng dữ liệu văn bản rất lớn để hiểu và sinh ngôn ngữ tự nhiên. Các mô hình này có thể trả lời câu hỏi, viết nội dung, hỗ trợ lập trình, tóm tắt tài liệu và thực hiện nhiều tác vụ ngôn ngữ khác."
+  },
+  {
+    "id": 70,
+    "question": "Prompt trong AI tạo sinh là gì?",
+    "options": [
+      "Nội dung đầu vào hướng dẫn mô hình tạo ra phản hồi",
+      "Một loại card nhớ",
+      "Bộ nguồn máy tính",
+      "Phần mềm nén file"
+    ],
+    "correctIndex": 0,
+    "explanation": "Prompt là câu lệnh, mô tả, yêu cầu hoặc ngữ cảnh đầu vào mà người dùng cung cấp cho mô hình AI tạo sinh. Chất lượng prompt ảnh hưởng lớn đến kết quả đầu ra. Prompt rõ ràng, có mục tiêu cụ thể và đủ ngữ cảnh thường cho phản hồi tốt, chính xác và hữu ích hơn."
+  },
+  {
+    "id": 71,
+    "question": "Data science thường kết hợp những yếu tố nào?",
+    "options": [
+      "Dữ liệu, thống kê, lập trình và hiểu biết nghiệp vụ",
+      "Chỉ cần biết thiết kế đồ họa",
+      "Chỉ cần sửa phần cứng",
+      "Không cần toán học"
+    ],
+    "correctIndex": 0,
+    "explanation": "Data science là lĩnh vực liên ngành, kết hợp thu thập dữ liệu, làm sạch, phân tích thống kê, lập trình, trực quan hóa và hiểu bài toán kinh doanh để rút ra insight hoặc xây mô hình dự đoán. Nó không chỉ là code hay toán riêng lẻ, mà là sự giao thoa của nhiều kỹ năng."
+  },
+  {
+    "id": 72,
+    "question": "Pandas trong Python thường được dùng để làm gì?",
+    "options": [
+      "Phân tích và xử lý dữ liệu dạng bảng",
+      "Thiết kế game 3D",
+      "Điều khiển phần cứng USB",
+      "Mã hóa ổ cứng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pandas là thư viện rất phổ biến trong Python cho thao tác dữ liệu dạng bảng như CSV, Excel hoặc dữ liệu có cấu trúc. Nó hỗ trợ lọc, gộp, nhóm, làm sạch, biến đổi và phân tích dữ liệu hiệu quả, đặc biệt hữu ích trong data analysis và data science."
+  },
+  {
+    "id": 73,
+    "question": "Responsive web design nghĩa là gì?",
+    "options": [
+      "Thiết kế web thích ứng tốt trên nhiều kích thước màn hình",
+      "Website chỉ chạy trên máy tính bàn",
+      "Website không dùng CSS",
+      "Website không cần Internet"
+    ],
+    "correctIndex": 0,
+    "explanation": "Responsive design giúp website hiển thị hợp lý trên điện thoại, tablet, laptop và màn hình lớn bằng cách điều chỉnh bố cục, kích thước phần tử và cách sắp xếp nội dung. Đây là yêu cầu rất quan trọng trong thời đại người dùng truy cập web từ nhiều loại thiết bị khác nhau."
+  },
+  {
+    "id": 74,
+    "question": "UX là viết tắt của gì?",
+    "options": [
+      "User Experience",
+      "Unified XML",
+      "Ultra Xcode",
+      "User Extension"
+    ],
+    "correctIndex": 0,
+    "explanation": "UX là User Experience, tức trải nghiệm người dùng khi tương tác với sản phẩm số. Nó bao gồm mức độ dễ hiểu, dễ dùng, hiệu quả, cảm xúc và sự hài lòng của người dùng. Một sản phẩm tốt không chỉ chạy đúng mà còn cần mang lại trải nghiệm mượt mà và hợp lý."
+  },
+  {
+    "id": 75,
+    "question": "UI khác UX ở điểm nào?",
+    "options": [
+      "UI tập trung vào giao diện trực quan, còn UX tập trung vào trải nghiệm tổng thể",
+      "UI là backend, UX là database",
+      "UI chỉ dùng cho game, UX chỉ dùng cho web",
+      "Hai khái niệm hoàn toàn giống nhau"
+    ],
+    "correctIndex": 0,
+    "explanation": "UI là User Interface, tức phần giao diện mà người dùng nhìn thấy và tương tác trực tiếp như nút, màu sắc, bố cục. UX rộng hơn, liên quan đến toàn bộ hành trình sử dụng sản phẩm. UI đẹp chưa chắc UX tốt, nhưng UI là một phần quan trọng của UX."
+  },
+  {
+    "id": 76,
+    "question": "Agile trong phát triển phần mềm là gì?",
+    "options": [
+      "Cách tiếp cận phát triển linh hoạt, chia nhỏ công việc và phản hồi liên tục",
+      "Một ngôn ngữ lập trình mới",
+      "Một loại CPU tiết kiệm điện",
+      "Một phần mềm trình chiếu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Agile là triết lý phát triển phần mềm đề cao khả năng thích nghi, hợp tác chặt với khách hàng, giao hàng sớm và cải tiến liên tục. Thay vì cố định mọi thứ từ đầu, Agile khuyến khích chia nhỏ công việc thành các vòng lặp ngắn để học hỏi và điều chỉnh theo thực tế."
+  },
+  {
+    "id": 77,
+    "question": "Scrum là gì?",
+    "options": [
+      "Một framework Agile quản lý công việc theo sprint",
+      "Một chuẩn bảo mật dữ liệu",
+      "Một hệ điều hành di động",
+      "Một ngôn ngữ lập trình hàm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Scrum là một framework phổ biến trong Agile, tổ chức công việc theo các sprint ngắn, có backlog, daily meeting, review và retrospective. Mục tiêu là giúp nhóm làm việc có nhịp độ rõ ràng, minh bạch tiến độ và liên tục cải thiện quy trình phát triển."
+  },
+  {
+    "id": 78,
+    "question": "Sprint trong Scrum thường là gì?",
+    "options": [
+      "Khoảng thời gian ngắn, cố định để hoàn thành một nhóm công việc",
+      "Một lệnh trong SQL",
+      "Một loại file log",
+      "Một cổng mạng vật lý"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sprint là một chu kỳ làm việc ngắn, thường kéo dài từ 1 đến 4 tuần, trong đó nhóm cam kết hoàn thành một tập công việc cụ thể. Việc chia theo sprint giúp dễ theo dõi tiến độ, kiểm soát phạm vi công việc và thu nhận phản hồi thường xuyên."
+  },
+  {
+    "id": 79,
+    "question": "Code review đem lại lợi ích gì?",
+    "options": [
+      "Phát hiện lỗi, cải thiện chất lượng code và chia sẻ kiến thức trong nhóm",
+      "Làm giảm hoàn toàn nhu cầu kiểm thử",
+      "Thay thế hệ thống backup",
+      "Tăng tốc phần cứng máy tính"
+    ],
+    "correctIndex": 0,
+    "explanation": "Code review giúp phát hiện bug, vấn đề thiết kế, lỗ hổng bảo mật và cải thiện tính nhất quán trong codebase. Ngoài ra, đây còn là cơ hội học hỏi giữa các thành viên, lan tỏa tiêu chuẩn kỹ thuật và giảm rủi ro khi kiến thức chỉ tập trung vào một người."
+  },
+  {
+    "id": 80,
+    "question": "Refactor là gì?",
+    "options": [
+      "Cải tổ cấu trúc code để tốt hơn mà không đổi hành vi bên ngoài",
+      "Xóa toàn bộ dự án để viết lại",
+      "Cài thêm phần cứng vào máy",
+      "Tăng tốc Internet công ty"
+    ],
+    "correctIndex": 0,
+    "explanation": "Refactor là quá trình cải thiện cấu trúc nội bộ của code, làm cho nó dễ đọc, dễ mở rộng và dễ bảo trì hơn nhưng vẫn giữ nguyên chức năng đối với người dùng. Refactor tốt thường đi cùng test để đảm bảo không vô tình làm thay đổi hành vi hệ thống."
+  },
+  {
+    "id": 81,
+    "question": "Clean code hướng tới điều gì?",
+    "options": [
+      "Code dễ đọc, dễ hiểu, dễ bảo trì và nhất quán",
+      "Code phải càng ngắn càng tốt trong mọi trường hợp",
+      "Không cần đặt tên biến rõ nghĩa",
+      "Không dùng comment và cũng không cần cấu trúc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Clean code không chỉ là code chạy được, mà còn là code dễ hiểu với người khác và với chính mình trong tương lai. Nó nhấn mạnh tên gọi rõ ràng, hàm có trách nhiệm đơn nhất, cấu trúc hợp lý và tránh độ phức tạp không cần thiết. Đây là nền tảng của phát triển bền vững."
+  },
+  {
+    "id": 82,
+    "question": "DRY trong lập trình là viết tắt của nguyên tắc nào?",
+    "options": [
+      "Don't Repeat Yourself",
+      "Do Run Yesterday",
+      "Direct Read Yield",
+      "Data Route YAML"
+    ],
+    "correctIndex": 0,
+    "explanation": "DRY là nguyên tắc nhắc nhở tránh lặp lại cùng một logic ở nhiều nơi. Khi một quy tắc hoặc hành vi xuất hiện nhiều lần, hệ thống sẽ khó bảo trì hơn vì mỗi lần thay đổi phải sửa ở nhiều chỗ. Áp dụng DRY hợp lý giúp giảm lỗi và tăng tính nhất quán."
+  },
+  {
+    "id": 83,
+    "question": "KISS trong thiết kế phần mềm nhấn mạnh điều gì?",
+    "options": [
+      "Giữ giải pháp đơn giản nhất có thể",
+      "Luôn dùng công nghệ mới nhất",
+      "Viết code càng dài càng tốt",
+      "Không cần tài liệu hóa"
+    ],
+    "correctIndex": 0,
+    "explanation": "KISS là viết tắt của 'Keep It Simple, Stupid', một nguyên tắc nổi tiếng khuyến khích ưu tiên giải pháp đơn giản, dễ hiểu thay vì thiết kế quá phức tạp. Sự đơn giản thường giúp dễ kiểm thử, dễ sửa lỗi và giảm chi phí bảo trì về lâu dài."
+  },
+  {
+    "id": 84,
+    "question": "YAGNI là nguyên tắc gì?",
+    "options": [
+      "Không nên xây tính năng khi hiện tại chưa thực sự cần",
+      "Luôn thêm nhiều tính năng dự phòng",
+      "Chỉ dùng một ngôn ngữ duy nhất",
+      "Không được viết test"
+    ],
+    "correctIndex": 0,
+    "explanation": "YAGNI là viết tắt của 'You Aren't Gonna Need It'. Nguyên tắc này khuyên không nên xây dựng những phần quá xa nhu cầu hiện tại chỉ vì nghĩ rằng có thể sẽ dùng trong tương lai. Làm như vậy dễ khiến hệ thống phức tạp hơn, tốn thời gian hơn và khó bảo trì hơn."
+  },
+  {
+    "id": 85,
+    "question": "Microservices là kiến trúc như thế nào?",
+    "options": [
+      "Chia hệ thống thành nhiều dịch vụ nhỏ, độc lập tương đối",
+      "Gom toàn bộ hệ thống vào một file duy nhất",
+      "Một kiểu ngôn ngữ truy vấn",
+      "Một giao thức mã hóa email"
+    ],
+    "correctIndex": 0,
+    "explanation": "Microservices là kiến trúc trong đó hệ thống được tách thành nhiều dịch vụ nhỏ phụ trách từng miền chức năng. Mỗi service có thể triển khai và mở rộng tương đối độc lập. Cách tiếp cận này tăng tính linh hoạt nhưng cũng làm tăng độ phức tạp về vận hành, giao tiếp và quan sát."
+  },
+  {
+    "id": 86,
+    "question": "Monolith trong phần mềm là gì?",
+    "options": [
+      "Ứng dụng được xây thành một khối thống nhất",
+      "Một loại ngôn ngữ AI",
+      "Một chuẩn đồ họa 3D",
+      "Một thiết bị mạng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Monolith là kiểu kiến trúc mà nhiều chức năng của hệ thống nằm chung trong một ứng dụng lớn. Cách này thường đơn giản hơn để bắt đầu và triển khai ở giai đoạn đầu, nhưng khi hệ thống phát triển lớn thì có thể gặp khó khăn trong mở rộng, tách nhóm và bảo trì nếu thiết kế không tốt."
+  },
+  {
+    "id": 87,
+    "question": "Cache dùng để làm gì?",
+    "options": [
+      "Lưu tạm dữ liệu truy cập thường xuyên để tăng tốc độ phản hồi",
+      "Xóa vĩnh viễn dữ liệu gốc",
+      "Mã hóa toàn bộ server",
+      "Thay thế cơ sở dữ liệu chính"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cache giúp giảm thời gian truy xuất bằng cách lưu dữ liệu hoặc kết quả tính toán thường xuyên được dùng lại ở nơi có tốc độ truy cập nhanh hơn. Nó có thể nằm ở trình duyệt, ứng dụng, database hoặc CDN. Dùng cache đúng cách giúp giảm tải hệ thống và cải thiện trải nghiệm người dùng."
+  },
+  {
+    "id": 88,
+    "question": "CDN là gì?",
+    "options": [
+      "Mạng lưới máy chủ phân tán giúp phân phối nội dung nhanh hơn đến người dùng",
+      "Một loại trình biên dịch",
+      "Một cấu trúc dữ liệu cây",
+      "Một giao thức lập trình backend"
+    ],
+    "correctIndex": 0,
+    "explanation": "CDN là Content Delivery Network, mạng lưới máy chủ đặt ở nhiều vị trí địa lý khác nhau nhằm phục vụ nội dung tĩnh như ảnh, CSS, JS, video gần với người dùng hơn. Nhờ đó website tải nhanh hơn, giảm tải cho máy chủ gốc và cải thiện độ ổn định khi lượng truy cập cao."
+  },
+  {
+    "id": 89,
+    "question": "Load balancing dùng để làm gì?",
+    "options": [
+      "Phân phối lưu lượng truy cập giữa nhiều máy chủ",
+      "Tăng dung lượng bàn phím",
+      "Nén dữ liệu JSON",
+      "Mã hóa mã nguồn Java"
+    ],
+    "correctIndex": 0,
+    "explanation": "Load balancing giúp chia đều yêu cầu đến nhiều server để tránh quá tải một máy, tăng hiệu năng, khả năng sẵn sàng và khả năng mở rộng của hệ thống. Đây là thành phần quan trọng trong các ứng dụng web lớn, hệ thống cloud và kiến trúc có nhiều instance."
+  },
+  {
+    "id": 90,
+    "question": "Latency trong hệ thống mạng thường nói về điều gì?",
+    "options": [
+      "Độ trễ từ lúc gửi yêu cầu đến lúc nhận phản hồi",
+      "Dung lượng ổ cứng còn trống",
+      "Số dòng code của dự án",
+      "Kích thước màn hình laptop"
+    ],
+    "correctIndex": 0,
+    "explanation": "Latency là độ trễ của hệ thống, thể hiện thời gian mất để dữ liệu đi từ nguồn đến đích hoặc để một yêu cầu nhận được phản hồi. Latency thấp thường mang lại trải nghiệm tốt hơn, đặc biệt với các ứng dụng tương tác thời gian thực như game, gọi video, trading hoặc chat."
+  },
+  {
+    "id": 91,
+    "question": "Open source nghĩa là gì?",
+    "options": [
+      "Phần mềm có mã nguồn được công khai để người khác xem, sửa và phân phối theo giấy phép",
+      "Phần mềm bắt buộc phải miễn phí trong mọi trường hợp",
+      "Phần mềm không cần bản quyền",
+      "Phần mềm chỉ chạy trên Linux"
+    ],
+    "correctIndex": 0,
+    "explanation": "Open source là mô hình phần mềm công khai mã nguồn và cho phép cộng đồng sử dụng, sửa đổi, đóng góp hoặc phân phối lại theo các điều khoản giấy phép cụ thể. Không phải mọi phần mềm mã nguồn mở đều miễn phí theo nghĩa thương mại, nhưng chúng minh bạch hơn và thúc đẩy cộng tác cộng đồng."
+  },
+  {
+    "id": 92,
+    "question": "README trong repository thường chứa gì?",
+    "options": [
+      "Mô tả dự án, cách cài đặt, cách sử dụng và thông tin cần thiết",
+      "Mật khẩu admin",
+      "Bản sao toàn bộ cơ sở dữ liệu",
+      "Tập tin hệ điều hành"
+    ],
+    "correctIndex": 0,
+    "explanation": "README là tài liệu mở đầu rất quan trọng trong repository, giúp người mới hiểu dự án là gì, chạy như thế nào, có phụ thuộc gì, dùng ra sao và đôi khi bao gồm cấu trúc thư mục hoặc hướng dẫn đóng góp. Một README tốt giúp giảm rất nhiều thời gian onboarding."
+  },
+  {
+    "id": 93,
+    "question": "Documentation trong dự án phần mềm quan trọng vì sao?",
+    "options": [
+      "Giúp người khác hiểu hệ thống, sử dụng đúng và bảo trì dễ hơn",
+      "Chỉ để làm đẹp repository",
+      "Không liên quan gì tới phát triển phần mềm",
+      "Thay thế hoàn toàn code"
+    ],
+    "correctIndex": 0,
+    "explanation": "Documentation giúp truyền đạt kiến thức về kiến trúc, API, cách chạy, quyết định thiết kế và quy trình vận hành. Trong các dự án dài hạn hoặc có nhiều người tham gia, tài liệu tốt làm giảm phụ thuộc vào trí nhớ cá nhân, hỗ trợ onboarding và giảm rủi ro hiểu sai hệ thống."
+  },
+  {
+    "id": 94,
+    "question": "Regex thường dùng để làm gì?",
+    "options": [
+      "Tìm kiếm và kiểm tra chuỗi theo mẫu",
+      "Thiết kế bảng mạch",
+      "Tạo cơ sở dữ liệu phân tán",
+      "Điều khiển card âm thanh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Regex là công cụ mạnh để mô tả mẫu chuỗi văn bản, giúp tìm kiếm, trích xuất hoặc kiểm tra định dạng dữ liệu như email, số điện thoại, URL hoặc log. Tuy nhiên, regex phức tạp cũng có thể khó đọc, nên cần dùng cẩn thận và ưu tiên sự rõ ràng."
+  },
+  {
+    "id": 95,
+    "question": "Serialization là gì?",
+    "options": [
+      "Chuyển đối tượng hoặc cấu trúc dữ liệu thành dạng có thể lưu hoặc truyền đi",
+      "Tăng tốc CPU bằng phần mềm",
+      "Sửa lỗi vật lý ổ cứng",
+      "Nén ảnh JPEG"
+    ],
+    "correctIndex": 0,
+    "explanation": "Serialization là quá trình chuyển dữ liệu trong bộ nhớ thành định dạng như JSON, XML hoặc nhị phân để lưu trữ hoặc gửi qua mạng. Khi nhận lại, hệ thống có thể deserialization để khôi phục cấu trúc ban đầu. Đây là thao tác phổ biến trong API, cache, queue và lưu trạng thái."
+  },
+  {
+    "id": 96,
+    "question": "Authentication là gì?",
+    "options": [
+      "Xác minh danh tính người dùng hoặc hệ thống",
+      "Phân chia dữ liệu theo bảng",
+      "Nén tệp tin",
+      "Tăng tốc kết nối mạng nội bộ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Authentication là bước xác minh xem người dùng hoặc hệ thống có đúng là ai họ khai báo hay không, ví dụ bằng mật khẩu, token, OTP hoặc khóa bảo mật. Đây là bước đầu tiên trong bảo mật truy cập, khác với authorization là bước quyết định được phép làm gì sau khi đã xác thực."
+  },
+  {
+    "id": 97,
+    "question": "Authorization là gì?",
+    "options": [
+      "Quyết định người dùng đã xác thực được phép làm gì",
+      "Xác minh card đồ họa",
+      "Mã hóa hình ảnh",
+      "Sửa giao diện web"
+    ],
+    "correctIndex": 0,
+    "explanation": "Authorization là quá trình xác định quyền hạn của người dùng hoặc dịch vụ sau khi đã được xác thực. Ví dụ, một người dùng có thể được xem dữ liệu nhưng không được xóa, còn admin có thể quản lý toàn hệ thống. Phân quyền đúng là yếu tố quan trọng trong bảo mật ứng dụng."
+  },
+  {
+    "id": 98,
+    "question": "Token trong xác thực web thường dùng để làm gì?",
+    "options": [
+      "Đại diện cho phiên đăng nhập hoặc quyền truy cập của người dùng",
+      "Làm tăng độ phân giải ảnh",
+      "Tạo bàn phím ảo",
+      "Xóa cache trình duyệt tự động"
+    ],
+    "correctIndex": 0,
+    "explanation": "Token là chuỗi đại diện cho danh tính hoặc quyền truy cập, thường được cấp sau khi đăng nhập thành công. Client gửi token trong các yêu cầu tiếp theo để chứng minh quyền truy cập mà không cần gửi lại mật khẩu mỗi lần. Token phổ biến trong API hiện đại và kiến trúc stateless."
+  },
+  {
+    "id": 99,
+    "question": "JWT là viết tắt của gì?",
+    "options": [
+      "JSON Web Token",
+      "Java Web Table",
+      "Joint Window Transfer",
+      "Just Write Text"
+    ],
+    "correctIndex": 0,
+    "explanation": "JWT là JSON Web Token, một chuẩn token dạng JSON được mã hóa và ký để truyền thông tin xác thực hoặc quyền hạn giữa các bên. JWT thường dùng trong hệ thống API, nhưng khi triển khai cần cân nhắc kỹ về bảo mật, thời hạn token, lưu trữ và khả năng thu hồi."
+  },
+  {
+    "id": 100,
+    "question": "ORM là công cụ hỗ trợ điều gì?",
+    "options": [
+      "Ánh xạ giữa đối tượng trong code và bảng trong cơ sở dữ liệu",
+      "Thiết kế hoạt ảnh 3D",
+      "Mã hóa video trực tiếp",
+      "Điều khiển pin laptop"
+    ],
+    "correctIndex": 0,
+    "explanation": "ORM giúp lập trình viên thao tác cơ sở dữ liệu thông qua object hoặc model trong ngôn ngữ lập trình thay vì viết toàn bộ SQL thủ công. Nó có thể tăng năng suất, giảm lặp code và giúp code gần với domain hơn, dù trong nhiều trường hợp vẫn cần hiểu SQL để tối ưu tốt."
+  },
+  {
+    "id": 101,
+    "question": "NoSQL thường phù hợp khi nào?",
+    "options": [
+      "Khi dữ liệu linh hoạt hoặc cần mở rộng theo chiều ngang ở một số bài toán",
+      "Khi chắc chắn mọi quan hệ phức tạp đều phải dùng join chặt chẽ",
+      "Khi không cần lưu dữ liệu",
+      "Khi chỉ viết ứng dụng desktop đơn giản"
+    ],
+    "correctIndex": 0,
+    "explanation": "NoSQL phù hợp trong nhiều trường hợp như dữ liệu bán cấu trúc, lượng truy cập lớn, cần mở rộng linh hoạt hoặc mô hình truy vấn đặc thù. Tuy nhiên, nó không thay thế hoàn toàn cơ sở dữ liệu quan hệ. Việc chọn SQL hay NoSQL phụ thuộc vào đặc điểm nghiệp vụ và mô hình dữ liệu thực tế."
+  },
+  {
+    "id": 102,
+    "question": "GraphQL là gì?",
+    "options": [
+      "Một ngôn ngữ truy vấn API cho phép client yêu cầu đúng dữ liệu cần",
+      "Một loại ổ cứng ngoài",
+      "Một trình soạn thảo mã nguồn",
+      "Một phần mềm họp video"
+    ],
+    "correctIndex": 0,
+    "explanation": "GraphQL là ngôn ngữ truy vấn cho API, cho phép client chỉ định chính xác dữ liệu cần lấy thay vì phụ thuộc hoàn toàn vào cấu trúc endpoint cố định như REST. Nó hữu ích trong những hệ thống cần truy vấn linh hoạt, nhưng cũng đòi hỏi thiết kế schema, bảo mật và hiệu năng hợp lý."
+  },
+  {
+    "id": 103,
+    "question": "WebSocket phù hợp với loại ứng dụng nào?",
+    "options": [
+      "Ứng dụng cần giao tiếp hai chiều thời gian thực như chat hoặc game",
+      "Trang web tĩnh chỉ có nội dung văn bản",
+      "Chương trình không dùng mạng",
+      "Ứng dụng chỉ chạy ngoại tuyến hoàn toàn"
+    ],
+    "correctIndex": 0,
+    "explanation": "WebSocket tạo kết nối hai chiều duy trì liên tục giữa client và server, rất phù hợp cho các ứng dụng realtime như chat, thông báo trực tiếp, game online, dashboard cập nhật liên tục hoặc collaborative editing. Nó khác với mô hình request-response truyền thống của HTTP."
+  },
+  {
+    "id": 104,
+    "question": "Cron job thường dùng để làm gì?",
+    "options": [
+      "Chạy tác vụ định kỳ tự động theo lịch",
+      "Thiết kế logo ứng dụng",
+      "Tăng tốc card âm thanh",
+      "Thay đổi địa chỉ IP thủ công"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cron job là cơ chế lên lịch để tự động chạy tác vụ như sao lưu, gửi email định kỳ, dọn dữ liệu cũ, đồng bộ hệ thống hoặc tạo báo cáo. Đây là công cụ quan trọng trong vận hành backend và quản trị hệ thống, giúp nhiều quy trình diễn ra tự động và ổn định."
+  },
+  {
+    "id": 105,
+    "question": "Log trong hệ thống phần mềm dùng để làm gì?",
+    "options": [
+      "Ghi lại thông tin hoạt động để theo dõi, debug và giám sát",
+      "Làm giao diện đẹp hơn",
+      "Thay thế database chính",
+      "Tăng tốc độ bàn phím"
+    ],
+    "correctIndex": 0,
+    "explanation": "Log là các bản ghi sự kiện hoặc trạng thái trong quá trình ứng dụng chạy. Chúng giúp lập trình viên và đội vận hành hiểu chuyện gì đã xảy ra, truy vết lỗi, giám sát hành vi người dùng hoặc kiểm tra hiệu năng hệ thống. Logging tốt là nền tảng của observability hiện đại."
+  },
+  {
+    "id": 106,
+    "question": "Monitoring trong vận hành hệ thống nhằm mục đích gì?",
+    "options": [
+      "Theo dõi sức khỏe, hiệu năng và sự cố của hệ thống theo thời gian",
+      "Chỉ dùng để đổi màu giao diện",
+      "Thay thế toàn bộ bảo mật",
+      "Lưu trữ ảnh đại diện nhân viên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Monitoring giúp quan sát các chỉ số như CPU, RAM, thời gian phản hồi, tỷ lệ lỗi, lưu lượng mạng hoặc trạng thái dịch vụ để phát hiện bất thường sớm. Đây là phần thiết yếu của vận hành hiện đại, vì hệ thống không chỉ cần xây xong mà còn phải được theo dõi và phản ứng kịp thời khi có sự cố."
+  },
+  {
+    "id": 107,
+    "question": "Scalability của hệ thống là gì?",
+    "options": [
+      "Khả năng đáp ứng tốt khi tải tăng lên",
+      "Độ sáng tối đa của màn hình",
+      "Khả năng in màu của máy in",
+      "Số lượng font chữ cài sẵn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Scalability là khả năng hệ thống tiếp tục hoạt động hiệu quả khi số lượng người dùng, dữ liệu hoặc yêu cầu tăng lên. Một hệ thống có khả năng mở rộng tốt thường dễ bổ sung tài nguyên, chia tải hoặc điều chỉnh kiến trúc mà không làm giảm mạnh hiệu năng hay độ ổn định."
+  },
+  {
+    "id": 108,
+    "question": "Horizontal scaling là gì?",
+    "options": [
+      "Thêm nhiều máy hoặc instance để chia tải",
+      "Tăng RAM cho đúng một máy duy nhất",
+      "Xóa bớt dữ liệu để nhẹ hệ thống",
+      "Nâng cấp font chữ của ứng dụng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Horizontal scaling là mở rộng theo chiều ngang bằng cách thêm nhiều server hoặc instance thay vì chỉ nâng cấp phần cứng cho một máy. Cách này phổ biến trong kiến trúc cloud và web hiện đại vì linh hoạt, phù hợp cho hệ thống phân tán và hỗ trợ khả năng chịu lỗi tốt hơn."
+  },
+  {
+    "id": 109,
+    "question": "Vertical scaling là gì?",
+    "options": [
+      "Tăng tài nguyên cho một máy hiện có như CPU hoặc RAM",
+      "Tạo thêm nhiều domain cho website",
+      "Thêm lập trình viên vào dự án",
+      "Đổi ngôn ngữ lập trình giữa chừng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vertical scaling là nâng cấp tài nguyên của một server đơn lẻ, ví dụ tăng CPU, RAM hoặc ổ đĩa. Đây là cách đơn giản để cải thiện hiệu năng trong ngắn hạn, nhưng có giới hạn vật lý và đôi khi không tốt bằng mở rộng theo chiều ngang trong các hệ thống lớn."
+  },
+  {
+    "id": 110,
+    "question": "Backup dữ liệu có vai trò gì?",
+    "options": [
+      "Tạo bản sao để khôi phục khi mất mát hoặc sự cố xảy ra",
+      "Tự động sửa mọi lỗi logic trong code",
+      "Thay thế bảo mật tài khoản",
+      "Tăng tốc độ render giao diện"
+    ],
+    "correctIndex": 0,
+    "explanation": "Backup giúp bảo vệ dữ liệu trước các sự cố như xóa nhầm, lỗi phần cứng, ransomware, lỗi thao tác hoặc thiên tai. Một hệ thống tốt không chỉ lưu dữ liệu mà còn phải có chiến lược sao lưu và phục hồi rõ ràng. Backup là phần cốt lõi của an toàn vận hành."
+  },
+  {
+    "id": 111,
+    "question": "Disaster recovery liên quan đến điều gì?",
+    "options": [
+      "Kế hoạch và quy trình khôi phục hệ thống sau sự cố nghiêm trọng",
+      "Thiết kế giao diện ứng dụng",
+      "Tối ưu màu sắc website",
+      "Tạo tài khoản GitHub mới"
+    ],
+    "correctIndex": 0,
+    "explanation": "Disaster recovery là tập hợp chiến lược, quy trình và hạ tầng để đưa hệ thống trở lại hoạt động sau các sự cố lớn như mất trung tâm dữ liệu, tấn công nghiêm trọng hoặc lỗi hạ tầng diện rộng. Đây là chủ đề quan trọng trong hệ thống yêu cầu tính liên tục kinh doanh cao."
+  },
+  {
+    "id": 112,
+    "question": "VPN thường được dùng để làm gì?",
+    "options": [
+      "Tạo kết nối mạng riêng an toàn qua Internet",
+      "Tăng dung lượng ổ SSD",
+      "Biên dịch mã nguồn Python",
+      "Đổi hệ điều hành máy tính"
+    ],
+    "correctIndex": 0,
+    "explanation": "VPN tạo một kênh kết nối riêng và được mã hóa giữa thiết bị người dùng với mạng hoặc server từ xa. Nó thường được dùng để truy cập hệ thống nội bộ an toàn, bảo vệ dữ liệu trên mạng công cộng hoặc tăng quyền riêng tư khi truy cập Internet."
+  },
+  {
+    "id": 113,
+    "question": "Domain name là gì?",
+    "options": [
+      "Tên dễ nhớ đại diện cho địa chỉ website trên Internet",
+      "Một loại RAM tốc độ cao",
+      "Một file cấu hình hệ điều hành",
+      "Một chuẩn mã hóa ảnh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Domain name là tên miền mà người dùng gõ vào trình duyệt để truy cập website, ví dụ như example.com. Nó thân thiện với con người hơn so với địa chỉ IP dạng số. Hệ thống DNS sẽ giúp chuyển tên miền này thành địa chỉ IP tương ứng để kết nối đến máy chủ."
+  },
+  {
+    "id": 114,
+    "question": "DNS có chức năng gì?",
+    "options": [
+      "Phân giải tên miền thành địa chỉ IP",
+      "Tăng tốc CPU bằng phần mềm",
+      "Lưu trữ mã nguồn Git",
+      "Thiết kế giao diện ứng dụng di động"
+    ],
+    "correctIndex": 0,
+    "explanation": "DNS là hệ thống phân giải tên miền, đóng vai trò như danh bạ của Internet. Khi người dùng truy cập một domain, DNS giúp xác định địa chỉ IP của máy chủ tương ứng. Nếu không có DNS, người dùng sẽ phải nhớ trực tiếp các dãy số IP rất khó sử dụng."
+  },
+  {
+    "id": 115,
+    "question": "HTTP status code 404 thường có nghĩa là gì?",
+    "options": [
+      "Không tìm thấy tài nguyên được yêu cầu",
+      "Yêu cầu thành công",
+      "Lỗi xác thực người dùng",
+      "Máy chủ đang cập nhật phần mềm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mã trạng thái 404 cho biết server không tìm thấy tài nguyên tương ứng với URL mà client yêu cầu. Điều này có thể do đường dẫn sai, tài nguyên đã bị xóa hoặc route không tồn tại. Đây là một trong những mã HTTP phổ biến nhất mà lập trình viên web cần hiểu rõ."
+  },
+  {
+    "id": 116,
+    "question": "HTTP status code 500 biểu thị điều gì?",
+    "options": [
+      "Lỗi phía máy chủ khi xử lý yêu cầu",
+      "Truy cập thành công",
+      "Tài nguyên đã được chuyển vĩnh viễn",
+      "Thiếu kết nối chuột"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mã 500 là lỗi server nội bộ, cho thấy máy chủ gặp vấn đề trong quá trình xử lý yêu cầu nhưng không thể mô tả cụ thể hơn bằng mã khác. Đây thường là tín hiệu cần kiểm tra log, exception, cấu hình hoặc tích hợp backend để xác định nguyên nhân gốc."
+  },
+  {
+    "id": 117,
+    "question": "Tại sao quản lý môi trường `development`, `staging`, `production` lại quan trọng?",
+    "options": [
+      "Giúp kiểm thử và phát hành an toàn hơn trước khi ảnh hưởng người dùng thật",
+      "Để tăng số lượng file trong dự án",
+      "Để làm ứng dụng nặng hơn",
+      "Để bỏ qua hoàn toàn QA"
+    ],
+    "correctIndex": 0,
+    "explanation": "Việc tách môi trường phát triển, kiểm thử và production giúp nhóm thử nghiệm thay đổi trong điều kiện an toàn trước khi đưa đến người dùng thật. Nó giảm rủi ro triển khai lỗi, cho phép QA kiểm tra, và tạo quy trình phát hành chuyên nghiệp, đáng tin cậy hơn."
+  },
+  {
+    "id": 118,
+    "question": "Biến môi trường (environment variable) thường dùng để làm gì?",
+    "options": [
+      "Lưu cấu hình như API key, URL dịch vụ hoặc chế độ chạy của ứng dụng",
+      "Tăng tốc card đồ họa",
+      "Lưu video dung lượng lớn thay database",
+      "Thay thế hệ điều hành"
+    ],
+    "correctIndex": 0,
+    "explanation": "Biến môi trường giúp tách cấu hình ra khỏi mã nguồn, ví dụ chuỗi kết nối cơ sở dữ liệu, khóa API, cổng server hoặc cờ môi trường. Cách này làm ứng dụng linh hoạt hơn giữa các môi trường chạy khác nhau và giảm nguy cơ hard-code thông tin nhạy cảm vào code."
+  },
+  {
+    "id": 119,
+    "question": "Pair programming là hình thức làm việc như thế nào?",
+    "options": [
+      "Hai lập trình viên cùng làm việc trên một bài toán để tăng chất lượng và chia sẻ kiến thức",
+      "Hai người viết hai dự án không liên quan",
+      "Một người chỉ thiết kế, một người không làm gì",
+      "Chỉ dùng trong sửa phần cứng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pair programming là hình thức hai người cùng làm trên một nhiệm vụ, thường có vai trò người điều khiển trực tiếp và người quan sát định hướng. Cách làm này giúp phát hiện lỗi sớm, trao đổi ý tưởng, học hỏi nhanh và tăng chất lượng quyết định kỹ thuật trong nhiều tình huống."
+  },
+  {
+    "id": 120,
+    "question": "Tư duy quan trọng nhất của một programmer hiện đại là gì?",
+    "options": [
+      "Học liên tục, giải quyết vấn đề có hệ thống và thích nghi với công nghệ thay đổi",
+      "Chỉ học một công nghệ duy nhất suốt đời",
+      "Tránh đọc tài liệu và tránh làm việc nhóm",
+      "Chỉ tập trung viết code mà không cần hiểu người dùng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Một programmer hiện đại không chỉ biết viết code, mà còn cần tư duy giải quyết vấn đề, học nhanh công nghệ mới, hiểu sản phẩm, biết cộng tác, biết kiểm thử và biết vận hành hệ thống ở mức phù hợp. Công nghệ thay đổi rất nhanh, nên khả năng học liên tục và thích nghi thường quan trọng hơn việc chỉ thuộc lòng một công cụ cụ thể."
+  },
+  {
+    "id": 121,
+    "question": "Thuật ngữ 'full-stack developer' thường chỉ ai?",
+    "options": [
+      "Người có thể làm cả frontend và backend ở mức đáng kể",
+      "Người chỉ chuyên sửa máy in",
+      "Người chỉ viết tài liệu kỹ thuật",
+      "Người chỉ làm kiểm thử thủ công"
+    ],
+    "correctIndex": 0,
+    "explanation": "Full-stack developer là người có khả năng tham gia cả hai phía của ứng dụng: frontend, nơi người dùng tương tác trực tiếp, và backend, nơi xử lý logic nghiệp vụ, cơ sở dữ liệu và API. Trong thực tế, mức độ giỏi ở từng phần có thể khác nhau, nhưng điểm chung là họ hiểu được luồng hoạt động toàn hệ thống và có thể phối hợp xuyên suốt từ giao diện đến dữ liệu."
+  },
+  {
+    "id": 122,
+    "question": "Frontend developer chủ yếu tập trung vào phần nào?",
+    "options": [
+      "Giao diện và trải nghiệm người dùng trên trình duyệt hoặc ứng dụng khách",
+      "Quản trị phần cứng trung tâm dữ liệu",
+      "Chỉ cấu hình router mạng",
+      "Chỉ làm báo cáo tài chính"
+    ],
+    "correctIndex": 0,
+    "explanation": "Frontend developer tập trung xây dựng phần mà người dùng nhìn thấy và tương tác trực tiếp, ví dụ bố cục trang web, nút bấm, biểu mẫu, điều hướng, trạng thái giao diện và trải nghiệm tổng thể. Họ thường làm việc với HTML, CSS, JavaScript cùng các framework như React, Vue hoặc Angular để tạo ra sản phẩm trực quan, mượt mà và responsive."
+  },
+  {
+    "id": 123,
+    "question": "Backend developer thường chịu trách nhiệm chính cho phần nào?",
+    "options": [
+      "Xử lý logic server, API, cơ sở dữ liệu và bảo mật ứng dụng",
+      "Thiết kế logo thương hiệu",
+      "Chỉ lắp ráp máy tính văn phòng",
+      "Tối ưu màu sắc giao diện người dùng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Backend developer xây dựng các thành phần chạy phía máy chủ như API, xác thực, xử lý nghiệp vụ, kết nối cơ sở dữ liệu, logging, queue và các tích hợp với dịch vụ khác. Đây là lớp nền phía sau giao diện, đảm bảo dữ liệu được xử lý đúng, an toàn, nhất quán và có thể phục vụ nhiều client khác nhau."
+  },
+  {
+    "id": 124,
+    "question": "Mobile app native thường là ứng dụng được viết như thế nào?",
+    "options": [
+      "Viết bằng công nghệ đặc trưng cho từng hệ điều hành như Swift hoặc Kotlin",
+      "Chỉ viết bằng HTML thuần",
+      "Luôn chạy trong trình duyệt web",
+      "Không cần cài đặt trên thiết bị"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ứng dụng native là ứng dụng được phát triển riêng cho từng nền tảng, ví dụ Swift cho iOS và Kotlin cho Android. Cách tiếp cận này thường cho hiệu năng tốt, truy cập sâu vào tính năng thiết bị và trải nghiệm phù hợp chuẩn nền tảng. Tuy nhiên, chi phí phát triển có thể cao hơn nếu phải duy trì nhiều codebase."
+  },
+  {
+    "id": 125,
+    "question": "Cross-platform framework như Flutter hoặc React Native hướng tới mục tiêu gì?",
+    "options": [
+      "Cho phép phát triển ứng dụng cho nhiều nền tảng từ một codebase lớn",
+      "Thay thế hoàn toàn cơ sở dữ liệu",
+      "Chỉ dùng để viết game console",
+      "Tạo hệ điều hành mới"
+    ],
+    "correctIndex": 0,
+    "explanation": "Các framework cross-platform giúp lập trình viên dùng một phần lớn code chung để triển khai ứng dụng trên nhiều nền tảng như iOS và Android. Điều này giúp tiết kiệm thời gian, chi phí và nhân lực. Dù vậy, trong một số trường hợp vẫn cần viết mã riêng theo nền tảng để xử lý hiệu năng, giao diện hoặc tích hợp phần cứng."
+  },
+  {
+    "id": 126,
+    "question": "Progressive Web App (PWA) là gì?",
+    "options": [
+      "Ứng dụng web có trải nghiệm gần giống app native trên thiết bị",
+      "Một loại hệ điều hành mới",
+      "Một giao thức mã hóa dữ liệu",
+      "Một chuẩn cáp mạng"
+    ],
+    "correctIndex": 0,
+    "explanation": "PWA là ứng dụng web được nâng cấp để có trải nghiệm gần như ứng dụng cài đặt, ví dụ hỗ trợ icon trên màn hình chính, hoạt động tốt trên di động, tải nhanh, có thể dùng một phần khi mạng yếu và gửi thông báo trong một số môi trường. Đây là cách kết hợp sức mạnh của web với trải nghiệm gần app."
+  },
+  {
+    "id": 127,
+    "question": "Service Worker trong web thường dùng để làm gì?",
+    "options": [
+      "Hỗ trợ cache, offline và một số tính năng nền cho ứng dụng web",
+      "Thay thế hoàn toàn backend",
+      "Tăng dung lượng RAM vật lý",
+      "Mã hóa màn hình máy tính"
+    ],
+    "correctIndex": 0,
+    "explanation": "Service Worker là một script chạy nền trong trình duyệt, có thể chặn request mạng, quản lý cache và hỗ trợ một số tính năng như offline hoặc push notification. Nó rất quan trọng trong PWA vì giúp ứng dụng phản hồi nhanh hơn, ổn định hơn khi kết nối mạng không tốt và kiểm soát chiến lược tải tài nguyên."
+  },
+  {
+    "id": 128,
+    "question": "Single Page Application (SPA) có đặc điểm nổi bật nào?",
+    "options": [
+      "Ứng dụng chủ yếu cập nhật nội dung động mà không tải lại toàn bộ trang",
+      "Mỗi thao tác đều phải cài lại ứng dụng",
+      "Chỉ hoạt động khi không có JavaScript",
+      "Không thể gọi API"
+    ],
+    "correctIndex": 0,
+    "explanation": "SPA là kiểu ứng dụng web mà phần lớn giao diện được tải một lần, sau đó thay đổi nội dung động bằng JavaScript khi người dùng thao tác. Cách này giúp trải nghiệm mượt hơn và cảm giác giống ứng dụng desktop hoặc mobile. Tuy nhiên, SPA cũng cần xử lý cẩn thận về SEO, tải ban đầu và quản lý trạng thái."
+  },
+  {
+    "id": 129,
+    "question": "SSR trong web là viết tắt của gì?",
+    "options": [
+      "Server-Side Rendering",
+      "Secure System Routing",
+      "Simple Script Response",
+      "Storage Service Relay"
+    ],
+    "correctIndex": 0,
+    "explanation": "SSR là Server-Side Rendering, tức nội dung HTML được render trên máy chủ trước khi gửi về trình duyệt. Điều này có thể cải thiện tốc độ hiển thị ban đầu và hỗ trợ SEO tốt hơn cho nhiều loại trang web. Các framework hiện đại như Next.js thường cung cấp SSR kết hợp với render phía client."
+  },
+  {
+    "id": 130,
+    "question": "CSR trong ứng dụng web thường đề cập đến điều gì?",
+    "options": [
+      "Client-Side Rendering",
+      "Central Server Recovery",
+      "Code Storage Registry",
+      "Cloud Security Routing"
+    ],
+    "correctIndex": 0,
+    "explanation": "CSR là Client-Side Rendering, nghĩa là trình duyệt tải JavaScript và tự render giao diện phía client. Cách này cho phép tạo ứng dụng tương tác mạnh, nhưng có thể khiến thời gian hiển thị ban đầu chậm hơn nếu bundle lớn. Trong thực tế, nhiều hệ thống hiện đại kết hợp cả CSR và SSR để cân bằng trải nghiệm."
+  },
+  {
+    "id": 131,
+    "question": "SEO trong phát triển web là gì?",
+    "options": [
+      "Tối ưu để website dễ được công cụ tìm kiếm hiểu và xếp hạng tốt hơn",
+      "Một loại cơ sở dữ liệu",
+      "Một ngôn ngữ lập trình frontend",
+      "Một chuẩn nén ảnh"
+    ],
+    "correctIndex": 0,
+    "explanation": "SEO là Search Engine Optimization, bao gồm các kỹ thuật giúp công cụ tìm kiếm như Google hiểu nội dung trang web tốt hơn và xếp hạng phù hợp hơn. SEO liên quan đến cấu trúc HTML, tốc độ tải, nội dung chất lượng, metadata, liên kết và nhiều yếu tố kỹ thuật khác. Đây là yếu tố quan trọng với website cần lưu lượng truy cập tự nhiên."
+  },
+  {
+    "id": 132,
+    "question": "DOM trong JavaScript là gì?",
+    "options": [
+      "Mô hình biểu diễn cấu trúc tài liệu HTML để script có thể thao tác",
+      "Một phần cứng lưu trữ ngoài",
+      "Một loại database phân tán",
+      "Một giao thức email"
+    ],
+    "correctIndex": 0,
+    "explanation": "DOM là Document Object Model, biểu diễn tài liệu HTML thành dạng cây đối tượng mà JavaScript có thể đọc và thay đổi. Nhờ DOM, lập trình viên có thể cập nhật văn bản, thêm phần tử, xử lý sự kiện và thay đổi giao diện động. Đây là nền tảng của lập trình web phía trình duyệt."
+  },
+  {
+    "id": 133,
+    "question": "Event listener trong JavaScript dùng để làm gì?",
+    "options": [
+      "Lắng nghe và xử lý các sự kiện như click, input hoặc submit",
+      "Tăng tốc độ tải CPU",
+      "Lưu dữ liệu lâu dài trên ổ cứng",
+      "Mã hóa ảnh PNG"
+    ],
+    "correctIndex": 0,
+    "explanation": "Event listener cho phép chương trình phản ứng khi một sự kiện xảy ra trên giao diện hoặc trong môi trường thực thi, ví dụ người dùng nhấn nút, nhập dữ liệu hoặc di chuột. Đây là cơ chế cốt lõi của lập trình tương tác, giúp giao diện không chỉ hiển thị mà còn phản hồi theo hành động người dùng."
+  },
+  {
+    "id": 134,
+    "question": "Asynchronous programming giúp ích điều gì?",
+    "options": [
+      "Cho phép xử lý công việc không chặn luồng chính khi chờ tác vụ mất thời gian",
+      "Bắt buộc mọi lệnh chạy cùng lúc tuyệt đối",
+      "Loại bỏ hoàn toàn lỗi mạng",
+      "Thay thế server bằng trình duyệt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lập trình bất đồng bộ rất quan trọng khi làm việc với các tác vụ như gọi API, đọc file, truy vấn cơ sở dữ liệu hoặc xử lý timer. Thay vì chặn chương trình cho đến khi công việc hoàn thành, hệ thống có thể tiếp tục xử lý phần khác. Điều này cải thiện hiệu năng cảm nhận và trải nghiệm người dùng, đặc biệt trong ứng dụng web."
+  },
+  {
+    "id": 135,
+    "question": "Promise trong JavaScript đại diện cho điều gì?",
+    "options": [
+      "Kết quả của một tác vụ bất đồng bộ có thể thành công hoặc thất bại trong tương lai",
+      "Một biến chỉ chứa số nguyên",
+      "Một kiểu thẻ HTML",
+      "Một câu lệnh SQL để tạo bảng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Promise là đối tượng biểu diễn trạng thái của một tác vụ bất đồng bộ. Nó có thể đang chờ, hoàn thành thành công hoặc bị từ chối do lỗi. Promise giúp quản lý luồng xử lý bất đồng bộ có cấu trúc hơn, tránh callback lồng quá sâu và là nền tảng cho cú pháp async/await hiện đại."
+  },
+  {
+    "id": 136,
+    "question": "Cú pháp `async/await` trong JavaScript giúp điều gì?",
+    "options": [
+      "Viết code bất đồng bộ dễ đọc hơn, gần giống code tuần tự",
+      "Tăng tốc phần cứng của máy tính",
+      "Biến JavaScript thành ngôn ngữ biên dịch tĩnh",
+      "Loại bỏ hoàn toàn nhu cầu xử lý lỗi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Async/await giúp lập trình viên viết code bất đồng bộ theo phong cách dễ đọc hơn so với chuỗi `.then()` dài. Nó làm cho logic chờ dữ liệu, gọi API, retry hoặc xử lý tuần tự nhiều bước trở nên rõ ràng hơn. Tuy nhiên, lập trình viên vẫn cần hiểu bản chất bất đồng bộ và xử lý lỗi bằng `try/catch` hợp lý."
+  },
+  {
+    "id": 137,
+    "question": "Package manager có vai trò gì trong phát triển phần mềm?",
+    "options": [
+      "Quản lý cài đặt, phiên bản và phụ thuộc của thư viện",
+      "Điều khiển card đồ họa",
+      "Sửa lỗi phần cứng mainboard",
+      "Thay thế hoàn toàn hệ điều hành"
+    ],
+    "correctIndex": 0,
+    "explanation": "Package manager như npm, yarn, pip, cargo hoặc Maven giúp dự án cài đặt và quản lý thư viện bên ngoài một cách có tổ chức. Nó còn hỗ trợ khóa phiên bản, cập nhật, xóa package và đảm bảo môi trường giữa các thành viên tương đối nhất quán. Đây là thành phần thiết yếu của hầu hết hệ sinh thái lập trình hiện đại."
+  },
+  {
+    "id": 138,
+    "question": "Dependency trong dự án phần mềm là gì?",
+    "options": [
+      "Thư viện hoặc thành phần mà dự án cần để hoạt động",
+      "Một lỗi cú pháp ngẫu nhiên",
+      "Một thiết bị mạng vật lý",
+      "Một loại màn hình cảm ứng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dependency là các gói, thư viện, framework hoặc công cụ mà dự án phụ thuộc vào để chạy hoặc build. Quản lý dependency tốt rất quan trọng vì chúng ảnh hưởng đến bảo mật, hiệu năng, khả năng nâng cấp và tính ổn định của hệ thống. Phụ thuộc quá nhiều hoặc cập nhật thiếu kiểm soát có thể gây rủi ro lớn."
+  },
+  {
+    "id": 139,
+    "question": "Semantic versioning thường dùng để làm gì?",
+    "options": [
+      "Quy ước đặt số phiên bản phần mềm để thể hiện mức độ thay đổi",
+      "Đặt tên màu sắc giao diện",
+      "Tính toán điện năng tiêu thụ",
+      "Mã hóa văn bản trong cơ sở dữ liệu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Semantic versioning là cách đặt phiên bản thường theo dạng `MAJOR.MINOR.PATCH`. Tăng MAJOR khi có thay đổi phá vỡ tương thích cũ, tăng MINOR khi thêm tính năng tương thích ngược, và tăng PATCH khi sửa lỗi nhỏ. Quy ước này giúp đội phát triển và người dùng hiểu được mức độ rủi ro khi nâng cấp phần mềm."
+  },
+  {
+    "id": 140,
+    "question": "Breaking change là gì?",
+    "options": [
+      "Thay đổi khiến code hoặc tích hợp cũ không còn hoạt động như trước",
+      "Một hình thức nén dữ liệu",
+      "Một loại giao diện đồ họa",
+      "Một thiết bị lưu trữ tạm thời"
+    ],
+    "correctIndex": 0,
+    "explanation": "Breaking change là thay đổi làm hỏng khả năng tương thích với phiên bản trước, ví dụ đổi định dạng API, xóa field, thay tên hàm hoặc thay hành vi mặc định. Những thay đổi này cần được thông báo rõ ràng vì có thể buộc người dùng hoặc hệ thống tích hợp phải chỉnh sửa code để tiếp tục hoạt động."
+  },
+  {
+    "id": 141,
+    "question": "Linter là công cụ dùng để làm gì?",
+    "options": [
+      "Phân tích mã nguồn để phát hiện lỗi tiềm ẩn và vi phạm quy tắc code style",
+      "Tăng tốc độ mạng Internet",
+      "Tạo dữ liệu giả cho cơ sở dữ liệu",
+      "Biên dịch ngôn ngữ máy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Linter giúp kiểm tra mã nguồn theo bộ quy tắc nhất định, ví dụ phát hiện biến không dùng, cú pháp dễ gây lỗi, style không nhất quán hoặc pattern rủi ro. Nó góp phần nâng cao chất lượng code, giảm lỗi vặt và giữ codebase đồng đều hơn giữa nhiều lập trình viên."
+  },
+  {
+    "id": 142,
+    "question": "Formatter như Prettier thường được dùng để làm gì?",
+    "options": [
+      "Tự động định dạng mã nguồn theo quy tắc nhất quán",
+      "Quản lý người dùng đăng nhập",
+      "Lưu ảnh chất lượng cao",
+      "Tạo máy ảo trên cloud"
+    ],
+    "correctIndex": 0,
+    "explanation": "Formatter là công cụ tự động căn chỉnh dấu cách, xuống dòng, độ dài dòng và các yếu tố trình bày của mã nguồn. Điều này giúp giảm tranh cãi không cần thiết trong code review, tăng tính nhất quán và giúp nhóm tập trung hơn vào logic và chất lượng thay vì kiểu trình bày."
+  },
+  {
+    "id": 143,
+    "question": "Static analysis trong lập trình là gì?",
+    "options": [
+      "Phân tích mã nguồn mà không cần chạy chương trình",
+      "Đo hiệu năng khi ứng dụng đang chạy thật",
+      "Tạo ảnh tĩnh cho website",
+      "Sao lưu dữ liệu lên cloud"
+    ],
+    "correctIndex": 0,
+    "explanation": "Static analysis là kỹ thuật kiểm tra mã nguồn mà không thực thi chương trình. Các công cụ kiểu này có thể phát hiện bug tiềm ẩn, vấn đề bảo mật, code smell hoặc vi phạm chuẩn nội bộ từ sớm. Nó rất hữu ích để nâng chất lượng code trước khi chương trình đi vào môi trường chạy thật."
+  },
+  {
+    "id": 144,
+    "question": "Memory leak là hiện tượng gì?",
+    "options": [
+      "Bộ nhớ không còn được dùng nhưng vẫn không được giải phóng đúng cách",
+      "Ổ cứng bị đầy do lưu quá nhiều ảnh",
+      "CPU bị nóng do chơi game",
+      "Mạng Internet bị chậm vào giờ cao điểm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Memory leak xảy ra khi chương trình vẫn giữ tham chiếu đến vùng nhớ không còn cần thiết, khiến bộ nhớ bị tiêu hao dần theo thời gian. Nếu nghiêm trọng, ứng dụng có thể chậm đi, tốn tài nguyên quá mức hoặc sập. Đây là vấn đề quan trọng trong các hệ thống chạy lâu như server, desktop app hoặc mobile app."
+  },
+  {
+    "id": 145,
+    "question": "Garbage collection trong một số ngôn ngữ có nhiệm vụ gì?",
+    "options": [
+      "Tự động thu hồi bộ nhớ không còn được sử dụng",
+      "Tăng xung nhịp CPU",
+      "Mã hóa dữ liệu người dùng",
+      "Thiết lập địa chỉ IP tĩnh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Garbage collection là cơ chế tự động quản lý bộ nhớ, giúp thu hồi những đối tượng không còn được tham chiếu tới. Điều này giảm gánh nặng quản lý bộ nhớ thủ công cho lập trình viên và hạn chế nhiều lỗi nghiêm trọng. Tuy nhiên, nó không có nghĩa là lập trình viên có thể bỏ qua hoàn toàn việc dùng bộ nhớ hợp lý."
+  },
+  {
+    "id": 146,
+    "question": "Concurrency trong lập trình đề cập đến điều gì?",
+    "options": [
+      "Khả năng xử lý nhiều công việc chồng lấn về mặt thời gian",
+      "Chỉ chạy duy nhất một lệnh mỗi giờ",
+      "Tăng độ phân giải hình ảnh",
+      "Thay đổi màu giao diện theo thời gian"
+    ],
+    "correctIndex": 0,
+    "explanation": "Concurrency là khả năng tổ chức và xử lý nhiều tác vụ sao cho chúng cùng tiến triển trong cùng một khoảng thời gian, dù không nhất thiết thực sự chạy đồng thời trên nhiều lõi CPU. Đây là khái niệm quan trọng trong server, UI, hệ điều hành và các hệ thống cần tối ưu phản hồi hoặc throughput."
+  },
+  {
+    "id": 147,
+    "question": "Parallelism khác concurrency nổi bật ở điểm nào?",
+    "options": [
+      "Parallelism là thực sự chạy nhiều tác vụ cùng lúc, thường trên nhiều lõi hoặc nhiều máy",
+      "Parallelism chỉ áp dụng cho HTML",
+      "Concurrency luôn nhanh hơn parallelism trong mọi trường hợp",
+      "Hai khái niệm hoàn toàn không liên quan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Concurrency nói về cách tổ chức nhiều công việc cùng tiến triển, còn parallelism là việc nhiều tác vụ thực sự được thực thi đồng thời. Ví dụ, một server có thể concurrent xử lý nhiều request bằng event loop, còn một tác vụ tính toán nặng có thể dùng parallelism để chia việc ra nhiều lõi CPU nhằm tăng tốc."
+  },
+  {
+    "id": 148,
+    "question": "Race condition là lỗi gì?",
+    "options": [
+      "Kết quả phụ thuộc vào thứ tự hoặc thời điểm các tác vụ đồng thời truy cập dữ liệu chung",
+      "Lỗi chính tả trong comment",
+      "Thiếu màu nền cho giao diện",
+      "Mất kết nối chuột không dây"
+    ],
+    "correctIndex": 0,
+    "explanation": "Race condition xảy ra khi nhiều luồng hoặc tiến trình truy cập và thay đổi dữ liệu chung mà không có cơ chế đồng bộ thích hợp. Kết quả cuối cùng có thể không ổn định, khó tái hiện và phụ thuộc vào timing. Đây là loại lỗi nổi tiếng vì rất khó debug và có thể gây sai lệch dữ liệu nghiêm trọng."
+  },
+  {
+    "id": 149,
+    "question": "Deadlock là tình huống nào?",
+    "options": [
+      "Các tiến trình hoặc luồng chờ nhau vô hạn nên không thể tiếp tục",
+      "Website tải rất nhanh",
+      "Biến chưa được khai báo",
+      "Màn hình bị khóa do hết pin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Deadlock là trạng thái nhiều tác vụ giữ tài nguyên và chờ nhau giải phóng tài nguyên khác, dẫn đến tất cả đều bị kẹt. Trong hệ thống đồng thời, deadlock là rủi ro nghiêm trọng vì chương trình có thể treo mà không sập hẳn, khiến sự cố khó phát hiện nếu không có giám sát và thiết kế đồng bộ cẩn thận."
+  },
+  {
+    "id": 150,
+    "question": "Thread là gì trong lập trình hệ thống?",
+    "options": [
+      "Đơn vị thực thi nhỏ bên trong một tiến trình",
+      "Một loại cáp mạng tốc độ cao",
+      "Một file cấu hình giao diện",
+      "Một định dạng dữ liệu web"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thread là luồng thực thi bên trong một process. Nhiều thread trong cùng một process có thể chia sẻ bộ nhớ và tài nguyên, nhờ đó tăng khả năng xử lý đồng thời. Tuy nhiên, việc dùng thread đòi hỏi quản lý đồng bộ cẩn thận để tránh race condition, deadlock và lỗi khó đoán khác."
+  },
+  {
+    "id": 151,
+    "question": "Process khác thread ở điểm nào cơ bản?",
+    "options": [
+      "Process thường có không gian bộ nhớ riêng, còn thread chia sẻ bộ nhớ trong cùng process",
+      "Thread luôn nặng hơn process",
+      "Process không thể chạy chương trình",
+      "Thread chỉ tồn tại trong trình duyệt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Process là một tiến trình độc lập với không gian bộ nhớ riêng, trong khi thread là luồng thực thi nằm trong tiến trình và thường chia sẻ bộ nhớ với các thread khác cùng process. Nhờ đó, thread giao tiếp nhanh hơn nhưng cũng dễ gây lỗi chia sẻ dữ liệu, còn process cô lập tốt hơn nhưng nặng hơn về tài nguyên."
+  },
+  {
+    "id": 152,
+    "question": "Message queue thường dùng để làm gì?",
+    "options": [
+      "Truyền tác vụ hoặc dữ liệu giữa các thành phần theo cách bất đồng bộ",
+      "Thiết kế biểu tượng ứng dụng",
+      "Nâng cấp ổ cứng tự động",
+      "Biên dịch CSS thành JavaScript"
+    ],
+    "correctIndex": 0,
+    "explanation": "Message queue cho phép các thành phần trong hệ thống giao tiếp thông qua hàng đợi tin nhắn thay vì gọi trực tiếp đồng bộ. Cách này giúp tách rời các service, tăng khả năng chịu tải, retry, xử lý nền và cải thiện độ bền của hệ thống. Các hệ thống lớn thường dùng queue để xử lý email, ảnh, thanh toán hoặc log."
+  },
+  {
+    "id": 153,
+    "question": "Worker trong kiến trúc xử lý nền thường có nhiệm vụ gì?",
+    "options": [
+      "Nhận và xử lý các job từ queue hoặc tác vụ nền",
+      "Chỉ hiển thị giao diện cho người dùng",
+      "Làm nhiệm vụ cấp nguồn điện cho server",
+      "Đổi DNS tự động"
+    ],
+    "correctIndex": 0,
+    "explanation": "Worker là tiến trình hoặc service chuyên xử lý các công việc nền như gửi email, resize ảnh, huấn luyện mô hình, đồng bộ dữ liệu hoặc tạo báo cáo. Việc tách công việc nặng hoặc không cần phản hồi ngay sang worker giúp ứng dụng chính phản hồi nhanh hơn và kiến trúc linh hoạt hơn."
+  },
+  {
+    "id": 154,
+    "question": "Webhook là cơ chế gì?",
+    "options": [
+      "Hệ thống gửi thông báo HTTP tự động khi một sự kiện xảy ra",
+      "Một dạng cơ sở dữ liệu quan hệ",
+      "Một chuẩn nén video",
+      "Một phần cứng bảo mật vật lý"
+    ],
+    "correctIndex": 0,
+    "explanation": "Webhook là cơ chế để một hệ thống chủ động gửi request đến hệ thống khác khi có sự kiện, ví dụ thanh toán thành công, đơn hàng mới hoặc commit mới. Điều này giúp tích hợp giữa các dịch vụ theo mô hình event-driven, giảm nhu cầu phải liên tục polling để kiểm tra thay đổi."
+  },
+  {
+    "id": 155,
+    "question": "Polling trong ứng dụng mạng là gì?",
+    "options": [
+      "Client định kỳ gửi yêu cầu để kiểm tra xem có dữ liệu mới hay không",
+      "Một phương pháp làm mát CPU",
+      "Một kỹ thuật dựng hình 3D",
+      "Một loại biểu đồ trong Excel"
+    ],
+    "correctIndex": 0,
+    "explanation": "Polling là cơ chế client lặp lại yêu cầu sau mỗi khoảng thời gian để hỏi server xem có dữ liệu mới hay không. Nó đơn giản để triển khai nhưng có thể gây lãng phí tài nguyên nếu tần suất cao hoặc số lượng client lớn. Trong nhiều trường hợp, WebSocket hoặc webhook sẽ hiệu quả hơn."
+  },
+  {
+    "id": 156,
+    "question": "Rate limiting có mục đích chính gì?",
+    "options": [
+      "Giới hạn số lượng yêu cầu trong một khoảng thời gian để bảo vệ hệ thống",
+      "Tăng màu sắc giao diện",
+      "Xóa log cũ khỏi server",
+      "Tự động viết tài liệu kỹ thuật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rate limiting giúp kiểm soát số lượng request từ người dùng, IP hoặc API key trong một khoảng thời gian nhất định. Nó rất quan trọng để chống lạm dụng, giảm spam, ngăn tấn công brute force và bảo vệ tài nguyên hệ thống. Đây là kỹ thuật phổ biến trong API gateway và các dịch vụ công cộng."
+  },
+  {
+    "id": 157,
+    "question": "Throttling trong phần mềm thường có ý nghĩa gì?",
+    "options": [
+      "Giảm hoặc giới hạn tần suất thực thi để kiểm soát tài nguyên",
+      "Tăng tốc tất cả request lên tối đa",
+      "Tự động nén toàn bộ cơ sở dữ liệu",
+      "Đổi font chữ của ứng dụng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Throttling là kỹ thuật giới hạn tốc độ hoặc tần suất của một hành động, ví dụ số lần gọi API, số lần xử lý sự kiện cuộn trang hoặc tần suất gửi email. Nó giúp ứng dụng ổn định hơn, tránh quá tải và cải thiện hiệu quả dùng tài nguyên ở cả phía client lẫn server."
+  },
+  {
+    "id": 158,
+    "question": "Debounce thường được dùng trong trường hợp nào ở frontend?",
+    "options": [
+      "Trì hoãn xử lý cho đến khi chuỗi sự kiện dừng lại một khoảng ngắn",
+      "Tự động thêm dữ liệu vào database",
+      "Tăng tốc độ hiển thị GPU",
+      "Mã hóa form đăng nhập"
+    ],
+    "correctIndex": 0,
+    "explanation": "Debounce rất hữu ích cho các tình huống như tìm kiếm khi gõ, resize cửa sổ hoặc input liên tục. Thay vì xử lý mỗi lần sự kiện xảy ra, hệ thống chờ đến khi người dùng tạm dừng rồi mới chạy logic. Điều này giảm số lần gọi API hoặc render không cần thiết, cải thiện hiệu năng đáng kể."
+  },
+  {
+    "id": 159,
+    "question": "Authentication token hết hạn có lợi gì về bảo mật?",
+    "options": [
+      "Giảm thời gian token bị lợi dụng nếu bị lộ",
+      "Làm ứng dụng không cần đăng nhập",
+      "Loại bỏ hoàn toàn mọi lỗ hổng",
+      "Tăng dung lượng lưu trữ của server"
+    ],
+    "correctIndex": 0,
+    "explanation": "Việc token có thời gian hết hạn giúp thu hẹp cửa sổ rủi ro nếu token bị đánh cắp. Dù không giải quyết toàn bộ vấn đề bảo mật, đây là một lớp phòng vệ quan trọng. Hệ thống hiện đại thường kết hợp token ngắn hạn với refresh token hoặc các chiến lược phiên đăng nhập an toàn hơn."
+  },
+  {
+    "id": 160,
+    "question": "CORS trong phát triển web liên quan đến điều gì?",
+    "options": [
+      "Chính sách kiểm soát việc tài nguyên được truy cập giữa các origin khác nhau",
+      "Chuẩn thiết kế cơ sở dữ liệu",
+      "Một kỹ thuật dựng hình đồ họa",
+      "Một loại bộ nhớ cache phần cứng"
+    ],
+    "correctIndex": 0,
+    "explanation": "CORS là Cross-Origin Resource Sharing, cơ chế bảo mật của trình duyệt nhằm kiểm soát khi một trang web muốn gọi tài nguyên từ domain, protocol hoặc port khác. Nếu cấu hình sai, frontend có thể không gọi được API. Nếu cấu hình quá rộng, hệ thống có thể tăng rủi ro bảo mật không cần thiết."
+  },
+  {
+    "id": 161,
+    "question": "Cookie trong web thường được dùng để làm gì?",
+    "options": [
+      "Lưu một lượng nhỏ dữ liệu phía trình duyệt, thường cho phiên đăng nhập hoặc tùy chọn người dùng",
+      "Chạy machine learning trên trình duyệt",
+      "Lưu toàn bộ cơ sở dữ liệu của website",
+      "Biên dịch mã nguồn Java"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cookie là dữ liệu nhỏ được lưu ở phía trình duyệt và gửi kèm theo request đến cùng domain trong những điều kiện nhất định. Chúng thường dùng để duy trì phiên đăng nhập, lưu tùy chọn hoặc hỗ trợ tracking. Vì cookie liên quan trực tiếp đến bảo mật và quyền riêng tư, việc cấu hình chúng cần được cân nhắc kỹ."
+  },
+  {
+    "id": 162,
+    "question": "Session trong ứng dụng web thường dùng để làm gì?",
+    "options": [
+      "Lưu trạng thái tạm thời liên quan đến người dùng trong một khoảng thời gian truy cập",
+      "Nâng cấp card mạng vật lý",
+      "Tạo tệp ảnh PNG",
+      "Chạy cron job hàng ngày"
+    ],
+    "correctIndex": 0,
+    "explanation": "Session giúp server nhớ thông tin trạng thái của người dùng giữa nhiều request, ví dụ đã đăng nhập hay chưa, giỏ hàng hiện tại hoặc quyền truy cập. Trong mô hình truyền thống, session thường được lưu phía server và client giữ một mã định danh. Đây là cơ chế phổ biến trước khi các mô hình token-based trở nên rất phổ biến."
+  },
+  {
+    "id": 163,
+    "question": "XSS là dạng lỗ hổng bảo mật gì?",
+    "options": [
+      "Cho phép chèn và thực thi script độc hại trong ngữ cảnh trình duyệt của người dùng",
+      "Một lỗi tăng nhiệt CPU",
+      "Một giao thức backup dữ liệu",
+      "Một loại tối ưu SQL"
+    ],
+    "correctIndex": 0,
+    "explanation": "XSS, hay Cross-Site Scripting, xảy ra khi ứng dụng hiển thị dữ liệu không an toàn lên trang mà không escape hoặc sanitize đúng cách, khiến script độc hại có thể chạy trong trình duyệt của nạn nhân. Hậu quả có thể bao gồm đánh cắp session, giả mạo hành động hoặc thay đổi nội dung hiển thị."
+  },
+  {
+    "id": 164,
+    "question": "SQL Injection là gì?",
+    "options": [
+      "Lỗ hổng cho phép chèn câu lệnh SQL độc hại vào truy vấn",
+      "Một phương pháp tăng tốc database an toàn",
+      "Một chuẩn nén bản ghi",
+      "Một kiểu định dạng dữ liệu JSON"
+    ],
+    "correctIndex": 0,
+    "explanation": "SQL Injection xảy ra khi ứng dụng ghép chuỗi truy vấn SQL từ dữ liệu đầu vào không được xử lý an toàn, cho phép kẻ tấn công thay đổi câu lệnh truy vấn. Đây là lỗ hổng rất nghiêm trọng vì có thể làm lộ, sửa hoặc xóa dữ liệu. Cách phòng tránh cơ bản là dùng prepared statements, ORM an toàn và kiểm soát đầu vào."
+  },
+  {
+    "id": 165,
+    "question": "Prepared statement giúp hạn chế điều gì?",
+    "options": [
+      "Giảm nguy cơ SQL Injection bằng cách tách câu lệnh và dữ liệu đầu vào",
+      "Tăng nhiệt độ của máy chủ",
+      "Tự động tạo giao diện web",
+      "Biến SQL thành NoSQL"
+    ],
+    "correctIndex": 0,
+    "explanation": "Prepared statement giúp cơ sở dữ liệu phân biệt rõ cấu trúc câu lệnh SQL với giá trị dữ liệu do người dùng cung cấp. Nhờ đó, dữ liệu đầu vào không bị diễn giải như một phần của câu lệnh SQL. Đây là biện pháp rất quan trọng và phổ biến để tăng an toàn khi làm việc với database."
+  },
+  {
+    "id": 166,
+    "question": "Input validation trong ứng dụng có vai trò gì?",
+    "options": [
+      "Kiểm tra dữ liệu đầu vào có hợp lệ, an toàn và đúng định dạng mong đợi",
+      "Tăng tốc độ render GPU",
+      "Nâng cấp phần cứng máy tính",
+      "Tự động viết test case"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kiểm tra dữ liệu đầu vào là bước rất quan trọng để đảm bảo ứng dụng chỉ xử lý dữ liệu phù hợp về kiểu, định dạng, phạm vi và quy tắc nghiệp vụ. Nó giúp giảm bug, tăng an toàn bảo mật và nâng chất lượng dữ liệu. Validation nên thực hiện ở cả frontend để cải thiện UX và backend để đảm bảo tính tin cậy."
+  },
+  {
+    "id": 167,
+    "question": "Sanitization khác validation ở điểm nào?",
+    "options": [
+      "Sanitization làm sạch hoặc chuyển đổi dữ liệu, còn validation kiểm tra dữ liệu có hợp lệ hay không",
+      "Hai khái niệm hoàn toàn giống nhau",
+      "Validation luôn thay thế database",
+      "Sanitization chỉ áp dụng cho ảnh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Validation trả lời câu hỏi 'dữ liệu này có được chấp nhận không?', còn sanitization là quá trình làm sạch hoặc chuẩn hóa dữ liệu để giảm rủi ro hoặc nhất quán hơn, ví dụ trim khoảng trắng, escape HTML hoặc chuyển về định dạng tiêu chuẩn. Hai bước này thường đi cùng nhau trong hệ thống an toàn và ổn định."
+  },
+  {
+    "id": 168,
+    "question": "Accessibility trong sản phẩm số hướng tới điều gì?",
+    "options": [
+      "Giúp nhiều nhóm người dùng, kể cả người khuyết tật, có thể sử dụng sản phẩm hiệu quả",
+      "Chỉ làm giao diện nhiều màu hơn",
+      "Thay thế toàn bộ kiểm thử",
+      "Tăng dung lượng file CSS"
+    ],
+    "correctIndex": 0,
+    "explanation": "Accessibility, hay khả năng tiếp cận, đảm bảo sản phẩm số có thể được sử dụng bởi nhiều đối tượng, bao gồm người dùng có hạn chế về thị giác, thính giác, vận động hoặc nhận thức. Điều này liên quan đến semantic HTML, hỗ trợ bàn phím, độ tương phản, alt text, cấu trúc heading và nhiều yếu tố thiết kế khác."
+  },
+  {
+    "id": 169,
+    "question": "Semantic HTML mang lại lợi ích gì?",
+    "options": [
+      "Giúp cấu trúc nội dung rõ nghĩa hơn cho trình duyệt, công cụ tìm kiếm và công nghệ hỗ trợ",
+      "Làm CSS chạy nhanh hơn gấp đôi",
+      "Thay thế JavaScript hoàn toàn",
+      "Tăng bộ nhớ vật lý của máy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Semantic HTML sử dụng các thẻ phù hợp với ý nghĩa nội dung như `header`, `nav`, `main`, `article`, `section`, `footer` thay vì chỉ dùng `div` vô nghĩa. Điều này giúp tăng khả năng tiếp cận, cải thiện SEO và làm code dễ hiểu hơn cho lập trình viên khi bảo trì hoặc mở rộng giao diện."
+  },
+  {
+    "id": 170,
+    "question": "Alt text cho hình ảnh trên web có tác dụng gì?",
+    "options": [
+      "Mô tả hình ảnh cho trình đọc màn hình và hỗ trợ khi ảnh không tải được",
+      "Tăng tốc CPU máy chủ",
+      "Nén ảnh mà không giảm chất lượng",
+      "Bảo vệ website khỏi mọi tấn công"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alt text là văn bản thay thế mô tả nội dung hoặc chức năng của hình ảnh. Nó rất quan trọng với người dùng sử dụng trình đọc màn hình và trong các trường hợp ảnh không hiển thị được. Việc viết alt text tốt góp phần nâng cao accessibility và đôi khi còn hỗ trợ công cụ tìm kiếm hiểu nội dung trang tốt hơn."
+  },
+  {
+    "id": 171,
+    "question": "Feature flag thường được dùng để làm gì?",
+    "options": [
+      "Bật hoặc tắt tính năng linh hoạt mà không cần triển khai lại toàn bộ hệ thống",
+      "Thay đổi màu cờ quốc gia trên giao diện",
+      "Mã hóa file cấu hình",
+      "Tạo thêm ổ cứng ảo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Feature flag cho phép kiểm soát việc một tính năng có xuất hiện hay không dựa trên cấu hình, nhóm người dùng, môi trường hoặc tỉ lệ rollout. Đây là công cụ rất mạnh để phát hành an toàn, thử nghiệm dần, rollback nhanh và giảm rủi ro khi đưa chức năng mới vào production."
+  },
+  {
+    "id": 172,
+    "question": "A/B testing trong sản phẩm số dùng để làm gì?",
+    "options": [
+      "So sánh hai phiên bản để đo xem phiên bản nào hiệu quả hơn theo chỉ số mục tiêu",
+      "Kiểm tra dây mạng loại A và B",
+      "Chạy đồng thời hai hệ điều hành trên một máy",
+      "Mã hóa hai lớp dữ liệu"
+    ],
+    "correctIndex": 0,
+    "explanation": "A/B testing là phương pháp thử nghiệm trong đó người dùng được chia thành các nhóm để nhìn thấy các phiên bản khác nhau của cùng một tính năng hoặc giao diện. Sau đó, nhóm phát triển đo lường các chỉ số như tỉ lệ chuyển đổi, thời gian tương tác hoặc tỉ lệ nhấp để đưa ra quyết định dựa trên dữ liệu."
+  },
+  {
+    "id": 173,
+    "question": "Analytics trong ứng dụng thường giúp ích điều gì?",
+    "options": [
+      "Thu thập và phân tích dữ liệu hành vi người dùng để hỗ trợ quyết định",
+      "Tăng xung nhịp CPU",
+      "Biến web thành ứng dụng desktop",
+      "Thay thế mọi hoạt động kiểm thử"
+    ],
+    "correctIndex": 0,
+    "explanation": "Analytics giúp đội ngũ sản phẩm và kỹ thuật hiểu người dùng đang làm gì trong ứng dụng, họ rời đi ở đâu, tính năng nào được dùng nhiều, và đâu là điểm nghẽn. Dữ liệu phân tích đúng cách có thể dẫn đến quyết định sản phẩm tốt hơn, tối ưu hành trình người dùng và phát hiện vấn đề vận hành nhanh hơn."
+  },
+  {
+    "id": 174,
+    "question": "KPI trong sản phẩm công nghệ là gì?",
+    "options": [
+      "Chỉ số quan trọng dùng để đo hiệu quả theo mục tiêu cụ thể",
+      "Một ngôn ngữ lập trình mới",
+      "Một giao thức kết nối thiết bị",
+      "Một loại bộ nhớ đệm"
+    ],
+    "correctIndex": 0,
+    "explanation": "KPI là Key Performance Indicator, tức chỉ số hiệu suất trọng yếu. Trong sản phẩm công nghệ, KPI có thể là tỉ lệ đăng ký thành công, doanh thu trên người dùng, thời gian phản hồi hệ thống hoặc tỉ lệ giữ chân. KPI giúp nhóm không chỉ làm tính năng, mà còn đo xem tính năng có thực sự mang lại giá trị hay không."
+  },
+  {
+    "id": 175,
+    "question": "Latency thấp thường đem lại lợi ích gì cho người dùng?",
+    "options": [
+      "Trải nghiệm phản hồi nhanh và mượt hơn",
+      "Website tự động có nhiều màu hơn",
+      "Giảm hoàn toàn nhu cầu backup",
+      "Biến ứng dụng thành mã nguồn mở"
+    ],
+    "correctIndex": 0,
+    "explanation": "Latency thấp giúp người dùng cảm thấy hệ thống phản hồi gần như tức thì, từ đó tăng sự hài lòng và hiệu quả sử dụng. Trong nhiều sản phẩm như tìm kiếm, chat, game online hoặc dashboard thời gian thực, chỉ cần chậm thêm vài trăm mili giây cũng có thể ảnh hưởng rõ rệt đến trải nghiệm và hành vi người dùng."
+  },
+  {
+    "id": 176,
+    "question": "Throughput trong hệ thống thường đề cập đến điều gì?",
+    "options": [
+      "Lượng công việc hoặc số yêu cầu hệ thống xử lý được trong một đơn vị thời gian",
+      "Độ lớn của màn hình máy tính",
+      "Số lượng lập trình viên trong công ty",
+      "Tỉ lệ nén của tệp ảnh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Throughput là thước đo khả năng xử lý tổng thể của hệ thống, ví dụ số request mỗi giây, số tác vụ xử lý mỗi phút hoặc số bản ghi ghi vào database trong một khoảng thời gian. Đây là chỉ số quan trọng khi đánh giá năng lực chịu tải và tối ưu hiệu năng cho các dịch vụ lớn."
+  },
+  {
+    "id": 177,
+    "question": "Bottleneck trong hệ thống là gì?",
+    "options": [
+      "Điểm nghẽn làm hạn chế hiệu năng tổng thể của toàn bộ hệ thống",
+      "Một loại phần mềm chat",
+      "Một định dạng lưu video",
+      "Một lỗi chính tả trong tài liệu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bottleneck là thành phần hoặc bước xử lý chậm nhất, khiến toàn hệ thống không thể đạt hiệu năng cao hơn dù các phần khác vẫn còn dư tài nguyên. Ví dụ, database chậm, mạng chậm hoặc thuật toán không tối ưu có thể trở thành bottleneck. Tối ưu hiệu quả cần xác định đúng điểm nghẽn trước khi hành động."
+  },
+  {
+    "id": 178,
+    "question": "Profiling thường được dùng để làm gì?",
+    "options": [
+      "Phân tích chương trình để tìm nơi tiêu tốn nhiều thời gian hoặc tài nguyên",
+      "Thiết kế giao diện người dùng",
+      "Mã hóa đường truyền HTTPS",
+      "Cấu hình bàn phím cơ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Profiling là quá trình đo và phân tích cách chương trình sử dụng CPU, bộ nhớ, I/O hoặc các tài nguyên khác trong lúc chạy. Nhờ profiling, lập trình viên có thể biết phần nào đang chậm hoặc tốn tài nguyên nhất thay vì đoán cảm tính. Đây là bước quan trọng khi tối ưu hiệu năng thực sự."
+  },
+  {
+    "id": 179,
+    "question": "Benchmark trong kỹ thuật phần mềm là gì?",
+    "options": [
+      "Phép đo so sánh hiệu năng giữa các giải pháp hoặc phiên bản",
+      "Một công cụ tạo giao diện kéo thả",
+      "Một loại cơ sở dữ liệu đồ thị",
+      "Một kỹ thuật chống SQL Injection"
+    ],
+    "correctIndex": 0,
+    "explanation": "Benchmark là bài kiểm tra hoặc bộ tiêu chí để đo hiệu năng của hệ thống, thuật toán, thư viện hoặc phần cứng trong điều kiện xác định. Nó giúp so sánh khách quan giữa các phương án và kiểm tra xem một thay đổi có thực sự cải thiện hiệu năng hay không."
+  },
+  {
+    "id": 180,
+    "question": "Blue-green deployment là chiến lược triển khai như thế nào?",
+    "options": [
+      "Duy trì hai môi trường gần như giống hệt nhau để chuyển đổi phát hành an toàn",
+      "Triển khai bằng hai màu giao diện khác nhau",
+      "Chỉ dùng cho ứng dụng game",
+      "Một phương pháp backup dữ liệu thủ công"
+    ],
+    "correctIndex": 0,
+    "explanation": "Blue-green deployment là chiến lược triển khai trong đó có hai môi trường gần giống nhau: một đang phục vụ người dùng, một chứa phiên bản mới. Khi đã kiểm tra ổn định, lưu lượng sẽ được chuyển sang môi trường mới. Cách này giúp rollback nhanh, giảm downtime và hạn chế rủi ro khi phát hành."
+  },
+  {
+    "id": 181,
+    "question": "Canary release có đặc điểm gì?",
+    "options": [
+      "Phát hành phiên bản mới cho một nhóm nhỏ người dùng trước khi mở rộng toàn bộ",
+      "Cài đặt đồng thời hai hệ điều hành",
+      "Mã hóa toàn bộ traffic nội bộ",
+      "Thay thế code review bằng kiểm thử tay"
+    ],
+    "correctIndex": 0,
+    "explanation": "Canary release cho phép triển khai tính năng hoặc phiên bản mới đến một phần nhỏ người dùng trước để quan sát lỗi, hiệu năng và phản hồi thực tế. Nếu mọi thứ ổn định, hệ thống mới tiếp tục mở rộng phạm vi rollout. Đây là cách giảm rủi ro so với việc phát hành 100% ngay từ đầu."
+  },
+  {
+    "id": 182,
+    "question": "Rollback trong triển khai phần mềm nghĩa là gì?",
+    "options": [
+      "Quay trở lại phiên bản trước khi phiên bản mới gặp sự cố",
+      "Xóa vĩnh viễn toàn bộ lịch sử dự án",
+      "Thêm nhiều tính năng hơn vào bản phát hành",
+      "Tăng tốc độ build bằng GPU"
+    ],
+    "correctIndex": 0,
+    "explanation": "Rollback là hành động quay trở lại phiên bản cũ đã ổn định khi bản phát hành mới gây lỗi hoặc rủi ro ngoài dự kiến. Khả năng rollback nhanh là yếu tố rất quan trọng trong vận hành chuyên nghiệp, vì không phải mọi vấn đề đều được phát hiện trước ở môi trường kiểm thử."
+  },
+  {
+    "id": 183,
+    "question": "Infrastructure as Code (IaC) là gì?",
+    "options": [
+      "Quản lý hạ tầng bằng mã nguồn và cấu hình có thể version control",
+      "Lắp ráp máy chủ hoàn toàn bằng tay",
+      "Thiết kế giao diện website bằng SQL",
+      "Một dạng nén dữ liệu ảnh"
+    ],
+    "correctIndex": 0,
+    "explanation": "IaC là cách mô tả và quản lý hạ tầng như server, mạng, quyền truy cập và tài nguyên cloud bằng mã nguồn hoặc file cấu hình. Điều này giúp hạ tầng có thể tái lập, review, kiểm thử và theo dõi thay đổi giống như phần mềm. Các công cụ như Terraform là ví dụ rất phổ biến cho hướng tiếp cận này."
+  },
+  {
+    "id": 184,
+    "question": "Kubernetes thường được dùng để làm gì?",
+    "options": [
+      "Điều phối và quản lý container ở quy mô lớn",
+      "Thiết kế slide thuyết trình",
+      "Viết truy vấn SQL nâng cao",
+      "Tạo giao diện người dùng trên trình duyệt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kubernetes là nền tảng orchestration container, giúp triển khai, mở rộng, giám sát và tự phục hồi các ứng dụng chạy trong container. Nó đặc biệt hữu ích khi hệ thống có nhiều service, nhiều instance và yêu cầu tự động hóa cao. Tuy nhiên, Kubernetes cũng có độ phức tạp vận hành đáng kể."
+  },
+  {
+    "id": 185,
+    "question": "Pod trong Kubernetes thường là gì?",
+    "options": [
+      "Đơn vị triển khai nhỏ nhất, chứa một hoặc nhiều container liên quan chặt chẽ",
+      "Một giao thức xác thực người dùng",
+      "Một loại file cấu hình JSON",
+      "Một chuẩn thiết kế logo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pod là đơn vị triển khai cơ bản trong Kubernetes. Nó thường chứa một container chính hoặc một nhóm nhỏ container cần chạy cùng nhau, chia sẻ mạng và storage ở mức nhất định. Thay vì quản lý trực tiếp container đơn lẻ, Kubernetes quản lý chúng thông qua pod để hỗ trợ orchestration hiệu quả."
+  },
+  {
+    "id": 186,
+    "question": "Replica trong hệ thống phân tán thường mang ý nghĩa gì?",
+    "options": [
+      "Bản sao của service hoặc dữ liệu để tăng sẵn sàng và khả năng chịu tải",
+      "Một loại virus máy tính",
+      "Một định dạng tệp âm thanh",
+      "Một thuật toán mã hóa bất đối xứng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Replica là các bản sao của dữ liệu hoặc instance ứng dụng. Việc có nhiều replica giúp hệ thống tăng khả năng phục vụ nhiều người dùng, giảm rủi ro điểm lỗi đơn và cải thiện độ sẵn sàng. Trong database, replica còn có thể được dùng để đọc phân tán hoặc hỗ trợ khôi phục khi có sự cố."
+  },
+  {
+    "id": 187,
+    "question": "High availability hướng tới điều gì?",
+    "options": [
+      "Giữ hệ thống luôn sẵn sàng ở mức cao, giảm thời gian gián đoạn",
+      "Làm màu giao diện nổi bật hơn",
+      "Tăng độ phân giải video đầu ra",
+      "Biến ứng dụng web thành game"
+    ],
+    "correctIndex": 0,
+    "explanation": "High availability là mục tiêu thiết kế hệ thống sao cho dịch vụ tiếp tục hoạt động ổn định dù một số thành phần gặp lỗi. Điều này thường cần dự phòng, load balancing, monitoring, failover và chiến lược triển khai an toàn. Với dịch vụ quan trọng, độ sẵn sàng cao là yêu cầu cốt lõi chứ không chỉ là tối ưu thêm."
+  },
+  {
+    "id": 188,
+    "question": "Failover là cơ chế gì?",
+    "options": [
+      "Tự động chuyển sang tài nguyên hoặc hệ thống dự phòng khi thành phần chính lỗi",
+      "Xóa dữ liệu khi ổ cứng đầy",
+      "Tắt toàn bộ log để tiết kiệm bộ nhớ",
+      "Tăng tốc độ đánh máy trong IDE"
+    ],
+    "correctIndex": 0,
+    "explanation": "Failover là khả năng chuyển đổi sang thành phần dự phòng khi thành phần chính bị lỗi hoặc không còn khả dụng. Đây là kỹ thuật rất quan trọng trong các hệ thống cần độ tin cậy cao như database, load balancer, hệ thống thanh toán hoặc dịch vụ công cộng có nhiều người dùng."
+  },
+  {
+    "id": 189,
+    "question": "RPO trong disaster recovery là gì?",
+    "options": [
+      "Mức dữ liệu tối đa chấp nhận mất sau sự cố",
+      "Thời gian tối đa chấp nhận hệ thống ngừng chạy",
+      "Số lượng server cần mua thêm",
+      "Tốc độ tối đa của đường truyền Internet"
+    ],
+    "correctIndex": 0,
+    "explanation": "RPO, hay Recovery Point Objective, xác định mức mất mát dữ liệu tối đa có thể chấp nhận được nếu xảy ra sự cố. Ví dụ, RPO là 15 phút nghĩa là doanh nghiệp chấp nhận mất tối đa 15 phút dữ liệu gần nhất. Chỉ số này ảnh hưởng trực tiếp đến chiến lược backup, replication và chi phí hạ tầng."
+  },
+  {
+    "id": 190,
+    "question": "RTO trong disaster recovery là gì?",
+    "options": [
+      "Thời gian mục tiêu để khôi phục hệ thống sau sự cố",
+      "Dung lượng lưu trữ tối thiểu của backup",
+      "Số lượng dòng code trong release",
+      "Một chuẩn đặt tên domain"
+    ],
+    "correctIndex": 0,
+    "explanation": "RTO, hay Recovery Time Objective, là khoảng thời gian tối đa mà hệ thống có thể ngừng hoạt động trước khi phải được khôi phục. RTO càng thấp thì yêu cầu về kiến trúc dự phòng, quy trình phục hồi và chi phí càng cao. Đây là chỉ số quan trọng trong lập kế hoạch vận hành và liên tục kinh doanh."
+  },
+  {
+    "id": 191,
+    "question": "ETL trong xử lý dữ liệu là viết tắt của gì?",
+    "options": [
+      "Extract, Transform, Load",
+      "Edit, Type, Launch",
+      "Encode, Track, Link",
+      "Execute, Test, Log"
+    ],
+    "correctIndex": 0,
+    "explanation": "ETL là quy trình trích xuất dữ liệu từ nguồn, biến đổi dữ liệu về định dạng hoặc cấu trúc mong muốn, rồi nạp vào hệ thống đích như data warehouse. Đây là quy trình phổ biến trong data engineering, báo cáo và phân tích dữ liệu doanh nghiệp, nơi dữ liệu đến từ nhiều nguồn khác nhau."
+  },
+  {
+    "id": 192,
+    "question": "Data warehouse thường được dùng cho mục đích nào?",
+    "options": [
+      "Lưu trữ và phân tích dữ liệu phục vụ báo cáo, BI và ra quyết định",
+      "Chỉ để chạy game online",
+      "Chỉ lưu file ảnh tạm thời",
+      "Thay thế hoàn toàn email doanh nghiệp"
+    ],
+    "correctIndex": 0,
+    "explanation": "Data warehouse là hệ thống lưu trữ dữ liệu được tổ chức để phục vụ phân tích, báo cáo và truy vấn tổng hợp quy mô lớn. Nó khác với cơ sở dữ liệu giao dịch thông thường ở chỗ tối ưu cho đọc, tổng hợp lịch sử và hỗ trợ ra quyết định thay vì xử lý giao dịch thời gian thực."
+  },
+  {
+    "id": 193,
+    "question": "Data pipeline là gì?",
+    "options": [
+      "Chuỗi các bước tự động đưa dữ liệu từ nguồn qua xử lý đến nơi sử dụng",
+      "Một loại cáp mạng công nghiệp",
+      "Một framework để thiết kế web",
+      "Một trình phát nhạc trực tuyến"
+    ],
+    "correctIndex": 0,
+    "explanation": "Data pipeline là luồng xử lý dữ liệu từ khâu thu thập, làm sạch, biến đổi, lưu trữ đến phân tích hoặc phục vụ mô hình. Pipeline tốt giúp dữ liệu được cập nhật đều đặn, đáng tin cậy và có thể mở rộng. Trong hệ thống hiện đại, pipeline dữ liệu là hạ tầng nền cho BI, machine learning và vận hành thông minh."
+  },
+  {
+    "id": 194,
+    "question": "Observability khác monitoring ở điểm nào thường được nhắc tới?",
+    "options": [
+      "Observability giúp suy luận trạng thái nội bộ hệ thống sâu hơn từ dữ liệu như log, metric và trace",
+      "Observability chỉ là tên khác của màn hình quan sát",
+      "Monitoring không dùng trong công nghệ",
+      "Hai khái niệm luôn hoàn toàn giống nhau"
+    ],
+    "correctIndex": 0,
+    "explanation": "Monitoring thường tập trung theo dõi các chỉ số và cảnh báo đã biết trước, còn observability rộng hơn, giúp đội ngũ hiểu và điều tra những hành vi chưa lường trước của hệ thống thông qua log, metrics và traces. Trong hệ thống phân tán phức tạp, observability là yếu tố rất quan trọng để debug sự cố hiệu quả."
+  },
+  {
+    "id": 195,
+    "question": "Distributed tracing dùng để làm gì?",
+    "options": [
+      "Theo dõi đường đi của một request qua nhiều service trong hệ thống phân tán",
+      "Mã hóa email gửi đi",
+      "Tăng tốc độ quạt làm mát",
+      "Tạo bảng màu cho giao diện"
+    ],
+    "correctIndex": 0,
+    "explanation": "Distributed tracing giúp quan sát hành trình của một yêu cầu từ lúc bắt đầu đến khi hoàn tất khi nó đi qua nhiều service, queue hoặc database khác nhau. Nhờ đó, đội kỹ thuật có thể xác định service nào gây chậm, lỗi nào phát sinh ở đâu và mối quan hệ giữa các thành phần trong kiến trúc microservices."
+  },
+  {
+    "id": 196,
+    "question": "Technical debt là gì?",
+    "options": [
+      "Chi phí hoặc khó khăn tích lũy do chọn giải pháp kỹ thuật ngắn hạn chưa tối ưu",
+      "Khoản nợ tài chính của công ty mua máy chủ",
+      "Lỗi phần cứng không sửa được",
+      "Một chỉ số đo nhiệt độ CPU"
+    ],
+    "correctIndex": 0,
+    "explanation": "Technical debt là cái giá phải trả trong tương lai khi nhóm phát triển chấp nhận giải pháp nhanh, tạm thời hoặc thiếu chuẩn mực kỹ thuật để đạt mục tiêu ngắn hạn. Không phải technical debt lúc nào cũng xấu, nhưng nếu tích tụ quá nhiều mà không xử lý, nó sẽ làm hệ thống chậm phát triển, dễ lỗi và khó bảo trì."
+  },
+  {
+    "id": 197,
+    "question": "Onboarding trong đội kỹ thuật là gì?",
+    "options": [
+      "Quá trình giúp thành viên mới hiểu hệ thống, quy trình và cách làm việc",
+      "Cài hệ điều hành lên bo mạch chủ",
+      "Tạo tài khoản ngân hàng cho nhân viên",
+      "Xuất dữ liệu từ database sang Excel"
+    ],
+    "correctIndex": 0,
+    "explanation": "Onboarding là quá trình đưa thành viên mới vào guồng làm việc hiệu quả, bao gồm hiểu mục tiêu sản phẩm, kiến trúc hệ thống, công cụ, quy trình phát triển, coding convention và cách phối hợp trong nhóm. Onboarding tốt giúp giảm thời gian làm quen và tăng năng suất cũng như sự tự tin của người mới."
+  },
+  {
+    "id": 198,
+    "question": "Mentoring trong ngành lập trình thường mang ý nghĩa gì?",
+    "options": [
+      "Người có kinh nghiệm hỗ trợ người khác phát triển kỹ năng và định hướng nghề nghiệp",
+      "Một kỹ thuật mã hóa dữ liệu nhị phân",
+      "Một phương pháp nén CSS",
+      "Một công cụ tự động tạo database"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mentoring là mối quan hệ hỗ trợ trong đó người có kinh nghiệm chia sẻ góc nhìn, kiến thức, kinh nghiệm thực tế và lời khuyên để giúp người khác tiến bộ nhanh hơn. Trong môi trường kỹ thuật, mentoring không chỉ dạy code mà còn giúp về tư duy hệ thống, giao tiếp, cách học và phát triển nghề nghiệp bền vững."
+  },
+  {
+    "id": 199,
+    "question": "Soft skills quan trọng với programmer hiện đại vì sao?",
+    "options": [
+      "Vì làm phần mềm là công việc cộng tác, cần giao tiếp, trình bày, phối hợp và hiểu người dùng",
+      "Vì programmer không cần biết kỹ thuật nữa",
+      "Vì chỉ cần nói chuyện tốt là đủ",
+      "Vì soft skills thay thế toàn bộ testing"
+    ],
+    "correctIndex": 0,
+    "explanation": "Programmer hiện đại không làm việc một mình trong khoảng trống. Họ phải trao đổi với đồng đội, sản phẩm, QA, khách hàng và đôi khi với vận hành hoặc lãnh đạo. Kỹ năng giao tiếp, viết tài liệu, đặt câu hỏi, nhận phản hồi và phối hợp tốt giúp biến năng lực kỹ thuật thành kết quả thực tế có giá trị."
+  },
+  {
+    "id": 200,
+    "question": "Điều gì giúp một lập trình viên phát triển bền vững lâu dài nhất?",
+    "options": [
+      "Nền tảng vững, tư duy hệ thống, kỷ luật học tập và khả năng thích nghi liên tục",
+      "Chỉ chạy theo công nghệ hot nhất từng tháng",
+      "Chỉ học thuộc cú pháp mà không hiểu bản chất",
+      "Tránh hoàn toàn làm việc nhóm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sự phát triển bền vững của một lập trình viên không đến từ việc chỉ biết một framework hay công cụ đang thịnh hành, mà đến từ nền tảng cốt lõi như cấu trúc dữ liệu, thuật toán, hệ thống, bảo mật, cách debug, kỹ năng cộng tác và khả năng tự học. Công nghệ thay đổi liên tục, nhưng người có nền tảng tốt và tư duy học dài hạn sẽ thích nghi và tiến xa hơn."
+  }
+]

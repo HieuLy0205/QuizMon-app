@@ -1,1 +1,2402 @@
-[]
+[
+  {
+    "id": 1,
+    "question": "Tác giả của bài thơ \"Sang thu\" là ai?",
+    "options": [
+      "Hữu Thỉnh",
+      "Thanh Hải",
+      "Y Phương",
+      "Viễn Phương"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Hữu Thỉnh. \"Sang thu\" là bài thơ tiêu biểu của Hữu Thỉnh, thể hiện những cảm nhận tinh tế trước khoảnh khắc chuyển mùa từ hạ sang thu ở làng quê Bắc Bộ. Thanh Hải là tác giả \"Mùa xuân nho nhỏ\", Y Phương viết \"Nói với con\", còn Viễn Phương là tác giả bài thơ \"Viếng lăng Bác\"."
+  },
+  {
+    "id": 2,
+    "question": "Bài thơ \"Mùa xuân nho nhỏ\" do ai sáng tác?",
+    "options": [
+      "Chế Lan Viên",
+      "Thanh Hải",
+      "Tố Hữu",
+      "Nguyễn Duy"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là Thanh Hải. Bài thơ được sáng tác vào những ngày cuối đời của nhà thơ, thể hiện khát vọng được sống đẹp, sống có ích, dâng hiến phần nhỏ bé của mình cho đất nước. Chế Lan Viên, Tố Hữu và Nguyễn Duy đều là những tác giả lớn, nhưng không phải người viết tác phẩm này."
+  },
+  {
+    "id": 3,
+    "question": "Tác phẩm \"Làng\" là truyện ngắn của nhà văn nào?",
+    "options": [
+      "Kim Lân",
+      "Nam Cao",
+      "Nguyễn Minh Châu",
+      "Ngô Tất Tố"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Kim Lân. Truyện ngắn \"Làng\" viết về tình yêu làng quê gắn liền với tình yêu kháng chiến, yêu đất nước của nhân vật ông Hai. Nam Cao nổi tiếng với \"Lão Hạc\", Ngô Tất Tố với \"Tắt đèn\", còn Nguyễn Minh Châu là tác giả \"Bến quê\"."
+  },
+  {
+    "id": 4,
+    "question": "Nhân vật chính trong truyện ngắn \"Lặng lẽ Sa Pa\" là ai?",
+    "options": [
+      "Ông họa sĩ",
+      "Cô kĩ sư",
+      "Anh thanh niên",
+      "Bác lái xe"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là anh thanh niên. Nhân vật này làm công tác khí tượng trên đỉnh Yên Sơn, sống một mình nhưng luôn yêu nghề, có tinh thần trách nhiệm cao và lối sống đẹp. Ông họa sĩ, cô kĩ sư và bác lái xe là những nhân vật góp phần làm nổi bật vẻ đẹp của anh chứ không phải trung tâm chính của truyện."
+  },
+  {
+    "id": 5,
+    "question": "Tác giả truyện ngắn \"Chiếc lược ngà\" là ai?",
+    "options": [
+      "Nguyễn Quang Sáng",
+      "Nguyễn Thành Long",
+      "Nguyễn Minh Châu",
+      "Lê Minh Khuê"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Quang Sáng. \"Chiếc lược ngà\" là tác phẩm cảm động về tình cha con sâu nặng trong hoàn cảnh chiến tranh ác liệt. Nguyễn Thành Long là tác giả \"Lặng lẽ Sa Pa\", Nguyễn Minh Châu viết \"Bến quê\", còn Lê Minh Khuê nổi bật với \"Những ngôi sao xa xôi\"."
+  },
+  {
+    "id": 6,
+    "question": "Ba cô gái trong tác phẩm \"Những ngôi sao xa xôi\" làm công việc gì?",
+    "options": [
+      "Lái xe vận tải",
+      "Trinh sát mặt đường",
+      "Y tá chiến trường",
+      "Thông tin liên lạc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là trinh sát mặt đường. Nhiệm vụ của họ là quan sát, đo khối lượng đất đá bị bom vùi lấp, đánh dấu bom chưa nổ và phá bom, công việc rất nguy hiểm nhưng đầy dũng cảm. Các phương án còn lại không phản ánh đúng nhiệm vụ đặc thù của tổ trinh sát trong truyện."
+  },
+  {
+    "id": 7,
+    "question": "Tác giả bài thơ \"Viếng lăng Bác\" là ai?",
+    "options": [
+      "Viễn Phương",
+      "Tố Hữu",
+      "Hữu Thỉnh",
+      "Chính Hữu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Viễn Phương. Bài thơ được viết năm 1976, khi nhà thơ từ miền Nam ra thăm lăng Bác, thể hiện niềm xúc động thành kính và lòng biết ơn sâu sắc đối với Chủ tịch Hồ Chí Minh. Tố Hữu cũng có nhiều bài thơ về Bác, nhưng không phải tác giả của bài này."
+  },
+  {
+    "id": 8,
+    "question": "Bài thơ \"Đồng chí\" được sáng tác bởi ai?",
+    "options": [
+      "Phạm Tiến Duật",
+      "Chính Hữu",
+      "Quang Dũng",
+      "Nguyễn Duy"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là Chính Hữu. \"Đồng chí\" là bài thơ tiêu biểu viết về tình đồng đội, đồng chí gắn bó giữa những người lính thời kì đầu kháng chiến chống Pháp. Phạm Tiến Duật nổi tiếng với \"Bài thơ về tiểu đội xe không kính\", Quang Dũng với \"Tây Tiến\", còn Nguyễn Duy với \"Ánh trăng\"."
+  },
+  {
+    "id": 9,
+    "question": "Câu thơ \"Đầu súng trăng treo\" thuộc tác phẩm nào?",
+    "options": [
+      "Tây Tiến",
+      "Đồng chí",
+      "Ánh trăng",
+      "Bếp lửa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là \"Đồng chí\". Hình ảnh \"Đầu súng trăng treo\" vừa hiện thực vừa lãng mạn, biểu tượng cho chất chiến đấu và chất thơ hòa quyện trong tâm hồn người lính. Các tác phẩm còn lại đều có hình ảnh đẹp, nhưng không chứa câu thơ nổi tiếng này."
+  },
+  {
+    "id": 10,
+    "question": "Tác giả của bài thơ \"Bài thơ về tiểu đội xe không kính\" là ai?",
+    "options": [
+      "Chính Hữu",
+      "Phạm Tiến Duật",
+      "Tố Hữu",
+      "Huy Cận"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là Phạm Tiến Duật. Bài thơ khắc họa hình ảnh người lính lái xe Trường Sơn trẻ trung, ngang tàng, dũng cảm và đầy tinh thần lạc quan trong kháng chiến chống Mĩ. Chính Hữu là tác giả \"Đồng chí\", còn Tố Hữu và Huy Cận không sáng tác bài thơ này."
+  },
+  {
+    "id": 11,
+    "question": "Bài thơ \"Ánh trăng\" của Nguyễn Duy gợi nhắc con người về điều gì?",
+    "options": [
+      "Lòng tự hào chiến thắng",
+      "Sự lãng mạn tuổi trẻ",
+      "Đạo lí uống nước nhớ nguồn",
+      "Khát vọng chinh phục thiên nhiên"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là đạo lí uống nước nhớ nguồn. Qua hình ảnh vầng trăng từng gắn bó với con người trong quá khứ nhưng bị lãng quên khi cuộc sống đổi thay, bài thơ nhắc nhở con người phải thủy chung, biết ơn quá khứ nghĩa tình. Những phương án khác không bao quát đúng tư tưởng chủ đạo của tác phẩm."
+  },
+  {
+    "id": 12,
+    "question": "Tác giả bài thơ \"Bếp lửa\" là ai?",
+    "options": [
+      "Bằng Việt",
+      "Nguyễn Khoa Điềm",
+      "Xuân Quỳnh",
+      "Y Phương"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Bằng Việt. \"Bếp lửa\" là bài thơ giàu cảm xúc về hình ảnh người bà và những kỉ niệm tuổi thơ ấm áp, từ đó gợi lên tình cảm gia đình và quê hương sâu nặng. Nguyễn Khoa Điềm, Xuân Quỳnh và Y Phương đều là những nhà thơ nổi tiếng khác nhưng không phải tác giả bài này."
+  },
+  {
+    "id": 13,
+    "question": "Trong bài thơ \"Bếp lửa\", hình ảnh bếp lửa chủ yếu tượng trưng cho điều gì?",
+    "options": [
+      "Sự nghèo khó của làng quê",
+      "Tình bà cháu và hơi ấm gia đình",
+      "Khát vọng tuổi trẻ",
+      "Vẻ đẹp của thiên nhiên"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tình bà cháu và hơi ấm gia đình. Bếp lửa không chỉ là hình ảnh thực gắn với cuộc sống tần tảo của người bà mà còn là biểu tượng của tình thương, sự chở che, niềm tin và sức sống bền bỉ. Nếu chỉ hiểu là sự nghèo khó thì chưa đủ chiều sâu biểu tượng của tác phẩm."
+  },
+  {
+    "id": 14,
+    "question": "Tác giả bài thơ \"Nói với con\" là ai?",
+    "options": [
+      "Hữu Thỉnh",
+      "Y Phương",
+      "Nguyễn Duy",
+      "Thanh Hải"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là Y Phương. Bài thơ thể hiện tình cảm gia đình đầm ấm và niềm tự hào về truyền thống tốt đẹp, sức sống mạnh mẽ của người đồng mình. Hữu Thỉnh, Nguyễn Duy và Thanh Hải là những tác giả của các bài thơ khác trong chương trình."
+  },
+  {
+    "id": 15,
+    "question": "Cụm từ \"người đồng mình\" trong bài thơ \"Nói với con\" chỉ ai?",
+    "options": [
+      "Những người cùng quê hương, dân tộc",
+      "Những người cùng làm ruộng",
+      "Bạn bè thời niên thiếu",
+      "Người sống ở đồng bằng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là những người cùng quê hương, dân tộc. Trong cách nói của Y Phương, \"người đồng mình\" là cách gọi mộc mạc, thân thương dành cho cộng đồng dân tộc miền núi quê hương ông, những con người sống nghĩa tình, bền bỉ và giàu ý chí. Đây không phải cách hiểu đơn thuần về địa hình đồng bằng."
+  },
+  {
+    "id": 16,
+    "question": "Bài thơ \"Con cò\" là sáng tác của nhà thơ nào?",
+    "options": [
+      "Chế Lan Viên",
+      "Viễn Phương",
+      "Xuân Diệu",
+      "Nguyễn Duy"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Chế Lan Viên. Bài thơ khai thác hình tượng con cò trong ca dao để nói về lời ru, tình mẹ và sự nâng đỡ bền bỉ của mẹ đối với con trong suốt cuộc đời. Viễn Phương, Xuân Diệu và Nguyễn Duy không phải tác giả của tác phẩm này."
+  },
+  {
+    "id": 17,
+    "question": "Trong \"Con cò\", hình ảnh con cò trước hết gợi lên điều gì?",
+    "options": [
+      "Hình ảnh người chiến sĩ",
+      "Tình bạn tuổi thơ",
+      "Tình mẹ và lời ru ngọt ngào",
+      "Sự khắc nghiệt của thiên nhiên"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là tình mẹ và lời ru ngọt ngào. Chế Lan Viên đã mượn hình ảnh con cò quen thuộc trong ca dao để nói về tình yêu thương, sự che chở của mẹ từ lúc con còn thơ bé cho đến khi trưởng thành. Các phương án khác không phản ánh đúng tầng ý nghĩa trung tâm của hình tượng này."
+  },
+  {
+    "id": 18,
+    "question": "Tác phẩm \"Bến quê\" do ai sáng tác?",
+    "options": [
+      "Nguyễn Minh Châu",
+      "Nguyễn Thi",
+      "Kim Lân",
+      "Nguyễn Quang Sáng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Minh Châu. \"Bến quê\" là truyện ngắn giàu chất triết lí, thể hiện những suy ngẫm sâu sắc về con người, cuộc sống và những vẻ đẹp gần gũi mà đôi khi ta vô tình bỏ quên. Nguyễn Thi, Kim Lân và Nguyễn Quang Sáng là các nhà văn khác với những tác phẩm nổi tiếng riêng."
+  },
+  {
+    "id": 19,
+    "question": "Nhân vật Nhĩ trong truyện ngắn \"Bến quê\" rơi vào hoàn cảnh nào?",
+    "options": [
+      "Đi xa nhiều năm mới trở về",
+      "Bị ốm nặng, nằm liệt giường",
+      "Mất trí nhớ sau chiến tranh",
+      "Sống cô độc giữa thành phố"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là bị ốm nặng, nằm liệt giường. Chính hoàn cảnh ấy khiến Nhĩ có dịp chiêm nghiệm sâu sắc về cuộc đời và nhận ra vẻ đẹp bình dị, gần gũi của bãi bồi bên kia sông cũng như tình nghĩa gia đình. Những phương án còn lại không đúng với cốt truyện."
+  },
+  {
+    "id": 20,
+    "question": "Tác phẩm \"Những ngôi sao xa xôi\" được viết bởi ai?",
+    "options": [
+      "Lê Minh Khuê",
+      "Nguyễn Thành Long",
+      "Nguyễn Minh Châu",
+      "Nguyễn Thi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Lê Minh Khuê. Tác phẩm ca ngợi vẻ đẹp tâm hồn, lòng dũng cảm và tinh thần lạc quan của những nữ thanh niên xung phong trên tuyến đường Trường Sơn thời chống Mĩ. Nguyễn Thành Long, Nguyễn Minh Châu và Nguyễn Thi là các tác giả khác."
+  },
+  {
+    "id": 21,
+    "question": "Tác phẩm \"Chuyện người con gái Nam Xương\" nằm trong tập sách nào?",
+    "options": [
+      "Truyền kì mạn lục",
+      "Hoàng Lê nhất thống chí",
+      "Vũ trung tùy bút",
+      "Thượng kinh kí sự"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là \"Truyền kì mạn lục\". Đây là tập truyện truyền kì nổi tiếng của Nguyễn Dữ, kết hợp yếu tố hiện thực với kì ảo để phản ánh số phận con người và những vấn đề xã hội. Các tác phẩm còn lại thuộc về những thể loại và tác giả khác."
+  },
+  {
+    "id": 22,
+    "question": "Tác giả của \"Chuyện người con gái Nam Xương\" là ai?",
+    "options": [
+      "Nguyễn Du",
+      "Nguyễn Dữ",
+      "Ngô gia văn phái",
+      "Lê Hữu Trác"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là Nguyễn Dữ. Ông là tác giả nổi tiếng của \"Truyền kì mạn lục\", trong đó \"Chuyện người con gái Nam Xương\" là truyện tiêu biểu, phản ánh số phận oan nghiệt của người phụ nữ trong xã hội phong kiến. Nguyễn Du là tác giả \"Truyện Kiều\", còn Ngô gia văn phái và Lê Hữu Trác thuộc những tác phẩm khác."
+  },
+  {
+    "id": 23,
+    "question": "Nguyên nhân trực tiếp dẫn đến cái chết của Vũ Nương là gì?",
+    "options": [
+      "Bị ép gả lần nữa",
+      "Bị chồng nghi oan thất tiết",
+      "Bị chiến tranh tàn phá nhà cửa",
+      "Bị mẹ chồng đuổi khỏi nhà"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là bị chồng nghi oan thất tiết. Trương Sinh do tính đa nghi, ghen tuông mù quáng đã nghe lời con trẻ rồi đẩy Vũ Nương vào bước đường cùng. Bi kịch ấy tố cáo xã hội phong kiến bất công và cho thấy thân phận mong manh của người phụ nữ xưa."
+  },
+  {
+    "id": 24,
+    "question": "Chi tiết cái bóng trong \"Chuyện người con gái Nam Xương\" có vai trò gì?",
+    "options": [
+      "Tạo yếu tố hài hước",
+      "Mở đầu cho cuộc gặp gỡ tình cờ",
+      "Là nút thắt và chìa khóa tháo gỡ bi kịch",
+      "Khắc họa cảnh chiến tranh khốc liệt"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là là nút thắt và chìa khóa tháo gỡ bi kịch. Cái bóng ban đầu được Vũ Nương dùng để dỗ con, nhưng về sau lại bị hiểu lầm là bằng chứng ngoại tình, gây nên bi kịch đau lòng. Chính chi tiết này cuối truyện cũng giúp Trương Sinh nhận ra sự thật, làm nổi bật tính chất oan khuất của câu chuyện."
+  },
+  {
+    "id": 25,
+    "question": "Tác phẩm \"Hoàng Lê nhất thống chí\" do ai viết?",
+    "options": [
+      "Nguyễn Du",
+      "Phạm Đình Hổ",
+      "Ngô gia văn phái",
+      "Nguyễn Dữ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là Ngô gia văn phái. Đây là nhóm tác giả thuộc dòng họ Ngô Thì, đã viết nên tác phẩm ghi chép nhiều sự kiện lịch sử cuối thế kỉ XVIII đầu XIX. Nguyễn Du, Phạm Đình Hổ và Nguyễn Dữ không phải tác giả của cuốn tiểu thuyết chương hồi này."
+  },
+  {
+    "id": 26,
+    "question": "Hình tượng người anh hùng được khắc họa nổi bật trong hồi 14 của \"Hoàng Lê nhất thống chí\" là ai?",
+    "options": [
+      "Lê Chiêu Thống",
+      "Quang Trung",
+      "Nguyễn Ánh",
+      "Trịnh Sâm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là Quang Trung. Hồi 14 khắc họa Nguyễn Huệ với khí phách mạnh mẽ, trí tuệ sáng suốt, hành động quyết đoán và tài cầm quân xuất chúng trong chiến thắng quân Thanh. Lê Chiêu Thống hiện lên hèn nhát, còn Nguyễn Ánh và Trịnh Sâm không phải nhân vật trung tâm ở đoạn này."
+  },
+  {
+    "id": 27,
+    "question": "Tác phẩm \"Truyện Kiều\" được viết bằng thể thơ nào?",
+    "options": [
+      "Thất ngôn bát cú",
+      "Lục bát",
+      "Song thất lục bát",
+      "Ngũ ngôn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là thể thơ lục bát. Nguyễn Du đã sử dụng thể thơ truyền thống dân tộc rất nhuần nhuyễn, tạo nên nhạc điệu uyển chuyển, mềm mại và giàu khả năng biểu đạt nội tâm. Các thể thơ còn lại đều quen thuộc trong văn học trung đại, nhưng không phải hình thức nghệ thuật của \"Truyện Kiều\"."
+  },
+  {
+    "id": 28,
+    "question": "Tác giả của \"Truyện Kiều\" là ai?",
+    "options": [
+      "Nguyễn Du",
+      "Nguyễn Dữ",
+      "Hồ Xuân Hương",
+      "Nguyễn Công Trứ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Du. Ông là đại thi hào dân tộc, danh nhân văn hóa thế giới, và \"Truyện Kiều\" là kiệt tác lớn nhất của văn học trung đại Việt Nam. Nguyễn Dữ, Hồ Xuân Hương và Nguyễn Công Trứ đều là tác giả quan trọng nhưng không viết tác phẩm này."
+  },
+  {
+    "id": 29,
+    "question": "Đoạn trích \"Chị em Thúy Kiều\" chủ yếu khắc họa điều gì?",
+    "options": [
+      "Cuộc sống lưu lạc của Kiều",
+      "Vẻ đẹp và tài năng của Thúy Vân, Thúy Kiều",
+      "Tình yêu Kim - Kiều",
+      "Nỗi đau của gia đình họ Vương"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là vẻ đẹp và tài năng của Thúy Vân, Thúy Kiều. Nguyễn Du dùng bút pháp ước lệ tượng trưng, đòn bẩy và dự cảm để miêu tả hai chị em, trong đó Thúy Kiều nổi bật hơn cả về sắc đẹp lẫn tài hoa. Các phương án còn lại thuộc những phần khác của tác phẩm."
+  },
+  {
+    "id": 30,
+    "question": "Trong đoạn trích \"Kiều ở lầu Ngưng Bích\", tâm trạng chủ đạo của Thúy Kiều là gì?",
+    "options": [
+      "Thanh thản, yên vui",
+      "Kiêu hãnh, tự tin",
+      "Cô đơn, buồn tủi và lo âu",
+      "Phẫn nộ trước kẻ thù"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là cô đơn, buồn tủi và lo âu. Bị giam lỏng nơi lầu Ngưng Bích, Kiều đau đớn nhớ người yêu, thương cha mẹ và lo sợ cho số phận mong manh của mình. Tám câu cuối với điệp ngữ \"buồn trông\" đã diễn tả rất rõ những lớp sóng tâm trạng ấy."
+  },
+  {
+    "id": 31,
+    "question": "Cụm từ \"buồn trông\" lặp lại nhiều lần trong đoạn trích \"Kiều ở lầu Ngưng Bích\" có tác dụng gì?",
+    "options": [
+      "Nhấn mạnh tâm trạng buồn lo dồn dập của Kiều",
+      "Tạo giọng điệu hài hước",
+      "Miêu tả cảnh thiên nhiên hùng vĩ",
+      "Khẳng định sự chiến thắng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là nhấn mạnh tâm trạng buồn lo dồn dập của Kiều. Điệp ngữ \"buồn trông\" vừa gợi cái nhìn xa xăm, bất định, vừa thể hiện nỗi buồn ngày càng chồng chất, lan tỏa theo từng cảnh vật. Đây là thủ pháp tả cảnh ngụ tình đặc sắc của Nguyễn Du."
+  },
+  {
+    "id": 32,
+    "question": "Đoạn trích \"Lục Vân Tiên cứu Kiều Nguyệt Nga\" ca ngợi phẩm chất nào của Lục Vân Tiên?",
+    "options": [
+      "Mưu mô, khôn khéo",
+      "Tài hoa nghệ sĩ",
+      "Trọng nghĩa khinh tài, dũng cảm cứu người",
+      "Ham danh lợi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là trọng nghĩa khinh tài, dũng cảm cứu người. Lục Vân Tiên thấy chuyện bất bình liền ra tay cứu người yếu nạn, sau đó không màng trả ơn, thể hiện lí tưởng đạo đức đẹp của con người nghĩa hiệp. Các phương án còn lại trái với chân dung nhân vật."
+  },
+  {
+    "id": 33,
+    "question": "Tác giả của \"Lục Vân Tiên\" là ai?",
+    "options": [
+      "Nguyễn Đình Chiểu",
+      "Nguyễn Du",
+      "Nguyễn Khuyến",
+      "Tú Xương"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Đình Chiểu. Ông là nhà thơ yêu nước lớn của Nam Bộ, tác giả của truyện thơ \"Lục Vân Tiên\", tác phẩm đề cao đạo lí làm người và tinh thần nghĩa hiệp. Nguyễn Du, Nguyễn Khuyến và Tú Xương không phải tác giả tác phẩm này."
+  },
+  {
+    "id": 34,
+    "question": "Văn bản \"Đồng chí\" chủ yếu viết về đối tượng nào?",
+    "options": [
+      "Người nông dân sau cách mạng",
+      "Người lính thời chống Pháp",
+      "Thiếu niên xung phong thời chống Mĩ",
+      "Người trí thức thời kì đổi mới"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là người lính thời chống Pháp. Bài thơ tập trung làm nổi bật cơ sở hình thành tình đồng chí, những biểu hiện cảm động của tình đồng đội và vẻ đẹp bình dị mà cao cả của anh bộ đội Cụ Hồ. Các đối tượng khác không đúng với hoàn cảnh sáng tác của tác phẩm."
+  },
+  {
+    "id": 35,
+    "question": "Bài thơ \"Đoàn thuyền đánh cá\" là sáng tác của ai?",
+    "options": [
+      "Huy Cận",
+      "Tế Hanh",
+      "Xuân Quỳnh",
+      "Bằng Việt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Huy Cận. Bài thơ được sáng tác sau chuyến đi thực tế ở vùng mỏ Quảng Ninh, thể hiện cảm hứng lãng mạn, ngợi ca vẻ đẹp thiên nhiên đất nước và khí thế lao động hăng say của con người mới. Tế Hanh cũng viết hay về biển, nhưng không phải tác giả của bài này."
+  },
+  {
+    "id": 36,
+    "question": "Không khí bao trùm trong bài thơ \"Đoàn thuyền đánh cá\" là gì?",
+    "options": [
+      "U buồn, cô quạnh",
+      "Hào hùng, phấn chấn, lạc quan",
+      "Bi ai, tuyệt vọng",
+      "Lạnh lẽo, căng thẳng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là hào hùng, phấn chấn, lạc quan. Bài thơ mở ra một bức tranh lao động trên biển vừa rộng lớn vừa thơ mộng, con người hiện lên làm chủ thiên nhiên với tinh thần khỏe khoắn, vui tươi. Các sắc thái u buồn hay tuyệt vọng hoàn toàn không phù hợp với cảm hứng chủ đạo của tác phẩm."
+  },
+  {
+    "id": 37,
+    "question": "Tác giả bài thơ \"Ánh trăng\" là ai?",
+    "options": [
+      "Nguyễn Duy",
+      "Chính Hữu",
+      "Hữu Thỉnh",
+      "Bằng Việt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Duy. Ông là nhà thơ trưởng thành trong kháng chiến chống Mĩ, thơ thường giàu suy tư và gần gũi đời sống. \"Ánh trăng\" là tác phẩm tiêu biểu gợi nhắc con người về quá khứ nghĩa tình."
+  },
+  {
+    "id": 38,
+    "question": "Bài thơ \"Viếng lăng Bác\" được viết theo thể thơ nào?",
+    "options": [
+      "Lục bát",
+      "Song thất lục bát",
+      "Tự do",
+      "Ngũ ngôn Đường luật"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là thể thơ tự do. Viễn Phương sử dụng thể thơ này để diễn tả cảm xúc linh hoạt, chân thành và sâu lắng của người con miền Nam ra viếng lăng Bác. Tác phẩm không tuân thủ khuôn mẫu chặt chẽ của lục bát, song thất lục bát hay thơ Đường luật."
+  },
+  {
+    "id": 39,
+    "question": "Từ nào sau đây thể hiện rõ nhất cảm xúc của nhà thơ trong bài \"Viếng lăng Bác\"?",
+    "options": [
+      "Thờ ơ",
+      "Thành kính",
+      "Châm biếm",
+      "Giận dữ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là thành kính. Toàn bài thơ thấm đượm niềm xúc động, lòng biết ơn và sự tôn kính thiêng liêng đối với Bác Hồ, từ hình ảnh hàng tre đến ước nguyện làm con chim, đóa hoa, cây tre trung hiếu. Các cảm xúc thờ ơ, châm biếm hay giận dữ hoàn toàn không có trong tác phẩm."
+  },
+  {
+    "id": 40,
+    "question": "Tác phẩm \"Lặng lẽ Sa Pa\" ca ngợi chủ yếu điều gì?",
+    "options": [
+      "Cuộc sống xa hoa nơi đô thị",
+      "Vẻ đẹp của những con người lao động thầm lặng",
+      "Bi kịch chiến tranh",
+      "Sự đối lập giàu nghèo"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là vẻ đẹp của những con người lao động thầm lặng. Qua anh thanh niên và những nhân vật được nhắc đến gián tiếp, truyện khẳng định giá trị của lao động, trách nhiệm và lối sống cống hiến âm thầm cho đất nước. Đây không phải tác phẩm viết về đời sống xa hoa hay xung đột giai cấp."
+  },
+  {
+    "id": 41,
+    "question": "Tác giả của truyện ngắn \"Lặng lẽ Sa Pa\" là ai?",
+    "options": [
+      "Nguyễn Thành Long",
+      "Kim Lân",
+      "Nguyễn Minh Châu",
+      "Nguyễn Quang Sáng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Thành Long. Ông có sở trường viết truyện ngắn nhẹ nhàng, giàu chất thơ và giàu chất suy ngẫm về con người mới trong lao động xây dựng đất nước. Ba tác giả còn lại đều có phong cách riêng nhưng không viết tác phẩm này."
+  },
+  {
+    "id": 42,
+    "question": "Trong \"Làng\", khi nghe tin làng Chợ Dầu theo giặc, ông Hai có tâm trạng như thế nào?",
+    "options": [
+      "Vui mừng, tự hào",
+      "Dửng dưng, bình thản",
+      "Đau đớn, tủi nhục và hoang mang",
+      "Tức giận rồi bỏ đi ngay"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là đau đớn, tủi nhục và hoang mang. Tình yêu làng tha thiết khiến ông Hai bị sốc nặng khi nghe tin dữ, nhưng từ đó càng làm sáng rõ tình yêu nước, bởi ông đã dứt khoát đứng về phía kháng chiến. Phản ứng của ông là một quá trình giằng xé nội tâm rất tinh tế."
+  },
+  {
+    "id": 43,
+    "question": "Câu nói \"Làng thì yêu thật, nhưng làng theo Tây mất rồi thì phải thù\" cho thấy điều gì ở ông Hai?",
+    "options": [
+      "Ông ghét quê hương mình",
+      "Tình yêu làng gắn bó thống nhất với tình yêu nước",
+      "Ông dễ thay đổi tình cảm",
+      "Ông chỉ nói cho có lệ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tình yêu làng gắn bó thống nhất với tình yêu nước. Câu nói thể hiện bước phát triển trong nhận thức của người nông dân thời kháng chiến: yêu làng quê nhưng trên hết là trung thành với cách mạng và dân tộc. Đây là giá trị tư tưởng nổi bật của truyện ngắn \"Làng\"."
+  },
+  {
+    "id": 44,
+    "question": "Tác phẩm \"Chiếc lược ngà\" tập trung thể hiện tình cảm nào?",
+    "options": [
+      "Tình đồng đội",
+      "Tình vợ chồng",
+      "Tình cha con sâu nặng",
+      "Tình thầy trò"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là tình cha con sâu nặng. Trong hoàn cảnh chiến tranh chia cắt, tình cảm giữa ông Sáu và bé Thu càng hiện lên cảm động, thiêng liêng, đặc biệt qua chi tiết chiếc lược ngà được làm bằng tất cả yêu thương và day dứt. Các mối quan hệ khác không phải trọng tâm chính của tác phẩm."
+  },
+  {
+    "id": 45,
+    "question": "Vì sao bé Thu ban đầu không nhận ông Sáu là cha?",
+    "options": [
+      "Vì Thu ghét cha",
+      "Vì Thu quá nhỏ không biết cha là ai",
+      "Vì vết thẹo trên mặt ông Sáu khác với tấm ảnh Thu từng thấy",
+      "Vì mẹ Thu ngăn cản"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là vì vết thẹo trên mặt ông Sáu khác với tấm ảnh Thu từng thấy. Trong tâm trí non nớt mà bướng bỉnh, Thu chỉ tin người cha trong bức ảnh chụp trước lúc đi kháng chiến, nên chưa thể chấp nhận người đàn ông có gương mặt khác đi vì bom đạn. Chi tiết này làm nổi bật chiến tranh đã gây ra những mất mát và éo le như thế nào."
+  },
+  {
+    "id": 46,
+    "question": "Chi tiết chiếc lược ngà trong truyện có ý nghĩa nổi bật nhất là gì?",
+    "options": [
+      "Kỉ vật vật chất đơn thuần",
+      "Biểu tượng của tình cha con bất diệt",
+      "Chiến lợi phẩm trong chiến tranh",
+      "Món đồ chơi trẻ em bình thường"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là biểu tượng của tình cha con bất diệt. Chiếc lược được ông Sáu dồn hết yêu thương, nỗi nhớ và niềm ân hận để làm cho con, trở thành kết tinh của tình cảm gia đình trong chiến tranh. Vì thế, chi tiết này mang giá trị biểu tượng rất sâu sắc, vượt lên ý nghĩa của một đồ vật thông thường."
+  },
+  {
+    "id": 47,
+    "question": "Tác phẩm \"Những ngôi sao xa xôi\" được kể theo ngôi nào?",
+    "options": [
+      "Ngôi thứ nhất",
+      "Ngôi thứ hai",
+      "Ngôi thứ ba giấu mình hoàn toàn",
+      "Ngôi kể xen kẽ nhật kí"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là ngôi thứ nhất. Người kể chuyện là Phương Định, nhờ đó câu chuyện có giọng điệu chân thực, tự nhiên và thể hiện rõ thế giới nội tâm phong phú của nhân vật. Ngôi kể này cũng giúp làm nổi bật vẻ đẹp tâm hồn của những cô gái thanh niên xung phong."
+  },
+  {
+    "id": 48,
+    "question": "Phương Định trong \"Những ngôi sao xa xôi\" có đặc điểm nổi bật nào?",
+    "options": [
+      "Lạnh lùng, ít cảm xúc",
+      "Hồn nhiên, mơ mộng nhưng dũng cảm",
+      "Yếu đuối, sợ hãi mọi lúc",
+      "Ích kỉ, chỉ nghĩ cho bản thân"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là hồn nhiên, mơ mộng nhưng dũng cảm. Phương Định vẫn giữ được nét trẻ trung, nữ tính và nhiều mộng mơ của tuổi trẻ, song khi làm nhiệm vụ phá bom thì vô cùng gan dạ và có trách nhiệm. Sự kết hợp ấy tạo nên vẻ đẹp rất đáng quý của thế hệ trẻ thời chống Mĩ."
+  },
+  {
+    "id": 49,
+    "question": "Bài thơ \"Sang thu\" khắc họa thời điểm nào của thiên nhiên?",
+    "options": [
+      "Đầu xuân",
+      "Cuối đông",
+      "Khoảnh khắc giao mùa từ hạ sang thu",
+      "Giữa mùa mưa bão"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là khoảnh khắc giao mùa từ hạ sang thu. Hữu Thỉnh cảm nhận rất tinh tế những tín hiệu đầu tiên của mùa thu qua hương ổi, gió se, sương chùng chình, dòng sông dềnh dàng và đám mây vắt nửa mình sang thu. Đây chính là điểm độc đáo tạo nên sức hấp dẫn của bài thơ."
+  },
+  {
+    "id": 50,
+    "question": "Từ \"phả\" trong câu thơ \"Phả vào trong gió se\" gợi cảm nhận gì?",
+    "options": [
+      "Mùi hương lan tỏa đậm, bất ngờ",
+      "Tiếng động mạnh dữ dội",
+      "Màu sắc nhạt nhòa",
+      "Ánh sáng chói chang"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là mùi hương lan tỏa đậm, bất ngờ. Từ \"phả\" khiến người đọc cảm nhận được hương ổi chín như sánh lại, thấm vào không gian, báo hiệu mùa thu đến rất gần. Đây là một cách dùng từ giàu sức gợi, thể hiện sự tinh tế trong cảm nhận của Hữu Thỉnh."
+  },
+  {
+    "id": 51,
+    "question": "Bài thơ \"Nói với con\" chủ yếu thể hiện điều gì?",
+    "options": [
+      "Nỗi buồn chiến tranh",
+      "Lời người cha dặn con về cội nguồn và phẩm chất sống",
+      "Khát vọng chinh phục biển cả",
+      "Kỉ niệm tuổi học trò"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là lời người cha dặn con về cội nguồn và phẩm chất sống. Bài thơ vừa chan chứa tình cha con vừa gửi gắm niềm tự hào về quê hương, dân tộc và mong muốn con sống mạnh mẽ, thủy chung, giàu ý chí như \"người đồng mình\". Đây là nội dung cốt lõi của tác phẩm."
+  },
+  {
+    "id": 52,
+    "question": "Câu thơ \"Người đồng mình tự đục đá kê cao quê hương\" nhấn mạnh phẩm chất nào?",
+    "options": [
+      "Sự an phận, cam chịu",
+      "Tinh thần lao động và ý chí xây dựng quê hương",
+      "Lối sống hưởng thụ",
+      "Khả năng buôn bán giỏi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tinh thần lao động và ý chí xây dựng quê hương. Hình ảnh \"đục đá kê cao quê hương\" vừa cụ thể vừa mang ý nghĩa biểu tượng, ca ngợi con người miền núi bền bỉ, chủ động tạo dựng cuộc sống, nâng đỡ quê hương bằng chính sức lực và nghị lực của mình."
+  },
+  {
+    "id": 53,
+    "question": "Tác phẩm \"Mùa xuân nho nhỏ\" thể hiện khát vọng gì của nhà thơ?",
+    "options": [
+      "Thoát li cuộc sống thực tại",
+      "Sống hưởng thụ cho riêng mình",
+      "Dâng hiến phần nhỏ bé cho cuộc đời và đất nước",
+      "Tìm kiếm danh vọng cá nhân"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là dâng hiến phần nhỏ bé cho cuộc đời và đất nước. Qua hình ảnh \"con chim\", \"một cành hoa\", \"một nốt trầm\", Thanh Hải bày tỏ ước nguyện sống đẹp, sống có ích, góp phần dù nhỏ nhoi nhưng chân thành vào mùa xuân lớn của dân tộc. Đây là tư tưởng nhân văn rất đẹp của bài thơ."
+  },
+  {
+    "id": 54,
+    "question": "Từ \"nho nhỏ\" trong nhan đề \"Mùa xuân nho nhỏ\" gợi ý nghĩa gì?",
+    "options": [
+      "Sự nhỏ bé tầm thường vô nghĩa",
+      "Sự khiêm nhường nhưng chân thành của cá nhân khi cống hiến",
+      "Mùa xuân của trẻ em",
+      "Khung cảnh mùa xuân nghèo nàn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là sự khiêm nhường nhưng chân thành của cá nhân khi cống hiến. Nhan đề cho thấy mỗi con người có thể góp một \"mùa xuân\" nhỏ bé của riêng mình vào mùa xuân chung của đất nước, làm nên ý nghĩa đẹp đẽ cho cuộc sống. Cách hiểu coi đó là vô nghĩa là hoàn toàn sai lệch."
+  },
+  {
+    "id": 55,
+    "question": "Bài thơ \"Con cò\" sử dụng nhiều chất liệu từ đâu?",
+    "options": [
+      "Thần thoại Hi Lạp",
+      "Ca dao dân ca Việt Nam",
+      "Sử thi Tây Nguyên",
+      "Thơ Đường Trung Quốc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là ca dao dân ca Việt Nam. Chế Lan Viên đã vận dụng sáng tạo hình ảnh con cò quen thuộc trong lời ru dân gian, giúp bài thơ vừa hiện đại vừa đậm đà bản sắc truyền thống. Nhờ đó, tình mẹ hiện lên gần gũi, sâu xa và giàu sức ngân vang."
+  },
+  {
+    "id": 56,
+    "question": "Tác phẩm \"Bến quê\" gửi gắm triết lí nổi bật nào?",
+    "options": [
+      "Con người chỉ nên sống ở nơi xa lạ",
+      "Những giá trị gần gũi, bình dị nhiều khi bị con người lãng quên",
+      "Tiền bạc quyết định hạnh phúc",
+      "Số phận con người hoàn toàn do may rủi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là những giá trị gần gũi, bình dị nhiều khi bị con người lãng quên. Qua những suy ngẫm của Nhĩ khi đối diện với bệnh tật và giới hạn sống, truyện nhắc con người hãy biết trân trọng gia đình, quê hương và những điều tưởng như bình thường nhưng rất đỗi quý giá."
+  },
+  {
+    "id": 57,
+    "question": "Trong \"Bến quê\", hình ảnh bãi bồi bên kia sông tượng trưng cho điều gì?",
+    "options": [
+      "Những vẻ đẹp gần gũi, bình dị của cuộc sống",
+      "Một vùng đất hoang vu đáng sợ",
+      "Khát vọng giàu sang",
+      "Sự tàn phá của chiến tranh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là những vẻ đẹp gần gũi, bình dị của cuộc sống. Bãi bồi ngay trước mắt nhưng Nhĩ chưa từng thực sự để ý khi còn khỏe mạnh, đến lúc nằm liệt mới nhận ra vẻ đẹp thân thuộc ấy. Hình ảnh này là biểu tượng giàu chất triết lí của truyện."
+  },
+  {
+    "id": 58,
+    "question": "Văn bản \"Phong cách Hồ Chí Minh\" cho thấy vẻ đẹp nào nổi bật ở Bác?",
+    "options": [
+      "Sống xa hoa, cầu kì",
+      "Kết hợp hài hòa giữa truyền thống dân tộc và tinh hoa văn hóa nhân loại",
+      "Chỉ chú ý đến chính trị, không quan tâm văn hóa",
+      "Khép kín, tách biệt với thế giới"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là kết hợp hài hòa giữa truyền thống dân tộc và tinh hoa văn hóa nhân loại. Văn bản làm nổi bật vốn tri thức văn hóa sâu rộng, lối sống giản dị mà thanh cao của Hồ Chí Minh, từ đó khẳng định phong cách rất đẹp của một nhà văn hóa lớn. Các phương án khác đều trái với nội dung bài học."
+  },
+  {
+    "id": 59,
+    "question": "Tác giả văn bản \"Phong cách Hồ Chí Minh\" là ai?",
+    "options": [
+      "Lê Anh Trà",
+      "Phạm Văn Đồng",
+      "Đặng Thai Mai",
+      "Hoài Thanh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Lê Anh Trà. Ông là tác giả của văn bản nhật dụng nổi tiếng này, trong đó nhấn mạnh vẻ đẹp phong cách sống và phong cách văn hóa Hồ Chí Minh. Phạm Văn Đồng, Đặng Thai Mai và Hoài Thanh cũng là những cây bút lớn nhưng không viết văn bản này."
+  },
+  {
+    "id": 60,
+    "question": "Văn bản \"Đấu tranh cho một thế giới hòa bình\" lên án điều gì?",
+    "options": [
+      "Nạn thất học",
+      "Sự nguy hiểm của chiến tranh hạt nhân",
+      "Ô nhiễm môi trường biển",
+      "Bệnh vô cảm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là sự nguy hiểm của chiến tranh hạt nhân. Tác giả G. G. Mác-két đã chỉ ra mối đe dọa khủng khiếp của chạy đua vũ trang, đồng thời kêu gọi nhân loại đoàn kết bảo vệ hòa bình. Đây là vấn đề có ý nghĩa toàn cầu, cấp thiết đối với sự sống trên Trái Đất."
+  },
+  {
+    "id": 61,
+    "question": "Tác giả của văn bản \"Đấu tranh cho một thế giới hòa bình\" là ai?",
+    "options": [
+      "G. G. Mác-két",
+      "A. Đô-đê",
+      "M. Go-rơ-ki",
+      "Xéc-van-tét"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là G. G. Mác-két. Ông là nhà văn nổi tiếng của Colombia, người viết văn bản chính luận giàu sức thuyết phục về nguy cơ chiến tranh hạt nhân và trách nhiệm bảo vệ hòa bình. Các tác giả khác không phải người viết văn bản này."
+  },
+  {
+    "id": 62,
+    "question": "Văn bản \"Tuyên bố thế giới về sự sống còn, quyền được bảo vệ và phát triển của trẻ em\" chủ yếu nói về điều gì?",
+    "options": [
+      "Quyền và trách nhiệm đối với trẻ em trên toàn thế giới",
+      "Kĩ năng học tập của học sinh",
+      "Lịch sử ra đời của Liên Hợp Quốc",
+      "Phương pháp nuôi dạy con trong gia đình"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là quyền và trách nhiệm đối với trẻ em trên toàn thế giới. Văn bản nhấn mạnh trẻ em là tương lai của nhân loại, cần được chăm sóc, bảo vệ và tạo điều kiện phát triển toàn diện. Đây là một văn bản mang ý nghĩa nhân đạo và pháp lí sâu sắc."
+  },
+  {
+    "id": 63,
+    "question": "Văn bản \"Chuyện cũ trong phủ chúa Trịnh\" được trích từ tác phẩm nào?",
+    "options": [
+      "Vũ trung tùy bút",
+      "Thượng kinh kí sự",
+      "Hoàng Lê nhất thống chí",
+      "Truyền kì mạn lục"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là \"Vũ trung tùy bút\". Đây là tác phẩm của Phạm Đình Hổ, ghi chép nhiều chuyện đời sống xã hội cuối Lê đầu Nguyễn, trong đó đoạn trích phản ánh lối sống xa hoa, nhũng nhiễu trong phủ chúa Trịnh. Những tác phẩm còn lại thuộc tác giả khác."
+  },
+  {
+    "id": 64,
+    "question": "Tác giả của \"Chuyện cũ trong phủ chúa Trịnh\" là ai?",
+    "options": [
+      "Phạm Đình Hổ",
+      "Ngô gia văn phái",
+      "Lê Hữu Trác",
+      "Nguyễn Dữ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Phạm Đình Hổ. Ông là tác giả của \"Vũ trung tùy bút\", với lối viết ghi chép chân thực, sắc sảo, qua đó phản ánh hiện thực xã hội phong kiến mục nát. Ngô gia văn phái, Lê Hữu Trác và Nguyễn Dữ là các tác giả khác."
+  },
+  {
+    "id": 65,
+    "question": "Đoạn trích \"Chuyện cũ trong phủ chúa Trịnh\" phê phán điều gì?",
+    "options": [
+      "Tinh thần yêu nước của nhân dân",
+      "Lối sống xa hoa và thói nhũng nhiễu của bọn quan lại",
+      "Sự phát triển của đô thị",
+      "Nền giáo dục lạc hậu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là lối sống xa hoa và thói nhũng nhiễu của bọn quan lại. Qua việc miêu tả phủ chúa và cảnh lính hầu cướp đoạt cây cảnh quý của dân, tác giả cho thấy sự mục nát của tầng lớp thống trị và nỗi khổ của nhân dân. Đây là giá trị hiện thực nổi bật của đoạn trích."
+  },
+  {
+    "id": 66,
+    "question": "Văn bản \"Hoàng Lê nhất thống chí\" thuộc thể loại nào?",
+    "options": [
+      "Truyện ngắn hiện đại",
+      "Tiểu thuyết chương hồi",
+      "Thơ trữ tình",
+      "Kịch nói"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tiểu thuyết chương hồi. Tác phẩm được viết bằng chữ Hán, gồm nhiều hồi, ghi chép các sự kiện lịch sử và nhân vật theo lối kể chương hồi quen thuộc của văn học trung đại. Đây không phải truyện ngắn, thơ hay kịch."
+  },
+  {
+    "id": 67,
+    "question": "Tác giả của đoạn trích \"Kiều ở lầu Ngưng Bích\" là ai?",
+    "options": [
+      "Nguyễn Đình Chiểu",
+      "Nguyễn Du",
+      "Nguyễn Khuyến",
+      "Hồ Xuân Hương"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là Nguyễn Du. Đoạn trích thuộc kiệt tác \"Truyện Kiều\", thể hiện rất rõ tài năng bậc thầy của Nguyễn Du trong việc miêu tả tâm trạng nhân vật bằng bút pháp tả cảnh ngụ tình. Các tác giả còn lại đều không sáng tác đoạn trích này."
+  },
+  {
+    "id": 68,
+    "question": "Bút pháp nghệ thuật nổi bật trong đoạn trích \"Kiều ở lầu Ngưng Bích\" là gì?",
+    "options": [
+      "Tả cảnh ngụ tình",
+      "Khoa trương cường điệu",
+      "Nghị luận trực tiếp",
+      "Trào phúng châm biếm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là tả cảnh ngụ tình. Nguyễn Du mượn cảnh vật bên ngoài như cánh buồm, cánh hoa, nội cỏ, tiếng sóng để diễn tả nỗi cô đơn, nhớ thương, lo sợ và dự cảm bất an của Kiều. Đây là một trong những thành công lớn nhất về nghệ thuật của đoạn trích."
+  },
+  {
+    "id": 69,
+    "question": "Trong đoạn trích \"Chị em Thúy Kiều\", Nguyễn Du dùng bút pháp nào để tả vẻ đẹp hai chị em?",
+    "options": [
+      "Hiện thực trần trụi",
+      "Ước lệ tượng trưng",
+      "Trào phúng đả kích",
+      "Tự sự kết hợp nghị luận"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là ước lệ tượng trưng. Nhà thơ mượn thiên nhiên như trăng, hoa, ngọc, mây, tuyết để gợi tả vẻ đẹp con người một cách trang trọng, tinh tế và hàm súc. Đây là bút pháp quen thuộc của văn học trung đại, nhưng Nguyễn Du đã vận dụng hết sức tài hoa."
+  },
+  {
+    "id": 70,
+    "question": "Trong đoạn trích \"Chị em Thúy Kiều\", vẻ đẹp của Thúy Vân được gợi tả bằng cảm nhận nào?",
+    "options": [
+      "Sắc sảo, mặn mà, tài hoa hơn người",
+      "Đoan trang, phúc hậu, hài hòa",
+      "Bất cần, nổi loạn",
+      "Lạnh lùng, kiêu sa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là đoan trang, phúc hậu, hài hòa. Nguyễn Du miêu tả Thúy Vân với vẻ đẹp đầy đặn, cân đối, êm đềm đến mức thiên nhiên cũng \"thua\", \"nhường\", như báo hiệu một cuộc đời tương đối êm ả. Điều này khác với chân dung Thúy Kiều vừa đẹp vừa tài hoa nhưng nhiều dự cảm sóng gió."
+  },
+  {
+    "id": 71,
+    "question": "Nhân vật Lục Vân Tiên khi cứu Kiều Nguyệt Nga đã hành động như thế nào?",
+    "options": [
+      "Cân nhắc lợi hại rồi mới cứu",
+      "Thấy việc nghĩa liền ra tay cứu giúp",
+      "Nhờ người khác ra cứu thay",
+      "Làm ngơ vì sợ nguy hiểm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là thấy việc nghĩa liền ra tay cứu giúp. Hành động nhanh chóng, dứt khoát của Lục Vân Tiên thể hiện rõ bản chất nghĩa hiệp, trọng đạo lí và tinh thần bênh vực kẻ yếu. Đây là phẩm chất tiêu biểu mà Nguyễn Đình Chiểu muốn ca ngợi."
+  },
+  {
+    "id": 72,
+    "question": "Tác phẩm \"Bài thơ về tiểu đội xe không kính\" nổi bật ở giọng điệu nào?",
+    "options": [
+      "Trang nghiêm cổ kính",
+      "Tự nhiên, ngang tàng, trẻ trung",
+      "U uất bi thương",
+      "Châm biếm sâu cay"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tự nhiên, ngang tàng, trẻ trung. Phạm Tiến Duật đưa vào thơ giọng nói gần khẩu ngữ, cách nhìn hóm hỉnh và tinh thần lạc quan của người lính lái xe Trường Sơn, làm nên phong cách rất mới mẻ. Chính giọng điệu ấy giúp hình tượng người lính hiện lên sống động và đáng nhớ."
+  },
+  {
+    "id": 73,
+    "question": "Hình ảnh những chiếc xe không kính trước hết phản ánh điều gì?",
+    "options": [
+      "Sự giàu có của quân đội",
+      "Hiện thực khốc liệt của chiến tranh",
+      "Kĩ thuật chế tạo xe kém cỏi",
+      "Sự cẩu thả của người lái xe"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là hiện thực khốc liệt của chiến tranh. Bom đạn làm biến dạng những chiếc xe, nhưng cũng chính từ hiện thực ấy, vẻ đẹp dũng cảm, bất chấp gian khổ và tinh thần lạc quan của người lính được làm nổi bật. Vì thế, đây là một hình ảnh hiện thực giàu sức gợi và mang ý nghĩa biểu tượng."
+  },
+  {
+    "id": 74,
+    "question": "Trong bài thơ \"Đồng chí\", cơ sở đầu tiên hình thành tình đồng chí là gì?",
+    "options": [
+      "Cùng chung lí tưởng và cùng cảnh ngộ xuất thân",
+      "Cùng thích làm thơ",
+      "Cùng quê một huyện",
+      "Cùng họ hàng thân thích"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là cùng chung lí tưởng và cùng cảnh ngộ xuất thân. Những người lính trong bài thơ đều xuất thân từ nông dân nghèo, từ những miền quê xa lạ, gặp nhau trong hàng ngũ cách mạng và cùng chia sẻ gian lao, từ đó nảy nở tình đồng chí bền chặt. Không phải họ gắn bó vì quan hệ họ hàng hay sở thích cá nhân."
+  },
+  {
+    "id": 75,
+    "question": "Bài thơ \"Bếp lửa\" được viết khi tác giả đang ở đâu?",
+    "options": [
+      "Ở chiến trường miền Nam",
+      "Ở nước ngoài, xa quê hương",
+      "Trên đường ra mặt trận",
+      "Ở vùng biển Quảng Ninh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là ở nước ngoài, xa quê hương. Chính hoàn cảnh xa xứ đã làm sống dậy trong Bằng Việt nỗi nhớ bà, nhớ quê hương, nhớ bếp lửa tuổi thơ, khiến bài thơ có giọng điệu hồi tưởng tha thiết và sâu lắng. Yếu tố hoàn cảnh sáng tác góp phần lí giải cảm xúc da diết của tác phẩm."
+  },
+  {
+    "id": 76,
+    "question": "Tác phẩm \"Bếp lửa\" kết hợp những phương thức biểu đạt chủ yếu nào?",
+    "options": [
+      "Miêu tả và nghị luận",
+      "Tự sự, miêu tả, biểu cảm",
+      "Thuyết minh và hành chính",
+      "Nghị luận và kịch"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tự sự, miêu tả, biểu cảm. Bài thơ kể lại những kỉ niệm tuổi thơ, miêu tả hình ảnh bà và bếp lửa, đồng thời bộc lộ trực tiếp những cảm xúc biết ơn, yêu thương sâu nặng của người cháu. Sự kết hợp ấy làm cho tác phẩm vừa chân thực vừa giàu sức lay động."
+  },
+  {
+    "id": 77,
+    "question": "Bài thơ \"Ánh trăng\" được viết sau khi đất nước đã ở giai đoạn nào?",
+    "options": [
+      "Sau hòa bình lập lại",
+      "Trước Cách mạng tháng Tám",
+      "Thời phong kiến",
+      "Giai đoạn chống Pháp đầu tiên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là sau hòa bình lập lại. Khi chiến tranh qua đi, cuộc sống đô thị với ánh điện tiện nghi khiến con người dễ quên quá khứ nghĩa tình, và Nguyễn Duy đã viết bài thơ như một lời tự nhắc và nhắc mọi người sống thủy chung hơn. Bối cảnh này rất quan trọng để hiểu chiều sâu tư tưởng của tác phẩm."
+  },
+  {
+    "id": 78,
+    "question": "Trong bài thơ \"Ánh trăng\", khi mất điện, nhân vật trữ tình có thái độ ra sao trước vầng trăng?",
+    "options": [
+      "Thờ ơ quay đi",
+      "Giật mình, xúc động, tự nhìn lại mình",
+      "Sợ hãi bỏ chạy",
+      "Vui đùa hồn nhiên như trẻ nhỏ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là giật mình, xúc động, tự nhìn lại mình. Cuộc gặp gỡ bất ngờ với vầng trăng quen thuộc khiến nhân vật trữ tình nhận ra sự vô tình của bản thân trước quá khứ nghĩa tình, từ đó thức tỉnh lương tri và đạo lí sống. Chữ \"giật mình\" là điểm nhấn quan trọng của toàn bài."
+  },
+  {
+    "id": 79,
+    "question": "Văn bản \"Bàn về đọc sách\" do ai viết?",
+    "options": [
+      "Chu Quang Tiềm",
+      "Đặng Thai Mai",
+      "Phạm Văn Đồng",
+      "Hoài Thanh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Chu Quang Tiềm. Ông là nhà mĩ học, lí luận văn học nổi tiếng của Trung Quốc, và văn bản này bàn sâu sắc về ý nghĩa, phương pháp đọc sách, đồng thời cảnh báo những lệch lạc dễ gặp trong việc đọc. Các tác giả còn lại không phải người viết văn bản này."
+  },
+  {
+    "id": 80,
+    "question": "Theo \"Bàn về đọc sách\", đọc sách là con đường quan trọng để làm gì?",
+    "options": [
+      "Giải trí nhất thời",
+      "Tích lũy và nâng cao học vấn",
+      "Tìm kiếm sự nổi tiếng",
+      "Tránh mọi giao tiếp xã hội"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tích lũy và nâng cao học vấn. Tác giả cho rằng sách là kho tàng tri thức quý báu của nhân loại, đọc sách là con đường quan trọng để con người tiếp thu thành tựu văn hóa, học thuật của người đi trước. Tuy nhiên, đọc phải có chọn lọc và có phương pháp thì mới hiệu quả."
+  },
+  {
+    "id": 81,
+    "question": "Văn bản \"Tiếng nói của văn nghệ\" là của tác giả nào?",
+    "options": [
+      "Nguyễn Đình Thi",
+      "Tố Hữu",
+      "Xuân Diệu",
+      "Nam Cao"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Đình Thi. Trong văn bản này, ông bàn về sức mạnh cảm hóa của văn nghệ đối với đời sống tinh thần con người, nhấn mạnh văn nghệ không chỉ phản ánh hiện thực mà còn tác động sâu xa vào tâm hồn. Những tác giả còn lại không viết tác phẩm nghị luận này."
+  },
+  {
+    "id": 82,
+    "question": "Theo văn bản \"Tiếng nói của văn nghệ\", nội dung phản ánh của văn nghệ là gì?",
+    "options": [
+      "Chỉ là sự sao chép thực tế khô khan",
+      "Hiện thực đời sống qua lăng kính tình cảm và tư tưởng của nghệ sĩ",
+      "Chỉ gồm những điều vui vẻ",
+      "Hoàn toàn tách rời cuộc sống"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là hiện thực đời sống qua lăng kính tình cảm và tư tưởng của nghệ sĩ. Văn nghệ không chép lại máy móc hiện thực mà mang đến cách nhìn, cách cảm, tiếng nói riêng của người sáng tạo, từ đó thức tỉnh và bồi dưỡng đời sống tâm hồn con người. Đây là luận điểm cốt lõi của văn bản."
+  },
+  {
+    "id": 83,
+    "question": "Văn bản \"Chuẩn bị hành trang vào thế kỉ mới\" của ai?",
+    "options": [
+      "Vũ Khoan",
+      "Lê Anh Trà",
+      "Phạm Văn Đồng",
+      "Nguyễn Đình Thi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Vũ Khoan. Văn bản nêu lên yêu cầu chuẩn bị những phẩm chất, năng lực cần thiết của con người Việt Nam trong thời kì hội nhập, đặc biệt là thế hệ trẻ. Đây là một bài viết mang tính thời sự và định hướng rất rõ."
+  },
+  {
+    "id": 84,
+    "question": "Theo \"Chuẩn bị hành trang vào thế kỉ mới\", điểm mạnh nổi bật của con người Việt Nam là gì?",
+    "options": [
+      "Thông minh, nhạy bén, cần cù",
+      "Tuyệt đối kỉ luật trong mọi hoàn cảnh",
+      "Ít quan hệ tình cảm",
+      "Rất mạnh về công nghiệp lớn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là thông minh, nhạy bén, cần cù. Tác giả vừa ghi nhận những ưu điểm của con người Việt Nam, vừa thẳng thắn chỉ ra các hạn chế như thiếu kiến thức thực hành, kỉ luật chưa cao, tác phong công nghiệp còn yếu, để từ đó nhấn mạnh yêu cầu tự hoàn thiện mình khi bước vào thời đại mới."
+  },
+  {
+    "id": 85,
+    "question": "Tác giả của văn bản \"Mây và sóng\" là ai?",
+    "options": [
+      "Ta-go",
+      "Ê-ren-bua",
+      "An-đéc-xen",
+      "Mác-két"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Ta-go. Ông là nhà thơ lớn của Ấn Độ, và \"Mây và sóng\" là bài thơ giàu chất trữ tình, triết lí, nói về tình mẫu tử thiêng liêng qua hình thức đối thoại tưởng tượng hồn nhiên của em bé. Những tác giả còn lại không sáng tác bài thơ này."
+  },
+  {
+    "id": 86,
+    "question": "Bài thơ \"Mây và sóng\" làm nổi bật tình cảm nào?",
+    "options": [
+      "Tình bạn",
+      "Tình mẫu tử",
+      "Tình yêu đôi lứa",
+      "Tình đồng đội"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tình mẫu tử. Qua những lời mời gọi hấp dẫn của mây và sóng, em bé vẫn chọn ở lại bên mẹ và biến chính tình yêu ấy thành những trò chơi hạnh phúc, cho thấy tình mẹ con là niềm vui lớn lao và bền vững nhất. Đây là giá trị nhân văn sâu sắc của bài thơ."
+  },
+  {
+    "id": 87,
+    "question": "Văn bản \"Ôn dịch, thuốc lá\" thuộc kiểu văn bản nào?",
+    "options": [
+      "Tự sự",
+      "Thuyết minh kết hợp nghị luận",
+      "Truyện truyền kì",
+      "Thơ trữ tình"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là thuyết minh kết hợp nghị luận. Tác giả sử dụng nhiều số liệu, dẫn chứng khoa học để trình bày tác hại nghiêm trọng của thuốc lá, đồng thời bày tỏ thái độ phê phán và cảnh báo mạnh mẽ. Vì vậy, văn bản vừa cung cấp tri thức vừa có sức thuyết phục xã hội cao."
+  },
+  {
+    "id": 88,
+    "question": "Nhan đề \"Ôn dịch, thuốc lá\" có tác dụng gì?",
+    "options": [
+      "Ca ngợi việc hút thuốc",
+      "Gây ấn tượng mạnh, xem thuốc lá như một thứ dịch bệnh nguy hiểm",
+      "Thể hiện sự trung lập hoàn toàn",
+      "Chỉ đơn thuần giới thiệu một sản phẩm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là gây ấn tượng mạnh, xem thuốc lá như một thứ dịch bệnh nguy hiểm. Cách đặt nhan đề ngắn gọn nhưng quyết liệt đã bộc lộ thái độ cảnh báo, lên án, khiến người đọc nhận thức rõ mức độ nghiêm trọng của tác hại thuốc lá đối với cá nhân và cộng đồng."
+  },
+  {
+    "id": 89,
+    "question": "Tác giả của truyện ngắn \"Lão Hạc\" là ai?",
+    "options": [
+      "Nam Cao",
+      "Ngô Tất Tố",
+      "Vũ Trọng Phụng",
+      "Kim Lân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nam Cao. \"Lão Hạc\" là truyện ngắn xuất sắc viết về số phận đau khổ nhưng nhân cách trong sạch của người nông dân trước Cách mạng tháng Tám. Ngô Tất Tố nổi tiếng với \"Tắt đèn\", Vũ Trọng Phụng với các tác phẩm trào phúng, còn Kim Lân là tác giả thời hiện đại sau này."
+  },
+  {
+    "id": 90,
+    "question": "Nguyên nhân nào khiến lão Hạc phải bán cậu Vàng?",
+    "options": [
+      "Vì chán ghét con chó",
+      "Vì túng quẫn, muốn giữ mảnh vườn cho con",
+      "Vì muốn đổi lấy trâu",
+      "Vì bị hàng xóm ép buộc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là vì túng quẫn, muốn giữ mảnh vườn cho con. Hoàn cảnh đói nghèo, cô đơn và tình thương con sâu nặng đã đẩy lão Hạc đến quyết định đau đớn ấy. Chính sự dằn vặt sau khi bán cậu Vàng cho thấy lão là người giàu lòng nhân hậu và sống rất tình nghĩa."
+  },
+  {
+    "id": 91,
+    "question": "Cái chết của lão Hạc thể hiện điều gì?",
+    "options": [
+      "Sự tha hóa của người nông dân",
+      "Bi kịch đau đớn nhưng cũng là sự giữ gìn nhân cách",
+      "Sự ngẫu nhiên vô nghĩa",
+      "Chiến thắng của cái ác"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là bi kịch đau đớn nhưng cũng là sự giữ gìn nhân cách. Lão Hạc chọn cái chết để không tiêu vào mảnh vườn dành cho con và không sa vào con đường xấu xa, qua đó thể hiện lòng tự trọng, tình thương con và nhân phẩm cao đẹp của người nông dân nghèo. Đây là giá trị nhân đạo sâu sắc của truyện."
+  },
+  {
+    "id": 92,
+    "question": "Tác phẩm \"Tức nước vỡ bờ\" trích từ tiểu thuyết nào?",
+    "options": [
+      "Bước đường cùng",
+      "Tắt đèn",
+      "Số đỏ",
+      "Giông tố"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là \"Tắt đèn\". Đây là tiểu thuyết nổi tiếng của Ngô Tất Tố, phản ánh sâu sắc số phận khốn cùng của người nông dân dưới ách áp bức sưu thuế thời thực dân phong kiến. Các tác phẩm còn lại là của những tác giả khác."
+  },
+  {
+    "id": 93,
+    "question": "Nhân vật trung tâm trong đoạn trích \"Tức nước vỡ bờ\" là ai?",
+    "options": [
+      "Bà cụ Tứ",
+      "Chị Dậu",
+      "Lão Hạc",
+      "Thị Nở"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là chị Dậu. Nhân vật này tiêu biểu cho người phụ nữ nông dân nghèo bị áp bức đến đường cùng nhưng vẫn giàu tình thương chồng con và có sức phản kháng mạnh mẽ khi cần thiết. Đây là một trong những hình tượng phụ nữ tiêu biểu của văn học hiện thực phê phán."
+  },
+  {
+    "id": 94,
+    "question": "Nhan đề \"Tức nước vỡ bờ\" gợi quy luật gì?",
+    "options": [
+      "Ở hiền gặp lành",
+      "Có áp bức thì có đấu tranh",
+      "Một điều nhịn chín điều lành",
+      "Lửa gần rơm lâu ngày cũng bén"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là có áp bức thì có đấu tranh. Nhan đề dân gian giàu ý nghĩa khái quát, cho thấy khi bị dồn ép quá mức, con người tất yếu sẽ vùng lên phản kháng. Điều này được thể hiện rõ qua hành động quyết liệt của chị Dậu trước tên cai lệ và người nhà lí trưởng."
+  },
+  {
+    "id": 95,
+    "question": "Tác giả của văn bản \"Trong lòng mẹ\" là ai?",
+    "options": [
+      "Nguyên Hồng",
+      "Nam Cao",
+      "Thanh Tịnh",
+      "Tô Hoài"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyên Hồng. Đoạn trích thuộc hồi kí \"Những ngày thơ ấu\", kể lại những rung động đau đớn mà tha thiết của tác giả thời niên thiếu trước tình mẹ và những thành kiến cay nghiệt của người đời. Nguyên Hồng đặc biệt nổi tiếng với các trang văn giàu cảm xúc về phụ nữ và trẻ em nghèo."
+  },
+  {
+    "id": 96,
+    "question": "Trong văn bản \"Trong lòng mẹ\", bé Hồng có thái độ như thế nào với người cô?",
+    "options": [
+      "Tin theo hoàn toàn",
+      "Thờ ơ không quan tâm",
+      "Đau đớn, căm tức trước sự độc ác và giả dối",
+      "Vui vẻ hưởng ứng câu chuyện"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là đau đớn, căm tức trước sự độc ác và giả dối. Người cô cố gieo vào đầu bé Hồng những ý nghĩ xấu về mẹ, nhưng càng như thế, tình yêu thương và niềm thương mẹ trong em càng mãnh liệt hơn. Diễn biến tâm lí ấy được Nguyên Hồng khắc họa rất chân thực, xúc động."
+  },
+  {
+    "id": 97,
+    "question": "Giá trị nổi bật của đoạn trích \"Trong lòng mẹ\" là gì?",
+    "options": [
+      "Tinh thần trào phúng",
+      "Tình mẫu tử thiêng liêng, mãnh liệt",
+      "Phê phán lối sống đô thị",
+      "Ca ngợi người lính"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tình mẫu tử thiêng liêng, mãnh liệt. Đoạn trích cho thấy dù bị chia cắt và bị bủa vây bởi lời cay độc, tình yêu mẹ của bé Hồng vẫn nguyên vẹn, nồng cháy, trở thành nguồn cảm xúc lớn nhất của tác phẩm. Đây cũng là nét đặc sắc trong phong cách văn chương Nguyên Hồng."
+  },
+  {
+    "id": 98,
+    "question": "Tác giả của truyện ngắn \"Tôi đi học\" là ai?",
+    "options": [
+      "Thanh Tịnh",
+      "Nguyên Hồng",
+      "Nam Cao",
+      "Ngô Tất Tố"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Thanh Tịnh. \"Tôi đi học\" là truyện ngắn giàu chất thơ, tái hiện những cảm xúc trong trẻo, bỡ ngỡ, thiêng liêng của nhân vật \"tôi\" trong buổi đầu tiên đến trường. Phong cách nhẹ nhàng, êm dịu của Thanh Tịnh rất phù hợp với đề tài này."
+  },
+  {
+    "id": 99,
+    "question": "Cảm xúc chủ đạo của nhân vật \"tôi\" trong \"Tôi đi học\" là gì?",
+    "options": [
+      "Sợ hãi cực độ",
+      "Bâng khuâng, hồi hộp, trong sáng",
+      "Phẫn nộ, bất mãn",
+      "Thờ ơ, lãnh đạm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là bâng khuâng, hồi hộp, trong sáng. Tác phẩm gợi lại rất tinh tế những rung động đầu đời của một đứa trẻ trong ngày tựu trường, từ cảm giác lạ lẫm đến niềm vui, sự rụt rè và ý thức lớn lên. Chính dòng cảm xúc ấy làm nên sức hấp dẫn lâu bền của truyện."
+  },
+  {
+    "id": 100,
+    "question": "Tác phẩm \"Quê hương\" của Tế Hanh chủ yếu ca ngợi điều gì?",
+    "options": [
+      "Nỗi đau chiến tranh",
+      "Vẻ đẹp quê hương làng chài và cuộc sống lao động của người dân biển",
+      "Cuộc sống đô thị hiện đại",
+      "Khát vọng công danh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là vẻ đẹp quê hương làng chài và cuộc sống lao động của người dân biển. Bài thơ vừa có những hình ảnh khỏe khoắn, tươi sáng về cảnh ra khơi, vừa chan chứa tình yêu quê da diết của nhà thơ. Đây là một trong những bài thơ hay viết về quê hương trong phong trào Thơ mới."
+  },
+  {
+    "id": 101,
+    "question": "Tác giả bài thơ \"Quê hương\" là ai?",
+    "options": [
+      "Tế Hanh",
+      "Huy Cận",
+      "Xuân Diệu",
+      "Chế Lan Viên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Tế Hanh. Ông nổi tiếng với những bài thơ giàu tình cảm quê hương, đặc biệt là hình ảnh làng chài ven biển quê mình. \"Quê hương\" là tác phẩm tiêu biểu cho hồn thơ trẻ trung, mộc mạc mà tha thiết ấy."
+  },
+  {
+    "id": 102,
+    "question": "Bài thơ \"Khi con tu hú\" được sáng tác bởi ai?",
+    "options": [
+      "Tố Hữu",
+      "Xuân Diệu",
+      "Hàn Mặc Tử",
+      "Nguyễn Bính"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Tố Hữu. Bài thơ được viết trong những ngày đầu nhà thơ bị giam trong nhà lao thực dân, thể hiện lòng yêu cuộc sống, khát vọng tự do cháy bỏng của người chiến sĩ trẻ. Các tác giả còn lại không sáng tác tác phẩm này."
+  },
+  {
+    "id": 103,
+    "question": "Âm thanh tiếng chim tu hú trong bài thơ cùng tên gợi lên điều gì?",
+    "options": [
+      "Nỗi sợ hãi trước bóng tối",
+      "Bức tranh mùa hè rộn rã và khát vọng tự do",
+      "Cảnh mùa đông buồn bã",
+      "Sự yên lặng tuyệt đối"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là bức tranh mùa hè rộn rã và khát vọng tự do. Tiếng chim tu hú mở ra trong tâm tưởng người tù cách mạng cả một thế giới sự sống náo nức bên ngoài song sắt, từ đó làm bùng lên niềm khao khát được thoát khỏi cảnh giam cầm. Đây là mạch cảm xúc chủ đạo của bài thơ."
+  },
+  {
+    "id": 104,
+    "question": "Tác phẩm \"Ngắm trăng\" là sáng tác của ai?",
+    "options": [
+      "Hồ Chí Minh",
+      "Tố Hữu",
+      "Xuân Diệu",
+      "Huy Cận"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Hồ Chí Minh. Bài thơ nằm trong tập \"Nhật kí trong tù\", thể hiện tâm hồn yêu thiên nhiên, phong thái ung dung và nghị lực tinh thần của người chiến sĩ cách mạng trong hoàn cảnh tù đày. Đây là một trong những bài thơ chữ Hán rất nổi tiếng của Bác."
+  },
+  {
+    "id": 105,
+    "question": "Bài thơ \"Đi đường\" của Hồ Chí Minh gợi ra bài học gì?",
+    "options": [
+      "Muốn thành công phải vượt qua gian lao",
+      "Nên tránh mọi khó khăn",
+      "Thiên nhiên luôn nguy hiểm",
+      "Chỉ có nghỉ ngơi mới đem lại hạnh phúc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là muốn thành công phải vượt qua gian lao. Từ trải nghiệm đi đường núi, bài thơ khái quát thành triết lí sống: sau bao chặng gian truân, con người mới đến được đỉnh cao để nhìn thấy cảnh đẹp rộng lớn. Đây là một bài thơ ngắn mà hàm chứa ý nghĩa sâu sắc."
+  },
+  {
+    "id": 106,
+    "question": "Tác phẩm \"Thuế máu\" trích từ tác phẩm nào của Nguyễn Ái Quốc?",
+    "options": [
+      "Bản án chế độ thực dân Pháp",
+      "Đường Kách mệnh",
+      "Nhật kí trong tù",
+      "Tuyên ngôn Độc lập"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là \"Bản án chế độ thực dân Pháp\". Phần trích \"Thuế máu\" vạch trần bộ mặt tàn bạo, giả nhân giả nghĩa của thực dân Pháp khi bắt người dân thuộc địa làm bia đỡ đạn cho chúng. Đây là văn bản chính luận sắc bén, giàu tính chiến đấu của Nguyễn Ái Quốc."
+  },
+  {
+    "id": 107,
+    "question": "Giọng điệu nổi bật trong văn bản \"Thuế máu\" là gì?",
+    "options": [
+      "Nhẹ nhàng tâm tình",
+      "Châm biếm, đanh thép, tố cáo mạnh mẽ",
+      "Lãng mạn mơ mộng",
+      "Thản nhiên vô cảm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là châm biếm, đanh thép, tố cáo mạnh mẽ. Nguyễn Ái Quốc sử dụng lập luận sắc bén cùng lối viết giàu mỉa mai để phơi bày sự tráo trở của thực dân Pháp, từ việc tâng bốc người bản xứ lúc cần đến khi vắt kiệt xương máu họ. Giọng điệu ấy tạo nên sức công phá rất lớn cho văn bản."
+  },
+  {
+    "id": 108,
+    "question": "Tác phẩm \"Nhớ rừng\" là của ai?",
+    "options": [
+      "Thế Lữ",
+      "Lưu Trọng Lư",
+      "Huy Cận",
+      "Chế Lan Viên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Thế Lữ. \"Nhớ rừng\" là bài thơ tiêu biểu của phong trào Thơ mới, mượn lời con hổ bị nhốt để diễn tả tâm trạng uất hận, khát vọng tự do và kín đáo thể hiện lòng yêu nước của lớp trí thức đương thời. Các tác giả còn lại đều là nhà thơ mới nổi tiếng nhưng không viết bài này."
+  },
+  {
+    "id": 109,
+    "question": "Hình tượng con hổ trong \"Nhớ rừng\" tượng trưng chủ yếu cho điều gì?",
+    "options": [
+      "Thú vui săn bắn",
+      "Tâm trạng uất ức và khát vọng tự do của con người",
+      "Sự hung bạo của thiên nhiên",
+      "Sức mạnh quân sự"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tâm trạng uất ức và khát vọng tự do của con người. Con hổ bị giam trong cũi sắt vừa tiếc nuối quá khứ oanh liệt vừa căm ghét thực tại tù túng, qua đó gửi gắm tiếng nói sâu kín của cái tôi cá nhân và tinh thần dân tộc trong hoàn cảnh mất nước. Đây là ý nghĩa biểu tượng quan trọng nhất của bài thơ."
+  },
+  {
+    "id": 110,
+    "question": "Tác phẩm \"Ông đồ\" được sáng tác bởi ai?",
+    "options": [
+      "Vũ Đình Liên",
+      "Xuân Diệu",
+      "Hàn Mặc Tử",
+      "Nguyễn Bính"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Vũ Đình Liên. Bài thơ thể hiện niềm thương cảm trước sự tàn phai của một nét văn hóa cũ và số phận lẻ loi của ông đồ thời Nho học suy tàn. Đây là tác phẩm giàu tính hoài niệm và mang đậm cảm thức nhân văn."
+  },
+  {
+    "id": 111,
+    "question": "Bài thơ \"Ông đồ\" gợi lên cảm xúc chủ đạo nào?",
+    "options": [
+      "Hân hoan chiến thắng",
+      "Ngậm ngùi thương tiếc một giá trị văn hóa cũ đang mất dần",
+      "Giận dữ trước thiên nhiên",
+      "Tự hào về công nghiệp hóa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là ngậm ngùi thương tiếc một giá trị văn hóa cũ đang mất dần. Qua hình ảnh ông đồ ngày càng vắng khách, bài thơ không chỉ xót thương cho một con người mà còn tiếc nuối cho cả một thời đã qua, một lớp người, một nếp sống đang bị lãng quên trong xã hội mới."
+  },
+  {
+    "id": 112,
+    "question": "Tác giả bài thơ \"Đoàn thuyền đánh cá\" sử dụng biện pháp nghệ thuật nổi bật nào?",
+    "options": [
+      "Nói giảm nói tránh là chính",
+      "So sánh, nhân hóa, phóng đại giàu cảm hứng lãng mạn",
+      "Chơi chữ trào phúng",
+      "Ẩn dụ hoán dụ mang tính chính luận"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là so sánh, nhân hóa, phóng đại giàu cảm hứng lãng mạn. Những hình ảnh như mặt trời xuống biển như hòn lửa, sóng cài then, đêm sập cửa, đoàn thuyền chạy đua cùng mặt trời đã tạo nên một bức tranh thiên nhiên và lao động rộng lớn, khỏe khoắn, bay bổng. Đây là nét đặc sắc nghệ thuật nổi bật của bài thơ."
+  },
+  {
+    "id": 113,
+    "question": "Trong \"Lặng lẽ Sa Pa\", vì sao anh thanh niên được gọi là sống \"lặng lẽ\"?",
+    "options": [
+      "Vì anh ít nói và ghét con người",
+      "Vì anh làm việc âm thầm ở nơi cao vắng nhưng đầy trách nhiệm",
+      "Vì anh không có công việc cụ thể",
+      "Vì anh muốn tránh mọi quan hệ xã hội"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là vì anh làm việc âm thầm ở nơi cao vắng nhưng đầy trách nhiệm. Sự \"lặng lẽ\" ở đây không phải cô lập hay buồn tẻ, mà là vẻ đẹp của sự cống hiến thầm lặng, bền bỉ, không phô trương cho công việc chung của đất nước. Chính điều đó làm nhân vật trở nên cao đẹp."
+  },
+  {
+    "id": 114,
+    "question": "Trong truyện \"Lặng lẽ Sa Pa\", nhân vật ông họa sĩ có vai trò gì?",
+    "options": [
+      "Đối thủ của anh thanh niên",
+      "Người phát hiện và trân trọng vẻ đẹp của con người lao động",
+      "Nhân vật phản diện",
+      "Người kể chuyện duy nhất"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là người phát hiện và trân trọng vẻ đẹp của con người lao động. Qua cảm nhận của ông họa sĩ, vẻ đẹp của anh thanh niên và những người làm việc âm thầm hiện lên rõ hơn, đồng thời thể hiện quan niệm của tác giả về thiên chức nghệ thuật: tìm kiếm, phát hiện cái đẹp trong cuộc sống."
+  },
+  {
+    "id": 115,
+    "question": "Trong \"Những ngôi sao xa xôi\", tên ba cô gái trong tổ trinh sát là gì?",
+    "options": [
+      "Phương Định, Nho, Thao",
+      "Thu, Lan, Hạnh",
+      "Liên, Huệ, Nga",
+      "Mai, Hồng, Tuyết"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Phương Định, Nho, Thao. Ba cô gái mỗi người một cá tính riêng nhưng đều có điểm chung là dũng cảm, giàu trách nhiệm và giàu tình đồng đội. Việc khắc họa từng nét riêng giúp tác phẩm trở nên sinh động và chân thực hơn."
+  },
+  {
+    "id": 116,
+    "question": "Trong \"Những ngôi sao xa xôi\", chi tiết trận mưa đá có ý nghĩa gì?",
+    "options": [
+      "Chỉ để kể thêm một hiện tượng thời tiết",
+      "Gợi lại nét hồn nhiên, mộng mơ và khát khao đời thường của các cô gái",
+      "Làm tăng tính kinh dị của truyện",
+      "Thể hiện sự thất bại của nhiệm vụ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là gợi lại nét hồn nhiên, mộng mơ và khát khao đời thường của các cô gái. Sau những căng thẳng của chiến tranh, cơn mưa đá bất ngờ như đánh thức trong Phương Định bao kí ức tuổi thơ, làm nổi bật vẻ đẹp trong trẻo, nữ tính của những cô gái trẻ giữa chiến trường khốc liệt."
+  },
+  {
+    "id": 117,
+    "question": "Trong bài thơ \"Viếng lăng Bác\", hình ảnh hàng tre bên lăng gợi phẩm chất nào của dân tộc Việt Nam?",
+    "options": [
+      "Xa hoa, cầu kì",
+      "Kiên cường, bền bỉ, thủy chung",
+      "Nhút nhát, yếu đuối",
+      "Tách biệt, cô đơn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là kiên cường, bền bỉ, thủy chung. Hàng tre vừa là hình ảnh thực quen thuộc của làng quê Việt Nam, vừa là biểu tượng cho sức sống, phẩm chất ngay thẳng, bất khuất của con người Việt Nam quanh Bác. Cách mở đầu ấy khiến cảm xúc bài thơ vừa dân tộc vừa thiêng liêng."
+  },
+  {
+    "id": 118,
+    "question": "Trong bài thơ \"Mùa xuân nho nhỏ\", hình ảnh nào không xuất hiện?",
+    "options": [
+      "Con chim hót",
+      "Cành hoa",
+      "Tiếng đàn ghi ta",
+      "Nốt trầm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là tiếng đàn ghi ta. Bài thơ có các hình ảnh như con chim, cành hoa, nốt trầm, mùa xuân người cầm súng, người ra đồng... để diễn tả vẻ đẹp mùa xuân thiên nhiên và khát vọng cống hiến. \"Tiếng đàn ghi ta\" không thuộc hệ thống hình ảnh của tác phẩm này."
+  },
+  {
+    "id": 119,
+    "question": "Trong bài thơ \"Bếp lửa\", người cháu trưởng thành nhận ra điều gì từ bà?",
+    "options": [
+      "Bà chỉ là người nhóm lửa hằng ngày",
+      "Bà là người nhóm lửa, giữ lửa và truyền niềm tin, nghị lực sống",
+      "Bà là người nghiêm khắc lạnh lùng",
+      "Bà không ảnh hưởng gì đến cuộc đời cháu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là bà là người nhóm lửa, giữ lửa và truyền niềm tin, nghị lực sống. Hình ảnh bà trong bài thơ không chỉ gắn với công việc cụ thể mà còn mang ý nghĩa biểu tượng sâu sắc: bà đã nuôi dưỡng tâm hồn, thắp lên trong cháu tình yêu thương, đức tin và sức mạnh để trưởng thành."
+  },
+  {
+    "id": 120,
+    "question": "Điểm chung nổi bật của nhiều tác phẩm văn học Việt Nam hiện đại trong chương trình là gì?",
+    "options": [
+      "Chỉ miêu tả thiên nhiên mà không nói đến con người",
+      "Ca ngợi vẻ đẹp con người, tình cảm gia đình, quê hương và tinh thần cống hiến",
+      "Phủ nhận hoàn toàn truyền thống dân tộc",
+      "Chỉ tập trung vào yếu tố kì ảo"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là ca ngợi vẻ đẹp con người, tình cảm gia đình, quê hương và tinh thần cống hiến. Từ người lính, người lao động, người bà, người cha, người mẹ đến thế hệ trẻ trong chiến tranh và hòa bình, các tác phẩm đều hướng tới những giá trị nhân văn tích cực, bồi dưỡng tình yêu quê hương đất nước và lẽ sống đẹp cho người đọc."
+  },
+  {
+    "id": 121,
+    "question": "Tác giả bài thơ \"Đây thôn Vĩ Dạ\" là ai?",
+    "options": [
+      "Hàn Mặc Tử",
+      "Xuân Diệu",
+      "Chế Lan Viên",
+      "Lưu Trọng Lư"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Hàn Mặc Tử. \"Đây thôn Vĩ Dạ\" là một trong những bài thơ nổi bật nhất của ông, thể hiện bức tranh xứ Huế thơ mộng, trong trẻo nhưng thấp thoáng nỗi buồn, sự chia lìa và khát vọng giao cảm với cuộc đời. Xuân Diệu, Chế Lan Viên và Lưu Trọng Lư đều là các nhà thơ nổi tiếng của phong trào Thơ mới, nhưng không phải tác giả bài thơ này."
+  },
+  {
+    "id": 122,
+    "question": "Bài thơ \"Đây thôn Vĩ Dạ\" mở đầu bằng hình thức nào?",
+    "options": [
+      "Một lời trách yêu, lời mời gọi",
+      "Một câu kể chuyện chiến tranh",
+      "Một lời than trách xã hội",
+      "Một mệnh lệnh dứt khoát"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là một lời trách yêu, lời mời gọi. Câu mở đầu \"Sao anh không về chơi thôn Vĩ?\" vừa như lời hỏi, lời mời, vừa như lời trách nhẹ nhàng, thân mật. Nó mở ra cả một không gian thơ dịu dàng, tha thiết và gợi nhiều xao xuyến trong lòng người đọc."
+  },
+  {
+    "id": 123,
+    "question": "Hình ảnh \"nắng hàng cau\" trong \"Đây thôn Vĩ Dạ\" gợi vẻ đẹp gì?",
+    "options": [
+      "Âm u, lạnh lẽo",
+      "Tinh khôi, trong trẻo, tràn đầy sức sống",
+      "Dữ dội, khốc liệt",
+      "Tăm tối, nặng nề"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tinh khôi, trong trẻo, tràn đầy sức sống. Hình ảnh hàng cau đón nắng mai gợi vẻ đẹp tươi non, thanh sạch của khu vườn thôn Vĩ. Qua đó cho thấy cảm nhận rất tinh tế của Hàn Mặc Tử trước vẻ đẹp thiên nhiên xứ Huế."
+  },
+  {
+    "id": 124,
+    "question": "Tác giả bài thơ \"Tây Tiến\" là ai?",
+    "options": [
+      "Quang Dũng",
+      "Chính Hữu",
+      "Phạm Tiến Duật",
+      "Tố Hữu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Quang Dũng. \"Tây Tiến\" là bài thơ tiêu biểu viết về người lính trong kháng chiến chống Pháp, vừa hào hùng vừa lãng mạn. Chính Hữu là tác giả \"Đồng chí\", Phạm Tiến Duật nổi tiếng với thơ chống Mĩ, còn Tố Hữu là nhà thơ trữ tình chính trị."
+  },
+  {
+    "id": 125,
+    "question": "Đoàn quân Tây Tiến trong bài thơ cùng tên chủ yếu hiện lên với vẻ đẹp nào?",
+    "options": [
+      "Bi lụy, yếu đuối",
+      "Hào hoa, dũng cảm, lãng mạn",
+      "Lạnh lùng, vô cảm",
+      "Tham vọng công danh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là hào hoa, dũng cảm, lãng mạn. Người lính Tây Tiến phải đối mặt với núi rừng hiểm trở, bệnh tật, thiếu thốn, nhưng vẫn giữ được tinh thần bi tráng, tâm hồn trẻ trung và nét hào hoa của những chàng trai Hà Nội. Đây là vẻ đẹp rất riêng trong thơ Quang Dũng."
+  },
+  {
+    "id": 126,
+    "question": "Câu thơ \"Sông Mã xa rồi Tây Tiến ơi\" mở đầu bài thơ \"Tây Tiến\" thể hiện cảm xúc gì?",
+    "options": [
+      "Niềm vui hội ngộ",
+      "Nỗi nhớ da diết về đơn vị cũ",
+      "Sự tức giận với chiến tranh",
+      "Tâm trạng dửng dưng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là nỗi nhớ da diết về đơn vị cũ. Câu thơ như một tiếng gọi vọng ra từ sâu thẳm tâm hồn, mở đầu mạch cảm xúc hoài niệm tha thiết về một thời chiến đấu gian lao mà hào hùng. Từ đó, toàn bài thơ triển khai theo dòng hồi tưởng đầy xúc động của tác giả."
+  },
+  {
+    "id": 127,
+    "question": "Tác giả bài thơ \"Việt Bắc\" là ai?",
+    "options": [
+      "Tố Hữu",
+      "Huy Cận",
+      "Nguyễn Khoa Điềm",
+      "Xuân Quỳnh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Tố Hữu. \"Việt Bắc\" là bài thơ tiêu biểu cho phong cách thơ trữ tình chính trị của ông, thể hiện sâu sắc nghĩa tình cách mạng giữa cán bộ kháng chiến và đồng bào Việt Bắc. Các tác giả còn lại có phong cách riêng, nhưng không sáng tác bài thơ này."
+  },
+  {
+    "id": 128,
+    "question": "Bài thơ \"Việt Bắc\" được viết theo hình thức đối đáp giữa ai với ai?",
+    "options": [
+      "Mẹ với con",
+      "Người đi với người ở",
+      "Thầy với trò",
+      "Vợ với chồng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là người đi với người ở. Hình thức đối đáp quen thuộc của ca dao giúp bài thơ vừa ngọt ngào, gần gũi, vừa diễn tả sâu sắc tình cảm lưu luyến, bịn rịn giữa người cán bộ về xuôi và đồng bào căn cứ địa cách mạng. Đây là một nét nghệ thuật rất đặc sắc của tác phẩm."
+  },
+  {
+    "id": 129,
+    "question": "Nội dung nổi bật của bài thơ \"Việt Bắc\" là gì?",
+    "options": [
+      "Ca ngợi đời sống đô thị",
+      "Tái hiện nghĩa tình cách mạng và những kỉ niệm kháng chiến",
+      "Chỉ nói về thiên nhiên bốn mùa",
+      "Phê phán chiến tranh phi nghĩa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tái hiện nghĩa tình cách mạng và những kỉ niệm kháng chiến. Bài thơ vừa nhắc lại những tháng ngày gian khổ mà nghĩa tình ở chiến khu Việt Bắc, vừa khẳng định vai trò của căn cứ địa cách mạng trong cuộc kháng chiến chống Pháp. Thiên nhiên chỉ là một phần trong bức tranh lớn ấy, không phải nội dung duy nhất."
+  },
+  {
+    "id": 130,
+    "question": "Tác giả bài thơ \"Từ ấy\" là ai?",
+    "options": [
+      "Tố Hữu",
+      "Xuân Diệu",
+      "Chế Lan Viên",
+      "Thế Lữ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Tố Hữu. \"Từ ấy\" là bài thơ đánh dấu bước ngoặt lớn trong cuộc đời và hồn thơ của ông khi được giác ngộ lí tưởng cách mạng. Tác phẩm thể hiện niềm vui lớn, lẽ sống mới và sự gắn bó với quần chúng lao khổ."
+  },
+  {
+    "id": 131,
+    "question": "Cụm từ \"Từ ấy\" trong bài thơ cùng tên của Tố Hữu chỉ thời điểm nào?",
+    "options": [
+      "Lúc nhà thơ đi du học",
+      "Lúc nhà thơ được kết nạp vào Đảng",
+      "Lúc đất nước giành độc lập",
+      "Lúc nhà thơ chia tay người yêu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là lúc nhà thơ được kết nạp vào Đảng. Đây là dấu mốc có ý nghĩa quyết định, mở ra cho Tố Hữu một con đường sống, một lí tưởng và một nguồn sáng tinh thần hoàn toàn mới. Vì vậy bài thơ tràn ngập niềm hân hoan, say mê và tin tưởng."
+  },
+  {
+    "id": 132,
+    "question": "Tác giả của bài thơ \"Vội vàng\" là ai?",
+    "options": [
+      "Xuân Diệu",
+      "Huy Cận",
+      "Nguyễn Bính",
+      "Hàn Mặc Tử"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Xuân Diệu. \"Vội vàng\" là bài thơ tiêu biểu cho hồn thơ yêu đời, yêu sống, khát khao tận hưởng vẻ đẹp của cuộc sống trần thế và ý thức sâu sắc về sự trôi chảy của thời gian. Đây là tác phẩm làm nổi bật phong cách thơ mới mẻ, mãnh liệt của Xuân Diệu."
+  },
+  {
+    "id": 133,
+    "question": "Trong bài thơ \"Vội vàng\", tâm trạng chủ đạo của cái tôi trữ tình là gì?",
+    "options": [
+      "Lạnh nhạt với cuộc đời",
+      "Yêu đời tha thiết nhưng lo âu trước sự trôi chảy của thời gian",
+      "Tuyệt vọng vì chiến tranh",
+      "Thù hận con người"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là yêu đời tha thiết nhưng lo âu trước sự trôi chảy của thời gian. Xuân Diệu yêu thiên nhiên, tuổi trẻ, tình yêu và cuộc sống đến say mê, nên càng nhạy cảm trước sự hữu hạn của đời người và vẻ đẹp. Chính điều đó tạo nên quan niệm sống \"vội vàng\" rất đặc trưng."
+  },
+  {
+    "id": 134,
+    "question": "Điệp khúc \"Ta muốn\" trong bài thơ \"Vội vàng\" có tác dụng gì?",
+    "options": [
+      "Thể hiện sự thờ ơ",
+      "Nhấn mạnh khát vọng sống mãnh liệt, cuống quýt",
+      "Tạo giọng điệu châm biếm",
+      "Kể lại một câu chuyện cũ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là nhấn mạnh khát vọng sống mãnh liệt, cuống quýt. Điệp ngữ \"Ta muốn\" kết hợp với hàng loạt động từ mạnh đã diễn tả cái tôi trữ tình đang muốn ôm trọn, tận hưởng, níu giữ mọi vẻ đẹp của cuộc đời. Đây là cao trào cảm xúc đặc sắc của bài thơ."
+  },
+  {
+    "id": 135,
+    "question": "Tác giả bài thơ \"Tràng giang\" là ai?",
+    "options": [
+      "Huy Cận",
+      "Xuân Diệu",
+      "Chế Lan Viên",
+      "Thế Lữ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Huy Cận. \"Tràng giang\" là bài thơ nổi tiếng của phong trào Thơ mới, thể hiện nỗi buồn mênh mang trước không gian sông nước rộng lớn và nỗi cô đơn của con người trước vũ trụ. Đây là một trong những tác phẩm tiêu biểu nhất cho hồn thơ Huy Cận trước Cách mạng."
+  },
+  {
+    "id": 136,
+    "question": "Không gian trong bài thơ \"Tràng giang\" được cảm nhận như thế nào?",
+    "options": [
+      "Chật hẹp, ấm cúng",
+      "Rộng lớn, mênh mang, gợi nỗi cô đơn",
+      "Sôi động, náo nhiệt",
+      "Vui tươi, rộn rã tiếng cười"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là rộng lớn, mênh mang, gợi nỗi cô đơn. Cảnh sông dài, trời rộng, bến vắng, cồn nhỏ và những chuyển động mong manh như cánh bèo, con thuyền đã tạo nên cảm giác trống vắng, hiu quạnh. Từ đó bài thơ gợi nỗi buồn nhân thế và tình yêu quê hương thầm kín."
+  },
+  {
+    "id": 137,
+    "question": "Câu thơ \"Không khói hoàng hôn cũng nhớ nhà\" trong \"Tràng giang\" thể hiện điều gì?",
+    "options": [
+      "Nỗi nhớ nhà, nhớ quê hương sâu kín",
+      "Niềm vui đoàn tụ",
+      "Sự lạnh lùng trước thiên nhiên",
+      "Ý chí chiến đấu quyết liệt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là nỗi nhớ nhà, nhớ quê hương sâu kín. Không cần đến tín hiệu quen thuộc của thơ cổ là khói sóng hoàng hôn, nhà thơ vẫn cảm thấy dâng lên nỗi nhớ quê da diết. Câu thơ cho thấy trong nỗi buồn cá nhân đã có sự gặp gỡ với tình yêu đất nước."
+  },
+  {
+    "id": 138,
+    "question": "Tác giả của bài thơ \"Sóng\" là ai?",
+    "options": [
+      "Xuân Quỳnh",
+      "Hồ Xuân Hương",
+      "Ý Nhi",
+      "Đoàn Thị Điểm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Xuân Quỳnh. \"Sóng\" là bài thơ rất nổi tiếng viết về tình yêu, thể hiện tâm hồn phụ nữ vừa hồn nhiên, chân thành, vừa da diết, mãnh liệt. Phong cách thơ Xuân Quỳnh thường giàu cảm xúc đời thường và rất chân thật trong biểu đạt tình cảm."
+  },
+  {
+    "id": 139,
+    "question": "Hình tượng sóng trong bài thơ cùng tên chủ yếu là ẩn dụ cho điều gì?",
+    "options": [
+      "Thiên nhiên biển cả thuần túy",
+      "Tâm trạng, khát vọng và cung bậc tình yêu của người phụ nữ",
+      "Sự dữ dội của chiến tranh",
+      "Nhịp sống công nghiệp"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tâm trạng, khát vọng và cung bậc tình yêu của người phụ nữ. Sóng vừa là hình ảnh thiên nhiên, vừa là hình ảnh song hành với \"em\", giúp nhà thơ diễn tả rất tinh tế trạng thái yêu thương: nhớ nhung, băn khoăn, khát vọng hòa nhập và lo âu trước sự hữu hạn của đời người."
+  },
+  {
+    "id": 140,
+    "question": "Hai câu thơ \"Dữ dội và dịu êm / Ồn ào và lặng lẽ\" trong bài \"Sóng\" nói lên điều gì?",
+    "options": [
+      "Sự thay đổi thất thường của thời tiết",
+      "Những trạng thái đối cực mà thống nhất trong tình yêu",
+      "Sự đối đầu giữa người với biển",
+      "Mâu thuẫn xã hội gay gắt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là những trạng thái đối cực mà thống nhất trong tình yêu. Tình yêu chân thật thường có nhiều cung bậc cảm xúc phức tạp: mãnh liệt mà dịu dàng, sôi nổi mà sâu lắng. Xuân Quỳnh đã mượn sóng để nói rất đúng và rất đẹp về tâm hồn người đang yêu."
+  },
+  {
+    "id": 141,
+    "question": "Tác giả bài thơ \"Đàn ghi ta của Lor-ca\" là ai?",
+    "options": [
+      "Thanh Thảo",
+      "Nguyễn Duy",
+      "Tố Hữu",
+      "Bằng Việt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Thanh Thảo. Bài thơ viết về nhà thơ, nhạc sĩ thiên tài Federico Garcia Lorca của Tây Ban Nha, ca ngợi người nghệ sĩ tự do và số phận bi tráng của cái đẹp trước bạo lực. Đây là tác phẩm tiêu biểu cho thơ hiện đại giàu tính tượng trưng, siêu thực."
+  },
+  {
+    "id": 142,
+    "question": "Bài thơ \"Đàn ghi ta của Lor-ca\" chủ yếu ca ngợi điều gì?",
+    "options": [
+      "Chiến tranh công nghệ cao",
+      "Vẻ đẹp, khát vọng tự do và sự bất tử của người nghệ sĩ chân chính",
+      "Sự giàu có của châu Âu",
+      "Tình bạn tuổi học trò"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là vẻ đẹp, khát vọng tự do và sự bất tử của người nghệ sĩ chân chính. Qua hình tượng Lorca, Thanh Thảo bày tỏ lòng ngưỡng mộ với người nghệ sĩ tài hoa, dũng cảm, dám đấu tranh cho cái đẹp và đổi mới nghệ thuật. Dù bị sát hại, Lorca vẫn sống mãi trong nghệ thuật và tâm hồn nhân loại."
+  },
+  {
+    "id": 143,
+    "question": "Tác giả của trường ca \"Mặt đường khát vọng\" là ai?",
+    "options": [
+      "Nguyễn Khoa Điềm",
+      "Chế Lan Viên",
+      "Hữu Thỉnh",
+      "Tố Hữu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Khoa Điềm. Đoạn trích \"Đất Nước\" trong trường ca này là tác phẩm rất tiêu biểu, thể hiện cách nhìn mới mẻ, sâu sắc về đất nước từ bình diện văn hóa, lịch sử, truyền thống và nhân dân. Các tác giả còn lại không sáng tác trường ca này."
+  },
+  {
+    "id": 144,
+    "question": "Trong đoạn trích \"Đất Nước\", tư tưởng cốt lõi là gì?",
+    "options": [
+      "Đất nước của riêng vua chúa",
+      "Đất nước là của nhân dân",
+      "Đất nước chỉ là lãnh thổ địa lí",
+      "Đất nước chỉ tồn tại trong chiến tranh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là đất nước là của nhân dân. Nguyễn Khoa Điềm nhìn đất nước không chỉ qua không gian địa lí và thời gian lịch sử mà còn qua đời sống hằng ngày, phong tục, ca dao, truyền thuyết và công sức của biết bao thế hệ bình dị. Điều này tạo nên chiều sâu tư tưởng rất lớn cho tác phẩm."
+  },
+  {
+    "id": 145,
+    "question": "Chất liệu nào được sử dụng nhiều trong đoạn trích \"Đất Nước\"?",
+    "options": [
+      "Ngôn ngữ khoa học",
+      "Văn hóa dân gian, ca dao, truyền thuyết",
+      "Thuật ngữ quân sự",
+      "Ngôn ngữ hành chính"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là văn hóa dân gian, ca dao, truyền thuyết. Tác giả vận dụng rất nhiều chất liệu quen thuộc như truyện cổ tích, phong tục ăn trầu, truyền thuyết Thánh Gióng, câu ca dao dân gian để làm nổi bật ý niệm đất nước gần gũi, thân thuộc và được hình thành từ đời sống nhân dân."
+  },
+  {
+    "id": 146,
+    "question": "Tác giả bài thơ \"Ai đã đặt tên cho dòng sông?\" là ai?",
+    "options": [
+      "Hoàng Phủ Ngọc Tường",
+      "Nguyễn Tuân",
+      "Thạch Lam",
+      "Nguyễn Minh Châu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Hoàng Phủ Ngọc Tường. Đây là một bút kí nổi tiếng viết về sông Hương, thể hiện vốn hiểu biết phong phú và lối viết giàu chất trí tuệ, chất thơ của tác giả. Nguyễn Tuân cũng nổi tiếng với tùy bút sông nước, nhưng không phải tác giả tác phẩm này."
+  },
+  {
+    "id": 147,
+    "question": "Sông Hương trong tùy bút \"Ai đã đặt tên cho dòng sông?\" được nhìn nhận như thế nào?",
+    "options": [
+      "Chỉ là một dòng sông bình thường",
+      "Mang vẻ đẹp đa dạng: hoang dại, trữ tình, lịch sử, văn hóa",
+      "Là biểu tượng của chiến tranh",
+      "Chỉ đẹp ở thượng nguồn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là mang vẻ đẹp đa dạng: hoang dại, trữ tình, lịch sử, văn hóa. Tác giả khám phá sông Hương từ nhiều góc nhìn, khi là cô gái Di-gan phóng khoáng ở thượng nguồn, khi dịu dàng giữa lòng Huế, khi gắn với lịch sử dân tộc và thơ ca. Nhờ đó hình tượng sông Hương hiện lên rất sinh động và giàu chiều sâu."
+  },
+  {
+    "id": 148,
+    "question": "Tác giả của tùy bút \"Người lái đò sông Đà\" là ai?",
+    "options": [
+      "Nguyễn Tuân",
+      "Tô Hoài",
+      "Hoàng Phủ Ngọc Tường",
+      "Kim Lân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Tuân. Tác phẩm là kết quả chuyến đi thực tế Tây Bắc, thể hiện phong cách tài hoa, uyên bác của ông trong việc khám phá vẻ đẹp thiên nhiên hùng vĩ và con người lao động bình dị mà phi thường. Đây là một tùy bút rất nổi tiếng của văn học hiện đại."
+  },
+  {
+    "id": 149,
+    "question": "Sông Đà trong tác phẩm của Nguyễn Tuân có hai nét tính cách nổi bật nào?",
+    "options": [
+      "Hiền lành và tẻ nhạt",
+      "Hung bạo và trữ tình",
+      "Lạnh lùng và vô nghĩa",
+      "Chỉ dữ dội, không có vẻ đẹp"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là hung bạo và trữ tình. Nguyễn Tuân đã khắc họa sông Đà vừa dữ dội, hiểm trở với thác ghềnh, hút nước, vừa thơ mộng, mềm mại, giàu chất thơ ở những quãng lặng. Sự đối lập ấy làm nên vẻ đẹp độc đáo của thiên nhiên Tây Bắc."
+  },
+  {
+    "id": 150,
+    "question": "Hình tượng người lái đò trong \"Người lái đò sông Đà\" chủ yếu được ca ngợi ở phẩm chất nào?",
+    "options": [
+      "Giàu có và quyền lực",
+      "Tài hoa, dũng cảm, từng trải trong lao động",
+      "Lạnh lùng, ít nói",
+      "Tham vọng danh tiếng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tài hoa, dũng cảm, từng trải trong lao động. Ông lái đò hiện lên như một nghệ sĩ trên sông nước, am hiểu \"binh pháp của thần sông thần đá\", bình tĩnh, mưu trí vượt qua thác dữ. Nguyễn Tuân qua đó đã phát hiện vẻ đẹp của con người lao động trong thời đại mới."
+  },
+  {
+    "id": 151,
+    "question": "Tác giả truyện ngắn \"Vợ nhặt\" là ai?",
+    "options": [
+      "Kim Lân",
+      "Nam Cao",
+      "Ngô Tất Tố",
+      "Nguyễn Công Hoan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Kim Lân. \"Vợ nhặt\" là truyện ngắn xuất sắc viết về nạn đói năm 1945, đồng thời làm nổi bật tình người, khát vọng sống và niềm tin vào tương lai của những con người nghèo khổ. Đây là một trong những tác phẩm thành công nhất của Kim Lân."
+  },
+  {
+    "id": 152,
+    "question": "Tình huống truyện độc đáo của \"Vợ nhặt\" là gì?",
+    "options": [
+      "Một người lính trở về sau chiến tranh",
+      "Tràng nhặt được vợ giữa nạn đói khủng khiếp",
+      "Một cậu bé đi lạc trong thành phố",
+      "Một người già trúng số"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là Tràng nhặt được vợ giữa nạn đói khủng khiếp. Tình huống này vừa éo le, bất ngờ, vừa giàu ý nghĩa nhân văn vì trong hoàn cảnh cái chết cận kề, con người vẫn hướng về tổ ấm, về sự sống và niềm hy vọng. Đây là điểm sáng nghệ thuật rất lớn của truyện."
+  },
+  {
+    "id": 153,
+    "question": "Chi tiết nồi cháo cám trong \"Vợ nhặt\" có ý nghĩa gì?",
+    "options": [
+      "Thể hiện cuộc sống sung túc",
+      "Tố cáo cái đói cùng cực nhưng cũng làm nổi bật tình thương và sự vun vén gia đình",
+      "Là món ăn đặc sản vùng quê",
+      "Chỉ dùng để gây cười"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tố cáo cái đói cùng cực nhưng cũng làm nổi bật tình thương và sự vun vén gia đình. Nồi cháo cám là hiện thực cay đắng của nạn đói, song qua cách bà cụ Tứ cố gắng vui vẻ, động viên các con, chi tiết ấy lại sáng lên vẻ đẹp của tình mẫu tử và niềm tin mong manh mà bền bỉ vào ngày mai."
+  },
+  {
+    "id": 154,
+    "question": "Tác giả truyện ngắn \"Vợ chồng A Phủ\" là ai?",
+    "options": [
+      "Tô Hoài",
+      "Nguyễn Thi",
+      "Nguyên Ngọc",
+      "Kim Lân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Tô Hoài. \"Vợ chồng A Phủ\" là truyện ngắn đặc sắc viết về cuộc sống và quá trình thức tỉnh của người dân miền núi Tây Bắc dưới ách áp bức của phong kiến, thực dân. Tô Hoài có vốn hiểu biết rất sâu sắc về vùng cao nên tác phẩm giàu màu sắc dân tộc và hiện thực."
+  },
+  {
+    "id": 155,
+    "question": "Nhân vật Mị trong \"Vợ chồng A Phủ\" ban đầu là người như thế nào?",
+    "options": [
+      "Lười biếng, cam chịu từ nhỏ",
+      "Xinh đẹp, tài giỏi, yêu đời",
+      "Giàu có, sung sướng",
+      "Tàn nhẫn, độc ác"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là xinh đẹp, tài giỏi, yêu đời. Mị từng là cô gái trẻ trung, có tài thổi sáo, chăm làm, hiếu thảo và có khát vọng tự do. Chính vì vậy, bi kịch bị bắt về làm dâu gạt nợ ở nhà thống lí Pá Tra càng trở nên đau xót và giàu sức tố cáo."
+  },
+  {
+    "id": 156,
+    "question": "Chi tiết đêm tình mùa xuân trong \"Vợ chồng A Phủ\" cho thấy điều gì ở Mị?",
+    "options": [
+      "Sức sống tiềm tàng và khát vọng tự do chưa bao giờ tắt",
+      "Mị hoàn toàn vô cảm",
+      "Mị chỉ muốn trả thù",
+      "Mị đã quên hết quá khứ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là sức sống tiềm tàng và khát vọng tự do chưa bao giờ tắt. Trong men rượu, tiếng sáo và không khí mùa xuân, phần người bị vùi lấp trong Mị đã trỗi dậy mãnh liệt, khiến cô muốn đi chơi, muốn sống lại tuổi trẻ. Điều đó chứng tỏ sức sống tinh thần của Mị chưa hề bị dập tắt hoàn toàn."
+  },
+  {
+    "id": 157,
+    "question": "Vì sao Mị cắt dây trói cứu A Phủ?",
+    "options": [
+      "Vì được ai đó sai bảo",
+      "Vì lòng thương người và sự thức tỉnh ý thức phản kháng",
+      "Vì muốn lấy lòng thống lí",
+      "Vì tò mò nhất thời"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là vì lòng thương người và sự thức tỉnh ý thức phản kháng. Khi nhìn thấy dòng nước mắt của A Phủ, Mị nhận ra sự tương đồng giữa số phận mình với người khác, từ đó lòng thương và ý thức tự giải thoát bùng lên mạnh mẽ. Hành động cắt dây trói là bước ngoặt lớn trong quá trình hồi sinh của nhân vật."
+  },
+  {
+    "id": 158,
+    "question": "Tác giả truyện ngắn \"Rừng xà nu\" là ai?",
+    "options": [
+      "Nguyên Ngọc",
+      "Nguyễn Trung Thành",
+      "Tô Hoài",
+      "Nguyễn Thi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyên Ngọc. Nguyễn Trung Thành là bút danh khác của chính nhà văn này, nhưng trong sách giáo khoa thường ghi tác giả là Nguyên Ngọc. \"Rừng xà nu\" là tác phẩm tiêu biểu viết về sức sống bất diệt và con đường đấu tranh cách mạng của đồng bào Tây Nguyên."
+  },
+  {
+    "id": 159,
+    "question": "Hình tượng cây xà nu trong \"Rừng xà nu\" tượng trưng cho điều gì?",
+    "options": [
+      "Sự tàn úa của thiên nhiên",
+      "Sức sống mãnh liệt và phẩm chất của dân làng Xô Man",
+      "Sự vô nghĩa của chiến tranh",
+      "Cuộc sống đô thị hiện đại"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là sức sống mãnh liệt và phẩm chất của dân làng Xô Man. Cây xà nu chịu nhiều bom đạn nhưng vẫn sinh sôi, vươn lên mạnh mẽ, giống như con người Tây Nguyên kiên cường, bất khuất trong đấu tranh. Đây là một hình tượng mang ý nghĩa biểu tượng rất lớn của tác phẩm."
+  },
+  {
+    "id": 160,
+    "question": "Nhân vật Tnú trong \"Rừng xà nu\" tiêu biểu cho điều gì?",
+    "options": [
+      "Sự đầu hàng số phận",
+      "Con đường đấu tranh từ đau thương riêng đến ý thức cách mạng",
+      "Lối sống hưởng thụ",
+      "Sự khôn ngoan mưu mẹo"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là con đường đấu tranh từ đau thương riêng đến ý thức cách mạng. Cuộc đời Tnú gắn với nhiều mất mát đau đớn, nhưng chính bi kịch ấy đã hun đúc tinh thần chiến đấu và khẳng định chân lí: chỉ có cầm vũ khí đứng lên mới bảo vệ được cuộc sống, quê hương. Đây là tư tưởng quan trọng của truyện."
+  },
+  {
+    "id": 161,
+    "question": "Tác giả của truyện ngắn \"Những đứa con trong gia đình\" là ai?",
+    "options": [
+      "Nguyễn Thi",
+      "Nguyễn Minh Châu",
+      "Nguyễn Quang Sáng",
+      "Lê Minh Khuê"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Thi. Ông là nhà văn gắn bó sâu sắc với miền Nam thời chống Mĩ, có biệt tài phân tích tâm lí và khắc họa tính cách con người Nam Bộ. \"Những đứa con trong gia đình\" là tác phẩm tiêu biểu cho phong cách đó."
+  },
+  {
+    "id": 162,
+    "question": "Truyền thống gia đình trong \"Những đứa con trong gia đình\" là gì?",
+    "options": [
+      "Buôn bán giàu có",
+      "Yêu nước, căm thù giặc, thủy chung với cách mạng",
+      "Học hành đỗ đạt làm quan",
+      "Sống khép kín với xóm làng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là yêu nước, căm thù giặc, thủy chung với cách mạng. Từ má Việt, chú Năm đến Chiến, Việt, tất cả đều mang trong mình mối thù nhà nợ nước và tinh thần tiếp nối truyền thống gia đình, sẵn sàng chiến đấu vì quê hương. Đây là nguồn sức mạnh tinh thần lớn của các nhân vật."
+  },
+  {
+    "id": 163,
+    "question": "Nhân vật Việt trong \"Những đứa con trong gia đình\" có nét tính cách nổi bật nào?",
+    "options": [
+      "Vừa hồn nhiên, trẻ con vừa gan góc, giàu tình cảm",
+      "Lạnh lùng, thực dụng",
+      "Yếu đuối, sợ chiến đấu",
+      "Mưu mô, ích kỉ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là vừa hồn nhiên, trẻ con vừa gan góc, giàu tình cảm. Việt còn giữ nhiều nét vô tư của tuổi trẻ như hay tranh phần với chị, sợ ma, nhưng khi chiến đấu lại rất dũng cảm, kiên cường và đặc biệt yêu thương gia đình. Sự kết hợp ấy làm nhân vật trở nên rất chân thực, đáng mến."
+  },
+  {
+    "id": 164,
+    "question": "Tác giả của truyện ngắn \"Chiếc thuyền ngoài xa\" là ai?",
+    "options": [
+      "Nguyễn Minh Châu",
+      "Kim Lân",
+      "Nguyễn Thi",
+      "Tô Hoài"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Minh Châu. Đây là truyện ngắn tiêu biểu cho giai đoạn sáng tác sau 1975 của ông, thể hiện những trăn trở về con người, cuộc sống và cách nhìn nhận hiện thực. Tác phẩm giàu tính triết lí và chiều sâu nhân bản."
+  },
+  {
+    "id": 165,
+    "question": "Tình huống nhận thức trong \"Chiếc thuyền ngoài xa\" là gì?",
+    "options": [
+      "Phùng gặp lại bạn cũ",
+      "Phùng phát hiện bức tranh thiên nhiên đẹp rồi chứng kiến cảnh bạo lực gia đình ngay sau đó",
+      "Phùng bị lạc giữa biển",
+      "Phùng đi chiến đấu trở về"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là Phùng phát hiện bức tranh thiên nhiên đẹp rồi chứng kiến cảnh bạo lực gia đình ngay sau đó. Tình huống này buộc nhân vật và người đọc nhận ra rằng cuộc sống không đơn giản như vẻ bề ngoài; đằng sau cái đẹp toàn bích có thể là những nghịch lí đau đớn. Đây là hạt nhân tư tưởng của truyện."
+  },
+  {
+    "id": 166,
+    "question": "Thông điệp nổi bật của \"Chiếc thuyền ngoài xa\" là gì?",
+    "options": [
+      "Chỉ nên nhìn đời bằng cảm xúc thẩm mĩ",
+      "Cần có cái nhìn đa diện, sâu sắc về con người và cuộc sống",
+      "Nghệ thuật không liên quan gì đến đời sống",
+      "Mọi bi kịch đều không thể thay đổi"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là cần có cái nhìn đa diện, sâu sắc về con người và cuộc sống. Nguyễn Minh Châu đặt ra vấn đề về mối quan hệ giữa nghệ thuật và đời sống, giữa vẻ đẹp bên ngoài và sự thật bên trong, từ đó nhắc nhở con người không được nhìn nhận hiện thực một chiều, đơn giản."
+  },
+  {
+    "id": 167,
+    "question": "Người đàn bà hàng chài trong \"Chiếc thuyền ngoài xa\" hiện lên chủ yếu với vẻ đẹp nào?",
+    "options": [
+      "Kiêu sa, đài các",
+      "Nhẫn nhục, từng trải, giàu đức hi sinh và thấu hiểu lẽ đời",
+      "Lạnh lùng, tàn nhẫn",
+      "Vô tâm với con cái"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là nhẫn nhục, từng trải, giàu đức hi sinh và thấu hiểu lẽ đời. Qua lời kể ở tòa án huyện, người đàn bà khiến Phùng và Đẩu phải nhìn nhận lại nhiều điều, bởi đằng sau dáng vẻ cam chịu là một người mẹ hết lòng vì con và có cái nhìn thực tế về cuộc sống mưu sinh. Đây là nhân vật rất giàu chiều sâu."
+  },
+  {
+    "id": 168,
+    "question": "Tác giả truyện ngắn \"Hai đứa trẻ\" là ai?",
+    "options": [
+      "Thạch Lam",
+      "Nam Cao",
+      "Vũ Trọng Phụng",
+      "Ngô Tất Tố"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Thạch Lam. \"Hai đứa trẻ\" là truyện ngắn trữ tình nổi tiếng của ông, không nhiều sự kiện nhưng giàu cảm xúc, tinh tế trong việc miêu tả đời sống phố huyện nghèo và tâm trạng nhân vật. Đây là tác phẩm tiêu biểu cho phong cách nhẹ nhàng mà sâu lắng của Thạch Lam."
+  },
+  {
+    "id": 169,
+    "question": "Khung cảnh phố huyện trong \"Hai đứa trẻ\" hiện lên như thế nào?",
+    "options": [
+      "Sầm uất, phát triển",
+      "Nghèo nàn, tĩnh lặng, buồn man mác",
+      "Hỗn loạn, bạo lực",
+      "Xa hoa, tráng lệ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là nghèo nàn, tĩnh lặng, buồn man mác. Thạch Lam không tố cáo dữ dội mà nhẹ nhàng gợi lên cái tù đọng, quẩn quanh của đời sống nơi phố huyện, qua ánh chiều tàn, chợ tàn, những kiếp người nhỏ bé. Chính bầu không khí ấy làm nổi bật niềm thương cảm nhân đạo của nhà văn."
+  },
+  {
+    "id": 170,
+    "question": "Hình ảnh đoàn tàu trong \"Hai đứa trẻ\" có ý nghĩa gì?",
+    "options": [
+      "Chỉ để thay đổi nhịp kể chuyện",
+      "Biểu tượng của một thế giới khác sáng hơn, khơi dậy ước mơ và khát vọng",
+      "Biểu tượng của chiến tranh",
+      "Chi tiết gây cười"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là biểu tượng của một thế giới khác sáng hơn, khơi dậy ước mơ và khát vọng. Với Liên và An, đoàn tàu là dấu hiệu của Hà Nội, của ánh sáng, của những gì tươi đẹp và đáng mơ ước, đối lập với cuộc sống tẻ nhạt, tối tăm nơi phố huyện. Chi tiết này mang giá trị biểu tượng rất đẹp."
+  },
+  {
+    "id": 171,
+    "question": "Tác giả của truyện ngắn \"Chữ người tử tù\" là ai?",
+    "options": [
+      "Nguyễn Tuân",
+      "Nam Cao",
+      "Thạch Lam",
+      "Kim Lân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Tuân. \"Chữ người tử tù\" là truyện ngắn đặc sắc trong tập \"Vang bóng một thời\", thể hiện quan niệm thẩm mĩ của ông về cái đẹp, cái tài và thiên lương. Tác phẩm nổi bật với bút pháp tài hoa, giàu chất điện ảnh và kịch."
+  },
+  {
+    "id": 172,
+    "question": "Nhân vật Huấn Cao trong \"Chữ người tử tù\" là người như thế nào?",
+    "options": [
+      "Tài hoa, khí phách, có thiên lương trong sáng",
+      "Tầm thường, ích kỉ",
+      "Chỉ giỏi võ nghệ",
+      "Sợ hãi trước cái chết"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là tài hoa, khí phách, có thiên lương trong sáng. Huấn Cao vừa là người viết chữ đẹp nổi tiếng, vừa là bậc anh hùng có chí lớn, đồng thời biết trân trọng tấm lòng biệt nhỡn liên tài của quản ngục. Nhân vật hội tụ vẻ đẹp toàn diện mà Nguyễn Tuân đặc biệt ngưỡng mộ."
+  },
+  {
+    "id": 173,
+    "question": "Cảnh cho chữ trong \"Chữ người tử tù\" được xem là gì?",
+    "options": [
+      "Một cảnh tượng xưa nay chưa từng có",
+      "Một cảnh sinh hoạt bình thường",
+      "Một màn tra khảo tàn nhẫn",
+      "Một buổi hội thơ vui vẻ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là một cảnh tượng xưa nay chưa từng có. Trong không gian ngục tù tăm tối, cái đẹp, cái tài, thiên lương lại tỏa sáng và chiến thắng bóng tối, cái ác. Sự đảo ngược vị thế giữa tử tù và quản ngục làm nên ý nghĩa thẩm mĩ và nhân văn đặc biệt cho cảnh này."
+  },
+  {
+    "id": 174,
+    "question": "Tác giả bài thơ \"Tự tình II\" là ai?",
+    "options": [
+      "Hồ Xuân Hương",
+      "Bà Huyện Thanh Quan",
+      "Đoàn Thị Điểm",
+      "Xuân Hương công chúa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Hồ Xuân Hương. Bài thơ \"Tự tình II\" thể hiện tâm trạng cô đơn, buồn tủi nhưng vẫn bản lĩnh, khát khao hạnh phúc của người phụ nữ trong xã hội phong kiến. Hồ Xuân Hương nổi tiếng với tiếng thơ vừa trào phúng vừa nhân văn, mạnh mẽ bênh vực phụ nữ."
+  },
+  {
+    "id": 175,
+    "question": "Hai câu thực trong bài \"Tự tình II\" sử dụng hình ảnh nào để diễn tả tâm trạng?",
+    "options": [
+      "Rêu và đá",
+      "Mây và núi",
+      "Trăng và sao",
+      "Sông và biển"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là rêu và đá. Những hình ảnh \"xiên ngang mặt đất, rêu từng đám\" và \"đâm toạc chân mây, đá mấy hòn\" vừa mang tính tả cảnh, vừa biểu hiện cá tính mạnh mẽ, sự bứt phá và nỗi bức bối dồn nén của nhân vật trữ tình. Đây là nét nghệ thuật rất độc đáo của bài thơ."
+  },
+  {
+    "id": 176,
+    "question": "Tác giả của bài thơ \"Thương vợ\" là ai?",
+    "options": [
+      "Tú Xương",
+      "Nguyễn Khuyến",
+      "Nguyễn Công Trứ",
+      "Trần Tế Xương"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Tú Xương. Cần lưu ý Tú Xương chính là bút danh quen gọi của Trần Tế Xương, nhưng trong lựa chọn này đáp án thường lấy theo tên gọi quen thuộc trong chương trình. Bài thơ thể hiện tình thương yêu, biết ơn sâu sắc của nhà thơ đối với người vợ tần tảo, đảm đang."
+  },
+  {
+    "id": 177,
+    "question": "Hình ảnh bà Tú trong bài thơ \"Thương vợ\" hiện lên như thế nào?",
+    "options": [
+      "Nhàn nhã, sống sung sướng",
+      "Tần tảo, đảm đang, hi sinh vì chồng con",
+      "Cao sang, quyền quý",
+      "Lạnh lùng, vô cảm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là tần tảo, đảm đang, hi sinh vì chồng con. Qua hình ảnh \"quanh năm buôn bán ở mom sông\" và những thành ngữ dân gian giàu sức gợi, Tú Xương đã khắc họa chân thực người phụ nữ Việt Nam chịu thương chịu khó, đồng thời bộc lộ tấm lòng trân trọng, thương yêu chân thành của mình."
+  },
+  {
+    "id": 178,
+    "question": "Tác giả của bài thơ \"Câu cá mùa thu\" là ai?",
+    "options": [
+      "Nguyễn Khuyến",
+      "Tản Đà",
+      "Tú Xương",
+      "Nguyễn Du"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Khuyến. \"Câu cá mùa thu\" là bài thơ tiêu biểu trong chùm thơ thu nổi tiếng của ông, thể hiện cảnh thu làng quê Bắc Bộ trong trẻo, tĩnh lặng và tâm sự u hoài của nhà thơ trước thời cuộc. Nguyễn Khuyến được mệnh danh là nhà thơ của làng cảnh Việt Nam."
+  },
+  {
+    "id": 179,
+    "question": "Không gian mùa thu trong \"Câu cá mùa thu\" có đặc điểm gì nổi bật?",
+    "options": [
+      "Rực rỡ, náo nhiệt",
+      "Nhỏ hẹp, trong trẻo, tĩnh lặng",
+      "Hoang dã, hùng vĩ",
+      "Âm u, dữ dội"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là nhỏ hẹp, trong trẻo, tĩnh lặng. Ao thu lạnh lẽo, thuyền câu bé tẻo teo, sóng gợn tí, lá vàng khẽ đưa vèo... tất cả góp phần tạo nên một không gian rất thu Việt Nam, vừa thanh sơ, tinh tế vừa gợi nỗi cô đơn, u hoài trong lòng tác giả."
+  },
+  {
+    "id": 180,
+    "question": "Tác giả của bài thơ \"Bài ca ngất ngưởng\" là ai?",
+    "options": [
+      "Nguyễn Công Trứ",
+      "Cao Bá Quát",
+      "Nguyễn Khuyến",
+      "Phan Bội Châu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Công Trứ. Bài thơ thể hiện bản lĩnh cá nhân mạnh mẽ, ý thức về tài năng và nhân cách của nhà thơ trong cuộc sống cũng như chốn quan trường. Nguyễn Công Trứ là một nhà thơ, nhà quân sự, nhà chính trị có cá tính rất độc đáo trong văn học trung đại."
+  },
+  {
+    "id": 181,
+    "question": "Từ \"ngất ngưởng\" trong bài thơ của Nguyễn Công Trứ thể hiện điều gì?",
+    "options": [
+      "Sự ngã quỵ tuyệt vọng",
+      "Lối sống, phong thái khác thường, bản lĩnh, vượt lên khuôn sáo",
+      "Sự run sợ trước quyền lực",
+      "Trạng thái say rượu đơn thuần"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là lối sống, phong thái khác thường, bản lĩnh, vượt lên khuôn sáo. \"Ngất ngưởng\" là cách Nguyễn Công Trứ khẳng định cái tôi cá nhân mạnh mẽ, sống theo tài năng và khí phách của mình mà không chịu bó buộc hoàn toàn bởi lễ giáo hay dư luận thông thường. Đây là tinh thần rất đáng chú ý của bài thơ."
+  },
+  {
+    "id": 182,
+    "question": "Tác giả bài thơ \"Lưu biệt khi xuất dương\" là ai?",
+    "options": [
+      "Phan Bội Châu",
+      "Phan Châu Trinh",
+      "Tản Đà",
+      "Nguyễn Thượng Hiền"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Phan Bội Châu. Bài thơ được viết trước khi ông sang Nhật Bản tìm đường cứu nước, thể hiện chí làm trai, khát vọng lập công vì dân vì nước và tinh thần vượt lên những giới hạn cũ. Đây là tác phẩm giàu khí thế của thơ văn yêu nước đầu thế kỉ XX."
+  },
+  {
+    "id": 183,
+    "question": "Bài thơ \"Lưu biệt khi xuất dương\" thể hiện cảm hứng chủ đạo nào?",
+    "options": [
+      "Bi quan trước thời cuộc",
+      "Hào hùng, sôi nổi, khát vọng cứu nước",
+      "Nhẹ nhàng tình cảm gia đình",
+      "Trào phúng đả kích"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là hào hùng, sôi nổi, khát vọng cứu nước. Phan Bội Châu thể hiện tư thế con người chủ động gánh vác việc lớn, không cam chịu số phận, dám ra đi để tìm con đường giải phóng dân tộc. Giọng thơ mạnh mẽ, quyết liệt rất phù hợp với lí tưởng ấy."
+  },
+  {
+    "id": 184,
+    "question": "Tác giả đoạn trích \"Vào phủ chúa Trịnh\" là ai?",
+    "options": [
+      "Lê Hữu Trác",
+      "Phạm Đình Hổ",
+      "Ngô gia văn phái",
+      "Nguyễn Dữ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Lê Hữu Trác. Ông còn được biết đến với tên Hải Thượng Lãn Ông, là danh y lớn của dân tộc. Đoạn trích \"Vào phủ chúa Trịnh\" được rút từ \"Thượng kinh kí sự\", phản ánh chân thực cuộc sống xa hoa nơi phủ chúa và nhân cách thanh cao của tác giả."
+  },
+  {
+    "id": 185,
+    "question": "Qua đoạn trích \"Vào phủ chúa Trịnh\", tác giả thể hiện thái độ gì?",
+    "options": [
+      "Ngưỡng mộ tuyệt đối cuộc sống quyền quý",
+      "Dửng dưng hoàn toàn",
+      "Phê phán kín đáo cuộc sống xa hoa và bộc lộ nhân cách thanh cao",
+      "Hài lòng muốn làm quan lớn"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đáp án đúng là phê phán kín đáo cuộc sống xa hoa và bộc lộ nhân cách thanh cao. Qua cách ghi chép tỉ mỉ, khách quan mà ngầm châm biếm, Lê Hữu Trác đã cho thấy sự xa hoa, nghi lễ rườm rà và phần nào tù hãm trong phủ chúa, đồng thời thể hiện bản thân là người coi trọng y đức, không màng danh lợi."
+  },
+  {
+    "id": 186,
+    "question": "Tác giả đoạn trích \"Hạnh phúc của một tang gia\" là ai?",
+    "options": [
+      "Vũ Trọng Phụng",
+      "Nguyễn Công Hoan",
+      "Nam Cao",
+      "Ngô Tất Tố"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Vũ Trọng Phụng. Đoạn trích thuộc tiểu thuyết \"Số đỏ\", là một mẫu mực của nghệ thuật trào phúng trong văn học Việt Nam hiện đại. Tác giả đã lật tẩy bản chất lố lăng, giả dối và suy đồi của xã hội thượng lưu thành thị đương thời."
+  },
+  {
+    "id": 187,
+    "question": "Nhan đề \"Hạnh phúc của một tang gia\" có gì đặc biệt?",
+    "options": [
+      "Hoàn toàn bình thường, không mâu thuẫn",
+      "Chứa nghịch lí trào phúng, tố cáo sự giả dối của cả gia đình",
+      "Chỉ để gây tò mò đơn giản",
+      "Miêu tả một đám tang cảm động"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là chứa nghịch lí trào phúng, tố cáo sự giả dối của cả gia đình. Tang gia lẽ ra là nơi đau buồn, nhưng ở đây cái chết của cụ cố tổ lại đem đến niềm vui, lợi ích, cơ hội cho từng người. Chính nghịch lí này tạo nên sức đả kích sâu cay của đoạn trích."
+  },
+  {
+    "id": 188,
+    "question": "Tác giả của truyện ngắn \"Chí Phèo\" là ai?",
+    "options": [
+      "Nam Cao",
+      "Ngô Tất Tố",
+      "Nguyễn Công Hoan",
+      "Kim Lân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nam Cao. \"Chí Phèo\" là kiệt tác của văn học hiện thực phê phán, phản ánh quá trình tha hóa của người nông dân dưới chế độ thực dân phong kiến và cất lên tiếng nói nhân đạo sâu sắc về quyền làm người. Đây là tác phẩm tiêu biểu nhất của Nam Cao trước Cách mạng."
+  },
+  {
+    "id": 189,
+    "question": "Bi kịch lớn nhất của Chí Phèo là gì?",
+    "options": [
+      "Không có tiền bạc",
+      "Bị cự tuyệt quyền làm người",
+      "Không lấy được vợ giàu",
+      "Không có ruộng đất"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là bị cự tuyệt quyền làm người. Chí Phèo không chỉ nghèo khổ mà đau đớn hơn, anh bị xã hội xô đẩy thành kẻ lưu manh, bị mọi người sợ hãi, xa lánh, đến khi muốn trở lại làm người lương thiện cũng không còn lối thoát. Đây là chiều sâu bi kịch khiến tác phẩm có giá trị nhân đạo lớn."
+  },
+  {
+    "id": 190,
+    "question": "Chi tiết bát cháo hành trong \"Chí Phèo\" có ý nghĩa gì?",
+    "options": [
+      "Một món ăn bình thường không đáng chú ý",
+      "Biểu tượng của tình người, đánh thức phần lương thiện trong Chí",
+      "Công cụ để đầu độc Chí",
+      "Dấu hiệu giàu sang"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là biểu tượng của tình người, đánh thức phần lương thiện trong Chí. Bát cháo hành của Thị Nở tuy giản dị nhưng chứa đựng sự quan tâm chân thành đầu tiên mà Chí nhận được, làm sống lại cảm giác được yêu thương và khơi dậy khát vọng trở về cuộc sống lương thiện. Đây là chi tiết đầy tính nhân đạo."
+  },
+  {
+    "id": 191,
+    "question": "Tác giả của tác phẩm \"Số đỏ\" là ai?",
+    "options": [
+      "Vũ Trọng Phụng",
+      "Nguyễn Công Hoan",
+      "Nam Cao",
+      "Ngô Tất Tố"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Vũ Trọng Phụng. \"Số đỏ\" là tiểu thuyết trào phúng đặc sắc, dựng lên bức tranh biếm họa sắc nét về xã hội tư sản thành thị nửa mùa trước Cách mạng. Tác giả nổi tiếng với biệt danh \"ông vua phóng sự đất Bắc\" nhờ ngòi bút sắc bén và giàu chất châm biếm."
+  },
+  {
+    "id": 192,
+    "question": "Nhân vật Xuân Tóc Đỏ trong \"Số đỏ\" chủ yếu là hình tượng gì?",
+    "options": [
+      "Người anh hùng cứu nước",
+      "Sản phẩm lố lăng của xã hội thượng lưu rởm đời",
+      "Người nông dân chất phác",
+      "Nhà cách mạng kiên trung"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là sản phẩm lố lăng của xã hội thượng lưu rởm đời. Từ một kẻ vô học, lưu manh, Xuân Tóc Đỏ được xã hội nửa Tây nửa ta tâng bốc thành người hùng, qua đó Vũ Trọng Phụng đả kích mạnh mẽ cái xã hội đảo điên, giả dối và suy đồi giá trị."
+  },
+  {
+    "id": 193,
+    "question": "Tác giả bài thơ \"Đất nước\" với câu mở đầu \"Sáng mát trong như sáng năm xưa\" là ai?",
+    "options": [
+      "Nguyễn Đình Thi",
+      "Nguyễn Khoa Điềm",
+      "Tố Hữu",
+      "Chế Lan Viên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Đình Thi. Bài thơ \"Đất nước\" của ông được viết trong những năm kháng chiến chống Pháp, kết tinh cảm xúc về mùa thu đất nước, về truyền thống bất khuất và sức mạnh quật khởi của dân tộc Việt Nam. Không nên nhầm với đoạn trích \"Đất Nước\" của Nguyễn Khoa Điềm."
+  },
+  {
+    "id": 194,
+    "question": "Bài thơ \"Đất nước\" của Nguyễn Đình Thi làm nổi bật vẻ đẹp nào của đất nước?",
+    "options": [
+      "Chỉ vẻ đẹp thiên nhiên yên bình",
+      "Vẻ đẹp đau thương mà anh hùng, quật khởi",
+      "Sự giàu có vật chất",
+      "Đời sống cung đình"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là vẻ đẹp đau thương mà anh hùng, quật khởi. Đất nước hiện lên vừa mang những vết thương chiến tranh, vừa có truyền thống bất khuất, kiên cường đứng dậy chiến đấu vì độc lập tự do. Điều đó tạo cho bài thơ giọng điệu trang trọng, hào sảng và giàu cảm hứng sử thi."
+  },
+  {
+    "id": 195,
+    "question": "Tác giả bài thơ \"Dọn về làng\" là ai?",
+    "options": [
+      "Nông Quốc Chấn",
+      "Y Phương",
+      "Tố Hữu",
+      "Bàn Tài Đoàn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nông Quốc Chấn. Bài thơ là tiếng nói giàu cảm xúc của đồng bào miền núi trong kháng chiến, thể hiện niềm vui giải phóng, tình yêu quê hương và sự căm thù giặc. Tác phẩm góp phần làm phong phú diện mạo thơ ca kháng chiến Việt Nam."
+  },
+  {
+    "id": 196,
+    "question": "Tác giả bài thơ \"Tiếng hát con tàu\" là ai?",
+    "options": [
+      "Chế Lan Viên",
+      "Huy Cận",
+      "Xuân Diệu",
+      "Tố Hữu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Chế Lan Viên. Bài thơ thể hiện tiếng gọi trở về với nhân dân, với những miền đất kháng chiến và nguồn cảm hứng lớn của nghệ thuật. \"Con tàu\" trong bài thơ là hình ảnh mang tính biểu tượng, không chỉ là phương tiện giao thông đơn thuần."
+  },
+  {
+    "id": 197,
+    "question": "Trong bài thơ \"Tiếng hát con tàu\", hình ảnh con tàu tượng trưng cho điều gì?",
+    "options": [
+      "Một chuyến du lịch nghỉ dưỡng",
+      "Khát vọng lên đường đến với nhân dân và cuộc sống lớn",
+      "Sức mạnh công nghiệp hiện đại",
+      "Nỗi sợ hãi trước hành trình xa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là khát vọng lên đường đến với nhân dân và cuộc sống lớn. Con tàu là biểu tượng của hành trình tâm hồn, của sự trở về với nguồn cảm hứng sáng tạo là nhân dân, đất nước. Qua đó Chế Lan Viên khẳng định mối quan hệ gắn bó giữa nghệ thuật và cuộc sống."
+  },
+  {
+    "id": 198,
+    "question": "Tác giả truyện ngắn \"Mùa lạc\" là ai?",
+    "options": [
+      "Nguyễn Khải",
+      "Nguyễn Minh Châu",
+      "Kim Lân",
+      "Nguyễn Quang Sáng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Khải. \"Mùa lạc\" là truyện ngắn viết về con người trong cuộc sống mới, đặc biệt là khả năng hồi sinh, thích nghi và tìm thấy ý nghĩa sống của con người lao động. Nguyễn Khải thường quan tâm đến những vấn đề tư tưởng và sự đổi thay của con người trong hoàn cảnh mới."
+  },
+  {
+    "id": 199,
+    "question": "Tác giả của bài thơ \"Người lái đò sông Đà\" là ai?",
+    "options": [
+      "Nguyễn Tuân",
+      "Hoàng Phủ Ngọc Tường",
+      "Nguyễn Khải",
+      "Tô Hoài"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đáp án đúng là Nguyễn Tuân. Dù tên tác phẩm thường được gọi là tùy bút hoặc đoạn trích tùy bút chứ không phải bài thơ, nhưng về tác giả thì vẫn là Nguyễn Tuân. Ông là cây bút tài hoa, uyên bác, có phong cách độc đáo trong văn xuôi hiện đại Việt Nam."
+  },
+  {
+    "id": 200,
+    "question": "Điểm chung nổi bật của nhiều tác phẩm văn học Việt Nam hiện đại giai đoạn 1945-1975 là gì?",
+    "options": [
+      "Chỉ chú trọng cái tôi cá nhân cô đơn",
+      "Gắn bó sâu sắc với đất nước, nhân dân và cảm hứng yêu nước, cách mạng",
+      "Hoàn toàn tách rời hiện thực đời sống",
+      "Chỉ viết về tầng lớp thượng lưu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đáp án đúng là gắn bó sâu sắc với đất nước, nhân dân và cảm hứng yêu nước, cách mạng. Nhiều tác phẩm trong giai đoạn này hướng đến phản ánh cuộc đấu tranh giải phóng dân tộc, ca ngợi con người mới, tình đồng chí, tình gia đình, quê hương và tinh thần cống hiến. Đây là một đặc điểm lớn của nền văn học cách mạng Việt Nam."
+  }
+]

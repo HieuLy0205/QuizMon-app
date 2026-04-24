@@ -1,1 +1,2402 @@
-[]
+[
+  {
+    "id": 1,
+    "question": "Sự kiện: Chiến tranh thế giới thứ nhất bắt đầu nguyên nhân chính là gì?",
+    "options": [
+      "Mâu thuẫn giữa các đế quốc",
+      "Cách mạng công nghiệp",
+      "Khởi nghĩa Lam Sơn",
+      "Chiến tranh Việt Nam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyên nhân chủ yếu dẫn đến Chiến tranh thế giới thứ nhất là mâu thuẫn gay gắt giữa các nước đế quốc về vấn đề thuộc địa, thị trường và quyền lợi kinh tế. Vào cuối thế kỷ XIX đầu thế kỷ XX, các nước tư bản lớn như Anh, Pháp, Đức, Nga, Áo - Hung cạnh tranh quyết liệt để mở rộng phạm vi ảnh hưởng. Sự đối đầu đó khiến tình hình châu Âu luôn căng thẳng. Khi có sự kiện châm ngòi trực tiếp, chiến tranh đã bùng nổ trên quy mô toàn thế giới."
+  },
+  {
+    "id": 2,
+    "question": "Ai là người tìm ra châu Mỹ vào năm 1492?",
+    "options": [
+      "Christopher Columbus",
+      "Vasco da Gama",
+      "Ferdinand Magellan",
+      "James Cook"
+    ],
+    "correctIndex": 0,
+    "explanation": "Christopher Columbus là nhà hàng hải người Italia phục vụ cho Tây Ban Nha, đã thực hiện chuyến đi biển nổi tiếng năm 1492 và đặt chân đến châu Mỹ. Mặc dù ông tin rằng mình đã đến châu Á, nhưng phát kiến này đã mở ra một châu lục mới đối với người châu Âu. Sự kiện đó có ý nghĩa rất lớn trong lịch sử thế giới vì thúc đẩy các cuộc phát kiến địa lý và mở rộng giao lưu giữa các châu lục."
+  },
+  {
+    "id": 3,
+    "question": "Cuộc Cách mạng tư sản Pháp bùng nổ vào năm nào?",
+    "options": [
+      "1789",
+      "1776",
+      "1815",
+      "1848"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng tư sản Pháp bùng nổ năm 1789, mở đầu bằng sự kiện nhân dân Paris tấn công ngục Bastille ngày 14/7. Cuộc cách mạng này đã lật đổ chế độ phong kiến chuyên chế, xóa bỏ nhiều đặc quyền của quý tộc và giáo hội, đồng thời đưa giai cấp tư sản lên nắm quyền. Đây là một trong những cuộc cách mạng có ảnh hưởng sâu rộng nhất trong lịch sử châu Âu và thế giới."
+  },
+  {
+    "id": 4,
+    "question": "Ai là người lãnh đạo cuộc khởi nghĩa Lam Sơn?",
+    "options": [
+      "Lê Lợi",
+      "Nguyễn Trãi",
+      "Trần Hưng Đạo",
+      "Quang Trung"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lê Lợi là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống ách đô hộ của nhà Minh vào đầu thế kỷ XV. Ông tập hợp lực lượng tại Lam Sơn, Thanh Hóa và kiên trì chiến đấu trong nhiều năm. Dưới sự lãnh đạo của ông cùng sự giúp sức của nhiều nhân tài như Nguyễn Trãi, nghĩa quân đã giành thắng lợi, giải phóng đất nước và mở ra triều Lê sơ."
+  },
+  {
+    "id": 5,
+    "question": "Bản Tuyên ngôn Độc lập của Hoa Kỳ được công bố năm nào?",
+    "options": [
+      "1776",
+      "1789",
+      "1492",
+      "1914"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tuyên ngôn Độc lập của Hoa Kỳ được công bố vào ngày 4/7/1776. Văn kiện này tuyên bố 13 thuộc địa ở Bắc Mỹ tách khỏi sự thống trị của thực dân Anh để trở thành một quốc gia độc lập. Đây là văn bản quan trọng, không chỉ với lịch sử nước Mỹ mà còn có ảnh hưởng lớn đến phong trào đấu tranh vì tự do và dân chủ trên thế giới."
+  },
+  {
+    "id": 6,
+    "question": "Trận Bạch Đằng năm 938 do ai chỉ huy?",
+    "options": [
+      "Ngô Quyền",
+      "Đinh Bộ Lĩnh",
+      "Lê Hoàn",
+      "Trần Quốc Tuấn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngô Quyền là người chỉ huy trận Bạch Đằng năm 938, đánh bại quân Nam Hán xâm lược. Ông đã sử dụng chiến thuật đóng cọc ngầm trên sông, lợi dụng thủy triều để tiêu diệt địch. Chiến thắng này có ý nghĩa cực kỳ to lớn vì đã chấm dứt hơn một nghìn năm Bắc thuộc, mở ra thời kỳ độc lập lâu dài của dân tộc Việt Nam."
+  },
+  {
+    "id": 7,
+    "question": "Triều đại phong kiến đầu tiên của Việt Nam sau khi giành độc lập lâu dài là triều nào?",
+    "options": [
+      "Nhà Ngô",
+      "Nhà Lý",
+      "Nhà Trần",
+      "Nhà Nguyễn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhà Ngô là triều đại phong kiến đầu tiên của Việt Nam sau khi đất nước giành được nền độc lập tự chủ lâu dài từ sau chiến thắng Bạch Đằng năm 938. Ngô Quyền lên ngôi vua, xây dựng chính quyền độc lập, đặt nền móng cho nhà nước phong kiến Việt Nam. Dù tồn tại không dài, nhà Ngô vẫn có vai trò lịch sử rất quan trọng."
+  },
+  {
+    "id": 8,
+    "question": "Người có công thống nhất đất nước, lập ra nhà Đinh là ai?",
+    "options": [
+      "Đinh Bộ Lĩnh",
+      "Ngô Quyền",
+      "Lê Hoàn",
+      "Lý Công Uẩn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đinh Bộ Lĩnh là người có công dẹp loạn 12 sứ quân, thống nhất đất nước và lập ra nhà Đinh. Sau khi lên ngôi, ông lấy hiệu là Đinh Tiên Hoàng, đặt quốc hiệu là Đại Cồ Việt và xây dựng triều đình trung ương tập quyền. Công lao của ông đã đưa đất nước thoát khỏi tình trạng chia cắt, rối ren kéo dài."
+  },
+  {
+    "id": 9,
+    "question": "Kinh đô Thăng Long được dời đến dưới thời vua nào?",
+    "options": [
+      "Lý Công Uẩn",
+      "Lê Đại Hành",
+      "Trần Thái Tông",
+      "Đinh Tiên Hoàng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Năm 1010, vua Lý Công Uẩn quyết định dời đô từ Hoa Lư ra Đại La và đổi tên thành Thăng Long. Quyết định này được thể hiện trong Chiếu dời đô nổi tiếng. Việc dời đô cho thấy tầm nhìn chiến lược của nhà vua vì Thăng Long có vị trí thuận lợi về chính trị, kinh tế và quân sự, tạo điều kiện cho đất nước phát triển lâu dài."
+  },
+  {
+    "id": 10,
+    "question": "Bộ luật thành văn đầu tiên của nước ta dưới thời Lý có tên là gì?",
+    "options": [
+      "Hình thư",
+      "Quốc triều hình luật",
+      "Hoàng Việt luật lệ",
+      "Luật Gia Long"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hình thư là bộ luật thành văn đầu tiên của nhà nước phong kiến Việt Nam, được ban hành dưới thời nhà Lý. Bộ luật này đánh dấu bước tiến quan trọng trong việc quản lý xã hội bằng pháp luật. Điều đó cho thấy nhà nước phong kiến nước ta đã ngày càng hoàn thiện về tổ chức và thể chế."
+  },
+  {
+    "id": 11,
+    "question": "Nhà Trần nổi tiếng với mấy lần kháng chiến chống quân Mông - Nguyên?",
+    "options": [
+      "3 lần",
+      "2 lần",
+      "4 lần",
+      "5 lần"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhà Trần đã ba lần lãnh đạo nhân dân kháng chiến chống quân Mông - Nguyên vào các năm 1258, 1285 và 1287 - 1288. Đây là những cuộc chiến có quy mô lớn, đối đầu với đội quân xâm lược rất mạnh. Thắng lợi của nhà Trần thể hiện tinh thần đoàn kết toàn dân, nghệ thuật quân sự tài tình và ý chí bảo vệ độc lập dân tộc."
+  },
+  {
+    "id": 12,
+    "question": "Ai là vị tướng chỉ huy tối cao trong kháng chiến chống Mông - Nguyên thời Trần?",
+    "options": [
+      "Trần Hưng Đạo",
+      "Trần Thái Tông",
+      "Trần Nhân Tông",
+      "Trần Quang Khải"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trần Hưng Đạo là vị tướng kiệt xuất, được giao chức Quốc công Tiết chế, chỉ huy tối cao quân đội nhà Trần trong kháng chiến chống Mông - Nguyên. Ông không chỉ có tài cầm quân mà còn để lại nhiều tư tưởng quân sự sâu sắc, tiêu biểu là tác phẩm Hịch tướng sĩ. Tên tuổi của ông gắn liền với những chiến công oanh liệt trong lịch sử dân tộc."
+  },
+  {
+    "id": 13,
+    "question": "Chiến thắng Bạch Đằng năm 1288 đánh bại quân xâm lược nào?",
+    "options": [
+      "Mông - Nguyên",
+      "Nam Hán",
+      "Minh",
+      "Thanh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến thắng Bạch Đằng năm 1288 là trận quyết chiến chiến lược đánh bại quân Mông - Nguyên lần thứ ba xâm lược nước ta. Dưới sự chỉ huy của Trần Hưng Đạo, quân dân nhà Trần đã vận dụng lại chiến thuật cọc ngầm trên sông để tiêu diệt đoàn thuyền địch. Chiến thắng này đã bảo vệ vững chắc nền độc lập dân tộc và ghi dấu một trang sử hào hùng."
+  },
+  {
+    "id": 14,
+    "question": "Người viết 'Bình Ngô đại cáo' là ai?",
+    "options": [
+      "Nguyễn Trãi",
+      "Lê Lợi",
+      "Chu Văn An",
+      "Ngô Sĩ Liên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Trãi là tác giả của tác phẩm Bình Ngô đại cáo, được xem như bản tuyên ngôn độc lập thứ hai của dân tộc Việt Nam. Tác phẩm được viết sau khi cuộc khởi nghĩa Lam Sơn thắng lợi, khẳng định chủ quyền đất nước, lên án tội ác quân Minh và ca ngợi sức mạnh chính nghĩa. Đây là áng văn chính luận xuất sắc trong lịch sử văn học Việt Nam."
+  },
+  {
+    "id": 15,
+    "question": "Cuộc khởi nghĩa Lam Sơn diễn ra chống lại ách đô hộ của triều đại nào?",
+    "options": [
+      "Nhà Minh",
+      "Nhà Thanh",
+      "Nhà Tống",
+      "Nhà Nguyên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khởi nghĩa Lam Sơn nổ ra nhằm chống lại ách đô hộ tàn bạo của nhà Minh. Sau khi xâm lược nước ta, nhà Minh thi hành nhiều chính sách bóc lột, đồng hóa và đàn áp nhân dân. Cuộc khởi nghĩa do Lê Lợi lãnh đạo đã trải qua nhiều khó khăn nhưng cuối cùng giành thắng lợi, khôi phục nền độc lập cho đất nước."
+  },
+  {
+    "id": 16,
+    "question": "Vua Lê Thánh Tông thuộc triều đại nào?",
+    "options": [
+      "Nhà Lê sơ",
+      "Nhà Trần",
+      "Nhà Nguyễn",
+      "Nhà Mạc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lê Thánh Tông là vị vua tiêu biểu của triều Lê sơ. Dưới thời ông, đất nước đạt đến giai đoạn phát triển thịnh vượng về nhiều mặt như chính trị, kinh tế, văn hóa, giáo dục và luật pháp. Ông cũng nổi tiếng với việc củng cố bộ máy nhà nước và mở rộng lãnh thổ."
+  },
+  {
+    "id": 17,
+    "question": "Bộ luật nổi tiếng thời Lê sơ là gì?",
+    "options": [
+      "Quốc triều hình luật",
+      "Hình thư",
+      "Luật Hồng Bàng",
+      "Luật Gia Long"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quốc triều hình luật, thường gọi là Luật Hồng Đức, là bộ luật nổi tiếng dưới thời Lê sơ. Bộ luật này phản ánh trình độ tổ chức nhà nước và quản lý xã hội khá cao của nước ta lúc bấy giờ. Nhiều quy định trong luật còn thể hiện sự quan tâm đến quyền lợi của phụ nữ và bảo vệ sản xuất nông nghiệp."
+  },
+  {
+    "id": 18,
+    "question": "Người anh hùng áo vải lãnh đạo phong trào Tây Sơn là ai?",
+    "options": [
+      "Nguyễn Huệ",
+      "Nguyễn Ánh",
+      "Nguyễn Nhạc",
+      "Nguyễn Lữ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Huệ là vị anh hùng áo vải tiêu biểu của phong trào Tây Sơn. Ông nổi bật bởi tài năng quân sự xuất chúng, đã chỉ huy nhiều trận đánh lớn và giành thắng lợi vang dội trước các thế lực phong kiến trong nước cũng như quân xâm lược nước ngoài. Sau này ông lên ngôi hoàng đế, lấy niên hiệu là Quang Trung."
+  },
+  {
+    "id": 19,
+    "question": "Chiến thắng Ngọc Hồi - Đống Đa năm 1789 đánh bại quân xâm lược nào?",
+    "options": [
+      "Quân Thanh",
+      "Quân Minh",
+      "Quân Pháp",
+      "Quân Mông"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến thắng Ngọc Hồi - Đống Đa mùa xuân năm 1789 đã đánh tan quân Thanh xâm lược. Chỉ trong một thời gian ngắn, Quang Trung đã tổ chức cuộc hành quân thần tốc từ Phú Xuân ra Bắc Hà và giành thắng lợi quyết định. Chiến công này thể hiện tài năng quân sự kiệt xuất của Quang Trung và ý chí quật cường của dân tộc."
+  },
+  {
+    "id": 20,
+    "question": "Triều đại phong kiến cuối cùng ở Việt Nam là triều nào?",
+    "options": [
+      "Nhà Nguyễn",
+      "Nhà Trần",
+      "Nhà Lê",
+      "Nhà Tây Sơn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhà Nguyễn là triều đại phong kiến cuối cùng trong lịch sử Việt Nam. Triều đại này được thành lập năm 1802 bởi Nguyễn Ánh, tức vua Gia Long, và chấm dứt vào năm 1945 khi vua Bảo Đại thoái vị. Sự kết thúc của nhà Nguyễn đánh dấu sự chấm dứt chế độ quân chủ ở nước ta."
+  },
+  {
+    "id": 21,
+    "question": "Thực dân Pháp nổ súng xâm lược Việt Nam đầu tiên ở đâu năm 1858?",
+    "options": [
+      "Đà Nẵng",
+      "Huế",
+      "Hà Nội",
+      "Gia Định"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 1/9/1858, thực dân Pháp nổ súng xâm lược nước ta tại bán đảo Sơn Trà, Đà Nẵng. Đây là mốc mở đầu quá trình xâm lược Việt Nam của thực dân Pháp. Tuy vấp phải sự kháng cự quyết liệt của quân dân ta, nhưng sau đó Pháp từng bước mở rộng chiến tranh sang Nam Kỳ và cả nước."
+  },
+  {
+    "id": 22,
+    "question": "Phong trào Cần Vương diễn ra nhằm mục đích gì?",
+    "options": [
+      "Chống Pháp, giúp vua cứu nước",
+      "Đòi cải cách ruộng đất",
+      "Lật đổ nhà Trần",
+      "Chống Nhật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phong trào Cần Vương bùng nổ sau sự kiện Tôn Thất Thuyết đưa vua Hàm Nghi ra sơn phòng và ban chiếu Cần Vương. Mục tiêu của phong trào là kêu gọi nhân dân đứng lên giúp vua chống Pháp, cứu nước. Dù cuối cùng thất bại, phong trào đã thể hiện rõ tinh thần yêu nước mạnh mẽ của nhân dân Việt Nam cuối thế kỷ XIX."
+  },
+  {
+    "id": 23,
+    "question": "Người lãnh đạo khởi nghĩa Yên Thế là ai?",
+    "options": [
+      "Hoàng Hoa Thám",
+      "Phan Bội Châu",
+      "Phan Châu Trinh",
+      "Nguyễn Thái Học"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hoàng Hoa Thám là thủ lĩnh tiêu biểu của cuộc khởi nghĩa Yên Thế kéo dài nhiều năm ở Bắc Giang. Ông còn được gọi là Đề Thám. Cuộc khởi nghĩa này thể hiện tinh thần đấu tranh bền bỉ của nông dân Việt Nam chống lại chính sách xâm lược và bình định của thực dân Pháp."
+  },
+  {
+    "id": 24,
+    "question": "Ai là người sáng lập Hội Việt Nam Cách mạng Thanh niên năm 1925?",
+    "options": [
+      "Nguyễn Ái Quốc",
+      "Phan Bội Châu",
+      "Phan Châu Trinh",
+      "Tôn Đức Thắng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Ái Quốc là người sáng lập Hội Việt Nam Cách mạng Thanh niên tại Quảng Châu vào năm 1925. Tổ chức này có vai trò rất quan trọng trong việc truyền bá chủ nghĩa Mác - Lênin vào Việt Nam, đào tạo cán bộ cách mạng và chuẩn bị về tư tưởng, tổ chức cho sự ra đời của Đảng Cộng sản Việt Nam."
+  },
+  {
+    "id": 25,
+    "question": "Đảng Cộng sản Việt Nam được thành lập vào năm nào?",
+    "options": [
+      "1930",
+      "1925",
+      "1945",
+      "1911"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đảng Cộng sản Việt Nam được thành lập ngày 3/2/1930 dưới sự chủ trì của Nguyễn Ái Quốc. Sự ra đời của Đảng là bước ngoặt lớn trong lịch sử cách mạng Việt Nam vì từ đây phong trào cách mạng có một tổ chức lãnh đạo thống nhất, đúng đắn, đưa cuộc đấu tranh giải phóng dân tộc đi theo con đường cách mạng vô sản."
+  },
+  {
+    "id": 26,
+    "question": "Lãnh tụ Nguyễn Ái Quốc ra đi tìm đường cứu nước vào năm nào?",
+    "options": [
+      "1911",
+      "1930",
+      "1941",
+      "1905"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 5/6/1911, Nguyễn Tất Thành rời bến Nhà Rồng lên tàu ra đi tìm đường cứu nước. Đây là một quyết định có ý nghĩa lịch sử rất lớn. Từ hành trình đó, Người đã tiếp cận chủ nghĩa Mác - Lênin và tìm ra con đường giải phóng dân tộc đúng đắn cho Việt Nam."
+  },
+  {
+    "id": 27,
+    "question": "Cách mạng Tháng Tám ở Việt Nam thành công vào năm nào?",
+    "options": [
+      "1945",
+      "1930",
+      "1954",
+      "1975"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng Tháng Tám thành công vào năm 1945, khi nhân dân cả nước nổi dậy giành chính quyền từ tay phát xít Nhật và chính quyền tay sai. Đây là thắng lợi to lớn của dân tộc Việt Nam, chấm dứt ách thống trị của thực dân, phong kiến, mở ra kỷ nguyên độc lập, tự do cho đất nước."
+  },
+  {
+    "id": 28,
+    "question": "Nước Việt Nam Dân chủ Cộng hòa ra đời vào ngày nào?",
+    "options": [
+      "2/9/1945",
+      "3/2/1930",
+      "7/5/1954",
+      "30/4/1975"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 2/9/1945, tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa. Đây là nhà nước công nông đầu tiên ở Đông Nam Á. Sự kiện này khẳng định quyền tự do, độc lập của dân tộc Việt Nam trước toàn thế giới."
+  },
+  {
+    "id": 29,
+    "question": "Chiến dịch Điện Biên Phủ kết thúc thắng lợi vào năm nào?",
+    "options": [
+      "1954",
+      "1945",
+      "1968",
+      "1975"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến dịch Điện Biên Phủ kết thúc thắng lợi ngày 7/5/1954. Đây là trận quyết chiến chiến lược lớn nhất trong cuộc kháng chiến chống Pháp. Chiến thắng này đã làm phá sản hoàn toàn kế hoạch quân sự của thực dân Pháp và can thiệp Mỹ, tạo điều kiện quan trọng để đi tới việc ký kết Hiệp định Genève về Đông Dương."
+  },
+  {
+    "id": 30,
+    "question": "Hiệp định Genève năm 1954 được ký kết nhằm chấm dứt cuộc chiến tranh nào ở Đông Dương?",
+    "options": [
+      "Kháng chiến chống Pháp",
+      "Kháng chiến chống Mỹ",
+      "Chiến tranh thế giới thứ nhất",
+      "Nội chiến Trung Quốc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hiệp định Genève năm 1954 được ký kết để chấm dứt cuộc kháng chiến chống thực dân Pháp ở Đông Dương. Hiệp định công nhận các quyền dân tộc cơ bản của nhân dân Việt Nam, Lào và Campuchia. Đối với Việt Nam, hiệp định quy định tạm thời lấy vĩ tuyến 17 làm giới tuyến quân sự, chờ tổng tuyển cử thống nhất đất nước."
+  },
+  {
+    "id": 31,
+    "question": "Sự kiện nào đánh dấu miền Nam Việt Nam hoàn toàn giải phóng?",
+    "options": [
+      "Chiến dịch Hồ Chí Minh năm 1975",
+      "Chiến thắng Điện Biên Phủ",
+      "Hiệp định Paris",
+      "Phong trào Đồng khởi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến dịch Hồ Chí Minh toàn thắng ngày 30/4/1975 đã giải phóng hoàn toàn miền Nam, thống nhất đất nước về mặt lãnh thổ. Đây là thắng lợi vĩ đại của cuộc kháng chiến chống Mỹ cứu nước. Sự kiện này mở ra thời kỳ mới trong lịch sử dân tộc, thời kỳ cả nước đi lên xây dựng chủ nghĩa xã hội."
+  },
+  {
+    "id": 32,
+    "question": "Hiệp định Paris về Việt Nam được ký năm nào?",
+    "options": [
+      "1973",
+      "1954",
+      "1968",
+      "1975"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hiệp định Paris về chấm dứt chiến tranh, lập lại hòa bình ở Việt Nam được ký ngày 27/1/1973. Hiệp định buộc Mỹ phải tôn trọng các quyền dân tộc cơ bản của nhân dân Việt Nam và rút quân về nước. Đây là thắng lợi quan trọng về ngoại giao, tạo điều kiện thuận lợi cho cuộc đấu tranh giải phóng miền Nam hoàn toàn."
+  },
+  {
+    "id": 33,
+    "question": "Quốc hiệu nước ta từ năm 1976 là gì?",
+    "options": [
+      "Cộng hòa xã hội chủ nghĩa Việt Nam",
+      "Việt Nam Dân chủ Cộng hòa",
+      "Đại Việt",
+      "Đại Nam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sau khi đất nước thống nhất, Quốc hội khóa VI năm 1976 quyết định lấy tên nước là Cộng hòa xã hội chủ nghĩa Việt Nam. Quốc hiệu này thể hiện rõ bản chất của nhà nước thống nhất và định hướng phát triển của đất nước sau chiến tranh."
+  },
+  {
+    "id": 34,
+    "question": "Công cuộc Đổi mới ở Việt Nam được khởi xướng từ Đại hội nào của Đảng?",
+    "options": [
+      "Đại hội VI",
+      "Đại hội IV",
+      "Đại hội V",
+      "Đại hội VII"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đại hội VI của Đảng năm 1986 đã đề ra đường lối đổi mới toàn diện đất nước. Đây là bước chuyển quan trọng trong tư duy lãnh đạo, giúp Việt Nam từng bước thoát khỏi khủng hoảng kinh tế - xã hội, mở rộng hội nhập và phát triển theo hướng công nghiệp hóa, hiện đại hóa."
+  },
+  {
+    "id": 35,
+    "question": "Cách mạng công nghiệp đầu tiên bắt đầu ở nước nào?",
+    "options": [
+      "Anh",
+      "Pháp",
+      "Đức",
+      "Mỹ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng công nghiệp đầu tiên bắt đầu ở Anh vào nửa sau thế kỷ XVIII. Đây là nơi có nhiều điều kiện thuận lợi như nguồn vốn lớn, nhiều phát minh kỹ thuật, thị trường rộng và hệ thống thuộc địa phong phú. Cuộc cách mạng này đã làm thay đổi sâu sắc phương thức sản xuất và đời sống xã hội loài người."
+  },
+  {
+    "id": 36,
+    "question": "Máy hơi nước được cải tiến thành công bởi ai?",
+    "options": [
+      "James Watt",
+      "Newton",
+      "Galileo",
+      "Edison"
+    ],
+    "correctIndex": 0,
+    "explanation": "James Watt là người đã cải tiến thành công máy hơi nước, biến nó thành nguồn động lực quan trọng cho sản xuất công nghiệp và giao thông vận tải. Phát minh này góp phần thúc đẩy mạnh mẽ Cách mạng công nghiệp ở Anh và sau đó lan rộng sang nhiều nước khác."
+  },
+  {
+    "id": 37,
+    "question": "Chiến tranh thế giới thứ nhất diễn ra trong khoảng thời gian nào?",
+    "options": [
+      "1914-1918",
+      "1939-1945",
+      "1870-1871",
+      "1918-1923"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến tranh thế giới thứ nhất diễn ra từ năm 1914 đến năm 1918. Đây là cuộc chiến tranh đế quốc phi nghĩa, gây ra tổn thất nặng nề về người và của cho nhân loại. Cuộc chiến đã làm thay đổi sâu sắc bản đồ chính trị thế giới và tạo ra nhiều biến động lớn trong thế kỷ XX."
+  },
+  {
+    "id": 38,
+    "question": "Nguyên nhân trực tiếp dẫn đến Chiến tranh thế giới thứ nhất là sự kiện nào?",
+    "options": [
+      "Thái tử Áo - Hung bị ám sát",
+      "Đức tấn công Ba Lan",
+      "Mỹ ném bom nguyên tử",
+      "Nhật đánh Trân Châu Cảng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyên nhân trực tiếp dẫn đến Chiến tranh thế giới thứ nhất là vụ ám sát Thái tử Áo - Hung Franz Ferdinand tại Sarajevo vào ngày 28/6/1914. Sự kiện này làm bùng phát hàng loạt tuyên chiến giữa các nước trong hai khối quân sự đối lập, từ đó đẩy châu Âu và thế giới vào cuộc chiến tranh quy mô lớn."
+  },
+  {
+    "id": 39,
+    "question": "Chiến tranh thế giới thứ hai bùng nổ vào năm nào?",
+    "options": [
+      "1939",
+      "1914",
+      "1941",
+      "1945"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến tranh thế giới thứ hai bùng nổ vào năm 1939 khi Đức tấn công Ba Lan. Đây là cuộc chiến tranh lớn nhất, tàn khốc nhất trong lịch sử nhân loại. Nó kéo dài đến năm 1945 và gây hậu quả vô cùng nặng nề về người, của và môi trường chính trị quốc tế."
+  },
+  {
+    "id": 40,
+    "question": "Sự kiện mở đầu Chiến tranh thế giới thứ hai ở châu Âu là gì?",
+    "options": [
+      "Đức tấn công Ba Lan",
+      "Nhật đánh Trung Quốc",
+      "Ý tấn công Ethiopia",
+      "Mỹ vào chiến tranh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 1/9/1939, phát xít Đức tấn công Ba Lan, mở đầu Chiến tranh thế giới thứ hai ở châu Âu. Ngay sau đó, Anh và Pháp tuyên chiến với Đức. Sự kiện này đã làm cho chiến tranh lan rộng nhanh chóng trên phạm vi toàn cầu."
+  },
+  {
+    "id": 41,
+    "question": "Nước nào là nơi phát xít đầu tiên lên cầm quyền ở châu Âu?",
+    "options": [
+      "Ý",
+      "Đức",
+      "Nhật",
+      "Tây Ban Nha"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ý là nước đầu tiên ở châu Âu có chính quyền phát xít lên cầm quyền, do Benito Mussolini đứng đầu. Sự xuất hiện của chủ nghĩa phát xít ở Ý là biểu hiện của xu hướng phản động, hiếu chiến trong bối cảnh khủng hoảng và bất ổn sau Chiến tranh thế giới thứ nhất."
+  },
+  {
+    "id": 42,
+    "question": "Ai là lãnh tụ của nước Đức phát xít?",
+    "options": [
+      "Adolf Hitler",
+      "Benito Mussolini",
+      "Joseph Stalin",
+      "Winston Churchill"
+    ],
+    "correctIndex": 0,
+    "explanation": "Adolf Hitler là lãnh tụ của nước Đức phát xít, đứng đầu Đảng Quốc xã. Dưới sự lãnh đạo của ông ta, Đức theo đuổi chính sách quân phiệt, bành trướng và gây ra Chiến tranh thế giới thứ hai. Chế độ phát xít Đức cũng gây ra nhiều tội ác nghiêm trọng đối với nhân loại."
+  },
+  {
+    "id": 43,
+    "question": "Sự kiện Nhật Bản đầu hàng Đồng minh diễn ra vào năm nào?",
+    "options": [
+      "1945",
+      "1944",
+      "1939",
+      "1950"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhật Bản đầu hàng Đồng minh vào năm 1945 sau khi Mỹ ném bom nguyên tử xuống Hiroshima và Nagasaki, đồng thời Liên Xô tuyên chiến với Nhật. Sự đầu hàng của Nhật đánh dấu Chiến tranh thế giới thứ hai kết thúc hoàn toàn."
+  },
+  {
+    "id": 44,
+    "question": "Liên Hợp Quốc được thành lập vào năm nào?",
+    "options": [
+      "1945",
+      "1919",
+      "1954",
+      "1939"
+    ],
+    "correctIndex": 0,
+    "explanation": "Liên Hợp Quốc được thành lập vào năm 1945 sau khi Chiến tranh thế giới thứ hai kết thúc. Mục tiêu của tổ chức này là duy trì hòa bình, an ninh quốc tế, phát triển quan hệ hữu nghị giữa các dân tộc và thúc đẩy hợp tác quốc tế trên nhiều lĩnh vực."
+  },
+  {
+    "id": 45,
+    "question": "Cuộc cách mạng vô sản đầu tiên thắng lợi trên thế giới là cuộc cách mạng nào?",
+    "options": [
+      "Cách mạng Tháng Mười Nga",
+      "Cách mạng tư sản Pháp",
+      "Cách mạng Tân Hợi",
+      "Cách mạng Mỹ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng Tháng Mười Nga năm 1917 là cuộc cách mạng vô sản đầu tiên giành thắng lợi trên thế giới. Cuộc cách mạng này đã lật đổ chính quyền tư sản lâm thời, đưa giai cấp công nhân và nhân dân lao động lên nắm chính quyền, mở ra thời đại mới trong lịch sử nhân loại."
+  },
+  {
+    "id": 46,
+    "question": "Cách mạng Tháng Mười Nga thành công vào năm nào?",
+    "options": [
+      "1917",
+      "1905",
+      "1914",
+      "1922"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng Tháng Mười Nga thành công vào năm 1917 dưới sự lãnh đạo của Đảng Bolshevik và Lenin. Thắng lợi này không chỉ làm thay đổi vận mệnh nước Nga mà còn cổ vũ mạnh mẽ phong trào cách mạng vô sản và phong trào giải phóng dân tộc trên toàn thế giới."
+  },
+  {
+    "id": 47,
+    "question": "Người lãnh đạo Cách mạng Tháng Mười Nga là ai?",
+    "options": [
+      "Vladimir Lenin",
+      "Karl Marx",
+      "Stalin",
+      "Trotsky"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vladimir Lenin là lãnh tụ thiên tài của giai cấp vô sản Nga và là người trực tiếp lãnh đạo Cách mạng Tháng Mười Nga năm 1917. Ông đã vận dụng sáng tạo chủ nghĩa Mác vào thực tiễn cách mạng Nga và có ảnh hưởng lớn đến phong trào cộng sản quốc tế."
+  },
+  {
+    "id": 48,
+    "question": "Liên bang Cộng hòa xã hội chủ nghĩa Xô viết được thành lập năm nào?",
+    "options": [
+      "1922",
+      "1917",
+      "1945",
+      "1939"
+    ],
+    "correctIndex": 0,
+    "explanation": "Liên bang Cộng hòa xã hội chủ nghĩa Xô viết, gọi tắt là Liên Xô, được thành lập vào năm 1922. Sự ra đời của nhà nước này đánh dấu bước phát triển mới của phong trào cách mạng vô sản thế giới và trở thành chỗ dựa lớn cho phong trào giải phóng dân tộc sau này."
+  },
+  {
+    "id": 49,
+    "question": "Cuộc khủng hoảng kinh tế thế giới 1929-1933 bắt đầu từ đâu?",
+    "options": [
+      "Mỹ",
+      "Anh",
+      "Pháp",
+      "Nhật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cuộc khủng hoảng kinh tế thế giới 1929-1933 bắt đầu từ nước Mỹ, khởi đầu bằng sự sụp đổ của thị trường chứng khoán phố Wall. Từ Mỹ, khủng hoảng lan rộng ra toàn bộ thế giới tư bản, gây thất nghiệp, nghèo đói và bất ổn xã hội nghiêm trọng. Đây cũng là một trong những nguyên nhân tạo điều kiện cho chủ nghĩa phát xít lên cầm quyền ở một số nước."
+  },
+  {
+    "id": 50,
+    "question": "Phong trào Văn hóa Phục hưng bắt đầu từ quốc gia nào?",
+    "options": [
+      "Ý",
+      "Anh",
+      "Pháp",
+      "Đức"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phong trào Văn hóa Phục hưng bắt đầu ở Ý vào khoảng thế kỷ XIV. Phong trào này đề cao giá trị con người, khôi phục tinh hoa văn hóa Hy Lạp - La Mã cổ đại và phê phán những giáo điều lỗi thời của xã hội phong kiến. Nó có ý nghĩa to lớn trong việc giải phóng tư tưởng và mở đường cho sự phát triển của khoa học, nghệ thuật châu Âu."
+  },
+  {
+    "id": 51,
+    "question": "Ai là tác giả bức tranh nổi tiếng 'Mona Lisa'?",
+    "options": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Donatello"
+    ],
+    "correctIndex": 0,
+    "explanation": "Leonardo da Vinci là tác giả của bức tranh Mona Lisa, một kiệt tác hội họa nổi tiếng thế giới. Ông không chỉ là họa sĩ mà còn là nhà khoa học, kỹ sư và nhà tư tưởng lớn của thời kỳ Phục hưng. Tác phẩm của ông thể hiện trình độ nghệ thuật rất cao và tư duy sáng tạo vượt thời đại."
+  },
+  {
+    "id": 52,
+    "question": "Cuộc cải cách tôn giáo ở châu Âu gắn liền với tên tuổi ai?",
+    "options": [
+      "Martin Luther",
+      "Columbus",
+      "Napoleon",
+      "Voltaire"
+    ],
+    "correctIndex": 0,
+    "explanation": "Martin Luther là nhân vật tiêu biểu của phong trào cải cách tôn giáo ở châu Âu thế kỷ XVI. Ông phản đối nhiều biểu hiện tiêu cực của Giáo hội Thiên Chúa giáo thời đó và khởi xướng phong trào Tin Lành. Cuộc cải cách tôn giáo đã tác động mạnh đến đời sống chính trị, xã hội và tư tưởng châu Âu."
+  },
+  {
+    "id": 53,
+    "question": "Nhà nước Văn Lang do ai đứng đầu?",
+    "options": [
+      "Hùng Vương",
+      "An Dương Vương",
+      "Ngô Quyền",
+      "Lý Công Uẩn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhà nước Văn Lang do các vua Hùng đứng đầu. Đây là nhà nước đầu tiên của người Việt cổ, ra đời trong quá trình phát triển của xã hội nguyên thủy và nhu cầu tổ chức cộng đồng để trị thủy, sản xuất và chống ngoại xâm. Thời đại Hùng Vương có vị trí rất quan trọng trong lịch sử dựng nước của dân tộc."
+  },
+  {
+    "id": 54,
+    "question": "Kinh đô của nước Âu Lạc là ở đâu?",
+    "options": [
+      "Cổ Loa",
+      "Hoa Lư",
+      "Thăng Long",
+      "Phú Xuân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kinh đô của nước Âu Lạc là Cổ Loa, do An Dương Vương xây dựng. Thành Cổ Loa có quy mô lớn, cấu trúc độc đáo và là biểu tượng cho trình độ tổ chức nhà nước, quân sự của người Việt cổ. Đây là di tích lịch sử rất nổi tiếng của nước ta."
+  },
+  {
+    "id": 55,
+    "question": "Người lãnh đạo cuộc khởi nghĩa Hai Bà Trưng là ai?",
+    "options": [
+      "Trưng Trắc và Trưng Nhị",
+      "Bà Triệu",
+      "Lý Bí",
+      "Mai Thúc Loan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cuộc khởi nghĩa Hai Bà Trưng do Trưng Trắc và Trưng Nhị lãnh đạo vào năm 40. Đây là cuộc đấu tranh lớn chống ách đô hộ của nhà Đông Hán. Khởi nghĩa thể hiện tinh thần yêu nước mạnh mẽ và ý chí quật cường của phụ nữ Việt Nam trong lịch sử dân tộc."
+  },
+  {
+    "id": 56,
+    "question": "Bà Triệu khởi nghĩa chống lại ách đô hộ của triều đại nào?",
+    "options": [
+      "Nhà Ngô",
+      "Nhà Hán",
+      "Nhà Đường",
+      "Nhà Tống"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bà Triệu lãnh đạo cuộc khởi nghĩa chống ách đô hộ của nhà Ngô vào thế kỷ III. Dù khởi nghĩa thất bại, hình tượng Bà Triệu vẫn trở thành biểu tượng sáng ngời của tinh thần bất khuất, đặc biệt với câu nói nổi tiếng thể hiện khát vọng tự do và chí khí anh hùng."
+  },
+  {
+    "id": 57,
+    "question": "Người dựng nước Vạn Xuân là ai?",
+    "options": [
+      "Lý Bí",
+      "Triệu Quang Phục",
+      "Mai Thúc Loan",
+      "Phùng Hưng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lý Bí là người đã lãnh đạo cuộc khởi nghĩa chống chính quyền đô hộ phương Bắc và lập nên nước Vạn Xuân vào năm 544. Ông xưng là Lý Nam Đế. Sự ra đời của nước Vạn Xuân thể hiện khát vọng độc lập, tự chủ bền bỉ của dân tộc Việt Nam trong thời kỳ Bắc thuộc."
+  },
+  {
+    "id": 58,
+    "question": "Ai được nhân dân tôn là Bố Cái Đại Vương?",
+    "options": [
+      "Phùng Hưng",
+      "Mai Thúc Loan",
+      "Ngô Quyền",
+      "Triệu Quang Phục"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phùng Hưng được nhân dân tôn là Bố Cái Đại Vương. Ông là thủ lĩnh cuộc khởi nghĩa chống ách đô hộ nhà Đường vào cuối thế kỷ VIII. Danh hiệu này thể hiện lòng kính trọng, biết ơn của nhân dân đối với người anh hùng đã dũng cảm đứng lên vì độc lập dân tộc."
+  },
+  {
+    "id": 59,
+    "question": "Cuộc khởi nghĩa Mai Thúc Loan nổ ra chống lại ách đô hộ của triều đại nào?",
+    "options": [
+      "Nhà Đường",
+      "Nhà Hán",
+      "Nhà Tống",
+      "Nhà Minh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mai Thúc Loan lãnh đạo cuộc khởi nghĩa lớn chống lại ách đô hộ của nhà Đường vào thế kỷ VIII. Ông được nhân dân gọi là Mai Hắc Đế. Cuộc khởi nghĩa đã lôi cuốn đông đảo nhân dân tham gia và cho thấy tinh thần đấu tranh kiên cường của dân tộc ta trong thời kỳ Bắc thuộc."
+  },
+  {
+    "id": 60,
+    "question": "Sự kiện nào chấm dứt hơn 1000 năm Bắc thuộc của dân tộc ta?",
+    "options": [
+      "Chiến thắng Bạch Đằng năm 938",
+      "Khởi nghĩa Hai Bà Trưng",
+      "Khởi nghĩa Lam Sơn",
+      "Chiến thắng Điện Biên Phủ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến thắng Bạch Đằng năm 938 do Ngô Quyền lãnh đạo đã chấm dứt hơn một nghìn năm Bắc thuộc của dân tộc ta. Từ đây, Việt Nam bước vào thời kỳ độc lập, tự chủ lâu dài. Đây là một mốc son cực kỳ quan trọng trong lịch sử dân tộc."
+  },
+  {
+    "id": 61,
+    "question": "Quốc tử giám được xây dựng dưới triều đại nào?",
+    "options": [
+      "Nhà Lý",
+      "Nhà Đinh",
+      "Nhà Hồ",
+      "Nhà Nguyễn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quốc Tử Giám được xây dựng dưới thời nhà Lý và được xem là trường đại học đầu tiên của Việt Nam. Việc thành lập Quốc Tử Giám cho thấy triều đình rất coi trọng giáo dục, đào tạo nhân tài và phát triển văn hóa dân tộc."
+  },
+  {
+    "id": 62,
+    "question": "Văn Miếu được xây dựng để thờ ai?",
+    "options": [
+      "Khổng Tử",
+      "Lê Lợi",
+      "Ngô Quyền",
+      "Hùng Vương"
+    ],
+    "correctIndex": 0,
+    "explanation": "Văn Miếu được xây dựng để thờ Khổng Tử, các bậc hiền triết và những người có công với Nho học. Đây là biểu tượng cho truyền thống hiếu học, tôn sư trọng đạo của dân tộc Việt Nam, đồng thời phản ánh vai trò quan trọng của giáo dục trong xã hội phong kiến."
+  },
+  {
+    "id": 63,
+    "question": "Ai là người có công lớn trong việc cải cách dưới thời Hồ?",
+    "options": [
+      "Hồ Quý Ly",
+      "Hồ Nguyên Trừng",
+      "Lê Lợi",
+      "Mạc Đăng Dung"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hồ Quý Ly là người đề xướng và thực hiện nhiều cải cách lớn trên các lĩnh vực chính trị, kinh tế, quân sự và giáo dục. Dù còn nhiều tranh cãi, những cải cách của ông cho thấy nỗ lực đổi mới đất nước trong bối cảnh xã hội phong kiến cuối Trần đang khủng hoảng."
+  },
+  {
+    "id": 64,
+    "question": "Ai là người chỉ huy nghĩa quân Tây Sơn đánh tan quân Xiêm ở Rạch Gầm - Xoài Mút?",
+    "options": [
+      "Nguyễn Huệ",
+      "Nguyễn Nhạc",
+      "Nguyễn Ánh",
+      "Lê Chiêu Thống"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Huệ là người chỉ huy quân Tây Sơn đánh tan quân Xiêm trong trận Rạch Gầm - Xoài Mút năm 1785. Đây là một trong những chiến thắng tiêu biểu nhất trong lịch sử chống ngoại xâm của dân tộc ta, thể hiện tài cầm quân kiệt xuất của ông."
+  },
+  {
+    "id": 65,
+    "question": "Hiệp ước Nhâm Tuất năm 1862 được ký giữa triều Nguyễn với nước nào?",
+    "options": [
+      "Pháp",
+      "Anh",
+      "Mỹ",
+      "Nhật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hiệp ước Nhâm Tuất năm 1862 được ký giữa triều đình nhà Nguyễn với thực dân Pháp sau khi Pháp chiếm được một số vùng ở Nam Kỳ. Theo hiệp ước này, triều đình phải nhượng cho Pháp ba tỉnh miền Đông Nam Kỳ và nhiều quyền lợi khác. Đây là một bước lùi lớn của triều đình trước sự xâm lược của thực dân Pháp."
+  },
+  {
+    "id": 66,
+    "question": "Phong trào Đông Du do ai khởi xướng?",
+    "options": [
+      "Phan Bội Châu",
+      "Phan Châu Trinh",
+      "Nguyễn Ái Quốc",
+      "Huỳnh Thúc Kháng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phong trào Đông Du do Phan Bội Châu khởi xướng vào đầu thế kỷ XX. Mục đích của phong trào là đưa thanh niên Việt Nam sang Nhật Bản học tập để chuẩn bị lực lượng cứu nước. Dù không thành công lâu dài, phong trào đã góp phần thức tỉnh tinh thần yêu nước và đổi mới tư duy của một bộ phận trí thức Việt Nam."
+  },
+  {
+    "id": 67,
+    "question": "Phong trào Duy Tân đầu thế kỷ XX gắn với tên tuổi ai?",
+    "options": [
+      "Phan Châu Trinh",
+      "Nguyễn Thái Học",
+      "Hoàng Hoa Thám",
+      "Phan Đình Phùng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phan Châu Trinh là người tiêu biểu của phong trào Duy Tân đầu thế kỷ XX. Ông chủ trương cải cách xã hội, nâng cao dân trí, chấn hưng dân khí và phát triển kinh tế để từng bước giành lại độc lập. Khác với xu hướng bạo động, Phan Châu Trinh thiên về con đường cải cách ôn hòa."
+  },
+  {
+    "id": 68,
+    "question": "Khởi nghĩa Yên Bái năm 1930 do tổ chức nào lãnh đạo?",
+    "options": [
+      "Việt Nam Quốc dân đảng",
+      "Đảng Cộng sản Đông Dương",
+      "Hội Việt Nam Cách mạng Thanh niên",
+      "Mặt trận Việt Minh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khởi nghĩa Yên Bái do Việt Nam Quốc dân đảng lãnh đạo. Đây là cuộc khởi nghĩa tiêu biểu theo khuynh hướng dân chủ tư sản ở Việt Nam trước năm 1930. Mặc dù thất bại, cuộc khởi nghĩa vẫn phản ánh tinh thần yêu nước và khát vọng giải phóng dân tộc."
+  },
+  {
+    "id": 69,
+    "question": "Người lãnh đạo khởi nghĩa Yên Bái là ai?",
+    "options": [
+      "Nguyễn Thái Học",
+      "Phan Bội Châu",
+      "Tôn Đức Thắng",
+      "Nguyễn Ái Quốc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Thái Học là lãnh tụ của Việt Nam Quốc dân đảng và là người lãnh đạo cuộc khởi nghĩa Yên Bái năm 1930. Ông là một nhà yêu nước tiêu biểu theo khuynh hướng dân chủ tư sản. Dù cuộc khởi nghĩa thất bại, tinh thần hy sinh của ông vẫn được lịch sử ghi nhận."
+  },
+  {
+    "id": 70,
+    "question": "Mặt trận Việt Minh được thành lập vào năm nào?",
+    "options": [
+      "1941",
+      "1930",
+      "1945",
+      "1951"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mặt trận Việt Minh được thành lập năm 1941 do Nguyễn Ái Quốc sáng lập. Đây là mặt trận dân tộc thống nhất nhằm tập hợp mọi lực lượng yêu nước để đấu tranh giải phóng dân tộc. Việt Minh đã có vai trò rất lớn trong việc lãnh đạo nhân dân tiến tới thắng lợi của Cách mạng Tháng Tám năm 1945."
+  },
+  {
+    "id": 71,
+    "question": "Hội nghị thành lập Đảng Cộng sản Việt Nam diễn ra ở đâu?",
+    "options": [
+      "Hương Cảng",
+      "Hà Nội",
+      "Sài Gòn",
+      "Pa-ri"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hội nghị hợp nhất các tổ chức cộng sản để thành lập Đảng Cộng sản Việt Nam diễn ra tại Hương Cảng, Trung Quốc, đầu năm 1930. Hội nghị do Nguyễn Ái Quốc chủ trì. Đây là sự kiện có ý nghĩa cực kỳ quan trọng đối với lịch sử cách mạng Việt Nam."
+  },
+  {
+    "id": 72,
+    "question": "Phong trào Xô viết Nghệ - Tĩnh diễn ra trong những năm nào?",
+    "options": [
+      "1930-1931",
+      "1936-1939",
+      "1941-1945",
+      "1954-1960"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phong trào Xô viết Nghệ - Tĩnh diễn ra trong những năm 1930-1931. Đây là đỉnh cao của phong trào cách mạng đầu tiên dưới sự lãnh đạo của Đảng. Nhân dân ở nhiều địa phương Nghệ An và Hà Tĩnh đã nổi dậy đấu tranh mạnh mẽ, lập ra các hình thức chính quyền cách mạng sơ khai."
+  },
+  {
+    "id": 73,
+    "question": "Cơ quan quyền lực nhà nước cao nhất đầu tiên của nước Việt Nam Dân chủ Cộng hòa được bầu ra qua cuộc Tổng tuyển cử năm nào?",
+    "options": [
+      "1946",
+      "1945",
+      "1954",
+      "1976"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 6/1/1946, nhân dân cả nước tiến hành Tổng tuyển cử bầu Quốc hội đầu tiên của nước Việt Nam Dân chủ Cộng hòa. Đây là sự kiện có ý nghĩa chính trị rất lớn, thể hiện quyền làm chủ của nhân dân và góp phần củng cố chính quyền cách mạng non trẻ."
+  },
+  {
+    "id": 74,
+    "question": "Toàn quốc kháng chiến chống Pháp bùng nổ vào ngày nào?",
+    "options": [
+      "19/12/1946",
+      "2/9/1945",
+      "7/5/1954",
+      "27/1/1973"
+    ],
+    "correctIndex": 0,
+    "explanation": "Toàn quốc kháng chiến chống Pháp bùng nổ vào ngày 19/12/1946 khi Chủ tịch Hồ Chí Minh ra Lời kêu gọi Toàn quốc kháng chiến. Đây là thời điểm nhân dân Việt Nam bước vào cuộc chiến đấu lâu dài để bảo vệ nền độc lập vừa giành được."
+  },
+  {
+    "id": 75,
+    "question": "Chiến dịch Việt Bắc thu - đông 1947 đã đánh bại kế hoạch nào của Pháp?",
+    "options": [
+      "Đánh nhanh thắng nhanh",
+      "Chiến tranh đặc biệt",
+      "Việt Nam hóa chiến tranh",
+      "Đông Dương hóa chiến tranh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến dịch Việt Bắc thu - đông năm 1947 đã đánh bại kế hoạch đánh nhanh thắng nhanh của thực dân Pháp. Pháp hy vọng tiêu diệt cơ quan đầu não kháng chiến và nhanh chóng kết thúc chiến tranh, nhưng đã thất bại. Thắng lợi này giúp bảo vệ căn cứ địa cách mạng và củng cố niềm tin của quân dân ta."
+  },
+  {
+    "id": 76,
+    "question": "Chiến dịch Biên giới thu - đông năm 1950 nhằm mục tiêu chính gì?",
+    "options": [
+      "Khai thông biên giới Việt - Trung",
+      "Giải phóng Sài Gòn",
+      "Đánh bại quân Thanh",
+      "Lật đổ phát xít Nhật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến dịch Biên giới thu - đông 1950 nhằm khai thông biên giới Việt - Trung, mở rộng căn cứ địa và tăng cường quan hệ quốc tế cho cách mạng Việt Nam. Đây là chiến dịch tiến công quy mô lớn đầu tiên của quân đội ta trong kháng chiến chống Pháp và đã giành thắng lợi quan trọng."
+  },
+  {
+    "id": 77,
+    "question": "Ai là Tổng tư lệnh Quân đội nhân dân Việt Nam trong kháng chiến chống Pháp?",
+    "options": [
+      "Võ Nguyên Giáp",
+      "Trường Chinh",
+      "Phạm Văn Đồng",
+      "Lê Duẩn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đại tướng Võ Nguyên Giáp là Tổng tư lệnh Quân đội nhân dân Việt Nam trong kháng chiến chống Pháp. Ông là nhà quân sự kiệt xuất, gắn liền với nhiều chiến thắng lớn như Biên giới 1950 và Điện Biên Phủ 1954. Tên tuổi của ông có vị trí đặc biệt trong lịch sử quân sự Việt Nam và thế giới."
+  },
+  {
+    "id": 78,
+    "question": "Phong trào Đồng khởi bùng nổ mạnh mẽ đầu tiên ở đâu năm 1960?",
+    "options": [
+      "Bến Tre",
+      "Hà Nội",
+      "Huế",
+      "Hải Phòng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phong trào Đồng khởi bùng nổ mạnh mẽ đầu tiên ở Bến Tre vào năm 1960 rồi lan rộng ra nhiều địa phương ở miền Nam. Phong trào này đánh dấu bước phát triển mới của cách mạng miền Nam, chuyển từ thế giữ gìn lực lượng sang thế tiến công."
+  },
+  {
+    "id": 79,
+    "question": "Mặt trận Dân tộc Giải phóng miền Nam Việt Nam được thành lập năm nào?",
+    "options": [
+      "1960",
+      "1954",
+      "1968",
+      "1975"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mặt trận Dân tộc Giải phóng miền Nam Việt Nam được thành lập năm 1960. Tổ chức này có nhiệm vụ đoàn kết các tầng lớp nhân dân miền Nam để đấu tranh chống đế quốc Mỹ và chính quyền Sài Gòn, giải phóng miền Nam, tiến tới thống nhất đất nước."
+  },
+  {
+    "id": 80,
+    "question": "Cuộc Tổng tiến công và nổi dậy Tết Mậu Thân diễn ra vào năm nào?",
+    "options": [
+      "1968",
+      "1965",
+      "1973",
+      "1975"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cuộc Tổng tiến công và nổi dậy Tết Mậu Thân diễn ra vào năm 1968. Đây là đòn tiến công bất ngờ, mạnh mẽ vào nhiều đô thị và căn cứ quân sự của Mỹ và chính quyền Sài Gòn. Dù còn tổn thất, cuộc tiến công này đã làm lung lay ý chí xâm lược của Mỹ và tạo bước ngoặt quan trọng cho cuộc kháng chiến."
+  },
+  {
+    "id": 81,
+    "question": "Hiệp định Paris năm 1973 buộc Mỹ phải làm gì?",
+    "options": [
+      "Rút quân về nước",
+      "Trao trả Nam Bộ",
+      "Sáp nhập Việt Nam",
+      "Chi viện thêm quân"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hiệp định Paris năm 1973 buộc Mỹ phải rút hết quân đội và quân đồng minh khỏi miền Nam Việt Nam. Đây là thắng lợi lớn của nhân dân ta trên mặt trận ngoại giao, góp phần làm thay đổi tương quan lực lượng có lợi cho cách mạng miền Nam."
+  },
+  {
+    "id": 82,
+    "question": "Chiến dịch Hồ Chí Minh bắt đầu vào tháng mấy năm 1975?",
+    "options": [
+      "Tháng 4",
+      "Tháng 1",
+      "Tháng 6",
+      "Tháng 9"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến dịch Hồ Chí Minh bắt đầu vào tháng 4 năm 1975. Đây là chiến dịch tiến công cuối cùng, có ý nghĩa quyết định để giải phóng Sài Gòn và toàn miền Nam. Chiến dịch kết thúc thắng lợi ngày 30/4/1975, hoàn thành sự nghiệp giải phóng dân tộc."
+  },
+  {
+    "id": 83,
+    "question": "Ai là người đọc bản Tuyên ngôn Độc lập ngày 2/9/1945?",
+    "options": [
+      "Hồ Chí Minh",
+      "Võ Nguyên Giáp",
+      "Trường Chinh",
+      "Phạm Văn Đồng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chủ tịch Hồ Chí Minh là người đọc bản Tuyên ngôn Độc lập ngày 2/9/1945 tại Quảng trường Ba Đình. Văn kiện này tuyên bố trước toàn thế giới về sự ra đời của nước Việt Nam Dân chủ Cộng hòa và khẳng định quyền tự do, độc lập của dân tộc Việt Nam."
+  },
+  {
+    "id": 84,
+    "question": "Quốc tế Cộng sản được thành lập năm nào?",
+    "options": [
+      "1919",
+      "1917",
+      "1925",
+      "1939"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quốc tế Cộng sản được thành lập vào năm 1919 tại Moskva. Đây là tổ chức quốc tế của phong trào cộng sản và công nhân thế giới, có ảnh hưởng lớn đến nhiều đảng cộng sản, trong đó có cách mạng Việt Nam trong giai đoạn đầu thế kỷ XX."
+  },
+  {
+    "id": 85,
+    "question": "Cuộc chiến tranh lạnh diễn ra chủ yếu giữa hai cường quốc nào?",
+    "options": [
+      "Mỹ và Liên Xô",
+      "Anh và Pháp",
+      "Đức và Ý",
+      "Nhật và Trung Quốc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến tranh lạnh là thời kỳ đối đầu căng thẳng chủ yếu giữa hai siêu cường Mỹ và Liên Xô sau Chiến tranh thế giới thứ hai. Dù không trực tiếp đánh nhau toàn diện, hai bên cạnh tranh quyết liệt trên các lĩnh vực quân sự, chính trị, kinh tế, khoa học kỹ thuật và ảnh hưởng quốc tế."
+  },
+  {
+    "id": 86,
+    "question": "Chiến tranh lạnh kết thúc vào khoảng năm nào?",
+    "options": [
+      "1991",
+      "1975",
+      "1945",
+      "1968"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến tranh lạnh kết thúc vào khoảng năm 1991, gắn với sự tan rã của Liên Xô và hệ thống xã hội chủ nghĩa ở Đông Âu. Sự kiện này đã làm thay đổi sâu sắc cục diện thế giới, chấm dứt trật tự hai cực kéo dài nhiều thập kỷ."
+  },
+  {
+    "id": 87,
+    "question": "Bức tường Berlin sụp đổ vào năm nào?",
+    "options": [
+      "1989",
+      "1975",
+      "1991",
+      "1961"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bức tường Berlin sụp đổ vào năm 1989, đánh dấu một bước ngoặt lớn trong lịch sử châu Âu hiện đại. Sự kiện này tượng trưng cho sự suy yếu của trật tự đối đầu Đông - Tây và mở đường cho quá trình thống nhất nước Đức."
+  },
+  {
+    "id": 88,
+    "question": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) được thành lập năm nào?",
+    "options": [
+      "1967",
+      "1945",
+      "1975",
+      "1986"
+    ],
+    "correctIndex": 0,
+    "explanation": "ASEAN được thành lập năm 1967 tại Bangkok với mục tiêu thúc đẩy hợp tác kinh tế, văn hóa và duy trì hòa bình, ổn định ở khu vực Đông Nam Á. Sự ra đời của ASEAN phản ánh xu thế liên kết khu vực ngày càng mạnh trên thế giới."
+  },
+  {
+    "id": 89,
+    "question": "Việt Nam gia nhập ASEAN vào năm nào?",
+    "options": [
+      "1995",
+      "1986",
+      "1976",
+      "2000"
+    ],
+    "correctIndex": 0,
+    "explanation": "Việt Nam chính thức gia nhập ASEAN vào năm 1995. Sự kiện này đánh dấu bước phát triển quan trọng trong chính sách đối ngoại của nước ta, góp phần mở rộng hợp tác khu vực, nâng cao vị thế quốc tế và thúc đẩy công cuộc đổi mới."
+  },
+  {
+    "id": 90,
+    "question": "Ai là hoàng đế đầu tiên của La Mã cổ đại?",
+    "options": [
+      "Augustus",
+      "Julius Caesar",
+      "Nero",
+      "Constantine"
+    ],
+    "correctIndex": 0,
+    "explanation": "Augustus được xem là vị hoàng đế đầu tiên của đế chế La Mã. Dưới thời ông, La Mã bước vào giai đoạn ổn định và phát triển mạnh mẽ. Vai trò của Augustus rất quan trọng trong việc chuyển La Mã từ chế độ cộng hòa sang đế chế."
+  },
+  {
+    "id": 91,
+    "question": "Kim tự tháp nổi tiếng là công trình của nền văn minh nào?",
+    "options": [
+      "Ai Cập cổ đại",
+      "Lưỡng Hà",
+      "Ấn Độ cổ đại",
+      "Hy Lạp cổ đại"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kim tự tháp là công trình kiến trúc tiêu biểu của nền văn minh Ai Cập cổ đại. Đây là nơi an táng các pharaoh, đồng thời phản ánh trình độ cao về toán học, kiến trúc và tổ chức lao động của người Ai Cập cổ."
+  },
+  {
+    "id": 92,
+    "question": "Chữ viết tượng hình gắn với nền văn minh cổ đại nào?",
+    "options": [
+      "Ai Cập",
+      "La Mã",
+      "Hy Lạp",
+      "Trung Hoa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chữ viết tượng hình là thành tựu văn hóa nổi bật của Ai Cập cổ đại. Hệ thống chữ này được khắc trên đá, papyrus và các công trình kiến trúc, giúp các nhà sử học ngày nay hiểu thêm về đời sống và tư tưởng của người Ai Cập xưa."
+  },
+  {
+    "id": 93,
+    "question": "Vạn Lý Trường Thành là công trình nổi tiếng của quốc gia nào?",
+    "options": [
+      "Trung Quốc",
+      "Ấn Độ",
+      "Nhật Bản",
+      "Triều Tiên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vạn Lý Trường Thành là công trình nổi tiếng của Trung Quốc cổ đại. Công trình này được xây dựng qua nhiều thời kỳ nhằm phòng thủ chống các cuộc tấn công từ phương Bắc. Đây là một trong những kỳ quan kiến trúc và quân sự nổi bật của nhân loại."
+  },
+  {
+    "id": 94,
+    "question": "Tần Thủy Hoàng có công lớn gì trong lịch sử Trung Quốc?",
+    "options": [
+      "Thống nhất Trung Quốc",
+      "Phát minh giấy",
+      "Sáng lập Nho giáo",
+      "Mở đường tơ lụa"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tần Thủy Hoàng là người có công thống nhất Trung Quốc vào cuối thế kỷ III trước Công nguyên, chấm dứt thời kỳ chiến tranh phân liệt giữa các nước chư hầu. Sau khi thống nhất, ông tiến hành nhiều biện pháp như thống nhất tiền tệ, chữ viết và đơn vị đo lường."
+  },
+  {
+    "id": 95,
+    "question": "Người sáng lập đạo Phật là ai?",
+    "options": [
+      "Thích Ca Mâu Ni",
+      "Khổng Tử",
+      "Lão Tử",
+      "Muhammad"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thích Ca Mâu Ni là người sáng lập đạo Phật ở Ấn Độ cổ đại. Phật giáo đề cao lòng từ bi, tinh thần hướng thiện và giải thoát con người khỏi khổ đau. Tôn giáo này đã có ảnh hưởng sâu rộng ở nhiều quốc gia châu Á, trong đó có Việt Nam."
+  },
+  {
+    "id": 96,
+    "question": "Chữ số 0 là thành tựu toán học nổi bật của nền văn minh nào?",
+    "options": [
+      "Ấn Độ cổ đại",
+      "Ai Cập cổ đại",
+      "Hy Lạp cổ đại",
+      "La Mã cổ đại"
+    ],
+    "correctIndex": 0,
+    "explanation": "Người Ấn Độ cổ đại có đóng góp rất lớn cho toán học, đặc biệt là việc sử dụng chữ số 0 và hệ thập phân. Thành tựu này có ý nghĩa quan trọng đối với sự phát triển của toán học và khoa học thế giới."
+  },
+  {
+    "id": 97,
+    "question": "Ai là nhà bác học phát hiện ra lực hấp dẫn?",
+    "options": [
+      "Isaac Newton",
+      "Albert Einstein",
+      "Galileo Galilei",
+      "Thomas Edison"
+    ],
+    "correctIndex": 0,
+    "explanation": "Isaac Newton là nhà bác học nổi tiếng với việc phát hiện và xây dựng định luật vạn vật hấp dẫn. Những công trình của ông đặt nền móng quan trọng cho vật lý cổ điển và ảnh hưởng sâu rộng đến khoa học hiện đại."
+  },
+  {
+    "id": 98,
+    "question": "Ai là người đi vòng quanh thế giới đầu tiên bằng đường biển?",
+    "options": [
+      "Đoàn thám hiểm Magellan",
+      "Columbus",
+      "Vasco da Gama",
+      "Marco Polo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đoàn thám hiểm do Ferdinand Magellan khởi xướng là đoàn đầu tiên thực hiện chuyến đi vòng quanh thế giới bằng đường biển. Mặc dù Magellan qua đời giữa hành trình, chuyến đi vẫn được hoàn thành và chứng minh thực tế rằng Trái Đất có hình cầu, đồng thời mở rộng hiểu biết của con người về thế giới."
+  },
+  {
+    "id": 99,
+    "question": "Cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ dẫn đến sự ra đời của quốc gia nào?",
+    "options": [
+      "Hoa Kỳ",
+      "Canada",
+      "Mexico",
+      "Brazil"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cuộc chiến tranh giành độc lập của 13 thuộc địa Anh ở Bắc Mỹ đã dẫn đến sự ra đời của Hợp chủng quốc Hoa Kỳ. Đây là một cuộc cách mạng tư sản có ý nghĩa lớn, không chỉ đối với châu Mỹ mà còn tác động đến phong trào đấu tranh vì tự do ở nhiều nơi trên thế giới."
+  },
+  {
+    "id": 100,
+    "question": "Ai là vị hoàng đế nổi tiếng của Pháp đầu thế kỷ XIX?",
+    "options": [
+      "Napoleon Bonaparte",
+      "Louis XVI",
+      "Charles de Gaulle",
+      "Robespierre"
+    ],
+    "correctIndex": 0,
+    "explanation": "Napoleon Bonaparte là vị hoàng đế nổi tiếng của Pháp đầu thế kỷ XIX. Ông là một nhà quân sự, chính trị tài năng, đã đưa nước Pháp trở thành cường quốc mạnh ở châu Âu trong một thời gian. Tuy nhiên, các cuộc chiến tranh do ông tiến hành cũng gây nhiều biến động cho châu lục này."
+  },
+  {
+    "id": 101,
+    "question": "Cuộc Duy tân Minh Trị diễn ra ở nước nào?",
+    "options": [
+      "Nhật Bản",
+      "Trung Quốc",
+      "Triều Tiên",
+      "Thái Lan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cuộc Duy tân Minh Trị diễn ra ở Nhật Bản từ năm 1868. Đây là cuộc cải cách toàn diện trên các lĩnh vực kinh tế, chính trị, quân sự và giáo dục, giúp Nhật Bản nhanh chóng thoát khỏi nguy cơ bị phương Tây xâm lược và vươn lên trở thành nước tư bản công nghiệp."
+  },
+  {
+    "id": 102,
+    "question": "Cuộc Duy tân Minh Trị bắt đầu vào năm nào?",
+    "options": [
+      "1868",
+      "1848",
+      "1911",
+      "1945"
+    ],
+    "correctIndex": 0,
+    "explanation": "Năm 1868 là mốc bắt đầu cuộc Duy tân Minh Trị ở Nhật Bản. Cuộc cải cách này có vai trò quyết định trong việc chuyển Nhật từ một nước phong kiến sang một nước tư bản hiện đại, tạo nền tảng cho sự phát triển mạnh mẽ sau đó."
+  },
+  {
+    "id": 103,
+    "question": "Ai là người thống nhất nước Đức vào thế kỷ XIX?",
+    "options": [
+      "Otto von Bismarck",
+      "Hitler",
+      "Wilhelm II",
+      "Frederick Đại đế"
+    ],
+    "correctIndex": 0,
+    "explanation": "Otto von Bismarck là nhà chính trị có vai trò quan trọng hàng đầu trong quá trình thống nhất nước Đức vào thế kỷ XIX. Ông sử dụng chính sách sắt và máu, kết hợp chiến tranh và ngoại giao để đưa các bang Đức vào một quốc gia thống nhất dưới sự lãnh đạo của Phổ."
+  },
+  {
+    "id": 104,
+    "question": "Cuộc cách mạng Tân Hợi năm 1911 diễn ra ở nước nào?",
+    "options": [
+      "Trung Quốc",
+      "Nhật Bản",
+      "Triều Tiên",
+      "Ấn Độ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng Tân Hợi năm 1911 diễn ra ở Trung Quốc. Cuộc cách mạng này đã lật đổ triều đại Mãn Thanh, chấm dứt chế độ phong kiến tồn tại hàng nghìn năm và mở đường cho sự ra đời của Trung Hoa Dân quốc."
+  },
+  {
+    "id": 105,
+    "question": "Ai là người lãnh đạo Cách mạng Tân Hợi 1911?",
+    "options": [
+      "Tôn Trung Sơn",
+      "Mao Trạch Đông",
+      "Tưởng Giới Thạch",
+      "Khang Hữu Vi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tôn Trung Sơn là lãnh tụ tiêu biểu của Cách mạng Tân Hợi năm 1911 ở Trung Quốc. Ông là người đề xướng học thuyết Tam dân và có ảnh hưởng lớn đến phong trào dân chủ tư sản ở Trung Quốc đầu thế kỷ XX."
+  },
+  {
+    "id": 106,
+    "question": "Mahatma Gandhi gắn liền với phong trào đấu tranh giành độc lập của quốc gia nào?",
+    "options": [
+      "Ấn Độ",
+      "Trung Quốc",
+      "Ai Cập",
+      "Nam Phi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mahatma Gandhi là lãnh tụ nổi tiếng của phong trào đấu tranh giành độc lập ở Ấn Độ. Ông chủ trương đấu tranh bằng phương pháp bất bạo động, bất hợp tác với chính quyền thực dân Anh. Tư tưởng và hoạt động của ông có ảnh hưởng lớn đến phong trào giải phóng dân tộc trên thế giới."
+  },
+  {
+    "id": 107,
+    "question": "Ai là tổng thống đầu tiên của nước Việt Nam Dân chủ Cộng hòa?",
+    "options": [
+      "Hồ Chí Minh",
+      "Tôn Đức Thắng",
+      "Phạm Văn Đồng",
+      "Trường Chinh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hồ Chí Minh là Chủ tịch đầu tiên của nước Việt Nam Dân chủ Cộng hòa. Người là lãnh tụ vĩ đại của dân tộc Việt Nam, đã dành trọn cuộc đời cho sự nghiệp giải phóng dân tộc, thống nhất đất nước và xây dựng xã hội mới."
+  },
+  {
+    "id": 108,
+    "question": "Quốc hội khóa VI của Việt Nam quyết định thống nhất đất nước về mặt nhà nước vào năm nào?",
+    "options": [
+      "1976",
+      "1975",
+      "1973",
+      "1986"
+    ],
+    "correctIndex": 0,
+    "explanation": "Năm 1976, Quốc hội khóa VI của nước Việt Nam thống nhất đã họp và quyết định nhiều vấn đề trọng đại, trong đó có việc chính thức thống nhất đất nước về mặt nhà nước. Đây là bước hoàn chỉnh quan trọng sau thắng lợi mùa xuân 1975."
+  },
+  {
+    "id": 109,
+    "question": "Sự kiện nào mở đầu phong trào giải phóng dân tộc ở châu Phi sau Chiến tranh thế giới thứ hai?",
+    "options": [
+      "Nhiều nước châu Phi lần lượt giành độc lập",
+      "ASEAN thành lập",
+      "Liên Xô tan rã",
+      "Cách mạng công nghiệp"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sau Chiến tranh thế giới thứ hai, phong trào giải phóng dân tộc ở châu Phi phát triển mạnh mẽ và nhiều quốc gia lần lượt giành được độc lập. Đây là một bộ phận quan trọng của phong trào giải phóng dân tộc trên toàn thế giới, góp phần làm tan rã hệ thống thuộc địa của chủ nghĩa đế quốc."
+  },
+  {
+    "id": 110,
+    "question": "Năm 1960 được lịch sử châu Phi gọi là gì?",
+    "options": [
+      "Năm châu Phi",
+      "Năm hòa bình",
+      "Năm độc lập châu Á",
+      "Năm Liên Hợp Quốc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Năm 1960 được gọi là Năm châu Phi vì trong năm đó có 17 quốc gia châu Phi giành được độc lập. Sự kiện này đánh dấu bước phát triển mạnh mẽ của phong trào giải phóng dân tộc ở lục địa đen và làm rung chuyển hệ thống thuộc địa của chủ nghĩa thực dân."
+  },
+  {
+    "id": 111,
+    "question": "Phong trào giải phóng dân tộc ở Mỹ Latinh sau Chiến tranh thế giới thứ hai nổi bật với thắng lợi của cách mạng ở nước nào năm 1959?",
+    "options": [
+      "Cuba",
+      "Brazil",
+      "Argentina",
+      "Chile"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phong trào giải phóng dân tộc ở Mỹ Latinh nổi bật với thắng lợi của Cách mạng Cuba năm 1959. Thắng lợi này đã lật đổ chế độ độc tài thân Mỹ và mở ra thời kỳ phát triển mới của đất nước Cuba, đồng thời cổ vũ mạnh mẽ phong trào cách mạng trong khu vực."
+  },
+  {
+    "id": 112,
+    "question": "Ai là lãnh tụ nổi tiếng của Cách mạng Cuba?",
+    "options": [
+      "Fidel Castro",
+      "Che Guevara",
+      "Salvador Allende",
+      "Pinochet"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fidel Castro là lãnh tụ nổi tiếng nhất của Cách mạng Cuba. Ông đã lãnh đạo phong trào cách mạng lật đổ chế độ độc tài Batista năm 1959. Tên tuổi của ông gắn liền với con đường phát triển xã hội chủ nghĩa của Cuba."
+  },
+  {
+    "id": 113,
+    "question": "Ai là người chỉ huy đoàn quân Tây Sơn ra Bắc tiêu diệt quân Thanh rồi lên ngôi hoàng đế lấy niên hiệu Quang Trung?",
+    "options": [
+      "Nguyễn Huệ",
+      "Nguyễn Nhạc",
+      "Lê Chiêu Thống",
+      "Nguyễn Ánh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Huệ là người chỉ huy đoàn quân Tây Sơn ra Bắc đánh bại quân Thanh xâm lược. Sau đó, ông lên ngôi hoàng đế, lấy niên hiệu là Quang Trung. Ông là một trong những vị anh hùng dân tộc xuất sắc nhất trong lịch sử Việt Nam."
+  },
+  {
+    "id": 114,
+    "question": "Nhà nước đầu tiên của người Việt cổ có tên là gì?",
+    "options": [
+      "Văn Lang",
+      "Âu Lạc",
+      "Đại Việt",
+      "Đại Cồ Việt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhà nước đầu tiên của người Việt cổ là Văn Lang. Sự ra đời của Văn Lang cho thấy xã hội Việt cổ đã phát triển đến trình độ có tổ chức nhà nước sơ khai. Đây là cột mốc mở đầu lịch sử dựng nước của dân tộc Việt Nam."
+  },
+  {
+    "id": 115,
+    "question": "Tên nước Đại Cồ Việt gắn liền với triều đại nào?",
+    "options": [
+      "Nhà Đinh",
+      "Nhà Lý",
+      "Nhà Trần",
+      "Nhà Nguyễn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tên nước Đại Cồ Việt được đặt dưới thời nhà Đinh sau khi Đinh Bộ Lĩnh thống nhất đất nước. Việc đặt quốc hiệu thể hiện ý thức độc lập, tự chủ và khẳng định vị thế của quốc gia Đại Việt trong lịch sử."
+  },
+  {
+    "id": 116,
+    "question": "Ai là người ban hành Chiếu dời đô?",
+    "options": [
+      "Lý Công Uẩn",
+      "Lê Hoàn",
+      "Trần Nhân Tông",
+      "Ngô Quyền"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lý Công Uẩn là người ban hành Chiếu dời đô năm 1010. Văn bản này thể hiện tầm nhìn chiến lược, tư duy chính trị sâu sắc của nhà vua khi quyết định chuyển kinh đô ra Thăng Long, nơi có vị trí thuận lợi cho sự phát triển lâu dài của đất nước."
+  },
+  {
+    "id": 117,
+    "question": "Danh nhân nào của Việt Nam được UNESCO vinh danh là Danh nhân văn hóa thế giới gắn với 'Truyện Kiều'?",
+    "options": [
+      "Nguyễn Du",
+      "Nguyễn Trãi",
+      "Chu Văn An",
+      "Hồ Xuân Hương"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Du là đại thi hào dân tộc, tác giả của Truyện Kiều, một kiệt tác văn học Việt Nam. Ông được UNESCO vinh danh là Danh nhân văn hóa thế giới. Tác phẩm của ông phản ánh sâu sắc hiện thực xã hội và giá trị nhân đạo lớn lao."
+  },
+  {
+    "id": 118,
+    "question": "Ai là tác giả của bộ 'Đại Việt sử ký toàn thư' được biên soạn dưới thời Lê?",
+    "options": [
+      "Ngô Sĩ Liên",
+      "Lê Quý Đôn",
+      "Nguyễn Trãi",
+      "Phan Huy Chú"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngô Sĩ Liên là sử gia nổi tiếng, người biên soạn bộ Đại Việt sử ký toàn thư dưới thời Lê. Đây là bộ chính sử quan trọng của nước ta, ghi chép khá đầy đủ lịch sử dân tộc từ thời Hồng Bàng đến thời Lê sơ."
+  },
+  {
+    "id": 119,
+    "question": "Ai là nhà bác học nổi tiếng với thuyết tương đối?",
+    "options": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Thomas Edison",
+      "Louis Pasteur"
+    ],
+    "correctIndex": 0,
+    "explanation": "Albert Einstein là nhà bác học nổi tiếng với thuyết tương đối, một trong những thành tựu vĩ đại của vật lý hiện đại. Công trình của ông đã làm thay đổi nhận thức của con người về không gian, thời gian và vũ trụ."
+  },
+  {
+    "id": 120,
+    "question": "Tổ chức nào ra đời sau Chiến tranh thế giới thứ nhất nhưng không ngăn chặn được Chiến tranh thế giới thứ hai?",
+    "options": [
+      "Hội Quốc Liên",
+      "Liên Hợp Quốc",
+      "ASEAN",
+      "NATO"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hội Quốc Liên ra đời sau Chiến tranh thế giới thứ nhất với mục tiêu duy trì hòa bình thế giới. Tuy nhiên, do thiếu cơ chế cưỡng chế hiệu quả và không ngăn được các nước phát xít tiến hành xâm lược, tổ chức này đã không thể ngăn chặn sự bùng nổ của Chiến tranh thế giới thứ hai."
+  },
+  {
+    "id": 121,
+    "question": "Sự kiện nào mở đầu thời kỳ Bắc thuộc trong lịch sử Việt Nam?",
+    "options": [
+      "Nước Âu Lạc bị Triệu Đà xâm chiếm",
+      "Chiến thắng Bạch Đằng năm 938",
+      "Khởi nghĩa Hai Bà Trưng",
+      "Nhà Lý thành lập"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thời kỳ Bắc thuộc bắt đầu khi nước Âu Lạc rơi vào ách thống trị của các thế lực phong kiến phương Bắc, mở đầu là sự xâm chiếm của Triệu Đà. Từ đó, dân tộc Việt Nam phải trải qua hơn một nghìn năm đấu tranh chống đồng hóa, giữ gìn bản sắc và giành lại độc lập. Đây là giai đoạn rất quan trọng để hình thành tinh thần yêu nước và ý chí tự chủ của dân tộc."
+  },
+  {
+    "id": 122,
+    "question": "Ai là người lãnh đạo cuộc khởi nghĩa chống quân Nam Hán trên sông Bạch Đằng năm 938?",
+    "options": [
+      "Ngô Quyền",
+      "Lê Hoàn",
+      "Đinh Bộ Lĩnh",
+      "Lý Thường Kiệt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngô Quyền là người lãnh đạo quân dân ta đánh bại quân Nam Hán trên sông Bạch Đằng năm 938. Ông sử dụng chiến thuật cắm cọc ngầm dưới lòng sông, nhử thuyền địch vào trận địa rồi phản công quyết liệt. Chiến thắng này kết thúc thời kỳ Bắc thuộc lâu dài và mở ra thời đại độc lập cho dân tộc."
+  },
+  {
+    "id": 123,
+    "question": "Ai là người chỉ huy cuộc kháng chiến chống quân Tống lần thứ nhất năm 981?",
+    "options": [
+      "Lê Hoàn",
+      "Ngô Quyền",
+      "Lý Công Uẩn",
+      "Trần Hưng Đạo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lê Hoàn là người chỉ huy cuộc kháng chiến chống quân Tống xâm lược năm 981. Trước nguy cơ ngoại xâm, ông đã lên ngôi vua để trực tiếp lãnh đạo đất nước chống giặc. Thắng lợi của cuộc kháng chiến đã giữ vững nền độc lập non trẻ của nước Đại Cồ Việt."
+  },
+  {
+    "id": 124,
+    "question": "Ai là người chỉ huy cuộc kháng chiến chống quân Tống thời Lý với chiến tuyến sông Như Nguyệt?",
+    "options": [
+      "Lý Thường Kiệt",
+      "Trần Quốc Tuấn",
+      "Lê Hoàn",
+      "Đinh Bộ Lĩnh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lý Thường Kiệt là danh tướng nổi tiếng của nhà Lý, người chỉ huy cuộc kháng chiến chống quân Tống vào thế kỷ XI. Ông chủ động đem quân đánh sang đất Tống để tự vệ, sau đó tổ chức phòng tuyến sông Như Nguyệt rất hiệu quả. Chiến thắng này khẳng định tài năng quân sự và ý chí bảo vệ độc lập dân tộc của nhân dân ta."
+  },
+  {
+    "id": 125,
+    "question": "Bài thơ 'Nam quốc sơn hà' thường gắn với cuộc kháng chiến chống quân xâm lược nào?",
+    "options": [
+      "Chống Tống thời Lý",
+      "Chống Minh thời Lê",
+      "Chống Thanh thời Tây Sơn",
+      "Chống Pháp thời Nguyễn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bài thơ Nam quốc sơn hà thường gắn với cuộc kháng chiến chống quân Tống thời Lý, đặc biệt là trận chiến trên phòng tuyến sông Như Nguyệt. Nội dung bài thơ khẳng định chủ quyền lãnh thổ của nước Nam và thể hiện ý chí quyết tâm đánh bại quân xâm lược. Tác phẩm được xem như bản tuyên ngôn độc lập đầu tiên của dân tộc."
+  },
+  {
+    "id": 126,
+    "question": "Ai là vị vua đầu tiên của nhà Trần?",
+    "options": [
+      "Trần Thái Tông",
+      "Trần Nhân Tông",
+      "Trần Thánh Tông",
+      "Trần Anh Tông"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trần Thái Tông là vị vua đầu tiên của triều Trần. Ông lên ngôi trong bối cảnh chuyển giao quyền lực từ nhà Lý sang nhà Trần. Dưới triều đại này, đất nước từng bước được củng cố và sau đó làm nên những chiến công vang dội trong kháng chiến chống Mông - Nguyên."
+  },
+  {
+    "id": 127,
+    "question": "Hội nghị Diên Hồng thời Trần được tổ chức nhằm mục đích gì?",
+    "options": [
+      "Hỏi ý kiến nên hòa hay nên đánh quân Mông - Nguyên",
+      "Bầu vua mới",
+      "Chia ruộng đất cho nông dân",
+      "Ký hiệp ước với nhà Minh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hội nghị Diên Hồng được tổ chức để nhà Trần hỏi ý kiến các bô lão trong cả nước về việc nên hòa hay nên đánh quân Mông - Nguyên. Tinh thần chung là quyết tâm đánh giặc. Hội nghị thể hiện truyền thống đoàn kết toàn dân và ý chí chống ngoại xâm rất mạnh mẽ của dân tộc ta."
+  },
+  {
+    "id": 128,
+    "question": "Tác phẩm 'Hịch tướng sĩ' do ai viết?",
+    "options": [
+      "Trần Hưng Đạo",
+      "Nguyễn Trãi",
+      "Lê Thánh Tông",
+      "Chu Văn An"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hịch tướng sĩ do Trần Hưng Đạo viết để động viên tinh thần chiến đấu của quân sĩ trước cuộc kháng chiến chống Mông - Nguyên. Tác phẩm thể hiện lòng yêu nước sâu sắc, ý chí căm thù giặc và tinh thần trách nhiệm của người cầm quân. Đây là một áng văn chính luận xuất sắc của lịch sử văn học Việt Nam."
+  },
+  {
+    "id": 129,
+    "question": "Ai là người nổi tiếng với việc dâng 'Thất trảm sớ' thời Trần?",
+    "options": [
+      "Chu Văn An",
+      "Nguyễn Trãi",
+      "Mạc Đĩnh Chi",
+      "Lê Quý Đôn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chu Văn An là nhà giáo và nhà nho nổi tiếng đời Trần, được biết đến với việc dâng Thất trảm sớ xin chém bảy tên nịnh thần. Hành động đó thể hiện khí tiết cương trực, tinh thần chính trực và lòng lo cho vận mệnh đất nước. Ông là biểu tượng sáng ngời của đạo đức và tinh thần trọng nghĩa."
+  },
+  {
+    "id": 130,
+    "question": "Nhà Hồ được thành lập vào năm nào?",
+    "options": [
+      "1400",
+      "1385",
+      "1428",
+      "1450"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhà Hồ được thành lập năm 1400 khi Hồ Quý Ly lên ngôi, thay thế nhà Trần. Tuy thời gian tồn tại ngắn, nhà Hồ đã tiến hành nhiều cải cách quan trọng. Tuy nhiên, do chưa giải quyết triệt để mâu thuẫn xã hội và gặp phải cuộc xâm lược của nhà Minh, triều đại này nhanh chóng sụp đổ."
+  },
+  {
+    "id": 131,
+    "question": "Thành nhà Hồ hiện nay thuộc tỉnh nào?",
+    "options": [
+      "Thanh Hóa",
+      "Nghệ An",
+      "Ninh Bình",
+      "Hà Nam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thành nhà Hồ nằm ở tỉnh Thanh Hóa. Đây là công trình kiến trúc đá rất độc đáo, thể hiện trình độ xây dựng cao của người Việt thời trung đại. Thành nhà Hồ hiện đã được UNESCO công nhận là Di sản văn hóa thế giới."
+  },
+  {
+    "id": 132,
+    "question": "Cuộc khởi nghĩa Lam Sơn bùng nổ vào năm nào?",
+    "options": [
+      "1418",
+      "1400",
+      "1427",
+      "1433"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khởi nghĩa Lam Sơn bùng nổ vào năm 1418 tại vùng Lam Sơn, Thanh Hóa dưới sự lãnh đạo của Lê Lợi. Đây là cuộc khởi nghĩa tiêu biểu chống ách đô hộ của nhà Minh. Sau mười năm chiến đấu gian khổ, nghĩa quân đã giành thắng lợi hoàn toàn, giải phóng đất nước."
+  },
+  {
+    "id": 133,
+    "question": "Chiến thắng Chi Lăng - Xương Giang gắn với cuộc khởi nghĩa nào?",
+    "options": [
+      "Khởi nghĩa Lam Sơn",
+      "Khởi nghĩa Tây Sơn",
+      "Khởi nghĩa Yên Thế",
+      "Khởi nghĩa Hai Bà Trưng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến thắng Chi Lăng - Xương Giang là thắng lợi quyết định của cuộc khởi nghĩa Lam Sơn. Nghĩa quân đã tiêu diệt viện binh nhà Minh, buộc quân xâm lược phải đầu hàng. Chiến thắng này mở đường cho việc khôi phục nền độc lập của dân tộc và sự ra đời của triều Lê sơ."
+  },
+  {
+    "id": 134,
+    "question": "Triều Lê sơ được thành lập sau thắng lợi của cuộc khởi nghĩa nào?",
+    "options": [
+      "Khởi nghĩa Lam Sơn",
+      "Khởi nghĩa Tây Sơn",
+      "Khởi nghĩa Cần Vương",
+      "Khởi nghĩa Yên Bái"
+    ],
+    "correctIndex": 0,
+    "explanation": "Triều Lê sơ được thành lập sau thắng lợi của cuộc khởi nghĩa Lam Sơn do Lê Lợi lãnh đạo. Sau khi đánh bại quân Minh, Lê Lợi lên ngôi hoàng đế, mở ra một triều đại phong kiến hưng thịnh trong lịch sử Việt Nam. Nhà Lê sơ có nhiều đóng góp lớn về chính trị, luật pháp, giáo dục và mở mang lãnh thổ."
+  },
+  {
+    "id": 135,
+    "question": "Bộ máy nhà nước phong kiến Việt Nam được hoàn thiện hơn dưới thời vua nào của nhà Lê sơ?",
+    "options": [
+      "Lê Thánh Tông",
+      "Lê Lợi",
+      "Lê Hiến Tông",
+      "Lê Tương Dực"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dưới thời Lê Thánh Tông, bộ máy nhà nước phong kiến Việt Nam được tổ chức chặt chẽ và hoàn thiện hơn. Ông cải tổ hệ thống hành chính, tăng cường quyền lực trung ương và củng cố pháp luật. Đây là giai đoạn phát triển đỉnh cao của chế độ phong kiến tập quyền ở nước ta."
+  },
+  {
+    "id": 136,
+    "question": "Luật Hồng Đức được ban hành dưới triều vua nào?",
+    "options": [
+      "Lê Thánh Tông",
+      "Lê Lợi",
+      "Trần Nhân Tông",
+      "Gia Long"
+    ],
+    "correctIndex": 0,
+    "explanation": "Luật Hồng Đức được ban hành dưới triều vua Lê Thánh Tông. Bộ luật này có nhiều điểm tiến bộ, phản ánh trình độ quản lý xã hội khá cao của nhà nước phong kiến Việt Nam. Nhiều quy định trong luật cũng cho thấy sự quan tâm đến gia đình, phụ nữ và nông nghiệp."
+  },
+  {
+    "id": 137,
+    "question": "Ai là người lập ra triều Mạc?",
+    "options": [
+      "Mạc Đăng Dung",
+      "Mạc Đĩnh Chi",
+      "Lê Lợi",
+      "Nguyễn Kim"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mạc Đăng Dung là người lập ra triều Mạc vào đầu thế kỷ XVI. Việc nhà Mạc ra đời diễn ra trong bối cảnh nhà Lê sơ suy yếu nghiêm trọng. Từ đó, đất nước bước vào một thời kỳ chia cắt và nội chiến kéo dài giữa các tập đoàn phong kiến."
+  },
+  {
+    "id": 138,
+    "question": "Tình trạng Nam - Bắc triều trong lịch sử Việt Nam là sự đối đầu giữa hai thế lực nào?",
+    "options": [
+      "Nhà Mạc và nhà Lê trung hưng",
+      "Nhà Trần và nhà Hồ",
+      "Nhà Lý và nhà Trần",
+      "Nhà Nguyễn và Tây Sơn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nam - Bắc triều là thời kỳ đối đầu giữa nhà Mạc ở phía Bắc và nhà Lê trung hưng ở phía Nam. Cuộc chiến kéo dài nhiều năm khiến đất nước rơi vào tình trạng bất ổn, nhân dân chịu nhiều đau khổ. Đây là một giai đoạn nội chiến phức tạp trong lịch sử phong kiến Việt Nam."
+  },
+  {
+    "id": 139,
+    "question": "Cuộc chiến tranh Trịnh - Nguyễn kéo dài bao lâu trong lịch sử Việt Nam?",
+    "options": [
+      "Gần 50 năm",
+      "Khoảng 10 năm",
+      "Khoảng 20 năm",
+      "Hơn 100 năm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến tranh Trịnh - Nguyễn kéo dài gần 50 năm với nhiều cuộc giao tranh lớn giữa hai tập đoàn phong kiến ở Đàng Ngoài và Đàng Trong. Cuộc chiến này làm đất nước bị chia cắt lâu dài, cản trở sự phát triển kinh tế và gây nhiều đau khổ cho nhân dân."
+  },
+  {
+    "id": 140,
+    "question": "Phong trào Tây Sơn bùng nổ đầu tiên ở vùng nào?",
+    "options": [
+      "Tây Sơn, Bình Định",
+      "Lam Sơn, Thanh Hóa",
+      "Hoa Lư, Ninh Bình",
+      "Cổ Loa, Đông Anh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phong trào Tây Sơn bùng nổ đầu tiên ở vùng Tây Sơn thuộc Bình Định. Đây là cuộc khởi nghĩa nông dân lớn vào cuối thế kỷ XVIII, nhằm chống lại chính quyền phong kiến mục nát và sau đó phát triển thành phong trào thống nhất đất nước, chống ngoại xâm rất mạnh mẽ."
+  },
+  {
+    "id": 141,
+    "question": "Ba anh em lãnh đạo phong trào Tây Sơn là những ai?",
+    "options": [
+      "Nguyễn Nhạc, Nguyễn Huệ, Nguyễn Lữ",
+      "Nguyễn Ánh, Nguyễn Huệ, Nguyễn Du",
+      "Lê Lợi, Nguyễn Trãi, Lê Lai",
+      "Trần Hưng Đạo, Trần Quang Khải, Trần Nhật Duật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ba anh em lãnh đạo phong trào Tây Sơn là Nguyễn Nhạc, Nguyễn Huệ và Nguyễn Lữ. Họ đã cùng nhau xây dựng lực lượng, lật đổ các tập đoàn phong kiến cũ và lập nên nhiều chiến công hiển hách. Phong trào Tây Sơn có ý nghĩa lớn đối với lịch sử dân tộc trong thế kỷ XVIII."
+  },
+  {
+    "id": 142,
+    "question": "Nguyễn Ánh sau khi đánh bại Tây Sơn đã lập ra triều đại nào?",
+    "options": [
+      "Nhà Nguyễn",
+      "Nhà Lê",
+      "Nhà Trần",
+      "Nhà Hồ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sau khi đánh bại triều Tây Sơn, Nguyễn Ánh lên ngôi hoàng đế năm 1802, lấy niên hiệu Gia Long và lập ra nhà Nguyễn. Đây là triều đại phong kiến cuối cùng trong lịch sử Việt Nam, tồn tại đến năm 1945."
+  },
+  {
+    "id": 143,
+    "question": "Kinh đô của triều Nguyễn được đặt ở đâu?",
+    "options": [
+      "Huế",
+      "Hà Nội",
+      "Thanh Hóa",
+      "Gia Định"
+    ],
+    "correctIndex": 0,
+    "explanation": "Triều Nguyễn đặt kinh đô tại Huế. Thành phố này trở thành trung tâm chính trị, văn hóa của cả nước trong suốt thời kỳ nhà Nguyễn. Quần thể di tích cố đô Huế ngày nay là một di sản văn hóa nổi tiếng, phản ánh nhiều giá trị lịch sử và kiến trúc."
+  },
+  {
+    "id": 144,
+    "question": "Bộ luật lớn của triều Nguyễn thường được gọi là gì?",
+    "options": [
+      "Hoàng Việt luật lệ",
+      "Hình thư",
+      "Luật Hồng Đức",
+      "Quốc triều hình luật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hoàng Việt luật lệ, thường gọi là Luật Gia Long, là bộ luật lớn của triều Nguyễn. Bộ luật này được xây dựng để củng cố chế độ quân chủ tập quyền và quản lý xã hội. Nó phản ánh rõ đặc điểm pháp luật phong kiến Việt Nam đầu thế kỷ XIX."
+  },
+  {
+    "id": 145,
+    "question": "Người lãnh đạo cuộc khởi nghĩa Hương Khê trong phong trào Cần Vương là ai?",
+    "options": [
+      "Phan Đình Phùng",
+      "Hoàng Hoa Thám",
+      "Nguyễn Thái Học",
+      "Trương Định"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phan Đình Phùng là lãnh tụ tiêu biểu của cuộc khởi nghĩa Hương Khê, một cuộc khởi nghĩa lớn trong phong trào Cần Vương. Ông là người yêu nước kiên trung, lãnh đạo nghĩa quân chiến đấu bền bỉ chống thực dân Pháp trong nhiều năm. Cuộc khởi nghĩa thể hiện tinh thần bất khuất của nhân dân ta cuối thế kỷ XIX."
+  },
+  {
+    "id": 146,
+    "question": "Ai là người lãnh đạo cuộc khởi nghĩa nông dân chống Pháp ở Gò Công và được nhân dân suy tôn là Bình Tây Đại nguyên soái?",
+    "options": [
+      "Trương Định",
+      "Nguyễn Trung Trực",
+      "Phan Đình Phùng",
+      "Tôn Thất Thuyết"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trương Định là nhà yêu nước tiêu biểu chống Pháp ở Nam Kỳ. Ông được nhân dân suy tôn là Bình Tây Đại nguyên soái vì tinh thần chiến đấu quyết liệt, không chấp nhận đầu hàng thực dân Pháp. Hình tượng của ông trở thành biểu tượng cho khí phách chống ngoại xâm."
+  },
+  {
+    "id": 147,
+    "question": "Câu nói 'Bao giờ người Tây nhổ hết cỏ nước Nam thì mới hết người Nam đánh Tây' gắn với ai?",
+    "options": [
+      "Nguyễn Trung Trực",
+      "Trương Định",
+      "Phan Bội Châu",
+      "Hoàng Hoa Thám"
+    ],
+    "correctIndex": 0,
+    "explanation": "Câu nói nổi tiếng đó gắn với Nguyễn Trung Trực, một anh hùng chống Pháp ở Nam Bộ. Câu nói thể hiện ý chí chiến đấu kiên cường, tinh thần bất khuất và lòng yêu nước sâu sắc của dân tộc Việt Nam trước ách xâm lược."
+  },
+  {
+    "id": 148,
+    "question": "Chiếu Cần Vương được ban ra dưới danh nghĩa của vị vua nào?",
+    "options": [
+      "Hàm Nghi",
+      "Tự Đức",
+      "Duy Tân",
+      "Bảo Đại"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiếu Cần Vương được ban ra dưới danh nghĩa vua Hàm Nghi sau khi Tôn Thất Thuyết đưa vua rời kinh thành Huế. Chiếu kêu gọi toàn dân đứng lên giúp vua cứu nước, chống lại thực dân Pháp. Đây là lời hiệu triệu có sức lan tỏa lớn trong cả nước."
+  },
+  {
+    "id": 149,
+    "question": "Tôn Thất Thuyết gắn liền với sự kiện lịch sử nào?",
+    "options": [
+      "Phản công ở kinh thành Huế năm 1885",
+      "Khởi nghĩa Yên Bái",
+      "Thành lập Đảng Cộng sản Việt Nam",
+      "Phong trào Đông Du"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tôn Thất Thuyết gắn liền với cuộc phản công quân Pháp ở kinh thành Huế năm 1885. Sau khi cuộc phản công thất bại, ông đưa vua Hàm Nghi ra sơn phòng và phát động phong trào Cần Vương. Ông là một trong những nhân vật tiêu biểu của phong trào yêu nước cuối thế kỷ XIX."
+  },
+  {
+    "id": 150,
+    "question": "Ai là người thành lập Việt Nam Quốc dân đảng?",
+    "options": [
+      "Nguyễn Thái Học",
+      "Phan Bội Châu",
+      "Nguyễn Ái Quốc",
+      "Huỳnh Thúc Kháng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Thái Học là người sáng lập Việt Nam Quốc dân đảng. Đây là tổ chức cách mạng tiêu biểu theo khuynh hướng dân chủ tư sản ở Việt Nam trước năm 1930. Tổ chức này đã lãnh đạo cuộc khởi nghĩa Yên Bái chống thực dân Pháp."
+  },
+  {
+    "id": 151,
+    "question": "Tác phẩm 'Đường Kách mệnh' gắn với tên tuổi ai?",
+    "options": [
+      "Nguyễn Ái Quốc",
+      "Phan Châu Trinh",
+      "Nguyễn Thái Học",
+      "Lê Hồng Phong"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đường Kách mệnh là tác phẩm nổi tiếng của Nguyễn Ái Quốc, tập hợp các bài giảng của Người cho lớp huấn luyện cán bộ cách mạng ở Quảng Châu. Tác phẩm có ý nghĩa quan trọng trong việc truyền bá tư tưởng cách mạng vô sản vào Việt Nam và chuẩn bị cho sự ra đời của Đảng."
+  },
+  {
+    "id": 152,
+    "question": "Nguyễn Ái Quốc đọc bản Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và thuộc địa của Lenin vào năm nào?",
+    "options": [
+      "1920",
+      "1911",
+      "1930",
+      "1945"
+    ],
+    "correctIndex": 0,
+    "explanation": "Năm 1920, Nguyễn Ái Quốc đọc được Sơ thảo lần thứ nhất những luận cương về vấn đề dân tộc và thuộc địa của Lenin. Từ đó, Người khẳng định con đường giải phóng dân tộc phải gắn liền với cách mạng vô sản. Đây là bước ngoặt quyết định trong tư tưởng cách mạng của Người."
+  },
+  {
+    "id": 153,
+    "question": "Nguyễn Ái Quốc tham gia sáng lập Đảng Cộng sản Pháp vào năm nào?",
+    "options": [
+      "1920",
+      "1917",
+      "1925",
+      "1930"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Ái Quốc tham gia sáng lập Đảng Cộng sản Pháp vào năm 1920 tại Đại hội Tours. Sự kiện này đánh dấu bước chuyển từ người yêu nước trở thành người cộng sản, đồng thời đặt nền tảng cho việc truyền bá chủ nghĩa Mác - Lênin vào phong trào cách mạng Việt Nam."
+  },
+  {
+    "id": 154,
+    "question": "Tên gọi ban đầu của Đảng Cộng sản Việt Nam khi mới thành lập năm 1930 là gì?",
+    "options": [
+      "Đảng Cộng sản Việt Nam",
+      "Đảng Lao động Việt Nam",
+      "Đảng Cộng sản Đông Dương",
+      "Hội Việt Nam Cách mạng Thanh niên"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi mới thành lập vào đầu năm 1930, tổ chức này mang tên Đảng Cộng sản Việt Nam. Sau đó, theo yêu cầu của Quốc tế Cộng sản, Đảng đổi tên thành Đảng Cộng sản Đông Dương. Việc thành lập Đảng là mốc son quan trọng của cách mạng nước ta."
+  },
+  {
+    "id": 155,
+    "question": "Chính cương vắn tắt đầu tiên của Đảng Cộng sản Việt Nam do ai soạn thảo?",
+    "options": [
+      "Nguyễn Ái Quốc",
+      "Trần Phú",
+      "Lê Hồng Phong",
+      "Hà Huy Tập"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguyễn Ái Quốc là người soạn thảo Chính cương vắn tắt, Sách lược vắn tắt đầu tiên của Đảng. Những văn kiện này xác định đúng đắn con đường cách mạng Việt Nam là giải phóng dân tộc gắn liền với quyền lợi của nhân dân lao động. Đây là nền tảng tư tưởng và chính trị rất quan trọng."
+  },
+  {
+    "id": 156,
+    "question": "Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương là ai?",
+    "options": [
+      "Trần Phú",
+      "Lê Duẩn",
+      "Nguyễn Văn Cừ",
+      "Trường Chinh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trần Phú là Tổng Bí thư đầu tiên của Đảng Cộng sản Đông Dương. Ông là một nhà cách mạng kiên cường, có đóng góp lớn trong giai đoạn đầu xây dựng tổ chức Đảng. Tên tuổi của ông gắn với tinh thần chiến đấu bất khuất vì lý tưởng cách mạng."
+  },
+  {
+    "id": 157,
+    "question": "Phong trào dân chủ 1936-1939 ở Việt Nam diễn ra trong bối cảnh nào?",
+    "options": [
+      "Mặt trận Nhân dân lên cầm quyền ở Pháp",
+      "Nhật đảo chính Pháp ở Đông Dương",
+      "Mỹ đổ quân vào miền Nam",
+      "Nhà Minh xâm lược Việt Nam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phong trào dân chủ 1936-1939 ở Việt Nam diễn ra trong bối cảnh Mặt trận Nhân dân lên cầm quyền ở Pháp với một số chính sách tiến bộ hơn trước. Đảng đã tận dụng điều kiện đó để lãnh đạo quần chúng đấu tranh công khai, hợp pháp đòi dân sinh, dân chủ. Đây là một cao trào cách mạng rộng lớn và có ý nghĩa rèn luyện lực lượng."
+  },
+  {
+    "id": 158,
+    "question": "Mặt trận Việt Minh được thành lập tại đâu?",
+    "options": [
+      "Pác Bó, Cao Bằng",
+      "Tân Trào, Tuyên Quang",
+      "Hà Nội",
+      "Huế"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mặt trận Việt Minh được thành lập tại Pác Bó, Cao Bằng vào năm 1941. Đây là nơi Nguyễn Ái Quốc trực tiếp hoạt động sau khi về nước. Việc thành lập Việt Minh có ý nghĩa rất lớn trong việc tập hợp lực lượng toàn dân chuẩn bị cho cuộc tổng khởi nghĩa."
+  },
+  {
+    "id": 159,
+    "question": "Hội nghị nào của Đảng đã xác định giải phóng dân tộc là nhiệm vụ hàng đầu trước Cách mạng Tháng Tám?",
+    "options": [
+      "Hội nghị Trung ương 8 năm 1941",
+      "Hội nghị thành lập Đảng năm 1930",
+      "Đại hội II năm 1951",
+      "Đại hội VI năm 1986"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hội nghị Trung ương 8 năm 1941 do Nguyễn Ái Quốc chủ trì đã xác định giải phóng dân tộc là nhiệm vụ bức thiết hàng đầu của cách mạng Việt Nam. Đây là sự chuyển hướng chiến lược rất đúng đắn, phù hợp với tình hình đất nước dưới ách thống trị của phát xít Nhật và thực dân Pháp."
+  },
+  {
+    "id": 160,
+    "question": "Nhật đảo chính Pháp ở Đông Dương vào ngày nào trong năm 1945?",
+    "options": [
+      "9/3/1945",
+      "2/9/1945",
+      "19/8/1945",
+      "7/5/1954"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 9/3/1945, Nhật đảo chính Pháp ở Đông Dương, độc chiếm quyền thống trị tại Việt Nam. Sự kiện này làm cho bộ máy cai trị của Pháp sụp đổ, tạo ra cuộc khủng hoảng chính trị sâu sắc và mở ra thời cơ mới cho cách mạng Việt Nam tiến tới Tổng khởi nghĩa Tháng Tám."
+  },
+  {
+    "id": 161,
+    "question": "Lệnh Tổng khởi nghĩa trong Cách mạng Tháng Tám năm 1945 được phát ra khi nào?",
+    "options": [
+      "Giữa tháng 8 năm 1945",
+      "Đầu năm 1945",
+      "Cuối năm 1944",
+      "Tháng 10 năm 1945"
+    ],
+    "correctIndex": 0,
+    "explanation": "Lệnh Tổng khởi nghĩa được phát ra vào giữa tháng 8 năm 1945 khi thời cơ cách mạng đã chín muồi sau khi Nhật đầu hàng Đồng minh. Dưới sự lãnh đạo của Đảng và Việt Minh, nhân dân cả nước đã nhanh chóng nổi dậy giành chính quyền trong thời gian rất ngắn."
+  },
+  {
+    "id": 162,
+    "question": "Địa phương nào giành chính quyền sớm nhất trong Cách mạng Tháng Tám năm 1945?",
+    "options": [
+      "Hà Nội",
+      "Huế",
+      "Sài Gòn",
+      "Tuyên Quang"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hà Nội là một trong những địa phương giành chính quyền sớm và có ý nghĩa đặc biệt trong Cách mạng Tháng Tám. Thắng lợi ở Hà Nội có tác động mạnh mẽ, cổ vũ các địa phương khác nổi dậy giành chính quyền trên cả nước. Đây là trung tâm chính trị quan trọng của cả nước lúc bấy giờ."
+  },
+  {
+    "id": 163,
+    "question": "Quốc dân Đại hội Tân Trào họp vào trước sự kiện lịch sử nào?",
+    "options": [
+      "Tổng khởi nghĩa Tháng Tám",
+      "Chiến dịch Điện Biên Phủ",
+      "Hiệp định Paris",
+      "Kháng chiến toàn quốc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quốc dân Đại hội Tân Trào họp trước Tổng khởi nghĩa Tháng Tám năm 1945. Đại hội đã thông qua nhiều quyết định quan trọng như tán thành lệnh Tổng khởi nghĩa và cử ra Ủy ban Dân tộc Giải phóng Việt Nam. Đây là sự chuẩn bị chính trị rất quan trọng cho việc giành chính quyền."
+  },
+  {
+    "id": 164,
+    "question": "Chiến dịch nào trong kháng chiến chống Pháp được gọi là trận quyết chiến chiến lược?",
+    "options": [
+      "Chiến dịch Điện Biên Phủ",
+      "Chiến dịch Việt Bắc",
+      "Chiến dịch Biên giới",
+      "Chiến dịch Hồ Chí Minh"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến dịch Điện Biên Phủ được gọi là trận quyết chiến chiến lược trong kháng chiến chống Pháp. Đây là trận đánh lớn nhất, có ý nghĩa quyết định buộc Pháp phải ký Hiệp định Genève. Chiến thắng này đã đi vào lịch sử thế giới như một biểu tượng của phong trào giải phóng dân tộc."
+  },
+  {
+    "id": 165,
+    "question": "Kế hoạch Nava của Pháp được đề ra nhằm mục đích gì?",
+    "options": [
+      "Kết thúc chiến tranh trong danh dự",
+      "Thống nhất Việt Nam",
+      "Liên minh với Nhật Bản",
+      "Xây dựng chủ nghĩa xã hội"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kế hoạch Nava được Pháp và Mỹ đề ra với mục tiêu xoay chuyển cục diện chiến tranh, giành thắng lợi quân sự quyết định để kết thúc chiến tranh trong danh dự. Tuy nhiên, kế hoạch này đã bị phá sản hoàn toàn bởi thắng lợi của quân dân ta, đặc biệt là tại Điện Biên Phủ."
+  },
+  {
+    "id": 166,
+    "question": "Sau Hiệp định Genève năm 1954, nước ta tạm thời bị chia cắt ở vĩ tuyến nào?",
+    "options": [
+      "Vĩ tuyến 17",
+      "Vĩ tuyến 16",
+      "Vĩ tuyến 18",
+      "Vĩ tuyến 20"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sau Hiệp định Genève năm 1954, Việt Nam tạm thời bị chia cắt làm hai miền ở vĩ tuyến 17 để tập kết quân đội hai bên. Đây chỉ là giới tuyến quân sự tạm thời, không phải biên giới quốc gia. Theo hiệp định, hai miền sẽ tiến tới tổng tuyển cử thống nhất đất nước."
+  },
+  {
+    "id": 167,
+    "question": "Phong trào Đồng khởi đã làm lung lay chiến lược nào của Mỹ - chính quyền Sài Gòn ở miền Nam?",
+    "options": [
+      "Chủ nghĩa thực dân mới",
+      "Chiến tranh cục bộ",
+      "Việt Nam hóa chiến tranh",
+      "Chiến tranh phá hoại"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phong trào Đồng khởi đã giáng đòn mạnh vào chính sách thống trị của Mỹ và chính quyền Sài Gòn ở miền Nam, làm lung lay tận gốc bộ máy kìm kẹp ở nhiều nông thôn. Đây là bước chuyển quan trọng của cách mạng miền Nam từ thế giữ gìn lực lượng sang thế tiến công."
+  },
+  {
+    "id": 168,
+    "question": "Chiến thắng Ấp Bắc năm 1963 có ý nghĩa gì?",
+    "options": [
+      "Mở đầu khả năng đánh bại chiến lược Chiến tranh đặc biệt",
+      "Kết thúc kháng chiến chống Mỹ",
+      "Giải phóng hoàn toàn miền Nam",
+      "Buộc Mỹ ký Hiệp định Paris"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến thắng Ấp Bắc năm 1963 chứng minh quân dân miền Nam hoàn toàn có khả năng đánh bại chiến lược Chiến tranh đặc biệt của Mỹ. Thắng lợi này có tác dụng cổ vũ mạnh mẽ phong trào đấu tranh ở miền Nam và nâng cao niềm tin vào thắng lợi cuối cùng."
+  },
+  {
+    "id": 169,
+    "question": "Mỹ bắt đầu đưa quân viễn chinh trực tiếp vào miền Nam Việt Nam với chiến lược nào?",
+    "options": [
+      "Chiến tranh cục bộ",
+      "Chiến tranh đặc biệt",
+      "Việt Nam hóa chiến tranh",
+      "Chiến tranh đơn phương"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi chuyển sang chiến lược Chiến tranh cục bộ, Mỹ đã trực tiếp đưa quân viễn chinh và quân các nước đồng minh vào miền Nam Việt Nam. Đây là bước leo thang chiến tranh rất nguy hiểm, nhưng cuối cùng vẫn bị quân dân Việt Nam đánh bại."
+  },
+  {
+    "id": 170,
+    "question": "Chiến thắng nào được xem là 'Điện Biên Phủ trên không'?",
+    "options": [
+      "Chiến thắng 12 ngày đêm cuối năm 1972 ở Hà Nội, Hải Phòng",
+      "Chiến thắng Ấp Bắc",
+      "Chiến dịch Hồ Chí Minh",
+      "Chiến thắng Biên giới 1950"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến thắng 12 ngày đêm cuối năm 1972 ở Hà Nội và Hải Phòng được gọi là Điện Biên Phủ trên không. Trong trận chiến này, quân dân miền Bắc đã đánh bại cuộc tập kích chiến lược bằng máy bay B-52 của Mỹ. Thắng lợi đó buộc Mỹ phải trở lại bàn đàm phán và ký Hiệp định Paris."
+  },
+  {
+    "id": 171,
+    "question": "Chiến dịch mở đầu cuộc Tổng tiến công và nổi dậy mùa Xuân 1975 là chiến dịch nào?",
+    "options": [
+      "Chiến dịch Tây Nguyên",
+      "Chiến dịch Huế - Đà Nẵng",
+      "Chiến dịch Hồ Chí Minh",
+      "Chiến dịch Điện Biên Phủ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến dịch Tây Nguyên là chiến dịch mở đầu cuộc Tổng tiến công và nổi dậy mùa Xuân 1975. Thắng lợi ở Tây Nguyên đã làm thay đổi nhanh chóng cục diện chiến tranh, tạo thời cơ chiến lược để quân ta tiếp tục giải phóng Huế, Đà Nẵng và tiến vào Sài Gòn."
+  },
+  {
+    "id": 172,
+    "question": "Tỉnh nào được giải phóng mở màn chiến dịch Tây Nguyên năm 1975?",
+    "options": [
+      "Đắk Lắk",
+      "Gia Lai",
+      "Kon Tum",
+      "Lâm Đồng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Buôn Ma Thuột thuộc tỉnh Đắk Lắk là mục tiêu then chốt trong chiến dịch Tây Nguyên năm 1975. Việc quân ta giành thắng lợi tại đây đã tạo ra đột biến chiến lược, làm tan rã hệ thống phòng ngự của đối phương ở Tây Nguyên."
+  },
+  {
+    "id": 173,
+    "question": "Sự kiện xe tăng quân giải phóng tiến vào Dinh Độc Lập diễn ra vào ngày nào?",
+    "options": [
+      "30/4/1975",
+      "2/9/1945",
+      "7/5/1954",
+      "27/1/1973"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ngày 30/4/1975, xe tăng quân giải phóng tiến vào Dinh Độc Lập, đánh dấu sự sụp đổ hoàn toàn của chính quyền Sài Gòn. Đây là thời khắc lịch sử kết thúc cuộc kháng chiến chống Mỹ cứu nước, hoàn thành sự nghiệp giải phóng miền Nam, thống nhất đất nước."
+  },
+  {
+    "id": 174,
+    "question": "Đại hội Đảng nào đã đề ra đường lối công nghiệp hóa, hiện đại hóa gắn với Đổi mới?",
+    "options": [
+      "Đại hội VII",
+      "Đại hội III",
+      "Đại hội IV",
+      "Đại hội V"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đại hội VII của Đảng tiếp tục phát triển đường lối đổi mới và xác định rõ hơn mục tiêu xây dựng đất nước theo hướng công nghiệp hóa, hiện đại hóa. Đây là bước cụ thể hóa đường lối đổi mới đã được khởi xướng từ Đại hội VI, tạo nền tảng cho phát triển lâu dài."
+  },
+  {
+    "id": 175,
+    "question": "Văn minh Lưỡng Hà cổ đại hình thành ở khu vực nào?",
+    "options": [
+      "Giữa hai con sông Ti-grơ và Ơ-phơ-rát",
+      "Ven sông Nile",
+      "Ven sông Hằng",
+      "Ven sông Hoàng Hà"
+    ],
+    "correctIndex": 0,
+    "explanation": "Văn minh Lưỡng Hà cổ đại hình thành ở vùng đất nằm giữa hai con sông Ti-grơ và Ơ-phơ-rát. Đây là một trong những cái nôi văn minh sớm nhất của loài người, nổi bật với chữ viết hình nêm, luật pháp và những thành tựu về thiên văn, toán học."
+  },
+  {
+    "id": 176,
+    "question": "Bộ luật nổi tiếng của Lưỡng Hà cổ đại là bộ luật nào?",
+    "options": [
+      "Bộ luật Hammurabi",
+      "Luật Hồng Đức",
+      "Luật Gia Long",
+      "Luật La Mã"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bộ luật Hammurabi là bộ luật nổi tiếng của Lưỡng Hà cổ đại. Đây là một trong những bộ luật thành văn cổ nhất của nhân loại, phản ánh rõ cơ cấu xã hội và trình độ tổ chức nhà nước thời cổ đại."
+  },
+  {
+    "id": 177,
+    "question": "Nền văn minh nào được hình thành bên bờ sông Nile?",
+    "options": [
+      "Ai Cập cổ đại",
+      "Hy Lạp cổ đại",
+      "La Mã cổ đại",
+      "Trung Hoa cổ đại"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nền văn minh Ai Cập cổ đại được hình thành bên bờ sông Nile. Con sông này đóng vai trò vô cùng quan trọng đối với sản xuất nông nghiệp, đời sống cư dân và sự phát triển của nhà nước Ai Cập. Vì vậy, người ta thường gọi Ai Cập là tặng phẩm của sông Nile."
+  },
+  {
+    "id": 178,
+    "question": "Hy Lạp cổ đại nổi tiếng với hình thức nhà nước nào?",
+    "options": [
+      "Thành bang",
+      "Đế chế quân chủ tập quyền",
+      "Liên bang hiện đại",
+      "Quân chủ lập hiến"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hy Lạp cổ đại nổi tiếng với mô hình thành bang, tức là mỗi thành phố lớn cùng vùng phụ cận tạo thành một quốc gia nhỏ độc lập. Các thành bang như Athens hay Sparta có đặc điểm chính trị, kinh tế và xã hội riêng. Đây là nét đặc trưng nổi bật của lịch sử Hy Lạp cổ đại."
+  },
+  {
+    "id": 179,
+    "question": "Nền văn minh La Mã cổ đại nổi tiếng với hệ thống luật pháp nào?",
+    "options": [
+      "Luật La Mã",
+      "Luật Hammurabi",
+      "Luật Hồng Đức",
+      "Hoàng Việt luật lệ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Luật La Mã là thành tựu nổi bật của nền văn minh La Mã cổ đại. Hệ thống luật này có ảnh hưởng sâu rộng đến nhiều quốc gia châu Âu và thế giới sau này. Nó cho thấy trình độ tổ chức xã hội và tư duy pháp lý rất phát triển của người La Mã."
+  },
+  {
+    "id": 180,
+    "question": "Ai là người mở đường biển từ châu Âu sang Ấn Độ bằng cách đi vòng qua châu Phi?",
+    "options": [
+      "Vasco da Gama",
+      "Christopher Columbus",
+      "Magellan",
+      "Marco Polo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vasco da Gama là nhà hàng hải người Bồ Đào Nha đã tìm ra con đường biển từ châu Âu đến Ấn Độ bằng cách đi vòng qua cực nam châu Phi. Phát kiến này có ý nghĩa rất lớn đối với thương mại và quá trình mở rộng thuộc địa của các nước châu Âu."
+  },
+  {
+    "id": 181,
+    "question": "Ai là người khởi xướng cuộc Cải cách tôn giáo ở Đức?",
+    "options": [
+      "Martin Luther",
+      "Calvin",
+      "Voltaire",
+      "Rousseau"
+    ],
+    "correctIndex": 0,
+    "explanation": "Martin Luther là người khởi xướng cuộc Cải cách tôn giáo ở Đức. Ông phê phán những hành vi sai trái của Giáo hội và góp phần làm xuất hiện đạo Tin Lành. Phong trào cải cách tôn giáo đã tác động sâu rộng đến xã hội châu Âu thời cận đại."
+  },
+  {
+    "id": 182,
+    "question": "Cuộc cách mạng tư sản Anh bùng nổ vào năm nào?",
+    "options": [
+      "1640",
+      "1776",
+      "1789",
+      "1848"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng tư sản Anh bùng nổ năm 1640. Đây là cuộc cách mạng sớm trong thời cận đại, góp phần lật đổ chế độ phong kiến chuyên chế và mở đường cho chủ nghĩa tư bản phát triển ở Anh. Cuộc cách mạng này có ý nghĩa lớn đối với lịch sử châu Âu."
+  },
+  {
+    "id": 183,
+    "question": "Tuyên ngôn Nhân quyền và Dân quyền là văn kiện nổi tiếng của cuộc cách mạng nào?",
+    "options": [
+      "Cách mạng tư sản Pháp",
+      "Cách mạng tư sản Anh",
+      "Cách mạng Mỹ",
+      "Cách mạng Tháng Mười Nga"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tuyên ngôn Nhân quyền và Dân quyền là văn kiện nổi tiếng của Cách mạng tư sản Pháp. Văn bản này nêu lên những tư tưởng tiến bộ về quyền con người, quyền công dân và nguyên tắc bình đẳng trước pháp luật. Nó có ảnh hưởng rộng lớn tới lịch sử chính trị thế giới."
+  },
+  {
+    "id": 184,
+    "question": "Ai là người phát minh ra bóng đèn điện sợi đốt nổi tiếng?",
+    "options": [
+      "Thomas Edison",
+      "James Watt",
+      "Newton",
+      "Einstein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thomas Edison là nhà phát minh nổi tiếng với bóng đèn điện sợi đốt và nhiều phát minh khác. Những đóng góp của ông có ý nghĩa lớn trong cuộc Cách mạng công nghiệp lần thứ hai, giúp thay đổi mạnh mẽ đời sống và sản xuất của con người."
+  },
+  {
+    "id": 185,
+    "question": "Anh, Pháp, Nga trong Chiến tranh thế giới thứ nhất thuộc phe nào?",
+    "options": [
+      "Phe Hiệp ước",
+      "Phe Liên minh",
+      "Phe Trục",
+      "Phe Đồng minh phát xít"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trong Chiến tranh thế giới thứ nhất, Anh, Pháp và Nga là những nước chủ yếu của phe Hiệp ước. Phe này đối đầu với phe Liên minh do Đức, Áo - Hung đứng đầu. Sự đối đầu giữa hai khối quân sự là biểu hiện trực tiếp của mâu thuẫn đế quốc thời kỳ đó."
+  },
+  {
+    "id": 186,
+    "question": "Đức, Áo - Hung, Ý lúc đầu trong Chiến tranh thế giới thứ nhất thuộc phe nào?",
+    "options": [
+      "Phe Liên minh",
+      "Phe Hiệp ước",
+      "Phe Đồng minh",
+      "Phe trung lập"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi Chiến tranh thế giới thứ nhất mới bùng nổ, Đức, Áo - Hung và Ý thuộc phe Liên minh. Tuy nhiên sau đó, Ý rời phe này. Sự phân chia thành các khối quân sự đối đầu là một trong những nguyên nhân trực tiếp đẩy thế giới vào chiến tranh."
+  },
+  {
+    "id": 187,
+    "question": "Cách mạng tháng Hai năm 1917 ở Nga đã lật đổ chế độ nào?",
+    "options": [
+      "Chế độ Nga hoàng",
+      "Chính phủ tư sản lâm thời",
+      "Chế độ phong kiến Anh",
+      "Chế độ phát xít Đức"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cách mạng tháng Hai năm 1917 ở Nga đã lật đổ chế độ Nga hoàng, chấm dứt nền quân chủ chuyên chế lâu đời. Tuy nhiên, sau cách mạng, chính quyền rơi vào tình trạng hai chính quyền song song tồn tại, tạo điều kiện cho Cách mạng Tháng Mười tiếp tục phát triển."
+  },
+  {
+    "id": 188,
+    "question": "Liên Xô đã đóng vai trò như thế nào trong việc tiêu diệt phát xít Đức?",
+    "options": [
+      "Lực lượng chủ chốt",
+      "Không tham gia",
+      "Chỉ hỗ trợ kinh tế",
+      "Đứng về phe phát xít"
+    ],
+    "correctIndex": 0,
+    "explanation": "Liên Xô giữ vai trò chủ chốt trong việc tiêu diệt phát xít Đức ở mặt trận châu Âu. Những chiến thắng lớn như Stalingrad hay trận Berlin đã góp phần quyết định làm sụp đổ nước Đức phát xít. Vai trò đó được lịch sử thế giới ghi nhận rất rõ."
+  },
+  {
+    "id": 189,
+    "question": "Sự kiện nào đánh dấu Chiến tranh thế giới thứ hai kết thúc ở châu Âu?",
+    "options": [
+      "Phát xít Đức đầu hàng vô điều kiện",
+      "Nhật đầu hàng Đồng minh",
+      "Mỹ ném bom nguyên tử",
+      "Hiệp định Versailles được ký"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chiến tranh thế giới thứ hai ở châu Âu kết thúc khi phát xít Đức đầu hàng vô điều kiện vào tháng 5 năm 1945. Đây là kết quả của quá trình chiến đấu kiên cường của lực lượng Đồng minh, trong đó Liên Xô giữ vai trò rất lớn ở mặt trận phía Đông."
+  },
+  {
+    "id": 190,
+    "question": "Mỹ ném bom nguyên tử xuống hai thành phố nào của Nhật Bản năm 1945?",
+    "options": [
+      "Hiroshima và Nagasaki",
+      "Tokyo và Osaka",
+      "Kyoto và Kobe",
+      "Seoul và Busan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Năm 1945, Mỹ ném bom nguyên tử xuống hai thành phố Hiroshima và Nagasaki của Nhật Bản. Đây là một trong những sự kiện đau thương nhất trong lịch sử nhân loại, gây thương vong rất lớn cho dân thường và để lại hậu quả lâu dài."
+  },
+  {
+    "id": 191,
+    "question": "Tổ chức quân sự Bắc Đại Tây Dương được gọi tắt là gì?",
+    "options": [
+      "NATO",
+      "ASEAN",
+      "EU",
+      "SEATO"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tổ chức quân sự Bắc Đại Tây Dương được gọi tắt là NATO. Đây là liên minh quân sự do Mỹ và các nước phương Tây thành lập trong bối cảnh Chiến tranh lạnh. Sự ra đời của NATO là một biểu hiện rõ nét của trật tự thế giới hai cực."
+  },
+  {
+    "id": 192,
+    "question": "Liên minh châu Âu được gọi tắt là gì?",
+    "options": [
+      "EU",
+      "UN",
+      "NATO",
+      "ASEAN"
+    ],
+    "correctIndex": 0,
+    "explanation": "Liên minh châu Âu được gọi tắt là EU. Đây là một tổ chức liên kết khu vực rất thành công, không chỉ về kinh tế mà còn ở nhiều mặt chính trị, pháp lý và xã hội. Sự hình thành và phát triển của EU phản ánh xu thế liên kết khu vực ngày càng mạnh trên thế giới hiện đại."
+  },
+  {
+    "id": 193,
+    "question": "Ai là người sáng lập ra học thuyết Tam dân ở Trung Quốc?",
+    "options": [
+      "Tôn Trung Sơn",
+      "Mao Trạch Đông",
+      "Tưởng Giới Thạch",
+      "Đặng Tiểu Bình"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tôn Trung Sơn là người sáng lập học thuyết Tam dân gồm dân tộc, dân quyền và dân sinh. Học thuyết này có vai trò quan trọng trong phong trào cách mạng dân chủ tư sản ở Trung Quốc đầu thế kỷ XX và gắn liền với Cách mạng Tân Hợi 1911."
+  },
+  {
+    "id": 194,
+    "question": "Nước Cộng hòa Nhân dân Trung Hoa được thành lập vào năm nào?",
+    "options": [
+      "1949",
+      "1911",
+      "1937",
+      "1954"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nước Cộng hòa Nhân dân Trung Hoa được thành lập ngày 1/10/1949. Sự kiện này đánh dấu thắng lợi của cách mạng Trung Quốc dưới sự lãnh đạo của Đảng Cộng sản Trung Quốc và làm thay đổi sâu sắc cục diện châu Á cũng như thế giới."
+  },
+  {
+    "id": 195,
+    "question": "Ai là người lãnh đạo cách mạng Trung Quốc đi đến thắng lợi năm 1949?",
+    "options": [
+      "Mao Trạch Đông",
+      "Tôn Trung Sơn",
+      "Tưởng Giới Thạch",
+      "Chu Ân Lai"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mao Trạch Đông là lãnh tụ nổi bật của cách mạng Trung Quốc, người có vai trò rất lớn trong thắng lợi năm 1949. Dưới sự lãnh đạo của Đảng Cộng sản Trung Quốc, cuộc nội chiến kết thúc với sự ra đời của nước Cộng hòa Nhân dân Trung Hoa."
+  },
+  {
+    "id": 196,
+    "question": "Năm 1947, quốc gia nào ở Nam Á giành được độc lập từ thực dân Anh?",
+    "options": [
+      "Ấn Độ",
+      "Trung Quốc",
+      "Iran",
+      "Afghanistan"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ấn Độ giành được độc lập từ thực dân Anh vào năm 1947 sau một quá trình đấu tranh lâu dài và bền bỉ. Đây là thắng lợi có ý nghĩa rất lớn đối với phong trào giải phóng dân tộc ở châu Á và thế giới. Sau đó, Ấn Độ trở thành một quốc gia quan trọng ở khu vực Nam Á."
+  },
+  {
+    "id": 197,
+    "question": "Ai là thủ tướng đầu tiên của Ấn Độ độc lập?",
+    "options": [
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Indira Gandhi",
+      "Muhammad Ali Jinnah"
+    ],
+    "correctIndex": 0,
+    "explanation": "Jawaharlal Nehru là thủ tướng đầu tiên của Ấn Độ sau khi nước này giành độc lập. Ông có vai trò lớn trong việc xây dựng đất nước theo con đường phát triển độc lập, tự chủ và hiện đại hóa. Ông cũng là một nhân vật có ảnh hưởng trong phong trào không liên kết."
+  },
+  {
+    "id": 198,
+    "question": "Tổ chức nào ra đời nhằm tập hợp các nước không muốn lệ thuộc vào hai khối đối đầu trong Chiến tranh lạnh?",
+    "options": [
+      "Phong trào Không liên kết",
+      "NATO",
+      "ASEAN",
+      "Liên minh châu Âu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phong trào Không liên kết ra đời nhằm tập hợp các quốc gia mới giành độc lập hoặc đang phát triển, không muốn đứng hẳn về một trong hai phe đối đầu trong Chiến tranh lạnh. Phong trào này phản ánh nguyện vọng hòa bình, độc lập và hợp tác của nhiều dân tộc trên thế giới."
+  },
+  {
+    "id": 199,
+    "question": "Việt Nam chính thức gia nhập Liên Hợp Quốc vào năm nào?",
+    "options": [
+      "1977",
+      "1975",
+      "1986",
+      "1995"
+    ],
+    "correctIndex": 0,
+    "explanation": "Việt Nam chính thức gia nhập Liên Hợp Quốc vào năm 1977. Đây là dấu mốc quan trọng trong quá trình hội nhập quốc tế của nước ta sau khi đất nước thống nhất. Sự kiện này giúp nâng cao vị thế của Việt Nam trên trường quốc tế và mở rộng quan hệ hợp tác với các nước."
+  },
+  {
+    "id": 200,
+    "question": "Sự kiện nào được xem là mốc mở đầu cho lịch sử dựng nước của dân tộc Việt Nam?",
+    "options": [
+      "Sự ra đời của nhà nước Văn Lang",
+      "Chiến thắng Bạch Đằng năm 938",
+      "Khởi nghĩa Lam Sơn",
+      "Thành lập Đảng Cộng sản Việt Nam"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sự ra đời của nhà nước Văn Lang được xem là mốc mở đầu cho lịch sử dựng nước của dân tộc Việt Nam. Từ đây, cộng đồng cư dân Việt cổ đã có tổ chức nhà nước sơ khai, tạo nền tảng cho quá trình hình thành và phát triển lâu dài của quốc gia dân tộc Việt Nam."
+  }
+]

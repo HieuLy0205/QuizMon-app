@@ -48,37 +48,26 @@ class MainActivity : AppCompatActivity() {
         updateUI()
         setupFloatingPet()
 
-        // Bắt sự kiện nút Quiz (Card chính trên màn hình)
         findViewById<View>(R.id.btnQuiz).setOnClickListener {
-            val intent = Intent(this, LevelMapActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, LevelMapActivity::class.java))
         }
         
-        // Bắt đầu sự kiện nút Thưởng hằng ngày
         findViewById<View>(R.id.cardDailyReward).setOnClickListener {
-            val intent = Intent(this, shop_phobien::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, shop_phobien::class.java))
         }
 
-        // Bắt sự kiện cho cụm Streak
-        // Trong MainActivity.kt
-        val layoutStreak = findViewById<FrameLayout>(R.id.layoutStreak)
-        layoutStreak?.setOnClickListener {
-            // Mở màn hình Thành tích đầu tiên
-            val intent = Intent(this, StreakActivity::class.java)
-            startActivity(intent)
+        findViewById<FrameLayout>(R.id.layoutStreak)?.setOnClickListener {
+            startActivity(Intent(this, StreakActivity::class.java))
         }
 
-        // Thêm animation cho ngọn lửa
-        val streakAnimation = AnimationUtils.loadAnimation(this, R.anim.streak_bounce)
-        layoutStreak?.startAnimation(streakAnimation)
+        findViewById<FrameLayout>(R.id.layoutStreak)?.startAnimation(
+            AnimationUtils.loadAnimation(this, R.anim.streak_bounce)
+        )
     }
 
     @SuppressLint("ClickableViewAccessibility")
     private fun setupFloatingPet() {
         val ivFloatingPet = findViewById<ImageView>(R.id.ivFloatingPet)
-
-        // Start animation
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
         ivFloatingPet.startAnimation(bounceAnimation)
 
@@ -89,20 +78,13 @@ class MainActivity : AppCompatActivity() {
                     dY = view.y - event.rawY
                     view.clearAnimation()
                 }
-
                 MotionEvent.ACTION_MOVE -> {
-                    view.animate()
-                        .x(event.rawX + dX)
-                        .y(event.rawY + dY)
-                        .setDuration(0)
-                        .start()
+                    view.animate().x(event.rawX + dX).y(event.rawY + dY).setDuration(0).start()
                 }
-
                 MotionEvent.ACTION_UP -> {
                     view.startAnimation(bounceAnimation)
                     if (abs(view.x - (event.rawX + dX)) < CLICK_DRAG_TOLERANCE &&
-                        abs(view.y - (event.rawY + dY)) < CLICK_DRAG_TOLERANCE
-                    ) {
+                        abs(view.y - (event.rawY + dY)) < CLICK_DRAG_TOLERANCE) {
                         view.performClick()
                     }
                 }
@@ -110,6 +92,7 @@ class MainActivity : AppCompatActivity() {
             }
             true
         }
+
         ivFloatingPet.setOnClickListener {
             startActivity(Intent(this, PetActivity::class.java))
         }
@@ -117,15 +100,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        updateCoinDisplay()
-        updateXuDisplay()
         updateUI()
-        findViewById<FrameLayout>(R.id.layoutStreak)?.startAnimation(
-            AnimationUtils.loadAnimation(this, R.anim.streak_bounce)
-        )
-        findViewById<ImageView>(R.id.ivFloatingPet)?.startAnimation(
-            AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
-        )
     }
 
     private fun updateUI() {
@@ -136,52 +111,24 @@ class MainActivity : AppCompatActivity() {
         val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
         findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
 
-        findViewById<TextView>(R.id.textcoin)?.text = preferenceManager.getCoins().toString()
-
-        findViewById<TextView>(R.id.tvStreakCount)?.text =
-            streakManager.getCurrentStreak().toString()
+        // Cập nhật đúng ID mới từ layout_taskhead
+        findViewById<TextView>(R.id.head_text_coin)?.text = preferenceManager.getCoins().toString()
+        findViewById<TextView>(R.id.tvStreakCount)?.text = streakManager.getCurrentStreak().toString()
     }
 
     private fun setupTaskbar() {
         findViewById<View>(R.id.indicator_home)?.visibility = View.VISIBLE
-        findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(
-            ContextCompat.getColor(
-                this,
-                R.color.taskbar_active
-            )
-        )
+        findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
 
-        findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener {
-            startActivity(Intent(this, HistoryActivity::class.java))
-        }
-
-        findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener {
-            startActivity(Intent(this, activity_shop::class.java))
-        }
-
-        findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener {
-            startActivity(Intent(this, SettingsActivity::class.java))
-        }
-        findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener {
-            openProfileFlow()
-        }
-    }
-
-    private fun updateCoinDisplay() {
-        val preferenceManager = PreferenceManager(this)
-        val textCoin = findViewById<TextView>(R.id.textcoin)
-        textCoin.text = preferenceManager.getCoins().toString()
-    }
-    private fun updateXuDisplay(){
-        val preferenceManager = PreferenceManager(this)
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = preferenceManager.getXu().toString()
+        findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener { startActivity(Intent(this, HistoryActivity::class.java)) }
+        findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener { startActivity(Intent(this, activity_shop::class.java)) }
+        findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener { startActivity(Intent(this, SettingsActivity::class.java)) }
+        findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener { openProfileFlow() }
     }
 
     private fun openProfileFlow() {
         val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
         val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
-
         if (isFirstTime) {
             startActivity(Intent(this, com.example.quizmon.ui.onboarding.AgeActivity::class.java))
         } else {

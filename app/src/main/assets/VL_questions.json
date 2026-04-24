@@ -1,1 +1,2402 @@
-[]
+[
+  {
+    "id": 1,
+    "question": "Đơn vị của lực trong hệ SI là gì?",
+    "options": [
+      "Jun (J)",
+      "Niutơn (N)",
+      "Oát (W)",
+      "Pascan (Pa)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đơn vị của lực trong hệ SI là niutơn (N). Theo định luật II Newton, 1 N là lực làm cho vật có khối lượng 1 kg thu được gia tốc 1 m/s². Jun là đơn vị công và năng lượng, oát là đơn vị công suất, còn pascan là đơn vị áp suất."
+  },
+  {
+    "id": 2,
+    "question": "Đại lượng nào đặc trưng cho mức quán tính của một vật?",
+    "options": [
+      "Vận tốc",
+      "Gia tốc",
+      "Khối lượng",
+      "Trọng lượng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khối lượng là đại lượng đặc trưng cho mức quán tính của vật. Vật có khối lượng càng lớn thì càng khó thay đổi trạng thái chuyển động hoặc trạng thái đứng yên. Vận tốc và gia tốc mô tả chuyển động, còn trọng lượng là lực hút của Trái Đất tác dụng lên vật."
+  },
+  {
+    "id": 3,
+    "question": "Khi tổng lực tác dụng lên vật bằng 0 thì vật sẽ ở trạng thái nào?",
+    "options": [
+      "Luôn chuyển động nhanh dần",
+      "Đứng yên hoặc chuyển động thẳng đều",
+      "Luôn chuyển động tròn đều",
+      "Luôn rơi tự do"
+    ],
+    "correctIndex": 1,
+    "explanation": "Theo định luật I Newton, khi hợp lực tác dụng lên vật bằng 0 thì vật giữ nguyên trạng thái đứng yên hoặc chuyển động thẳng đều. Điều này không có nghĩa vật bắt buộc phải đứng yên, mà có thể đang chuyển động với vận tốc không đổi trên đường thẳng."
+  },
+  {
+    "id": 4,
+    "question": "Công thức tính gia tốc theo định luật II Newton là gì?",
+    "options": [
+      "a = F/m",
+      "a = m/F",
+      "a = F.m",
+      "a = F + m"
+    ],
+    "correctIndex": 0,
+    "explanation": "Theo định luật II Newton, F = m.a nên gia tốc được tính bằng a = F/m. Gia tốc cùng hướng với lực tác dụng và tỉ lệ thuận với lực, tỉ lệ nghịch với khối lượng. Vì vậy khi lực tăng thì gia tốc tăng, còn khi khối lượng tăng thì gia tốc giảm nếu lực giữ nguyên."
+  },
+  {
+    "id": 5,
+    "question": "Phản lực và lực tác dụng trong định luật III Newton có đặc điểm nào?",
+    "options": [
+      "Cùng phương, cùng chiều, cùng độ lớn",
+      "Khác phương, ngược chiều",
+      "Cùng phương, ngược chiều, cùng độ lớn",
+      "Tác dụng lên cùng một vật"
+    ],
+    "correctIndex": 2,
+    "explanation": "Theo định luật III Newton, hai lực tương tác giữa hai vật là hai lực trực đối: chúng cùng phương, ngược chiều, cùng độ lớn và tác dụng lên hai vật khác nhau. Vì tác dụng lên hai vật khác nhau nên chúng không triệt tiêu lẫn nhau."
+  },
+  {
+    "id": 6,
+    "question": "Trọng lực tác dụng lên vật có phương như thế nào?",
+    "options": [
+      "Nằm ngang",
+      "Thẳng đứng, hướng lên trên",
+      "Thẳng đứng, hướng xuống dưới",
+      "Xiên góc 45 độ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trọng lực là lực hút của Trái Đất tác dụng lên vật, có phương thẳng đứng và chiều hướng từ trên xuống dưới, tức hướng về phía tâm Trái Đất. Đây là lực gây ra hiện tượng rơi của các vật."
+  },
+  {
+    "id": 7,
+    "question": "Công thức tính trọng lượng của vật là gì?",
+    "options": [
+      "P = m/g",
+      "P = m.g",
+      "P = g/m",
+      "P = m + g"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trọng lượng của vật được tính theo công thức P = m.g, trong đó m là khối lượng của vật và g là gia tốc trọng trường. Trên Trái Đất, g thường lấy gần đúng bằng 9,8 m/s² hoặc 10 m/s² trong các bài toán phổ thông."
+  },
+  {
+    "id": 8,
+    "question": "Một vật chuyển động thẳng đều khi nào?",
+    "options": [
+      "Vận tốc thay đổi theo thời gian",
+      "Gia tốc khác 0",
+      "Vận tốc không đổi theo thời gian",
+      "Quãng đường đi được giảm dần"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chuyển động thẳng đều là chuyển động có quỹ đạo là đường thẳng và vận tốc không đổi theo thời gian. Vì vận tốc không đổi nên vật đi được những quãng đường bằng nhau trong các khoảng thời gian bằng nhau, và gia tốc của chuyển động này bằng 0."
+  },
+  {
+    "id": 9,
+    "question": "Công thức quãng đường của chuyển động thẳng đều là gì?",
+    "options": [
+      "s = v/t",
+      "s = v.t",
+      "s = v + t",
+      "s = t/v"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong chuyển động thẳng đều, quãng đường đi được được tính bằng s = v.t, với v là vận tốc không đổi và t là thời gian chuyển động. Công thức này cho thấy quãng đường tỉ lệ thuận với thời gian khi vận tốc không đổi."
+  },
+  {
+    "id": 10,
+    "question": "Trong chuyển động nhanh dần đều, đại lượng nào không đổi?",
+    "options": [
+      "Vận tốc",
+      "Quãng đường đi được trong mỗi giây",
+      "Gia tốc",
+      "Tọa độ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trong chuyển động nhanh dần đều, gia tốc là đại lượng không đổi. Vận tốc của vật tăng đều theo thời gian, còn quãng đường đi được trong các khoảng thời gian bằng nhau sẽ tăng dần, không phải là hằng số."
+  },
+  {
+    "id": 11,
+    "question": "Công thức liên hệ giữa vận tốc, gia tốc và thời gian trong chuyển động thẳng biến đổi đều là gì?",
+    "options": [
+      "v = v0 + a.t",
+      "v = v0/a + t",
+      "v = a/(v0.t)",
+      "v = v0.t"
+    ],
+    "correctIndex": 0,
+    "explanation": "Công thức đúng là v = v0 + a.t, trong đó v0 là vận tốc ban đầu, a là gia tốc và t là thời gian. Nếu a dương theo chiều chuyển động thì vật nhanh dần, còn nếu a ngược chiều vận tốc thì vật chậm dần."
+  },
+  {
+    "id": 12,
+    "question": "Rơi tự do là chuyển động của vật dưới tác dụng chủ yếu của lực nào?",
+    "options": [
+      "Lực ma sát",
+      "Lực đàn hồi",
+      "Trọng lực",
+      "Lực điện"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rơi tự do là chuyển động của vật chỉ dưới tác dụng của trọng lực, nếu bỏ qua sức cản của không khí. Khi đó vật rơi với gia tốc gần bằng gia tốc trọng trường g. Vì vậy trong chân không, các vật rơi như nhau nếu được thả từ cùng độ cao."
+  },
+  {
+    "id": 13,
+    "question": "Gia tốc rơi tự do gần mặt đất có giá trị xấp xỉ bao nhiêu?",
+    "options": [
+      "9,8 m/s²",
+      "98 m/s²",
+      "0,98 m/s²",
+      "8,9 m/s²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gia tốc rơi tự do gần mặt đất có giá trị xấp xỉ 9,8 m/s², thường làm tròn thành 10 m/s² trong các bài tập đơn giản. Đây là gia tốc do trọng lực gây ra cho vật đang rơi tự do."
+  },
+  {
+    "id": 14,
+    "question": "Động lượng của vật được xác định bằng công thức nào?",
+    "options": [
+      "p = m/v",
+      "p = m.v",
+      "p = F.t/m",
+      "p = m + v"
+    ],
+    "correctIndex": 1,
+    "explanation": "Động lượng được xác định bởi công thức p = m.v. Đây là đại lượng vectơ, cùng hướng với vận tốc. Vật có khối lượng càng lớn hoặc chuyển động càng nhanh thì động lượng càng lớn."
+  },
+  {
+    "id": 15,
+    "question": "Định luật bảo toàn động lượng áp dụng cho hệ nào?",
+    "options": [
+      "Hệ kín hoặc gần kín",
+      "Mọi hệ không điều kiện",
+      "Chỉ hệ đứng yên",
+      "Chỉ hệ có một vật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Định luật bảo toàn động lượng áp dụng cho hệ kín hoặc gần kín, nghĩa là tổng ngoại lực tác dụng lên hệ bằng 0 hoặc không đáng kể trong khoảng thời gian xét. Khi đó tổng động lượng của hệ trước và sau tương tác được bảo toàn."
+  },
+  {
+    "id": 16,
+    "question": "Công cơ học được tính bằng công thức nào khi lực không đổi và cùng hướng chuyển dời?",
+    "options": [
+      "A = F.s",
+      "A = F/s",
+      "A = s/F",
+      "A = F + s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi lực không đổi và cùng hướng với độ dời, công cơ học được tính bằng A = F.s. Nếu lực hợp với phương chuyển dời một góc alpha thì công tổng quát là A = F.s.cos(alpha). Công cho biết mức độ truyền năng lượng của lực."
+  },
+  {
+    "id": 17,
+    "question": "Đơn vị của công và năng lượng trong hệ SI là gì?",
+    "options": [
+      "Niutơn",
+      "Jun",
+      "Oát",
+      "Vôn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Công và năng lượng đều có cùng đơn vị trong hệ SI là jun (J). Điều này phản ánh công là một cách truyền năng lượng. Niutơn là đơn vị lực, oát là đơn vị công suất, còn vôn là đơn vị hiệu điện thế."
+  },
+  {
+    "id": 18,
+    "question": "Động năng của một vật phụ thuộc vào những yếu tố nào?",
+    "options": [
+      "Khối lượng và vận tốc",
+      "Chỉ khối lượng",
+      "Chỉ vị trí",
+      "Khối lượng và nhiệt độ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Động năng được tính theo công thức Wđ = 1/2.m.v², nên phụ thuộc vào khối lượng và bình phương vận tốc của vật. Vận tốc ảnh hưởng rất mạnh vì nằm dưới dạng bình phương. Động năng không phụ thuộc trực tiếp vào vị trí."
+  },
+  {
+    "id": 19,
+    "question": "Thế năng trọng trường của vật gần mặt đất được tính bằng công thức nào?",
+    "options": [
+      "Wt = m.g.h",
+      "Wt = m/h",
+      "Wt = g/h",
+      "Wt = m.v²"
+    ],
+    "correctIndex": 0,
+    "explanation": "Thế năng trọng trường của vật gần mặt đất được tính bằng Wt = m.g.h, trong đó h là độ cao của vật so với mốc thế năng chọn trước. Vật càng ở cao thì thế năng trọng trường càng lớn."
+  },
+  {
+    "id": 20,
+    "question": "Cơ năng của một vật trong trường hợp chỉ có trọng lực tác dụng là gì?",
+    "options": [
+      "Tổng động năng và thế năng",
+      "Hiệu động năng và thế năng",
+      "Chỉ bằng động năng",
+      "Chỉ bằng thế năng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cơ năng của vật bằng tổng động năng và thế năng: W = Wđ + Wt. Khi chỉ có trọng lực tác dụng và bỏ qua ma sát, cơ năng của vật được bảo toàn. Điều đó nghĩa là động năng có thể chuyển hóa thành thế năng và ngược lại, nhưng tổng của chúng không đổi."
+  },
+  {
+    "id": 21,
+    "question": "Công suất là đại lượng đặc trưng cho điều gì?",
+    "options": [
+      "Khả năng sinh công nhanh hay chậm",
+      "Mức quán tính của vật",
+      "Mức cản của môi trường",
+      "Độ lớn của lực hấp dẫn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Công suất đặc trưng cho tốc độ thực hiện công, tức khả năng sinh công nhanh hay chậm của máy móc hoặc con người. Công suất được tính bằng công thực hiện trong một đơn vị thời gian: P = A/t."
+  },
+  {
+    "id": 22,
+    "question": "Đơn vị của công suất là gì?",
+    "options": [
+      "Jun",
+      "Niutơn",
+      "Oát",
+      "Ampe"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đơn vị của công suất là oát (W). Một oát là công suất của thiết bị thực hiện công 1 J trong thời gian 1 s. Đây là đơn vị dùng rất phổ biến trong điện và cơ học."
+  },
+  {
+    "id": 23,
+    "question": "Lực ma sát trượt xuất hiện khi nào?",
+    "options": [
+      "Khi vật lăn trên mặt phẳng",
+      "Khi vật trượt trên bề mặt tiếp xúc",
+      "Khi vật đứng yên",
+      "Khi vật rơi trong không khí"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lực ma sát trượt xuất hiện khi hai bề mặt tiếp xúc trượt tương đối với nhau. Lực này có phương song song mặt tiếp xúc và có chiều ngược với chiều chuyển động tương đối. Nó thường làm cản trở chuyển động và gây hao phí năng lượng."
+  },
+  {
+    "id": 24,
+    "question": "Hệ số ma sát là đại lượng như thế nào?",
+    "options": [
+      "Có đơn vị là niutơn",
+      "Không có đơn vị",
+      "Có đơn vị là mét",
+      "Có đơn vị là jun"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hệ số ma sát là đại lượng không có đơn vị vì nó là tỉ số giữa lực ma sát và áp lực. Giá trị của hệ số ma sát phụ thuộc vào bản chất và tình trạng bề mặt tiếp xúc, chẳng hạn nhẵn hay nhám, khô hay có bôi trơn."
+  },
+  {
+    "id": 25,
+    "question": "Áp suất được tính bằng công thức nào?",
+    "options": [
+      "p = F.S",
+      "p = F/S",
+      "p = S/F",
+      "p = F + S"
+    ],
+    "correctIndex": 1,
+    "explanation": "Áp suất được tính bằng công thức p = F/S, trong đó F là áp lực tác dụng vuông góc lên diện tích bị ép S. Diện tích tiếp xúc càng nhỏ thì áp suất càng lớn nếu áp lực không đổi. Đây là lý do dao sắc cắt dễ hơn dao cùn."
+  },
+  {
+    "id": 26,
+    "question": "Đơn vị của áp suất trong hệ SI là gì?",
+    "options": [
+      "Pascan",
+      "Niutơn",
+      "Jun",
+      "Oát"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đơn vị của áp suất trong hệ SI là pascan (Pa). Một pascan là áp suất gây bởi lực 1 N tác dụng đều lên diện tích 1 m². Trong thực tế còn gặp kPa, MPa, atm nhưng đơn vị chuẩn SI vẫn là Pa."
+  },
+  {
+    "id": 27,
+    "question": "Trong chất lỏng đứng yên, áp suất phụ thuộc chủ yếu vào yếu tố nào?",
+    "options": [
+      "Màu sắc chất lỏng",
+      "Độ sâu và khối lượng riêng",
+      "Hình dạng bình chứa",
+      "Diện tích đáy bình"
+    ],
+    "correctIndex": 1,
+    "explanation": "Áp suất trong chất lỏng đứng yên được xác định bởi p = d.h hoặc p = rho.g.h, nên phụ thuộc vào độ sâu h và khối lượng riêng của chất lỏng. Nó không phụ thuộc vào hình dạng bình chứa. Vì vậy cùng một độ sâu trong cùng một chất lỏng thì áp suất như nhau."
+  },
+  {
+    "id": 28,
+    "question": "Lực đẩy Ác-si-mét tác dụng lên vật nhúng trong chất lỏng có phương và chiều như thế nào?",
+    "options": [
+      "Phương ngang, chiều từ trái sang phải",
+      "Phương thẳng đứng, chiều từ trên xuống",
+      "Phương thẳng đứng, chiều từ dưới lên",
+      "Phương bất kỳ"
+    ],
+    "correctIndex": 2,
+    "explanation": "Lực đẩy Ác-si-mét có phương thẳng đứng và chiều từ dưới lên trên. Lực này xuất hiện do áp suất của chất lỏng tăng theo độ sâu, làm cho áp lực từ dưới đáy vật lớn hơn áp lực từ phía trên. Đây là nguyên nhân khiến vật có thể nổi trong chất lỏng."
+  },
+  {
+    "id": 29,
+    "question": "Độ lớn của lực đẩy Ác-si-mét bằng gì?",
+    "options": [
+      "Trọng lượng của vật",
+      "Khối lượng của chất lỏng",
+      "Trọng lượng phần chất lỏng bị vật chiếm chỗ",
+      "Áp suất ở đáy bình"
+    ],
+    "correctIndex": 2,
+    "explanation": "Theo định luật Ác-si-mét, lực đẩy tác dụng lên vật nhúng trong chất lỏng bằng trọng lượng của phần chất lỏng bị vật chiếm chỗ. Công thức là Fa = d.V hoặc Fa = rho.g.V, với V là thể tích phần vật chìm trong chất lỏng."
+  },
+  {
+    "id": 30,
+    "question": "Một vật nổi trên mặt chất lỏng khi nào?",
+    "options": [
+      "Trọng lượng riêng của vật lớn hơn chất lỏng",
+      "Khối lượng của vật bằng 0",
+      "Trọng lượng riêng của vật nhỏ hơn trọng lượng riêng của chất lỏng",
+      "Vật luôn nổi trong mọi chất lỏng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vật nổi khi trọng lượng riêng trung bình của vật nhỏ hơn trọng lượng riêng của chất lỏng. Khi nổi cân bằng, lực đẩy Ác-si-mét bằng trọng lượng của vật. Nếu vật nặng hơn môi trường chất lỏng về mặt trọng lượng riêng, nó sẽ chìm."
+  },
+  {
+    "id": 31,
+    "question": "Nhiệt độ là đại lượng cho biết điều gì?",
+    "options": [
+      "Mức độ nóng hay lạnh của vật",
+      "Khối lượng của vật",
+      "Kích thước của vật",
+      "Áp suất của vật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhiệt độ cho biết mức độ nóng hay lạnh của vật và liên quan đến chuyển động nhiệt của các phân tử. Vật có nhiệt độ cao hơn thường có các phân tử chuyển động hỗn loạn mạnh hơn. Nhiệt độ không phải là nhiệt lượng."
+  },
+  {
+    "id": 32,
+    "question": "Đơn vị thường dùng của nhiệt độ trong đời sống là gì?",
+    "options": [
+      "Độ C",
+      "Jun",
+      "Oát",
+      "Ampe"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trong đời sống, nhiệt độ thường được đo bằng độ C (độ Celsius). Trong vật lý còn dùng đơn vị Kelvin (K) trong hệ SI. Jun là đơn vị năng lượng, oát là công suất, ampe là cường độ dòng điện."
+  },
+  {
+    "id": 33,
+    "question": "Nhiệt lượng là gì?",
+    "options": [
+      "Phần năng lượng truyền từ vật này sang vật khác do chênh lệch nhiệt độ",
+      "Mức độ nóng lạnh của vật",
+      "Tổng khối lượng các phân tử",
+      "Áp suất của chất khí"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhiệt lượng là phần năng lượng truyền từ vật này sang vật khác do có sự chênh lệch nhiệt độ. Nhiệt lượng truyền từ vật nóng sang vật lạnh cho đến khi cân bằng nhiệt. Nó không phải là đại lượng chỉ trạng thái như nhiệt độ."
+  },
+  {
+    "id": 34,
+    "question": "Công thức tính nhiệt lượng thu vào hoặc tỏa ra của một vật là gì?",
+    "options": [
+      "Q = m.c.Δt",
+      "Q = m/c",
+      "Q = c/Δt",
+      "Q = m + c + Δt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nhiệt lượng được tính theo công thức Q = m.c.Δt, trong đó m là khối lượng, c là nhiệt dung riêng và Δt là độ biến thiên nhiệt độ. Công thức này cho biết muốn làm tăng nhiệt độ của vật nhiều hơn thì cần cung cấp nhiều nhiệt lượng hơn."
+  },
+  {
+    "id": 35,
+    "question": "Nhiệt dung riêng của một chất cho biết điều gì?",
+    "options": [
+      "Mức độ dẫn điện của chất",
+      "Nhiệt lượng cần truyền cho 1 kg chất đó tăng thêm 1 độ C",
+      "Khả năng phát sáng của chất",
+      "Khối lượng riêng của chất"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nhiệt dung riêng cho biết nhiệt lượng cần thiết để làm cho 1 kg chất tăng thêm 1 độ C hoặc 1 K. Chất có nhiệt dung riêng càng lớn thì càng khó nóng lên hoặc nguội đi khi trao đổi cùng một nhiệt lượng."
+  },
+  {
+    "id": 36,
+    "question": "Trong sự nở vì nhiệt của chất rắn, khi nhiệt độ tăng thì thông thường vật sẽ như thế nào?",
+    "options": [
+      "Co lại",
+      "Nở ra",
+      "Không thay đổi kích thước",
+      "Biến mất"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hầu hết các chất rắn đều nở ra khi nóng lên và co lại khi lạnh đi. Điều này xảy ra vì khoảng cách trung bình giữa các phân tử tăng khi nhiệt độ tăng. Hiện tượng này được ứng dụng và cũng cần lưu ý trong xây dựng cầu, đường ray, nhà cửa."
+  },
+  {
+    "id": 37,
+    "question": "Chất khí gây áp suất lên thành bình chủ yếu do nguyên nhân nào?",
+    "options": [
+      "Do màu sắc của khí",
+      "Do các phân tử khí va chạm vào thành bình",
+      "Do khối lượng bình",
+      "Do ánh sáng chiếu vào"
+    ],
+    "correctIndex": 1,
+    "explanation": "Các phân tử khí luôn chuyển động hỗn loạn không ngừng và va chạm liên tục vào thành bình. Chính những va chạm đó tạo ra áp suất chất khí. Nhiệt độ càng cao thì phân tử khí chuyển động càng nhanh, áp suất có thể tăng nếu thể tích không đổi."
+  },
+  {
+    "id": 38,
+    "question": "Trong quá trình nóng chảy của một chất rắn kết tinh ở áp suất không đổi, nhiệt độ của chất như thế nào?",
+    "options": [
+      "Tăng liên tục",
+      "Giảm liên tục",
+      "Không đổi trong suốt quá trình nóng chảy",
+      "Lúc tăng lúc giảm ngẫu nhiên"
+    ],
+    "correctIndex": 2,
+    "explanation": "Đối với chất rắn kết tinh, trong suốt quá trình nóng chảy ở áp suất không đổi, nhiệt độ không đổi mặc dù chất vẫn thu nhiệt. Nhiệt lượng cung cấp lúc này dùng để phá vỡ cấu trúc liên kết, làm chất chuyển từ thể rắn sang thể lỏng."
+  },
+  {
+    "id": 39,
+    "question": "Sự bay hơi xảy ra ở đâu?",
+    "options": [
+      "Chỉ ở mặt thoáng của chất lỏng",
+      "Trong toàn bộ chất lỏng giống nhau mọi lúc",
+      "Chỉ ở đáy bình",
+      "Chỉ khi chất lỏng sôi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sự bay hơi là sự hóa hơi xảy ra ở mặt thoáng của chất lỏng và có thể diễn ra ở mọi nhiệt độ. Tốc độ bay hơi phụ thuộc vào nhiệt độ, diện tích mặt thoáng, gió và bản chất của chất lỏng."
+  },
+  {
+    "id": 40,
+    "question": "Điều kiện để xảy ra hiện tượng sôi của chất lỏng là gì?",
+    "options": [
+      "Nhiệt độ bằng 0 độ C",
+      "Áp suất ngoài bằng 0",
+      "Áp suất hơi bão hòa bằng áp suất ngoài",
+      "Chất lỏng phải có màu trong suốt"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chất lỏng sôi khi áp suất hơi bão hòa của nó bằng áp suất ngoài tác dụng lên mặt chất lỏng. Khi đó các bong bóng hơi có thể hình thành trong lòng chất lỏng và nổi lên mặt thoáng. Nhiệt độ sôi phụ thuộc vào áp suất ngoài."
+  },
+  {
+    "id": 41,
+    "question": "Dòng điện là gì?",
+    "options": [
+      "Dòng chuyển dời có hướng của các hạt mang điện",
+      "Dòng chuyển động của các phân tử nước",
+      "Dòng ánh sáng truyền đi",
+      "Dòng không khí chuyển động"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dòng điện là dòng chuyển dời có hướng của các hạt mang điện như electron, ion hoặc lỗ trống tùy môi trường. Trong kim loại, dòng điện là sự dịch chuyển có hướng của các electron tự do dưới tác dụng của điện trường."
+  },
+  {
+    "id": 42,
+    "question": "Đơn vị của cường độ dòng điện là gì?",
+    "options": [
+      "Vôn",
+      "Ôm",
+      "Ampe",
+      "Oát"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cường độ dòng điện có đơn vị là ampe (A). Đây là đại lượng cho biết mức độ mạnh yếu của dòng điện, tức lượng điện tích chuyển qua tiết diện thẳng của vật dẫn trong một đơn vị thời gian."
+  },
+  {
+    "id": 43,
+    "question": "Hiệu điện thế giữa hai điểm có đơn vị là gì?",
+    "options": [
+      "Ampe",
+      "Vôn",
+      "Ôm",
+      "Jun"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hiệu điện thế có đơn vị là vôn (V). Nó đặc trưng cho khả năng thực hiện công của điện trường khi làm dịch chuyển điện tích giữa hai điểm. Hiệu điện thế càng lớn thì khả năng sinh công trên một đơn vị điện tích càng lớn."
+  },
+  {
+    "id": 44,
+    "question": "Điện trở của một dây dẫn đặc trưng cho điều gì?",
+    "options": [
+      "Khả năng cản trở dòng điện của dây dẫn",
+      "Khả năng phát sáng",
+      "Khả năng sinh nhiệt của nguồn điện",
+      "Khối lượng của dây"
+    ],
+    "correctIndex": 0,
+    "explanation": "Điện trở đặc trưng cho mức độ cản trở dòng điện của vật dẫn. Điện trở càng lớn thì với cùng hiệu điện thế, cường độ dòng điện chạy qua càng nhỏ. Điện trở phụ thuộc vào vật liệu, chiều dài, tiết diện và nhiệt độ của dây dẫn."
+  },
+  {
+    "id": 45,
+    "question": "Định luật Ôm được biểu diễn bằng công thức nào?",
+    "options": [
+      "I = U/R",
+      "I = U.R",
+      "I = R/U²",
+      "I = U + R"
+    ],
+    "correctIndex": 0,
+    "explanation": "Định luật Ôm cho đoạn mạch chỉ ra rằng cường độ dòng điện qua dây dẫn tỉ lệ thuận với hiệu điện thế đặt vào hai đầu dây và tỉ lệ nghịch với điện trở của dây: I = U/R. Công thức tương đương là U = I.R."
+  },
+  {
+    "id": 46,
+    "question": "Đơn vị của điện trở là gì?",
+    "options": [
+      "Vôn",
+      "Ôm",
+      "Ampe",
+      "Henri"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đơn vị của điện trở là ôm (Ω). Một vật dẫn có điện trở 1 Ω nếu đặt hiệu điện thế 1 V vào hai đầu thì cường độ dòng điện chạy qua là 1 A. Đây là đơn vị cơ bản trong mạch điện."
+  },
+  {
+    "id": 47,
+    "question": "Trong đoạn mạch mắc nối tiếp, cường độ dòng điện qua các điện trở có đặc điểm gì?",
+    "options": [
+      "Luôn khác nhau",
+      "Bằng nhau",
+      "Tỉ lệ với điện trở",
+      "Bằng 0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong mạch nối tiếp, dòng điện chỉ có một đường đi nên cường độ dòng điện qua mọi phần tử là như nhau. Hiệu điện thế toàn mạch bằng tổng hiệu điện thế trên từng điện trở thành phần."
+  },
+  {
+    "id": 48,
+    "question": "Điện trở tương đương của các điện trở mắc nối tiếp được tính như thế nào?",
+    "options": [
+      "Nghịch đảo cộng lại",
+      "Bằng điện trở lớn nhất",
+      "Bằng tổng các điện trở thành phần",
+      "Bằng tích các điện trở"
+    ],
+    "correctIndex": 2,
+    "explanation": "Với mạch nối tiếp, điện trở tương đương bằng tổng các điện trở thành phần: Rtđ = R1 + R2 + ... Điều này cho thấy mắc nối tiếp làm tăng điện trở toàn mạch, từ đó làm giảm cường độ dòng điện nếu hiệu điện thế không đổi."
+  },
+  {
+    "id": 49,
+    "question": "Trong đoạn mạch mắc song song, hiệu điện thế giữa hai đầu các nhánh có đặc điểm gì?",
+    "options": [
+      "Bằng nhau",
+      "Tăng dần theo từng nhánh",
+      "Bằng 0",
+      "Ngược chiều nhau"
+    ],
+    "correctIndex": 0,
+    "explanation": "Trong mạch song song, các nhánh đều được nối vào cùng hai điểm nên hiệu điện thế giữa hai đầu mỗi nhánh bằng nhau và bằng hiệu điện thế của nguồn. Cường độ dòng điện toàn mạch bằng tổng cường độ dòng điện các nhánh."
+  },
+  {
+    "id": 50,
+    "question": "Công thức tính điện trở tương đương của hai điện trở mắc song song là gì?",
+    "options": [
+      "Rtđ = R1 + R2",
+      "1/Rtđ = 1/R1 + 1/R2",
+      "Rtđ = R1 - R2",
+      "Rtđ = R1.R2"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đối với hai điện trở mắc song song, điện trở tương đương thỏa mãn 1/Rtđ = 1/R1 + 1/R2. Từ đó suy ra Rtđ luôn nhỏ hơn điện trở nhỏ nhất trong hai điện trở thành phần. Đây là đặc điểm quan trọng của mạch song song."
+  },
+  {
+    "id": 51,
+    "question": "Công của dòng điện được tính bằng công thức nào?",
+    "options": [
+      "A = U.I.t",
+      "A = U/I",
+      "A = I/t",
+      "A = U + I + t"
+    ],
+    "correctIndex": 0,
+    "explanation": "Công của dòng điện được tính bằng A = U.I.t, với U là hiệu điện thế, I là cường độ dòng điện và t là thời gian dòng điện chạy qua. Công điện cho biết điện năng được chuyển hóa thành các dạng năng lượng khác trong mạch."
+  },
+  {
+    "id": 52,
+    "question": "Công suất điện được xác định bằng công thức nào?",
+    "options": [
+      "P = U.I",
+      "P = U/I",
+      "P = I/t",
+      "P = U + I"
+    ],
+    "correctIndex": 0,
+    "explanation": "Công suất điện được tính bằng P = U.I. Ngoài ra, có thể viết dưới dạng P = I².R hoặc P = U²/R đối với điện trở thuần. Công suất cho biết tốc độ tiêu thụ điện năng của thiết bị."
+  },
+  {
+    "id": 53,
+    "question": "Hiện tượng tỏa nhiệt của dây dẫn khi có dòng điện chạy qua tuân theo định luật nào?",
+    "options": [
+      "Định luật Newton",
+      "Định luật Ôm",
+      "Định luật Jun - Lenxơ",
+      "Định luật bảo toàn khối lượng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Hiện tượng tỏa nhiệt của dây dẫn khi có dòng điện chạy qua tuân theo định luật Jun - Lenxơ. Nhiệt lượng tỏa ra trên dây dẫn được tính bằng Q = I².R.t. Đây là cơ sở hoạt động của bàn là điện, bếp điện và cầu chì."
+  },
+  {
+    "id": 54,
+    "question": "Nam châm có tính chất nào sau đây?",
+    "options": [
+      "Hút mọi vật",
+      "Chỉ hút các vật bằng nhựa",
+      "Hút các vật bằng sắt, thép, niken, coban",
+      "Đẩy mọi kim loại"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nam châm có khả năng hút một số vật liệu từ như sắt, thép, niken, coban và một số hợp kim của chúng. Nam châm không hút mọi vật, ví dụ nhựa, gỗ, thủy tinh thường không bị hút."
+  },
+  {
+    "id": 55,
+    "question": "Từ trường tồn tại ở đâu?",
+    "options": [
+      "Xung quanh nam châm và dòng điện",
+      "Chỉ trong chất lỏng",
+      "Chỉ trong chân không",
+      "Chỉ trong dây dẫn không có dòng điện"
+    ],
+    "correctIndex": 0,
+    "explanation": "Từ trường tồn tại xung quanh nam châm và xung quanh dòng điện. Từ trường là môi trường vật chất đặc biệt gây ra lực từ tác dụng lên nam châm khác hoặc lên dòng điện đặt trong nó. Ta có thể hình dung từ trường qua các đường sức từ."
+  },
+  {
+    "id": 56,
+    "question": "Đường sức từ có chiều như thế nào ở bên ngoài thanh nam châm?",
+    "options": [
+      "Từ cực Nam sang cực Bắc",
+      "Từ cực Bắc sang cực Nam",
+      "Không có chiều xác định",
+      "Theo chiều từ dưới lên trên"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ở bên ngoài thanh nam châm, đường sức từ đi ra từ cực Bắc và đi vào cực Nam. Bên trong nam châm, chúng khép kín từ cực Nam về cực Bắc. Đường sức từ là những đường cong khép kín và không cắt nhau."
+  },
+  {
+    "id": 57,
+    "question": "Tác dụng từ của dòng điện được biểu hiện rõ qua hiện tượng nào?",
+    "options": [
+      "Dòng điện làm bóng đèn phát sáng",
+      "Dòng điện làm kim nam châm lệch hướng",
+      "Dòng điện làm nước sôi",
+      "Dòng điện làm phát ra âm thanh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tác dụng từ của dòng điện được thể hiện rõ khi dòng điện chạy qua dây dẫn làm kim nam châm đặt gần đó bị lệch hướng. Điều này chứng tỏ xung quanh dòng điện có từ trường. Thí nghiệm của Oersted là minh chứng kinh điển cho hiện tượng này."
+  },
+  {
+    "id": 58,
+    "question": "Dòng điện xoay chiều là dòng điện có đặc điểm gì?",
+    "options": [
+      "Chiều không đổi theo thời gian",
+      "Cường độ luôn bằng 0",
+      "Chiều và trị số biến đổi tuần hoàn theo thời gian",
+      "Chỉ tồn tại trong pin"
+    ],
+    "correctIndex": 2,
+    "explanation": "Dòng điện xoay chiều là dòng điện có chiều và trị số biến đổi tuần hoàn theo thời gian, thường theo quy luật hình sin. Điện sinh hoạt trong gia đình là điện xoay chiều vì thuận lợi cho truyền tải và sử dụng."
+  },
+  {
+    "id": 59,
+    "question": "Tần số của dòng điện xoay chiều ở Việt Nam thường là bao nhiêu?",
+    "options": [
+      "25 Hz",
+      "50 Hz",
+      "60 Hz",
+      "100 Hz"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tần số dòng điện xoay chiều sinh hoạt ở Việt Nam thường là 50 Hz. Điều này có nghĩa là trong 1 giây dòng điện đổi chiều 100 lần và hoàn thành 50 chu kì. Một số quốc gia khác sử dụng tần số 60 Hz."
+  },
+  {
+    "id": 60,
+    "question": "Thiết bị nào dùng để tăng hoặc giảm hiệu điện thế xoay chiều?",
+    "options": [
+      "Ampe kế",
+      "Máy biến áp",
+      "Điện trở",
+      "Cầu chì"
+    ],
+    "correctIndex": 1,
+    "explanation": "Máy biến áp là thiết bị dùng để tăng hoặc giảm hiệu điện thế xoay chiều. Nó hoạt động dựa trên hiện tượng cảm ứng điện từ. Máy biến áp có vai trò rất quan trọng trong truyền tải điện năng đi xa nhằm giảm hao phí trên đường dây."
+  },
+  {
+    "id": 61,
+    "question": "Âm thanh được tạo ra từ nguồn âm là do nguyên nhân nào?",
+    "options": [
+      "Do nguồn âm phát sáng",
+      "Do nguồn âm dao động",
+      "Do nguồn âm nóng lên",
+      "Do nguồn âm có khối lượng lớn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Âm thanh phát ra khi vật dao động. Dao động của nguồn âm truyền ra môi trường xung quanh dưới dạng sóng âm. Nếu vật không dao động thì không tạo ra âm."
+  },
+  {
+    "id": 62,
+    "question": "Âm không truyền được trong môi trường nào?",
+    "options": [
+      "Chất rắn",
+      "Chất lỏng",
+      "Chất khí",
+      "Chân không"
+    ],
+    "correctIndex": 3,
+    "explanation": "Âm cần môi trường vật chất để truyền, vì nó là sóng cơ. Trong chân không không có các phần tử vật chất để dao động truyền âm nên âm không truyền được. Đây là lý do ngoài không gian vũ trụ con người không thể nghe âm thanh trực tiếp."
+  },
+  {
+    "id": 63,
+    "question": "Độ cao của âm phụ thuộc chủ yếu vào đại lượng nào?",
+    "options": [
+      "Biên độ dao động",
+      "Tần số dao động",
+      "Vận tốc truyền âm",
+      "Môi trường truyền âm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Độ cao của âm phụ thuộc chủ yếu vào tần số dao động của nguồn âm. Tần số càng lớn thì âm càng cao, tần số càng nhỏ thì âm càng trầm. Biên độ chủ yếu liên quan đến độ to của âm."
+  },
+  {
+    "id": 64,
+    "question": "Độ to của âm liên quan chủ yếu đến đại lượng nào?",
+    "options": [
+      "Biên độ dao động",
+      "Bước sóng",
+      "Chu kì",
+      "Khối lượng nguồn âm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Độ to của âm phụ thuộc chủ yếu vào biên độ dao động của nguồn âm. Biên độ càng lớn thì âm nghe càng to. Tuy nhiên cảm giác to nhỏ còn phụ thuộc vào khoảng cách và độ nhạy của tai người."
+  },
+  {
+    "id": 65,
+    "question": "Tốc độ truyền âm trong môi trường nào lớn nhất?",
+    "options": [
+      "Chất khí",
+      "Chất lỏng",
+      "Chất rắn",
+      "Chân không"
+    ],
+    "correctIndex": 2,
+    "explanation": "Âm truyền nhanh nhất trong chất rắn, chậm hơn trong chất lỏng và chậm nhất trong chất khí. Điều này do các phần tử trong chất rắn liên kết chặt chẽ hơn, truyền dao động cơ học hiệu quả hơn. Trong chân không, âm không truyền được."
+  },
+  {
+    "id": 66,
+    "question": "Hiện tượng phản xạ âm xảy ra khi nào?",
+    "options": [
+      "Âm bị chặn hoàn toàn và mất đi",
+      "Âm gặp mặt chắn rồi dội lại",
+      "Âm truyền sang môi trường khác",
+      "Âm bị hấp thụ hoàn toàn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phản xạ âm là hiện tượng sóng âm gặp vật cản hoặc mặt chắn rồi dội trở lại môi trường cũ. Nếu âm phản xạ đến tai chậm hơn âm trực tiếp một khoảng thời gian đủ lớn, ta có thể nghe được tiếng vang."
+  },
+  {
+    "id": 67,
+    "question": "Ánh sáng truyền theo đường nào trong môi trường trong suốt đồng tính?",
+    "options": [
+      "Đường cong",
+      "Đường gấp khúc",
+      "Đường thẳng",
+      "Đường xoắn"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trong môi trường trong suốt và đồng tính, ánh sáng truyền theo đường thẳng. Đây là cơ sở giải thích nhiều hiện tượng như bóng tối, nhật thực, nguyệt thực và cách dựng tia sáng trong quang học hình học."
+  },
+  {
+    "id": 68,
+    "question": "Hiện tượng phản xạ ánh sáng là gì?",
+    "options": [
+      "Ánh sáng bị đổi màu",
+      "Ánh sáng bị hủy hoàn toàn",
+      "Ánh sáng quay trở lại môi trường cũ khi gặp mặt phân cách",
+      "Ánh sáng đi xuyên qua mọi vật"
+    ],
+    "correctIndex": 2,
+    "explanation": "Phản xạ ánh sáng là hiện tượng tia sáng quay trở lại môi trường cũ sau khi gặp mặt phân cách. Gương phẳng, gương cầu đều hoạt động dựa trên hiện tượng này. Định luật phản xạ cho biết góc phản xạ bằng góc tới."
+  },
+  {
+    "id": 69,
+    "question": "Trong gương phẳng, ảnh của vật có tính chất nào?",
+    "options": [
+      "Ảnh thật, hứng được trên màn",
+      "Ảnh ảo, lớn hơn vật",
+      "Ảnh ảo, bằng vật",
+      "Ảnh thật, nhỏ hơn vật"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ảnh tạo bởi gương phẳng là ảnh ảo, không hứng được trên màn và có kích thước bằng vật. Ảnh đối xứng với vật qua mặt gương, khoảng cách từ ảnh đến gương bằng khoảng cách từ vật đến gương."
+  },
+  {
+    "id": 70,
+    "question": "Định luật phản xạ ánh sáng phát biểu thế nào?",
+    "options": [
+      "Góc phản xạ nhỏ hơn góc tới",
+      "Tia phản xạ nằm trong mặt phẳng tới và góc phản xạ bằng góc tới",
+      "Tia phản xạ vuông góc tia tới",
+      "Tia phản xạ song song với pháp tuyến"
+    ],
+    "correctIndex": 1,
+    "explanation": "Định luật phản xạ ánh sáng gồm hai ý: tia tới, tia phản xạ và pháp tuyến tại điểm tới cùng nằm trong một mặt phẳng; góc phản xạ bằng góc tới. Đây là định luật cơ bản để dựng đường đi của tia sáng khi gặp gương."
+  },
+  {
+    "id": 71,
+    "question": "Hiện tượng khúc xạ ánh sáng xảy ra khi nào?",
+    "options": [
+      "Khi ánh sáng truyền qua gương phẳng",
+      "Khi ánh sáng đổi hướng khi truyền xiên qua mặt phân cách hai môi trường trong suốt",
+      "Khi ánh sáng bị hấp thụ hết",
+      "Khi ánh sáng truyền trong chân không"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khúc xạ ánh sáng là hiện tượng tia sáng bị gãy khúc, tức đổi hướng, khi truyền xiên qua mặt phân cách giữa hai môi trường trong suốt khác nhau. Nguyên nhân là vận tốc truyền ánh sáng khác nhau trong hai môi trường."
+  },
+  {
+    "id": 72,
+    "question": "Thấu kính hội tụ có đặc điểm nào?",
+    "options": [
+      "Mỏng ở giữa, dày ở rìa",
+      "Dày ở giữa, mỏng ở rìa",
+      "Luôn cho ảnh ảo nhỏ hơn vật",
+      "Không làm đổi hướng tia sáng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thấu kính hội tụ thường dày ở giữa và mỏng ở rìa. Nó có tác dụng làm chùm tia tới song song hội tụ tại tiêu điểm. Tùy vị trí của vật, thấu kính hội tụ có thể cho ảnh thật hoặc ảnh ảo."
+  },
+  {
+    "id": 73,
+    "question": "Thấu kính phân kì có tác dụng gì với chùm tia sáng song song tới?",
+    "options": [
+      "Làm chùm tia hội tụ",
+      "Làm chùm tia phân kì",
+      "Không thay đổi đường đi của tia",
+      "Biến thành tia vuông góc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Thấu kính phân kì làm cho chùm tia sáng song song sau khi đi qua trở thành chùm tia phân kì, có đường kéo dài đi qua tiêu điểm ảnh. Loại thấu kính này thường mỏng ở giữa, dày ở rìa."
+  },
+  {
+    "id": 74,
+    "question": "Mắt cận thị nhìn rõ các vật ở xa như thế nào?",
+    "options": [
+      "Nhìn rất rõ mà không cần kính",
+      "Khó nhìn rõ vật ở xa",
+      "Chỉ nhìn rõ vật ở vô cực",
+      "Không nhìn rõ vật ở gần"
+    ],
+    "correctIndex": 1,
+    "explanation": "Người cận thị nhìn rõ các vật ở gần nhưng khó nhìn rõ vật ở xa vì ảnh của vật ở xa tạo ra trước võng mạc. Để khắc phục, người cận thị dùng kính phân kì để đưa ảnh về đúng võng mạc."
+  },
+  {
+    "id": 75,
+    "question": "Người viễn thị thường dùng loại kính nào để sửa tật mắt?",
+    "options": [
+      "Kính phân kì",
+      "Kính hội tụ",
+      "Gương phẳng",
+      "Kính màu"
+    ],
+    "correctIndex": 1,
+    "explanation": "Người viễn thị thường dùng kính hội tụ để sửa tật mắt. Với người viễn thị, ảnh của vật gần thường có xu hướng nằm sau võng mạc nên cần kính hội tụ để đưa ảnh về đúng võng mạc, giúp nhìn rõ hơn."
+  },
+  {
+    "id": 76,
+    "question": "Màu sắc của một vật dưới ánh sáng trắng phụ thuộc vào yếu tố nào?",
+    "options": [
+      "Khả năng phản xạ và hấp thụ các ánh sáng màu của vật",
+      "Khối lượng của vật",
+      "Nhiệt độ nóng chảy của vật",
+      "Độ cứng của vật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vật có màu gì là do nó phản xạ mạnh ánh sáng màu đó và hấp thụ các màu khác khi được chiếu bằng ánh sáng trắng. Ví dụ, vật màu đỏ phản xạ mạnh ánh sáng đỏ và hấp thụ phần lớn các màu còn lại."
+  },
+  {
+    "id": 77,
+    "question": "Ánh sáng trắng là gì?",
+    "options": [
+      "Ánh sáng chỉ có một màu trắng thuần nhất",
+      "Hỗn hợp của nhiều ánh sáng màu khác nhau",
+      "Ánh sáng không nhìn thấy được",
+      "Ánh sáng có bước sóng dài nhất"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ánh sáng trắng là hỗn hợp của nhiều ánh sáng màu khác nhau. Khi cho ánh sáng trắng đi qua lăng kính, ta có thể tách được thành dải màu liên tục từ đỏ đến tím, chứng tỏ nó gồm nhiều thành phần màu."
+  },
+  {
+    "id": 78,
+    "question": "Hiện tượng tán sắc ánh sáng là gì?",
+    "options": [
+      "Ánh sáng bị phản xạ hoàn toàn",
+      "Ánh sáng trắng bị phân tách thành nhiều ánh sáng màu",
+      "Ánh sáng bị hấp thụ hết",
+      "Ánh sáng truyền theo đường cong"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tán sắc ánh sáng là hiện tượng ánh sáng trắng bị phân tách thành nhiều ánh sáng màu khác nhau khi truyền qua lăng kính hoặc môi trường thích hợp. Nguyên nhân là chiết suất của môi trường phụ thuộc vào màu sắc hay bước sóng của ánh sáng."
+  },
+  {
+    "id": 79,
+    "question": "Sóng cơ là gì?",
+    "options": [
+      "Sự lan truyền dao động cơ trong môi trường vật chất",
+      "Sự chuyển dời của vật chất theo một chiều",
+      "Dòng chuyển động của electron",
+      "Ánh sáng truyền trong chân không"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sóng cơ là sự lan truyền dao động cơ trong môi trường vật chất. Khi sóng truyền đi, năng lượng được truyền đi còn các phần tử môi trường chỉ dao động quanh vị trí cân bằng chứ không chuyển dời theo sóng một cách lâu dài."
+  },
+  {
+    "id": 80,
+    "question": "Sóng cơ không truyền được trong môi trường nào?",
+    "options": [
+      "Chất rắn",
+      "Chất lỏng",
+      "Chất khí",
+      "Chân không"
+    ],
+    "correctIndex": 3,
+    "explanation": "Sóng cơ cần môi trường vật chất để truyền nên không truyền được trong chân không. Âm thanh là một ví dụ điển hình của sóng cơ. Ngược lại, sóng điện từ như ánh sáng có thể truyền trong chân không."
+  },
+  {
+    "id": 81,
+    "question": "Bước sóng là gì?",
+    "options": [
+      "Khoảng cách giữa hai điểm gần nhau nhất trên phương truyền sóng dao động cùng pha",
+      "Quãng đường sóng đi trong nửa chu kì",
+      "Độ lớn cực đại của dao động",
+      "Số dao động trong một giây"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bước sóng là khoảng cách giữa hai điểm gần nhau nhất trên phương truyền sóng dao động cùng pha, ví dụ hai đỉnh sóng liên tiếp. Nó cũng bằng quãng đường sóng truyền được trong một chu kì: lambda = v.T = v/f."
+  },
+  {
+    "id": 82,
+    "question": "Hệ thức liên hệ giữa vận tốc truyền sóng, bước sóng và tần số là gì?",
+    "options": [
+      "v = lambda.f",
+      "v = lambda/f",
+      "v = f/lambda²",
+      "v = lambda + f"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vận tốc truyền sóng được tính theo công thức v = lambda.f, trong đó lambda là bước sóng và f là tần số. Công thức này rất cơ bản trong các bài toán về sóng cơ và sóng điện từ."
+  },
+  {
+    "id": 83,
+    "question": "Dao động điều hòa là dao động có li độ biến thiên theo quy luật nào?",
+    "options": [
+      "Hàm bậc nhất theo thời gian",
+      "Hàm sin hoặc cos theo thời gian",
+      "Tăng đều theo thời gian",
+      "Không đổi theo thời gian"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dao động điều hòa là dao động mà li độ của vật là một hàm sin hoặc cos của thời gian, có dạng x = A.cos(omega.t + phi) hoặc tương đương. Đây là dạng dao động tuần hoàn cơ bản và rất quan trọng trong vật lý."
+  },
+  {
+    "id": 84,
+    "question": "Biên độ dao động là gì?",
+    "options": [
+      "Khoảng thời gian vật thực hiện một dao động",
+      "Độ lệch lớn nhất của vật khỏi vị trí cân bằng",
+      "Số dao động trong một giây",
+      "Vận tốc lớn nhất của vật"
+    ],
+    "correctIndex": 1,
+    "explanation": "Biên độ là độ lệch lớn nhất của vật khỏi vị trí cân bằng trong quá trình dao động. Biên độ cho biết mức độ mạnh yếu của dao động. Trong dao động điều hòa, biên độ không đổi nếu không có ma sát hoặc lực cản."
+  },
+  {
+    "id": 85,
+    "question": "Chu kì dao động là gì?",
+    "options": [
+      "Số dao động thực hiện trong một giây",
+      "Khoảng thời gian ngắn nhất để trạng thái dao động lặp lại như cũ",
+      "Độ lệch cực đại của vật",
+      "Quãng đường vật đi được trong 1 phút"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chu kì là khoảng thời gian ngắn nhất để trạng thái dao động lặp lại như cũ, tức thời gian để vật thực hiện một dao động toàn phần. Đơn vị của chu kì là giây (s). Tần số và chu kì liên hệ với nhau qua công thức f = 1/T."
+  },
+  {
+    "id": 86,
+    "question": "Tần số dao động là gì?",
+    "options": [
+      "Số dao động thực hiện trong một giây",
+      "Quãng đường vật đi được trong một chu kì",
+      "Độ lệch lớn nhất của vật",
+      "Thời gian thực hiện nửa dao động"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tần số là số dao động toàn phần thực hiện được trong một giây. Đơn vị là héc (Hz). Tần số càng lớn thì vật dao động càng nhanh và chu kì càng nhỏ."
+  },
+  {
+    "id": 87,
+    "question": "Con lắc đơn gồm những bộ phận nào?",
+    "options": [
+      "Một lò xo và một vật nặng",
+      "Một vật nhỏ treo vào sợi dây nhẹ, không giãn",
+      "Một thanh kim loại quay quanh trục",
+      "Một nam châm đặt trong từ trường"
+    ],
+    "correctIndex": 1,
+    "explanation": "Con lắc đơn gồm một vật nhỏ coi như chất điểm treo vào đầu một sợi dây nhẹ, không giãn, đầu kia cố định. Khi dao động với biên độ nhỏ, con lắc đơn dao động gần đúng điều hòa quanh vị trí cân bằng."
+  },
+  {
+    "id": 88,
+    "question": "Chu kì của con lắc đơn phụ thuộc vào yếu tố nào trong dao động nhỏ?",
+    "options": [
+      "Khối lượng vật nặng và màu sắc sợi dây",
+      "Chiều dài dây và gia tốc trọng trường",
+      "Biên độ lớn nhỏ bất kỳ",
+      "Nhiệt độ môi trường"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong giới hạn dao động nhỏ, chu kì con lắc đơn được xác định bởi T = 2pi.sqrt(l/g), nên phụ thuộc vào chiều dài dây l và gia tốc trọng trường g. Nó không phụ thuộc vào khối lượng vật nặng. Đây là tính chất rất quan trọng của con lắc đơn."
+  },
+  {
+    "id": 89,
+    "question": "Con lắc lò xo dao động điều hòa khi lực kéo về tuân theo quy luật nào?",
+    "options": [
+      "Tỉ lệ nghịch với li độ",
+      "Không phụ thuộc li độ",
+      "Tỉ lệ thuận với li độ và luôn hướng về vị trí cân bằng",
+      "Luôn cùng chiều chuyển động"
+    ],
+    "correctIndex": 2,
+    "explanation": "Con lắc lò xo dao động điều hòa vì lực kéo về có dạng F = -k.x, tức độ lớn tỉ lệ với li độ và luôn hướng về vị trí cân bằng. Dấu âm thể hiện lực luôn ngược chiều li độ, kéo vật trở lại vị trí cân bằng."
+  },
+  {
+    "id": 90,
+    "question": "Cơ năng của con lắc lò xo lý tưởng được bảo toàn khi nào?",
+    "options": [
+      "Khi không có ma sát và lực cản",
+      "Khi vật đứng yên tuyệt đối",
+      "Khi lò xo bị đứt",
+      "Khi biên độ tăng mãi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cơ năng của con lắc lò xo lý tưởng được bảo toàn khi bỏ qua ma sát và các lực cản. Khi đó năng lượng liên tục chuyển hóa giữa động năng và thế năng đàn hồi, nhưng tổng của chúng luôn không đổi."
+  },
+  {
+    "id": 91,
+    "question": "Điện tích cùng dấu thì tương tác như thế nào?",
+    "options": [
+      "Hút nhau",
+      "Đẩy nhau",
+      "Không tương tác",
+      "Lúc hút lúc đẩy ngẫu nhiên"
+    ],
+    "correctIndex": 1,
+    "explanation": "Các điện tích cùng dấu đẩy nhau, còn các điện tích trái dấu hút nhau. Đây là tính chất cơ bản của tương tác điện. Nó là nền tảng để giải thích nhiều hiện tượng điện học trong tự nhiên và kỹ thuật."
+  },
+  {
+    "id": 92,
+    "question": "Một vật trung hòa về điện là vật như thế nào?",
+    "options": [
+      "Không chứa điện tích nào",
+      "Số proton bằng số electron",
+      "Chỉ chứa proton",
+      "Chỉ chứa electron"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vật trung hòa điện là vật có tổng điện tích dương bằng tổng điện tích âm, hay số proton bằng số electron nếu xét ở mức cấu tạo nguyên tử. Vật vẫn chứa các điện tích, chỉ là tổng đại số của chúng bằng 0."
+  },
+  {
+    "id": 93,
+    "question": "Dòng điện trong kim loại là dòng chuyển dời có hướng của hạt nào?",
+    "options": [
+      "Ion dương",
+      "Ion âm",
+      "Electron tự do",
+      "Proton"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trong kim loại, các electron tự do có thể dịch chuyển có hướng dưới tác dụng của điện trường, tạo thành dòng điện. Các ion dương trong mạng tinh thể kim loại hầu như đứng yên tại các nút mạng nên không tham gia chuyển dời thành dòng điện."
+  },
+  {
+    "id": 94,
+    "question": "Nguồn điện có tác dụng gì?",
+    "options": [
+      "Tạo ra và duy trì hiệu điện thế để dòng điện có thể chạy trong mạch",
+      "Chỉ làm dây dẫn nóng lên",
+      "Chỉ dùng để đo dòng điện",
+      "Làm mất điện tích trong mạch"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nguồn điện có tác dụng tạo ra và duy trì hiệu điện thế giữa hai cực của nó, nhờ đó điện tích có thể chuyển động thành dòng điện trong mạch kín. Nguồn điện thực hiện công để tách và di chuyển điện tích ngược chiều điện trường bên trong nguồn."
+  },
+  {
+    "id": 95,
+    "question": "Vật liệu cách điện là vật liệu có đặc điểm nào?",
+    "options": [
+      "Cho dòng điện đi qua rất dễ dàng",
+      "Cản trở mạnh sự dịch chuyển của điện tích",
+      "Luôn có từ tính mạnh",
+      "Chỉ dùng để phát sáng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Vật liệu cách điện là vật liệu cản trở mạnh sự dịch chuyển của điện tích nên dòng điện khó đi qua. Ví dụ thường gặp là nhựa, cao su, sứ, thủy tinh khô. Chúng được dùng để bọc dây điện và đảm bảo an toàn điện."
+  },
+  {
+    "id": 96,
+    "question": "Vật liệu dẫn điện là vật liệu có đặc điểm gì?",
+    "options": [
+      "Có nhiều hạt mang điện tự do nên cho dòng điện đi qua dễ dàng",
+      "Không chứa electron",
+      "Không truyền nhiệt",
+      "Luôn trong suốt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vật liệu dẫn điện cho dòng điện đi qua dễ dàng vì có nhiều hạt mang điện tự do. Trong kim loại, đó là các electron tự do. Nhờ tính dẫn điện tốt, đồng và nhôm thường được dùng làm lõi dây dẫn điện."
+  },
+  {
+    "id": 97,
+    "question": "Hiện tượng cảm ứng điện từ là hiện tượng gì?",
+    "options": [
+      "Xuất hiện dòng điện cảm ứng khi từ thông qua mạch kín biến thiên",
+      "Xuất hiện dòng điện khi mạch luôn đứng yên trong từ trường không đổi",
+      "Dòng điện làm dây dẫn nóng lên",
+      "Ánh sáng làm vật phát âm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cảm ứng điện từ là hiện tượng xuất hiện suất điện động cảm ứng, và nếu mạch kín thì có dòng điện cảm ứng, khi từ thông qua mạch biến thiên theo thời gian. Đây là nguyên lý của máy phát điện, máy biến áp và nhiều thiết bị điện khác."
+  },
+  {
+    "id": 98,
+    "question": "Máy phát điện hoạt động dựa trên hiện tượng nào?",
+    "options": [
+      "Khúc xạ ánh sáng",
+      "Cảm ứng điện từ",
+      "Nóng chảy",
+      "Phản xạ âm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Máy phát điện hoạt động dựa trên hiện tượng cảm ứng điện từ. Khi cuộn dây hoặc nam châm quay làm từ thông qua cuộn dây biến thiên, suất điện động cảm ứng xuất hiện và tạo ra dòng điện. Đây là cách chuyển cơ năng thành điện năng."
+  },
+  {
+    "id": 99,
+    "question": "Năng lượng không tự sinh ra và không tự mất đi mà chỉ chuyển hóa từ dạng này sang dạng khác là nội dung của định luật nào?",
+    "options": [
+      "Định luật bảo toàn năng lượng",
+      "Định luật phản xạ ánh sáng",
+      "Định luật Ôm",
+      "Định luật Jun - Lenxơ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nội dung này thuộc định luật bảo toàn năng lượng. Định luật khẳng định tổng năng lượng của một hệ kín là không đổi, chỉ có sự chuyển hóa hoặc truyền từ vật này sang vật khác. Đây là nguyên lý nền tảng của toàn bộ vật lý."
+  },
+  {
+    "id": 100,
+    "question": "Nguồn năng lượng nào sau đây là năng lượng tái tạo?",
+    "options": [
+      "Than đá",
+      "Dầu mỏ",
+      "Năng lượng mặt trời",
+      "Khí đốt tự nhiên"
+    ],
+    "correctIndex": 2,
+    "explanation": "Năng lượng mặt trời là nguồn năng lượng tái tạo vì được bổ sung liên tục từ bức xạ của Mặt Trời. Trong khi đó than đá, dầu mỏ và khí đốt tự nhiên là các nguồn nhiên liệu hóa thạch hữu hạn, cần rất lâu để hình thành nên không được xem là tái tạo trong phạm vi sử dụng của con người."
+  },
+  {
+    "id": 101,
+    "question": "Hiện tượng nào chứng tỏ ánh sáng có tính chất sóng?",
+    "options": [
+      "Phản xạ thông thường",
+      "Khúc xạ thông thường",
+      "Giao thoa ánh sáng",
+      "Truyền thẳng của ánh sáng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Hiện tượng giao thoa ánh sáng là bằng chứng điển hình cho tính chất sóng của ánh sáng. Khi hai chùm sáng kết hợp chồng lên nhau, ta thu được các vân sáng tối xen kẽ do hiện tượng tăng cường và triệt tiêu lẫn nhau."
+  },
+  {
+    "id": 102,
+    "question": "Ánh sáng nhìn thấy có bản chất là gì?",
+    "options": [
+      "Sóng cơ",
+      "Sóng điện từ",
+      "Dòng electron",
+      "Dòng proton"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ánh sáng nhìn thấy là một phần của phổ sóng điện từ. Sóng điện từ có thể truyền được trong chân không với tốc độ rất lớn. Ngoài vùng ánh sáng nhìn thấy, phổ điện từ còn có tia hồng ngoại, tử ngoại, sóng vô tuyến, tia X, tia gamma."
+  },
+  {
+    "id": 103,
+    "question": "Tốc độ truyền ánh sáng trong chân không xấp xỉ bằng bao nhiêu?",
+    "options": [
+      "3 x 10^8 m/s",
+      "3 x 10^6 m/s",
+      "3 x 10^5 km/s là sai hoàn toàn",
+      "3 x 10^3 m/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tốc độ truyền ánh sáng trong chân không xấp xỉ 3 x 10^8 m/s, tương đương khoảng 300 000 km/s. Đây là một hằng số vật lý cơ bản và là vận tốc lớn nhất trong tự nhiên theo thuyết tương đối hẹp."
+  },
+  {
+    "id": 104,
+    "question": "Tia hồng ngoại có đặc điểm nào?",
+    "options": [
+      "Có bước sóng ngắn hơn ánh sáng tím",
+      "Có bước sóng dài hơn ánh sáng đỏ",
+      "Không mang năng lượng",
+      "Không phải sóng điện từ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tia hồng ngoại là bức xạ điện từ có bước sóng dài hơn ánh sáng đỏ nhìn thấy. Nó thường gắn với tác dụng nhiệt mạnh và được ứng dụng trong điều khiển từ xa, camera nhiệt, sưởi ấm và quan sát ban đêm."
+  },
+  {
+    "id": 105,
+    "question": "Tia tử ngoại có đặc điểm nào?",
+    "options": [
+      "Có bước sóng dài hơn tia hồng ngoại",
+      "Có bước sóng ngắn hơn ánh sáng tím",
+      "Chỉ truyền được trong chất lỏng",
+      "Không có tác dụng hóa học"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tia tử ngoại là bức xạ điện từ có bước sóng ngắn hơn ánh sáng tím. Nó có tác dụng hóa học mạnh, có thể gây phát quang, diệt khuẩn nhưng cũng có thể gây hại cho da và mắt nếu tiếp xúc quá mức."
+  },
+  {
+    "id": 106,
+    "question": "Trong quang phổ điện từ, tia nào có năng lượng lớn hơn?",
+    "options": [
+      "Tia hồng ngoại",
+      "Ánh sáng đỏ",
+      "Tia gamma",
+      "Sóng vô tuyến"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tia gamma có tần số rất lớn và bước sóng rất ngắn nên năng lượng photon của nó lớn nhất trong các lựa chọn nêu ra. Theo hệ thức E = h.f, tần số càng lớn thì năng lượng photon càng cao."
+  },
+  {
+    "id": 107,
+    "question": "Cấu tạo sơ lược của nguyên tử gồm những phần nào?",
+    "options": [
+      "Chỉ có hạt nhân",
+      "Chỉ có các electron",
+      "Hạt nhân mang điện dương và các electron mang điện âm chuyển động xung quanh",
+      "Các proton quay quanh neutron"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nguyên tử gồm hạt nhân ở tâm chứa proton và neutron, còn các electron mang điện âm chuyển động xung quanh hạt nhân. Hạt nhân mang điện dương vì proton mang điện dương, neutron không mang điện. Phần lớn khối lượng nguyên tử tập trung ở hạt nhân."
+  },
+  {
+    "id": 108,
+    "question": "Hạt nào trong nguyên tử mang điện tích dương?",
+    "options": [
+      "Electron",
+      "Neutron",
+      "Proton",
+      "Photon"
+    ],
+    "correctIndex": 2,
+    "explanation": "Proton là hạt mang điện tích dương trong nguyên tử. Electron mang điện tích âm, neutron không mang điện, còn photon là lượng tử ánh sáng chứ không phải hạt cấu tạo nên nguyên tử theo nghĩa thông thường."
+  },
+  {
+    "id": 109,
+    "question": "Hạt nào trong nguyên tử không mang điện?",
+    "options": [
+      "Electron",
+      "Proton",
+      "Neutron",
+      "Ion"
+    ],
+    "correctIndex": 2,
+    "explanation": "Neutron là hạt không mang điện. Nó cùng với proton tạo nên hạt nhân nguyên tử. Số neutron ảnh hưởng đến khối lượng và đồng vị của nguyên tố nhưng không làm thay đổi điện tích hạt nhân."
+  },
+  {
+    "id": 110,
+    "question": "Hiện tượng phóng xạ là gì?",
+    "options": [
+      "Sự phát sáng của vật khi bị nung nóng",
+      "Sự tự phát biến đổi hạt nhân nguyên tử kèm theo bức xạ",
+      "Sự truyền nhiệt giữa hai vật",
+      "Sự điện phân dung dịch"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phóng xạ là hiện tượng một số hạt nhân không bền tự phát biến đổi thành hạt nhân khác đồng thời phát ra các bức xạ như alpha, beta, gamma. Đây là hiện tượng hạt nhân và không phụ thuộc vào các tác động hóa học thông thường."
+  },
+  {
+    "id": 111,
+    "question": "Năng lượng hạt nhân được giải phóng chủ yếu trong các quá trình nào?",
+    "options": [
+      "Nóng chảy và đông đặc",
+      "Phản ứng phân hạch và nhiệt hạch",
+      "Bay hơi và ngưng tụ",
+      "Khúc xạ và phản xạ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Năng lượng hạt nhân được giải phóng chủ yếu trong hai loại phản ứng: phân hạch và nhiệt hạch. Phân hạch là sự tách hạt nhân nặng thành các hạt nhân nhẹ hơn, còn nhiệt hạch là sự kết hợp các hạt nhân nhẹ tạo thành hạt nhân nặng hơn."
+  },
+  {
+    "id": 112,
+    "question": "Phản ứng phân hạch là quá trình gì?",
+    "options": [
+      "Kết hợp hai hạt nhân nhẹ thành hạt nhân nặng hơn",
+      "Tách một hạt nhân nặng thành các hạt nhân nhẹ hơn",
+      "Electron rời khỏi nguyên tử",
+      "Ánh sáng bị tán sắc"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phản ứng phân hạch là quá trình một hạt nhân nặng tách thành hai hoặc nhiều hạt nhân nhẹ hơn, đồng thời giải phóng năng lượng và thường kèm theo neutron. Đây là nguyên lý hoạt động của nhiều lò phản ứng hạt nhân hiện nay."
+  },
+  {
+    "id": 113,
+    "question": "Phản ứng nhiệt hạch là quá trình gì?",
+    "options": [
+      "Tách hạt nhân nặng thành hạt nhân nhẹ",
+      "Kết hợp các hạt nhân nhẹ thành hạt nhân nặng hơn",
+      "Sự phát xạ electron khỏi kim loại",
+      "Sự bay hơi của chất lỏng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Phản ứng nhiệt hạch là quá trình kết hợp các hạt nhân nhẹ thành hạt nhân nặng hơn và giải phóng năng lượng rất lớn. Đây là nguồn năng lượng của Mặt Trời và các ngôi sao. Muốn xảy ra nhiệt hạch thường cần nhiệt độ cực cao."
+  },
+  {
+    "id": 114,
+    "question": "Hiệu suất của một máy được tính bằng tỉ số nào?",
+    "options": [
+      "Năng lượng hao phí chia cho năng lượng có ích",
+      "Công có ích chia cho công toàn phần",
+      "Công toàn phần chia cho công có ích",
+      "Thời gian chia cho công suất"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hiệu suất của máy được tính bằng tỉ số giữa phần năng lượng hoặc công có ích thu được so với năng lượng hoặc công toàn phần cung cấp cho máy. Hiệu suất thường nhỏ hơn 100% vì luôn có hao phí do ma sát, tỏa nhiệt, âm thanh và các nguyên nhân khác."
+  },
+  {
+    "id": 115,
+    "question": "Máy cơ đơn giản nào có tác dụng đổi hướng của lực kéo vật lên cao?",
+    "options": [
+      "Ròng rọc cố định",
+      "Đòn bẩy luôn luôn",
+      "Mặt phẳng nghiêng luôn luôn",
+      "Lò xo"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ròng rọc cố định chủ yếu có tác dụng đổi hướng của lực. Khi dùng nó, ta có thể kéo vật lên bằng cách kéo dây xuống, thuận tiện hơn trong nhiều tình huống. Tuy nhiên về lý tưởng, nó không làm lợi về lực."
+  },
+  {
+    "id": 116,
+    "question": "Mặt phẳng nghiêng giúp ích gì khi đưa vật lên cao?",
+    "options": [
+      "Làm tăng trọng lượng của vật",
+      "Giảm lực cần thiết nhưng phải đi quãng đường dài hơn",
+      "Làm vật tự bay lên",
+      "Không có tác dụng cơ học"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mặt phẳng nghiêng giúp giảm lực cần thiết để đưa vật lên cao, đổi lại ta phải tác dụng lực trên quãng đường dài hơn. Đây là nguyên tắc bảo toàn công trong máy cơ đơn giản nếu bỏ qua ma sát."
+  },
+  {
+    "id": 117,
+    "question": "Đòn bẩy cân bằng khi nào?",
+    "options": [
+      "Khi hai lực tác dụng bằng nhau về mọi mặt",
+      "Khi tổng mômen lực làm quay theo chiều kim đồng hồ bằng tổng mômen lực làm quay ngược chiều",
+      "Khi cánh tay đòn ngắn hơn",
+      "Khi không có lực nào tác dụng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Đòn bẩy cân bằng khi tổng mômen của các lực làm quay theo một chiều bằng tổng mômen của các lực làm quay theo chiều ngược lại đối với điểm tựa. Với hai lực, điều kiện thường viết là F1.d1 = F2.d2."
+  },
+  {
+    "id": 118,
+    "question": "Hiện tượng quán tính thể hiện rõ nhất trong tình huống nào?",
+    "options": [
+      "Người ngả về phía sau khi xe đang chạy bất ngờ tăng tốc",
+      "Kim nam châm quay về hướng Bắc - Nam",
+      "Đá tan thành nước",
+      "Ánh sáng đi qua gương"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi xe đang chạy bất ngờ tăng tốc, cơ thể người có xu hướng giữ trạng thái chuyển động cũ nên phần thân trên dường như ngả về phía sau so với xe. Đó là biểu hiện của quán tính, tức xu hướng bảo toàn trạng thái chuyển động hoặc đứng yên của vật."
+  },
+  {
+    "id": 119,
+    "question": "Nếu tăng hiệu điện thế giữa hai đầu một điện trở lên gấp đôi và giữ nguyên điện trở thì cường độ dòng điện sẽ thế nào?",
+    "options": [
+      "Giảm một nửa",
+      "Không đổi",
+      "Tăng gấp đôi",
+      "Tăng gấp bốn"
+    ],
+    "correctIndex": 2,
+    "explanation": "Theo định luật Ôm, I = U/R. Nếu điện trở R giữ nguyên mà hiệu điện thế U tăng gấp đôi thì cường độ dòng điện I cũng tăng gấp đôi. Đây là mối quan hệ tỉ lệ thuận giữa I và U khi R không đổi."
+  },
+  {
+    "id": 120,
+    "question": "Khi một vật được ném thẳng đứng lên cao, ở vị trí cao nhất của quỹ đạo đại lượng nào bằng 0 nếu bỏ qua sức cản không khí?",
+    "options": [
+      "Gia tốc",
+      "Trọng lực",
+      "Vận tốc tức thời",
+      "Khối lượng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ở vị trí cao nhất của quỹ đạo ném thẳng đứng lên, vận tốc tức thời của vật bằng 0 trước khi vật đổi chiều rơi xuống. Tuy nhiên gia tốc vẫn không bằng 0 mà vẫn bằng g hướng xuống do trọng lực luôn tác dụng. Khối lượng của vật tất nhiên không thay đổi."
+  },
+  {
+    "id": 121,
+    "question": "Khi vật chuyển động tròn đều, vectơ vận tốc tức thời có phương như thế nào?",
+    "options": [
+      "Luôn hướng vào tâm quỹ đạo",
+      "Luôn tiếp tuyến với quỹ đạo",
+      "Luôn hướng ra xa tâm quỹ đạo",
+      "Luôn thẳng đứng hướng xuống"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong chuyển động tròn đều, vectơ vận tốc tức thời luôn có phương tiếp tuyến với quỹ đạo tại điểm đang xét. Mặc dù độ lớn vận tốc không đổi, hướng của vectơ vận tốc thay đổi liên tục nên vật vẫn có gia tốc hướng tâm."
+  },
+  {
+    "id": 122,
+    "question": "Gia tốc hướng tâm trong chuyển động tròn đều có chiều như thế nào?",
+    "options": [
+      "Tiếp tuyến với quỹ đạo",
+      "Hướng ra xa tâm quỹ đạo",
+      "Hướng về tâm quỹ đạo",
+      "Ngược chiều chuyển động"
+    ],
+    "correctIndex": 2,
+    "explanation": "Gia tốc hướng tâm luôn hướng về tâm quỹ đạo tròn. Gia tốc này không làm thay đổi độ lớn vận tốc mà chỉ làm thay đổi hướng của vectơ vận tốc, giúp vật duy trì chuyển động trên quỹ đạo cong."
+  },
+  {
+    "id": 123,
+    "question": "Công thức tính gia tốc hướng tâm là gì?",
+    "options": [
+      "aht = v²/r",
+      "aht = r/v²",
+      "aht = v/r²",
+      "aht = v.r"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gia tốc hướng tâm của chuyển động tròn đều được tính bằng aht = v²/r, trong đó v là tốc độ dài và r là bán kính quỹ đạo. Công thức cho thấy vật chuyển động càng nhanh hoặc trên quỹ đạo càng nhỏ thì gia tốc hướng tâm càng lớn."
+  },
+  {
+    "id": 124,
+    "question": "Lực giữ cho vật chuyển động tròn đều được gọi là gì?",
+    "options": [
+      "Lực đàn hồi",
+      "Lực hướng tâm",
+      "Lực ma sát nghỉ",
+      "Lực quán tính"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lực gây ra gia tốc hướng tâm và giữ cho vật chuyển động tròn đều được gọi là lực hướng tâm. Đây không phải là một loại lực mới riêng biệt mà có thể do trọng lực, lực căng dây, lực ma sát hoặc hợp lực của nhiều lực đóng vai trò cung cấp."
+  },
+  {
+    "id": 125,
+    "question": "Trong hệ SI, tần số có đơn vị là gì?",
+    "options": [
+      "Héc",
+      "Giây",
+      "Mét",
+      "Niutơn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Đơn vị của tần số là héc (Hz). Một héc nghĩa là có một dao động hoặc một chu kì lặp lại trong một giây. Tần số càng lớn thì hiện tượng tuần hoàn diễn ra càng nhanh."
+  },
+  {
+    "id": 126,
+    "question": "Chu kì và tần số liên hệ với nhau theo công thức nào?",
+    "options": [
+      "f = T",
+      "f = 1/T",
+      "f = T²",
+      "f = 2T"
+    ],
+    "correctIndex": 1,
+    "explanation": "Chu kì T là thời gian thực hiện một dao động, còn tần số f là số dao động thực hiện trong một giây, nên chúng liên hệ với nhau bởi công thức f = 1/T và T = 1/f. Khi chu kì giảm thì tần số tăng."
+  },
+  {
+    "id": 127,
+    "question": "Trong dao động điều hòa, khi vật đi qua vị trí cân bằng thì đại lượng nào đạt cực đại?",
+    "options": [
+      "Li độ",
+      "Vận tốc",
+      "Thế năng",
+      "Lực kéo về"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi vật dao động điều hòa đi qua vị trí cân bằng, li độ bằng 0 nên lực kéo về và thế năng bằng 0, trong khi vận tốc đạt giá trị lớn nhất. Đây là thời điểm động năng cực đại nếu bỏ qua ma sát."
+  },
+  {
+    "id": 128,
+    "question": "Trong dao động điều hòa, ở vị trí biên thì vận tốc của vật bằng bao nhiêu?",
+    "options": [
+      "Lớn nhất",
+      "Bằng 0",
+      "Không đổi",
+      "Âm vô cùng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ở vị trí biên, vật đổi chiều chuyển động nên vận tốc tức thời bằng 0. Đồng thời tại đây li độ có độ lớn cực đại, lực kéo về và gia tốc có độ lớn cực đại hướng về vị trí cân bằng."
+  },
+  {
+    "id": 129,
+    "question": "Năng lượng của con lắc đơn khi dao động nhỏ gồm những dạng chính nào?",
+    "options": [
+      "Động năng và thế năng trọng trường",
+      "Thế năng đàn hồi và nhiệt năng",
+      "Điện năng và quang năng",
+      "Hóa năng và cơ năng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi con lắc đơn dao động nhỏ, năng lượng của nó chủ yếu là động năng và thế năng trọng trường. Hai dạng năng lượng này liên tục chuyển hóa lẫn nhau trong quá trình dao động, còn tổng cơ năng được bảo toàn nếu bỏ qua ma sát."
+  },
+  {
+    "id": 130,
+    "question": "Hiện tượng cộng hưởng cơ xảy ra khi nào?",
+    "options": [
+      "Khi tần số của lực cưỡng bức bằng tần số riêng của hệ",
+      "Khi biên độ bằng 0",
+      "Khi vật đứng yên tuyệt đối",
+      "Khi không có ngoại lực nào tác dụng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cộng hưởng cơ xảy ra khi tần số của ngoại lực tuần hoàn tác dụng lên hệ bằng hoặc rất gần tần số riêng của hệ. Khi đó biên độ dao động cưỡng bức tăng mạnh. Hiện tượng này có thể có ích hoặc gây nguy hiểm tùy trường hợp."
+  },
+  {
+    "id": 131,
+    "question": "Điều kiện để có giao thoa sóng là gì?",
+    "options": [
+      "Hai sóng phải luôn rất mạnh",
+      "Hai nguồn sóng kết hợp có cùng tần số và độ lệch pha không đổi",
+      "Hai sóng truyền trong chân không",
+      "Hai nguồn phải đặt rất xa nhau"
+    ],
+    "correctIndex": 1,
+    "explanation": "Giao thoa sóng bền xảy ra khi hai nguồn là nguồn kết hợp, tức phát ra hai sóng có cùng tần số và độ lệch pha giữa chúng không đổi theo thời gian. Khi đó trong không gian sẽ hình thành các vị trí dao động cực đại và cực tiểu ổn định."
+  },
+  {
+    "id": 132,
+    "question": "Sóng dọc là sóng có phương dao động của phần tử môi trường như thế nào so với phương truyền sóng?",
+    "options": [
+      "Vuông góc",
+      "Trùng hoặc song song",
+      "Tạo góc 45 độ",
+      "Ngẫu nhiên"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ở sóng dọc, các phần tử môi trường dao động theo phương trùng hoặc song song với phương truyền sóng. Sóng âm trong không khí là ví dụ điển hình của sóng dọc, gồm các vùng nén và dãn truyền đi."
+  },
+  {
+    "id": 133,
+    "question": "Sóng ngang là sóng có phương dao động của phần tử môi trường như thế nào so với phương truyền sóng?",
+    "options": [
+      "Song song",
+      "Trùng hoàn toàn",
+      "Vuông góc",
+      "Không xác định"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ở sóng ngang, phương dao động của phần tử môi trường vuông góc với phương truyền sóng. Sóng trên dây là ví dụ quen thuộc. Trong chất lỏng và chất khí, sóng ngang khó truyền vì các môi trường này không chống được biến dạng trượt tốt như chất rắn."
+  },
+  {
+    "id": 134,
+    "question": "Khi hai âm có tần số gần bằng nhau truyền cùng lúc, hiện tượng nghe được âm to nhỏ luân phiên gọi là gì?",
+    "options": [
+      "Phản xạ âm",
+      "Khúc xạ âm",
+      "Sự trùng phùng",
+      "Nhịp âm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Khi hai âm có tần số gần bằng nhau chồng lên nhau, ta nghe thấy âm to nhỏ luân phiên theo thời gian, hiện tượng đó gọi là nhịp âm. Số nhịp nghe được trong một giây bằng độ chênh lệch tần số của hai âm."
+  },
+  {
+    "id": 135,
+    "question": "Cường độ âm càng lớn thì mức âm thường như thế nào?",
+    "options": [
+      "Càng nhỏ",
+      "Không đổi",
+      "Càng lớn",
+      "Bằng 0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Cường độ âm đặc trưng cho độ mạnh của sóng âm. Khi cường độ âm tăng thì mức cường độ âm, thường đo bằng đơn vị đềxiben (dB), cũng tăng theo. Điều này khiến âm được cảm nhận là to hơn."
+  },
+  {
+    "id": 136,
+    "question": "Tai người bình thường nghe được âm có tần số trong khoảng nào?",
+    "options": [
+      "Dưới 20 Hz",
+      "Từ 20 Hz đến khoảng 20 000 Hz",
+      "Trên 20 000 Hz",
+      "Từ 1 Hz đến 10 Hz"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tai người bình thường có thể nghe được âm trong khoảng tần số từ khoảng 20 Hz đến 20 000 Hz. Âm có tần số nhỏ hơn 20 Hz là hạ âm, còn lớn hơn 20 000 Hz là siêu âm. Khả năng nghe còn thay đổi theo tuổi tác và từng người."
+  },
+  {
+    "id": 137,
+    "question": "Siêu âm là âm có tần số như thế nào?",
+    "options": [
+      "Nhỏ hơn 20 Hz",
+      "Lớn hơn 20 000 Hz",
+      "Bằng đúng 20 Hz",
+      "Từ 20 Hz đến 200 Hz"
+    ],
+    "correctIndex": 1,
+    "explanation": "Siêu âm là âm có tần số lớn hơn 20 000 Hz, vượt quá khả năng nghe của tai người. Siêu âm được ứng dụng trong y học để chẩn đoán hình ảnh, trong công nghiệp để kiểm tra vật liệu và trong nhiều lĩnh vực khác."
+  },
+  {
+    "id": 138,
+    "question": "Hạ âm là âm có tần số như thế nào?",
+    "options": [
+      "Nhỏ hơn 20 Hz",
+      "Lớn hơn 20 000 Hz",
+      "Bằng 1000 Hz",
+      "Từ 20 000 Hz đến 40 000 Hz"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hạ âm là âm có tần số nhỏ hơn 20 Hz. Tai người thường không nghe được loại âm này, nhưng một số loài động vật có thể cảm nhận được. Hạ âm cũng được nghiên cứu trong địa chấn và khí tượng."
+  },
+  {
+    "id": 139,
+    "question": "Gương cầu lõm có khả năng gì với chùm tia tới song song trục chính?",
+    "options": [
+      "Làm chúng phân kì",
+      "Làm chúng hội tụ",
+      "Không đổi hướng",
+      "Làm chúng biến mất"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gương cầu lõm có khả năng biến chùm tia tới song song với trục chính thành chùm tia phản xạ hội tụ tại tiêu điểm. Tính chất này được ứng dụng trong đèn pin, gương phản xạ của đèn ô tô và thiết bị quang học."
+  },
+  {
+    "id": 140,
+    "question": "Gương cầu lồi cho ảnh của vật có đặc điểm nào?",
+    "options": [
+      "Ảnh thật, lớn hơn vật",
+      "Ảnh ảo, nhỏ hơn vật",
+      "Ảnh thật, bằng vật",
+      "Ảnh ảo, lớn hơn vật"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gương cầu lồi luôn cho ảnh ảo, cùng chiều và nhỏ hơn vật. Nhờ tạo vùng quan sát rộng, gương cầu lồi thường được dùng làm gương chiếu hậu xe máy, ô tô hoặc gương quan sát ở góc cua."
+  },
+  {
+    "id": 141,
+    "question": "Điều kiện để thấu kính hội tụ cho ảnh thật là gì?",
+    "options": [
+      "Vật đặt trong khoảng tiêu cự",
+      "Vật đặt đúng tại quang tâm",
+      "Vật đặt ngoài tiêu cự",
+      "Mọi vị trí đều cho ảnh thật"
+    ],
+    "correctIndex": 2,
+    "explanation": "Thấu kính hội tụ chỉ cho ảnh thật khi vật đặt ngoài tiêu cự. Khi đó các tia ló thực sự hội tụ tại một điểm ở phía bên kia thấu kính và ảnh có thể hứng được trên màn. Nếu vật đặt trong tiêu cự, ảnh sẽ là ảnh ảo."
+  },
+  {
+    "id": 142,
+    "question": "Máy ảnh hoạt động dựa trên bộ phận quang học chính nào?",
+    "options": [
+      "Gương cầu lồi",
+      "Thấu kính hội tụ",
+      "Nam châm điện",
+      "Tụ điện"
+    ],
+    "correctIndex": 1,
+    "explanation": "Máy ảnh sử dụng thấu kính hội tụ để tạo ảnh thật của vật lên phim hoặc cảm biến ảnh. Ảnh này thường là ảnh thật, ngược chiều và nhỏ hơn vật đối với các vật ở xa máy ảnh."
+  },
+  {
+    "id": 143,
+    "question": "Kính lúp là dụng cụ quang học sử dụng loại thấu kính nào?",
+    "options": [
+      "Thấu kính phân kì",
+      "Thấu kính hội tụ có tiêu cự ngắn",
+      "Gương phẳng",
+      "Lăng kính"
+    ],
+    "correctIndex": 1,
+    "explanation": "Kính lúp là dụng cụ quang học dùng để quan sát các vật nhỏ, về bản chất là một thấu kính hội tụ có tiêu cự ngắn. Khi đặt vật trong khoảng tiêu cự, kính lúp cho ảnh ảo, cùng chiều và lớn hơn vật."
+  },
+  {
+    "id": 144,
+    "question": "Kính hiển vi quang học dùng để làm gì?",
+    "options": [
+      "Quan sát vật ở rất xa",
+      "Quan sát các vật rất nhỏ",
+      "Đo cường độ dòng điện",
+      "Tạo ra điện năng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Kính hiển vi quang học được dùng để quan sát các vật rất nhỏ mà mắt thường không nhìn rõ. Nó gồm vật kính và thị kính, phối hợp để tạo ra ảnh cuối cùng có góc trông lớn hơn nhiều lần so với khi quan sát trực tiếp."
+  },
+  {
+    "id": 145,
+    "question": "Kính thiên văn dùng chủ yếu để quan sát gì?",
+    "options": [
+      "Các vật rất nhỏ ở gần",
+      "Các thiên thể ở rất xa",
+      "Dòng điện trong dây dẫn",
+      "Âm thanh trong không khí"
+    ],
+    "correctIndex": 1,
+    "explanation": "Kính thiên văn là dụng cụ quang học dùng để quan sát các vật ở rất xa, đặc biệt là các thiên thể như Mặt Trăng, hành tinh, sao và thiên hà. Nó giúp tăng góc trông ảnh của vật ở xa để mắt người có thể quan sát rõ hơn."
+  },
+  {
+    "id": 146,
+    "question": "Trong hiện tượng tán sắc qua lăng kính, ánh sáng màu nào lệch nhiều nhất?",
+    "options": [
+      "Đỏ",
+      "Vàng",
+      "Tím",
+      "Lục"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trong lăng kính, ánh sáng tím thường lệch nhiều nhất còn ánh sáng đỏ lệch ít nhất. Điều này là do chiết suất của môi trường đối với ánh sáng tím lớn hơn đối với ánh sáng đỏ, nên tia tím bị khúc xạ mạnh hơn."
+  },
+  {
+    "id": 147,
+    "question": "Trong hiện tượng tán sắc qua lăng kính, ánh sáng màu nào lệch ít nhất?",
+    "options": [
+      "Đỏ",
+      "Tím",
+      "Lam",
+      "Chàm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ánh sáng đỏ lệch ít nhất khi đi qua lăng kính vì chiết suất của môi trường đối với ánh sáng đỏ nhỏ hơn so với các màu khác như tím, lam. Do đó ánh sáng đỏ bị khúc xạ yếu hơn."
+  },
+  {
+    "id": 148,
+    "question": "Tán sắc ánh sáng giải thích hiện tượng tự nhiên nào quen thuộc?",
+    "options": [
+      "Cầu vồng",
+      "Gió biển",
+      "Sấm sét",
+      "Thủy triều"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hiện tượng cầu vồng được giải thích nhờ sự tán sắc, khúc xạ và phản xạ ánh sáng Mặt Trời trong các giọt nước mưa. Mỗi màu bị lệch khác nhau nên ánh sáng trắng được tách thành dải màu rực rỡ trên bầu trời."
+  },
+  {
+    "id": 149,
+    "question": "Hiện tượng điện phân xảy ra trong môi trường nào?",
+    "options": [
+      "Kim loại rắn",
+      "Dung dịch điện li hoặc chất điện phân nóng chảy",
+      "Chân không",
+      "Thủy tinh khô"
+    ],
+    "correctIndex": 1,
+    "explanation": "Điện phân xảy ra trong các dung dịch điện li hoặc chất điện phân nóng chảy, nơi dòng điện được tải bởi các ion dương và ion âm. Đây là cơ sở của nhiều quá trình mạ điện, tinh luyện kim loại và sản xuất hóa chất."
+  },
+  {
+    "id": 150,
+    "question": "Trong dung dịch điện phân, hạt tải điện là gì?",
+    "options": [
+      "Chỉ có electron",
+      "Proton tự do",
+      "Ion dương và ion âm",
+      "Neutron"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trong dung dịch điện phân, dòng điện là dòng chuyển dời có hướng của các ion dương và ion âm. Ion dương chuyển về catốt, ion âm chuyển về anốt. Khác với kim loại, dòng điện trong điện phân không chủ yếu do electron tự do trong dung dịch gây ra."
+  },
+  {
+    "id": 151,
+    "question": "An toàn điện yêu cầu gì khi sửa chữa thiết bị điện gia dụng?",
+    "options": [
+      "Chạm trực tiếp vào dây dẫn để thử",
+      "Ngắt nguồn điện trước khi sửa",
+      "Đứng chân trần trên nền ướt",
+      "Dùng dây kim loại trần để cầm nắm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Để đảm bảo an toàn điện, cần ngắt nguồn điện trước khi sửa chữa thiết bị điện. Việc này giúp tránh nguy cơ điện giật và cháy nổ. Ngoài ra còn nên dùng dụng cụ cách điện, giữ tay khô và làm việc ở nơi an toàn."
+  },
+  {
+    "id": 152,
+    "question": "Cầu chì trong mạch điện gia đình có tác dụng gì?",
+    "options": [
+      "Tăng hiệu điện thế",
+      "Bảo vệ mạch khi dòng điện quá lớn",
+      "Làm tăng công suất tiêu thụ",
+      "Phát ra ánh sáng trang trí"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cầu chì là thiết bị bảo vệ mạch điện. Khi dòng điện qua mạch vượt quá giá trị cho phép, dây chảy trong cầu chì bị nóng chảy và đứt, ngắt mạch, từ đó bảo vệ thiết bị và giảm nguy cơ cháy nổ."
+  },
+  {
+    "id": 153,
+    "question": "Công tơ điện trong gia đình dùng để đo đại lượng nào?",
+    "options": [
+      "Cường độ dòng điện tức thời",
+      "Hiệu điện thế tức thời",
+      "Điện năng tiêu thụ",
+      "Điện trở của toàn mạch"
+    ],
+    "correctIndex": 2,
+    "explanation": "Công tơ điện dùng để đo điện năng tiêu thụ của gia đình hoặc thiết bị trong một khoảng thời gian. Trong thực tế, đơn vị thường gặp là kWh, tức số kilowatt giờ điện năng đã sử dụng."
+  },
+  {
+    "id": 154,
+    "question": "1 kWh bằng bao nhiêu jun?",
+    "options": [
+      "3 600 J",
+      "36 000 J",
+      "360 000 J",
+      "3 600 000 J"
+    ],
+    "correctIndex": 3,
+    "explanation": "1 kWh là điện năng tiêu thụ của thiết bị công suất 1000 W trong 1 giờ. Đổi ra jun: 1 kWh = 1000 x 3600 = 3 600 000 J. Đây là đơn vị rất phổ biến trong tính tiền điện sinh hoạt."
+  },
+  {
+    "id": 155,
+    "question": "Điện năng được chuyển hóa chủ yếu thành dạng nào trong bóng đèn sợi đốt?",
+    "options": [
+      "Cơ năng và thế năng",
+      "Quang năng và nhiệt năng",
+      "Hóa năng và điện năng",
+      "Năng lượng hạt nhân"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong bóng đèn sợi đốt, điện năng chuyển hóa chủ yếu thành nhiệt năng và một phần thành quang năng. Do hiệu suất phát sáng không cao, bóng đèn sợi đốt tỏa nhiệt nhiều hơn so với các loại đèn hiện đại như LED."
+  },
+  {
+    "id": 156,
+    "question": "Ở bếp điện, điện năng chủ yếu chuyển hóa thành gì?",
+    "options": [
+      "Cơ năng",
+      "Nhiệt năng",
+      "Quang năng",
+      "Thế năng trọng trường"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bếp điện hoạt động dựa trên tác dụng nhiệt của dòng điện, nên điện năng chủ yếu chuyển hóa thành nhiệt năng. Dây đốt nóng lên khi có dòng điện đi qua và truyền nhiệt để đun nấu thức ăn."
+  },
+  {
+    "id": 157,
+    "question": "Động cơ điện biến đổi điện năng thành dạng năng lượng nào là chính?",
+    "options": [
+      "Quang năng",
+      "Nhiệt năng",
+      "Cơ năng",
+      "Hóa năng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Động cơ điện biến điện năng thành cơ năng, tạo ra chuyển động quay hoặc chuyển động cơ học khác. Đây là nguyên lý hoạt động của quạt điện, máy bơm, máy giặt và rất nhiều thiết bị công nghiệp."
+  },
+  {
+    "id": 158,
+    "question": "Trong máy phát điện, dạng năng lượng đầu vào thường là gì?",
+    "options": [
+      "Điện năng",
+      "Quang năng",
+      "Cơ năng",
+      "Hóa năng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Máy phát điện nhận cơ năng từ tua-bin nước, tua-bin hơi, tua-bin gió hoặc động cơ rồi biến đổi thành điện năng nhờ hiện tượng cảm ứng điện từ. Đây là mắt xích trung tâm của hầu hết các nhà máy điện."
+  },
+  {
+    "id": 159,
+    "question": "Từ phổ là gì?",
+    "options": [
+      "Hình ảnh trực quan về các đường sức từ",
+      "Màu sắc của nam châm",
+      "Bảng đơn vị từ học",
+      "Dòng điện trong cuộn dây"
+    ],
+    "correctIndex": 0,
+    "explanation": "Từ phổ là hình ảnh biểu diễn trực quan từ trường, thường thu được khi rắc mạt sắt vào vùng có từ trường. Các mạt sắt sắp xếp dọc theo các đường sức từ, cho ta thấy hình dạng và sự phân bố của từ trường."
+  },
+  {
+    "id": 160,
+    "question": "Nam châm điện có ưu điểm nổi bật nào so với nam châm vĩnh cửu?",
+    "options": [
+      "Không cần dòng điện vẫn điều chỉnh được dễ dàng",
+      "Có thể bật tắt và thay đổi độ mạnh từ trường",
+      "Luôn nhỏ hơn mọi nam châm khác",
+      "Không bao giờ nóng lên"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nam châm điện có ưu điểm là có thể bật tắt từ tính bằng cách đóng ngắt dòng điện và có thể điều chỉnh độ mạnh từ trường bằng cách thay đổi cường độ dòng điện hoặc số vòng dây. Điều này rất tiện trong kỹ thuật và tự động hóa."
+  },
+  {
+    "id": 161,
+    "question": "Trong mạch điện kín, chiều dòng điện quy ước ở mạch ngoài đi như thế nào?",
+    "options": [
+      "Từ cực âm sang cực dương của nguồn",
+      "Từ cực dương sang cực âm của nguồn",
+      "Không có chiều xác định",
+      "Luôn từ dưới lên trên"
+    ],
+    "correctIndex": 1,
+    "explanation": "Theo quy ước, trong mạch ngoài dòng điện đi từ cực dương qua các thiết bị điện đến cực âm của nguồn. Chiều này ngược với chiều chuyển dời của electron trong dây kim loại, vì electron mang điện tích âm."
+  },
+  {
+    "id": 162,
+    "question": "Nếu mắc thêm một điện trở song song vào mạch thì điện trở tương đương của mạch sẽ như thế nào?",
+    "options": [
+      "Tăng lên",
+      "Giảm xuống",
+      "Không đổi",
+      "Bằng tổng các điện trở"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi thêm một nhánh điện trở mắc song song, điện trở tương đương của mạch sẽ giảm xuống vì có thêm đường cho dòng điện đi qua. Đây là đặc điểm đặc trưng của mạch song song: càng thêm nhánh thì Rtđ càng nhỏ."
+  },
+  {
+    "id": 163,
+    "question": "Nếu mắc thêm một điện trở nối tiếp vào mạch thì điện trở tương đương của mạch sẽ như thế nào?",
+    "options": [
+      "Giảm xuống",
+      "Không đổi",
+      "Tăng lên",
+      "Bằng 0"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trong mạch nối tiếp, điện trở tương đương bằng tổng các điện trở thành phần. Vì vậy khi mắc thêm một điện trở nối tiếp, điện trở tương đương tăng lên, làm dòng điện trong mạch giảm nếu hiệu điện thế nguồn giữ nguyên."
+  },
+  {
+    "id": 164,
+    "question": "Đo cường độ dòng điện trong mạch người ta dùng dụng cụ nào?",
+    "options": [
+      "Vôn kế",
+      "Ampe kế",
+      "Ôm kế",
+      "Nhiệt kế"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cường độ dòng điện được đo bằng ampe kế. Khi sử dụng, ampe kế thường được mắc nối tiếp với đoạn mạch cần đo để dòng điện đi qua dụng cụ đo. Cần chọn ampe kế có giới hạn đo phù hợp để tránh hư hỏng."
+  },
+  {
+    "id": 165,
+    "question": "Đo hiệu điện thế giữa hai điểm trong mạch người ta dùng dụng cụ nào?",
+    "options": [
+      "Ampe kế",
+      "Vôn kế",
+      "Lực kế",
+      "Cầu chì"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hiệu điện thế được đo bằng vôn kế. Khi đo, vôn kế được mắc song song với đoạn mạch hoặc thiết bị cần đo hiệu điện thế giữa hai đầu. Vôn kế lý tưởng có điện trở rất lớn để ít ảnh hưởng đến mạch."
+  },
+  {
+    "id": 166,
+    "question": "Một điện trở thuần tiêu thụ điện năng theo định luật nào liên hệ giữa nhiệt lượng và dòng điện?",
+    "options": [
+      "Định luật Jun - Lenxơ",
+      "Định luật bảo toàn khối lượng",
+      "Định luật phản xạ",
+      "Định luật khí lí tưởng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Với điện trở thuần, điện năng tiêu thụ chủ yếu chuyển thành nhiệt năng và tuân theo định luật Jun - Lenxơ: Q = I².R.t. Định luật này cho phép tính nhiệt lượng tỏa ra khi dòng điện chạy qua dây dẫn trong một khoảng thời gian."
+  },
+  {
+    "id": 167,
+    "question": "Khi tăng chiều dài dây dẫn cùng vật liệu và tiết diện thì điện trở của dây thay đổi thế nào?",
+    "options": [
+      "Giảm",
+      "Tăng",
+      "Không đổi",
+      "Bằng 0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Điện trở dây dẫn tuân theo công thức R = rho.l/S, nên khi chiều dài l tăng còn vật liệu và tiết diện S không đổi, điện trở tăng. Dây càng dài thì electron phải chuyển động qua quãng đường lớn hơn nên mức cản trở tăng."
+  },
+  {
+    "id": 168,
+    "question": "Khi tăng tiết diện dây dẫn cùng vật liệu và chiều dài thì điện trở thay đổi thế nào?",
+    "options": [
+      "Tăng",
+      "Giảm",
+      "Không đổi",
+      "Tăng rồi giảm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Theo công thức R = rho.l/S, điện trở tỉ lệ nghịch với tiết diện dây dẫn. Vì vậy khi tăng tiết diện S mà vật liệu và chiều dài không đổi thì điện trở giảm, giúp dòng điện đi qua dễ hơn."
+  },
+  {
+    "id": 169,
+    "question": "Điện trở suất của một vật liệu đặc trưng cho điều gì?",
+    "options": [
+      "Mức dẫn điện riêng của vật liệu",
+      "Khối lượng của vật liệu",
+      "Nhiệt dung riêng của vật liệu",
+      "Độ sáng của vật liệu"
+    ],
+    "correctIndex": 0,
+    "explanation": "Điện trở suất rho là đại lượng đặc trưng cho khả năng cản trở dòng điện của bản thân vật liệu. Vật liệu có điện trở suất nhỏ thường dẫn điện tốt, như đồng và bạc; vật liệu có điện trở suất lớn thường dẫn điện kém."
+  },
+  {
+    "id": 170,
+    "question": "Năng lượng của ánh sáng được truyền dưới dạng gì theo thuyết lượng tử?",
+    "options": [
+      "Các khối vật chất nhỏ",
+      "Các electron tự do",
+      "Các lượng tử ánh sáng gọi là photon",
+      "Các proton"
+    ],
+    "correctIndex": 2,
+    "explanation": "Theo thuyết lượng tử ánh sáng, ánh sáng được phát ra và hấp thụ thành từng gói năng lượng rời rạc gọi là photon. Mỗi photon mang năng lượng E = h.f, trong đó h là hằng số Planck và f là tần số ánh sáng."
+  },
+  {
+    "id": 171,
+    "question": "Hiện tượng quang điện ngoài là hiện tượng gì?",
+    "options": [
+      "Electron bứt ra khỏi kim loại khi bị ánh sáng thích hợp chiếu vào",
+      "Kim loại phát sáng khi bị nung nóng",
+      "Ánh sáng đi xuyên qua vật cản",
+      "Dòng điện làm nóng dây dẫn"
+    ],
+    "correctIndex": 0,
+    "explanation": "Hiện tượng quang điện ngoài là hiện tượng các electron bị bứt ra khỏi bề mặt kim loại khi kim loại được chiếu bởi ánh sáng có tần số đủ lớn. Hiện tượng này là bằng chứng quan trọng cho bản chất hạt của ánh sáng."
+  },
+  {
+    "id": 172,
+    "question": "Điều kiện để xảy ra hiện tượng quang điện ngoài là gì?",
+    "options": [
+      "Ánh sáng phải có bước sóng đủ dài bất kỳ",
+      "Ánh sáng kích thích phải có tần số lớn hơn hoặc bằng tần số giới hạn",
+      "Kim loại phải rất nóng",
+      "Cường độ sáng phải vô hạn"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hiện tượng quang điện ngoài chỉ xảy ra khi ánh sáng kích thích có tần số lớn hơn hoặc bằng tần số giới hạn của kim loại, tương đương với bước sóng không vượt quá giới hạn quang điện. Cường độ sáng mạnh hơn không thay thế được điều kiện về tần số."
+  },
+  {
+    "id": 173,
+    "question": "Mẫu nguyên tử Bo giải thích tốt nhất đặc điểm nào của nguyên tử hiđrô?",
+    "options": [
+      "Màu sắc kim loại",
+      "Quang phổ vạch",
+      "Khối lượng proton",
+      "Sự nở vì nhiệt"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mẫu nguyên tử Bo giải thích thành công quang phổ vạch của nguyên tử hiđrô. Theo đó electron chỉ chuyển động trên một số quỹ đạo dừng có năng lượng xác định, và khi chuyển giữa các mức năng lượng sẽ phát hoặc hấp thụ photon."
+  },
+  {
+    "id": 174,
+    "question": "Quang phổ liên tục do nguồn nào phát ra?",
+    "options": [
+      "Chất khí loãng bị kích thích",
+      "Vật rắn, lỏng hoặc khí có áp suất lớn bị nung nóng",
+      "Một nam châm mạnh",
+      "Dung dịch muối lạnh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Quang phổ liên tục do các vật rắn, lỏng hoặc khí có áp suất lớn phát ra khi bị nung nóng. Quang phổ này gồm một dải màu liên tục từ đỏ đến tím, không bị gián đoạn bởi các vạch tối hoặc sáng riêng lẻ."
+  },
+  {
+    "id": 175,
+    "question": "Quang phổ vạch phát xạ thường do đâu phát ra?",
+    "options": [
+      "Chất khí hay hơi ở áp suất thấp bị kích thích",
+      "Mọi vật rắn nguội",
+      "Nước đá",
+      "Gương phẳng"
+    ],
+    "correctIndex": 0,
+    "explanation": "Quang phổ vạch phát xạ thường do chất khí hoặc hơi ở áp suất thấp phát ra khi bị kích thích bằng nhiệt hoặc điện. Mỗi nguyên tố có hệ vạch quang phổ đặc trưng riêng, nên quang phổ vạch được dùng để nhận biết thành phần hóa học."
+  },
+  {
+    "id": 176,
+    "question": "Tia X có khả năng nổi bật nào?",
+    "options": [
+      "Không xuyên qua được vật chất",
+      "Xuyên qua một số vật chất và làm đen phim ảnh",
+      "Chỉ truyền trong nước",
+      "Là sóng âm có tần số cao"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tia X là bức xạ điện từ có bước sóng rất ngắn, có khả năng xuyên qua nhiều vật chất, làm đen phim ảnh và ion hóa không khí. Tia X được ứng dụng rộng rãi trong y học chẩn đoán hình ảnh và kiểm tra vật liệu."
+  },
+  {
+    "id": 177,
+    "question": "Tia gamma là loại bức xạ nào?",
+    "options": [
+      "Sóng cơ",
+      "Bức xạ điện từ có bước sóng rất ngắn",
+      "Dòng proton",
+      "Dòng electron trong kim loại"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tia gamma là bức xạ điện từ có bước sóng rất ngắn và năng lượng rất cao, thường phát ra từ các quá trình hạt nhân. Nó có khả năng đâm xuyên mạnh và có thể gây ion hóa mạnh, nên vừa có ứng dụng vừa cần kiểm soát an toàn nghiêm ngặt."
+  },
+  {
+    "id": 178,
+    "question": "Phản ứng hạt nhân tuân theo định luật bảo toàn nào sau đây?",
+    "options": [
+      "Chỉ bảo toàn khối lượng nghỉ riêng rẽ từng hạt",
+      "Bảo toàn điện tích và số nuclôn trong nhiều bài học phổ thông",
+      "Không bảo toàn gì cả",
+      "Chỉ bảo toàn nhiệt lượng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong các bài học phổ thông, phản ứng hạt nhân thường được xét theo các định luật bảo toàn như bảo toàn điện tích và bảo toàn số nuclôn. Ngoài ra còn có các định luật bảo toàn năng lượng, động lượng và các đại lượng khác trong mô tả đầy đủ hơn."
+  },
+  {
+    "id": 179,
+    "question": "Độ hụt khối trong hạt nhân liên quan đến đại lượng nào?",
+    "options": [
+      "Điện trở",
+      "Năng lượng liên kết",
+      "Cường độ dòng điện",
+      "Chiết suất"
+    ],
+    "correctIndex": 1,
+    "explanation": "Độ hụt khối của hạt nhân liên quan trực tiếp đến năng lượng liên kết theo hệ thức Einstein E = delta.m.c². Năng lượng liên kết càng lớn thì hạt nhân càng bền vững, vì cần nhiều năng lượng hơn để tách các nuclôn ra khỏi nhau."
+  },
+  {
+    "id": 180,
+    "question": "Theo hệ thức Einstein, năng lượng và khối lượng liên hệ với nhau bằng công thức nào?",
+    "options": [
+      "E = m.c²",
+      "E = m/g",
+      "E = m.v",
+      "E = F.s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Theo thuyết tương đối, năng lượng và khối lượng liên hệ với nhau bằng công thức E = m.c², trong đó c là tốc độ ánh sáng trong chân không. Công thức này cho thấy khối lượng có thể xem như một dạng năng lượng và ngược lại."
+  },
+  {
+    "id": 181,
+    "question": "Trong nhà máy thủy điện, dạng năng lượng ban đầu của nước ở hồ chứa chủ yếu là gì?",
+    "options": [
+      "Điện năng",
+      "Thế năng trọng trường",
+      "Nhiệt năng",
+      "Quang năng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nước ở hồ chứa trên cao có thế năng trọng trường lớn. Khi chảy xuống, thế năng này chuyển thành động năng của dòng nước, rồi thành cơ năng quay tua-bin, và cuối cùng máy phát điện biến thành điện năng."
+  },
+  {
+    "id": 182,
+    "question": "Trong pin điện hóa, dạng năng lượng nào được chuyển trực tiếp thành điện năng?",
+    "options": [
+      "Quang năng",
+      "Cơ năng",
+      "Hóa năng",
+      "Nhiệt năng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Trong pin và acquy, hóa năng của các phản ứng hóa học được chuyển trực tiếp thành điện năng. Đây là nguồn điện quen thuộc trong nhiều thiết bị cầm tay, xe cộ và hệ lưu trữ điện."
+  },
+  {
+    "id": 183,
+    "question": "Pin Mặt Trời hoạt động dựa trên hiện tượng vật lý nào?",
+    "options": [
+      "Hiện tượng quang điện trong",
+      "Hiện tượng giao thoa âm",
+      "Hiện tượng nóng chảy",
+      "Hiện tượng khúc xạ"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pin Mặt Trời hoạt động dựa trên hiện tượng quang điện trong ở chất bán dẫn. Khi ánh sáng chiếu vào, các cặp hạt tải điện được tạo ra và dưới tác dụng của cấu trúc lớp tiếp giáp sẽ hình thành dòng điện, biến quang năng thành điện năng."
+  },
+  {
+    "id": 184,
+    "question": "Chất bán dẫn có đặc điểm nào?",
+    "options": [
+      "Dẫn điện tốt như đồng trong mọi điều kiện",
+      "Không dẫn điện trong mọi điều kiện",
+      "Khả năng dẫn điện nằm giữa chất dẫn và chất cách điện",
+      "Chỉ dẫn điện khi ở thể lỏng"
+    ],
+    "correctIndex": 2,
+    "explanation": "Chất bán dẫn có khả năng dẫn điện trung gian giữa chất dẫn điện và chất cách điện. Tính dẫn điện của nó thay đổi đáng kể theo nhiệt độ, ánh sáng và pha tạp. Silic và gecmani là những chất bán dẫn tiêu biểu."
+  },
+  {
+    "id": 185,
+    "question": "Diode bán dẫn thường cho dòng điện đi qua như thế nào?",
+    "options": [
+      "Theo cả hai chiều như nhau",
+      "Chỉ ưu tiên theo một chiều",
+      "Không cho đi qua chiều nào",
+      "Chỉ cho đi khi bị làm lạnh"
+    ],
+    "correctIndex": 1,
+    "explanation": "Diode bán dẫn có tính chỉnh lưu, nghĩa là cho dòng điện đi qua dễ dàng theo một chiều và cản trở mạnh theo chiều ngược lại. Vì vậy diode được dùng để biến đổi dòng xoay chiều thành dòng một chiều trong nhiều mạch điện tử."
+  },
+  {
+    "id": 186,
+    "question": "Transistor trong điện tử có vai trò chính nào?",
+    "options": [
+      "Chỉ để phát sáng",
+      "Khuếch đại và đóng cắt tín hiệu điện",
+      "Chỉ để làm nóng",
+      "Thay thế hoàn toàn mọi điện trở"
+    ],
+    "correctIndex": 1,
+    "explanation": "Transistor là linh kiện điện tử rất quan trọng, có vai trò khuếch đại tín hiệu và đóng cắt mạch điện. Nó là nền tảng của mạch điện tử hiện đại, máy tính, thiết bị viễn thông và rất nhiều hệ thống điều khiển."
+  },
+  {
+    "id": 187,
+    "question": "Sóng điện từ có thể truyền được trong môi trường nào?",
+    "options": [
+      "Chỉ trong chất khí",
+      "Chỉ trong chất rắn",
+      "Cả trong chân không và nhiều môi trường vật chất",
+      "Chỉ trong nước"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sóng điện từ có thể truyền được trong chân không và trong nhiều môi trường vật chất. Đây là điểm khác với sóng cơ. Ánh sáng, sóng vô tuyến, vi ba, tia X, tia gamma đều là các dạng sóng điện từ."
+  },
+  {
+    "id": 188,
+    "question": "Sóng vô tuyến được dùng phổ biến trong lĩnh vực nào?",
+    "options": [
+      "Truyền thông không dây",
+      "Đun nóng thực phẩm bằng bếp điện",
+      "Nung chảy kim loại trong lò luyện",
+      "Đo khối lượng vật"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sóng vô tuyến được ứng dụng rộng rãi trong truyền thanh, truyền hình, thông tin liên lạc không dây, radar và nhiều hệ thống viễn thông. Nhờ khả năng lan truyền xa, chúng rất phù hợp cho việc truyền tín hiệu."
+  },
+  {
+    "id": 189,
+    "question": "Trong phổ điện từ, khi tần số tăng thì bước sóng thay đổi thế nào trong chân không?",
+    "options": [
+      "Tăng",
+      "Giảm",
+      "Không đổi",
+      "Lúc tăng lúc giảm"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong chân không, các sóng điện từ truyền với cùng tốc độ c nên có hệ thức c = lambda.f. Vì vậy khi tần số f tăng thì bước sóng lambda phải giảm. Đây là mối liên hệ nghịch giữa bước sóng và tần số."
+  },
+  {
+    "id": 190,
+    "question": "Mức tiêu thụ điện của thiết bị phụ thuộc trực tiếp vào đại lượng nào trong một khoảng thời gian xác định?",
+    "options": [
+      "Điện năng bằng công suất nhân thời gian",
+      "Điện trở chia thời gian",
+      "Hiệu điện thế trừ cường độ dòng điện",
+      "Khối lượng nhân gia tốc"
+    ],
+    "correctIndex": 0,
+    "explanation": "Điện năng tiêu thụ của thiết bị trong một khoảng thời gian được tính bằng A = P.t nếu công suất P không đổi. Vì vậy cùng thời gian, thiết bị công suất lớn hơn sẽ tiêu thụ nhiều điện năng hơn; cùng công suất, thời gian sử dụng càng lâu thì điện năng càng lớn."
+  },
+  {
+    "id": 191,
+    "question": "Khi kéo giãn lò xo trong giới hạn đàn hồi, lực đàn hồi của lò xo có xu hướng như thế nào?",
+    "options": [
+      "Làm tăng độ biến dạng",
+      "Chống lại sự biến dạng",
+      "Luôn cùng chiều với độ dãn",
+      "Bằng 0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lực đàn hồi của lò xo luôn có xu hướng chống lại nguyên nhân gây biến dạng, tức kéo vật trở lại trạng thái tự nhiên. Trong giới hạn đàn hồi, lực này tuân theo định luật Hooke: Fdh = k.Δl về độ lớn."
+  },
+  {
+    "id": 192,
+    "question": "Định luật Hooke áp dụng cho trường hợp nào?",
+    "options": [
+      "Mọi vật liệu ở mọi mức biến dạng",
+      "Lò xo hoặc vật đàn hồi trong giới hạn đàn hồi",
+      "Chỉ cho chất khí",
+      "Chỉ cho chất lỏng"
+    ],
+    "correctIndex": 1,
+    "explanation": "Định luật Hooke chỉ đúng khi vật đàn hồi, như lò xo, bị biến dạng trong giới hạn đàn hồi. Khi đó lực đàn hồi tỉ lệ với độ biến dạng. Nếu biến dạng vượt quá giới hạn này, vật có thể không trở lại trạng thái ban đầu và định luật không còn đúng."
+  },
+  {
+    "id": 193,
+    "question": "Khi một vật chìm hoàn toàn trong chất lỏng nhưng chưa chạm đáy, các lực chính theo phương thẳng đứng tác dụng lên vật là gì?",
+    "options": [
+      "Chỉ có trọng lực",
+      "Chỉ có lực đẩy Ác-si-mét",
+      "Trọng lực và lực đẩy Ác-si-mét",
+      "Lực ma sát và lực đàn hồi"
+    ],
+    "correctIndex": 2,
+    "explanation": "Khi vật chìm hoàn toàn trong chất lỏng và chưa chạm đáy, theo phương thẳng đứng thường có hai lực chính là trọng lực hướng xuống và lực đẩy Ác-si-mét hướng lên. Tùy độ lớn tương đối của hai lực này mà vật chìm xuống, nổi lên hay lơ lửng."
+  },
+  {
+    "id": 194,
+    "question": "Một vật lơ lửng trong chất lỏng khi nào?",
+    "options": [
+      "Trọng lượng lớn hơn lực đẩy Ác-si-mét",
+      "Trọng lượng nhỏ hơn lực đẩy Ác-si-mét",
+      "Trọng lượng bằng lực đẩy Ác-si-mét",
+      "Không chịu tác dụng của trọng lực"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vật lơ lửng trong chất lỏng khi trọng lượng của vật bằng lực đẩy Ác-si-mét. Khi đó hợp lực theo phương thẳng đứng bằng 0 và vật có thể nằm cân bằng ở trong lòng chất lỏng. Điều này tương đương với việc khối lượng riêng trung bình của vật bằng khối lượng riêng của chất lỏng."
+  },
+  {
+    "id": 195,
+    "question": "Khi đun nóng một lượng khí trong bình kín, đại lượng nào thường tăng nếu thể tích không đổi?",
+    "options": [
+      "Áp suất",
+      "Khối lượng khí giảm ngay",
+      "Thể tích tăng mạnh",
+      "Số phân tử giảm về 0"
+    ],
+    "correctIndex": 0,
+    "explanation": "Khi đun nóng khí trong bình kín có thể tích không đổi, các phân tử khí chuyển động nhanh hơn và va chạm vào thành bình mạnh hơn, làm áp suất tăng. Đây là hệ quả của mối liên hệ giữa nhiệt độ và áp suất của chất khí."
+  },
+  {
+    "id": 196,
+    "question": "Khi một vật hấp thụ nhiệt lượng mà không đổi trạng thái và không có phản ứng khác, nhiệt độ của nó thường sẽ như thế nào?",
+    "options": [
+      "Giảm",
+      "Tăng",
+      "Luôn không đổi",
+      "Bằng 0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi vật hấp thụ nhiệt lượng mà không xảy ra chuyển thể và các điều kiện khác bình thường, nhiệt độ của vật thường tăng lên theo công thức Q = m.c.Δt. Trường hợp nhiệt độ không đổi thường gắn với quá trình nóng chảy hoặc sôi của chất tinh khiết ở áp suất không đổi."
+  },
+  {
+    "id": 197,
+    "question": "Vì sao mặc áo len vào mùa đông giúp giữ ấm cơ thể?",
+    "options": [
+      "Vì áo len tự sinh ra nhiệt liên tục",
+      "Vì giữa các sợi len chứa nhiều không khí dẫn nhiệt kém",
+      "Vì len làm tăng trọng lực cơ thể",
+      "Vì len làm giảm khối lượng cơ thể"
+    ],
+    "correctIndex": 1,
+    "explanation": "Áo len giữ ấm tốt vì giữa các sợi len có nhiều lớp không khí. Không khí là chất dẫn nhiệt kém, nên hạn chế sự truyền nhiệt từ cơ thể ra môi trường lạnh bên ngoài. Bản thân áo không tự tạo nhiệt mà chủ yếu giúp giảm thất thoát nhiệt."
+  },
+  {
+    "id": 198,
+    "question": "Nồi áp suất giúp thức ăn chín nhanh hơn chủ yếu vì lý do nào?",
+    "options": [
+      "Làm giảm nhiệt độ sôi của nước",
+      "Làm tăng nhiệt độ sôi của nước do áp suất tăng",
+      "Làm nước biến mất nhanh",
+      "Làm giảm nhiệt dung riêng của thức ăn về 0"
+    ],
+    "correctIndex": 1,
+    "explanation": "Trong nồi áp suất, áp suất bên trong tăng lên nên nhiệt độ sôi của nước cũng tăng cao hơn 100 độ C. Vì nước và hơi nước có thể đạt nhiệt độ cao hơn bình thường nên thức ăn chín nhanh hơn. Đây là ứng dụng trực tiếp của sự phụ thuộc nhiệt độ sôi vào áp suất."
+  },
+  {
+    "id": 199,
+    "question": "Tại sao dao sắc cắt dễ hơn dao cùn?",
+    "options": [
+      "Vì dao sắc có khối lượng lớn hơn nhiều",
+      "Vì dao sắc tạo áp suất lớn hơn trên cùng lực tác dụng",
+      "Vì dao sắc luôn nóng hơn",
+      "Vì dao sắc làm giảm trọng lực của vật"
+    ],
+    "correctIndex": 1,
+    "explanation": "Dao sắc có diện tích tiếp xúc ở lưỡi dao rất nhỏ nên với cùng một lực tác dụng sẽ tạo ra áp suất lớn hơn lên vật cần cắt. Áp suất lớn giúp vật liệu bị tách dễ dàng hơn. Đây là ứng dụng trực tiếp của công thức áp suất p = F/S."
+  },
+  {
+    "id": 200,
+    "question": "Dây an toàn trên ô tô giúp bảo vệ hành khách chủ yếu dựa trên việc hạn chế tác hại của hiện tượng nào?",
+    "options": [
+      "Khúc xạ ánh sáng",
+      "Quán tính",
+      "Tán sắc ánh sáng",
+      "Cảm ứng điện từ"
+    ],
+    "correctIndex": 1,
+    "explanation": "Khi ô tô phanh gấp hoặc va chạm, do quán tính cơ thể hành khách có xu hướng tiếp tục chuyển động về phía trước. Dây an toàn giữ người lại, kéo dài thời gian hãm và giảm nguy cơ va đập mạnh, nhờ đó bảo vệ hành khách hiệu quả hơn."
+  }
+]

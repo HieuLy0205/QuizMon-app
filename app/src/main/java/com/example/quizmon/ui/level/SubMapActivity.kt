@@ -44,9 +44,8 @@ class SubMapActivity : AppCompatActivity() {
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
         btnBack.setOnClickListener { finish() }
 
-        // Cập nhật ID theo layout_taskhead mới
-        tvTotalStars = findViewById(R.id.textcoin)
-        tvTotalCoins = findViewById(R.id.textxu)
+        tvTotalStars = findViewById(R.id.head_text_star)
+        tvTotalCoins = findViewById(R.id.head_text_coin)
         
         pbStarProgress = findViewById(R.id.pbStarProgress)
         starIcons = listOf(
@@ -94,6 +93,8 @@ class SubMapActivity : AppCompatActivity() {
 
     private fun updateUI() {
         val mainPrefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+        
+        // Cập nhật Xu (Coins) và Sao (Stars) vào Header
         tvTotalCoins.text = mainPrefs.getInt("current_coins", 0).toString()
         tvTotalStars.text = currentScore.toString()
 
@@ -138,7 +139,6 @@ class SubMapActivity : AppCompatActivity() {
             Pair(3,6), Pair(1,6), Pair(5,6), Pair(3,7)
         )
 
-        // Chọn hình dựa trên levelId
         val shapeCoords = when (levelId % 3) {
             1 -> robotShape
             2 -> flowerShape
@@ -148,7 +148,6 @@ class SubMapActivity : AppCompatActivity() {
         val tempItems = arrayOfNulls<SubMapItem>(columns * rows)
         val shuffledCoords = shapeCoords.shuffled()
 
-        // 14 câu hỏi
         for (i in 0 until allCategories.size.coerceAtMost(shuffledCoords.size)) {
             val (x, y) = shuffledCoords[i]
             tempItems[y * columns + x] = SubMapItem(
@@ -156,7 +155,6 @@ class SubMapActivity : AppCompatActivity() {
             )
         }
 
-        // 3 ô đặc biệt (nếu còn chỗ trong hình)
         val specialTypes = listOf(
             SubMapType.SPIN_WHEEL to "wheel",
             SubMapType.TREASURE to "chest",
@@ -188,15 +186,15 @@ class SubMapActivity : AppCompatActivity() {
                     startActivityForResult(intent, 1001)
                 }
                 SubMapType.SPIN_WHEEL -> {
-                    startActivity(Intent(this, SpinWheelActivity::class.java))
+                    startActivity(Intent(this, com.example.quizmon.ui.level.SpinWheelActivity::class.java))
                     markSpecialItemDone(item)
                 }
                 SubMapType.TREASURE -> {
-                    startActivity(Intent(this, TreasureActivity::class.java))
+                    startActivity(Intent(this, com.example.quizmon.ui.level.TreasureActivity::class.java))
                     markSpecialItemDone(item)
                 }
                 SubMapType.FLIP_CARD -> {
-                    startActivity(Intent(this, FlipCardActivity::class.java))
+                    startActivity(Intent(this, com.example.quizmon.ui.level.FlipCardActivity::class.java))
                     markSpecialItemDone(item)
                 }
                 else -> {}
@@ -246,13 +244,10 @@ class SubMapActivity : AppCompatActivity() {
                 Toast.makeText(this, "Ải đã hoàn thành!", Toast.LENGTH_LONG).show()
                 val mainPrefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
                 val currentMax = mainPrefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
-                val coinManager = com.example.quizmon.ui.shop.PreferenceManager(this)// user nv2.
+                val coinManager = com.example.quizmon.ui.shop.PreferenceManager(this)
                 if (levelId == currentMax) {
                     mainPrefs.edit().putInt("CURRENT_UNLOCKED_LEVEL", levelId + 1).apply()
-                    coinManager.Dk_Ainho_Addcoin("nv2", true) //tăng coin nv2
-                }else{
-                    //chơi lại ải thì: sử lý sau
-                    //coinManeger.addCoin: sử lý sau tăng giảm hoạc không có.
+                    coinManager.Dk_Ainho_Addcoin("nv2", true)
                 }
             } else {
                 Toast.makeText(this, "Chưa đủ điểm (1 sao) để qua ải!", Toast.LENGTH_LONG).show()

@@ -10,7 +10,6 @@ import com.example.quizmon.R
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import java.io.InputStreamReader
-//import com.example.quizmon.data.model.Question
 
 data class Question(
     val id: Int,
@@ -29,7 +28,9 @@ class QuizActivity : AppCompatActivity() {
         setContentView(R.layout.activity_quiz)
 
         val category = intent.getStringExtra("CATEGORY") ?: "CNXHKH"
-        loadRandomQuestion(category)
+        val levelId = intent.getIntExtra("LEVEL_ID", 1)
+        
+        loadQuestionById(category, levelId)
 
         val tvQuestion = findViewById<TextView>(R.id.tvQuestion)
         val buttons = listOf<Button>(
@@ -51,28 +52,45 @@ class QuizActivity : AppCompatActivity() {
                 }
             }
         } ?: run {
-            Toast.makeText(this, "Không tìm thấy câu hỏi!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Không tìm thấy câu hỏi với ID $levelId cho chủ đề $category!", Toast.LENGTH_SHORT).show()
             finish()
         }
     }
 
-    private fun loadRandomQuestion(category: String) {
+    private fun loadQuestionById(category: String, targetId: Int) {
         try {
             val fileName = when (category) {
-                "Toan" -> "KT_Toan_questions.json"
-                "CNKHXH" -> "CNXHKH_questions.json"
-                "DiaLy" -> "DoVui_questions.json" // Tạm thời dùng DoVui nếu chưa có DiaLy
-                else -> "S_questions.json"
+                "KienThucChung" -> "KTC_questions.json"
+                "CNXHKH" -> "CNXHKH_questions.json"
+                "DiaLy" -> "D_questions.json"
+                "HoaHoc" -> "H_questions.json"
+                "KinhTeChinhTri" -> "KTCT_questions.json"
+                "LichSu" -> "S_questions.json"
+                "TinHoc" -> "TH_questions.json"
+                "TuTuongHCM" -> "TTHCM_questions.json"
+                "VanHoc" -> "V_questions.json"
+                "VatLy" -> "VL_questions.json"
+                "AmNhac" -> "AN_questions.json"
+                "ChoiChu" -> "CC_questions.json"
+                "TiengAnh" -> "E_questions.json"
+                "DoVui" -> "DoVui_questions.json"
+                else -> "questions.json"
             }
             
             val inputStream = assets.open(fileName)
             val reader = InputStreamReader(inputStream)
             val type = object : TypeToken<List<Question>>() {}.type
             val questions: List<Question> = Gson().fromJson(reader, type)
-            currentQuestion = questions.random()
+            
+            // Tìm câu hỏi theo ID. 
+            // So sánh linh hoạt vì id trong JSON có thể là String hoặc Number
+            currentQuestion = questions.find { it.id.toString() == targetId.toString() } 
+                ?: questions.random()
+            
             reader.close()
         } catch (e: Exception) {
             e.printStackTrace()
+            // Fallback nếu có lỗi đọc file
         }
     }
 
@@ -89,6 +107,6 @@ class QuizActivity : AppCompatActivity() {
 
         android.os.Handler(mainLooper).postDelayed({
             finish()
-        }, 2000) // Tăng thời gian lên 2s để người dùng kịp đọc giải thích
+        }, 2000)
     }
 }
