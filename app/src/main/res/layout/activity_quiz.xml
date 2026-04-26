@@ -1,45 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:background="@drawable/anh_nen_shop"
+    android:padding="16dp">
 
+    <!-- Số thứ tự câu hỏi -->
     <TextView
-        android:id="@+id/tvQuestion"
+        android:id="@+id/tvQuestionNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:text="@string/tv_question"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:text="Câu 1/10"
+        android:textSize="13sp"
+        android:textColor="#795548"
+        android:gravity="center"
+        android:layout_marginBottom="4dp"
+        tools:ignore="HardcodedText HardcodedTextColor"/>
 
-    <Button
-        android:id="@+id/btnA"
+    <!-- Thanh tiến trình -->
+    <ProgressBar
+        android:id="@+id/progressQuiz"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:layout_height="8dp"
+        android:max="100"
+        android:progress="10"
+        android:layout_marginBottom="12dp"/>
 
-    <Button
-        android:id="@+id/btnB"
+    <!-- Card câu hỏi — giữ id tvQuestion như cũ -->
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp" />
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FFFFFF">
 
-    <Button
-        android:id="@+id/btnC"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        <TextView
+            android:id="@+id/tvQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textSize="18sp"
+            android:textColor="#4E342E"
+            android:lineSpacingMultiplier="1.3"
+            android:text="@string/tv_question"/>
 
-    <Button
-        android:id="@+id/btnD"
+    </androidx.cardview.widget.CardView>
+
+    <!-- Hàng 1: A và B -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"/>
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnA"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:textColor="#4E342E"
+            android:backgroundTint="#FFFFFF"
+            app:strokeColor="#BCAAA4"
+            app:strokeWidth="2dp"
+            app:cornerRadius="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnB"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:textColor="#4E342E"
+            android:backgroundTint="#FFFFFF"
+            app:strokeColor="#BCAAA4"
+            app:strokeWidth="2dp"
+            app:cornerRadius="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Hàng 2: C và D -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnC"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:textColor="#4E342E"
+            android:backgroundTint="#FFFFFF"
+            app:strokeColor="#BCAAA4"
+            app:strokeWidth="2dp"
+            app:cornerRadius="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnD"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:layout_marginStart="6dp"
+            android:textColor="#4E342E"
+            android:backgroundTint="#FFFFFF"
+            app:strokeColor="#BCAAA4"
+            app:strokeWidth="2dp"
+            app:cornerRadius="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Panel giải thích (ẩn mặc định) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardExplanation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="#E3F2FD">
+
+        <TextView
+            android:id="@+id/tvExplanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:textSize="13sp"
+            android:textColor="#1565C0"
+            android:lineSpacingMultiplier="1.4"
+            tools:text="Giải thích hiển thị sau khi chọn đáp án."/>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Nút xác nhận -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:text="Xác nhận"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:enabled="false"
+        app:cornerRadius="26dp"
+        tools:ignore="HardcodedText HardcodedTextColor"/>
 
 </LinearLayout>

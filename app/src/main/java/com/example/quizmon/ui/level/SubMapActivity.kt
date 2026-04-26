@@ -3,6 +3,7 @@ package com.example.quizmon.ui.level
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.ProgressBar
@@ -21,8 +22,9 @@ class SubMapActivity : AppCompatActivity() {
     private lateinit var rvSubMap: RecyclerView
     private lateinit var adapter: SubMapAdapter
     private lateinit var pbStarProgress: ProgressBar
-    private lateinit var tvTotalXu: TextView
+    private lateinit var tvTotalStars: TextView
     private lateinit var tvTotalCoins: TextView
+    private lateinit var tvCurrentStageScore: TextView
     private lateinit var starIcons: List<ImageView>
 
     private val columns = 7
@@ -32,8 +34,16 @@ class SubMapActivity : AppCompatActivity() {
     private var lastClickedPosition: Int = -1
 
     private var currentScore: Int = 0
-    private val scorePerCorrect = 25
+    
+    // ✅ Logic điểm mới: Đúng +30, Sai -10
+    private val scorePerCorrect = 30
     private val scorePerIncorrect = 10
+    
+    // ✅ Mốc điểm đạt sao: Đảm bảo đúng 12 sai 2 (320 điểm) vẫn đạt 3 sao
+    private val star1Score = 100 // 1 sao
+    private val star2Score = 200 // 2 sao
+    private val star3Score = 300 // 3 sao
+    private val maxPossibleScore = 420 // 14 câu * 30 điểm
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,9 +53,11 @@ class SubMapActivity : AppCompatActivity() {
 
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
         btnBack.setOnClickListener { finish() }
-
-        tvTotalXu = findViewById(R.id.textxu)
-        tvTotalCoins = findViewById(R.id.textcoins)
+        val taskHeadView = findViewById<View>(R.id.taskhead)
+        tvTotalStars = taskHeadView.findViewById(R.id.textcoins)
+        tvTotalCoins = taskHeadView.findViewById(R.id.textxu)
+        
+        tvCurrentStageScore = findViewById(R.id.tvCurrentStageScore)
         
         pbStarProgress = findViewById(R.id.pbStarProgress)
         starIcons = listOf(
@@ -94,16 +106,17 @@ class SubMapActivity : AppCompatActivity() {
     private fun updateUI() {
         val mainPrefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
         
-        // Cập nhật Xu (Coins) và Sao (Stars) vào Header
         tvTotalCoins.text = mainPrefs.getInt("current_coins", 0).toString()
-        tvTotalXu.text = currentScore.toString()
+        tvTotalStars.text = mainPrefs.getInt("total_stars_all_levels", 0).toString()
 
-        val progress = currentScore.coerceIn(0, 100)
-        pbStarProgress.progress = progress
+        tvCurrentStageScore.text = currentScore.toString()
 
-        starIcons[0].setImageResource(if (progress >= 33) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
-        starIcons[1].setImageResource(if (progress >= 66) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
-        starIcons[2].setImageResource(if (progress >= 100) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
+        val progressPercent = ((currentScore.toFloat() / maxPossibleScore) * 100).toInt().coerceIn(0, 100)
+        pbStarProgress.progress = progressPercent
+
+        starIcons[0].setImageResource(if (currentScore >= star1Score) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
+        starIcons[1].setImageResource(if (currentScore >= star2Score) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
+        starIcons[2].setImageResource(if (currentScore >= star3Score) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
     }
 
     private fun generateMapWithShape() {
@@ -113,30 +126,18 @@ class SubMapActivity : AppCompatActivity() {
             "LichSu", "TinHoc", "TuTuongHCM", "VanHoc", "VatLy"
         ).shuffled()
 
-        // Định nghĩa các hình thù dựa trên tọa độ (x, y)
         val robotShape = listOf(
-            Pair(3,0), Pair(3,1), // Đầu
-            Pair(2,2), Pair(3,2), Pair(4,2), // Vai
-            Pair(1,3), Pair(2,3), Pair(3,3), Pair(4,3), Pair(5,3), // Thân trên + Tay
-            Pair(2,4), Pair(3,4), Pair(4,4), // Bụng
-            Pair(2,5), Pair(4,5), Pair(2,6), Pair(4,6)  // Chân
+            Pair(3,0), Pair(3,1), Pair(2,2), Pair(3,2), Pair(4,2),
+            Pair(1,3), Pair(2,3), Pair(3,3), Pair(4,3), Pair(5,3),
+            Pair(2,4), Pair(3,4), Pair(4,4), Pair(2,5), Pair(4,5), Pair(2,6), Pair(4,6)
         )
-
         val flowerShape = listOf(
-            Pair(3,3), // Nhụy
-            Pair(3,2), Pair(4,2), Pair(4,3), Pair(4,4), Pair(3,4), Pair(2,4), Pair(2,3), Pair(2,2), // Cánh hoa
-            Pair(3,5), Pair(3,6), Pair(3,7), // Cành
-            Pair(2,6), Pair(4,6), // Lá
-            Pair(1,1), Pair(5,1), Pair(1,5) // Phụ
+            Pair(3,3), Pair(3,2), Pair(4,2), Pair(4,3), Pair(4,4), Pair(3,4), Pair(2,4), Pair(2,3), Pair(2,2),
+            Pair(3,5), Pair(3,6), Pair(3,7), Pair(2,6), Pair(4,6), Pair(1,1), Pair(5,1), Pair(1,5)
         )
-
         val towerShape = listOf(
-            Pair(3,1),
-            Pair(3,2), Pair(2,2), Pair(4,2),
-            Pair(3,3), Pair(1,3), Pair(5,3),
-            Pair(3,4), Pair(2,4), Pair(4,4),
-            Pair(3,5), Pair(0,5), Pair(6,5),
-            Pair(3,6), Pair(1,6), Pair(5,6), Pair(3,7)
+            Pair(3,1), Pair(3,2), Pair(2,2), Pair(4,2), Pair(3,3), Pair(1,3), Pair(5,3),
+            Pair(3,4), Pair(2,4), Pair(4,4), Pair(3,5), Pair(0,5), Pair(6,5), Pair(3,6), Pair(1,6), Pair(5,6), Pair(3,7)
         )
 
         val shapeCoords = when (levelId % 3) {
@@ -201,7 +202,6 @@ class SubMapActivity : AppCompatActivity() {
             }
         } catch (e: Exception) {
             e.printStackTrace()
-            Toast.makeText(this, "Lỗi khi mở trang", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -237,20 +237,36 @@ class SubMapActivity : AppCompatActivity() {
     private fun checkLevelCompletion() {
         val questions = mapItems.filter { it?.type == SubMapType.QUESTION }
         val allQuestionsDone = questions.all { it?.status != CompletionStatus.NOT_STARTED }
-        val atLeastOneStar = currentScore >= 33
+        val atLeastOneStar = currentScore >= star1Score
 
         if (allQuestionsDone) {
             if (atLeastOneStar) {
                 Toast.makeText(this, "Ải đã hoàn thành!", Toast.LENGTH_LONG).show()
                 val mainPrefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
                 val currentMax = mainPrefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
-                val coinManager = com.example.quizmon.ui.shop.PreferenceManager(this)
+                
+                var starsEarnedInThisLevel = 0
+                if (currentScore >= star3Score) starsEarnedInThisLevel = 3
+                else if (currentScore >= star2Score) starsEarnedInThisLevel = 2
+                else if (currentScore >= star1Score) starsEarnedInThisLevel = 1
+                
+                // Lưu số sao cao nhất của ải này
+                val oldBestStars = mainPrefs.getInt("STARS_LEVEL_$levelId", 0)
+                if (starsEarnedInThisLevel > oldBestStars) {
+                    val totalStars = mainPrefs.getInt("total_stars_all_levels", 0)
+                    mainPrefs.edit()
+                        .putInt("STARS_LEVEL_$levelId", starsEarnedInThisLevel)
+                        .putInt("total_stars_all_levels", totalStars + (starsEarnedInThisLevel - oldBestStars))
+                        .apply()
+                }
+
                 if (levelId == currentMax) {
                     mainPrefs.edit().putInt("CURRENT_UNLOCKED_LEVEL", levelId + 1).apply()
+                    val coinManager = com.example.quizmon.ui.shop.PreferenceManager(this)
                     coinManager.Dk_Ainho_Addcoin("nv2", true)
                 }
             } else {
-                Toast.makeText(this, "Chưa đủ điểm (1 sao) để qua ải!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Chưa đủ điểm ($star1Score) để qua ải!", Toast.LENGTH_LONG).show()
             }
         }
     }

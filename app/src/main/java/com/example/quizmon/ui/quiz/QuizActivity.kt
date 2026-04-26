@@ -1,112 +1,220 @@
 package com.example.quizmon.ui.quiz
-
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
-import android.widget.Button
+import android.view.animation.AccelerateDecelerateInterpolator
+import android.widget.ProgressBar
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import com.example.quizmon.R
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
-import java.io.InputStreamReader
-
-data class Question(
-    val id: Int,
-    val question: String,
-    val options: List<String>,
-    val correctIndex: Int,
-    val explanation: String
-)
+import com.example.quizmon.data.repository.QuizRepository
+import com.example.quizmon.data.repository.StatisticsRepository
+import com.example.quizmon.data.model.Question
+import com.google.android.material.button.MaterialButton
 
 class QuizActivity : AppCompatActivity() {
 
+    private lateinit var tvQuestionNumber: TextView
+    private lateinit var tvQuestion: TextView
+    private lateinit var progressQuiz: ProgressBar
+    private lateinit var btnA: MaterialButton
+    private lateinit var btnB: MaterialButton
+    private lateinit var btnC: MaterialButton
+    private lateinit var btnD: MaterialButton
+    private lateinit var btnConfirm: MaterialButton
+    private lateinit var cardExplanation: CardView
+    private lateinit var tvExplanation: TextView
+
+    private val answerButtons: List<MaterialButton> by lazy {
+        listOf(btnA, btnB, btnC, btnD)
+    }
+
+    private lateinit var quizRepository: QuizRepository
+    private lateinit var statisticsRepository: StatisticsRepository
+
     private var currentQuestion: Question? = null
+    private var selectedIndex = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_quiz)
 
+        initViews()
+        quizRepository = QuizRepository(this)
+        statisticsRepository = StatisticsRepository(this)
+
         val category = intent.getStringExtra("CATEGORY") ?: "CNXHKH"
         val levelId = intent.getIntExtra("LEVEL_ID", 1)
-        
-        loadQuestionById(category, levelId)
 
-        val tvQuestion = findViewById<TextView>(R.id.tvQuestion)
-        val buttons = listOf<Button>(
-            findViewById(R.id.btnA),
-            findViewById(R.id.btnB),
-            findViewById(R.id.btnC),
-            findViewById(R.id.btnD)
-        )
-
-        currentQuestion?.let { q ->
-            tvQuestion.text = q.question
-            buttons.forEachIndexed { index, button ->
-                if (index < q.options.size) {
-                    button.text = q.options[index]
-                    button.visibility = View.VISIBLE
-                    button.setOnClickListener { handleAnswer(index) }
-                } else {
-                    button.visibility = View.GONE
-                }
-            }
-        } ?: run {
-            Toast.makeText(this, "Không tìm thấy câu hỏi với ID $levelId cho chủ đề $category!", Toast.LENGTH_SHORT).show()
-            finish()
-        }
+        loadQuestion(category, levelId)
+        setupConfirmButton()
     }
 
-    private fun loadQuestionById(category: String, targetId: Int) {
-        try {
-            val fileName = when (category) {
-                "KienThucChung" -> "KTC_questions.json"
-                "CNXHKH" -> "CNXHKH_questions.json"
-                "DiaLy" -> "D_questions.json"
-                "HoaHoc" -> "H_questions.json"
-                "KinhTeChinhTri" -> "KTCT_questions.json"
-                "LichSu" -> "S_questions.json"
-                "TinHoc" -> "TH_questions.json"
-                "TuTuongHCM" -> "TTHCM_questions.json"
-                "VanHoc" -> "V_questions.json"
-                "VatLy" -> "VL_questions.json"
-                "AmNhac" -> "AN_questions.json"
-                "ChoiChu" -> "CC_questions.json"
-                "TiengAnh" -> "E_questions.json"
-                "DoVui" -> "DoVui_questions.json"
-                else -> "questions.json"
-            }
-            
-            val inputStream = assets.open(fileName)
-            val reader = InputStreamReader(inputStream)
-            val type = object : TypeToken<List<Question>>() {}.type
-            val questions: List<Question> = Gson().fromJson(reader, type)
-            
-            // Tìm câu hỏi theo ID. 
-            // So sánh linh hoạt vì id trong JSON có thể là String hoặc Number
-            currentQuestion = questions.find { it.id.toString() == targetId.toString() } 
-                ?: questions.random()
-            
-            reader.close()
-        } catch (e: Exception) {
-            e.printStackTrace()
-            // Fallback nếu có lỗi đọc file
-        }
+    private fun initViews() {
+        tvQuestionNumber = findViewById(R.id.tvQuestionNumber)
+        tvQuestion = findViewById(R.id.tvQuestion)
+        progressQuiz = findViewById(R.id.progressQuiz)
+        btnA = findViewById(R.id.btnA)
+        btnB = findViewById(R.id.btnB)
+        btnC = findViewById(R.id.btnC)
+        btnD = findViewById(R.id.btnD)
+        btnConfirm = findViewById(R.id.btnConfirm)
+        cardExplanation = findViewById(R.id.cardExplanation)
+        tvExplanation = findViewById(R.id.tvExplanation)
     }
 
-    private fun handleAnswer(selectedIndex: Int) {
-        val isCorrect = selectedIndex == currentQuestion?.correctIndex
-        
-        if (isCorrect) {
-            Toast.makeText(this, "Chính xác!\n${currentQuestion?.explanation}", Toast.LENGTH_LONG).show()
-            setResult(RESULT_OK)
-        } else {
-            Toast.makeText(this, "Sai rồi!\nĐáp án đúng: ${currentQuestion?.options?.get(currentQuestion!!.correctIndex)}", Toast.LENGTH_LONG).show()
+    private fun loadQuestion(category: String, levelId: Int) {
+        val fileName = categoryToFileName(category)
+        val questions = quizRepository.getQuestionsByTopic(fileName, limit = 10)
+        currentQuestion = questions.find { it.id.toString() == levelId.toString() }
+            ?: questions.randomOrNull()
+
+        currentQuestion?.let { displayQuestion(it) } ?: run {
             setResult(RESULT_CANCELED)
-        }
-
-        android.os.Handler(mainLooper).postDelayed({
             finish()
-        }, 2000)
+        }
+    }
+
+    private fun displayQuestion(q: Question) {
+        tvQuestion.text = q.question
+        tvQuestionNumber.text = "Câu hỏi"
+        progressQuiz.progress = 50
+        cardExplanation.visibility = View.GONE
+        btnConfirm.isEnabled = false
+        resetButtonStyles()
+
+        q.options.forEachIndexed { index, option ->
+            if (index < answerButtons.size) {
+                answerButtons[index].text = "${"ABCD"[index]}. $option"
+                answerButtons[index].visibility = View.VISIBLE
+                answerButtons[index].isEnabled = true
+                answerButtons[index].setOnClickListener { onAnswerSelected(index) }
+            }
+        }
+        for (i in q.options.size until answerButtons.size) {
+            answerButtons[i].visibility = View.GONE
+        }
+    }
+
+    private fun onAnswerSelected(index: Int) {
+        selectedIndex = index
+        resetButtonStyles()
+        answerButtons[index].backgroundTintList =
+            ContextCompat.getColorStateList(this, android.R.color.holo_orange_light)
+        animatePressButton(answerButtons[index])
+        btnConfirm.isEnabled = true
+    }
+
+    private fun setupConfirmButton() {
+        btnConfirm.setOnClickListener {
+            val q = currentQuestion ?: return@setOnClickListener
+            val isCorrect = selectedIndex == q.correctIndex
+            answerButtons.forEach { it.isEnabled = false }
+            btnConfirm.isEnabled = false
+
+            if (isCorrect) animateCorrect(selectedIndex)
+            else animateWrong(selectedIndex, q.correctIndex)
+
+            showExplanation(q.explanation)
+
+            Handler(Looper.getMainLooper()).postDelayed({
+                statisticsRepository.saveQuizResult(
+                    correct = if (isCorrect) 1 else 0,
+                    wrong = if (isCorrect) 0 else 1
+                )
+                setResult(if (isCorrect) RESULT_OK else RESULT_CANCELED)
+                finish()
+            }, 2000)
+        }
+    }
+
+    private fun animateCorrect(index: Int) {
+        val btn = answerButtons[index]
+        btn.backgroundTintList =
+            ContextCompat.getColorStateList(this, android.R.color.holo_green_light)
+        btn.setTextColor(ContextCompat.getColor(this, android.R.color.white))
+        AnimatorSet().apply {
+            playTogether(
+                ObjectAnimator.ofFloat(btn, "scaleX", 1f, 1.08f, 1f),
+                ObjectAnimator.ofFloat(btn, "scaleY", 1f, 1.08f, 1f)
+            )
+            duration = 350
+            interpolator = AccelerateDecelerateInterpolator()
+            start()
+        }
+    }
+
+    private fun animateWrong(wrongIndex: Int, correctIndex: Int) {
+        answerButtons[wrongIndex].apply {
+            backgroundTintList =
+                ContextCompat.getColorStateList(this@QuizActivity, android.R.color.holo_red_light)
+            setTextColor(ContextCompat.getColor(this@QuizActivity, android.R.color.white))
+        }
+        if (correctIndex in answerButtons.indices) {
+            answerButtons[correctIndex].apply {
+                backgroundTintList =
+                    ContextCompat.getColorStateList(this@QuizActivity, android.R.color.holo_green_light)
+                setTextColor(ContextCompat.getColor(this@QuizActivity, android.R.color.white))
+            }
+        }
+        ObjectAnimator.ofFloat(
+            answerButtons[wrongIndex], "translationX",
+            0f, -16f, 16f, -12f, 12f, -8f, 8f, 0f
+        ).apply { duration = 450; start() }
+    }
+
+    private fun showExplanation(explanation: String?) {
+        if (explanation.isNullOrBlank()) return
+        tvExplanation.text = explanation
+        cardExplanation.visibility = View.VISIBLE
+        cardExplanation.translationY = 40f
+        cardExplanation.alpha = 0f
+        cardExplanation.animate()
+            .translationY(0f).alpha(1f)
+            .setDuration(300)
+            .setInterpolator(AccelerateDecelerateInterpolator())
+            .start()
+    }
+
+    private fun resetButtonStyles() {
+        answerButtons.forEach { btn ->
+            btn.backgroundTintList =
+                ContextCompat.getColorStateList(this, android.R.color.white)
+            btn.setTextColor(ContextCompat.getColor(this, android.R.color.black))
+        }
+    }
+
+    private fun animatePressButton(btn: MaterialButton) {
+        AnimatorSet().apply {
+            playTogether(
+                ObjectAnimator.ofFloat(btn, "scaleX", 1f, 0.95f, 1f),
+                ObjectAnimator.ofFloat(btn, "scaleY", 1f, 0.95f, 1f)
+            )
+            duration = 150
+            start()
+        }
+    }
+
+    private fun categoryToFileName(category: String): String = when (category) {
+        "KienThucChung"  -> "KTC_questions.json"
+        "CNXHKH"         -> "CNXHKH_questions.json"
+        "DiaLy"          -> "D_questions.json"
+        "HoaHoc"         -> "H_questions.json"
+        "KinhTeChinhTri" -> "KTCT_questions.json"
+        "LichSu"         -> "S_questions.json"
+        "TinHoc"         -> "TH_questions.json"
+        "TuTuongHCM"     -> "TTHCM_questions.json"
+        "VanHoc"         -> "V_questions.json"
+        "VatLy"          -> "VL_questions.json"
+        "AmNhac"         -> "AN_questions.json"
+        "ChoiChu"        -> "CC_questions.json"
+        "TiengAnh"       -> "E_questions.json"
+        "DoVui"          -> "DoVui_questions.json"
+        else             -> "questions.json"
     }
 }
