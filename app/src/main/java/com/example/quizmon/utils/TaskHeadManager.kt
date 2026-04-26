@@ -1,13 +1,19 @@
 package com.example.quizmon.utils
 
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.TextView
 import com.example.quizmon.R
 import com.example.quizmon.ui.shop.PreferenceManager
+import java.util.Locale
 
 object TaskHeadManager {
+    private val handler = Handler(Looper.getMainLooper())
+    private var updateRunnable: Runnable? = null
+
     /**
-     * Hàm cập nhật toàn bộ chỉ số cho thanh TaskHead
+     * Hàm cập nhật dữ liệu lên UI (giữ nguyên logic cũ)
      */
     fun update(taskHeadRoot: View?, preferenceManager: PreferenceManager) {
         if (taskHeadRoot == null) return
@@ -22,22 +28,39 @@ object TaskHeadManager {
         tvCoin?.text = preferenceManager.getXu().toString()
         tvExp?.text = preferenceManager.getExp().toString()
         
-        // --- XỬ LÝ TIM ---
-        // 1. Tự động hồi tim dựa trên thời gian thực
         val remainingMs = preferenceManager.autoRegenerateHearts()
         val currentHearts = preferenceManager.getHearts()
-        
         tvHeartCount?.text = currentHearts.toString()
         
-        // 2. Hiển thị trạng thái đếm ngược hoặc MAX
         if (currentHearts >= 5) {
             tvHeartTime?.text = "MAX"
         } else {
-            // Chuyển đổi ms thành định dạng mm:ss
             val totalSeconds = remainingMs / 1000
             val minutes = totalSeconds / 60
             val seconds = totalSeconds % 60
-            tvHeartTime?.text = String.format("%02d:%02d", minutes, seconds)
+            tvHeartTime?.text = String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds)
         }
+    }
+
+    /**
+     * Bắt đầu vòng lặp cập nhật tự động (Dùng cho onResume)
+     */
+    fun startLoop(taskHeadRoot: View?, preferenceManager: PreferenceManager) {
+        stopLoop() // Đảm bảo không có loop nào chạy song song
+        updateRunnable = object : Runnable {
+            override fun run() {
+                update(taskHeadRoot, preferenceManager)
+                handler.postDelayed(this, 1000)
+            }
+        }
+        handler.post(updateRunnable!!)
+    }
+
+    /**
+     * Dừng vòng lặp cập nhật (Dùng cho onPause)
+     */
+    fun stopLoop() {
+        updateRunnable?.let { handler.removeCallbacks(it) }
+        updateRunnable = null
     }
 }

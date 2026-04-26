@@ -27,15 +27,16 @@ class StreakActivity : AppCompatActivity() {
     private lateinit var tvTabThongKe: TextView
     private lateinit var ivTabThanhTich: ImageView
     private lateinit var ivTabThongKe: ImageView
+    private lateinit var preferenceManager: PreferenceManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_streak)
 
+        preferenceManager = PreferenceManager(this)
         initViews()
         setupClickListeners()
         setupTaskbar()
-        updateUI()
         
         showThanhTich()
     }
@@ -53,7 +54,6 @@ class StreakActivity : AppCompatActivity() {
 
     private fun setupClickListeners() {
         findViewById<ImageView>(R.id.btnBack).setOnClickListener { finish() }
-
         findViewById<LinearLayout>(R.id.tabThanhTich).setOnClickListener { showThanhTich() }
         findViewById<LinearLayout>(R.id.tabThongKe).setOnClickListener { showThongKe() }
     }
@@ -64,19 +64,15 @@ class StreakActivity : AppCompatActivity() {
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
-
         findViewById<LinearLayout>(R.id.nav_profile).setOnClickListener {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
-
         findViewById<LinearLayout>(R.id.nav_history).setOnClickListener {
             startActivity(Intent(this, HistoryActivity::class.java))
         }
-
         findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener {
             startActivity(Intent(this, activity_shop::class.java))
         }
-
         findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
@@ -108,14 +104,15 @@ class StreakActivity : AppCompatActivity() {
             .commit()
     }
 
-    private fun updateUI() {
-        val preferenceManager = PreferenceManager(this)
-        //Sử dụng TaskHeadManager thống nhất
-        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
-    }
-
     override fun onResume() {
         super.onResume()
-        updateUI()
+        //Bắt đầu vòng lặp cập nhật Header và đếm ngược Tim
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        //Dừng cập nhật
+        TaskHeadManager.stopLoop()
     }
 }

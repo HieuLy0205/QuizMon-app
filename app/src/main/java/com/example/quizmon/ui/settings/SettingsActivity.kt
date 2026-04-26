@@ -23,10 +23,13 @@ import com.example.quizmon.utils.TaskHeadManager
 class SettingsActivity : AppCompatActivity() {
 
     private lateinit var notificationHelper: NotificationHelper
+    private lateinit var preferenceManager: PreferenceManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
+
+        preferenceManager = PreferenceManager(this)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
@@ -97,13 +100,14 @@ class SettingsActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        updateHeaderStats()
+        //Bắt đầu đếm ngược tự động qua Manager
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
     }
-
-    private fun updateHeaderStats() {
-        val preferenceManager = PreferenceManager(this)
-        //Sử dụng TaskHeadManager thống nhất
-        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
+    
+    override fun onPause() {
+        super.onPause()
+        //Dừng đếm ngược tự động qua Manager
+        TaskHeadManager.stopLoop()
     }
 
     private fun setupTaskbar() {

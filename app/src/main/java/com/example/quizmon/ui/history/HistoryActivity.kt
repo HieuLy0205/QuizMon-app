@@ -3,6 +3,8 @@ package com.example.quizmon.ui.history
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -21,10 +23,24 @@ import com.example.quizmon.ui.shop.activity_shop
 import com.example.quizmon.utils.TaskHeadManager
 
 class HistoryActivity : AppCompatActivity() {
+
+    private lateinit var preferenceManager: PreferenceManager
+    
+    //Handler để cập nhật đồng hồ Tim liên tục mỗi giây
+    private val updateHandler = Handler(Looper.getMainLooper())
+    private val updateRunnable = object : Runnable {
+        override fun run() {
+            updateUI()
+            updateHandler.postDelayed(this, 1000)
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_history)
+        
+        preferenceManager = PreferenceManager(this)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -37,7 +53,6 @@ class HistoryActivity : AppCompatActivity() {
     }
 
     private fun updateUI() {
-        val preferenceManager = PreferenceManager(this)
         TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
     }
 
@@ -67,5 +82,11 @@ class HistoryActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         updateUI()
+        updateHandler.post(updateRunnable) //Bắt đầu đếm giây
+    }
+    
+    override fun onPause() {
+        super.onPause()
+        updateHandler.removeCallbacks(updateRunnable) //Dừng đếm giây
     }
 }

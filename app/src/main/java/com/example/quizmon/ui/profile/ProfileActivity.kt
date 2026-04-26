@@ -25,11 +25,13 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var etName: EditText
     private lateinit var btnSave: Button
     private lateinit var btnEditProfile: Button
+    private lateinit var preferenceManager: PreferenceManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+        preferenceManager = PreferenceManager(this)
         val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
 
         imgAvatar = findViewById(R.id.imgAvatar)
@@ -42,7 +44,6 @@ class ProfileActivity : AppCompatActivity() {
         btnEditProfile = findViewById(R.id.btnEditProfile)
 
         setupTaskbar()
-        updateUI()
 
         val age = prefs.getInt("age", 0)
         val gender = prefs.getString("gender", "Chưa chọn")
@@ -95,12 +96,6 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateUI() {
-        val preferenceManager = PreferenceManager(this)
-        //Sử dụng TaskHeadManager thống nhất
-        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
-    }
-
     private fun setAvatar(id: String) {
         when (id) {
             "avatar1" -> imgAvatar.setImageResource(R.drawable.avatar1)
@@ -112,6 +107,13 @@ class ProfileActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        updateUI()
+        //Bắt đầu vòng lặp cập nhật Header và đếm ngược Tim
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        //Dừng cập nhật
+        TaskHeadManager.stopLoop()
     }
 }
