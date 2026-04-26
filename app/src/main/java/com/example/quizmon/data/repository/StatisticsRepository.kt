@@ -6,10 +6,17 @@ import com.example.quizmon.data.model.Statistics
 import com.example.quizmon.data.source.local.StatisticsLocalDataSource
 import java.util.*
 
+/**
+ * Repository quản lý toàn bộ dữ liệu thống kê.
+ * Đã sửa lỗi đồng bộ với DataSource và Model.
+ */
 class StatisticsRepository(context: Context) {
 
     private val localDataSource = StatisticsLocalDataSource(context)
 
+    /**
+     * Lưu kết quả phiên chơi Quiz
+     */
     fun saveQuizResult(correct: Int, wrong: Int, date: Date = Date()) {
         val existingStats = localDataSource.getDailyStats(date)
         val newStats = if (existingStats != null) {
@@ -34,9 +41,6 @@ class StatisticsRepository(context: Context) {
     }
 
     private fun updateStreak(currentDate: Date) {
-        val calendar = Calendar.getInstance()
-        calendar.time = currentDate
-
         val yesterday = Calendar.getInstance().apply {
             time = currentDate
             add(Calendar.DAY_OF_YEAR, -1)
@@ -55,20 +59,23 @@ class StatisticsRepository(context: Context) {
         localDataSource.saveLongestStreak(newStreak)
     }
 
+    /**
+     * Lấy dữ liệu tổng quát cho UI (StatisticsFragment)
+     */
     fun getOverallStatistics(): OverallStatistics {
-        val allStats = localDataSource.getAllStats()
-        val totalCorrect = allStats.sumOf { it.correctAnswers }
-        val totalWrong = allStats.sumOf { it.wrongAnswers }
-        val totalQuestions = allStats.sumOf { it.totalQuestions }
+        val allStats: List<Statistics> = localDataSource.getAllStats()
+        
+        // Sửa lỗi Unresolved reference 'it' bằng cách chỉ định rõ kiểu dữ liệu
+        val totalCorrect = allStats.sumOf { s: Statistics -> s.correctAnswers }
+        val totalQuestions = allStats.sumOf { s: Statistics -> s.totalQuestions }
+        
         val currentStreak = localDataSource.getCurrentStreak()
         val longestStreak = localDataSource.getLongestStreak()
-        
         val levelsCompleted = localDataSource.getLevelsCompleted()
         val startDate = Date(localDataSource.getStartDate())
 
         return OverallStatistics(
             totalCorrect = totalCorrect,
-            totalWrong = totalWrong,
             totalQuestions = totalQuestions,
             currentStreak = currentStreak,
             longestStreak = longestStreak,
@@ -77,9 +84,11 @@ class StatisticsRepository(context: Context) {
         )
     }
 
+    /**
+     * Lấy thống kê 7 ngày gần nhất cho biểu đồ
+     */
     fun getLast7DaysStats(): List<Statistics> {
         val statsList = mutableListOf<Statistics>()
-        val calendar = Calendar.getInstance()
 
         for (i in 6 downTo 0) {
             val date = Calendar.getInstance().apply {

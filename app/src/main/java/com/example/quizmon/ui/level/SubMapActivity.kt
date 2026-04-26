@@ -47,12 +47,11 @@ class SubMapActivity : AppCompatActivity() {
 
     private lateinit var preferenceManager: PreferenceManager
     
-    // Handler để cập nhật Header liên tục (đếm ngược tim)
     private val updateHandler = Handler(Looper.getMainLooper())
     private val updateRunnable = object : Runnable {
         override fun run() {
             updateUI()
-            updateHandler.postDelayed(this, 1000) // Cập nhật mỗi giây
+            updateHandler.postDelayed(this, 1000)
         }
     }
 
@@ -82,6 +81,7 @@ class SubMapActivity : AppCompatActivity() {
         updateUI()
 
         adapter = SubMapAdapter(mapItems) { item, position ->
+            //Cập nhật vị trí nhấn ngay tại đây
             lastClickedPosition = position
             handleItemClick(item)
         }
@@ -113,17 +113,12 @@ class SubMapActivity : AppCompatActivity() {
     }
 
     private fun updateUI() {
-        // Cập nhật TaskHead qua Manager
         TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
-
-        // Cập nhật Điểm ải
         tvCurrentStageScore.text = currentScore.toString()
 
-        // Thanh tiến trình
         val progressPercent = ((currentScore.toFloat() / maxPossibleScore) * 100).toInt().coerceIn(0, 100)
         pbStarProgress.progress = progressPercent
 
-        // Sao
         starIcons[0].setImageResource(if (currentScore >= star1Score) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
         starIcons[1].setImageResource(if (currentScore >= star2Score) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
         starIcons[2].setImageResource(if (currentScore >= star3Score) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
@@ -191,12 +186,10 @@ class SubMapActivity : AppCompatActivity() {
         try {
             when (item.type) {
                 SubMapType.QUESTION -> {
-                    // ✅ Kiểm tra mạng trước khi vào Quiz
                     if (preferenceManager.getHearts() <= 0) {
                         Toast.makeText(this, "Bạn đã hết mạng! Hãy chờ hồi phục hoặc mua thêm.", Toast.LENGTH_SHORT).show()
                         return
                     }
-                    
                     val intent = Intent(this, QuizActivity::class.java)
                     intent.putExtra("CATEGORY", item.category)
                     intent.putExtra("LEVEL_ID", levelId)
@@ -211,8 +204,8 @@ class SubMapActivity : AppCompatActivity() {
                     markSpecialItemDone(item)
                 }
                 SubMapType.FLIP_CARD -> {
-                    startActivity(Intent(this, com.example.quizmon.ui.level.FlipCardActivity::class.java))
-                    markSpecialItemDone(item)
+                    val intent = Intent(this, FlipCardActivity::class.java)
+                    startActivityForResult(intent, 1002)
                 }
                 else -> {}
             }
@@ -234,21 +227,24 @@ class SubMapActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (lastClickedPosition != -1) {
             val item = mapItems[lastClickedPosition] ?: return
-            if (item.type == SubMapType.QUESTION) {
+            
+            if (requestCode == 1001) {
                 if (resultCode == RESULT_OK) {
                     currentScore += scorePerCorrect
                     mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.CORRECT)
                 } else {
                     currentScore = (currentScore - scorePerIncorrect).coerceAtLeast(0)
                     mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.INCORRECT)
-                    
-                    // ✅ Trả lời sai trừ 1 tim
                     preferenceManager.useHeart()
                 }
                 adapter.notifyItemChanged(lastClickedPosition)
                 saveMapState()
                 updateUI() 
                 checkLevelCompletion()
+            } else if (requestCode == 1002) {
+                if (resultCode == RESULT_OK) {
+                    markSpecialItemDone(item)
+                }
             }
         }
     }
@@ -256,12 +252,12 @@ class SubMapActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         updateUI() 
-        updateHandler.post(updateRunnable) // Bắt đầu đếm ngược Header
+        updateHandler.post(updateRunnable)
     }
     
     override fun onPause() {
         super.onPause()
-        updateHandler.removeCallbacks(updateRunnable) // Dừng để tiết kiệm pin
+        updateHandler.removeCallbacks(updateRunnable)
     }
 
     private fun checkLevelCompletion() {
