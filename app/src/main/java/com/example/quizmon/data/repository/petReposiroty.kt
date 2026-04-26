@@ -22,7 +22,7 @@ class petReposiroty {
         ),
         Pet(
             "0",
-            "Xầu riêng",
+            "Sầu riêng",
             1,
             3,
             mapOf(

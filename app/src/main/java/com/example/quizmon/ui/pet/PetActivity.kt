@@ -74,7 +74,7 @@ class PetActivity : AppCompatActivity() {
     fun infomationPet(){
         val currentPetid = pref.getPetid()
         val currentlevel = pref.getPetLevel()
-        val petdetail = repotory.getPetById(currentPetid)
+        val petdetail = repotory.getPetById(currentPetid.toString())
         petdetail?.let{
             val activypet = it.copy(currentelevel = currentlevel)
             petAnimetor.starAnimetor(activypet)
@@ -83,7 +83,7 @@ class PetActivity : AppCompatActivity() {
     // Đồng bộ với ID mới từ layout_taskhead
     private fun updateHeaderStats(){
         val preferenceManager = PreferenceManager(this)
-        val textcoin = findViewById<TextView>(R.id.textcoin)
+        val textcoin = findViewById<TextView>(R.id.textcoins)
         textcoin.text=preferenceManager.getCoins().toString()
       }
 }
