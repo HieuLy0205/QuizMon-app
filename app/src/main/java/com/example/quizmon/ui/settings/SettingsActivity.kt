@@ -18,6 +18,7 @@ import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.shop.activity_shop
 import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.history.HistoryActivity
+import com.example.quizmon.utils.TaskHeadManager
 
 class SettingsActivity : AppCompatActivity() {
 
@@ -100,12 +101,9 @@ class SettingsActivity : AppCompatActivity() {
     }
 
     private fun updateHeaderStats() {
-        val pref = PreferenceManager(this)
-        val textCoin = findViewById<TextView>(R.id.textcoins)
-        textCoin.text = pref.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = pref.getXu().toString()
-
+        val preferenceManager = PreferenceManager(this)
+        //Sử dụng TaskHeadManager thống nhất
+        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
     }
 
     private fun setupTaskbar() {

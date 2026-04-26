@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.MotionEvent
 import android.view.View
 import android.view.animation.AnimationUtils
@@ -26,17 +28,31 @@ import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
 import com.example.quizmon.utils.StreakManager
+import com.example.quizmon.utils.TaskHeadManager
 import kotlin.math.abs
 
 class MainActivity : AppCompatActivity() {
     private var dX = 0f
     private var dY = 0f
     private val CLICK_DRAG_TOLERANCE = 10f
+    
+    private lateinit var preferenceManager: PreferenceManager
+    
+    //Handler để cập nhật đồng hồ Tim liên tục mỗi giây
+    private val updateHandler = Handler(Looper.getMainLooper())
+    private val updateRunnable = object : Runnable {
+        override fun run() {
+            updateUI()
+            updateHandler.postDelayed(this, 1000)
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+        preferenceManager = PreferenceManager(this)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -101,19 +117,24 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         updateUI()
+        updateHandler.post(updateRunnable) // ✅ Bắt đầu đếm giây khi vào trang
+    }
+    
+    override fun onPause() {
+        super.onPause()
+        updateHandler.removeCallbacks(updateRunnable) // ✅ Dừng đếm khi thoát trang
     }
 
     private fun updateUI() {
         val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-        val preferenceManager = PreferenceManager(this)
         val streakManager = StreakManager(this)
 
         val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
         findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
 
-        findViewById<TextView>(R.id.textcoins)?.text = preferenceManager.getCoins().toString()
-        findViewById<TextView>(R.id.textxu)?.text = preferenceManager.getXu().toString()
-        
+        // Cập nhật Header thông qua Manager (bao gồm cả logic hồi tim)
+        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
+
         findViewById<TextView>(R.id.tvStreakCount)?.text = streakManager.getCurrentStreak().toString()
     }
 

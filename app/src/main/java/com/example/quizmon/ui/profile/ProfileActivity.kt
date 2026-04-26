@@ -13,6 +13,7 @@ import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.activity_shop
 import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.history.HistoryActivity
+import com.example.quizmon.utils.TaskHeadManager
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -41,7 +42,7 @@ class ProfileActivity : AppCompatActivity() {
         btnEditProfile = findViewById(R.id.btnEditProfile)
 
         setupTaskbar()
-        updateHeaderStats()
+        updateUI()
 
         val age = prefs.getInt("age", 0)
         val gender = prefs.getString("gender", "Chưa chọn")
@@ -94,12 +95,10 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    private fun updateHeaderStats() {
-        val pref = PreferenceManager(this)
-        val textCoin = findViewById<TextView>(R.id.textcoins)
-        textCoin.text = pref.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = pref.getXu().toString()
+    private fun updateUI() {
+        val preferenceManager = PreferenceManager(this)
+        //Sử dụng TaskHeadManager thống nhất
+        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
     }
 
     private fun setAvatar(id: String) {
@@ -113,6 +112,6 @@ class ProfileActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        updateHeaderStats()
+        updateUI()
     }
 }

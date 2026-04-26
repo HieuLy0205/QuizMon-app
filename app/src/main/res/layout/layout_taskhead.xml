@@ -21,13 +21,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
+            android:layout_marginHorizontal="2dp"
             android:background="@drawable/bg_stats_bar"
             android:backgroundTint="@color/white"
             android:gravity="center_vertical"
-            android:paddingStart="10dp"
+            android:paddingStart="6dp"
             android:paddingTop="5dp"
-            android:paddingEnd="12dp"
+            android:paddingEnd="8dp"
             android:paddingBottom="5dp">
 
             <ImageView
@@ -40,7 +40,7 @@
                 android:id="@+id/textcoins"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="2dp"
                 android:text="0"
                 android:textColor="#100F0E"
                 android:textStyle="bold" />
@@ -58,13 +58,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
+            android:layout_marginHorizontal="2dp"
             android:background="@drawable/bg_stats_bar"
             android:backgroundTint="@color/white"
             android:gravity="center_vertical"
-            android:paddingStart="10dp"
+            android:paddingStart="6dp"
             android:paddingTop="5dp"
-            android:paddingEnd="12dp"
+            android:paddingEnd="8dp"
             android:paddingBottom="5dp">
 
             <ImageView
@@ -77,7 +77,7 @@
                 android:id="@+id/textxu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="2dp"
                 android:text="0"
                 android:textColor="#100F0E"
                 android:textStyle="bold" />
@@ -95,13 +95,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
+            android:layout_marginHorizontal="2dp"
             android:background="@drawable/bg_stats_bar"
             android:backgroundTint="@color/white"
             android:gravity="center_vertical"
-            android:paddingStart="10dp"
+            android:paddingStart="6dp"
             android:paddingTop="5dp"
-            android:paddingEnd="12dp"
+            android:paddingEnd="8dp"
             android:paddingBottom="5dp">
 
             <ImageView
@@ -114,39 +114,67 @@
                 android:id="@+id/head_text_exp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="2dp"
                 android:text="0"
                 android:textColor="#070607"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="1dp"
+                android:contentDescription="@null"
+                app:tint="@color/home_green" />
         </LinearLayout>
 
         <!-- Tim / Mạng -->
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
+            android:layout_marginHorizontal="2dp"
             android:background="@drawable/bg_stats_bar"
             android:backgroundTint="@color/white"
             android:gravity="center_vertical"
-            android:paddingStart="10dp"
+            android:paddingStart="6dp"
             android:paddingTop="5dp"
-            android:paddingEnd="12dp"
+            android:paddingEnd="8dp"
             android:paddingBottom="5dp">
 
-            <ImageView
-                android:layout_width="22dp"
-                android:layout_height="22dp"
-                android:contentDescription="@null"
-                android:src="@drawable/tim3_shop_map" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/tim3_shop_map" />
+                <TextView
+                    android:id="@+id/head_text_heart_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
 
             <TextView
                 android:id="@+id/head_text_heart"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
+                android:layout_marginStart="2dp"
                 android:text="00:00"
                 android:textColor="#E91E63"
                 android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="1dp"
+                android:contentDescription="@null"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@color/home_green" />
         </LinearLayout>
 
     </LinearLayout>

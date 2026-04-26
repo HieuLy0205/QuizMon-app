@@ -15,6 +15,7 @@ import com.example.quizmon.R
 import com.example.quizmon.data.repository.QuizRepository
 import com.example.quizmon.data.repository.StatisticsRepository
 import com.example.quizmon.data.model.Question
+import com.example.quizmon.ui.shop.PreferenceManager
 import com.google.android.material.button.MaterialButton
 
 class QuizActivity : AppCompatActivity() {
@@ -36,6 +37,7 @@ class QuizActivity : AppCompatActivity() {
 
     private lateinit var quizRepository: QuizRepository
     private lateinit var statisticsRepository: StatisticsRepository
+    private lateinit var preferenceManager: PreferenceManager
 
     private var currentQuestion: Question? = null
     private var selectedIndex = -1
@@ -47,6 +49,7 @@ class QuizActivity : AppCompatActivity() {
         initViews()
         quizRepository = QuizRepository(this)
         statisticsRepository = StatisticsRepository(this)
+        preferenceManager = PreferenceManager(this)
 
         val category = intent.getStringExtra("CATEGORY") ?: "CNXHKH"
         val levelId = intent.getIntExtra("LEVEL_ID", 1)
@@ -117,8 +120,15 @@ class QuizActivity : AppCompatActivity() {
             answerButtons.forEach { it.isEnabled = false }
             btnConfirm.isEnabled = false
 
-            if (isCorrect) animateCorrect(selectedIndex)
-            else animateWrong(selectedIndex, q.correctIndex)
+            if (isCorrect) {
+                animateCorrect(selectedIndex)
+                // ✅ Cập nhật EXP và Streak
+                preferenceManager.handleCorrectAnswer()
+            } else {
+                animateWrong(selectedIndex, q.correctIndex)
+                // ✅ Reset Streak
+                preferenceManager.handleWrongAnswer()
+            }
 
             showExplanation(q.explanation)
 

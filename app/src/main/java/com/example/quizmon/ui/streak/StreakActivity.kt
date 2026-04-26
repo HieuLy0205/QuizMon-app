@@ -15,6 +15,7 @@ import com.example.quizmon.ui.shop.activity_shop
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.history.HistoryActivity
 import com.example.quizmon.ui.profile.ProfileActivity
+import com.example.quizmon.utils.TaskHeadManager
 
 class StreakActivity : AppCompatActivity() {
 
@@ -34,7 +35,7 @@ class StreakActivity : AppCompatActivity() {
         initViews()
         setupClickListeners()
         setupTaskbar()
-        updateHeaderStats()
+        updateUI()
         
         showThanhTich()
     }
@@ -107,16 +108,14 @@ class StreakActivity : AppCompatActivity() {
             .commit()
     }
 
-    private fun updateHeaderStats() {
-        val pref = PreferenceManager(this)
-        val textCoin = findViewById<TextView>(R.id.textcoins)
-        textCoin.text = pref.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = pref.getXu().toString()
+    private fun updateUI() {
+        val preferenceManager = PreferenceManager(this)
+        //Sử dụng TaskHeadManager thống nhất
+        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
     }
 
     override fun onResume() {
         super.onResume()
-        updateHeaderStats()
+        updateUI()
     }
 }

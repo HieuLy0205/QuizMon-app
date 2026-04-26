@@ -19,6 +19,7 @@ import com.example.quizmon.ui.pet.PetActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
+import com.example.quizmon.utils.TaskHeadManager
 
 class activity_shop : AppCompatActivity() {
 
@@ -74,7 +75,7 @@ class activity_shop : AppCompatActivity() {
         }
 
         findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener {
-            startActivity(Intent(this, activity_shop::class.java))
+            // Already here
         }
 
         findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {
@@ -84,16 +85,13 @@ class activity_shop : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        updateHeaderStats()
+        updateUI()
     }
 
-    private fun updateHeaderStats() {
+    private fun updateUI() {
         val preferenceManager = PreferenceManager(this)
-        // Cập nhật đúng ID mới từ layout_taskhead
-        val textCoin = findViewById<TextView>(R.id.textcoins)
-        textCoin.text = preferenceManager.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = preferenceManager.getXu().toString()
+        //Sử dụng TaskHeadManager thống nhất
+        TaskHeadManager.update(findViewById(R.id.layout_taskhead), preferenceManager)
     }
 
 }

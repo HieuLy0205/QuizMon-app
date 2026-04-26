@@ -18,6 +18,7 @@ import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.shop.activity_shop
+import com.example.quizmon.utils.TaskHeadManager
 
 class HistoryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,12 +38,8 @@ class HistoryActivity : AppCompatActivity() {
 
     private fun updateUI() {
         val preferenceManager = PreferenceManager(this)
-        // Cập nhật ID mới từ layout_taskhead
-        val textCoin = findViewById<TextView>(R.id.textcoins)
-        textCoin.text = preferenceManager.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = preferenceManager.getXu().toString()
-     }
+        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
+    }
 
     private fun setupTaskbar() {
         findViewById<View>(R.id.indicator_history).visibility = View.VISIBLE
@@ -58,10 +55,6 @@ class HistoryActivity : AppCompatActivity() {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
 
-        findViewById<LinearLayout>(R.id.nav_history).setOnClickListener {
-            // Already here
-        }
-
         findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener {
             startActivity(Intent(this, activity_shop::class.java))
         }
@@ -69,5 +62,10 @@ class HistoryActivity : AppCompatActivity() {
         findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
+    }
+    
+    override fun onResume() {
+        super.onResume()
+        updateUI()
     }
 }

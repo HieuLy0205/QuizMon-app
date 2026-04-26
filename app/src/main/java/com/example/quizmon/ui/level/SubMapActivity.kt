@@ -3,6 +3,8 @@ package com.example.quizmon.ui.level
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
@@ -14,6 +16,8 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizmon.R
 import com.example.quizmon.ui.quiz.QuizActivity
+import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.TaskHeadManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
@@ -22,8 +26,7 @@ class SubMapActivity : AppCompatActivity() {
     private lateinit var rvSubMap: RecyclerView
     private lateinit var adapter: SubMapAdapter
     private lateinit var pbStarProgress: ProgressBar
-    private lateinit var tvTotalStars: TextView
-    private lateinit var tvTotalCoins: TextView
+    
     private lateinit var tvCurrentStageScore: TextView
     private lateinit var starIcons: List<ImageView>
 
@@ -34,29 +37,35 @@ class SubMapActivity : AppCompatActivity() {
     private var lastClickedPosition: Int = -1
 
     private var currentScore: Int = 0
-    
-    // ✅ Logic điểm mới: Đúng +30, Sai -10
     private val scorePerCorrect = 30
     private val scorePerIncorrect = 10
     
-    // ✅ Mốc điểm đạt sao: Đảm bảo đúng 12 sai 2 (320 điểm) vẫn đạt 3 sao
-    private val star1Score = 100 // 1 sao
-    private val star2Score = 200 // 2 sao
-    private val star3Score = 300 // 3 sao
-    private val maxPossibleScore = 420 // 14 câu * 30 điểm
+    private val star1Score = 100
+    private val star2Score = 200
+    private val star3Score = 300
+    private val maxPossibleScore = 420
+
+    private lateinit var preferenceManager: PreferenceManager
+    
+    // Handler để cập nhật Header liên tục (đếm ngược tim)
+    private val updateHandler = Handler(Looper.getMainLooper())
+    private val updateRunnable = object : Runnable {
+        override fun run() {
+            updateUI()
+            updateHandler.postDelayed(this, 1000) // Cập nhật mỗi giây
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sub_map)
 
+        preferenceManager = PreferenceManager(this)
         levelId = intent.getIntExtra("LEVEL_ID", 1)
 
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
         btnBack.setOnClickListener { finish() }
-        val taskHeadView = findViewById<View>(R.id.taskhead)
-        tvTotalStars = taskHeadView.findViewById(R.id.textcoins)
-        tvTotalCoins = taskHeadView.findViewById(R.id.textxu)
-        
+
         tvCurrentStageScore = findViewById(R.id.tvCurrentStageScore)
         
         pbStarProgress = findViewById(R.id.pbStarProgress)
@@ -104,16 +113,17 @@ class SubMapActivity : AppCompatActivity() {
     }
 
     private fun updateUI() {
-        val mainPrefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-        
-        tvTotalCoins.text = mainPrefs.getInt("current_coins", 0).toString()
-        tvTotalStars.text = mainPrefs.getInt("total_stars_all_levels", 0).toString()
+        // Cập nhật TaskHead qua Manager
+        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
 
+        // Cập nhật Điểm ải
         tvCurrentStageScore.text = currentScore.toString()
 
+        // Thanh tiến trình
         val progressPercent = ((currentScore.toFloat() / maxPossibleScore) * 100).toInt().coerceIn(0, 100)
         pbStarProgress.progress = progressPercent
 
+        // Sao
         starIcons[0].setImageResource(if (currentScore >= star1Score) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
         starIcons[1].setImageResource(if (currentScore >= star2Score) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
         starIcons[2].setImageResource(if (currentScore >= star3Score) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
@@ -181,6 +191,12 @@ class SubMapActivity : AppCompatActivity() {
         try {
             when (item.type) {
                 SubMapType.QUESTION -> {
+                    // ✅ Kiểm tra mạng trước khi vào Quiz
+                    if (preferenceManager.getHearts() <= 0) {
+                        Toast.makeText(this, "Bạn đã hết mạng! Hãy chờ hồi phục hoặc mua thêm.", Toast.LENGTH_SHORT).show()
+                        return
+                    }
+                    
                     val intent = Intent(this, QuizActivity::class.java)
                     intent.putExtra("CATEGORY", item.category)
                     intent.putExtra("LEVEL_ID", levelId)
@@ -225,13 +241,27 @@ class SubMapActivity : AppCompatActivity() {
                 } else {
                     currentScore = (currentScore - scorePerIncorrect).coerceAtLeast(0)
                     mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.INCORRECT)
+                    
+                    // ✅ Trả lời sai trừ 1 tim
+                    preferenceManager.useHeart()
                 }
                 adapter.notifyItemChanged(lastClickedPosition)
                 saveMapState()
-                updateUI()
+                updateUI() 
                 checkLevelCompletion()
             }
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        updateUI() 
+        updateHandler.post(updateRunnable) // Bắt đầu đếm ngược Header
+    }
+    
+    override fun onPause() {
+        super.onPause()
+        updateHandler.removeCallbacks(updateRunnable) // Dừng để tiết kiệm pin
     }
 
     private fun checkLevelCompletion() {
@@ -250,7 +280,6 @@ class SubMapActivity : AppCompatActivity() {
                 else if (currentScore >= star2Score) starsEarnedInThisLevel = 2
                 else if (currentScore >= star1Score) starsEarnedInThisLevel = 1
                 
-                // Lưu số sao cao nhất của ải này
                 val oldBestStars = mainPrefs.getInt("STARS_LEVEL_$levelId", 0)
                 if (starsEarnedInThisLevel > oldBestStars) {
                     val totalStars = mainPrefs.getInt("total_stars_all_levels", 0)
@@ -258,11 +287,12 @@ class SubMapActivity : AppCompatActivity() {
                         .putInt("STARS_LEVEL_$levelId", starsEarnedInThisLevel)
                         .putInt("total_stars_all_levels", totalStars + (starsEarnedInThisLevel - oldBestStars))
                         .apply()
+                    updateUI()
                 }
 
                 if (levelId == currentMax) {
                     mainPrefs.edit().putInt("CURRENT_UNLOCKED_LEVEL", levelId + 1).apply()
-                    val coinManager = com.example.quizmon.ui.shop.PreferenceManager(this)
+                    val coinManager = PreferenceManager(this)
                     coinManager.Dk_Ainho_Addcoin("nv2", true)
                 }
             } else {
