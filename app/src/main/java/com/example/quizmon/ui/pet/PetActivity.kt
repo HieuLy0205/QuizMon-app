@@ -41,7 +41,7 @@ class PetActivity : AppCompatActivity() {
         btn_tanglevel.setOnClickListener {
             val currentid = pref.getPetLevel()
             val currientCoin = pref.getCoins()
-            if (currentid < 3) {
+            if (currentid != 3) {
                 if (currientCoin >= 20) {
                     pref.saveCoins(currientCoin - 20)
                     val nextLevel = currentid + 1
