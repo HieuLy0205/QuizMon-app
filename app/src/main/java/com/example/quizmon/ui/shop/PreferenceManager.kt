@@ -53,6 +53,9 @@ class PreferenceManager(context: Context) {
     fun Dk_Ainho_coin(taskId: String): Boolean {
         return sharedPreferences.getBoolean("task_$taskId", false)
     }
+    fun getPetid(): String{
+        return sharedPreferences.getInt("Rong" , 1).toString()
+    }
     fun getPetLevel(): Int{
         return sharedPreferences.getInt("pet_level", 1)
     }

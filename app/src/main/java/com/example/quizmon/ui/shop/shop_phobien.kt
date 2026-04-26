@@ -56,6 +56,10 @@ class shop_phobien: AppCompatActivity() {
                     "Chưa xong ải", Toast.LENGTH_SHORT).show()
             }
         }
+        btn_Nv3.setOnClickListener {
+            val isReady = preferenceManager.Dk_Ainho_coin("nv3")
+
+        }
         btnBack.setOnClickListener {
             // Xử lý khi nút được nhấn
             finish()
