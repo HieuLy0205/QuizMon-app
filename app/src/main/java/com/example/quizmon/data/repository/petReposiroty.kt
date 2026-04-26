@@ -21,7 +21,7 @@ class petReposiroty {
             )
         ),
         Pet(
-            "0",
+            "2",
             "Sầu riêng",
             1,
             3,
@@ -32,7 +32,7 @@ class petReposiroty {
             )
         ),
         Pet(
-            "2",
+            "3",
             "Bạch tuột",
             1,
             3,
@@ -43,7 +43,7 @@ class petReposiroty {
             )
         ),
         Pet(
-            "3",
+            "4",
             "Sao Nhị",
             1,
             3,
