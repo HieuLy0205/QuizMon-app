@@ -5,12 +5,9 @@ data class Pet(
     val id: String,
     //tên thú cưng
     val name: String,
+    val currentelevel: Int,
+    val levelmax: Int,
     //cấp độ
-    val level: Int,
-    //điểm kinh nghiệm
-    val exp: Int,
-    //danh sách ảnh
-    val imageResIds: List<Int>,
-    //hệ loại pet
-    val type: String
+    val animetor: Map<Int, IntArray>,
+
 )
