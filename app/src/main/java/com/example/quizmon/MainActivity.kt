@@ -111,12 +111,10 @@ class MainActivity : AppCompatActivity() {
         val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
         findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
 
-        // Cập nhật đúng ID mới từ layout_taskhead
-        val textCoin = findViewById<TextView>(R.id.textcoins)
-        textCoin.text = preferenceManager.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = preferenceManager.getXu().toString()
-
+        findViewById<TextView>(R.id.textcoins)?.text = preferenceManager.getCoins().toString()
+        findViewById<TextView>(R.id.textxu)?.text = preferenceManager.getXu().toString()
+        
+        findViewById<TextView>(R.id.tvStreakCount)?.text = streakManager.getCurrentStreak().toString()
     }
 
     private fun setupTaskbar() {
