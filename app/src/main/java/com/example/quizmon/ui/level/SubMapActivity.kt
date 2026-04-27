@@ -289,7 +289,7 @@ class SubMapActivity : AppCompatActivity() {
                 if (levelId == currentMax) {
                     mainPrefs.edit().putInt("CURRENT_UNLOCKED_LEVEL", levelId + 1).apply()
                     val coinManager = PreferenceManager(this)
-                    coinManager.Dk_Ainho_Addcoin("nv2", true)
+                    coinManager.Dk_batmo_xn("nv2", true)
                 }
             } else {
                 Toast.makeText(this, "Chưa đủ điểm ($star1Score) để qua ải!", Toast.LENGTH_LONG).show()

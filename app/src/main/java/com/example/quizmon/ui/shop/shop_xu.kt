@@ -23,9 +23,9 @@ class shop_xu: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shop_xu)
-        recyclerView = findViewById<RecyclerView>(R.id.rlvmenhgia)
-        btnBack = findViewById<ImageButton>(R.id.btnBack)
-        btnConfirmPaymenttn = findViewById<MaterialButton>(R.id.btnConfirmPayment)
+        recyclerView = findViewById(R.id.rlvmenhgia)
+        btnBack = findViewById(R.id.btnBack)
+        btnConfirmPaymenttn = findViewById(R.id.btnConfirmPayment)
         preferenceManager = PreferenceManager(this)
 
         recyclerView.layoutManager = GridLayoutManager(this, 3)
@@ -52,11 +52,13 @@ class shop_xu: AppCompatActivity() {
         btnBack.setOnClickListener { finish() }
 
         btnConfirmPaymenttn.setOnClickListener {
+            val item = selectedItem
             if (selectedItem == null) {
                 Toast.makeText(this, "chọn loại thẻ thanh toán", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }else {
-                preferenceManager.addXu(selectedItem!!.amount)
+                preferenceManager.addXu(item!!.amount)
+                preferenceManager.Dk_batmo_xn("nv3", true)
                 Toast.makeText(
                     this,
                     "thanh toán thành công ${selectedItem!!.amount}đ",
@@ -66,7 +68,6 @@ class shop_xu: AppCompatActivity() {
         }
     }
     //nói đến thanh toán: đây là bộ sử lý giao diện
-
     private fun SetupQr() {
         val imgQr = findViewById<ImageView>(R.id.imgQRpay)
         val imgQrmomo = findViewById<ImageView>(R.id.imgQR)

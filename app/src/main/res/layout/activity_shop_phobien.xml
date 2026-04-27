@@ -208,13 +208,15 @@
                 android:padding="8dp"
                 android:text="@string/text_nhiemvu5"
                 android:textSize="18sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold">
+            </TextView>
 
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="49dp"
                 android:layout_gravity="center"
-                android:background="@drawable/sao_shop_map"></ImageView>
+                android:background="@drawable/sao_shop_map">
+            </ImageView>
 
             <Button
                 android:id="@+id/btn_Nv5"
@@ -224,7 +226,8 @@
                 android:backgroundTint="#B6C680EB"
                 android:text="hoàn thành"
                 android:textColor="#161313"
-                android:textStyle="bold"></Button>
+                android:textStyle="bold">
+            </Button>
         </LinearLayout>
 
         <ImageButton

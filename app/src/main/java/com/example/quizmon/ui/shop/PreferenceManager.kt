@@ -136,21 +136,20 @@ class PreferenceManager(context: Context) {
 
     // --- QUẢN LÝ NHIỆM VỤ ---
     fun isTaskCompletedToday(taskId: String): Boolean {
-        val lastData = sharedPreferences.getString("task_$taskId", null)
         val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
+        val lastData = sharedPreferences.getString("task_$taskId", null)
         return lastData == currentDate
     }
     fun markTaskCompletedToday(taskId: String) {
         val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         sharedPreferences.edit().putString("task_$taskId", currentDate).apply()
     }
-    fun Dk_Ainho_Addcoin(taskId: String, isReady: Boolean) {
-        sharedPreferences.edit().putBoolean("task_$taskId", isReady).apply()
+    fun Dk_batmo_xn(taskId: String, isReady: Boolean) {
+        sharedPreferences.edit().putBoolean("ready_$taskId", isReady).apply()
     }
-    fun Dk_Ainho_coin(taskId: String): Boolean {
-        return sharedPreferences.getBoolean("task_$taskId", false)
+    fun Dk_xacnhan_cq(taskId: String): Boolean {
+        return sharedPreferences.getBoolean("ready_$taskId", false)
     }
-
     // --- QUẢN LÝ PET ---
     fun getPetLevel(): Int{
         return sharedPreferences.getInt("pet_level", 1)
