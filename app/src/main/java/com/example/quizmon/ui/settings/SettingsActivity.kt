@@ -8,9 +8,12 @@ import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.MainActivity
 import com.example.quizmon.R
 import com.example.quizmon.ui.notification.NotificationHelper
@@ -27,7 +30,15 @@ class SettingsActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //Đồng bộ với chuẩn MainActivity
+        enableEdgeToEdge()
         setContentView(R.layout.activity_settings)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.settings_root)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
         preferenceManager = PreferenceManager(this)
 
@@ -100,13 +111,11 @@ class SettingsActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        //Bắt đầu đếm ngược tự động qua Manager
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
     }
     
     override fun onPause() {
         super.onPause()
-        //Dừng đếm ngược tự động qua Manager
         TaskHeadManager.stopLoop()
     }
 
