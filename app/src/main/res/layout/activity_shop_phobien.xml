@@ -25,7 +25,7 @@
                 android:layout_width="69dp"
                 android:layout_height="69dp"
                 android:src="@drawable/sao_shop_map"
-                android:contentDescription="Icon Shop" />
+                android:contentDescription="Icon Shop"/>
 
             <TextView
                 android:layout_width="match_parent"
@@ -45,7 +45,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textStyle="normal"
+            android:textStyle="bold"
             android:textSize="24sp"
             android:gravity="center"
             android:text="@string/text_ShopNv">
@@ -56,26 +56,37 @@
             android:id="@+id/lne_task_1"
             android:layout_width="match_parent"
             android:layout_height="65dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/text_nv1"
-                android:layout_width="258dp"
-                android:layout_height="41dp"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
                 android:text="@string/text_nhiemvu1"
+                android:padding="8dp"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:background="@drawable/sao_shop_map">
+            </ImageView>
 
             <Button
                 android:id="@+id/btn_Nv1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:backgroundTint="#B697EB80"
                 android:text="hoàn thành"
                 android:textColor="#161313"
-                android:textStyle="bold"></Button>
+                android:textStyle="bold">
+            </Button>
         </LinearLayout>
 
         <LinearLayout
@@ -85,21 +96,32 @@
             android:gravity="center">
 
             <TextView
-                android:layout_width="258dp"
-                android:layout_height="41dp"
+                android:layout_width="230dp"
+                android:layout_height="48dp"
                 android:text="@string/text_nhiemvu2"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:padding="8dp"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:background="@drawable/sao_shop_map">
+            </ImageView>
 
             <Button
                 android:id="@+id/btn_Nv2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:backgroundTint="#B6EB8C80"
+                android:text="hoàn thành"
                 android:textColor="#161313"
-                android:textStyle="bold"
-                android:text="hoàn thành">
+                android:textStyle="bold">
             </Button>
         </LinearLayout>
 
@@ -110,21 +132,31 @@
             android:gravity="center">
 
             <TextView
-                android:layout_width="258dp"
-                android:layout_height="41dp"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
+                android:gravity="center_vertical"
                 android:text="@string/text_nhiemvu3"
+                android:padding="8dp"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:background="@drawable/sao_shop_map">
+            </ImageView>
 
             <Button
                 android:id="@+id/btn_Nv3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:backgroundTint="#B65CD9F0"
+                android:text="hoàn thành"
                 android:textColor="#161313"
-                android:textStyle="bold"
-                android:text="hoàn thành">
+                android:textStyle="bold">
             </Button>
         </LinearLayout>
 
@@ -135,47 +167,64 @@
             android:gravity="center">
 
             <TextView
-                android:layout_width="258dp"
-                android:layout_height="41dp"
+                android:layout_width="230dp"
+                android:layout_height="49dp"
                 android:text="@string/text_nhiemvu4"
                 android:textSize="18sp"
+                android:padding="8dp"
+                android:gravity="center_vertical"
                 android:textStyle="bold">
             </TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:background="@drawable/sao_shop_map">
+            </ImageView>
 
             <Button
                 android:id="@+id/btn_Nv4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 android:backgroundTint="#EBD280"
+                android:text="hoàn thành"
                 android:textColor="#161313"
-                android:textStyle="bold"
-                android:text="hoàn thành">
+                android:textStyle="bold">
             </Button>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_height="88dp"
+            android:gravity="center"
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="258dp"
-                android:layout_height="41dp"
+                android:layout_width="232dp"
+                android:layout_height="62dp"
+                android:gravity="center_vertical"
+                android:padding="8dp"
                 android:text="@string/text_nhiemvu5"
                 android:textSize="18sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold"></TextView>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="49dp"
+                android:layout_gravity="center"
+                android:background="@drawable/sao_shop_map"></ImageView>
 
             <Button
                 android:id="@+id/btn_Nv5"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:backgroundTint="#B6C680EB"
+                android:text="hoàn thành"
                 android:textColor="#161313"
-                android:textStyle="bold"
-                android:text="hoàn thành">
-            </Button>
+                android:textStyle="bold"></Button>
         </LinearLayout>
 
         <ImageButton
