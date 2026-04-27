@@ -32,7 +32,7 @@
         android:layout_marginBottom="10dp"/>
     <!-- thay đổi từ 12 thành 10 để phù hợp với cấu trúc dữ liệu -->
 
-    <!-- 4 Ô phụ trợ -->
+    <!--  Thêm 4 Ô phụ trợ -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
