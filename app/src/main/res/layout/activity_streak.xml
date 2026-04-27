@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#EDF1F4">
 
-    <!-- Header Section (Phần nền màu) -->
+    <!-- Header Section -->
     <View
         android:id="@+id/header_bg"
         android:layout_width="match_parent"
@@ -15,7 +15,6 @@
         android:background="#F8BBD0"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Thanh trạng thái phía trên (TaskHead) -->
     <include
         android:id="@+id/taskhead"
         layout="@layout/layout_taskhead"
@@ -23,7 +22,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Nút Quay lại -->
     <ImageView
         android:id="@+id/btnBack"
         android:layout_width="48dp"
@@ -70,7 +68,7 @@
         app:layout_constraintTop_toBottomOf="@id/header_bg"
         app:layout_constraintStart_toEndOf="@id/ivAvatar" />
 
-    <!-- Tabs Layout (Chỉ còn Thành tích và Thống kê) -->
+    <!-- Tabs Layout -->
     <LinearLayout
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
@@ -92,10 +90,14 @@
             android:background="?attr/selectableItemBackground">
             <ImageView
                 android:id="@+id/ivTabThanhTich"
-                android:layout_width="26dp" android:layout_height="26dp" android:src="@drawable/hoso_taskbar" />
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/hoso_taskbar" />
             <TextView
                 android:id="@+id/tvTabThanhTich"
-                android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thành tích" android:textSize="12sp" android:textStyle="bold" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thành tích" android:textSize="12sp" android:textStyle="bold" />
             <View
                 android:id="@+id/indicatorThanhTich"
                 android:layout_width="80dp" android:layout_height="3dp" android:background="#333333" android:layout_marginTop="4dp" />
@@ -123,7 +125,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Container cho Fragment Thống kê -->
     <FrameLayout
         android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
@@ -132,7 +133,6 @@
         app:layout_constraintTop_toBottomOf="@id/tabLayout"
         app:layout_constraintBottom_toTopOf="@id/taskbar" />
 
-    <!-- Scrollable Content (Danh sách Thành tích) -->
     <ScrollView
         android:id="@+id/layoutThanhTich"
         android:layout_width="match_parent"
@@ -147,7 +147,7 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Item 1: Chiến binh -->
+            <!-- Chiến binh (Mặc định 0%) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -164,15 +164,14 @@
                     android:layout_weight="1" android:layout_marginStart="16dp" android:orientation="vertical">
                     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chiến binh" android:textStyle="bold" android:textColor="#455A64" android:textSize="15sp" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="14%" android:textStyle="bold" android:textColor="#455A64" />
+                        <TextView android:id="@+id/tvPercentWarrior" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="0%" android:textStyle="bold" android:textColor="#455A64" />
                     </RelativeLayout>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thắng 100 trận đấu" android:textSize="12sp" android:textColor="#78909C" />
-                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="14" android:progressTint="#8BC34A" />
+                    <ProgressBar android:id="@+id/pbWarrior" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="0" android:progressTint="#8BC34A" />
                 </LinearLayout>
             </LinearLayout>
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
 
-            <!-- Item 2: Người hâm mộ -->
+            <!-- Người hâm mộ (Mặc định 0%) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -189,15 +188,14 @@
                     android:layout_weight="1" android:layout_marginStart="16dp" android:orientation="vertical">
                     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Người hâm mộ" android:textStyle="bold" android:textColor="#455A64" android:textSize="15sp" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="40%" android:textStyle="bold" android:textColor="#455A64" />
+                        <TextView android:id="@+id/tvPercentFan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="0%" android:textStyle="bold" android:textColor="#455A64" />
                     </RelativeLayout>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đăng nhập 7 ngày liên tiếp" android:textSize="12sp" android:textColor="#78909C" />
-                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="40" android:progressTint="#FFC107" />
+                    <ProgressBar android:id="@+id/pbFan" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="0" android:progressTint="#FFC107" />
                 </LinearLayout>
             </LinearLayout>
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
 
-            <!-- Item 3: Thợ săn -->
+            <!-- Thợ săn (Mặc định 0%) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -214,15 +212,14 @@
                     android:layout_weight="1" android:layout_marginStart="16dp" android:orientation="vertical">
                     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thợ săn" android:textStyle="bold" android:textColor="#455A64" android:textSize="15sp" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="20%" android:textStyle="bold" android:textColor="#455A64" />
+                        <TextView android:id="@+id/tvPercentHunter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="0%" android:textStyle="bold" android:textColor="#455A64" />
                     </RelativeLayout>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thu thập 10 loại thú cưng" android:textSize="12sp" android:textColor="#78909C" />
-                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="20" android:progressTint="#2196F3" />
+                    <ProgressBar android:id="@+id/pbHunter" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="0" android:progressTint="#2196F3" />
                 </LinearLayout>
             </LinearLayout>
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
 
-            <!-- Item 4: Đam mê -->
+            <!-- Đam mê (Mặc định 0%) -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -239,42 +236,16 @@
                     android:layout_weight="1" android:layout_marginStart="16dp" android:orientation="vertical">
                     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đam mê" android:textStyle="bold" android:textColor="#455A64" android:textSize="15sp" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="65%" android:textStyle="bold" android:textColor="#455A64" />
+                        <TextView android:id="@+id/tvPercentPassion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="0%" android:textStyle="bold" android:textColor="#455A64" />
                     </RelativeLayout>
                     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Trả lời 500 câu hỏi" android:textSize="12sp" android:textColor="#78909C" />
-                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="65" android:progressTint="#E91E63" />
-                </LinearLayout>
-            </LinearLayout>
-            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#EEEEEE" />
-
-            <!-- Item 5: Bậc thầy -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center_vertical"
-                android:paddingVertical="12dp">
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="60dp" android:layout_height="60dp"
-                    android:src="@drawable/dragon_pet_8"
-                    android:padding="4dp" app:shapeAppearanceOverlay="@style/CircleImage"
-                    android:background="#F0F0F0" />
-                <LinearLayout
-                    android:layout_width="0dp" android:layout_height="wrap_content"
-                    android:layout_weight="1" android:layout_marginStart="16dp" android:orientation="vertical">
-                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bậc thầy" android:textStyle="bold" android:textColor="#455A64" android:textSize="15sp" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="5%" android:textStyle="bold" android:textColor="#455A64" />
-                    </RelativeLayout>
-                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hoàn thành 20 ải khó" android:textSize="12sp" android:textColor="#78909C" />
-                    <ProgressBar style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="5" android:progressTint="#9C27B0" />
+                    <ProgressBar android:id="@+id/pbPassion" style="?android:attr/progressBarStyleHorizontal" android:layout_width="match_parent" android:layout_height="6dp" android:layout_marginTop="8dp" android:progress="0" android:progressTint="#E91E63" />
                 </LinearLayout>
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
 
-    <!-- Taskbar (Thanh điều hướng dưới) -->
     <include
         android:id="@+id/taskbar"
         layout="@layout/layout_taskbar"

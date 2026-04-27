@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".ui.profile.ProfileActivity">
 
-    <!-- Header dùng chung -->
+    <!-- Ảnh nền chính -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@null" />
+
+    <!-- Thanh trạng thái phía trên -->
     <include
         android:id="@+id/taskhead"
         layout="@layout/layout_taskhead"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:fillViewport="true"
         android:background="@drawable/anhnenpr"
-        android:fillViewport="true">
+        app:layout_constraintTop_toBottomOf="@id/taskhead"
+        app:layout_constraintBottom_toTopOf="@id/taskbar">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -124,10 +141,12 @@
         </LinearLayout>
     </ScrollView>
 
+    <!-- Thanh điều hướng dưới -->
     <include
         android:id="@+id/taskbar"
         layout="@layout/layout_taskbar"
         android:layout_width="match_parent"
-        android:layout_height="75dp" />
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

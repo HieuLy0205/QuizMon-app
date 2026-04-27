@@ -4,8 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.MainActivity
 import com.example.quizmon.R
 import com.example.quizmon.ui.onboarding.AgeActivity
@@ -13,6 +16,7 @@ import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.activity_shop
 import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.history.HistoryActivity
+import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.utils.TaskHeadManager
 
 class ProfileActivity : AppCompatActivity() {
@@ -29,7 +33,15 @@ class ProfileActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //Đồng bộ với chuẩn MainActivity
+        enableEdgeToEdge()
         setContentView(R.layout.activity_profile)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.profile_root)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
         preferenceManager = PreferenceManager(this)
         val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
@@ -73,7 +85,6 @@ class ProfileActivity : AppCompatActivity() {
     }
 
     private fun setupTaskbar() {
-        // Highlight mục Hồ sơ
         findViewById<View>(R.id.indicator_profile).visibility = View.VISIBLE
         findViewById<TextView>(R.id.tv_nav_profile).setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
 
@@ -107,13 +118,11 @@ class ProfileActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        //Bắt đầu vòng lặp cập nhật Header và đếm ngược Tim
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
     }
 
     override fun onPause() {
         super.onPause()
-        //Dừng cập nhật
         TaskHeadManager.stopLoop()
     }
 }

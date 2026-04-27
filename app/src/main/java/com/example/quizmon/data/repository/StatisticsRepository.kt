@@ -1,23 +1,17 @@
 package com.example.quizmon.data.repository
 
 import android.content.Context
+import com.example.quizmon.data.model.Achievement
 import com.example.quizmon.data.model.OverallStatistics
 import com.example.quizmon.data.model.Statistics
 import com.example.quizmon.data.source.local.StatisticsLocalDataSource
 import java.util.*
 
-/**
- * Repository quản lý toàn bộ dữ liệu thống kê.
- * Đã sửa lỗi đồng bộ với DataSource và Model.
- */
 class StatisticsRepository(context: Context) {
 
     private val localDataSource = StatisticsLocalDataSource(context)
 
-    /**
-     * Lưu kết quả phiên chơi Quiz
-     */
-    fun saveQuizResult(correct: Int, wrong: Int, date: Date = Date()) {
+    fun saveQuizResult(correct: Int, wrong: Int, isHard: Boolean = false, date: Date = Date()) {
         val existingStats = localDataSource.getDailyStats(date)
         val newStats = if (existingStats != null) {
             Statistics(
@@ -37,6 +31,16 @@ class StatisticsRepository(context: Context) {
             )
         }
         localDataSource.saveDailyStats(newStats)
+        localDataSource.addQuestionsAnswered(correct + wrong)
+        
+        if (correct > wrong) { // Giả sử thắng khi đúng > sai
+            localDataSource.incrementMatchesWon()
+        }
+        
+        if (isHard && correct > wrong) {
+            localDataSource.incrementHardLevels()
+        }
+        
         updateStreak(date)
     }
 
@@ -59,16 +63,10 @@ class StatisticsRepository(context: Context) {
         localDataSource.saveLongestStreak(newStreak)
     }
 
-    /**
-     * Lấy dữ liệu tổng quát cho UI (StatisticsFragment)
-     */
     fun getOverallStatistics(): OverallStatistics {
-        val allStats: List<Statistics> = localDataSource.getAllStats()
-        
-        // Sửa lỗi Unresolved reference 'it' bằng cách chỉ định rõ kiểu dữ liệu
-        val totalCorrect = allStats.sumOf { s: Statistics -> s.correctAnswers }
-        val totalQuestions = allStats.sumOf { s: Statistics -> s.totalQuestions }
-        
+        val allStats = localDataSource.getAllStats()
+        val totalCorrect = allStats.sumOf { it.correctAnswers }
+        val totalQuestions = allStats.sumOf { it.totalQuestions }
         val currentStreak = localDataSource.getCurrentStreak()
         val longestStreak = localDataSource.getLongestStreak()
         val levelsCompleted = localDataSource.getLevelsCompleted()
@@ -85,23 +83,21 @@ class StatisticsRepository(context: Context) {
     }
 
     /**
-     * Lấy thống kê 7 ngày gần nhất cho biểu đồ
+     * Lấy danh sách thành tích với tiến độ thực tế
      */
-    fun getLast7DaysStats(): List<Statistics> {
-        val statsList = mutableListOf<Statistics>()
+    fun getAchievements(): List<Achievement> {
+        val matchesWon = localDataSource.getMatchesWon()
+        val currentStreak = localDataSource.getCurrentStreak()
+        val petsCollected = localDataSource.getPetsCollected()
+        val totalQuestions = localDataSource.getTotalQuestionsAnswered()
+        val hardLevels = localDataSource.getHardLevelsCompleted()
 
-        for (i in 6 downTo 0) {
-            val date = Calendar.getInstance().apply {
-                add(Calendar.DAY_OF_YEAR, -i)
-            }.time
-
-            val stats = localDataSource.getDailyStats(date)
-            if (stats != null) {
-                statsList.add(stats)
-            } else {
-                statsList.add(Statistics(date, 0, 0, 0, 0))
-            }
-        }
-        return statsList
+        return listOf(
+            Achievement("1", "Chiến binh", "Thắng 100 trận đấu", matchesWon, 100, matchesWon >= 100),
+            Achievement("2", "Người hâm mộ", "Đăng nhập 7 ngày liên tiếp", currentStreak, 7, currentStreak >= 7),
+            Achievement("3", "Thợ săn", "Thu thập 10 loại thú cưng", petsCollected, 10, petsCollected >= 10),
+            Achievement("4", "Đam mê", "Trả lời 500 câu hỏi", totalQuestions, 500, totalQuestions >= 500),
+            Achievement("5", "Bậc thầy", "Hoàn thành 20 ải khó", hardLevels, 20, hardLevels >= 20)
+        )
     }
 }

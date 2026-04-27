@@ -3,8 +3,6 @@ package com.example.quizmon.ui.history
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -25,15 +23,6 @@ import com.example.quizmon.utils.TaskHeadManager
 class HistoryActivity : AppCompatActivity() {
 
     private lateinit var preferenceManager: PreferenceManager
-    
-    //Handler để cập nhật đồng hồ Tim liên tục mỗi giây
-    private val updateHandler = Handler(Looper.getMainLooper())
-    private val updateRunnable = object : Runnable {
-        override fun run() {
-            updateUI()
-            updateHandler.postDelayed(this, 1000)
-        }
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,18 +31,13 @@ class HistoryActivity : AppCompatActivity() {
         
         preferenceManager = PreferenceManager(this)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.history_root)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
         setupTaskbar()
-        updateUI()
-    }
-
-    private fun updateUI() {
-        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
     }
 
     private fun setupTaskbar() {
@@ -81,12 +65,13 @@ class HistoryActivity : AppCompatActivity() {
     
     override fun onResume() {
         super.onResume()
-        updateUI()
-        updateHandler.post(updateRunnable) //Bắt đầu đếm giây
+        //Khởi động đếm ngược Header tự động
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
     }
     
     override fun onPause() {
         super.onPause()
-        updateHandler.removeCallbacks(updateRunnable) //Dừng đếm giây
+        //Dừng đếm ngược
+        TaskHeadManager.stopLoop()
     }
 }

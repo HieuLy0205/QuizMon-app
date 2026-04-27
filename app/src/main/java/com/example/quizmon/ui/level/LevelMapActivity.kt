@@ -3,9 +3,13 @@ package com.example.quizmon.ui.level
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.ImageButton
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizmon.R
@@ -28,7 +32,15 @@ class LevelMapActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // ✅ Đồng bộ chuẩn màn hình MainActivity
+        enableEdgeToEdge()
         setContentView(R.layout.activity_level_map)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.clLevelMapRoot)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
         loadProgress()
 
@@ -40,23 +52,20 @@ class LevelMapActivity : AppCompatActivity() {
         val rvLevelMap = findViewById<RecyclerView>(R.id.rvLevelMap)
 
         val totalLevels = 200
-        // Danh sách từ 1 đến 200
         val levels = (1..totalLevels).toList().reversed()
 
         val adapter = LevelAdapter(levels, currentUnlockedLevel) { selectedLevel ->
-            // Cho phép vào SubMapActivity nếu level đó đã được mở khóa
             val intent = Intent(this, SubMapActivity::class.java)
             intent.putExtra("LEVEL_ID", selectedLevel)
             startActivity(intent)
         }
 
         val layoutManager = LinearLayoutManager(this).apply {
-            stackFromEnd = true // Để cuộn từ dưới lên
+            stackFromEnd = true
         }
         rvLevelMap.layoutManager = layoutManager
         rvLevelMap.adapter = adapter
 
-        // Cuộn đến vị trí level hiện tại
         val scrollPosition = levels.indexOf(currentUnlockedLevel)
         if (scrollPosition != -1) {
             rvLevelMap.scrollToPosition(scrollPosition)
@@ -93,7 +102,6 @@ class LevelMapActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         loadProgress()
-        // Cập nhật lại adapter để hiển thị đúng trạng thái các nút
         findViewById<RecyclerView>(R.id.rvLevelMap).adapter?.notifyDataSetChanged()
     }
 

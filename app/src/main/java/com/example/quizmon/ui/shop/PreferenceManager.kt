@@ -59,7 +59,6 @@ class PreferenceManager(context: Context) {
     fun handleCorrectAnswer(): Int {
         val newStreak = getCorrectStreak() + 1
         sharedPreferences.edit().putInt("correct_streak", newStreak).apply()
-
         val expToAdd = 10 + (newStreak - 1)
         addExp(expToAdd)
         return expToAdd
@@ -76,14 +75,28 @@ class PreferenceManager(context: Context) {
     fun saveHearts(hearts: Int) {
         sharedPreferences.edit().putInt("current_hearts", hearts).apply()
     }
+    
     fun getHearts(): Int {
-        return sharedPreferences.getInt("current_hearts", 5) // Mặc định 5 tim
+        return sharedPreferences.getInt("current_hearts", 5)
     }
+
+    /**
+     * Cộng thêm tim (không giới hạn trần 5 mạng)
+     */
+    fun addHearts(amount: Int) {
+        val next = getHearts() + amount
+        saveHearts(next)
+        if (next >= 5) {
+            saveLastHeartLossTime(0L) // Dừng hồi phục nếu đã đầy hoặc vượt mức
+        }
+    }
+
     fun useHeart() {
         val current = getHearts()
         if (current > 0) {
-            saveHearts(current - 1)
-            // Nếu dùng tim đầu tiên (đang từ 5 xuống 4), bắt đầu mốc thời gian hồi tim
+            val next = current - 1
+            saveHearts(next)
+            // Chỉ bắt đầu đếm ngược khi tim rơi xuống dưới mức 5
             if (current == 5) {
                 saveLastHeartLossTime(System.currentTimeMillis())
             }
@@ -99,36 +112,41 @@ class PreferenceManager(context: Context) {
     }
 
     /**
-     * Tự động hồi phục tim dựa trên thời gian thực
-     * Trả về thời gian còn lại (ms) của lượt hồi hiện tại
+     * Tự động hồi phục tim (Mốc 5 mạng)
      */
     fun autoRegenerateHearts(): Long {
         var currentHearts = getHearts()
-        if (currentHearts >= 5) return 0
+        if (currentHearts >= 5) {
+            saveLastHeartLossTime(0L)
+            return 0
+        }
 
         val lastTime = getLastHeartLossTime()
-        if (lastTime == 0L) return 0
+        if (lastTime == 0L) {
+            // Đảm bảo luôn có mốc thời gian nếu tim < 5
+            saveLastHeartLossTime(System.currentTimeMillis())
+            return 3 * 60 * 1000L
+        }
 
         val currentTime = System.currentTimeMillis()
         val diff = currentTime - lastTime
-        val recoveryTime = 3 * 60 * 1000L // 3 phút = 180,000ms
+        val recoveryInterval = 3 * 60 * 1000L // 3 phút
 
-        val heartsToRecover = (diff / recoveryTime).toInt()
+        val heartsToRecover = (diff / recoveryInterval).toInt()
         if (heartsToRecover > 0) {
-            val newHearts = (currentHearts + heartsToRecover).coerceAtMost(5)
-            saveHearts(newHearts)
-
-            if (newHearts < 5) {
-                // Tiếp tục đếm ngược từ mốc mới
-                saveLastHeartLossTime(lastTime + (heartsToRecover * recoveryTime))
+            val nextHearts = (currentHearts + heartsToRecover).coerceAtMost(5)
+            saveHearts(nextHearts)
+            
+            if (nextHearts < 5) {
+                saveLastHeartLossTime(lastTime + (heartsToRecover * recoveryInterval))
             } else {
                 saveLastHeartLossTime(0L)
             }
-            currentHearts = newHearts
+            currentHearts = nextHearts
         }
 
         return if (currentHearts < 5) {
-            recoveryTime - (diff % recoveryTime)
+            recoveryInterval - (diff % recoveryInterval)
         } else {
             0
         }

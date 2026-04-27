@@ -42,10 +42,10 @@ class FlipCardActivity : AppCompatActivity() {
             "Quẻ đại cát!\nChúc bạn ngày mới tốt lành",
             "Nhận 1 phụ trợ\n50/50",
             "Nhận 1 phụ trợ\nNhân đôi cơ hội",
-            "Nhận 1 phụ trợ\nđáp án đúng",
-            "Nhận 1 phụ trợ\nBỏ qua câu hỏi",
+            "Nhận 1 phụ trợ\nĐáp án đúng",
+            "Nhận 1 phụ trợ\nNhân đôi điểm",
             "Nhận 50 Xu\nmay mắn",
-            "Nhận 100 EXP\nkinh nghiệm",
+            "Nhận 100 EXP\n kinh nghiệm",
             "Nhận 1 Mạng\nhồi sinh",
             "Quẻ bình an:\nVạn sự hanh thông!"
         ).shuffled()

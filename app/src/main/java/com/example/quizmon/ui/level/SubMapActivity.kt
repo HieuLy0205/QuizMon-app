@@ -200,11 +200,12 @@ class SubMapActivity : AppCompatActivity() {
                     markSpecialItemDone(item)
                 }
                 SubMapType.TREASURE -> {
-                    startActivity(Intent(this, com.example.quizmon.ui.level.TreasureActivity::class.java))
-                    markSpecialItemDone(item)
+                    //Thay đổi: Sử dụng startActivityForResult cho Treasure
+                    val intent = Intent(this, com.example.quizmon.ui.level.TreasureActivity::class.java)
+                    startActivityForResult(intent, 1003)
                 }
                 SubMapType.FLIP_CARD -> {
-                    val intent = Intent(this, FlipCardActivity::class.java)
+                    val intent = Intent(this, com.example.quizmon.ui.level.FlipCardActivity::class.java)
                     startActivityForResult(intent, 1002)
                 }
                 else -> {}
@@ -241,7 +242,8 @@ class SubMapActivity : AppCompatActivity() {
                 saveMapState()
                 updateUI() 
                 checkLevelCompletion()
-            } else if (requestCode == 1002) {
+            } else if (requestCode == 1002 || requestCode == 1003) {
+                //Nhận kết quả từ FlipCard (1002) hoặc Treasure (1003)
                 if (resultCode == RESULT_OK) {
                     markSpecialItemDone(item)
                 }
