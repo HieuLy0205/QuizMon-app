@@ -8,9 +8,12 @@ import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.R
 import com.example.quizmon.data.repository.QuizRepository
 import com.example.quizmon.data.repository.StatisticsRepository
@@ -44,7 +47,18 @@ class QuizActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        //Thêm dòng này để xử lý chiều cao hệ thống (không bị tràn viền)
+        enableEdgeToEdge()
+        
         setContentView(R.layout.activity_quiz)
+
+        //Thiết lập lề an toàn để nội dung nằm dưới thanh trạng thái
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(android.R.id.content)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
         initViews()
         quizRepository = QuizRepository(this)
@@ -122,11 +136,11 @@ class QuizActivity : AppCompatActivity() {
 
             if (isCorrect) {
                 animateCorrect(selectedIndex)
-                // ✅ Cập nhật EXP và Streak
+                // Cập nhật EXP và Streak
                 preferenceManager.handleCorrectAnswer()
             } else {
                 animateWrong(selectedIndex, q.correctIndex)
-                // ✅ Reset Streak
+                // Reset Streak
                 preferenceManager.handleWrongAnswer()
             }
 

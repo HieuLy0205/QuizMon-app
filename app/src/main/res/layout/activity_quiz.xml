@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/anh_nen_shop"
+    android:fitsSystemWindows="true"
     android:padding="16dp">
 
     <!-- Số thứ tự câu hỏi -->
@@ -31,7 +32,7 @@
         android:progress="10"
         android:layout_marginBottom="12dp"/>
 
-    <!-- Card câu hỏi — giữ id tvQuestion như cũ -->
+    <!-- Card câu hỏi -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="0dp"
