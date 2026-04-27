@@ -24,7 +24,6 @@ class PetActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pet)
-        
         pref = PreferenceManager(this)
         
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.pet)) { v, insets ->
@@ -42,12 +41,11 @@ class PetActivity : AppCompatActivity() {
         btn_tanglevel.setOnClickListener {
             val currentid = pref.getPetLevel()
             val currientCoin = pref.getCoins()
-            if (currentid < 3) {
+            if (currentid != 3) {
                 if (currientCoin >= 20) {
                     pref.saveCoins(currientCoin - 20)
                     val nextLevel = currentid + 1
                     pref.savePetLevel(nextLevel)
-                    
                     // Cập nhật lại thông tin pet và header
                     infomationPet()
                     TaskHeadManager.update(findViewById(R.id.taskhead), pref)
@@ -62,21 +60,18 @@ class PetActivity : AppCompatActivity() {
         }
         btnBack.setOnClickListener { finish() }
     }
-
     override fun onResume() {
         super.onResume()
         infomationPet()
         //Kích hoạt đếm ngược Tim đồng bộ qua Manager
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), pref)
     }
-    
     override fun onPause() {
         super.onPause()
         //Dừng đếm ngược và dừng hoạt ảnh pet để tiết kiệm tài nguyên
         TaskHeadManager.stopLoop()
         petAnimetor.stop()
     }
-
     fun infomationPet(){
         val currentPetid = pref.getPetid()
         val currentlevel = pref.getPetLevel()

@@ -7,7 +7,10 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.MainActivity
 import com.example.quizmon.R
 import com.example.quizmon.data.repository.StatisticsRepository
@@ -45,7 +48,15 @@ class StreakActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //Đồng bộ với chuẩn MainActivity
+        enableEdgeToEdge()
         setContentView(R.layout.activity_streak)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.streak_root)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
         preferenceManager = PreferenceManager(this)
         statisticsRepository = StatisticsRepository(this)

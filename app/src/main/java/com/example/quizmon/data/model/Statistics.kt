@@ -11,7 +11,10 @@ data class Statistics(
     val wrongAnswers: Int = 0,
     val totalQuestions: Int = 0,
     val streak: Int = 0
-)
+) {
+    val accuracyRate: Int
+        get() = if (totalQuestions > 0) (correctAnswers * 100) / totalQuestions else 0
+}
 
 /**
  * Thống kê tổng quát cho UI

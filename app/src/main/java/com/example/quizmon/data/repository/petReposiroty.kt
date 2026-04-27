@@ -12,8 +12,8 @@ class petReposiroty {
             1,
             3,
             mapOf(
-                1 to intArrayOf(R.drawable.dragon_c1_f2,
-                    R.drawable.dragon_c1_f1),
+                1 to intArrayOf(R.drawable.dragon_c1_f1,
+                    R.drawable.dragon_c1_f2),
                 2 to intArrayOf(R.drawable.dragon_c2_f1,
                     R.drawable.dragon_c2_f2),
                 3 to intArrayOf(R.drawable.dragon_pet_2,
@@ -21,7 +21,7 @@ class petReposiroty {
             )
         ),
         Pet(
-            "0",
+            "2",
             "Sầu riêng",
             1,
             3,
@@ -32,7 +32,7 @@ class petReposiroty {
             )
         ),
         Pet(
-            "2",
+            "3",
             "Bạch tuột",
             1,
             3,
@@ -43,7 +43,7 @@ class petReposiroty {
             )
         ),
         Pet(
-            "3",
+            "4",
             "Sao Nhị",
             1,
             3,
