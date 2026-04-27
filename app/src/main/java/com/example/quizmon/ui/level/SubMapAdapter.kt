@@ -46,9 +46,11 @@ class SubMapAdapter(
         fun bind(item: SubMapItem) {
             tvId.text = ""
             ivIcon.clearColorFilter()
-            val density = itemView.context.resources.displayMetrics.density
+            
+            // Đảm bảo không có padding để icon to tối đa trong ô
+            ivIcon.setPadding(0, 0, 0, 0)
 
-            // 1. Lựa chọn Icon dựa trên trạng thái (Dùng bt_dung, bt_sai, bt_bonus)
+            // 1. Lựa chọn Icon dựa trên trạng thái
             val iconRes = when (item.status) {
                 CompletionStatus.CORRECT -> {
                     if (item.type == SubMapType.QUESTION) R.drawable.bt_dung
@@ -72,27 +74,10 @@ class SubMapAdapter(
                 ivIcon.setImageResource(0)
             }
 
-            // 2. Xử lý hiển thị ô
-            when (item.status) {
-                CompletionStatus.CORRECT, CompletionStatus.INCORRECT -> {
-                    // Khi đã trả lời, ảnh bt_dung/bt_sai/bt_bonus đã bao gồm cả hình dạng và màu sắc
-                    cardItem.setCardBackgroundColor(Color.TRANSPARENT)
-                    cardItem.cardElevation = 0f
-                    cardItem.radius = 0f
-                }
-
-                CompletionStatus.NOT_STARTED -> {
-                    if (item.type == SubMapType.QUESTION) {
-                        cardItem.setCardBackgroundColor(Color.parseColor("#FFFFFF"))
-                        cardItem.radius = 12f * density
-                        cardItem.cardElevation = 4f
-                    } else {
-                        cardItem.setCardBackgroundColor(Color.TRANSPARENT)
-                        cardItem.cardElevation = 0f
-                        cardItem.radius = 0f
-                    }
-                }
-            }
+            // 2. Đồng bộ hóa kích thước và loại bỏ viền/bóng đổ cho tất cả các ô
+            cardItem.setCardBackgroundColor(Color.TRANSPARENT)
+            cardItem.cardElevation = 0f
+            cardItem.radius = 0f
 
             itemView.setOnClickListener { onItemClick(item, adapterPosition) }
         }

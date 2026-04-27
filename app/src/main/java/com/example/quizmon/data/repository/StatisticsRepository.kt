@@ -1,6 +1,7 @@
 package com.example.quizmon.data.repository
 
 import android.content.Context
+import com.example.quizmon.data.model.Achievement
 import com.example.quizmon.data.model.OverallStatistics
 import com.example.quizmon.data.model.Statistics
 import com.example.quizmon.data.source.local.StatisticsLocalDataSource
@@ -10,7 +11,7 @@ class StatisticsRepository(context: Context) {
 
     private val localDataSource = StatisticsLocalDataSource(context)
 
-    fun saveQuizResult(correct: Int, wrong: Int, date: Date = Date()) {
+    fun saveQuizResult(correct: Int, wrong: Int, isHard: Boolean = false, date: Date = Date()) {
         val existingStats = localDataSource.getDailyStats(date)
         val newStats = if (existingStats != null) {
             Statistics(
@@ -30,13 +31,20 @@ class StatisticsRepository(context: Context) {
             )
         }
         localDataSource.saveDailyStats(newStats)
+        localDataSource.addQuestionsAnswered(correct + wrong)
+        
+        if (correct > wrong) { // Giả sử thắng khi đúng > sai
+            localDataSource.incrementMatchesWon()
+        }
+        
+        if (isHard && correct > wrong) {
+            localDataSource.incrementHardLevels()
+        }
+        
         updateStreak(date)
     }
 
     private fun updateStreak(currentDate: Date) {
-        val calendar = Calendar.getInstance()
-        calendar.time = currentDate
-
         val yesterday = Calendar.getInstance().apply {
             time = currentDate
             add(Calendar.DAY_OF_YEAR, -1)
@@ -58,17 +66,14 @@ class StatisticsRepository(context: Context) {
     fun getOverallStatistics(): OverallStatistics {
         val allStats = localDataSource.getAllStats()
         val totalCorrect = allStats.sumOf { it.correctAnswers }
-        val totalWrong = allStats.sumOf { it.wrongAnswers }
         val totalQuestions = allStats.sumOf { it.totalQuestions }
         val currentStreak = localDataSource.getCurrentStreak()
         val longestStreak = localDataSource.getLongestStreak()
-        
         val levelsCompleted = localDataSource.getLevelsCompleted()
         val startDate = Date(localDataSource.getStartDate())
 
         return OverallStatistics(
             totalCorrect = totalCorrect,
-            totalWrong = totalWrong,
             totalQuestions = totalQuestions,
             currentStreak = currentStreak,
             longestStreak = longestStreak,
@@ -77,22 +82,22 @@ class StatisticsRepository(context: Context) {
         )
     }
 
-    fun getLast7DaysStats(): List<Statistics> {
-        val statsList = mutableListOf<Statistics>()
-        val calendar = Calendar.getInstance()
+    /**
+     * Lấy danh sách thành tích với tiến độ thực tế
+     */
+    fun getAchievements(): List<Achievement> {
+        val matchesWon = localDataSource.getMatchesWon()
+        val currentStreak = localDataSource.getCurrentStreak()
+        val petsCollected = localDataSource.getPetsCollected()
+        val totalQuestions = localDataSource.getTotalQuestionsAnswered()
+        val hardLevels = localDataSource.getHardLevelsCompleted()
 
-        for (i in 6 downTo 0) {
-            val date = Calendar.getInstance().apply {
-                add(Calendar.DAY_OF_YEAR, -i)
-            }.time
-
-            val stats = localDataSource.getDailyStats(date)
-            if (stats != null) {
-                statsList.add(stats)
-            } else {
-                statsList.add(Statistics(date, 0, 0, 0, 0))
-            }
-        }
-        return statsList
+        return listOf(
+            Achievement("1", "Chiến binh", "Thắng 100 trận đấu", matchesWon, 100, matchesWon >= 100),
+            Achievement("2", "Người hâm mộ", "Đăng nhập 7 ngày liên tiếp", currentStreak, 7, currentStreak >= 7),
+            Achievement("3", "Thợ săn", "Thu thập 10 loại thú cưng", petsCollected, 10, petsCollected >= 10),
+            Achievement("4", "Đam mê", "Trả lời 500 câu hỏi", totalQuestions, 500, totalQuestions >= 500),
+            Achievement("5", "Bậc thầy", "Hoàn thành 20 ải khó", hardLevels, 20, hardLevels >= 20)
+        )
     }
 }

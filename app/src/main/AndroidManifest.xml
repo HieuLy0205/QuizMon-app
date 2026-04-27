@@ -19,7 +19,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -36,6 +35,7 @@
         <activity android:name=".ui.quiz.QuizActivity"/>
         <activity android:name=".ui.level.TreasureActivity"/>
         <activity android:name=".ui.level.SpinWheelActivity"/>
+        <activity android:name=".ui.level.FlipCardActivity"/>
         <activity android:name=".ui.streak.StreakActivity"/>
         <activity android:name=".ui.statistics.StatisticsActivity" />
         <activity android:name=".ui.onboarding.AgeActivity" />
@@ -53,5 +53,4 @@
             </intent-filter>
         </receiver>
     </application>
-
 </manifest>

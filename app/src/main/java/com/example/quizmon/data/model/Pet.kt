@@ -1,16 +1,15 @@
 package com.example.quizmon.data.model
 
 data class Pet(
-    //mã định danh (1)
+    //mã định danh (1),(2)
     val id: String,
     //tên thú cưng
     val name: String,
-    //cấp độ
-    val level: Int,
-    //điểm kinh nghiệm
-    val exp: Int,
-    //danh sách ảnh
-    val imageResIds: List<Int>,
-    //hệ loại pet
-    val type: String
+
+    val currentelevel: Int,
+
+    val levelmax: Int,
+    //hoạt ảnh
+    val animetor: Map<Int, IntArray>,
+
 )

@@ -16,6 +16,10 @@ import kotlinx.coroutines.withContext
 import java.text.SimpleDateFormat
 import java.util.*
 
+/**
+ * Fragment hiển thị thống kê người dùng.
+ * Đã fix lỗi nhấp nháy con số khi chuyển tab.
+ */
 class StatisticsFragment : Fragment() {
 
     private lateinit var repository: StatisticsRepository
@@ -29,7 +33,6 @@ class StatisticsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Sử dụng layout fragment_statistics đã được tối giản
         return inflater.inflate(R.layout.fragment_statistics, container, false)
     }
 
@@ -38,6 +41,10 @@ class StatisticsFragment : Fragment() {
         repository = StatisticsRepository(requireContext())
 
         initViews(view)
+        
+        // Trạng thái chờ trước khi nạp dữ liệu để tránh nhấp nháy
+        clearUI()
+        
         loadStatistics()
     }
 
@@ -46,35 +53,57 @@ class StatisticsFragment : Fragment() {
         tvSinceValue = view.findViewById(R.id.tv_since_value)
         tvQuestionsValue = view.findViewById(R.id.tv_questions_value)
         tvRateValue = view.findViewById(R.id.tv_rate_value)
+
+        view.findViewById<View>(R.id.btnBack)?.setOnClickListener {
+            requireActivity().onBackPressedDispatcher.onBackPressed()
+        }
+    }
+
+    /**
+     * Xóa các con số mặc định trong XML để tránh bị nháy giá trị cũ/mới
+     */
+    private fun clearUI() {
+        tvLevelsValue.text = "--"
+        tvSinceValue.text = "--"
+        tvQuestionsValue.text = "--"
+        tvRateValue.text = "--%"
     }
 
     private fun loadStatistics() {
         viewLifecycleOwner.lifecycleScope.launch {
             try {
-                val overall = withContext(Dispatchers.IO) {
+                // Chỉ định rõ kiểu dữ liệu <OverallStatistics>
+                val overall = withContext<OverallStatistics>(Dispatchers.IO) {
                     repository.getOverallStatistics()
                 }
+                // Cập nhật giao diện một lần duy nhất khi dữ liệu đã sẵn sàng
                 updateUI(overall)
             } catch (e: Exception) {
                 e.printStackTrace()
+                updateUI(OverallStatistics())
             }
         }
     }
 
     private fun updateUI(overall: OverallStatistics) {
-        tvLevelsValue.text = overall.levelsCompleted.toString()
+        // Cập nhật số màn chơi
+        tvLevelsValue.text = String.format(Locale.getDefault(), "%d", overall.levelsCompleted)
 
-        val dateFormat = SimpleDateFormat("MMMM, yyyy", Locale("vi", "VN"))
+        // Định dạng ngày tham gia
+        val vietnameseLocale = Locale("vi", "VN")
+        val dateFormat = SimpleDateFormat("'tháng' M, yyyy", vietnameseLocale)
         val joinDate = overall.startDate ?: Date()
         tvSinceValue.text = dateFormat.format(joinDate)
 
-        tvQuestionsValue.text = overall.totalQuestions.toString()
-        tvRateValue.text = "${overall.overallAccuracy}%"
+        // Cập nhật tổng câu hỏi
+        tvQuestionsValue.text = String.format(Locale.getDefault(), "%d", overall.totalQuestions)
+        
+        // Cập nhật tỷ lệ chính xác
+        tvRateValue.text = String.format(Locale.getDefault(), "%d%%", overall.overallAccuracy)
     }
 
     companion object {
-        fun newInstance(): StatisticsFragment {
-            return StatisticsFragment()
-        }
+        @JvmStatic
+        fun newInstance() = StatisticsFragment()
     }
 }

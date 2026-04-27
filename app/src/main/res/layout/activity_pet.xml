@@ -1,74 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:id="@+id/pet"
-    android:gravity="center"
-    android:padding="24dp"
+    android:gravity="center_horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Header dùng chung -->
+    <include
+        android:id="@+id/taskhead"
+        layout="@layout/layout_taskhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <LinearLayout
-        android:id="@+id/layoutcoin"
-        android:layout_width="161dp"
-        android:layout_height="65dp"
-        android:gravity="center_vertical">
+        android:layout_width="401dp"
+        android:layout_height="91dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
 
-        <ImageView
-            android:id="@+id/imgcoin"
-            android:layout_width="70dp"
-            android:layout_height="80dp"
-            android:src="@drawable/sao_shop_map">
-        </ImageView>
+        <Button
+            android:layout_width="194dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/eevee_brown"
+            android:text="Đổi pet"
+            android:textColor="#0B0A0A"
+            android:textSize="19dp"
+            android:textStyle="bold">
+        </Button>
 
-        <TextView
-            android:id="@+id/textcoin"
-            android:layout_width="84dp"
-            android:layout_height="36dp"
-            android:background="@drawable/icon_shop_map"
-            android:gravity="center"
-            android:text="@string/text_so"
-            android:textSize="20sp">
-        </TextView>
+        <Button
+            android:layout_width="201dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/eevee_brown"
+            android:text="Chiến Pet"
+            android:textColor="#0B0A0A"
+            android:textSize="19dp"
+            android:textStyle="bold">
+        </Button>
 
     </LinearLayout>
 
-    <FrameLayout
-        android:layout_width="300dp"
-        android:layout_height="300dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
 
-        <ImageView
-            android:id="@+id/imgPet1"
-            android:src="@drawable/dragon_pet_1"
+        <FrameLayout
             android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:contentDescription="@string/pet_image_desc">
+            android:layout_height="300dp">
 
-        </ImageView>
+            <ImageView
+                android:id="@+id/imgPet1"
+                android:src="@drawable/dragon_pet_1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:contentDescription="@string/pet_image_desc" />
 
-    </FrameLayout>
+        </FrameLayout>
 
-    <ImageButton
-        android:id="@+id/btnBack"
-        android:layout_width="45dp"
-        android:layout_height="45dp"
-        android:layout_margin="24dp"
-        android:background="@drawable/bg_difficulty_btn"
-        android:contentDescription="@string/btn_back"
-        android:padding="12dp"
-        android:layout_gravity="bottom"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ic_back" />
+        <Button
+            android:id="@+id/btn_tanglevel"
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/btn_tanglevel"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:cornerRadius="12dp" />
 
-    <Button
-        android:id="@+id/btn_tanglevel"
-        android:layout_width="117dp"
-        android:layout_height="45dp"
-        android:text="@string/btn_tanglevel"
-        android:backgroundTint="#AD141614"
-        android:textStyle="bold">
-    </Button>
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_difficulty_btn"
+            android:contentDescription="@string/btn_back"
+            android:padding="12dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_back"
+            app:tint="#FFFFFF" />
 
-
+    </LinearLayout>
 
 </LinearLayout>

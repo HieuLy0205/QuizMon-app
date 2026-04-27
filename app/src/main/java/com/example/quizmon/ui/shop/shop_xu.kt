@@ -14,14 +14,19 @@ import com.google.android.material.button.MaterialButton
 
 class shop_xu: AppCompatActivity() {
     private  var selectedItem: PaymentItem? = null
+    private lateinit var preferenceManager: PreferenceManager
+    private lateinit var btnBack: ImageButton
+    private lateinit var recyclerView: RecyclerView
+    private lateinit var btnConfirmPaymenttn: MaterialButton
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shop_xu)
-        val recyclerView = findViewById<RecyclerView>(R.id.rlvmenhgia)
-        val btnBack = findViewById<ImageButton>(R.id.btnBack)
-        val btnConfirmPaymenttn = findViewById<MaterialButton>(R.id.btnConfirmPayment)
-        val preferenceManager = PreferenceManager(this)
+        recyclerView = findViewById(R.id.rlvmenhgia)
+        btnBack = findViewById(R.id.btnBack)
+        btnConfirmPaymenttn = findViewById(R.id.btnConfirmPayment)
+        preferenceManager = PreferenceManager(this)
 
         recyclerView.layoutManager = GridLayoutManager(this, 3)
         //khai báo list payment. để khai báo list này mình cần một fantion để khai báo
@@ -43,13 +48,17 @@ class shop_xu: AppCompatActivity() {
             showPaymentDialog(item)
         }
         recyclerView.adapter = adapter
+
         btnBack.setOnClickListener { finish() }
+
         btnConfirmPaymenttn.setOnClickListener {
+            val item = selectedItem
             if (selectedItem == null) {
                 Toast.makeText(this, "chọn loại thẻ thanh toán", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }else {
-                preferenceManager.addXu(selectedItem!!.amount)
+                preferenceManager.addXu(item!!.amount)
+                preferenceManager.Dk_batmo_xn("nv3", true)
                 Toast.makeText(
                     this,
                     "thanh toán thành công ${selectedItem!!.amount}đ",
@@ -59,7 +68,6 @@ class shop_xu: AppCompatActivity() {
         }
     }
     //nói đến thanh toán: đây là bộ sử lý giao diện
-
     private fun SetupQr() {
         val imgQr = findViewById<ImageView>(R.id.imgQRpay)
         val imgQrmomo = findViewById<ImageView>(R.id.imgQR)

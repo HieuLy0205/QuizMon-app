@@ -2,11 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/history_root"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".ui.history.HistoryActivity">
 
-    <!-- Ảnh nền chính của App -->
+    <!-- Ảnh nền chính -->
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -18,7 +19,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:contentDescription="@null" />
 
-    <!-- Header -->
+    <!-- Thanh trạng thái phía trên -->
     <include
         android:id="@+id/taskhead"
         layout="@layout/layout_taskhead"
@@ -26,34 +27,41 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:padding="12dp"
+        android:fillViewport="true"
         app:layout_constraintTop_toBottomOf="@id/taskhead"
         app:layout_constraintBottom_toTopOf="@id/taskbar">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ls"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:layout_marginBottom="16dp"
-            android:layout_gravity="center_horizontal" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvHistory"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:clipToPadding="false"
-            android:paddingBottom="20dp"
-            tools:listitem="@layout/item_history" />
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center_horizontal">
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ls"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="16dp" />
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvHistory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                tools:listitem="@layout/item_history" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Thanh điều hướng dưới -->
     <include
         android:id="@+id/taskbar"
         layout="@layout/layout_taskbar"

@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.quizmon.data.repository.petReposiroty
 import com.example.quizmon.ui.pet.PetActivity
 import com.example.quizmon.ui.shop.shop_phobien
 import com.example.quizmon.ui.level.LevelMapActivity
@@ -25,7 +26,9 @@ import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
+import com.example.quizmon.ui.pet.AnimetorActivity
 import com.example.quizmon.utils.StreakManager
+import com.example.quizmon.utils.TaskHeadManager
 import kotlin.math.abs
 
 class MainActivity : AppCompatActivity() {
@@ -33,10 +36,17 @@ class MainActivity : AppCompatActivity() {
     private var dY = 0f
     private val CLICK_DRAG_TOLERANCE = 10f
 
+    private lateinit var reposiroty: petReposiroty
+
+    private lateinit var animetor: AnimetorActivity
+    private  lateinit var preferenceManager: PreferenceManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        reposiroty = petReposiroty()
+        preferenceManager = PreferenceManager(this)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -45,8 +55,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         setupTaskbar()
-        updateUI()
         setupFloatingPet()
+        updateUI()
 
         findViewById<View>(R.id.btnQuiz).setOnClickListener {
             startActivity(Intent(this, LevelMapActivity::class.java))
@@ -70,6 +80,8 @@ class MainActivity : AppCompatActivity() {
         val ivFloatingPet = findViewById<ImageView>(R.id.ivFloatingPet)
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
         ivFloatingPet.startAnimation(bounceAnimation)
+
+        animetor = AnimetorActivity(ivFloatingPet)
 
         ivFloatingPet.setOnTouchListener { view, event ->
             when (event.actionMasked) {
@@ -101,22 +113,35 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         updateUI()
+        //Tự động cập nhật Header và đếm ngược Tim
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+    }
+    
+    override fun onPause() {
+        super.onPause()
+        animetor.stop()
+        //Dừng cập nhật
+        TaskHeadManager.stopLoop()
     }
 
     private fun updateUI() {
         val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-        val preferenceManager = PreferenceManager(this)
         val streakManager = StreakManager(this)
-
+        val preferenceManager = PreferenceManager(this)
+        val petLevel = preferenceManager.getPetLevel()
+        val currentPetId = "1"
+        val petDetail = reposiroty.getPetById(currentPetId)
+        petDetail?.let{
+            // Đồng bộ level hiện tại cho con pet
+            val activePet = it.copy(currentelevel = petLevel)
+            // Ra lệnh bắt đầu chạy ảnh lặp
+            animetor.starAnimetor(activePet)
+        }
         val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
         findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
 
-        // Cập nhật đúng ID mới từ layout_taskhead
-        val textCoin = findViewById<TextView>(R.id.textcoins)
-        textCoin.text = preferenceManager.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = preferenceManager.getXu().toString()
-
+        // Cập nhật các thành phần riêng của trang
+        findViewById<TextView>(R.id.tvStreakCount)?.text = streakManager.getCurrentStreak().toString()
     }
 
     private fun setupTaskbar() {

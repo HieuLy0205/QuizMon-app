@@ -19,13 +19,18 @@ import com.example.quizmon.ui.pet.PetActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
+import com.example.quizmon.utils.TaskHeadManager
 
 class activity_shop : AppCompatActivity() {
+
+    private lateinit var preferenceManager: PreferenceManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_shop_main)
+
+        preferenceManager = PreferenceManager(this)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -33,67 +38,45 @@ class activity_shop : AppCompatActivity() {
             insets
         }
         setupTaskbar()
-        //Bắt đầu nút Rương mạng
+        
         findViewById<Button>(R.id.btn_goi_api1).setOnClickListener {
-            val intent = Intent(this, shop_tim::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, shop_tim::class.java))
         }
-        //Bắt đầu nút Rương xu
         findViewById<Button>(R.id.btn_goi_api2).setOnClickListener {
-            val intent = Intent(this, shop_xu::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, shop_xu::class.java))
         }
         findViewById<Button>(R.id.btn_goi_api3).setOnClickListener {
-            val intent = Intent(this, shop_phobien::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, shop_phobien::class.java))
         }
         findViewById<Button>(R.id.btn_goi_api4).setOnClickListener {
-            val intent = Intent(this, shop_pvp::class.java)
-            startActivity(intent)
+            startActivity(Intent(this, shop_pvp::class.java))
         }
     }
 
     private fun setupTaskbar() {
-        // Highlight Cửa hàng bằng thanh gỗ
         findViewById<View>(R.id.indicator_shop).visibility = View.VISIBLE
         findViewById<TextView>(R.id.tv_nav_shop).setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
         
-        // Sự kiện click cho các icon trên taskbar
         findViewById<LinearLayout>(R.id.nav_home).setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
-
-        findViewById<LinearLayout>(R.id.nav_profile).setOnClickListener {
-            startActivity(Intent(this, ProfileActivity::class.java))
-        }
-        
-        findViewById<LinearLayout>(R.id.nav_history).setOnClickListener {
-            startActivity(Intent(this, HistoryActivity::class.java))
-        }
-
-        findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener {
-            startActivity(Intent(this, activity_shop::class.java))
-        }
-
-        findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {
-            startActivity(Intent(this, SettingsActivity::class.java))
-        }
+        findViewById<LinearLayout>(R.id.nav_profile).setOnClickListener { startActivity(Intent(this, ProfileActivity::class.java)) }
+        findViewById<LinearLayout>(R.id.nav_history).setOnClickListener { startActivity(Intent(this, HistoryActivity::class.java)) }
+        findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener { /* Already here */ }
+        findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener { startActivity(Intent(this, SettingsActivity::class.java)) }
     }
 
     override fun onResume() {
         super.onResume()
-        updateHeaderStats()
+        //Bắt đầu đếm ngược Header tự động
+        TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), preferenceManager)
     }
-
-    private fun updateHeaderStats() {
-        val preferenceManager = PreferenceManager(this)
-        // Cập nhật đúng ID mới từ layout_taskhead
-        val textCoin = findViewById<TextView>(R.id.textcoins)
-        textCoin.text = preferenceManager.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = preferenceManager.getXu().toString()
+    
+    override fun onPause() {
+        super.onPause()
+        //Dừng đếm ngược
+        TaskHeadManager.stopLoop()
     }
-
 }

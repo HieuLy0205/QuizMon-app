@@ -8,9 +8,12 @@ import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.widget.*
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.MainActivity
 import com.example.quizmon.R
 import com.example.quizmon.ui.notification.NotificationHelper
@@ -18,14 +21,26 @@ import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.shop.activity_shop
 import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.history.HistoryActivity
+import com.example.quizmon.utils.TaskHeadManager
 
 class SettingsActivity : AppCompatActivity() {
 
     private lateinit var notificationHelper: NotificationHelper
+    private lateinit var preferenceManager: PreferenceManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //Đồng bộ với chuẩn MainActivity
+        enableEdgeToEdge()
         setContentView(R.layout.activity_settings)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.settings_root)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
+        preferenceManager = PreferenceManager(this)
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
@@ -96,16 +111,12 @@ class SettingsActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        updateHeaderStats()
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
     }
-
-    private fun updateHeaderStats() {
-        val pref = PreferenceManager(this)
-        val textCoin = findViewById<TextView>(R.id.textcoins)
-        textCoin.text = pref.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = pref.getXu().toString()
-
+    
+    override fun onPause() {
+        super.onPause()
+        TaskHeadManager.stopLoop()
     }
 
     private fun setupTaskbar() {

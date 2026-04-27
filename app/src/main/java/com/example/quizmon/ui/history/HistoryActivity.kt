@@ -18,31 +18,27 @@ import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.shop.activity_shop
+import com.example.quizmon.utils.TaskHeadManager
 
 class HistoryActivity : AppCompatActivity() {
+
+    private lateinit var preferenceManager: PreferenceManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_history)
+        
+        preferenceManager = PreferenceManager(this)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.history_root)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
         setupTaskbar()
-        updateUI()
     }
-
-    private fun updateUI() {
-        val preferenceManager = PreferenceManager(this)
-        // Cập nhật ID mới từ layout_taskhead
-        val textCoin = findViewById<TextView>(R.id.textcoins)
-        textCoin.text = preferenceManager.getCoins().toString()
-        val textXu = findViewById<TextView>(R.id.textxu)
-        textXu.text = preferenceManager.getXu().toString()
-     }
 
     private fun setupTaskbar() {
         findViewById<View>(R.id.indicator_history).visibility = View.VISIBLE
@@ -58,10 +54,6 @@ class HistoryActivity : AppCompatActivity() {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
 
-        findViewById<LinearLayout>(R.id.nav_history).setOnClickListener {
-            // Already here
-        }
-
         findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener {
             startActivity(Intent(this, activity_shop::class.java))
         }
@@ -69,5 +61,17 @@ class HistoryActivity : AppCompatActivity() {
         findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {
             startActivity(Intent(this, SettingsActivity::class.java))
         }
+    }
+    
+    override fun onResume() {
+        super.onResume()
+        //Khởi động đếm ngược Header tự động
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+    }
+    
+    override fun onPause() {
+        super.onPause()
+        //Dừng đếm ngược
+        TaskHeadManager.stopLoop()
     }
 }
