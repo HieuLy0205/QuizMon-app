@@ -3,7 +3,7 @@ package com.example.quizmon.data.model
 import java.util.Date
 
 /**
- * Thống kê hàng ngày - Đảm bảo tên thuộc tính khớp 100% với Repository
+ * Thống kê hàng ngày
  */
 data class Statistics(
     val date: Date,
@@ -27,3 +27,15 @@ data class OverallStatistics(
     val overallAccuracy: Int
         get() = if (totalQuestions > 0) (totalCorrect * 100) / totalQuestions else 0
 }
+
+/**
+ * Model cho thành tích (Achievement)
+ */
+data class Achievement(
+    val id: String,
+    val title: String,
+    val description: String,
+    val currentProgress: Int,
+    val maxProgress: Int,
+    val isCompleted: Boolean
+)

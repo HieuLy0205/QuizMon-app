@@ -5,10 +5,12 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizmon.MainActivity
 import com.example.quizmon.R
+import com.example.quizmon.data.repository.StatisticsRepository
 import com.example.quizmon.ui.statistics.StatisticsFragment
 import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.shop.activity_shop
@@ -27,17 +29,33 @@ class StreakActivity : AppCompatActivity() {
     private lateinit var tvTabThongKe: TextView
     private lateinit var ivTabThanhTich: ImageView
     private lateinit var ivTabThongKe: ImageView
+    
+    // Views cho Thành tích
+    private lateinit var tvPercentWarrior: TextView
+    private lateinit var pbWarrior: ProgressBar
+    private lateinit var tvPercentFan: TextView
+    private lateinit var pbFan: ProgressBar
+    private lateinit var tvPercentHunter: TextView
+    private lateinit var pbHunter: ProgressBar
+    private lateinit var tvPercentPassion: TextView
+    private lateinit var pbPassion: ProgressBar
+
     private lateinit var preferenceManager: PreferenceManager
+    private lateinit var statisticsRepository: StatisticsRepository
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_streak)
 
         preferenceManager = PreferenceManager(this)
+        statisticsRepository = StatisticsRepository(this)
+        
         initViews()
         setupClickListeners()
         setupTaskbar()
         
+        // Mặc định ban đầu sẽ tải dữ liệu Thành tích
+        loadAchievementData()
         showThanhTich()
     }
 
@@ -50,6 +68,45 @@ class StreakActivity : AppCompatActivity() {
         tvTabThongKe = findViewById(R.id.tvTabThongKe)
         ivTabThanhTich = findViewById(R.id.ivTabThanhTich)
         ivTabThongKe = findViewById(R.id.ivTabThongKe)
+
+        // Ánh xạ các view Thành tích
+        tvPercentWarrior = findViewById(R.id.tvPercentWarrior)
+        pbWarrior = findViewById(R.id.pbWarrior)
+        tvPercentFan = findViewById(R.id.tvPercentFan)
+        pbFan = findViewById(R.id.pbFan)
+        tvPercentHunter = findViewById(R.id.tvPercentHunter)
+        pbHunter = findViewById(R.id.pbHunter)
+        tvPercentPassion = findViewById(R.id.tvPercentPassion)
+        pbPassion = findViewById(R.id.pbPassion)
+    }
+
+    private fun loadAchievementData() {
+        val achievements = statisticsRepository.getAchievements()
+        
+        // Cập nhật UI dựa trên dữ liệu từ Repository (nếu chưa chơi sẽ là 0)
+        achievements.forEach { achievement ->
+            val percent = (achievement.currentProgress * 100) / achievement.maxProgress
+            val displayPercent = if (percent > 100) 100 else percent
+            
+            when (achievement.id) {
+                "1" -> { // Chiến binh
+                    tvPercentWarrior.text = "$displayPercent%"
+                    pbWarrior.progress = displayPercent
+                }
+                "2" -> { // Người hâm mộ
+                    tvPercentFan.text = "$displayPercent%"
+                    pbFan.progress = displayPercent
+                }
+                "3" -> { // Thợ săn
+                    tvPercentHunter.text = "$displayPercent%"
+                    pbHunter.progress = displayPercent
+                }
+                "4" -> { // Đam mê
+                    tvPercentPassion.text = "$displayPercent%"
+                    pbPassion.progress = displayPercent
+                }
+            }
+        }
     }
 
     private fun setupClickListeners() {
@@ -87,6 +144,9 @@ class StreakActivity : AppCompatActivity() {
         tvTabThongKe.setTextColor(resources.getColor(R.color.taskbar_text))
         ivTabThanhTich.alpha = 1.0f
         ivTabThongKe.alpha = 0.4f
+        
+        // Tải lại dữ liệu mỗi khi hiện tab
+        loadAchievementData()
     }
 
     private fun showThongKe() {
@@ -106,13 +166,12 @@ class StreakActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        //Bắt đầu vòng lặp cập nhật Header và đếm ngược Tim
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        loadAchievementData() // Cập nhật lại khi quay lại màn hình
     }
 
     override fun onPause() {
         super.onPause()
-        //Dừng cập nhật
         TaskHeadManager.stopLoop()
     }
 }
