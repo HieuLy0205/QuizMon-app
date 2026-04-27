@@ -17,7 +17,7 @@
 
     <LinearLayout
         android:layout_width="401dp"
-        android:layout_height="91dp"
+        android:layout_height="63dp"
         android:orientation="horizontal"
         android:weightSum="2">
 
@@ -28,8 +28,7 @@
             android:text="Đổi pet"
             android:textColor="#0B0A0A"
             android:textSize="19dp"
-            android:textStyle="bold">
-        </Button>
+            android:textStyle="bold"></Button>
 
         <Button
             android:layout_width="201dp"
@@ -38,8 +37,7 @@
             android:text="Chiến Pet"
             android:textColor="#0B0A0A"
             android:textSize="19dp"
-            android:textStyle="bold">
-        </Button>
+            android:textStyle="bold"></Button>
 
     </LinearLayout>
 
