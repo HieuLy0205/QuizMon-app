@@ -6,6 +6,7 @@ import android.os.Handler
 import android.os.Looper
 import android.view.View
 import android.view.animation.AccelerateDecelerateInterpolator
+import android.widget.LinearLayout
 import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -34,16 +35,39 @@ class QuizActivity : AppCompatActivity() {
     private lateinit var cardExplanation: CardView
     private lateinit var tvExplanation: TextView
 
+
+
+     //khai báo hiến của 4 ô phụ trợ
+    private lateinit var btnFiftyFifty: LinearLayout
+    private lateinit var btnDoubleQuestion: LinearLayout
+    private lateinit var btnRevealAnswer: LinearLayout
+    private lateinit var btnDoubleScore: LinearLayout
+
+
     private val answerButtons: List<MaterialButton> by lazy {
         listOf(btnA, btnB, btnC, btnD)
     }
 
+
+
+//--------------Repository-----------------
     private lateinit var quizRepository: QuizRepository
     private lateinit var statisticsRepository: StatisticsRepository
     private lateinit var preferenceManager: PreferenceManager
 
+// Trạng thái thiết lập dữ liệu khi mới bắt đầu
     private var currentQuestion: Question? = null
     private var selectedIndex = -1
+
+    private var questionList: List<Question> = emptyList()
+
+    private var isDoubleScore = false   // phụ trợ x2 điểm đang bật
+
+ // Mỗi phụ trợ dùng 1 lần
+    private var usedFiftyFifty = false
+    private var usedDoubleQuestion = false
+    private var usedRevealAnswer = false
+    private var usedDoubleScore = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -70,8 +94,12 @@ class QuizActivity : AppCompatActivity() {
 
         loadQuestion(category, levelId)
         setupConfirmButton()
+        setupPowerUps()
     }
 
+
+
+//    -------Init view ------
     private fun initViews() {
         tvQuestionNumber = findViewById(R.id.tvQuestionNumber)
         tvQuestion = findViewById(R.id.tvQuestion)
@@ -83,8 +111,12 @@ class QuizActivity : AppCompatActivity() {
         btnConfirm = findViewById(R.id.btnConfirm)
         cardExplanation = findViewById(R.id.cardExplanation)
         tvExplanation = findViewById(R.id.tvExplanation)
-    }
-
+        btnFiftyFifty     = findViewById(R.id.btnFiftyFifty)
+        btnDoubleQuestion = findViewById(R.id.btnDoubleQuestion)
+        btnRevealAnswer   = findViewById(R.id.btnRevealAnswer)
+        btnDoubleScore    = findViewById(R.id.btnDoubleScore)
+        }
+   //-----------Load câu hỏi -------------------
     private fun loadQuestion(category: String, levelId: Int) {
         val fileName = categoryToFileName(category)
         val questions = quizRepository.getQuestionsByTopic(fileName, limit = 10)
@@ -117,7 +149,7 @@ class QuizActivity : AppCompatActivity() {
             answerButtons[i].visibility = View.GONE
         }
     }
-
+  //------ Chọn đáp án----------------
     private fun onAnswerSelected(index: Int) {
         selectedIndex = index
         resetButtonStyles()
@@ -127,6 +159,8 @@ class QuizActivity : AppCompatActivity() {
         btnConfirm.isEnabled = true
     }
 
+
+    //------------Xác nhận-----------
     private fun setupConfirmButton() {
         btnConfirm.setOnClickListener {
             val q = currentQuestion ?: return@setOnClickListener
@@ -157,6 +191,88 @@ class QuizActivity : AppCompatActivity() {
         }
     }
 
+//---------------logic 4 ô phụ trợ------------------------
+
+    private fun setupPowerUps() {
+        // 50/50 — ẩn 2 đáp án sai ngẫu nhiên
+        btnFiftyFifty.setOnClickListener {
+            if (usedFiftyFifty) return@setOnClickListener
+            val q = currentQuestion ?: return@setOnClickListener
+
+            val wrongIndexes = answerButtons.indices
+                .filter { it != q.correctIndex && answerButtons[it].visibility == View.VISIBLE }
+                .shuffled()
+                .take(2)
+
+            wrongIndexes.forEach { idx ->
+                answerButtons[idx].animate().alpha(0f).setDuration(300).withEndAction {
+                    answerButtons[idx].isEnabled = false
+                    answerButtons[idx].visibility = View.INVISIBLE
+                }.start()
+            }
+
+            usedFiftyFifty = true
+            disablePowerUp(btnFiftyFifty)
+        }
+
+        // Nhân đôi câu hỏi — load câu hỏi mới ngẫu nhiên
+        btnDoubleQuestion.setOnClickListener {
+            if (usedDoubleQuestion) return@setOnClickListener
+
+            val newQuestion = questionList
+                .filter { it.id != currentQuestion?.id }
+                .randomOrNull()
+
+            newQuestion?.let {
+                currentQuestion = it
+                displayQuestion(it)
+            }
+
+            usedDoubleQuestion = true
+            disablePowerUp(btnDoubleQuestion)
+        }
+
+        // Đáp án đúng — highlight đáp án đúng
+        btnRevealAnswer.setOnClickListener {
+            if (usedRevealAnswer) return@setOnClickListener
+            val q = currentQuestion ?: return@setOnClickListener
+
+            answerButtons[q.correctIndex].apply {
+                backgroundTintList =
+                    ContextCompat.getColorStateList(this@QuizActivity, android.R.color.holo_green_light)
+                setTextColor(ContextCompat.getColor(this@QuizActivity, android.R.color.white))
+            }
+            // Tự động chọn đáp án đúng
+            onAnswerSelected(q.correctIndex)
+
+            usedRevealAnswer = true
+            disablePowerUp(btnRevealAnswer)
+        }
+
+        // Nhân đôi điểm — bật cờ x2
+        btnDoubleScore.setOnClickListener {
+            if (usedDoubleScore) return@setOnClickListener
+
+            isDoubleScore = true
+            // Hiệu ứng nhấp nháy để báo đang bật
+            ObjectAnimator.ofFloat(btnDoubleScore, "alpha", 1f, 0.4f, 1f, 0.4f, 1f).apply {
+                duration = 600
+                start()
+            }
+
+            usedDoubleScore = true
+            disablePowerUp(btnDoubleScore)
+        }
+    }
+
+         // Làm mờ và vô hiệu hóa ô phụ trợ sau khi dùng
+    private fun disablePowerUp(view: LinearLayout) {
+        view.animate().alpha(0.35f).setDuration(300).start()
+        view.isClickable = false
+    }
+
+
+    //---------------Animation----------------
     private fun animateCorrect(index: Int) {
         val btn = answerButtons[index]
         btn.backgroundTintList =
