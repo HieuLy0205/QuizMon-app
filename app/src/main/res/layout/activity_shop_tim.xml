@@ -40,6 +40,7 @@
                 android:backgroundTintMode="src_atop"/>
         </LinearLayout>
 
+
         <!-- Giá nạp Section -->
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,7 +73,10 @@
                 android:id="@+id/rvDenominations"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@drawable/anh_shop_map"
+                android:backgroundTint="#ADE7E3E3"
                 android:layout_marginTop="8dp"
+                android:backgroundTintMode="src_atop"
                 android:nestedScrollingEnabled="false" />
         </LinearLayout>
 
@@ -100,50 +104,44 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Phương thức thanh toán"
+                android:text="Phương thức đổi"
                 android:textStyle="bold" />
 
             <LinearLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:orientation="horizontal"
                 android:weightSum="2">
 
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cardMomo"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="4dp">
+                <ImageView
+                    android:id="@+id/imgXunap"
+                    android:layout_width="196dp"
+                    android:layout_height="84dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_map_4"
+                    android:padding="16dp"
+                    android:src="@drawable/su_shop_map" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp"
-                        android:src="@drawable/logo_momo"
-                        android:contentDescription="MoMo" />
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cardZaloPay"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="4dp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp"
-                        android:src="@drawable/logo_vnpay"
-                        android:contentDescription="Viettel" />
-                </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    android:id="@+id/imgdiemchoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp"
+                    android:background="@drawable/main2"
+                    android:src="@drawable/diem_shop_map"
+                    android:contentDescription="Viettel" />
             </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Chọn phương thức trước khi xác thực đổi: "
+                android:textSize="14dp">
+
+            </TextView>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnConfirmPayment"

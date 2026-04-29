@@ -170,15 +170,53 @@ class PreferenceManager(context: Context) {
     }
     // --- QUẢN LÝ PET ---
     fun getPetLevel(): Int{
-        return sharedPreferences.getInt("pet_level", 1)
+        //vì sao cần biến : vì khi đổi bet thì tên key có thể cộng vào id
+        val currentPetid = getPetid()
+        if(currentPetid == -1) return 1
+        return sharedPreferences.getInt("pet_level_$currentPetid", 1)
     }
     fun savePetLevel(level: Int){
-        sharedPreferences.edit().putInt("pet_level", level).apply()
+        val currentPetid = getPetid()
+        if (currentPetid != -1) {
+            sharedPreferences.edit().putInt("pet_level_$currentPetid", level).apply()
+        }
     }
     fun getPetid(): Int {
-        return sharedPreferences.getInt("pet_id", 1)
+        return sharedPreferences.getInt("pet_id", -1)
     }
     fun savePetid(id: Int) {
         sharedPreferences.edit().putInt("pet_id", id).apply()
+    }
+    fun addpetid(id: Int) {
+        val nextid = getPetid() + id
+        savePetid(nextid)
+    // savePetid(getPetid() + id)
+    }
+
+    // --- QUẢN LÝ DANH SÁCH SỞ HỮU ---
+    fun getOwnedPetIds(): List<String> {
+        val ownedStr = sharedPreferences.getString("owned_pets", "") ?: ""
+        return if (ownedStr.isEmpty()) emptyList() else ownedStr.split(",")
+    }
+
+    fun addOwnedPet(id: String) {
+        val owned = getOwnedPetIds().toMutableList()
+        if (!owned.contains(id)) {
+            owned.add(id)
+            sharedPreferences.edit().putString("owned_pets", owned.joinToString(",")).apply()
+        }
+    }
+
+    fun getOwnedEggIds(): List<String> {
+        val ownedStr = sharedPreferences.getString("owned_eggs", "") ?: ""
+        return if (ownedStr.isEmpty()) emptyList() else ownedStr.split(",")
+    }
+
+    fun addOwnedEgg(id: String) {
+        val owned = getOwnedEggIds().toMutableList()
+        if (!owned.contains(id)) {
+            owned.add(id)
+            sharedPreferences.edit().putString("owned_eggs", owned.joinToString(",")).apply()
+        }
     }
 }

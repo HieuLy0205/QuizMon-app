@@ -39,6 +39,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var reposiroty: petReposiroty
 
     private lateinit var animetor: AnimetorActivity
+
+    private lateinit var ivFlatingPet: ImageView
     private  lateinit var preferenceManager: PreferenceManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -127,40 +129,79 @@ class MainActivity : AppCompatActivity() {
     private fun updateUI() {
         val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
         val streakManager = StreakManager(this)
+        ivFlatingPet = findViewById(R.id.ivFloatingPet)
         val preferenceManager = PreferenceManager(this)
         val petLevel = preferenceManager.getPetLevel()
-        val currentPetId = "1"
-        val petDetail = reposiroty.getPetById(currentPetId)
-        petDetail?.let{
-            // Đồng bộ level hiện tại cho con pet
-            val activePet = it.copy(currentelevel = petLevel)
-            // Ra lệnh bắt đầu chạy ảnh lặp
-            animetor.starAnimetor(activePet)
-        }
-        val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
-        findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
-
-        // Cập nhật các thành phần riêng của trang
-        findViewById<TextView>(R.id.tvStreakCount)?.text = streakManager.getCurrentStreak().toString()
-    }
-
-    private fun setupTaskbar() {
-        findViewById<View>(R.id.indicator_home)?.visibility = View.VISIBLE
-        findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
-
-        findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener { startActivity(Intent(this, HistoryActivity::class.java)) }
-        findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener { startActivity(Intent(this, activity_shop::class.java)) }
-        findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener { startActivity(Intent(this, SettingsActivity::class.java)) }
-        findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener { openProfileFlow() }
-    }
-
-    private fun openProfileFlow() {
-        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-        val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
-        if (isFirstTime) {
-            startActivity(Intent(this, com.example.quizmon.ui.onboarding.AgeActivity::class.java))
+        val petId = preferenceManager.getPetid()
+        val currentPetId = "0"
+        //tạm dừng pet để xử lý logic thay đổi pet trong kho (tủ)
+        if (petId == -1 || petLevel == 0) {
+            animetor.stop()
         } else {
-            startActivity(Intent(this, ProfileActivity::class.java))
+            ivFlatingPet?.visibility = View.VISIBLE
+            val petDetail = reposiroty.getPetById(currentPetId)
+            petDetail?.let {
+                // Đồng bộ level hiện tại cho con pet
+                val activePet = it.copy(currentelevel = petLevel)
+                // Ra lệnh bắt đầu chạy ảnh lặp
+                animetor.starAnimetor(activePet)
+            }
+            val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
+            findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
+
+            // Cập nhật các thành phần riêng của trang
+            findViewById<TextView>(R.id.tvStreakCount)?.text =
+                streakManager.getCurrentStreak().toString()
         }
     }
-}
+
+        private fun setupTaskbar() {
+            findViewById<View>(R.id.indicator_home)?.visibility = View.VISIBLE
+            findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(
+                ContextCompat.getColor(
+                    this,
+                    R.color.taskbar_active
+                )
+            )
+            findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener {
+                startActivity(
+                    Intent(
+                        this,
+                        HistoryActivity::class.java
+                    )
+                )
+            }
+            findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener {
+                startActivity(
+                    Intent(
+                        this,
+                        activity_shop::class.java
+                    )
+                )
+            }
+            findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener {
+                startActivity(
+                    Intent(
+                        this,
+                        SettingsActivity::class.java
+                    )
+                )
+            }
+            findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener { openProfileFlow() }
+        }
+
+        private fun openProfileFlow() {
+            val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+            val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
+            if (isFirstTime) {
+                startActivity(
+                    Intent(
+                        this,
+                        com.example.quizmon.ui.onboarding.AgeActivity::class.java
+                    )
+                )
+            } else {
+                startActivity(Intent(this, ProfileActivity::class.java))
+            }
+        }
+    }

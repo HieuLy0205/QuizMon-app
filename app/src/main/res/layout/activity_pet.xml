@@ -22,10 +22,11 @@
         android:weightSum="2">
 
         <Button
+            android:id="@+id/btn_tupet"
             android:layout_width="194dp"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/eevee_brown"
-            android:text="Đổi pet"
+            android:text="Tủ pet"
             android:textColor="#0B0A0A"
             android:textSize="19dp"
             android:textStyle="bold">
@@ -35,7 +36,7 @@
             android:layout_width="201dp"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/eevee_brown"
-            android:text="Chiến Pet"
+            android:text="Pet đấu"
             android:textColor="#0B0A0A"
             android:textSize="19dp"
             android:textStyle="bold">
@@ -57,7 +58,7 @@
 
             <ImageView
                 android:id="@+id/imgPet1"
-                android:src="@drawable/dragon_pet_1"
+                android:src="@drawable/pet_an_0"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:contentDescription="@string/pet_image_desc" />
