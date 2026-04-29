@@ -1,5 +1,6 @@
 package com.example.quizmon.ui.pet
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.quizmon.R
@@ -21,6 +22,8 @@ class PetActivity : AppCompatActivity() {
     private lateinit var petAnimetor: AnimetorActivity
     private lateinit var  imgPet1: ImageView
 
+    private lateinit var btn_tupet: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pet)
@@ -31,13 +34,13 @@ class PetActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        
+        btn_tupet = findViewById(R.id.btn_tupet)
         imgPet1 = findViewById(R.id.imgPet1)
         petAnimetor = AnimetorActivity(imgPet1)
         
         val btn_tanglevel = findViewById<Button>(R.id.btn_tanglevel)
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
-        
+        //sự kiện tăng cấp pet
         btn_tanglevel.setOnClickListener {
             val currentid = pref.getPetLevel()
             val currientCoin = pref.getCoins()
@@ -58,6 +61,9 @@ class PetActivity : AppCompatActivity() {
                 Toast.makeText(this, "Đã đạt cấp tối đa", Toast.LENGTH_SHORT).show()
             }
         }
+        btn_tupet.setOnClickListener {
+            startActivity(Intent(this, TupetActivity::class.java))
+        }
         btnBack.setOnClickListener { finish() }
     }
     override fun onResume() {
@@ -77,8 +83,8 @@ class PetActivity : AppCompatActivity() {
         val currentlevel = pref.getPetLevel()
         val petdetail = repotory.getPetById(currentPetid.toString())
         petdetail?.let{
-            val activypet = it.copy(currentelevel = currentlevel)
-            petAnimetor.starAnimetor(activypet)
+            val activitypet = it.copy(currentelevel = currentlevel)
+            petAnimetor.starAnimetor(activitypet)
         }
     }
 }

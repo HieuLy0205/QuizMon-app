@@ -42,6 +42,7 @@
         <activity android:name=".ui.onboarding.PersonalizeActivity" />
         <activity android:name=".ui.onboarding.NicknameActivity" />
         <activity android:name=".ui.onboarding.AvatarActivity" />
+        <activity android:name=".ui.pet.TupetActivity" />
         <activity
             android:name=".ui.settings.SettingsActivity"
             android:exported="false"/>

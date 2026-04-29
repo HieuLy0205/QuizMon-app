@@ -305,7 +305,7 @@
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
-        android:src="@drawable/pet001_rong_c2"
+        android:src="@drawable/pet_an_0"
         app:layout_constraintBottom_toTopOf="@id/taskbar"
         app:layout_constraintStart_toStartOf="parent"
         android:contentDescription="Floating Pet" />

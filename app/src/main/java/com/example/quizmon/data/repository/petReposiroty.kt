@@ -33,7 +33,7 @@ class petReposiroty {
         ),
         Pet(
             "3",
-            "Bạch tuột",
+            "Mựt Nily ",
             1,
             3,
             mapOf(
@@ -44,7 +44,7 @@ class petReposiroty {
         ),
         Pet(
             "4",
-            "Sao Nhị",
+            "Sao Nhị (Kỳ cáo băn phong)",
             1,
             3,
             mapOf(

@@ -5,7 +5,6 @@ import android.util.Log
 import com.example.quizmon.data.model.Pet
 import android.widget.ImageView
 
-
 class AnimetorActivity(private  var imgPet1: ImageView) {
     private var petFarm = intArrayOf()
     private val handle = Handler(Looper.getMainLooper())

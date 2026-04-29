@@ -34,44 +34,40 @@
                 android:backgroundTint="#74D9D6D6"
                 android:backgroundTintMode="src_atop"
                 android:gravity="center"
-                android:text="@string/text_shoppvp"
+                android:text="Nhận pet với shop"
                 android:textColor="#090808"
                 android:textSize="24sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="38dp"
-            android:gravity="center"
-            android:text="Nhận pet với shop"
-            android:textSize="28sp"
-            android:textStyle="bold">
-        </TextView>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <CheckBox
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Qua ải pet free + 20 coin "
-                android:textStyle="normal"
-                android:textSize="20sp">
-            </CheckBox>
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="🅰️ Quà trong shop">
+
+            </TextView>
 
         </LinearLayout>
-        <!-- Trứng rồng thứ nhất -->
+        <!-- Trứng rồng dragon free -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="112dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="111dp"
+            android:orientation="horizontal"
+            android:background="@drawable/nv_nhanpet4"
+            android:padding="8dp">
 
             <TextView
                 android:layout_width="188dp"
                 android:layout_height="95dp"
+                android:backgroundTint="#0B0A0A"
                 android:gravity="center"
                 android:text="@string/text_nhantrung"
                 android:textSize="18sp"
@@ -79,26 +75,88 @@
             </TextView>
 
             <ImageView
-                android:layout_width="105dp"
-                android:layout_height="92dp"
+                android:id="@+id/img_trung1"
+                android:layout_width="95dp"
+                android:layout_height="96dp"
+                android:background="@drawable/trung_pet_1"
+                android:backgroundTint="#19EDEAEA"
+                android:backgroundTintMode="src_atop"
+                android:textStyle="bold">
+            </ImageView>
+
+            <Button
+                android:id="@+id/btn_nhanpetFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="#EBD280"
+                android:text="chưu thể nhận"
+                android:textColor="#161313"
+                android:textStyle="bold">
+            </Button>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:padding="10dp"
+            android:text="name: Trứng rồng Hỏa Long"
+            android:textSize="16sp"
+            android:textStyle="bold">
+        </TextView>
+        <!-- Trứng rồng thứ nhất -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_map_5"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="188dp"
+                android:layout_height="95dp"
+                android:backgroundTint="#D3F6F5F5"
+                android:gravity="center"
+                android:text="@string/text_nhantrung"
+                android:textSize="18sp"
+                android:textStyle="bold">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/img_trung2"
+                android:layout_width="95dp"
+                android:layout_height="96dp"
                 android:background="@drawable/trung_pet_4"
                 android:backgroundTint="#19EDEAEA"
                 android:backgroundTintMode="src_atop"
                 android:textStyle="bold">
             </ImageView>
+
+            <Button
+                android:id="@+id/btn_nhanpet1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="#EBD280"
+                android:text="chưu thể nhận"
+                android:textColor="#161313"
+                android:textStyle="bold">
+            </Button>
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="41dp"
+            android:padding="10dp"
+            android:text="name: Trứng rồng sầu riêng "
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:text="name: Trứng rồng sầu riêng ">
+            android:textStyle="bold">
         </TextView>
         <!--Trứng rồng thứ 2 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="112dp"
-            android:gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/anhnenpr"
             android:orientation="horizontal">
 
             <TextView
@@ -111,28 +169,44 @@
             </TextView>
 
             <ImageView
-                android:layout_width="105dp"
-                android:layout_height="92dp"
+                android:id="@+id/img_trung3"
+                android:layout_width="95dp"
+                android:layout_height="97dp"
                 android:background="@drawable/trung_pet_2"
                 android:backgroundTint="#19EDEAEA"
+                android:padding="10dp"
                 android:backgroundTintMode="src_atop"
                 android:textStyle="bold">
             </ImageView>
+
+            <Button
+                android:id="@+id/btn_nhanpet2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="#EBD280"
+                android:text="chưu thể nhận"
+                android:textColor="#161313"
+                android:textStyle="bold">
+            </Button>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:text="name: Trứng rồng mựt nily ">
+            android:padding="10dp"
+            android:text="name: Trứng tuột mựt nily ">
         </TextView>
 
         <!--Trứng rồng thứ 3 -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="112dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@drawable/nv_nhanpet3"
+            android:padding="10dp">
 
             <TextView
                 android:layout_width="188dp"
@@ -144,18 +218,32 @@
             </TextView>
 
             <ImageView
-                android:layout_width="105dp"
-                android:layout_height="92dp"
+                android:id="@+id/img_trung4"
+                android:layout_width="99dp"
+                android:layout_height="96dp"
                 android:background="@drawable/trung_pet_6"
                 android:backgroundTint="#19EDEAEA"
                 android:backgroundTintMode="src_atop"
                 android:textStyle="bold">
             </ImageView>
+
+            <Button
+                android:id="@+id/btn_nhanpet3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:backgroundTint="#EBD280"
+                android:text="chưu thể nhận"
+                android:textColor="#161313"
+                android:textStyle="bold">
+            </Button>
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="16sp"
+            android:padding="10dp"
             android:textStyle="bold"
             android:text="name: Trứng kỳ cáo băn phong ">
         </TextView>
