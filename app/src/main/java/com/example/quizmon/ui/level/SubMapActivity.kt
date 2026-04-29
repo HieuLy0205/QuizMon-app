@@ -11,7 +11,10 @@ import android.widget.ImageView
 import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizmon.R
@@ -57,7 +60,14 @@ class SubMapActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_sub_map)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.sub_map_root)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
         preferenceManager = PreferenceManager(this)
         levelId = intent.getIntExtra("LEVEL_ID", 1)
@@ -81,7 +91,6 @@ class SubMapActivity : AppCompatActivity() {
         updateUI()
 
         adapter = SubMapAdapter(mapItems) { item, position ->
-            //Cập nhật vị trí nhấn ngay tại đây
             lastClickedPosition = position
             handleItemClick(item)
         }
@@ -196,16 +205,18 @@ class SubMapActivity : AppCompatActivity() {
                     startActivityForResult(intent, 1001)
                 }
                 SubMapType.SPIN_WHEEL -> {
-                    startActivity(Intent(this, com.example.quizmon.ui.level.SpinWheelActivity::class.java))
-                    markSpecialItemDone(item)
+                    val intent = Intent(this, com.example.quizmon.ui.level.SpinWheelActivity::class.java)
+                    intent.putExtra("LEVEL_ID", levelId)
+                    startActivityForResult(intent, 1004)
                 }
                 SubMapType.TREASURE -> {
-                    //Thay đổi: Sử dụng startActivityForResult cho Treasure
                     val intent = Intent(this, com.example.quizmon.ui.level.TreasureActivity::class.java)
+                    intent.putExtra("LEVEL_ID", levelId)
                     startActivityForResult(intent, 1003)
                 }
                 SubMapType.FLIP_CARD -> {
-                    val intent = Intent(this, com.example.quizmon.ui.level.FlipCardActivity::class.java)
+                    val intent = Intent(this, FlipCardActivity::class.java)
+                    intent.putExtra("LEVEL_ID", levelId)
                     startActivityForResult(intent, 1002)
                 }
                 else -> {}
@@ -242,10 +253,12 @@ class SubMapActivity : AppCompatActivity() {
                 saveMapState()
                 updateUI() 
                 checkLevelCompletion()
-            } else if (requestCode == 1002 || requestCode == 1003) {
-                //Nhận kết quả từ FlipCard (1002) hoặc Treasure (1003)
+            } else if (requestCode == 1002 || requestCode == 1003 || requestCode == 1004) {
                 if (resultCode == RESULT_OK) {
                     markSpecialItemDone(item)
+                    // Sau khi quay vòng quay/mở rương, cập nhật lại điểm hiển thị vì có thể điểm đã thay đổi
+                    loadMapState() 
+                    updateUI()
                 }
             }
         }
@@ -254,12 +267,12 @@ class SubMapActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         updateUI() 
-        updateHandler.post(updateRunnable)
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
     }
     
     override fun onPause() {
         super.onPause()
-        updateHandler.removeCallbacks(updateRunnable)
+        TaskHeadManager.stopLoop()
     }
 
     private fun checkLevelCompletion() {

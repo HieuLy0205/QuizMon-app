@@ -37,15 +37,15 @@ class FlipCardActivity : AppCompatActivity() {
         btnBack.setOnClickListener { finish() }
         updateHeader()
 
-        //Thêm dấu xuống dòng \n để chữ hiển thị đẹp hơn
+        // Danh sách 9 loại phần thưởng/thông điệp hoàn chỉnh
         val rewards = listOf(
             "Quẻ đại cát!\nChúc bạn ngày mới tốt lành",
-            "Nhận 1 phụ trợ\n50/50",
-            "Nhận 1 phụ trợ\nNhân đôi cơ hội",
-            "Nhận 1 phụ trợ\nĐáp án đúng",
-            "Nhận 1 phụ trợ\nNhân đôi điểm",
+            "Phụ trợ\n50/50 x1",
+            "Phụ trợ\nNhân đôi cơ hội x1",
+            "Phụ trợ\nĐáp án đúng x1",
+            "Phụ trợ\nNhân đôi điểm x1",
             "Nhận 50 Xu\nmay mắn",
-            "Nhận 100 EXP\n kinh nghiệm",
+            "Nhận 100 EXP\nkinh nghiệm",
             "Nhận 1 Mạng\nhồi sinh",
             "Quẻ bình an:\nVạn sự hanh thông!"
         ).shuffled()
@@ -61,7 +61,6 @@ class FlipCardActivity : AppCompatActivity() {
                 setResult(RESULT_OK)
                 handleRewardLogic(rewards[i])
                 
-                //Gọi hàm lật và phóng to ra giữa màn hình
                 animateFlipAndZoomToCenter(cardContainer)
             }
         }
@@ -104,7 +103,7 @@ class FlipCardActivity : AppCompatActivity() {
             setTextColor(Color.parseColor("#5D4037"))
             textSize = 14f
             setTypeface(null, Typeface.BOLD)
-            setLineSpacing(0f, 1.2f) // Giãn dòng cho dễ đọc
+            setLineSpacing(0f, 1.2f)
         }
 
         frontLayout.addView(ivFront)
@@ -121,7 +120,6 @@ class FlipCardActivity : AppCompatActivity() {
         val frontLayout = container.getChildAt(1)
         val root = findViewById<ConstraintLayout>(R.id.main_root)
 
-        // 1. Lấy vị trí thẻ hiện tại so với màn hình trước khi tách khỏi Grid
         val cardLoc = IntArray(2)
         container.getLocationOnScreen(cardLoc)
         val rootLoc = IntArray(2)
@@ -130,8 +128,6 @@ class FlipCardActivity : AppCompatActivity() {
         val startX = cardLoc[0].toFloat() - rootLoc[0]
         val startY = cardLoc[1].toFloat() - rootLoc[1]
 
-        // 2. Tách thẻ ra khỏi GridLayout và đưa lên lớp cao nhất (main_root) 
-        // để không bị cắt biên (Clipping)
         val oldWidth = container.width
         val oldHeight = container.height
         (container.parent as ViewGroup).removeView(container)
@@ -142,19 +138,16 @@ class FlipCardActivity : AppCompatActivity() {
         container.y = startY
         root.addView(container)
 
-        // 3. Tính toán vị trí tâm màn hình
         val targetX = (root.width - oldWidth) / 2f
         val targetY = (root.height - oldHeight) / 2f
 
-        // Đảm bảo tâm phóng to nằm giữa thẻ
         container.pivotX = oldWidth / 2f
         container.pivotY = oldHeight / 2f
 
-        // 4. Thực hiện hoạt ảnh bay ra giữa + phóng to + lật mặt
         container.animate()
             .x(targetX)
             .y(targetY)
-            .scaleX(3.5f) // Phóng to cực đại
+            .scaleX(3.5f)
             .scaleY(3.5f)
             .rotationY(180f)
             .setDuration(800)
@@ -167,7 +160,6 @@ class FlipCardActivity : AppCompatActivity() {
             }
             .start()
 
-        // Đổi ảnh mặt trước khi thẻ xoay đến "cạnh" (90 độ)
         container.postDelayed({
             ivBack.visibility = View.GONE
             frontLayout.visibility = View.VISIBLE
@@ -176,9 +168,13 @@ class FlipCardActivity : AppCompatActivity() {
 
     private fun handleRewardLogic(reward: String) {
         when {
+            reward.contains("50/50") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_5050, 1)
+            reward.contains("Nhân đôi cơ hội") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_CHANCE, 1)
+            reward.contains("Đáp án đúng") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_CORRECT_ANSWER, 1)
+            reward.contains("Nhân đôi điểm") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_POINTS, 1)
             reward.contains("50 Xu") -> preferenceManager.addXu(50)
             reward.contains("100 EXP") -> preferenceManager.addExp(100)
-            reward.contains("1 Mạng") -> preferenceManager.saveHearts((preferenceManager.getHearts() + 1).coerceAtMost(5))
+            reward.contains("1 Mạng") -> preferenceManager.addHearts(1)
         }
     }
 

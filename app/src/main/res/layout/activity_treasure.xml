@@ -4,8 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/treasureRoot"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:layout_height="match_parent">
+
+    <!-- Ảnh nền -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@null" />
 
     <!-- Header dùng chung -->
     <include
@@ -21,14 +32,14 @@
         android:layout_height="wrap_content"
         android:text="CHỌN MỘT RƯƠNG MAY MẮN"
         android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintTop_toBottomOf="@id/taskhead"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Container chứa 5 rương xếp thành hình ngôi sao 5 cánh -->
+    <!-- Container chứa 5 rương -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/chestContainer"
         android:layout_width="340dp"
@@ -45,7 +56,7 @@
             android:src="@drawable/chest"
             android:clickable="true"
             android:focusable="true"
-            android:contentDescription="Rương 1"
+            android:contentDescription="Rương may mắn 1"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -57,7 +68,7 @@
             android:src="@drawable/chest"
             android:clickable="true"
             android:focusable="true"
-            android:contentDescription="Rương 2"
+            android:contentDescription="Rương may mắn 2"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +81,7 @@
             android:src="@drawable/chest"
             android:clickable="true"
             android:focusable="true"
-            android:contentDescription="Rương 3"
+            android:contentDescription="Rương may mắn 3"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -80,9 +91,12 @@
             android:id="@+id/chest4"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:layout_marginStart="56dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginBottom="20dp"
             android:src="@drawable/chest"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Rương may mắn 4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -90,9 +104,12 @@
             android:id="@+id/chest5"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:layout_marginEnd="48dp"
-            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="20dp"
             android:src="@drawable/chest"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Rương may mắn 5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
 
@@ -102,7 +119,7 @@
         android:id="@+id/btnBack"
         android:layout_width="180dp"
         android:layout_height="52dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="48dp"
         android:background="@drawable/bg_orange_btn"
         app:backgroundTint="@null"
         android:text="Quay lại"
@@ -112,12 +129,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Reward Dialog Overlay (Custom) -->
+    <!-- Reward Dialog Overlay -->
     <FrameLayout
         android:id="@+id/dialogOverlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#99000000"
+        android:background="#B3000000"
         android:visibility="gone"
         android:clickable="true"
         android:focusable="true"
@@ -125,56 +142,60 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/dialogCard"
-            android:layout_width="300dp"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="10dp">
+            app:cardBackgroundColor="#2D2D2D"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="12dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:padding="24dp"
+                android:padding="32dp"
                 android:gravity="center">
 
                 <ImageView
-                    android:id="@+id/ivDialogChest"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
+                    android:id="@+id/ivRewardIcon"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
                     android:src="@drawable/chest"
-                    android:scaleType="fitCenter" />
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Biểu tượng kết quả" />
 
                 <TextView
                     android:id="@+id/tvDialogTitle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="CHÚC MỪNG!"
-                    android:textSize="22sp"
+                    android:textSize="24sp"
                     android:textStyle="bold"
-                    android:textColor="#2E7D32"
+                    android:textColor="#4CAF50"
                     android:layout_marginTop="16dp" />
 
                 <TextView
                     android:id="@+id/tvDialogContent"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bạn nhận được 100 xu"
+                    android:text="Chúc mừng! Bạn nhận được 100 xu"
                     android:textSize="18sp"
-                    android:textColor="#444444"
+                    android:textColor="#FFFFFF"
                     android:gravity="center"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="4dp" />
 
                 <Button
                     android:id="@+id/btnDialogClose"
                     android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:layout_marginTop="24dp"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="28dp"
                     android:background="@drawable/bg_orange_btn"
                     app:backgroundTint="@null"
                     android:text="TUYỆT VỜI"
                     android:textColor="#FFFFFF"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
 
             </LinearLayout>
         </androidx.cardview.widget.CardView>
