@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/anh_nen_shop"
-    android:fitsSystemWindows="true"
     android:padding="16dp">
 
     <!-- Số thứ tự câu hỏi -->
@@ -30,17 +29,151 @@
         android:layout_height="8dp"
         android:max="100"
         android:progress="10"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="10dp"/>
+    <!-- thay đổi từ 12 thành 10 để phù hợp với cấu trúc dữ liệu -->
 
-    <!-- Card câu hỏi -->
+    <!--  Thêm 4 Ô phụ trợ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <!-- 50/50 -->
+        <LinearLayout
+            android:id="@+id/btnFiftyFifty"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_button_primary"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50/50"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText HardcodedTextColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loại 2 sai"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText HardcodedTextColor"/>
+        </LinearLayout>
+
+        <!-- Nhân đôi câu hỏi -->
+        <LinearLayout
+            android:id="@+id/btnDoubleQuestion"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_button_primary"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2x❓"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText HardcodedTextColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Câu mới"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText HardcodedTextColor"/>
+        </LinearLayout>
+
+        <!-- Đáp án đúng -->
+        <LinearLayout
+            android:id="@+id/btnRevealAnswer"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_button_primary"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💡"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText HardcodedTextColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đáp án"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText HardcodedTextColor"/>
+        </LinearLayout>
+
+        <!-- Nhân đôi điểm -->
+        <LinearLayout
+            android:id="@+id/btnDoubleScore"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="4dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/bg_button_primary"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2x⭐"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText HardcodedTextColor"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="x2 Điểm"
+                android:textColor="#FFFFFF"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText HardcodedTextColor"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Card câu hỏi — giữ id tvQuestion như cũ -->
+   <!-- android:layout_weight="0.8"-->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_marginBottom="12dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="8dp"
         app:cardCornerRadius="20dp"
         app:cardElevation="4dp"
         app:cardBackgroundColor="#FFFFFF">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/tvQuestion"
@@ -52,10 +185,11 @@
             android:textColor="#4E342E"
             android:lineSpacingMultiplier="1.3"
             android:text="@string/tv_question"/>
+        </ScrollView>
 
     </androidx.cardview.widget.CardView>
 
-    <!-- Hàng 1: A và B -->
+    <!-- Hàng 1: A và B sau khi thay đổi -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -66,9 +200,10 @@
             android:id="@+id/btnA"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:layout_marginEnd="6dp"
+            android:textSize="13sp"
             android:textColor="#4E342E"
             android:backgroundTint="#FFFFFF"
             app:strokeColor="#BCAAA4"
@@ -79,9 +214,10 @@
             android:id="@+id/btnB"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:layout_marginStart="6dp"
+            android:textSize="13sp"
             android:textColor="#4E342E"
             android:backgroundTint="#FFFFFF"
             app:strokeColor="#BCAAA4"
@@ -90,7 +226,7 @@
 
     </LinearLayout>
 
-    <!-- Hàng 2: C và D -->
+    <!-- Hàng 2: C và D sau khi thay đổi  -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -101,9 +237,10 @@
             android:id="@+id/btnC"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:layout_marginEnd="6dp"
+            android:textSize="13sp"
             android:textColor="#4E342E"
             android:backgroundTint="#FFFFFF"
             app:strokeColor="#BCAAA4"
@@ -114,9 +251,10 @@
             android:id="@+id/btnD"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="70dp"
             android:layout_weight="1"
             android:layout_marginStart="6dp"
+            android:textSize="13sp"
             android:textColor="#4E342E"
             android:backgroundTint="#FFFFFF"
             app:strokeColor="#BCAAA4"
@@ -140,7 +278,7 @@
             android:id="@+id/tvExplanation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="14dp"
+            android:padding="12dp"
             android:textSize="13sp"
             android:textColor="#1565C0"
             android:lineSpacingMultiplier="1.4"
