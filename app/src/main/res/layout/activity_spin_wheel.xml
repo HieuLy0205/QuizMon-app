@@ -43,7 +43,7 @@
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:layout_marginTop="-30dp"
-        android:src="@drawable/ic_check"
+        android:src="@drawable/muiten"
         android:contentDescription="Mũi tên"
         app:layout_constraintEnd_toEndOf="@id/luckyWheel"
         app:layout_constraintStart_toStartOf="@id/luckyWheel"

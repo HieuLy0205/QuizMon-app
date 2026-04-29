@@ -97,4 +97,9 @@
     <string name="achievement_passion">Đam mê</string>
     <string name="achievement_passion_desc">Chơi hơn 1000 câu hỏi</string>
     <string name="percent_1">0%</string>
+
+    <!--    Minigame Strings-->
+    <string name="monster_message_1">"Gặp ngay quái vật háu đói! Bạn phải bỏ lại 1 trái tim để chạy thoát thân rồi!"</string>
+    <string name="monster_message_2">"Ôi không! Quái vật vừa 'thó' mất của bạn 1 mạng rồi. Chạy ngay đi!"</string>
+    <string name="monster_message_3">"Quái vật hiện hình! Nó đã nuốt chửng 1 mạng của bạn như một viên kẹo!"</string>
 </resources>
