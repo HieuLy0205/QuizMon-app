@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.ProgressBar
@@ -44,12 +45,11 @@ class SubMapActivity : AppCompatActivity() {
     private val scorePerCorrect = 30
     private val scorePerIncorrect = 10
     
-    private val star1Score = 100
-    private val star2Score = 200
-    private val star3Score = 300
-    // Cập nhật maxPossibleScore dựa trên tổng số câu hỏi thực tế có thể có
-    // Ở đây ta dùng 300 (điểm 3 sao) làm mốc 100% của thanh Progress
-    private val maxProgressScore = 300
+    // Mốc điểm đạt sao: 1 sao = 90, 2 sao = 180, 3 sao = 270
+    private val star1Score = 90
+    private val star2Score = 180
+    private val star3Score = 270
+    private val maxProgressScore = 270
 
     private lateinit var preferenceManager: PreferenceManager
     
@@ -130,15 +130,16 @@ class SubMapActivity : AppCompatActivity() {
         if (::adapter.isInitialized) {
             adapter.notifyDataSetChanged()
         }
+        
+        // Kiểm tra xem đã hoàn thành từ trước chưa để hiện bảng tổng kết
+        checkLevelCompletion()
     }
 
     private fun saveMapState() {
         val prefs = getSharedPreferences("QuizMonMapPrefs", Context.MODE_PRIVATE)
         val json = Gson().toJson(mapItems)
-        prefs.edit().apply {
-            putString("MAP_STATE_$levelId", json)
-            putInt("SCORE_$levelId", currentScore)
-        }.commit() 
+        // Dùng commit để ghi dữ liệu ngay lập tức
+        prefs.edit().putString("MAP_STATE_$levelId", json).putInt("SCORE_$levelId", currentScore).commit()
     }
 
     private fun updateUI() {
@@ -152,8 +153,6 @@ class SubMapActivity : AppCompatActivity() {
             else -> tvCurrentStageScore.setTextColor(Color.BLACK)
         }
 
-        // Cập nhật logic tính % thanh Progress
-        // Nếu đạt mốc 300 điểm (3 sao) thì thanh Progress phải đầy (100%)
         val progressPercent = if (currentScore > 0) {
             ((currentScore.toFloat() / maxProgressScore) * 100).toInt().coerceIn(0, 100)
         } else 0
@@ -317,38 +316,127 @@ class SubMapActivity : AppCompatActivity() {
     }
 
     private fun checkLevelCompletion() {
-        val questions = mapItems.filter { it?.type == SubMapType.QUESTION }
-        val allQuestionsDone = questions.all { it?.status != CompletionStatus.NOT_STARTED }
-        val atLeastOneStar = currentScore >= star1Score
+        val validItems = mapItems.filterNotNull()
+        if (validItems.isEmpty()) return
 
-        if (allQuestionsDone) {
-            if (atLeastOneStar) {
-                Toast.makeText(this, "Ải đã hoàn thành!", Toast.LENGTH_LONG).show()
-                val mainPrefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-                val currentMax = mainPrefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
-                
-                var starsEarnedInThisLevel = 0
-                if (currentScore >= star3Score) starsEarnedInThisLevel = 3
-                else if (currentScore >= star2Score) starsEarnedInThisLevel = 2
-                else if (currentScore >= star1Score) starsEarnedInThisLevel = 1
-                
-                val oldBestStars = mainPrefs.getInt("STARS_LEVEL_$levelId", 0)
-                if (starsEarnedInThisLevel > oldBestStars) {
-                    val totalStars = mainPrefs.getInt("total_stars_all_levels", 0)
-                    mainPrefs.edit()
-                        .putInt("STARS_LEVEL_$levelId", starsEarnedInThisLevel)
-                        .putInt("total_stars_all_levels", totalStars + (starsEarnedInThisLevel - oldBestStars))
-                        .apply()
-                    updateUI()
-                }
+        val questions = validItems.filter { it.type == SubMapType.QUESTION }
+        val specials = validItems.filter { it.type == SubMapType.SPIN_WHEEL || it.type == SubMapType.TREASURE || it.type == SubMapType.FLIP_CARD }
 
-                if (levelId == currentMax) {
-                    mainPrefs.edit().putInt("CURRENT_UNLOCKED_LEVEL", levelId + 1).apply()
-                    preferenceManager.Dk_batmo_xn("nv2", true)
-                }
-            } else {
-                Toast.makeText(this, "Chưa đủ điểm ($star1Score) để qua ải!", Toast.LENGTH_LONG).show()
+        val allQuestionsDone = questions.all { it.status != CompletionStatus.NOT_STARTED }
+        val allSpecialDone = specials.all { it.status != CompletionStatus.NOT_STARTED }
+
+        // Nếu TẤT CẢ các ô (Câu hỏi + Đặc biệt) đã được chơi xong
+        if (allQuestionsDone && allSpecialDone && questions.isNotEmpty()) {
+            val correctAnswers = questions.count { it.status == CompletionStatus.CORRECT }
+            val totalQuestions = questions.size
+            
+            // 1. Cập nhật tiến trình mở ải và lưu sao vào PreferenceManager
+            updateUnlockedProgress()
+
+            // 2. Hiển thị bảng tổng kết
+            showSummaryDialog(correctAnswers, totalQuestions)
+        }
+    }
+
+    private fun updateUnlockedProgress() {
+        val mainPrefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+        val currentMax = mainPrefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
+        
+        var starsEarned = 0
+        if (currentScore >= star3Score) starsEarned = 3
+        else if (currentScore >= star2Score) starsEarned = 2
+        else if (currentScore >= star1Score) starsEarned = 1
+        
+        // Lưu số sao đạt được cho ải này
+        val oldBestStars = mainPrefs.getInt("STARS_LEVEL_$levelId", 0)
+        if (starsEarned > oldBestStars) {
+            val totalStars = mainPrefs.getInt("total_stars_all_levels", 0)
+            mainPrefs.edit()
+                .putInt("STARS_LEVEL_$levelId", starsEarned)
+                .putInt("total_stars_all_levels", totalStars + (starsEarned - oldBestStars))
+                .apply()
+        }
+
+        // MỞ KHÓA ẢI TIẾP THEO: Điều kiện là đạt ít nhất 1 sao (90 điểm). 
+        // Chỉ tăng currentMax nếu đang chơi ải cao nhất.
+        if (currentScore >= star1Score && levelId == currentMax) {
+            mainPrefs.edit().putInt("CURRENT_UNLOCKED_LEVEL", levelId + 1).apply()
+            preferenceManager.Dk_batmo_xn("nv2", true)
+        }
+    }
+
+    private fun resetLevel() {
+        currentScore = 0
+        mapItems.forEachIndexed { index, item ->
+            if (item != null) {
+                mapItems[index] = item.copy(status = CompletionStatus.NOT_STARTED)
             }
         }
+        saveMapState()
+        preferenceManager.saveLevelScore(levelId, currentScore)
+        updateUI()
+        adapter.notifyDataSetChanged()
+    }
+
+    private fun showSummaryDialog(correct: Int, total: Int) {
+        val overlay = findViewById<View>(R.id.summaryOverlay) ?: return
+        
+        // Tránh hiển thị chồng chéo nếu đã hiện
+        if (overlay.visibility == View.VISIBLE) return 
+
+        val tvTitle = findViewById<TextView>(R.id.tvSummaryTitle)
+        val tvCorrect = findViewById<TextView>(R.id.tvCorrectCount)
+//        val tvBonus = findViewById<TextView>(R.id.tvBonusPoints)
+        val tvTotalScore = findViewById<TextView>(R.id.tvTotalScore)
+        val tvPercent = findViewById<TextView>(R.id.tvPercentile)
+        val btnAction = findViewById<Button>(R.id.btnSummaryContinue)
+        
+        val star1 = findViewById<ImageView>(R.id.ivSumStar1)
+        val star2 = findViewById<ImageView>(R.id.ivSumStar2)
+        val star3 = findViewById<ImageView>(R.id.ivSumStar3)
+
+        tvTitle.text = "Cấp độ $levelId"
+        tvCorrect.text = "$correct/$total"
+        
+//        // Điểm thưởng = Tổng điểm - (Số câu đúng * 30đ mỗi câu)
+//        val bonusValue = (currentScore - (correct * 30)).coerceAtLeast(0)
+//        tvBonus.text = bonusValue.toString()
+//
+        tvTotalScore.text = currentScore.toString()
+
+        val percent = ((currentScore.toFloat() / star3Score) * 100).toInt().coerceIn(40, 99)
+        
+        if (currentScore >= star1Score) {
+            tvPercent.text = "Bạn đang thể hiện giỏi hơn $percent% số người chơi khác."
+            tvPercent.setTextColor(Color.parseColor("#0277BD"))
+            btnAction.text = "Tiếp theo"
+            btnAction.setOnClickListener {
+                val intent = Intent(this, LevelMapActivity::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                startActivity(intent)
+                finish()
+            }
+        } else {
+            tvPercent.text = "Bạn cần đạt ít nhất 90 điểm để mở khóa ải tiếp theo!"
+            tvPercent.setTextColor(Color.RED)
+            btnAction.text = "Chơi lại"
+            btnAction.setOnClickListener {
+                resetLevel()
+                overlay.animate().alpha(0f).setDuration(300).withEndAction {
+                    overlay.visibility = View.GONE
+                }.start()
+            }
+        }
+
+        // Cập nhật trạng thái sáng/mờ của 3 ngôi sao trong Dialog
+        star1.alpha = if (currentScore >= star1Score) 1.0f else 0.2f
+        star2.alpha = if (currentScore >= star2Score) 1.0f else 0.2f
+        star3.alpha = if (currentScore >= star3Score) 1.0f else 0.2f
+
+        // Hiển thị Overlay với hiệu ứng mờ dần
+        overlay.visibility = View.VISIBLE
+        overlay.bringToFront()
+        overlay.alpha = 0f
+        overlay.animate().alpha(1f).setDuration(600).start()
     }
 }

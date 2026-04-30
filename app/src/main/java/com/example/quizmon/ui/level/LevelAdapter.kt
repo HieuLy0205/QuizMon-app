@@ -1,11 +1,13 @@
 package com.example.quizmon.ui.level
 
+import android.content.Context
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -21,6 +23,12 @@ class LevelAdapter(
         val tvNumber: TextView = view.findViewById(R.id.tvLevelNumber)
         val container: RelativeLayout = view.findViewById(R.id.levelNodeContainer)
         val ivLock: ImageView = view.findViewById(R.id.ivLock)
+        val llStars: LinearLayout = view.findViewById(R.id.llStars)
+        val stars: List<ImageView> = listOf(
+            view.findViewById(R.id.ivStar1),
+            view.findViewById(R.id.ivStar2),
+            view.findViewById(R.id.ivStar3)
+        )
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LevelViewHolder {
@@ -32,6 +40,10 @@ class LevelAdapter(
         val level = levels[position]
         holder.tvNumber.text = level.toString()
 
+        val context = holder.itemView.context
+        val prefs = context.getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+        val starsEarned = prefs.getInt("STARS_LEVEL_$level", 0)
+
         // Căn chỉnh ziczac (Trái - Giữa - Phải)
         val params = holder.container.layoutParams as FrameLayout.LayoutParams
         params.gravity = when (position % 4) {
@@ -41,7 +53,7 @@ class LevelAdapter(
             else -> Gravity.END or Gravity.CENTER_VERTICAL
         }
         // Thêm margin để không sát mép màn hình
-        val margin = 40 * holder.itemView.context.resources.displayMetrics.density
+        val margin = 40 * context.resources.displayMetrics.density
         if (params.gravity and Gravity.START == Gravity.START) params.marginStart = margin.toInt()
         if (params.gravity and Gravity.END == Gravity.END) params.marginEnd = margin.toInt()
         
@@ -53,11 +65,18 @@ class LevelAdapter(
             holder.ivLock.visibility = View.GONE
             holder.tvNumber.visibility = View.VISIBLE
             holder.itemView.setOnClickListener { onLevelClick(level) }
+            
+            // Hiển thị sao nếu level này đã được mở/vượt qua (có thể có sao)
+            holder.llStars.visibility = if (starsEarned > 0) View.VISIBLE else View.GONE
+            holder.stars.forEachIndexed { index, imageView ->
+                imageView.alpha = if (index < starsEarned) 1.0f else 0.3f
+            }
         } else {
             holder.container.setBackgroundResource(R.drawable.bg_map_node_locked)
             holder.ivLock.visibility = View.VISIBLE
             holder.tvNumber.visibility = View.VISIBLE
             holder.itemView.setOnClickListener(null)
+            holder.llStars.visibility = View.GONE
         }
     }
 
