@@ -1,9 +1,7 @@
 package com.example.quizmon.ui.level
 
 import android.graphics.Color
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
@@ -16,12 +14,13 @@ class SubMapAdapter(
 ) : RecyclerView.Adapter<SubMapAdapter.SubMapViewHolder>() {
 
     fun updateData(newItems: List<SubMapItem?>) {
-        this.items = newItems
+        items = newItems
         notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SubMapViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_sub_map, parent, false)
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_sub_map, parent, false)
         return SubMapViewHolder(view)
     }
 
@@ -39,24 +38,20 @@ class SubMapAdapter(
     override fun getItemCount(): Int = items.size
 
     inner class SubMapViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+
         private val cardItem: CardView = itemView.findViewById(R.id.cardItem)
         private val ivIcon: ImageView = itemView.findViewById(R.id.ivIcon)
         private val tvId: TextView = itemView.findViewById(R.id.tvId)
 
         fun bind(item: SubMapItem) {
             tvId.text = ""
-            ivIcon.clearColorFilter()
-            
-            // Đảm bảo không có padding để icon to tối đa trong ô
-            ivIcon.setPadding(0, 0, 0, 0)
 
-            // 1. Lựa chọn Icon dựa trên trạng thái
             val iconRes = when (item.status) {
-                CompletionStatus.CORRECT -> {
-                    if (item.type == SubMapType.QUESTION) R.drawable.bt_dung
-                    else R.drawable.bt_bonus
-                }
+
+                CompletionStatus.CORRECT -> R.drawable.bt_dung
                 CompletionStatus.INCORRECT -> R.drawable.bt_sai
+                CompletionStatus.BONUS -> R.drawable.bt_bonus
+
                 CompletionStatus.NOT_STARTED -> {
                     when (item.type) {
                         SubMapType.QUESTION -> getCategoryIcon(item.category)
@@ -68,18 +63,21 @@ class SubMapAdapter(
                 }
             }
 
-            if (iconRes != 0) {
-                ivIcon.setImageResource(iconRes)
-            } else {
-                ivIcon.setImageResource(0)
-            }
+            ivIcon.setImageResource(iconRes)
 
-            // 2. Đồng bộ hóa kích thước và loại bỏ viền/bóng đổ cho tất cả các ô
             cardItem.setCardBackgroundColor(Color.TRANSPARENT)
             cardItem.cardElevation = 0f
             cardItem.radius = 0f
 
-            itemView.setOnClickListener { onItemClick(item, adapterPosition) }
+            //Không cho click lại
+            itemView.isEnabled = item.status == CompletionStatus.NOT_STARTED
+            itemView.alpha = if (item.status == CompletionStatus.NOT_STARTED) 1f else 0.6f
+
+            itemView.setOnClickListener {
+                if (item.status == CompletionStatus.NOT_STARTED) {
+                    onItemClick(item, adapterPosition)
+                }
+            }
         }
 
         private fun getCategoryIcon(category: String?): Int {

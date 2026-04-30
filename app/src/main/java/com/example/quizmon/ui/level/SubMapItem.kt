@@ -11,7 +11,8 @@ enum class SubMapType {
 enum class CompletionStatus {
     NOT_STARTED,
     CORRECT,
-    INCORRECT
+    INCORRECT,
+    BONUS
 }
 
 data class SubMapItem(

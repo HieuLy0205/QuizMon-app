@@ -5,7 +5,7 @@ import android.os.Looper
 import android.view.View
 import android.widget.TextView
 import com.example.quizmon.R
-import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.PreferenceManager
 import java.util.Locale
 
 object TaskHeadManager {

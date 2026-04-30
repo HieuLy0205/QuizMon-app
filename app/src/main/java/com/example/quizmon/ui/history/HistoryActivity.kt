@@ -16,7 +16,7 @@ import com.example.quizmon.R
 import com.example.quizmon.ui.pet.PetActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.settings.SettingsActivity
-import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.ui.shop.activity_shop
 import com.example.quizmon.utils.TaskHeadManager
 

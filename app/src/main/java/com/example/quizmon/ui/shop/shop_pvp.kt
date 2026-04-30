@@ -6,6 +6,7 @@ import android.os.PersistableBundle
 import android.widget.Button
 import com.example.quizmon.R
 import com.example.quizmon.ui.pet.AnimetorActivity
+import com.example.quizmon.utils.PreferenceManager
 
 private lateinit var preferenceManager: PreferenceManager
 private lateinit var  btnNhanPetFree: Button

@@ -22,7 +22,7 @@ import com.example.quizmon.ui.shop.shop_phobien
 import com.example.quizmon.ui.level.LevelMapActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.activity_shop
-import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
@@ -133,13 +133,13 @@ class MainActivity : AppCompatActivity() {
         val preferenceManager = PreferenceManager(this)
         val petLevel = preferenceManager.getPetLevel()
         val petId = preferenceManager.getPetid()
-        val currentPetId = "0"
+        
         //tạm dừng pet để xử lý logic thay đổi pet trong kho (tủ)
         if (petId == -1 || petLevel == 0) {
             animetor.stop()
         } else {
             ivFlatingPet?.visibility = View.VISIBLE
-            val petDetail = reposiroty.getPetById(currentPetId)
+            val petDetail = reposiroty.getPetById(petId.toString())
             petDetail?.let {
                 // Đồng bộ level hiện tại cho con pet
                 val activePet = it.copy(currentelevel = petLevel)

@@ -3,6 +3,7 @@ package com.example.quizmon.ui.level
 import android.animation.Animator
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.view.View
@@ -13,10 +14,13 @@ import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.R
-import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 import kotlin.random.Random
 
@@ -25,6 +29,7 @@ class TreasureActivity : AppCompatActivity() {
     private lateinit var preferenceManager: PreferenceManager
     private var hasOpened = false
     private var monsterIndex = -1
+    private var levelId: Int = -1
 
     private lateinit var dialogOverlay: FrameLayout
     private lateinit var dialogCard: View
@@ -35,9 +40,17 @@ class TreasureActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_treasure)
 
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.treasureRoot)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
         preferenceManager = PreferenceManager(this)
+        levelId = intent.getIntExtra("LEVEL_ID", -1)
         initViews()
 
         val chests = listOf(
@@ -54,13 +67,19 @@ class TreasureActivity : AppCompatActivity() {
             chest.setOnClickListener {
                 if (!hasOpened) {
                     hasOpened = true
-                    setResult(RESULT_OK)
                     animateChestToCenter(chest, index == monsterIndex)
                 }
             }
         }
 
-        findViewById<Button>(R.id.btnBack).setOnClickListener { finish() }
+        findViewById<Button>(R.id.btnBack).setOnClickListener {
+            if (hasOpened) {
+                val intent = Intent()
+                intent.putExtra("INTERACTED", true)
+                setResult(RESULT_OK, intent)
+            }
+            finish()
+        }
         updateHeader()
     }
 
@@ -74,29 +93,26 @@ class TreasureActivity : AppCompatActivity() {
 
         btnDialogClose.setOnClickListener {
             dialogOverlay.visibility = View.GONE
+            val intent = Intent()
+            intent.putExtra("INTERACTED", true)
+            setResult(RESULT_OK, intent)
             finish()
         }
     }
 
-    // ===================== RƯƠNG BAY =====================
     private fun animateChestToCenter(chest: ImageView, isMonster: Boolean) {
-
         val root = findViewById<ConstraintLayout>(R.id.treasureRoot)
-
         val loc = IntArray(2)
         chest.getLocationInWindow(loc)
-
         val rootLoc = IntArray(2)
         root.getLocationInWindow(rootLoc)
 
         val startX = loc[0].toFloat() - rootLoc[0]
         val startY = loc[1].toFloat() - rootLoc[1]
-
         val w = chest.width
         val h = chest.height
 
         (chest.parent as? ViewGroup)?.removeView(chest)
-
         chest.layoutParams = ConstraintLayout.LayoutParams(w, h)
         chest.translationX = startX
         chest.translationY = startY
@@ -105,19 +121,16 @@ class TreasureActivity : AppCompatActivity() {
         val targetX = (root.width - w) / 2f
         val targetY = (root.height - h) / 2f
 
-        chest.cameraDistance = 8000 * resources.displayMetrics.density
-
-        val moveX = ObjectAnimator.ofFloat(chest, "translationX", startX, targetX)
-        val moveY = ObjectAnimator.ofFloat(chest, "translationY", startY, targetY)
-        val scaleX = ObjectAnimator.ofFloat(chest, "scaleX", 1f, 2.5f)
-        val scaleY = ObjectAnimator.ofFloat(chest, "scaleY", 1f, 2.5f)
-        val rotate = ObjectAnimator.ofFloat(chest, "rotation", 0f, 10f, -10f, 0f)
-
         AnimatorSet().apply {
-            playTogether(moveX, moveY, scaleX, scaleY, rotate)
+            playTogether(
+                ObjectAnimator.ofFloat(chest, "translationX", startX, targetX),
+                ObjectAnimator.ofFloat(chest, "translationY", startY, targetY),
+                ObjectAnimator.ofFloat(chest, "scaleX", 1f, 2.5f),
+                ObjectAnimator.ofFloat(chest, "scaleY", 1f, 2.5f),
+                ObjectAnimator.ofFloat(chest, "rotation", 0f, 10f, -10f, 0f)
+            )
             duration = 800
             interpolator = AccelerateDecelerateInterpolator()
-
             addListener(object : android.animation.AnimatorListenerAdapter() {
                 override fun onAnimationEnd(animation: Animator) {
                     chestShake(chest, isMonster)
@@ -127,37 +140,26 @@ class TreasureActivity : AppCompatActivity() {
         }
     }
 
-    // ===================== SHAKE =====================
     private fun chestShake(chest: ImageView, isMonster: Boolean) {
-
         val shake = ObjectAnimator.ofFloat(chest, "rotation", 0f, 6f, -6f, 6f, 0f)
         shake.duration = 300
-
         shake.addListener(object : android.animation.AnimatorListenerAdapter() {
             override fun onAnimationEnd(animation: Animator) {
-
-                chest.animate()
-                    .alpha(0f)
-                    .setDuration(200)
-                    .withEndAction {
-                        chest.visibility = View.GONE
-                        revealResultAndShowDialog(isMonster, chest)
-                    }
-                    .start()
+                chest.animate().alpha(0f).setDuration(200).withEndAction {
+                    chest.visibility = View.GONE
+                    revealResultAndShowDialog(isMonster, chest)
+                }.start()
             }
         })
-
         shake.start()
     }
 
-    // ===================== GỘP LOGIC XỬ LÝ VÀ HIỂN THỊ =====================
     private fun revealResultAndShowDialog(isMonster: Boolean, anchor: ImageView) {
         val fullMessage: String
         val rawContent: String
 
         if (isMonster) {
             preferenceManager.useHeart()
-
             val monsterMessages = listOf(
                 getString(R.string.monster_message_1),
                 getString(R.string.monster_message_2),
@@ -167,29 +169,17 @@ class TreasureActivity : AppCompatActivity() {
             fullMessage = "Không xong rồi: $rawContent"
             animateHeartBreak(anchor)
 
-            // UI cho Quái vật
             ivRewardIcon.setImageResource(R.drawable.darkchest)
             tvDialogTitle.text = "ÔI KHÔNG!"
             tvDialogTitle.setTextColor(Color.parseColor("#B71C1C"))
             btnDialogClose.text = "CHẤP NHẬN SỐ PHẬN"
-
         } else {
-            val rewards = listOf(
-                "100 Xu",
-                "200 Xu",
-                "1 Mạng",
-                "50 EXP",
-                "Phụ trợ 50/50 x1",
-                "Phụ trợ Đáp án đúng x1",
-                "Phụ trợ Nhân đôi điểm x1",
-                "Phụ trợ Nhân đôi cơ hội x1"
-            )
-
+            val rewards = listOf("100 Xu", "200 Xu", "Cộng 1 Mạng", "50 EXP", "Phụ trợ 50/50 x1", "Phụ trợ Đáp án đúng x1")
             rawContent = rewards.random()
-            applyReward(rawContent)
+            // Sử dụng hàm tổng hợp Master để xử lý mượt mà
+            preferenceManager.applyRewardByString(rawContent, levelId)
             fullMessage = "Chúc mừng! Bạn nhận được: $rawContent"
 
-            // UI cho Thưởng
             ivRewardIcon.setImageResource(R.drawable.chest)
             tvDialogTitle.text = "CHÚC MỪNG!"
             tvDialogTitle.setTextColor(Color.parseColor("#2E7D32"))
@@ -197,64 +187,28 @@ class TreasureActivity : AppCompatActivity() {
         }
 
         updateHeader()
-
-        // HIỂN THỊ DIALOG
         dialogOverlay.visibility = View.VISIBLE
         dialogOverlay.bringToFront()
         tvDialogContent.text = fullMessage
 
-        // Hiệu ứng Pop-up Dialog
         dialogCard.scaleX = 0.2f
         dialogCard.scaleY = 0.2f
         dialogCard.alpha = 0f
-
-        dialogCard.animate()
-            .scaleX(1f)
-            .scaleY(1f)
-            .alpha(1f)
-            .setDuration(500)
-            .setInterpolator(AnticipateOvershootInterpolator())
-            .start()
+        dialogCard.animate().scaleX(1f).scaleY(1f).alpha(1f).setDuration(500)
+            .setInterpolator(AnticipateOvershootInterpolator()).start()
     }
 
-    // ===================== HEART BREAK =====================
     private fun animateHeartBreak(anchor: ImageView) {
-
         val root = findViewById<ConstraintLayout>(R.id.treasureRoot)
-
         val heart = ImageView(this).apply {
             setImageResource(R.drawable.tim3_shop_map)
             layoutParams = FrameLayout.LayoutParams(100, 100)
+            x = anchor.x + anchor.width / 2 - 50
+            y = anchor.y + anchor.height / 2 - 50
         }
-
         root.addView(heart)
-
-        // Căn giữa trái tim vào rương
-        heart.x = anchor.x + anchor.width / 2 - 50
-        heart.y = anchor.y + anchor.height / 2 - 50
-
-        heart.animate()
-            .translationYBy(800f)
-            .rotation(180f)
-            .alpha(0f)
-            .setDuration(1200)
-            .withEndAction {
-                root.removeView(heart)
-            }
-            .start()
-    }
-
-    private fun applyReward(reward: String) {
-        when {
-            reward.contains("100") -> preferenceManager.addXu(100)
-            reward.contains("200") -> preferenceManager.addXu(200)
-            reward.contains("Mạng") -> preferenceManager.addHearts(1)
-            reward.contains("EXP") -> preferenceManager.addExp(50)
-            reward.contains("50/50") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_5050, 1)
-            reward.contains("Đáp án đúng") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_CORRECT_ANSWER, 1)
-            reward.contains("Nhân đôi điểm") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_POINTS, 1)
-            reward.contains("Nhân đôi cơ hội") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_CHANCE, 1)
-        }
+        heart.animate().translationYBy(800f).rotation(180f).alpha(0f).setDuration(1200)
+            .withEndAction { root.removeView(heart) }.start()
     }
 
     private fun updateHeader() {
@@ -269,5 +223,14 @@ class TreasureActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         TaskHeadManager.stopLoop()
+    }
+
+    override fun onBackPressed() {
+        if (hasOpened) {
+            val intent = Intent()
+            intent.putExtra("INTERACTED", true)
+            setResult(RESULT_OK, intent)
+        }
+        super.onBackPressed()
     }
 }

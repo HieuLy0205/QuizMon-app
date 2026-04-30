@@ -10,6 +10,7 @@ import coil.load
 import com.example.quizmon.R
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.quizmon.utils.PreferenceManager
 import com.google.android.material.button.MaterialButton
 
 class shop_xu: AppCompatActivity() {

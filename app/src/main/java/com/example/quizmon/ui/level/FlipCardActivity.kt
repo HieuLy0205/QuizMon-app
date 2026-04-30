@@ -2,6 +2,7 @@ package com.example.quizmon.ui.level
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
@@ -14,39 +15,57 @@ import android.widget.FrameLayout
 import android.widget.GridLayout
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.R
-import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 
 class FlipCardActivity : AppCompatActivity() {
 
     private lateinit var preferenceManager: PreferenceManager
     private var hasSelected = false
+    private var levelId: Int = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_flip_card)
 
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_root)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
         preferenceManager = PreferenceManager(this)
+        levelId = intent.getIntExtra("LEVEL_ID", -1)
+        
         val gridLayout = findViewById<GridLayout>(R.id.gridLayout)
         val btnBack = findViewById<Button>(R.id.btnBack)
 
-        btnBack.setOnClickListener { finish() }
+        btnBack.setOnClickListener {
+            if (hasSelected) {
+                val intent = Intent()
+                intent.putExtra("INTERACTED", true)
+                setResult(RESULT_OK, intent)
+            }
+            finish()
+        }
         updateHeader()
 
-        // Danh sách 9 loại phần thưởng/thông điệp hoàn chỉnh
         val rewards = listOf(
             "Quẻ đại cát!\nChúc bạn ngày mới tốt lành",
-            "Phụ trợ\n50/50 x1",
-            "Phụ trợ\nNhân đôi cơ hội x1",
-            "Phụ trợ\nĐáp án đúng x1",
-            "Phụ trợ\nNhân đôi điểm x1",
-            "Nhận 50 Xu\nmay mắn",
-            "Nhận 100 EXP\nkinh nghiệm",
-            "Nhận 1 Mạng\nhồi sinh",
+            "Phụ trợ 50/50 x1",
+            "Phụ trợ Nhân đôi cơ hội x1",
+            "Phụ trợ Đáp án đúng x1",
+            "Phụ trợ Nhân đôi điểm x1",
+            "Cộng 50 Xu",
+            "Cộng 100 EXP",
+            "Cộng 1 Mạng",
             "Quẻ bình an:\nVạn sự hanh thông!"
         ).shuffled()
 
@@ -58,9 +77,7 @@ class FlipCardActivity : AppCompatActivity() {
                 if (hasSelected) return@setOnClickListener
                 hasSelected = true
                 
-                setResult(RESULT_OK)
-                handleRewardLogic(rewards[i])
-                
+                preferenceManager.applyRewardByString(rewards[i], levelId)
                 animateFlipAndZoomToCenter(cardContainer)
             }
         }
@@ -75,14 +92,12 @@ class FlipCardActivity : AppCompatActivity() {
             }
         }
 
-        // Mặt sau
         val ivBack = ImageView(this).apply {
             layoutParams = FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT)
             setImageResource(R.drawable.filpcard1)
             scaleType = ImageView.ScaleType.FIT_XY
         }
 
-        // Mặt trước
         val frontLayout = FrameLayout(this).apply {
             layoutParams = FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT)
             visibility = View.GONE
@@ -155,7 +170,12 @@ class FlipCardActivity : AppCompatActivity() {
             .withEndAction {
                 updateHeader()
                 android.os.Handler(mainLooper).postDelayed({
-                    if (!isFinishing) finish()
+                    if (!isFinishing) {
+                        val intent = Intent()
+                        intent.putExtra("INTERACTED", true)
+                        setResult(RESULT_OK, intent)
+                        finish()
+                    }
                 }, 2500)
             }
             .start()
@@ -164,18 +184,6 @@ class FlipCardActivity : AppCompatActivity() {
             ivBack.visibility = View.GONE
             frontLayout.visibility = View.VISIBLE
         }, 400)
-    }
-
-    private fun handleRewardLogic(reward: String) {
-        when {
-            reward.contains("50/50") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_5050, 1)
-            reward.contains("Nhân đôi cơ hội") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_CHANCE, 1)
-            reward.contains("Đáp án đúng") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_CORRECT_ANSWER, 1)
-            reward.contains("Nhân đôi điểm") -> preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_POINTS, 1)
-            reward.contains("50 Xu") -> preferenceManager.addXu(50)
-            reward.contains("100 EXP") -> preferenceManager.addExp(100)
-            reward.contains("1 Mạng") -> preferenceManager.addHearts(1)
-        }
     }
 
     private fun updateHeader() {
@@ -192,5 +200,14 @@ class FlipCardActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         TaskHeadManager.stopLoop()
+    }
+
+    override fun onBackPressed() {
+        if (hasSelected) {
+            val intent = Intent()
+            intent.putExtra("INTERACTED", true)
+            setResult(RESULT_OK, intent)
+        }
+        super.onBackPressed()
     }
 }

@@ -36,7 +36,7 @@
     <string name="text_shoptim">Shop Mua Máu</string>
     <string name="text_shopphobien">Shop Phố Biển</string>
     <string name="text_shoppvp">Shop PVP</string>
-    <string name="text_notepaymenthv">Chú ý: chọn phương thức thanh toán"</string>
+    <string name="text_notepaymenthv">Chú ý: chọn phương thức thanh toán</string>
     <string name="text_gianap">🅰️Mệnh giá nộp</string>
     <string name="text_thangtoan">🅱️Phương thức thanh toán</string>
     <string name="text_dangnhap">🆎Đăng nhập</string>
@@ -56,7 +56,7 @@
     <string name="play">Chơi</string>
     <string name="lvl">Cấp độ</string>
     <string name="pvp">Thi đấu</string>
-    <string name="text_nhantrung">Nhận pet mới qua ải</string>"
+    <string name="text_nhantrung">Nhận pet mới qua ải</string>
     <string name="btn_tanglevel">tăng cấp</string>
     <string name="bonus">Thưởng\nhàng ngày</string>
     <string name="rank">Xếp hạng</string>
@@ -99,7 +99,7 @@
     <string name="percent_1">0%</string>
 
     <!--    Minigame Strings-->
-    <string name="monster_message_1">"Gặp ngay quái vật háu đói! Bạn phải bỏ lại 1 trái tim để chạy thoát thân rồi!"</string>
-    <string name="monster_message_2">"Ôi không! Quái vật vừa 'thó' mất của bạn 1 mạng rồi. Chạy ngay đi!"</string>
-    <string name="monster_message_3">"Quái vật hiện hình! Nó đã nuốt chửng 1 mạng của bạn như một viên kẹo!"</string>
+    <string name="monster_message_1">Gặp ngay quái vật háu đói! Bạn phải bỏ lại 1 trái tim để chạy thoát thân rồi!</string>
+    <string name="monster_message_2">Ôi không! Quái vật vừa thó mất của bạn 1 mạng rồi. Chạy ngay đi!</string>
+    <string name="monster_message_3">Quái vật hiện hình! Nó đã nuốt chửng 1 mạng của bạn như một viên kẹo!</string>
 </resources>

@@ -5,7 +5,7 @@ import android.os.PersistableBundle
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizmon.data.repository.petReposiroty
-import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.data.model.Pet
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat

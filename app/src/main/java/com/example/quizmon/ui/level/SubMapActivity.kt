@@ -2,6 +2,7 @@ package com.example.quizmon.ui.level
 
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -19,7 +20,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizmon.R
 import com.example.quizmon.ui.quiz.QuizActivity
-import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -46,7 +47,9 @@ class SubMapActivity : AppCompatActivity() {
     private val star1Score = 100
     private val star2Score = 200
     private val star3Score = 300
-    private val maxPossibleScore = 420
+    // Cập nhật maxPossibleScore dựa trên tổng số câu hỏi thực tế có thể có
+    // Ở đây ta dùng 300 (điểm 3 sao) làm mốc 100% của thanh Progress
+    private val maxProgressScore = 300
 
     private lateinit var preferenceManager: PreferenceManager
     
@@ -62,6 +65,10 @@ class SubMapActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_sub_map)
+
+        if (savedInstanceState != null) {
+            lastClickedPosition = savedInstanceState.getInt("LAST_CLICKED_POSITION", -1)
+        }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.sub_map_root)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -91,8 +98,12 @@ class SubMapActivity : AppCompatActivity() {
         updateUI()
 
         adapter = SubMapAdapter(mapItems) { item, position ->
-            lastClickedPosition = position
-            handleItemClick(item)
+            if (item.status == CompletionStatus.NOT_STARTED) {
+                lastClickedPosition = position
+                handleItemClick(item)
+            } else {
+                Toast.makeText(this, "Ô này đã hoàn thành!", Toast.LENGTH_SHORT).show()
+            }
         }
         rvSubMap.adapter = adapter
     }
@@ -103,11 +114,21 @@ class SubMapActivity : AppCompatActivity() {
         currentScore = prefs.getInt("SCORE_$levelId", 0)
 
         if (json != null) {
-            val type = object : TypeToken<List<SubMapItem?>>() {}.type
-            mapItems = Gson().fromJson(json, type)
-        } else {
+            try {
+                val type = object : TypeToken<List<SubMapItem?>>() {}.type
+                val loadedItems: List<SubMapItem?> = Gson().fromJson(json, type)
+                mapItems.clear()
+                mapItems.addAll(loadedItems)
+            } catch (e: Exception) {
+                e.printStackTrace()
+            }
+        } else if (mapItems.isEmpty()) {
             generateMapWithShape()
             saveMapState()
+        }
+        
+        if (::adapter.isInitialized) {
+            adapter.notifyDataSetChanged()
         }
     }
 
@@ -117,15 +138,25 @@ class SubMapActivity : AppCompatActivity() {
         prefs.edit().apply {
             putString("MAP_STATE_$levelId", json)
             putInt("SCORE_$levelId", currentScore)
-            apply()
-        }
+        }.commit() 
     }
 
     private fun updateUI() {
         TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
+        
         tvCurrentStageScore.text = currentScore.toString()
+        
+        when {
+            currentScore > 0 -> tvCurrentStageScore.setTextColor(Color.parseColor("#4CAF50")) 
+            currentScore < 0 -> tvCurrentStageScore.setTextColor(Color.parseColor("#F44336")) 
+            else -> tvCurrentStageScore.setTextColor(Color.BLACK)
+        }
 
-        val progressPercent = ((currentScore.toFloat() / maxPossibleScore) * 100).toInt().coerceIn(0, 100)
+        // Cập nhật logic tính % thanh Progress
+        // Nếu đạt mốc 300 điểm (3 sao) thì thanh Progress phải đầy (100%)
+        val progressPercent = if (currentScore > 0) {
+            ((currentScore.toFloat() / maxProgressScore) * 100).toInt().coerceIn(0, 100)
+        } else 0
         pbStarProgress.progress = progressPercent
 
         starIcons[0].setImageResource(if (currentScore >= star1Score) android.R.drawable.btn_star_big_on else android.R.drawable.btn_star_big_off)
@@ -205,12 +236,12 @@ class SubMapActivity : AppCompatActivity() {
                     startActivityForResult(intent, 1001)
                 }
                 SubMapType.SPIN_WHEEL -> {
-                    val intent = Intent(this, com.example.quizmon.ui.level.SpinWheelActivity::class.java)
+                    val intent = Intent(this, SpinWheelActivity::class.java)
                     intent.putExtra("LEVEL_ID", levelId)
                     startActivityForResult(intent, 1004)
                 }
                 SubMapType.TREASURE -> {
-                    val intent = Intent(this, com.example.quizmon.ui.level.TreasureActivity::class.java)
+                    val intent = Intent(this, TreasureActivity::class.java)
                     intent.putExtra("LEVEL_ID", levelId)
                     startActivityForResult(intent, 1003)
                 }
@@ -226,53 +257,63 @@ class SubMapActivity : AppCompatActivity() {
         }
     }
 
-    private fun markSpecialItemDone(item: SubMapItem) {
-        val pos = mapItems.indexOfFirst { it?.id == item.id }
-        if (pos != -1) {
-            mapItems[pos] = item.copy(status = CompletionStatus.CORRECT)
-            adapter.notifyItemChanged(pos)
-            saveMapState()
-        }
-    }
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (lastClickedPosition != -1) {
-            val item = mapItems[lastClickedPosition] ?: return
+            val item = mapItems.getOrNull(lastClickedPosition) ?: return
             
-            if (requestCode == 1001) {
-                if (resultCode == RESULT_OK) {
-                    currentScore += scorePerCorrect
-                    mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.CORRECT)
-                } else {
-                    currentScore = (currentScore - scorePerIncorrect).coerceAtLeast(0)
-                    mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.INCORRECT)
-                    preferenceManager.useHeart()
+            var stateChanged = false
+            when (requestCode) {
+                1001 -> { // QUIZ
+                    if (resultCode == RESULT_OK) { // Trả lời đúng
+                        currentScore += scorePerCorrect
+                        mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.CORRECT)
+                        stateChanged = true
+                    } else if (resultCode == 2) { // Trả lời sai (RESULT_ANSWER_WRONG)
+                        currentScore -= scorePerIncorrect
+                        mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.INCORRECT)
+                        stateChanged = true
+                        preferenceManager.useHeart()
+                    }
                 }
-                adapter.notifyItemChanged(lastClickedPosition)
-                saveMapState()
-                updateUI() 
-                checkLevelCompletion()
-            } else if (requestCode == 1002 || requestCode == 1003 || requestCode == 1004) {
-                if (resultCode == RESULT_OK) {
-                    markSpecialItemDone(item)
-                    // Sau khi quay vòng quay/mở rương, cập nhật lại điểm hiển thị vì có thể điểm đã thay đổi
-                    loadMapState() 
-                    updateUI()
+                1002, 1003, 1004 -> { // MINIGAMES
+                    val interacted = data?.getBooleanExtra("INTERACTED", false) ?: false
+                    if (resultCode == RESULT_OK && interacted) { // Đã tương tác
+                        currentScore = preferenceManager.getLevelScore(levelId)
+                        mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.BONUS)
+                        stateChanged = true
+                    }
                 }
             }
+
+            if (stateChanged) {
+                preferenceManager.saveLevelScore(levelId, currentScore)
+                saveMapState()
+                adapter.notifyItemChanged(lastClickedPosition)
+                updateUI()
+                checkLevelCompletion()
+            }
+            lastClickedPosition = -1
         }
     }
 
     override fun onResume() {
         super.onResume()
+        loadMapState()
         updateUI() 
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        updateHandler.post(updateRunnable)
     }
     
     override fun onPause() {
         super.onPause()
         TaskHeadManager.stopLoop()
+        updateHandler.removeCallbacks(updateRunnable)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("LAST_CLICKED_POSITION", lastClickedPosition)
     }
 
     private fun checkLevelCompletion() {
@@ -303,8 +344,7 @@ class SubMapActivity : AppCompatActivity() {
 
                 if (levelId == currentMax) {
                     mainPrefs.edit().putInt("CURRENT_UNLOCKED_LEVEL", levelId + 1).apply()
-                    val coinManager = PreferenceManager(this)
-                    coinManager.Dk_batmo_xn("nv2", true)
+                    preferenceManager.Dk_batmo_xn("nv2", true)
                 }
             } else {
                 Toast.makeText(this, "Chưa đủ điểm ($star1Score) để qua ải!", Toast.LENGTH_LONG).show()

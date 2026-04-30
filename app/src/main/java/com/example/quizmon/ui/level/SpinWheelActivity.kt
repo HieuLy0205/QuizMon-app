@@ -3,13 +3,17 @@ package com.example.quizmon.ui.level
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.view.animation.DecelerateInterpolator
 import android.widget.*
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.R
-import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 import kotlin.random.Random
 
@@ -37,7 +41,14 @@ class SpinWheelActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_spin_wheel)
+
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.spinRoot)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
 
         preferenceManager = PreferenceManager(this)
         levelId = intent.getIntExtra("LEVEL_ID", -1)
@@ -45,7 +56,11 @@ class SpinWheelActivity : AppCompatActivity() {
         initViews()
 
         findViewById<Button>(R.id.btnBack).setOnClickListener {
-            if (hasSpun) setResult(RESULT_OK) else setResult(RESULT_CANCELED)
+            if (hasSpun) {
+                val intent = Intent()
+                intent.putExtra("INTERACTED", true)
+                setResult(RESULT_OK, intent)
+            }
             finish()
         }
 
@@ -65,7 +80,9 @@ class SpinWheelActivity : AppCompatActivity() {
         
         findViewById<Button>(R.id.btnDialogClose).setOnClickListener {
             dialogOverlay.visibility = View.GONE
-            setResult(RESULT_OK)
+            val intent = Intent()
+            intent.putExtra("INTERACTED", true)
+            setResult(RESULT_OK, intent)
             finish() 
         }
     }
@@ -90,8 +107,7 @@ class SpinWheelActivity : AppCompatActivity() {
                 hasSpun = true
                 luckyWheel.rotation = targetItemRotation % 360
                 
-                // Áp dụng phần thưởng với levelId đã nhận được
-                applySpinReward(reward, levelId)
+                preferenceManager.applyRewardByString(reward, levelId)
                 
                 showRewardDialog(reward)
                 updateHeader()
@@ -112,56 +128,16 @@ class SpinWheelActivity : AppCompatActivity() {
         card.animate().scaleX(1f).scaleY(1f).alpha(1f).setDuration(300).start()
     }
 
-    private fun applySpinReward(reward: String, levelId: Int) {
-        val amount = reward.filter { it.isDigit() }.toIntOrNull() ?: 0
-        
-        when {
-            reward.contains("50/50") ->
-                preferenceManager.addSupport(PreferenceManager.SUPPORT_5050, 1)
-
-            reward.contains("Nhân đôi cơ hội") ->
-                preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_CHANCE, 1)
-
-            reward.contains("Đáp án đúng") ->
-                preferenceManager.addSupport(PreferenceManager.SUPPORT_CORRECT_ANSWER, 1)
-
-            reward.contains("Nhân đôi điểm") ->
-                preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_POINTS, 1)
-
-            reward.contains("Xu") -> {
-                if (amount > 0) preferenceManager.addXu(amount)
-            }
-
-            reward.contains("EXP") -> {
-                if (amount > 0) preferenceManager.addExp(amount)
-            }
-
-            reward.contains("Điểm") -> {
-                if (levelId != -1 && amount > 0) {
-                    if (reward.contains("Trừ")) {
-                        preferenceManager.addLevelScore(levelId, -amount)
-                    } else {
-                        preferenceManager.addLevelScore(levelId, amount)
-                    }
-                }
-            }
-
-            reward.contains("Mạng") || reward.contains("tim") -> {
-                if (reward.contains("Trừ") || reward.contains("mất")) {
-                    preferenceManager.useHeart()
-                } else {
-                    preferenceManager.addHearts(if (amount == 0) 1 else amount)
-                }
-            }
-        }
+    private fun updateHeader() {
+        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
     }
 
     override fun onBackPressed() {
-        if (hasSpun) setResult(RESULT_OK) else setResult(RESULT_CANCELED)
+        if (hasSpun) {
+            val intent = Intent()
+            intent.putExtra("INTERACTED", true)
+            setResult(RESULT_OK, intent)
+        }
         super.onBackPressed()
-    }
-
-    private fun updateHeader() {
-        TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
     }
 }

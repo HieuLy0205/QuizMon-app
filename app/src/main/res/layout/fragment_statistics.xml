@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
+    android:fitsSystemWindows="true"
     android:background="#EDF1F4"
     tools:context="com.example.quizmon.ui.statistics.StatisticsFragment">
 
