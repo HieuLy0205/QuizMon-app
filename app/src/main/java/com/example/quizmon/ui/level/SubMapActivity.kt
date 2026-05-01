@@ -264,12 +264,15 @@ class SubMapActivity : AppCompatActivity() {
             var stateChanged = false
             when (requestCode) {
                 1001 -> { // QUIZ
+                    val isDouble = data?.getBooleanExtra(QuizActivity.EXTRA_IS_DOUBLE_SCORE, false) ?: false
                     if (resultCode == RESULT_OK) { // Trả lời đúng
-                        currentScore += scorePerCorrect
+                        val gained = if (isDouble) scorePerCorrect * 2 else scorePerCorrect
+                        currentScore += gained
                         mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.CORRECT)
                         stateChanged = true
                     } else if (resultCode == 2) { // Trả lời sai (RESULT_ANSWER_WRONG)
-                        currentScore -= scorePerIncorrect
+                        val penalty = if (isDouble) 0 else scorePerIncorrect
+                        currentScore -= penalty
                         mapItems[lastClickedPosition] = item.copy(status = CompletionStatus.INCORRECT)
                         stateChanged = true
                         preferenceManager.useHeart()
