@@ -1,13 +1,13 @@
 package com.example.quizmon.utils
-
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.core.content.edit
+import java.text.SimpleDateFormat
 import java.util.*
 import java.util.regex.Pattern
 
 class PreferenceManager(private val context: Context) {
-    private val prefs: SharedPreferences = context.getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+    private val sharedPreferences: SharedPreferences = context.getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
     private val mapPrefs: SharedPreferences = context.getSharedPreferences("QuizMonMapPrefs", Context.MODE_PRIVATE)
 
     companion object {
@@ -17,16 +17,39 @@ class PreferenceManager(private val context: Context) {
         const val SUPPORT_DOUBLE_POINTS = "support_double_points"
     }
 
-    // --- TIỀN TỆ & EXP ---
-    fun getCoins() = prefs.getInt("current_coins", 0)
-    fun saveCoins(amount: Int) = prefs.edit { putInt("current_coins", amount) }
-    fun addCoin(amount: Int) = prefs.edit { putInt("current_coins", getCoins() + amount) }
+    // --- QUẢN LÝ SAO (Stars) ---
+    fun saveCoins(coins: Int) {
+        sharedPreferences.edit().putInt("current_coins", coins).apply()
+    }
+    fun getCoins(): Int {
+        return sharedPreferences.getInt("current_coins", 0)
+    }
+    fun addCoin(amount: Int) {
+        saveCoins(getCoins() + amount)
+    }
 
-    fun getXu() = prefs.getInt("current_xu", 0)
-    fun addXu(amount: Int) = prefs.edit { putInt("current_xu", getXu() + amount) }
+    // --- QUẢN LÝ XU (Coins) ---
+    fun saveXu(xu: Int) {
+        sharedPreferences.edit().putInt("current_xu", xu).apply()
+    }
+    fun getXu(): Int {
+        return sharedPreferences.getInt("current_xu", 0)
+    }
+    fun addXu(amount: Int) {
+        saveXu(getXu() + amount)
+    }
 
-    fun getExp() = prefs.getInt("current_exp", 0)
-    fun addExp(amount: Int) = prefs.edit { putInt("current_exp", getExp() + amount) }
+    // --- QUẢN LÝ KINH NGHIỆM (Exp) ---
+    fun saveExp(exp: Int) {
+        sharedPreferences.edit().putInt("current_exp", exp).apply()
+    }
+    fun getExp(): Int {
+        return sharedPreferences.getInt("current_exp", 0)
+    }
+    fun addExp(amount: Int) {
+        saveExp(getExp() + amount)
+    }
+
 
     // --- ĐIỂM ẢI (Stage Score) ---
     fun getLevelScore(levelId: Int) = mapPrefs.getInt("SCORE_$levelId", 0)
@@ -35,6 +58,7 @@ class PreferenceManager(private val context: Context) {
     fun saveLevelScore(levelId: Int, score: Int) = mapPrefs.edit(commit = true) { 
         putInt("SCORE_$levelId", score) 
     }
+    // --- ĐIỂM ẢI (Stage Score) ---
     
     fun addLevelScore(levelId: Int, amount: Int) {
         val current = getLevelScore(levelId)
@@ -67,24 +91,24 @@ class PreferenceManager(private val context: Context) {
     }
 
     // --- QUẢN LÝ TIM ---
-    fun getHearts() = prefs.getInt("current_hearts", 5)
+    fun getHearts() = sharedPreferences.getInt("current_hearts", 5)
     fun addHearts(amount: Int) {
         val next = getHearts() + amount
-        prefs.edit { putInt("current_hearts", next) }
-        if (next >= 5) prefs.edit { putLong("last_heart_loss_time", 0L) }
+        sharedPreferences.edit { putInt("current_hearts", next) }
+        if (next >= 5) sharedPreferences.edit { putLong("last_heart_loss_time", 0L) }
     }
     fun useHeart() {
         val current = getHearts()
         if (current > 0) {
-            prefs.edit { putInt("current_hearts", current - 1) }
-            if (current == 5) prefs.edit { putLong("last_heart_loss_time", System.currentTimeMillis()) }
+            sharedPreferences.edit { putInt("current_hearts", current - 1) }
+            if (current == 5) sharedPreferences.edit { putLong("last_heart_loss_time", System.currentTimeMillis()) }
         }
     }
 
     fun autoRegenerateHearts(): Long {
         val current = getHearts()
         if (current >= 5) return 0
-        val lastTime = prefs.getLong("last_heart_loss_time", 0L)
+        val lastTime = sharedPreferences.getLong("last_heart_loss_time", 0L)
         if (lastTime == 0L) return 0
         
         val diff = System.currentTimeMillis() - lastTime
@@ -93,52 +117,84 @@ class PreferenceManager(private val context: Context) {
         
         if (recovered > 0) {
             val next = (current + recovered).coerceAtMost(5)
-            prefs.edit { 
+            sharedPreferences.edit {
                 putInt("current_hearts", next)
                 putLong("last_heart_loss_time", if (next < 5) lastTime + (recovered * interval) else 0L)
             }
         }
-        return if (getHearts() < 5) interval - (System.currentTimeMillis() - prefs.getLong("last_heart_loss_time", 0L)) % interval else 0
+        return if (getHearts() < 5) interval - (System.currentTimeMillis() - sharedPreferences.getLong("last_heart_loss_time", 0L)) % interval else 0
     }
 
-    fun getSupportQuantity(type: String) = prefs.getInt(type, 1)
-    fun addSupport(type: String, amount: Int) = prefs.edit { putInt(type, getSupportQuantity(type) + amount) }
-    
-    // --- PET & NHIỆM VỤ ---
-    fun getPetid() = prefs.getInt("pet_id", 1)
-    fun savePetid(id: Int) = prefs.edit { putInt("pet_id", id) }
+    fun getSupportQuantity(type: String) = sharedPreferences.getInt(type, 1)
+    fun addSupport(type: String, amount: Int) = sharedPreferences.edit { putInt(type, getSupportQuantity(type) + amount) }
+
+
+    // --- QUẢN LÝ NHIỆM VỤ ---
+    fun saver_va_inday(taskId: String): Boolean {
+        val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
+        val lastData = sharedPreferences.getString("task_$taskId", null)
+        return lastData == currentDate
+    }
+    fun Xn_va_inday(taskId: String) {
+        val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
+        sharedPreferences.edit().putString("task_$taskId", currentDate).apply()
+    }
+    fun Dk_batmo_xn(taskId: String, isReady: Boolean) {
+        sharedPreferences.edit().putBoolean("ready_$taskId", isReady).apply()
+    }
+    fun Dk_xacnhan_cq(taskId: String): Boolean {
+        return sharedPreferences.getBoolean("ready_$taskId", false)
+    }
+
+    // --- QUẢN LÝ PET ---
+    fun getPetLevel(): Int{
+        //vì sao cần biến : vì khi đổi bet thì tên key có thể cộng vào id
+        val currentPetid = getPetid()
+        if(currentPetid == -1) return 1
+        return sharedPreferences.getInt("pet_level_$currentPetid", 1)
+    }
+    fun savePetLevel(level: Int){
+        val currentPetid = getPetid()
+        if (currentPetid != -1) {
+            sharedPreferences.edit().putInt("pet_level_$currentPetid", level).apply()
+        }
+    }
+    fun getPetid(): Int {
+        return sharedPreferences.getInt("pet_id", -1)
+    }
+    fun savePetid(id: Int) {
+        sharedPreferences.edit().putInt("pet_id", id).apply()
+    }
     fun addpetid(id: Int) {
-        val owned = getOwnedPetIds().toMutableSet()
-        owned.add(id.toString())
-        prefs.edit { putStringSet("owned_pet_ids", owned) }
-    }
-    
-    fun getPetLevel() = prefs.getInt("pet_level", 1)
-    fun savePetLevel(level: Int) = prefs.edit { putInt("pet_level", level) }
-
-    fun getOwnedPetIds(): List<String> = prefs.getStringSet("owned_pet_ids", setOf("1"))?.toList() ?: listOf("1")
-
-    // --- EGG ---
-    fun getOwnedEggIds(): List<String> = prefs.getStringSet("owned_egg_ids", emptySet())?.toList() ?: emptyList()
-    fun addEggId(id: Int) {
-        val owned = getOwnedEggIds().toMutableSet()
-        owned.add(id.toString())
-        prefs.edit { putStringSet("owned_egg_ids", owned) }
+        val nextid = getPetid() + id
+        savePetid(nextid)
     }
 
-    fun Dk_batmo_xn(taskId: String, isReady: Boolean) = prefs.edit { putBoolean("ready_$taskId", isReady) }
-    fun Dk_xacnhan_cq(taskId: String) = prefs.getBoolean("ready_$taskId", false)
-
-    // --- DAILY TASKS ---
-    fun isTaskCompletedToday(taskId: String): Boolean {
-        val lastCompleted = prefs.getString("task_completed_date_$taskId", "")
-        val today = java.text.SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
-        return lastCompleted == today
+    // --- QUẢN LÝ DANH SÁCH SỞ HỮU ---
+    fun get_sh_PetIds(): List<String> {
+        val sh_Str = sharedPreferences.getString("owned_pets", "") ?: ""
+        return if (sh_Str.isEmpty()) emptyList() else sh_Str.split(",")
     }
 
-    fun markTaskCompletedToday(taskId: String) {
-        val today = java.text.SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
-        prefs.edit { putString("task_completed_date_$taskId", today) }
+    fun add_sh_Pet(id: String) {
+        val sh = get_sh_PetIds().toMutableList()
+        if (!sh.contains(id)) {
+            sh.add(id)
+            sharedPreferences.edit().putString("owned_pets", sh.joinToString(",")).apply()
+        }
+    }
+
+    fun get_sh_EggIds(): List<String> {
+        val sh_Str = sharedPreferences.getString("owned_eggs", "") ?: ""
+        return if (sh_Str.isEmpty()) emptyList() else sh_Str.split(",")
+    }
+
+    fun add_sh_Egg(id: String) {
+        val sh = get_sh_EggIds().toMutableList()
+        if (!sh.contains(id)) {
+            sh.add(id)
+            sharedPreferences.edit().putString("owned_eggs", sh.joinToString(",")).apply()
+        }
     }
 
     fun handleCorrectAnswer() {

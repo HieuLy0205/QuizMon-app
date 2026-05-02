@@ -1,11 +1,11 @@
 package com.example.quizmon.ui.shop
-import com.example.quizmon.utils.PreferenceManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
 import com.example.quizmon.R
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 import kotlin.collections.remove
 
@@ -38,22 +38,21 @@ class shop_phobien: AppCompatActivity() {
             finish()
         }
     }
-
     override fun onResume() {
         super.onResume()
-        TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), preferenceManager)
+        //Tự động cập nhật Header và đếm ngược Tim
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
     }
 
     override fun onPause() {
         super.onPause()
+        //Dừng cập nhật
         TaskHeadManager.stopLoop()
     }
-
     fun setup_nv_nhancoin(){
         val preferenceManager = PreferenceManager(this)
         if (preferenceManager.saver_va_inday("nv1")){
-            btn_Nv1.isEnabled = false
-            btn_Nv1.text = "Đã nhận hôm nay"
+
         }
         if (preferenceManager.saver_va_inday("nv2")){
             btn_Nv2.isEnabled = false

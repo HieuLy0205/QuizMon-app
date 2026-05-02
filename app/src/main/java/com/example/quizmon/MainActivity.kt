@@ -22,7 +22,6 @@ import com.example.quizmon.ui.shop.shop_phobien
 import com.example.quizmon.ui.level.LevelMapActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.activity_shop
-import com.example.quizmon.ui.shop.PreferenceManager
 import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
@@ -31,6 +30,7 @@ import com.example.quizmon.ui.shop.shop_tim
 import com.example.quizmon.ui.shop.shop_xu
 import com.example.quizmon.utils.StreakManager
 import com.example.quizmon.utils.TaskHeadManager
+import com.example.quizmon.utils.PreferenceManager
 import kotlin.jvm.java
 import kotlin.math.abs
 
@@ -121,7 +121,7 @@ class MainActivity : AppCompatActivity() {
         //Tự động cập nhật Header và đếm ngược Tim
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
     }
-    
+
     override fun onPause() {
         super.onPause()
         animetor.stop()

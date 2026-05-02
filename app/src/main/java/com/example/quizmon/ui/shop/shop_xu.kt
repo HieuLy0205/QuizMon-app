@@ -7,6 +7,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.Toast
 import coil.load
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.R
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.GridLayoutManager
@@ -70,10 +71,13 @@ class shop_xu: AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
-        TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), preferenceManager)
+        //Tự động cập nhật Header và đếm ngược Tim
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
     }
+
     override fun onPause() {
         super.onPause()
+        //Dừng cập nhật
         TaskHeadManager.stopLoop()
     }
     //nói đến thanh toán: đây là bộ sử lý giao diện

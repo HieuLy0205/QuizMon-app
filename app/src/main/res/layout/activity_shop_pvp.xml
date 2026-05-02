@@ -13,6 +13,13 @@
         android:orientation="vertical"
         android:paddingBottom="24dp">
 
+        <include
+            android:id="@+id/taskhead"
+            layout="@layout/layout_taskhead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <!-- Header -->
         <LinearLayout
             android:layout_width="match_parent"

@@ -5,7 +5,6 @@ import android.os.PersistableBundle
 import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizmon.data.repository.petReposiroty
-import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.data.model.Pet
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -15,6 +14,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import android.widget.ImageButton
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 
 
@@ -101,14 +101,14 @@ class TupetActivity: AppCompatActivity(){
         }
     }
 
-    override fun onResume() {
-        super.onResume()
-        TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), pref)
-    }
-    override fun onPause() {
-        super.onPause()
-        TaskHeadManager.stopLoop()
-    }
+//    override fun onResume() {
+//        super.onResume()
+//        TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), pref)
+//    }
+//    override fun onPause() {
+//        super.onPause()
+//        TaskHeadManager.stopLoop()
+//    }
 
 
 }

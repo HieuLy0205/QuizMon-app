@@ -2,6 +2,7 @@ package com.example.quizmon.ui.shop
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 import com.example.quizmon.R
 class shop_tim: AppCompatActivity() {
@@ -13,14 +14,16 @@ class shop_tim: AppCompatActivity() {
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
         btnBack.setOnClickListener { finish() }
     }
-
     override fun onResume() {
         super.onResume()
-        TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), pref)
+        //Tự động cập nhật Header và đếm ngược Tim
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), pref)
     }
 
     override fun onPause() {
         super.onPause()
+        //Dừng cập nhật
         TaskHeadManager.stopLoop()
     }
+
 }
