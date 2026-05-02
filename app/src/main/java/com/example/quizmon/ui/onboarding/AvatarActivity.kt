@@ -94,8 +94,7 @@ class AvatarActivity : AppCompatActivity() {
                 .putInt("frame", selectedFrame)
                 .putBoolean("FIRST_TIME", false)
                 .apply()
-
-            startActivity(Intent(this, ProfileActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
     }
@@ -114,7 +113,7 @@ class AvatarActivity : AppCompatActivity() {
         }
 
         findViewById<View>(R.id.nav_menu).setOnClickListener {
-            startActivity(Intent(this, SettingsActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 

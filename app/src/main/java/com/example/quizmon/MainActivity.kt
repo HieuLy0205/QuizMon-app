@@ -31,6 +31,7 @@ import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.StreakManager
 import com.example.quizmon.utils.TaskHeadManager
 import kotlin.math.abs
+import com.example.quizmon.ui.onboarding.AgeActivity
 
 class MainActivity : AppCompatActivity() {
     private var dX = 0f
@@ -42,13 +43,27 @@ class MainActivity : AppCompatActivity() {
     private lateinit var animetor: AnimetorActivity
 
     private lateinit var ivFlatingPet: ImageView
+    private lateinit var tvUserName: TextView
+    private lateinit var ivAvatar: ImageView
     private  lateinit var preferenceManager: PreferenceManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        
+        val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
+
+        val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
+
+        if (isFirstTime) {
+            startActivity(Intent(this, AgeActivity::class.java))
+            finish()
+            return
+        }
+        tvUserName = findViewById(R.id.tvUserName)
+        ivAvatar = findViewById(R.id.ivAvatar)
+
+        loadUserHeader()
         // Khởi tạo SoundManager
         SoundManager.init(this)
         
@@ -64,7 +79,7 @@ class MainActivity : AppCompatActivity() {
         setupTaskbar()
         setupFloatingPet()
         updateUI()
-
+        loadUserHeader()
         findViewById<View>(R.id.btnQuiz).setOnClickListener {
             SoundManager.playClick()
             startActivity(Intent(this, LevelMapActivity::class.java))
@@ -224,6 +239,24 @@ class MainActivity : AppCompatActivity() {
             )
         } else {
             startActivity(Intent(this, ProfileActivity::class.java))
+        }
+    }
+    private fun loadUserHeader() {
+        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+
+        val name = prefs.getString("name", "User")
+        val avatar = prefs.getString("avatar", "avatar1")
+
+        tvUserName.text = if (name.isNullOrBlank()) "User" else name
+        setAvatarHome(avatar ?: "avatar1")
+    }
+
+    private fun setAvatarHome(id: String) {
+        when (id) {
+            "avatar1" -> ivAvatar.setImageResource(R.drawable.avatar1)
+            "avatar2" -> ivAvatar.setImageResource(R.drawable.avatar2)
+            "avatar_vip1" -> ivAvatar.setImageResource(R.drawable.avatar_vip1)
+            else -> ivAvatar.setImageResource(R.drawable.avatar1)
         }
     }
 }

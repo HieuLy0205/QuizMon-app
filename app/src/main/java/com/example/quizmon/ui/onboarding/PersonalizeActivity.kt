@@ -1,12 +1,11 @@
 package com.example.quizmon.ui.onboarding
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
+import android.view.inputmethod.EditorInfo
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.quizmon.R
 
@@ -16,6 +15,8 @@ class PersonalizeActivity : AppCompatActivity() {
     private val selectedTopics = mutableSetOf<String>()
 
     private lateinit var btnNext: Button
+    private lateinit var edtCustomTopic: EditText
+    private lateinit var customContainer: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,40 +27,19 @@ class PersonalizeActivity : AppCompatActivity() {
         val btnMale = findViewById<Button>(R.id.btnMale)
         val btnFemale = findViewById<Button>(R.id.btnFemale)
         val btnOther = findViewById<Button>(R.id.btnOther)
-        btnNext = findViewById(R.id.btnNext)
 
-        // disable lúc đầu
+        btnNext = findViewById(R.id.btnNext)
+        edtCustomTopic = findViewById(R.id.edtCustomTopic)
+        customContainer = findViewById(R.id.customContainer)
+
         btnNext.isEnabled = false
         btnNext.alpha = 0.5f
 
-        // ===== GENDER =====
-        fun selectGender(gender: String) {
-            selectedGender = gender
-
-            btnMale.isSelected = gender == "Nam"
-            btnFemale.isSelected = gender == "Nữ"
-            btnOther.isSelected = gender == "Khác"
-
-            val selectedBtn = when (gender) {
-                "Nam" -> btnMale
-                "Nữ" -> btnFemale
-                else -> btnOther
-            }
-
-            // animation nhẹ
-            selectedBtn.animate()
-                .scaleX(1.08f)
-                .scaleY(1.08f)
-                .setDuration(120)
-                .withEndAction {
-                    selectedBtn.animate()
-                        .scaleX(1f)
-                        .scaleY(1f)
-                        .setDuration(120)
-                        .start()
-                }
-                .start()
-
+        fun selectGender(g: String) {
+            selectedGender = g
+            btnMale.isSelected = g == "Nam"
+            btnFemale.isSelected = g == "Nữ"
+            btnOther.isSelected = g == "Khác"
             updateNextButton()
         }
 
@@ -67,7 +47,6 @@ class PersonalizeActivity : AppCompatActivity() {
         btnFemale.setOnClickListener { selectGender("Nữ") }
         btnOther.setOnClickListener { selectGender("Khác") }
 
-        // TOPICS
         setupTopic(R.id.topic_phim, "Phim ảnh", R.drawable.ic_movie)
         setupTopic(R.id.topic_xahoi, "Xã hội", R.drawable.ic_people)
         setupTopic(R.id.topic_lichsu, "Lịch sử", R.drawable.ic_history)
@@ -77,8 +56,17 @@ class PersonalizeActivity : AppCompatActivity() {
         setupTopic(R.id.topic_tunhien, "Tự nhiên", R.drawable.ic_leaf)
         setupTopic(R.id.topic_vanhoa, "Văn hóa", R.drawable.ic_theater)
 
-        //NEXT
+        edtCustomTopic.setOnEditorActionListener { _, actionId, _ ->
+            if (actionId == EditorInfo.IME_ACTION_DONE) {
+                addCustomTopicFromInput()
+                true
+            } else {
+                false
+            }
+        }
+
         btnNext.setOnClickListener {
+            addCustomTopicFromInput()
 
             if (selectedGender.isBlank()) {
                 Toast.makeText(this, "Vui lòng chọn giới tính", Toast.LENGTH_SHORT).show()
@@ -91,70 +79,86 @@ class PersonalizeActivity : AppCompatActivity() {
             }
 
             prefs.edit()
+            prefs.edit()
                 .putString("gender", selectedGender)
                 .putStringSet("topics", selectedTopics)
+                .putBoolean("FIRST_TIME", false)
                 .apply()
-
             startActivity(Intent(this, NicknameActivity::class.java))
             finish()
         }
     }
-
-    //  UPDATE BUTTON
-    private fun updateNextButton() {
-        val enabled = selectedTopics.size >= 3 && selectedGender.isNotBlank()
-
-        btnNext.isEnabled = enabled
-        btnNext.alpha = if (enabled) 1f else 0.5f
-    }
-
-    //  TOPIC
-    private fun setupTopic(layoutId: Int, value: String, iconRes: Int) {
-
-        val layout = findViewById<View>(layoutId)
-        val tick = layout.findViewById<ImageView>(R.id.tick)
+    private fun setupTopic(id: Int, value: String, iconRes: Int) {
+        val layout = findViewById<View>(id)
         val text = layout.findViewById<TextView>(R.id.txtTopic)
-        val icon = layout.findViewById<ImageView?>(R.id.icon)
+        val icon = layout.findViewById<ImageView>(R.id.icon)
+        val tick = layout.findViewById<ImageView>(R.id.tick)
 
         text.text = value
-        icon?.setImageResource(iconRes)
+        icon.setImageResource(iconRes)
+        tick.visibility = View.GONE
 
         layout.setOnClickListener {
-
-            // tránh bug animation
-            layout.animate().cancel()
-
             if (selectedTopics.contains(value)) {
                 selectedTopics.remove(value)
-                tick.visibility = View.GONE
                 layout.isSelected = false
-
-                layout.animate()
-                    .scaleX(1f)
-                    .scaleY(1f)
-                    .setDuration(120)
-                    .start()
-
+                tick.visibility = View.GONE
+                text.setTextColor(Color.parseColor("#1F1F1F"))
             } else {
                 selectedTopics.add(value)
-                tick.visibility = View.VISIBLE
                 layout.isSelected = true
-
-                layout.animate()
-                    .scaleX(1.08f)
-                    .scaleY(1.08f)
-                    .setDuration(120)
-                    .withEndAction {
-                        layout.animate()
-                            .scaleX(1f)
-                            .scaleY(1f)
-                            .setDuration(120)
-                            .start()
-                    }
-                    .start()
+                tick.visibility = View.VISIBLE
+                text.setTextColor(Color.WHITE)
             }
 
             updateNextButton()
         }
+    }
+
+    private fun addCustomTopicFromInput() {
+        val text = edtCustomTopic.text.toString().trim()
+
+        if (text.isBlank()) return
+        if (selectedTopics.contains(text)) {
+            edtCustomTopic.text.clear()
+            updateNextButton()
+            return
+        }
+
+        selectedTopics.add(text)
+        addCustomChip(text)
+        edtCustomTopic.text.clear()
+        updateNextButton()
+    }
+
+    private fun addCustomChip(text: String) {
+        val chip = TextView(this).apply {
+            this.text = "$text  ×"
+            setPadding(22, 8, 22, 8)
+            setTextColor(Color.WHITE)
+            textSize = 12f
+            setBackgroundResource(R.drawable.bg_chip)
+        }
+
+        val params = LinearLayout.LayoutParams(
+            LinearLayout.LayoutParams.WRAP_CONTENT,
+            LinearLayout.LayoutParams.WRAP_CONTENT
+        )
+        params.setMargins(6, 6, 6, 6)
+        chip.layoutParams = params
+
+        chip.setOnClickListener {
+            selectedTopics.remove(text)
+            customContainer.removeView(chip)
+            updateNextButton()
+        }
+
+        customContainer.addView(chip)
+    }
+
+    private fun updateNextButton() {
+        val enabled = selectedGender.isNotBlank() && selectedTopics.size >= 3
+        btnNext.isEnabled = enabled
+        btnNext.alpha = if (enabled) 1f else 0.5f
     }
 }

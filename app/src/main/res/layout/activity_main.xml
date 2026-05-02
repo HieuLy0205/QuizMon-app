@@ -82,11 +82,11 @@
                 android:id="@+id/tvUserName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="Fonix"
-                android:textSize="22sp"
+                android:text="User"
+                android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="#000"
+                android:layout_marginTop="6dp"/>
 
             <!-- Nút CHƠI chính -->
             <androidx.cardview.widget.CardView
