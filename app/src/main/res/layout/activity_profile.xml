@@ -1,153 +1,157 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/profile_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context=".ui.profile.ProfileActivity">
-
-    <!-- Ảnh nền chính -->
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@null" />
-
-    <!-- Thanh trạng thái phía trên -->
-    <include
-        android:id="@+id/taskhead"
-        layout="@layout/layout_taskhead"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent" />
+    android:background="@drawable/anhnenpr">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:fillViewport="true"
-        android:background="@drawable/anhnenpr"
-        app:layout_constraintTop_toBottomOf="@id/taskhead"
-        app:layout_constraintBottom_toTopOf="@id/taskbar">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_horizontal"
-            android:paddingStart="24dp"
-            android:paddingTop="28dp"
-            android:paddingEnd="24dp"
-            android:paddingBottom="24dp">
+            android:padding="24dp">
 
+            <!-- TITLE -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Hồ sơ nhân vật"
-                android:textColor="#222222"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
-                android:layout_marginBottom="20dp" />
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
 
+            <!-- AVATAR -->
             <FrameLayout
-                android:layout_width="150dp"
-                android:layout_height="150dp"
-                android:layout_marginBottom="20dp">
+                android:layout_width="140dp"
+                android:layout_height="140dp">
 
                 <ImageView
                     android:id="@+id/imgAvatar"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/avatar1"
-                    android:scaleType="centerCrop" />
+                    android:scaleType="centerCrop"/>
 
                 <View
                     android:id="@+id/frame"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/bg_avatar_border_fancy" />
-
+                    android:layout_height="match_parent"/>
             </FrameLayout>
+
+            <!-- BUTTON -->
+            <Button
+                android:id="@+id/btnEditAvatar"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:text="Đổi avatar"
+                android:textColor="#FFF"
+                android:layout_marginTop="12dp"/>
+
+            <!-- INFO -->
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginTop="12dp"/>
 
             <TextView
                 android:id="@+id/tvAge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Tuổi: 38"
-                android:textColor="#3A3A3A"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="10dp" />
+                android:textSize="16sp"
+                android:textColor="#000000"/>
 
             <TextView
                 android:id="@+id/tvGender"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Giới tính: Khác"
-                android:textColor="#4A4A4A"
-                android:textSize="17sp"
-                android:layout_marginBottom="6dp" />
+                android:textSize="14sp"
+                android:textColor="#000000"/>
 
             <TextView
                 android:id="@+id/tvTopics"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sở thích: Thể thao, Khoa học, Xã hội"
-                android:textColor="#4A4A4A"
-                android:textSize="17sp"
-                android:gravity="center"
-                android:layout_marginBottom="24dp" />
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
 
-            <EditText
-                android:id="@+id/etName"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:hint="Nhập tên"
-                android:textColor="#222222"
-                android:textColorHint="#8A8A8A"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:background="@drawable/bg_input"
-                android:layout_marginBottom="20dp" />
-
-            <Button
-                android:id="@+id/btnSave"
-                android:layout_width="220dp"
-                android:layout_height="52dp"
-                android:text="Lưu tên"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/bg_button_primary"
-                android:layout_marginBottom="14dp" />
-
+            <!-- EDIT BUTTON -->
             <Button
                 android:id="@+id/btnEditProfile"
-                android:layout_width="220dp"
-                android:layout_height="52dp"
-                android:text="Chỉnh sửa hồ sơ"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                android:background="@drawable/bg_button_primary" />
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:text="Chỉnh sửa hồ sơ"/>
+
+            <!-- RESET -->
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:text="Reset dữ liệu"
+                android:backgroundTint="#E53935"
+                android:textColor="#FFF"
+                android:layout_marginTop="10dp"/>
+
+            <!-- FORM -->
+            <LinearLayout
+                android:id="@+id/layoutEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="16dp">
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Tên"
+                    android:textColor="#000000"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#000000" />
+
+                <EditText
+                    android:id="@+id/etAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Tuổi"
+                    android:inputType="number"
+                    android:textColor="#000000"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#000000" />
+
+                <EditText
+                    android:id="@+id/etTopics"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Sở thích (phân cách ,)"
+                    android:textColor="#000000"
+                    android:textColorHint="#555555"
+                    android:backgroundTint="#000000" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="200dp"
+                    android:layout_height="48dp"
+                    android:text="Lưu"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
 
         </LinearLayout>
-    </ScrollView>
 
-    <!-- Thanh điều hướng dưới -->
-    <include
-        android:id="@+id/taskbar"
-        layout="@layout/layout_taskbar"
-        android:layout_width="match_parent"
-        android:layout_height="75dp"
-        app:layout_constraintBottom_toBottomOf="parent" />
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

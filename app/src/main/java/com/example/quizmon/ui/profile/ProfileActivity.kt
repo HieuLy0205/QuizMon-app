@@ -2,111 +2,161 @@ package com.example.quizmon.ui.profile
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.MotionEvent
 import android.view.View
 import android.widget.*
-import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.quizmon.MainActivity
 import com.example.quizmon.R
 import com.example.quizmon.ui.onboarding.AgeActivity
-import com.example.quizmon.ui.settings.SettingsActivity
-import com.example.quizmon.ui.shop.activity_shop
-import com.example.quizmon.utils.PreferenceManager
-import com.example.quizmon.ui.history.HistoryActivity
-import com.example.quizmon.ui.streak.StreakActivity
-import com.example.quizmon.utils.TaskHeadManager
+import com.example.quizmon.ui.onboarding.AvatarActivity
 
 class ProfileActivity : AppCompatActivity() {
 
+    //  Swipe variables
+    private var x1 = 0f
+    private var x2 = 0f
+
     private lateinit var imgAvatar: ImageView
     private lateinit var frame: View
+
+    private lateinit var tvName: TextView
     private lateinit var tvAge: TextView
     private lateinit var tvGender: TextView
     private lateinit var tvTopics: TextView
-    private lateinit var etName: EditText
-    private lateinit var btnSave: Button
+
     private lateinit var btnEditProfile: Button
-    private lateinit var preferenceManager: PreferenceManager
+    private lateinit var btnEditAvatar: Button
+    private lateinit var btnReset: Button
+
+    private lateinit var layoutEdit: LinearLayout
+    private lateinit var etName: EditText
+    private lateinit var etAge: EditText
+    private lateinit var etTopics: EditText
+    private lateinit var btnSave: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //Đồng bộ với chuẩn MainActivity
-        enableEdgeToEdge()
         setContentView(R.layout.activity_profile)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.profile_root)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
-
-        preferenceManager = PreferenceManager(this)
         val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
 
         imgAvatar = findViewById(R.id.imgAvatar)
         frame = findViewById(R.id.frame)
+
+        tvName = findViewById(R.id.tvName)
         tvAge = findViewById(R.id.tvAge)
         tvGender = findViewById(R.id.tvGender)
         tvTopics = findViewById(R.id.tvTopics)
-        etName = findViewById(R.id.etName)
-        btnSave = findViewById(R.id.btnSave)
+
         btnEditProfile = findViewById(R.id.btnEditProfile)
+        btnEditAvatar = findViewById(R.id.btnEditAvatar)
+        btnReset = findViewById(R.id.btnReset)
 
-        setupTaskbar()
+        layoutEdit = findViewById(R.id.layoutEdit)
+        etName = findViewById(R.id.etName)
+        etAge = findViewById(R.id.etAge)
+        etTopics = findViewById(R.id.etTopics)
+        btnSave = findViewById(R.id.btnSave)
 
-        val age = prefs.getInt("age", 0)
-        val gender = prefs.getString("gender", "Chưa chọn")
-        val topicsSet = prefs.getStringSet("topics", emptySet())
+        loadProfile()
+
+        // EDIT
+        btnEditProfile.setOnClickListener {
+            etName.setText(prefs.getString("name", ""))
+            etAge.setText(prefs.getInt("age", 0).toString())
+            etTopics.setText(
+                prefs.getStringSet("topics", setOf())
+                    ?.joinToString(", ")
+            )
+            layoutEdit.visibility = View.VISIBLE
+        }
+
+        // SAVE
+        btnSave.setOnClickListener {
+
+            val newName = etName.text.toString().trim()
+            val newAge = etAge.text.toString().toIntOrNull() ?: 0
+
+            val newTopics = etTopics.text.toString()
+                .split(",")
+                .map { it.trim() }
+                .filter { it.isNotEmpty() }
+                .toSet()
+
+            prefs.edit()
+                .putString("name", newName)
+                .putInt("age", newAge)
+                .putStringSet("topics", newTopics)
+                .apply()
+
+            loadProfile()
+            layoutEdit.visibility = View.GONE
+        }
+
+        // ĐỔI AVATAR
+        btnEditAvatar.setOnClickListener {
+            startActivity(Intent(this, AvatarActivity::class.java))
+        }
+
+        // RESET
+        btnReset.setOnClickListener {
+
+            AlertDialog.Builder(this)
+                .setTitle("Xác nhận")
+                .setMessage("Bạn muốn reset toàn bộ dữ liệu?")
+                .setPositiveButton("Reset") { _, _ ->
+
+                    prefs.edit().clear().apply()
+
+                    startActivity(Intent(this, AgeActivity::class.java))
+                    finish()
+                }
+                .setNegativeButton("Hủy", null)
+                .show()
+        }
+    }
+
+    //  Swipe BACK chuẩn
+    override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
+        when (ev.action) {
+            MotionEvent.ACTION_DOWN -> {
+                x1 = ev.x
+            }
+
+            MotionEvent.ACTION_UP -> {
+                x2 = ev.x
+
+                // 👉 Vuốt từ trái sang phải
+                if (x2 - x1 > 120) {
+                    finish()
+                }
+            }
+        }
+        return super.dispatchTouchEvent(ev)
+    }
+
+    // LOAD PROFILE
+    private fun loadProfile() {
+        val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
+
         val name = prefs.getString("name", "")
+        val age = prefs.getInt("age", 0)
+        val gender = prefs.getString("gender", "")
+        val topics = prefs.getStringSet("topics", setOf())
         val avatar = prefs.getString("avatar", "avatar1")
-        val savedFrame = prefs.getInt("frame", R.drawable.bg_avatar_border_fancy)
+        val frameRes = prefs.getInt("frame", R.drawable.bg_avatar_border_fancy)
 
+        tvName.text = if (name.isNullOrEmpty()) "Chưa đặt tên" else name
         tvAge.text = "Tuổi: $age"
         tvGender.text = "Giới tính: $gender"
-        tvTopics.text = "Sở thích: ${topicsSet?.joinToString(", ") ?: "Chưa chọn"}"
-        etName.setText(name)
+        tvTopics.text = "Sở thích: ${topics?.joinToString(", ")}"
 
         setAvatar(avatar ?: "avatar1")
-        frame.setBackgroundResource(savedFrame)
-
-        btnSave.setOnClickListener {
-            prefs.edit().putString("name", etName.text.toString()).apply()
-            Toast.makeText(this, "Đã lưu", Toast.LENGTH_SHORT).show()
-        }
-
-        btnEditProfile.setOnClickListener {
-            prefs.edit().putBoolean("profile_done", false).apply()
-            startActivity(Intent(this, AgeActivity::class.java))
-            finish()
-        }
+        frame.setBackgroundResource(frameRes)
     }
 
-    private fun setupTaskbar() {
-        findViewById<View>(R.id.indicator_profile).visibility = View.VISIBLE
-        findViewById<TextView>(R.id.tv_nav_profile).setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
-
-        findViewById<View>(R.id.nav_home).setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
-            startActivity(intent)
-        }
-
-        findViewById<View>(R.id.nav_shop).setOnClickListener {
-            startActivity(Intent(this, activity_shop::class.java))
-        }
-
-        findViewById<View>(R.id.nav_history).setOnClickListener {
-            startActivity(Intent(this, HistoryActivity::class.java))
-        }
-
-        findViewById<View>(R.id.nav_menu).setOnClickListener {
-            startActivity(Intent(this, SettingsActivity::class.java))
-        }
-    }
-
+    // SET AVATAR
     private fun setAvatar(id: String) {
         when (id) {
             "avatar1" -> imgAvatar.setImageResource(R.drawable.avatar1)
@@ -118,11 +168,6 @@ class ProfileActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
-    }
-
-    override fun onPause() {
-        super.onPause()
-        TaskHeadManager.stopLoop()
+        loadProfile()
     }
 }

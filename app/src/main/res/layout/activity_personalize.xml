@@ -10,137 +10,143 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@drawable/anhnenpr"
+        android:clipToPadding="false"
         android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:gravity="center_horizontal"
             android:paddingStart="24dp"
             android:paddingTop="56dp"
             android:paddingEnd="24dp"
             android:paddingBottom="32dp">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Cá nhân hoá trò chơi của bạn"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                android:textColor="#1F1F1F"
+                android:layout_marginBottom="28dp"
                 android:gravity="center"
-                android:layout_marginBottom="28dp" />
+                android:text="Cá nhân hoá trò chơi của bạn"
+                android:textColor="#1F1F1F"
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
                 android:text="Giới tính"
+                android:textColor="#333333"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#333"
-                android:layout_marginBottom="14dp" />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
                 android:orientation="horizontal"
-                android:weightSum="3"
-                android:layout_marginBottom="30dp">
+                android:weightSum="3">
 
                 <Button
                     android:id="@+id/btnMale"
                     style="@style/GenderButton"
-                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
                     android:layout_marginEnd="6dp"
+                    android:layout_weight="1"
                     android:background="@drawable/bg_gender_selector"
                     android:backgroundTint="@null"
-                    android:textColor="@color/gender_text_selector"
-                    android:text="Nam" />
+                    android:text="Nam"
+                    android:textColor="@color/gender_text_selector" />
 
                 <Button
                     android:id="@+id/btnFemale"
                     style="@style/GenderButton"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
                     android:layout_weight="1"
-                    android:layout_marginHorizontal="6dp"
                     android:background="@drawable/bg_gender_selector"
                     android:backgroundTint="@null"
-                    android:textColor="@color/gender_text_selector"
-                    android:text="Nữ" />
+                    android:text="Nữ"
+                    android:textColor="@color/gender_text_selector" />
 
                 <Button
                     android:id="@+id/btnOther"
                     style="@style/GenderButton"
-                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
                     android:layout_marginStart="6dp"
+                    android:layout_weight="1"
                     android:background="@drawable/bg_gender_selector"
                     android:backgroundTint="@null"
-                    android:textColor="@color/gender_text_selector"
-                    android:text="Khác" />
-
+                    android:text="Khác"
+                    android:textColor="@color/gender_text_selector" />
             </LinearLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
                 android:text="Chủ đề yêu thích (chọn ít nhất 3)"
-                android:textStyle="bold"
+                android:textColor="#333333"
                 android:textSize="16sp"
-                android:textColor="#333"
-                android:layout_marginBottom="14dp" />
+                android:textStyle="bold" />
 
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:alignmentMode="alignMargins"
                 android:columnCount="2"
-                android:useDefaultMargins="true"
-                android:layout_marginBottom="32dp">
+                android:layout_marginBottom="18dp"
+                android:useDefaultMargins="true">
 
-                <include
-                    android:id="@+id/topic_phim"
-                    layout="@layout/item_topic" />
-
-                <include
-                    android:id="@+id/topic_xahoi"
-                    layout="@layout/item_topic" />
-
-                <include
-                    android:id="@+id/topic_lichsu"
-                    layout="@layout/item_topic" />
-
-                <include
-                    android:id="@+id/topic_thethao"
-                    layout="@layout/item_topic" />
-
-                <include
-                    android:id="@+id/topic_dialy"
-                    layout="@layout/item_topic" />
-
-                <include
-                    android:id="@+id/topic_khoahoc"
-                    layout="@layout/item_topic" />
-
-                <include
-                    android:id="@+id/topic_tunhien"
-                    layout="@layout/item_topic" />
-
-                <include
-                    android:id="@+id/topic_vanhoa"
-                    layout="@layout/item_topic" />
+                <include android:id="@+id/topic_phim" layout="@layout/item_topic" />
+                <include android:id="@+id/topic_xahoi" layout="@layout/item_topic" />
+                <include android:id="@+id/topic_lichsu" layout="@layout/item_topic" />
+                <include android:id="@+id/topic_thethao" layout="@layout/item_topic" />
+                <include android:id="@+id/topic_dialy" layout="@layout/item_topic" />
+                <include android:id="@+id/topic_khoahoc" layout="@layout/item_topic" />
+                <include android:id="@+id/topic_tunhien" layout="@layout/item_topic" />
+                <include android:id="@+id/topic_vanhoa" layout="@layout/item_topic" />
             </GridLayout>
+
+            <EditText
+                android:id="@+id/edtCustomTopic"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_edittext"
+                android:hint="Nhập sở thích khác..."
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingStart="18dp"
+                android:paddingEnd="18dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/customContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal" />
 
             <Button
                 android:id="@+id/btnNext"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
+                android:alpha="0.5"
                 android:background="@drawable/bg_button_primary"
                 android:elevation="6dp"
+                android:enabled="false"
                 android:text="Tiếp tục"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"
-                android:textStyle="bold"
-                android:alpha="0.5" />
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>
