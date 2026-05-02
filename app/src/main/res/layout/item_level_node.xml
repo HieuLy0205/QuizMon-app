@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="1"
-            android:textColor="@color/eevee_dark"
+            android:textColor="#3E2723"
             android:textSize="36sp"
             android:textStyle="bold"
             android:shadowColor="#40000000"
@@ -40,7 +40,22 @@
             android:layout_marginBottom="12dp"
             android:src="@drawable/ic_lock"
             android:visibility="gone"
-            app:tint="@color/eevee_dark" />
+            app:tint="#3E2723" />
+
+        <!-- Stars Container -->
+        <LinearLayout
+            android:id="@+id/llStars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+            <ImageView android:id="@+id/ivStar1" android:layout_width="16dp" android:layout_height="16dp" android:src="@android:drawable/btn_star_big_on" android:alpha="0.3"/>
+            <ImageView android:id="@+id/ivStar2" android:layout_width="16dp" android:layout_height="16dp" android:src="@android:drawable/btn_star_big_on" android:alpha="0.3" android:layout_marginTop="-4dp"/>
+            <ImageView android:id="@+id/ivStar3" android:layout_width="16dp" android:layout_height="16dp" android:src="@android:drawable/btn_star_big_on" android:alpha="0.3"/>
+        </LinearLayout>
 
     </RelativeLayout>
 

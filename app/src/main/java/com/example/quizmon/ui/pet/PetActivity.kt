@@ -11,7 +11,7 @@ import android.widget.ImageButton
 import android.widget.Toast
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.data.repository.petReposiroty
 import com.example.quizmon.utils.TaskHeadManager
 

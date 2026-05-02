@@ -19,6 +19,7 @@ import com.example.quizmon.ui.pet.PetActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 
 class activity_shop : AppCompatActivity() {

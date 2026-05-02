@@ -46,17 +46,16 @@ class SubMapAdapter(
         fun bind(item: SubMapItem) {
             tvId.text = ""
             ivIcon.clearColorFilter()
-            
-            // Đảm bảo không có padding để icon to tối đa trong ô
             ivIcon.setPadding(0, 0, 0, 0)
 
-            // 1. Lựa chọn Icon dựa trên trạng thái
+            // Lựa chọn Icon dựa trên trạng thái (Thêm CompletionStatus.BONUS)
             val iconRes = when (item.status) {
                 CompletionStatus.CORRECT -> {
                     if (item.type == SubMapType.QUESTION) R.drawable.bt_dung
                     else R.drawable.bt_bonus
                 }
                 CompletionStatus.INCORRECT -> R.drawable.bt_sai
+                CompletionStatus.BONUS -> R.drawable.bt_bonus
                 CompletionStatus.NOT_STARTED -> {
                     when (item.type) {
                         SubMapType.QUESTION -> getCategoryIcon(item.category)
@@ -74,7 +73,15 @@ class SubMapAdapter(
                 ivIcon.setImageResource(0)
             }
 
-            // 2. Đồng bộ hóa kích thước và loại bỏ viền/bóng đổ cho tất cả các ô
+            // Hiệu ứng làm mờ ô đã hoàn thành và vô hiệu hóa click
+            if (item.status != CompletionStatus.NOT_STARTED) {
+                itemView.alpha = 0.7f
+                itemView.isEnabled = false
+            } else {
+                itemView.alpha = 1.0f
+                itemView.isEnabled = true
+            }
+
             cardItem.setCardBackgroundColor(Color.TRANSPARENT)
             cardItem.cardElevation = 0f
             cardItem.radius = 0f

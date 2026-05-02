@@ -2,6 +2,7 @@ package com.example.quizmon.ui.level
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
@@ -14,39 +15,57 @@ import android.widget.FrameLayout
 import android.widget.GridLayout
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
+import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.R
-import com.example.quizmon.ui.shop.PreferenceManager
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 
 class FlipCardActivity : AppCompatActivity() {
 
     private lateinit var preferenceManager: PreferenceManager
     private var hasSelected = false
+    private var levelId: Int = -1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_flip_card)
 
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main_root)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+
         preferenceManager = PreferenceManager(this)
+        levelId = intent.getIntExtra("LEVEL_ID", -1)
+        
         val gridLayout = findViewById<GridLayout>(R.id.gridLayout)
         val btnBack = findViewById<Button>(R.id.btnBack)
 
-        btnBack.setOnClickListener { finish() }
+        btnBack.setOnClickListener {
+            if (hasSelected) {
+                val intent = Intent()
+                intent.putExtra("INTERACTED", true)
+                setResult(RESULT_OK, intent)
+            }
+            finish()
+        }
         updateHeader()
 
-        //Thêm dấu xuống dòng \n để chữ hiển thị đẹp hơn
         val rewards = listOf(
             "Quẻ đại cát!\nChúc bạn ngày mới tốt lành",
-            "Nhận 1 phụ trợ\n50/50",
-            "Nhận 1 phụ trợ\nNhân đôi cơ hội",
-            "Nhận 1 phụ trợ\nĐáp án đúng",
-            "Nhận 1 phụ trợ\nNhân đôi điểm",
-            "Nhận 50 Xu\nmay mắn",
-            "Nhận 100 EXP\n kinh nghiệm",
-            "Nhận 1 Mạng\nhồi sinh",
+            "Phụ trợ 50/50 x1",
+            "Phụ trợ Nhân đôi cơ hội x1",
+            "Phụ trợ Đáp án đúng x1",
+            "Phụ trợ Nhân đôi điểm x1",
+            "Cộng 50 Xu",
+            "Cộng 100 EXP",
+            "Cộng 1 Mạng",
             "Quẻ bình an:\nVạn sự hanh thông!"
         ).shuffled()
 
@@ -58,10 +77,7 @@ class FlipCardActivity : AppCompatActivity() {
                 if (hasSelected) return@setOnClickListener
                 hasSelected = true
                 
-                setResult(RESULT_OK)
-                handleRewardLogic(rewards[i])
-                
-                //Gọi hàm lật và phóng to ra giữa màn hình
+                preferenceManager.applyRewardByString(rewards[i], levelId)
                 animateFlipAndZoomToCenter(cardContainer)
             }
         }
@@ -76,14 +92,12 @@ class FlipCardActivity : AppCompatActivity() {
             }
         }
 
-        // Mặt sau
         val ivBack = ImageView(this).apply {
             layoutParams = FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT)
             setImageResource(R.drawable.filpcard1)
             scaleType = ImageView.ScaleType.FIT_XY
         }
 
-        // Mặt trước
         val frontLayout = FrameLayout(this).apply {
             layoutParams = FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT)
             visibility = View.GONE
@@ -104,7 +118,7 @@ class FlipCardActivity : AppCompatActivity() {
             setTextColor(Color.parseColor("#5D4037"))
             textSize = 14f
             setTypeface(null, Typeface.BOLD)
-            setLineSpacing(0f, 1.2f) // Giãn dòng cho dễ đọc
+            setLineSpacing(0f, 1.2f)
         }
 
         frontLayout.addView(ivFront)
@@ -121,7 +135,6 @@ class FlipCardActivity : AppCompatActivity() {
         val frontLayout = container.getChildAt(1)
         val root = findViewById<ConstraintLayout>(R.id.main_root)
 
-        // 1. Lấy vị trí thẻ hiện tại so với màn hình trước khi tách khỏi Grid
         val cardLoc = IntArray(2)
         container.getLocationOnScreen(cardLoc)
         val rootLoc = IntArray(2)
@@ -130,8 +143,6 @@ class FlipCardActivity : AppCompatActivity() {
         val startX = cardLoc[0].toFloat() - rootLoc[0]
         val startY = cardLoc[1].toFloat() - rootLoc[1]
 
-        // 2. Tách thẻ ra khỏi GridLayout và đưa lên lớp cao nhất (main_root) 
-        // để không bị cắt biên (Clipping)
         val oldWidth = container.width
         val oldHeight = container.height
         (container.parent as ViewGroup).removeView(container)
@@ -142,19 +153,16 @@ class FlipCardActivity : AppCompatActivity() {
         container.y = startY
         root.addView(container)
 
-        // 3. Tính toán vị trí tâm màn hình
         val targetX = (root.width - oldWidth) / 2f
         val targetY = (root.height - oldHeight) / 2f
 
-        // Đảm bảo tâm phóng to nằm giữa thẻ
         container.pivotX = oldWidth / 2f
         container.pivotY = oldHeight / 2f
 
-        // 4. Thực hiện hoạt ảnh bay ra giữa + phóng to + lật mặt
         container.animate()
             .x(targetX)
             .y(targetY)
-            .scaleX(3.5f) // Phóng to cực đại
+            .scaleX(3.5f)
             .scaleY(3.5f)
             .rotationY(180f)
             .setDuration(800)
@@ -162,24 +170,20 @@ class FlipCardActivity : AppCompatActivity() {
             .withEndAction {
                 updateHeader()
                 android.os.Handler(mainLooper).postDelayed({
-                    if (!isFinishing) finish()
+                    if (!isFinishing) {
+                        val intent = Intent()
+                        intent.putExtra("INTERACTED", true)
+                        setResult(RESULT_OK, intent)
+                        finish()
+                    }
                 }, 2500)
             }
             .start()
 
-        // Đổi ảnh mặt trước khi thẻ xoay đến "cạnh" (90 độ)
         container.postDelayed({
             ivBack.visibility = View.GONE
             frontLayout.visibility = View.VISIBLE
         }, 400)
-    }
-
-    private fun handleRewardLogic(reward: String) {
-        when {
-            reward.contains("50 Xu") -> preferenceManager.addXu(50)
-            reward.contains("100 EXP") -> preferenceManager.addExp(100)
-            reward.contains("1 Mạng") -> preferenceManager.saveHearts((preferenceManager.getHearts() + 1).coerceAtMost(5))
-        }
     }
 
     private fun updateHeader() {
@@ -196,5 +200,14 @@ class FlipCardActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
         TaskHeadManager.stopLoop()
+    }
+
+    override fun onBackPressed() {
+        if (hasSelected) {
+            val intent = Intent()
+            intent.putExtra("INTERACTED", true)
+            setResult(RESULT_OK, intent)
+        }
+        super.onBackPressed()
     }
 }
