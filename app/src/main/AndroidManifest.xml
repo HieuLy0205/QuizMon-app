@@ -32,7 +32,10 @@
         <activity android:name=".ui.shop.activity_shop" />
         <activity android:name=".ui.pet.PetActivity"/>
         <activity android:name=".ui.profile.ProfileActivity"/>
-        <activity android:name=".ui.history.HistoryActivity"/>
+        <activity
+            android:name=".ui.history.HistoryActivity"/>
+<!--            android:exported="false"-->
+<!--            android:windowSoftInputMode="adjustResize" />-->
         <activity android:name=".ui.level.LevelMapActivity"/>
         <activity android:name=".ui.level.SubMapActivity"/>
         <activity android:name=".ui.quiz.QuizActivity"/>
