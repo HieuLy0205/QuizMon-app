@@ -20,6 +20,7 @@ import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
 import com.example.quizmon.utils.PreferenceManager
+import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.TaskHeadManager
 
 class activity_shop : AppCompatActivity() {
@@ -41,15 +42,19 @@ class activity_shop : AppCompatActivity() {
         setupTaskbar()
         
         findViewById<Button>(R.id.btn_goi_api1).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, shop_tim::class.java))
         }
         findViewById<Button>(R.id.btn_goi_api2).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, shop_xu::class.java))
         }
         findViewById<Button>(R.id.btn_goi_api3).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, shop_phobien::class.java))
         }
         findViewById<Button>(R.id.btn_goi_api4).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, shop_pvp::class.java))
         }
     }
@@ -59,25 +64,40 @@ class activity_shop : AppCompatActivity() {
         findViewById<TextView>(R.id.tv_nav_shop).setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
         
         findViewById<LinearLayout>(R.id.nav_home).setOnClickListener {
+            SoundManager.playClick()
             val intent = Intent(this, MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
-        findViewById<LinearLayout>(R.id.nav_profile).setOnClickListener { startActivity(Intent(this, ProfileActivity::class.java)) }
-        findViewById<LinearLayout>(R.id.nav_history).setOnClickListener { startActivity(Intent(this, HistoryActivity::class.java)) }
+        findViewById<LinearLayout>(R.id.nav_profile).setOnClickListener { 
+            SoundManager.playClick()
+            startActivity(Intent(this, ProfileActivity::class.java)) 
+        }
+        findViewById<LinearLayout>(R.id.nav_history).setOnClickListener { 
+            SoundManager.playClick()
+            startActivity(Intent(this, HistoryActivity::class.java)) 
+        }
         findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener { /* Already here */ }
-        findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener { startActivity(Intent(this, SettingsActivity::class.java)) }
+        findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener { 
+            SoundManager.playClick()
+            startActivity(Intent(this, SettingsActivity::class.java)) 
+        }
     }
 
     override fun onResume() {
         super.onResume()
         //Bắt đầu đếm ngược Header tự động
         TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), preferenceManager)
+        
+        // Phát nhạc nền
+        SoundManager.playMusic(this, R.raw.background)
     }
     
     override fun onPause() {
         super.onPause()
         //Dừng đếm ngược
         TaskHeadManager.stopLoop()
+        
+        SoundManager.pauseMusic()
     }
 }

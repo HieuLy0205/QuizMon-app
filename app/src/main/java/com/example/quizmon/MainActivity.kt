@@ -22,16 +22,14 @@ import com.example.quizmon.ui.shop.shop_phobien
 import com.example.quizmon.ui.level.LevelMapActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.activity_shop
+import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
 import com.example.quizmon.ui.pet.AnimetorActivity
-import com.example.quizmon.ui.shop.shop_tim
-import com.example.quizmon.ui.shop.shop_xu
+import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.StreakManager
 import com.example.quizmon.utils.TaskHeadManager
-import com.example.quizmon.utils.PreferenceManager
-import kotlin.jvm.java
 import kotlin.math.abs
 
 class MainActivity : AppCompatActivity() {
@@ -50,6 +48,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        
+        // Khởi tạo SoundManager
+        SoundManager.init(this)
+        
         reposiroty = petReposiroty()
         preferenceManager = PreferenceManager(this)
 
@@ -58,20 +60,23 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         setupTaskbar()
-        setupTaskhead()
         setupFloatingPet()
         updateUI()
 
         findViewById<View>(R.id.btnQuiz).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, LevelMapActivity::class.java))
         }
-        
+
         findViewById<View>(R.id.cardDailyReward).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, shop_phobien::class.java))
         }
 
         findViewById<FrameLayout>(R.id.layoutStreak)?.setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, StreakActivity::class.java))
         }
 
@@ -111,6 +116,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         ivFloatingPet.setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, PetActivity::class.java))
         }
     }
@@ -120,6 +126,9 @@ class MainActivity : AppCompatActivity() {
         updateUI()
         //Tự động cập nhật Header và đếm ngược Tim
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        
+        // Phát nhạc nền
+        SoundManager.playMusic(this, R.raw.background)
     }
 
     override fun onPause() {
@@ -127,6 +136,10 @@ class MainActivity : AppCompatActivity() {
         animetor.stop()
         //Dừng cập nhật
         TaskHeadManager.stopLoop()
+        
+        //Tạm dừng nhạc nếu cần (thường background music nên tắt khi out hẳn hoặc chuyển activity đặc biệt)
+        //pause ở onPause và resume ở onResume
+        SoundManager.pauseMusic()
     }
 
     private fun updateUI() {
@@ -136,13 +149,13 @@ class MainActivity : AppCompatActivity() {
         val preferenceManager = PreferenceManager(this)
         val petLevel = preferenceManager.getPetLevel()
         val petId = preferenceManager.getPetid()
-        val currentPetId = "1"
+
         //tạm dừng pet để xử lý logic thay đổi pet trong kho (tủ)
         if (petId == -1 || petLevel == 0) {
             animetor.stop()
         } else {
             ivFlatingPet?.visibility = View.VISIBLE
-            val petDetail = reposiroty.getPetById(currentPetId)
+            val petDetail = reposiroty.getPetById(petId.toString())
             petDetail?.let {
                 // Đồng bộ level hiện tại cho con pet
                 val activePet = it.copy(currentelevel = petLevel)
@@ -158,65 +171,59 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-        private fun setupTaskbar() {
-            findViewById<View>(R.id.indicator_home)?.visibility = View.VISIBLE
-            findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(
-                ContextCompat.getColor(
+    private fun setupTaskbar() {
+        findViewById<View>(R.id.indicator_home)?.visibility = View.VISIBLE
+        findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(
+            ContextCompat.getColor(
+                this,
+                R.color.taskbar_active
+            )
+        )
+        findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener {
+            SoundManager.playClick()
+            startActivity(
+                Intent(
                     this,
-                    R.color.taskbar_active
+                    HistoryActivity::class.java
                 )
             )
-            findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener {
-                startActivity(
-                    Intent(
-                        this,
-                        HistoryActivity::class.java
-                    )
-                )
-            }
-            findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener {
-                startActivity(
-                    Intent(
-                        this,
-                        activity_shop::class.java
-                    )
-                )
-            }
-            findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener {
-                startActivity(
-                    Intent(
-                        this,
-                        SettingsActivity::class.java
-                    )
-                )
-            }
-            findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener { openProfileFlow() }
         }
-        private fun setupTaskhead() {
-            TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
-            findViewById<View>(R.id.imgcoin_nhan_thuong).setOnClickListener {
-                startActivity(Intent(this, shop_phobien::class.java))
-            }
-            findViewById<View>(R.id.img_xu_shop).setOnClickListener {
-                startActivity(Intent(this, shop_xu::class.java))
-            }
-            findViewById<View>(R.id.img_tim_shop).setOnClickListener {
-                startActivity(Intent(this, shop_tim::class.java))
-            }
-        }
-
-        private fun openProfileFlow() {
-            val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-            val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
-            if (isFirstTime) {
-                startActivity(
-                    Intent(
-                        this,
-                        com.example.quizmon.ui.onboarding.AgeActivity::class.java
-                    )
+        findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener {
+            SoundManager.playClick()
+            startActivity(
+                Intent(
+                    this,
+                    activity_shop::class.java
                 )
-            } else {
-                startActivity(Intent(this, ProfileActivity::class.java))
-            }
+            )
+        }
+        findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener {
+            SoundManager.playClick()
+            startActivity(
+                Intent(
+                    this,
+                    SettingsActivity::class.java
+                )
+            )
+        }
+        findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener { 
+            SoundManager.playClick()
+            openProfileFlow() 
         }
     }
+
+    private fun openProfileFlow() {
+        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+        val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
+        if (isFirstTime) {
+            startActivity(
+                Intent(
+                    this,
+                    com.example.quizmon.ui.onboarding.AgeActivity::class.java
+                )
+            )
+        } else {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
+    }
+}

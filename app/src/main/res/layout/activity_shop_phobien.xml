@@ -1,253 +1,243 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
     android:fitsSystemWindows="true"
     android:background="@drawable/background">
 
-    <LinearLayout
-        android:id="@+id/sao_shop"
+    <!-- Thanh trạng thái phía trên -->
+    <include
+        android:id="@+id/taskhead"
+        layout="@layout/layout_taskhead"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="24dp">
-        <include
-            android:id="@+id/taskhead"
-            layout="@layout/layout_taskhead"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Nút Quay lại -->
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_difficulty_btn"
+        android:contentDescription="@string/btn_back"
+        android:padding="12dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/taskhead"
+        app:tint="@color/white" />
+
+    <!-- Tiêu đề màn hình -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_play"
+        android:backgroundTint="#89D9D6D6"
+        android:gravity="center"
+        android:text="@string/text_ShopNv"
+        android:textSize="22sp"
+        android:textColor="#1B1919"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/btnBack"
+        app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Danh sách nhiệm vụ -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toBottomOf="@id/btnBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent" />
-        <!-- Header -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
-            android:padding="16dp">
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="24dp">
 
-            <ImageView
-                android:layout_width="69dp"
-                android:layout_height="69dp"
-                android:src="@drawable/sao_shop_map"
-                android:contentDescription="Icon Shop"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/btn_play"
-                android:backgroundTint="#89D9D6D6"
-                android:gravity="center"
-                android:text="@string/text_shopphobien"
-                android:textSize="24sp"
-                android:textColor="#1B1919"
-                android:textStyle="bold"
-                android:backgroundTintMode="src_atop">
-            </TextView>
-        </LinearLayout>
-
-        <TextView
-
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:gravity="center"
-            android:text="@string/text_ShopNv">
-
-        </TextView>
-
-        <LinearLayout
-            android:id="@+id/lne_task_1"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/text_nv1"
-                android:layout_width="230dp"
-                android:layout_height="49dp"
-                android:layout_gravity="center"
-                android:gravity="center_vertical"
-                android:text="@string/text_nhiemvu1"
-                android:padding="8dp"
-                android:textSize="18sp"
-                android:textStyle="bold">
-            </TextView>
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="49dp"
-                android:layout_gravity="center"
-                android:background="@drawable/sao_shop_map">
-            </ImageView>
-
-            <Button
-                android:id="@+id/btn_Nv1"
+            <!-- Nhiệm vụ 1 -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:backgroundTint="#B697EB80"
-                android:text="hoàn thành"
-                android:textColor="#161313"
-                android:textStyle="bold">
-            </Button>
-        </LinearLayout>
+                android:orientation="horizontal"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+                <TextView
+                    android:id="@+id/text_nv1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_nhiemvu1"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
 
-            <TextView
-                android:layout_width="230dp"
-                android:layout_height="48dp"
-                android:text="@string/text_nhiemvu2"
-                android:layout_gravity="center"
-                android:gravity="center_vertical"
-                android:padding="8dp"
-                android:textSize="18sp"
-                android:textStyle="bold">
-            </TextView>
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sao_shop_map" />
 
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="49dp"
-                android:layout_gravity="center"
-                android:background="@drawable/sao_shop_map">
-            </ImageView>
+                <Button
+                    android:id="@+id/btn_Nv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#B697EB80"
+                    android:text="hoàn thành"
+                    android:textColor="#161313"
+                    android:textStyle="bold"
+                    app:cornerRadius="8dp"/>
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/btn_Nv2"
+            <!-- Nhiệm vụ 2 -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:backgroundTint="#B6EB8C80"
-                android:text="hoàn thành"
-                android:textColor="#161313"
-                android:textStyle="bold">
-            </Button>
-        </LinearLayout>
+                android:orientation="horizontal"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_nhiemvu2"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
 
-            <TextView
-                android:layout_width="230dp"
-                android:layout_height="49dp"
-                android:gravity="center_vertical"
-                android:text="@string/text_nhiemvu3"
-                android:padding="8dp"
-                android:textSize="18sp"
-                android:textStyle="bold">
-            </TextView>
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sao_shop_map" />
 
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="49dp"
-                android:layout_gravity="center"
-                android:background="@drawable/sao_shop_map">
-            </ImageView>
+                <Button
+                    android:id="@+id/btn_Nv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#B6EB8C80"
+                    android:text="hoàn thành"
+                    android:textColor="#161313"
+                    android:textStyle="bold"
+                    app:cornerRadius="8dp"/>
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/btn_Nv3"
+            <!-- Nhiệm vụ 3 -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:backgroundTint="#B65CD9F0"
-                android:text="hoàn thành"
-                android:textColor="#161313"
-                android:textStyle="bold">
-            </Button>
-        </LinearLayout>
+                android:orientation="horizontal"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:orientation="horizontal"
-            android:gravity="center">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_nhiemvu3"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
 
-            <TextView
-                android:layout_width="230dp"
-                android:layout_height="49dp"
-                android:text="@string/text_nhiemvu4"
-                android:textSize="18sp"
-                android:padding="8dp"
-                android:gravity="center_vertical"
-                android:textStyle="bold">
-            </TextView>
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sao_shop_map" />
 
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="49dp"
-                android:layout_gravity="center"
-                android:background="@drawable/sao_shop_map">
-            </ImageView>
+                <Button
+                    android:id="@+id/btn_Nv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#B65CD9F0"
+                    android:text="hoàn thành"
+                    android:textColor="#161313"
+                    android:textStyle="bold"
+                    app:cornerRadius="8dp"/>
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/btn_Nv4"
+            <!-- Nhiệm vụ 4 -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:backgroundTint="#EBD280"
-                android:text="hoàn thành"
-                android:textColor="#161313"
-                android:textStyle="bold">
-            </Button>
-        </LinearLayout>
+                android:orientation="horizontal"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="88dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_nhiemvu4"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
 
-            <TextView
-                android:layout_width="232dp"
-                android:layout_height="62dp"
-                android:gravity="center_vertical"
-                android:padding="8dp"
-                android:text="@string/text_nhiemvu5"
-                android:textSize="18sp"
-                android:textStyle="bold">
-            </TextView>
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sao_shop_map" />
 
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="49dp"
-                android:layout_gravity="center"
-                android:background="@drawable/sao_shop_map">
-            </ImageView>
+                <Button
+                    android:id="@+id/btn_Nv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#EBD280"
+                    android:text="hoàn thành"
+                    android:textColor="#161313"
+                    android:textStyle="bold"
+                    app:cornerRadius="8dp"/>
+            </LinearLayout>
 
-            <Button
-                android:id="@+id/btn_Nv5"
+            <!-- Nhiệm vụ 5 -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:backgroundTint="#B6C680EB"
-                android:text="hoàn thành"
-                android:textColor="#161313"
-                android:textStyle="bold">
-            </Button>
+                android:orientation="horizontal"
+                android:paddingVertical="12dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/text_nhiemvu5"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#333" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sao_shop_map" />
+
+                <Button
+                    android:id="@+id/btn_Nv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#B6C680EB"
+                    android:text="hoàn thành"
+                    android:textColor="#161313"
+                    android:textStyle="bold"
+                    app:cornerRadius="8dp"/>
+            </LinearLayout>
+
         </LinearLayout>
+    </ScrollView>
 
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_margin="24dp"
-            android:background="@drawable/bg_difficulty_btn"
-            android:contentDescription="@string/btn_back"
-            android:padding="12dp"
-            android:layout_gravity="bottom"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_back" />
-    </LinearLayout>
-
-
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

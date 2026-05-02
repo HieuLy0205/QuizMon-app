@@ -5,7 +5,10 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
+        android:name=".QuizMonApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -43,6 +46,14 @@
         <activity android:name=".ui.onboarding.NicknameActivity" />
         <activity android:name=".ui.onboarding.AvatarActivity" />
         <activity android:name=".ui.pet.TupetActivity" />
+        <activity android:name=".ui.report.ReportActivity"/>
+        <activity
+            android:name=".ui.faq.FaqActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ui.faq.FaqDetailActivity"
+            android:exported="false"/>
         <activity
             android:name=".ui.settings.SettingsActivity"
             android:exported="false"/>

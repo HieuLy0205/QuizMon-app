@@ -6,6 +6,7 @@ import android.widget.ImageButton
 import android.widget.Toast
 import com.example.quizmon.R
 import com.example.quizmon.utils.PreferenceManager
+import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.TaskHeadManager
 import kotlin.collections.remove
 
@@ -34,6 +35,7 @@ class shop_phobien: AppCompatActivity() {
         setup_nv_nhancoin()
 
         btnBack.setOnClickListener {
+            SoundManager.playClick()
             // Xử lý khi nút được nhấn
             finish()
         }
@@ -42,12 +44,17 @@ class shop_phobien: AppCompatActivity() {
         super.onResume()
         //Tự động cập nhật Header và đếm ngược Tim
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        
+        // Phát nhạc nền shop
+        SoundManager.playMusic(this, R.raw.background)
     }
 
     override fun onPause() {
         super.onPause()
         //Dừng cập nhật
         TaskHeadManager.stopLoop()
+        
+        SoundManager.pauseMusic()
     }
     fun setup_nv_nhancoin(){
         val preferenceManager = PreferenceManager(this)
@@ -74,6 +81,7 @@ class shop_phobien: AppCompatActivity() {
 
         // sự kiện lick nhiệm vụ hằng ngày tăng được coin
         btn_Nv1.setOnClickListener {
+            SoundManager.playCoin()
             // Xử lý khi nút được nhấn
             preferenceManager.addCoin(10)
             preferenceManager.Xn_va_inday("nv1")
@@ -85,12 +93,14 @@ class shop_phobien: AppCompatActivity() {
             val isReceivedToday = preferenceManager.saver_va_inday("nv2")
             // ! phủ định
             if (isReady && !isReceivedToday) {
+                SoundManager.playCoin()
                 preferenceManager.addCoin(20)
                 preferenceManager.Xn_va_inday("nv2")
                 btn_Nv2.isEnabled = false
                 btn_Nv2.text = "Đã hoàn thành"
                 preferenceManager.Dk_batmo_xn("nv2", false)
             }else{
+                SoundManager.playWrong()
                 Toast.makeText(this,
                     "Chưa xong ải", Toast.LENGTH_SHORT).show()
             }
@@ -99,12 +109,14 @@ class shop_phobien: AppCompatActivity() {
             val isReady = preferenceManager.Dk_xacnhan_cq("nv3")
             val isReceivedToday = preferenceManager.saver_va_inday("nv3")
             if (isReady && !isReceivedToday) {
+                SoundManager.playCoin()
                 preferenceManager.addCoin(20)
                 preferenceManager.Xn_va_inday("nv3")
                 btn_Nv3.isEnabled = false
                 btn_Nv3.text = "Đã hoàn thành"
                 preferenceManager.Dk_batmo_xn("nv3", false)
             }else{
+                SoundManager.playWrong()
                 Toast.makeText(this,
                     "bạn phải nạp xu", Toast.LENGTH_SHORT).show()
             }
@@ -113,12 +125,14 @@ class shop_phobien: AppCompatActivity() {
             val isReady = preferenceManager.Dk_xacnhan_cq("nv4")
             val isReceivedToday = preferenceManager.saver_va_inday("nv4")
             if (isReady && !isReceivedToday) {
+                SoundManager.playCoin()
                 preferenceManager.addCoin(10)
                 preferenceManager.Xn_va_inday("nv4")
                 btn_Nv4.isEnabled = false
                 btn_Nv4.text = "Đã hoàn thành"
                 preferenceManager.Dk_batmo_xn("nv4", false)
             }else{
+                SoundManager.playWrong()
                 Toast.makeText(this,
                     "bạn phải mua trứng trong shop pvp",
                     Toast.LENGTH_SHORT).show()
@@ -128,12 +142,14 @@ class shop_phobien: AppCompatActivity() {
             val isReady = preferenceManager.Dk_xacnhan_cq("nv5")
             val isReceivedToday = preferenceManager.saver_va_inday("nv5")
             if (isReady && !isReceivedToday) {
+                SoundManager.playCoin()
                 preferenceManager.addCoin(5)
                 preferenceManager.Xn_va_inday("nv5")
                 btn_Nv5.isEnabled = false
                 btn_Nv5.text = "Đã hoàn thành"
                 preferenceManager.Dk_batmo_xn("nv5", false)
             }else{
+                SoundManager.playWrong()
                 Toast.makeText(this,
                     "bạn phải hoàn thành 1 câu hỏi trong trò chơi",
                     Toast.LENGTH_SHORT).show()
