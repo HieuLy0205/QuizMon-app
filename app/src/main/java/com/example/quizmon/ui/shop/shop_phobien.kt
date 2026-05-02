@@ -52,7 +52,8 @@ class shop_phobien: AppCompatActivity() {
     fun setup_nv_nhancoin(){
         val preferenceManager = PreferenceManager(this)
         if (preferenceManager.saver_va_inday("nv1")){
-
+            btn_Nv2.isEnabled = false
+            btn_Nv2.text = "Đã nhận hôm nay"
         }
         if (preferenceManager.saver_va_inday("nv2")){
             btn_Nv2.isEnabled = false
