@@ -29,4 +29,18 @@
     <color name="eevee_cream">#F5E6BE</color>
     <color name="eevee_dark">#6B4423</color>
     <color name="eevee_locked">#A9A9A9</color>
-</resources>
+    <!-- Lịch sử -->
+    <color name="correct_green">#16A34A</color>
+    <color name="correct_green_dark">#15803D</color>
+    <color name="wrong_red">#DC2626</color>
+    <color name="wrong_red_dark">#B91C1C</color>
+    <color name="blue_primary">#2563EB</color>
+    <color name="blue_dark">#1D4ED8</color>
+    <color name="orange_primary">#F97316</color>
+    <color name="bg_cream">#FFFBF5</color>
+    <color name="text_primary">#1C1917</color>
+    <color name="text_hint">#9CA3AF</color>
+    <color name="border_light_orange">#F3E8D0</color>
+    <color name="amber_dark">#D97706</color>
+    <color name="amber_text">#92400E</color>
+</resources>\\\\
