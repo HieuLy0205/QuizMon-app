@@ -43,6 +43,14 @@
         <activity android:name=".ui.onboarding.NicknameActivity" />
         <activity android:name=".ui.onboarding.AvatarActivity" />
         <activity android:name=".ui.pet.TupetActivity" />
+        <activity android:name=".ui.report.ReportActivity"/>
+        <activity
+            android:name=".ui.faq.FaqActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".ui.faq.FaqDetailActivity"
+            android:exported="false"/>
         <activity
             android:name=".ui.settings.SettingsActivity"
             android:exported="false"/>

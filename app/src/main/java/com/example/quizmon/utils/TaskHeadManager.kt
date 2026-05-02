@@ -18,7 +18,7 @@ object TaskHeadManager {
     fun update(taskHeadRoot: View?, preferenceManager: PreferenceManager) {
         if (taskHeadRoot == null) return
 
-        val tvStar = taskHeadRoot.findViewById<TextView>(R.id.textcoins)
+        val tvStar = taskHeadRoot.findViewById<TextView>(R.id.  textcoins)
         val tvCoin = taskHeadRoot.findViewById<TextView>(R.id.textxu)
         val tvExp = taskHeadRoot.findViewById<TextView>(R.id.head_text_exp)
         val tvHeartCount = taskHeadRoot.findViewById<TextView>(R.id.head_text_heart_count)
@@ -27,11 +27,11 @@ object TaskHeadManager {
         tvStar?.text = preferenceManager.getCoins().toString()
         tvCoin?.text = preferenceManager.getXu().toString()
         tvExp?.text = preferenceManager.getExp().toString()
-        
+
         val remainingMs = preferenceManager.autoRegenerateHearts()
         val currentHearts = preferenceManager.getHearts()
         tvHeartCount?.text = currentHearts.toString()
-        
+
         if (currentHearts >= 5) {
             tvHeartTime?.text = "MAX"
         } else {

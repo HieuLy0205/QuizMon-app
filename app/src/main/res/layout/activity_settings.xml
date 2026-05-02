@@ -8,19 +8,17 @@
     android:fitsSystemWindows="true"
     tools:context=".ui.settings.SettingsActivity">
 
-    <!-- Ảnh nền chính -->
     <ImageView
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/background"
+        android:src="@drawable/anhnenpr"
+        android:contentDescription="@null"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:contentDescription="@null" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Thanh trạng thái phía trên -->
     <include
         android:id="@+id/taskhead"
         layout="@layout/layout_taskhead"
@@ -41,18 +39,112 @@
             android:orientation="vertical"
             android:padding="20dp">
 
-            <TextView
+            <!-- Logo + tên app + phiên bản -->
+            <LinearLayout
+                android:id="@+id/appInfoHeader"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:text="Thiết lập"
-                android:textSize="28sp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:layout_marginBottom="24dp" />
+                android:paddingTop="10dp"
+                android:paddingBottom="14dp">
 
-            <!-- Account Settings Card -->
+                <ImageView
+                    android:id="@+id/imgAppLogo"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:contentDescription="QuizMon logo"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QuizMon"
+                    android:textColor="#333333"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAppVersion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="v1.0.0"
+                    android:textColor="#777777"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnReport"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="16dp"
+                android:text="📋 Báo cáo vấn đề"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:backgroundTint="#2979FF"
+                app:cornerRadius="12dp" />
+
+            <LinearLayout
+                android:id="@+id/tabContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                android:background="#CCFFFFFF">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tabSettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:text="⚙️ Cài đặt"
+                        android:textColor="@color/home_green"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/indicatorSettings"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/home_green"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tabReminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:gravity="center"
+                        android:text="⏰ Nhắc nhở"
+                        android:textColor="#757575"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:id="@+id/indicatorReminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/home_green"
+                        android:visibility="invisible" />
+                </LinearLayout>
+            </LinearLayout>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/accountCard"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
@@ -69,50 +161,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Tài khoản"
-                        android:textColor="@color/home_green"
-                        android:textSize="16sp"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="12dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Biệt danh"
-                        android:textColor="#757575"
-                        android:textSize="12sp" />
-
-                    <EditText
-                        android:id="@+id/etNickname"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Nhập nickname của bạn"
-                        android:background="@android:drawable/editbox_background_normal"
-                        android:padding="12dp"
-                        android:layout_marginTop="4dp"
-                        android:inputType="textPersonName" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Notification Settings Card -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="4dp"
-                app:cardBackgroundColor="#CCFFFFFF">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="16dp">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Thông báo nhắc nhở"
+                        android:text="Cài đặt"
                         android:textColor="@color/home_green"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -122,64 +171,144 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
-                        android:gravity="center_vertical">
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal"
-                            android:gravity="center_vertical">
-
-                            <EditText
-                                android:id="@+id/etHour"
-                                android:layout_width="50dp"
-                                android:layout_height="48dp"
-                                android:gravity="center"
-                                android:hint="08"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:background="@android:drawable/editbox_background_normal" />
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text=":"
-                                android:textStyle="bold"
-                                android:layout_marginHorizontal="8dp" />
-
-                            <EditText
-                                android:id="@+id/etMinute"
-                                android:layout_width="50dp"
-                                android:layout_height="48dp"
-                                android:gravity="center"
-                                android:hint="00"
-                                android:inputType="number"
-                                android:maxLength="2"
-                                android:background="@android:drawable/editbox_background_normal" />
-                        </LinearLayout>
+                        android:layout_marginBottom="8dp">
 
                         <Button
-                            android:id="@+id/btnPickTime"
-                            style="?android:attr/borderlessButtonStyle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Chọn giờ"
-                            android:textColor="@color/home_green" />
+                            android:id="@+id/btnSound"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="6dp"
+                            android:text="🔊 Âm thanh"
+                            android:backgroundTint="#3b6fd4"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:cornerRadius="10dp" />
+
+                        <Button
+                            android:id="@+id/btnMusic"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="6dp"
+                            android:text="🎵 Nhạc"
+                            android:backgroundTint="#e06c1c"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:cornerRadius="10dp" />
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <Button
+                            android:id="@+id/btnVibrate"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="6dp"
+                            android:text="📳 Rung khi chạm"
+                            android:backgroundTint="#b83a8c"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:cornerRadius="10dp" />
+
+                        <Button
+                            android:id="@+id/btnLargeText"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="6dp"
+                            android:text="🔡 Chữ lớn"
+                            android:backgroundTint="#6534b5"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            app:cornerRadius="10dp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnDarkMode"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:text="🌙 Giao diện tối"
+                        android:backgroundTint="#1a7a6e"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:cornerRadius="10dp" />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/reminderCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:visibility="gone"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#CCFFFFFF">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nhắc nhở hàng ngày"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/home_green"
+                        android:layout_marginBottom="10dp"/>
 
                     <TextView
                         android:id="@+id/tvSelectedTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:text="Giờ hiện tại: 08:00"
-                        android:textColor="#757575"
-                        android:textSize="14sp" />
+                        android:text="Giờ nhắc: 08:00"
+                        android:textSize="14sp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etHour"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:hint="Giờ"
+                            android:inputType="number"
+                            android:layout_marginEnd="6dp"/>
+
+                        <EditText
+                            android:id="@+id/etMinute"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:hint="Phút"
+                            android:inputType="number"
+                            android:layout_marginStart="6dp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnPickTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Chọn giờ"
+                        android:layout_marginTop="10dp"/>
                 </LinearLayout>
+                <!-- Giữ nguyên toàn bộ nội dung reminder của bạn ở đây -->
             </androidx.cardview.widget.CardView>
 
-            <!-- Action Button -->
+            <!-- Nút Lưu thay đổi: chỉ dùng cho tab Nhắc nhở, không hiện ở Cài đặt -->
             <Button
                 android:id="@+id/btnSave"
                 android:layout_width="match_parent"
@@ -189,12 +318,12 @@
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:backgroundTint="#4CAF50"
+                android:visibility="gone"
                 app:cornerRadius="15dp" />
 
         </LinearLayout>
     </ScrollView>
 
-    <!-- Thanh điều hướng dưới -->
     <include
         android:id="@+id/taskbar"
         layout="@layout/layout_taskbar"
