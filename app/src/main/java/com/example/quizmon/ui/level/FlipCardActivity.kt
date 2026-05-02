@@ -22,6 +22,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.R
 import com.example.quizmon.utils.PreferenceManager
+import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.TaskHeadManager
 
 class FlipCardActivity : AppCompatActivity() {
@@ -48,6 +49,7 @@ class FlipCardActivity : AppCompatActivity() {
         val btnBack = findViewById<Button>(R.id.btnBack)
 
         btnBack.setOnClickListener {
+            SoundManager.playClick()
             if (hasSelected) {
                 val intent = Intent()
                 intent.putExtra("INTERACTED", true)
@@ -77,6 +79,7 @@ class FlipCardActivity : AppCompatActivity() {
                 if (hasSelected) return@setOnClickListener
                 hasSelected = true
                 
+                SoundManager.playFlipCard()
                 preferenceManager.applyRewardByString(rewards[i], levelId)
                 animateFlipAndZoomToCenter(cardContainer)
             }
@@ -168,6 +171,7 @@ class FlipCardActivity : AppCompatActivity() {
             .setDuration(800)
             .setInterpolator(AccelerateDecelerateInterpolator())
             .withEndAction {
+                SoundManager.playComplete()
                 updateHeader()
                 android.os.Handler(mainLooper).postDelayed({
                     if (!isFinishing) {
@@ -195,14 +199,17 @@ class FlipCardActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        SoundManager.playMusic(this, R.raw.background)
     }
 
     override fun onPause() {
         super.onPause()
         TaskHeadManager.stopLoop()
+        SoundManager.pauseMusic()
     }
 
     override fun onBackPressed() {
+        SoundManager.playClick()
         if (hasSelected) {
             val intent = Intent()
             intent.putExtra("INTERACTED", true)

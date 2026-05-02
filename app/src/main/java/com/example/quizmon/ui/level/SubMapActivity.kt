@@ -22,6 +22,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.quizmon.R
 import com.example.quizmon.ui.quiz.QuizActivity
 import com.example.quizmon.utils.PreferenceManager
+import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.TaskHeadManager
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
@@ -80,7 +81,10 @@ class SubMapActivity : AppCompatActivity() {
         levelId = intent.getIntExtra("LEVEL_ID", 1)
 
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
-        btnBack.setOnClickListener { finish() }
+        btnBack.setOnClickListener { 
+            SoundManager.playClick()
+            finish() 
+        }
 
         tvCurrentStageScore = findViewById(R.id.tvCurrentStageScore)
         
@@ -222,6 +226,7 @@ class SubMapActivity : AppCompatActivity() {
     private fun handleItemClick(item: SubMapItem) {
         if (item.status != CompletionStatus.NOT_STARTED) return
 
+        SoundManager.playClick()
         try {
             when (item.type) {
                 SubMapType.QUESTION -> {
@@ -305,12 +310,17 @@ class SubMapActivity : AppCompatActivity() {
         updateUI() 
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
         updateHandler.post(updateRunnable)
+        
+        // Phát nhạc nền
+        SoundManager.playMusic(this, R.raw.background)
     }
     
     override fun onPause() {
         super.onPause()
         TaskHeadManager.stopLoop()
         updateHandler.removeCallbacks(updateRunnable)
+        
+        SoundManager.pauseMusic()
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
@@ -387,6 +397,8 @@ class SubMapActivity : AppCompatActivity() {
         // Tránh hiển thị chồng chéo nếu đã hiện
         if (overlay.visibility == View.VISIBLE) return 
 
+        SoundManager.playMusic(this, R.raw.victory, false) // Phát nhạc thắng cuộc (không lặp)
+
         val tvTitle = findViewById<TextView>(R.id.tvSummaryTitle)
         val tvCorrect = findViewById<TextView>(R.id.tvCorrectCount)
 //        val tvBonus = findViewById<TextView>(R.id.tvBonusPoints)
@@ -414,6 +426,7 @@ class SubMapActivity : AppCompatActivity() {
             tvPercent.setTextColor(Color.parseColor("#0277BD"))
             btnAction.text = "Tiếp theo"
             btnAction.setOnClickListener {
+                SoundManager.playClick()
                 val intent = Intent(this, LevelMapActivity::class.java)
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP)
                 startActivity(intent)
@@ -424,9 +437,12 @@ class SubMapActivity : AppCompatActivity() {
             tvPercent.setTextColor(Color.RED)
             btnAction.text = "Chơi lại"
             btnAction.setOnClickListener {
+                SoundManager.playClick()
                 resetLevel()
                 overlay.animate().alpha(0f).setDuration(300).withEndAction {
                     overlay.visibility = View.GONE
+                    // Resume nhạc nền khi đóng dialog
+                    SoundManager.playMusic(this@SubMapActivity, R.raw.background)
                 }.start()
             }
         }

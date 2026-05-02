@@ -1,8 +1,8 @@
-
 package com.example.quizmon.ui.settings
 
 import android.Manifest
 import android.app.TimePickerDialog
+import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Color
@@ -12,23 +12,34 @@ import android.view.View
 import android.widget.*
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.quizmon.MainActivity
 import com.example.quizmon.R
 import com.example.quizmon.ui.faq.FaqActivity
+import com.example.quizmon.ui.history.HistoryActivity
 import com.example.quizmon.ui.notification.NotificationHelper
+import com.example.quizmon.ui.profile.ProfileActivity
+import com.example.quizmon.ui.shop.activity_shop
+import com.example.quizmon.utils.PreferenceManager
+import com.example.quizmon.utils.SoundManager
+import com.example.quizmon.utils.TaskHeadManager
 
 class SettingsActivity : AppCompatActivity() {
 
     private lateinit var notificationHelper: NotificationHelper
+    private lateinit var preferenceManager: PreferenceManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_settings)
+
+        preferenceManager = PreferenceManager(this)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.settings_root)) { v, insets ->
             val sys = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -42,9 +53,66 @@ class SettingsActivity : AppCompatActivity() {
         setupTabs()
         setupReminder()
         setupToggles()
+        setupTaskbar()
 
         findViewById<Button>(R.id.btnReport).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, FaqActivity::class.java))
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Cập nhật Header và đếm ngược Tim
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        
+        // Phát nhạc nền
+        SoundManager.playMusic(this, R.raw.background)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        // Dừng cập nhật Header
+        TaskHeadManager.stopLoop()
+        
+        SoundManager.pauseMusic()
+    }
+
+    private fun setupTaskbar() {
+        // Highlight tab Menu (Settings)
+        findViewById<View>(R.id.indicator_menu)?.visibility = View.VISIBLE
+        findViewById<TextView>(R.id.tv_nav_menu)?.setTextColor(
+            ContextCompat.getColor(this, R.color.taskbar_active)
+        )
+
+        findViewById<LinearLayout>(R.id.nav_home)?.setOnClickListener {
+            SoundManager.playClick()
+            val intent = Intent(this, MainActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+            startActivity(intent)
+            finish()
+        }
+        findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener {
+            SoundManager.playClick()
+            startActivity(Intent(this, HistoryActivity::class.java))
+        }
+        findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener {
+            SoundManager.playClick()
+            startActivity(Intent(this, activity_shop::class.java))
+        }
+        findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener {
+            SoundManager.playClick()
+            openProfileFlow()
+        }
+    }
+
+    private fun openProfileFlow() {
+        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
+        val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
+        if (isFirstTime) {
+            startActivity(Intent(this, com.example.quizmon.ui.onboarding.AgeActivity::class.java))
+        } else {
+            startActivity(Intent(this, ProfileActivity::class.java))
         }
     }
 
@@ -107,8 +175,14 @@ class SettingsActivity : AppCompatActivity() {
 
         showSettings()
 
-        tabSettings.setOnClickListener { showSettings() }
-        tabReminder.setOnClickListener { showReminder() }
+        tabSettings.setOnClickListener { 
+            SoundManager.playClick()
+            showSettings() 
+        }
+        tabReminder.setOnClickListener { 
+            SoundManager.playClick()
+            showReminder() 
+        }
     }
 
     // REMINDER
@@ -129,6 +203,7 @@ class SettingsActivity : AppCompatActivity() {
         tvTime.text = "Giờ nhắc: %02d:%02d".format(hour, minute)
 
         btnPick.setOnClickListener {
+            SoundManager.playClick()
             TimePickerDialog(this, { _, h, m ->
                 etHour.setText("%02d".format(h))
                 etMinute.setText("%02d".format(m))
@@ -137,6 +212,7 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         btnSave.setOnClickListener {
+            SoundManager.playClick()
             val h = etHour.text.toString().toIntOrNull()
             val m = etMinute.text.toString().toIntOrNull()
 
@@ -160,26 +236,53 @@ class SettingsActivity : AppCompatActivity() {
     private fun setupToggles() {
         val prefs = getSharedPreferences("settings", MODE_PRIVATE)
 
-        toggle(findViewById(R.id.btnSound), "sound", prefs)
-        toggle(findViewById(R.id.btnMusic), "music", prefs)
-        toggle(findViewById(R.id.btnVibrate), "vibrate", prefs)
-        toggle(findViewById(R.id.btnLargeText), "bigtext", prefs)
-        toggle(findViewById(R.id.btnDarkMode), "darkmode", prefs)
-    }
-
-    private fun toggle(view: View, key: String, prefs: android.content.SharedPreferences) {
-        var isOn = prefs.getBoolean(key, true)
-
-        updateUI(view, isOn)
-
-        view.setOnClickListener {
-            isOn = !isOn
-            prefs.edit().putBoolean(key, isOn).apply()
-            updateUI(view, isOn)
+        toggle(findViewById(R.id.btnSound), "sound", prefs, true) { isOn ->
+            SoundManager.setSoundEnabled(isOn)
+        }
+        toggle(findViewById(R.id.btnMusic), "music", prefs, true) { isOn ->
+            SoundManager.setMusicEnabled(isOn)
+        }
+        toggle(findViewById(R.id.btnVibrate), "vibrate", prefs, true) { isOn ->
+            SoundManager.setVibrateEnabled(isOn)
+        }
+        toggle(findViewById(R.id.btnLargeText), "bigtext", prefs, false) { isOn ->
+            applyTextSize(isOn)
+        }
+        toggle(findViewById(R.id.btnDarkMode), "darkmode", prefs, false) { isOn ->
+            applyDarkMode(isOn)
         }
     }
 
-    private fun updateUI(view: View, isOn: Boolean) {
+    private fun toggle(view: View, key: String, prefs: android.content.SharedPreferences, default: Boolean, onToggle: ((Boolean) -> Unit)? = null) {
+        var isOn = prefs.getBoolean(key, default)
+
+        updateToggleUI(view, isOn)
+
+        view.setOnClickListener {
+            SoundManager.playClick()
+            isOn = !isOn
+            prefs.edit().putBoolean(key, isOn).apply()
+            updateToggleUI(view, isOn)
+            onToggle?.invoke(isOn)
+        }
+    }
+
+    private fun updateToggleUI(view: View, isOn: Boolean) {
         view.alpha = if (isOn) 1f else 0.4f
+    }
+
+    private fun applyDarkMode(isOn: Boolean) {
+        if (isOn) {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+        }
+    }
+
+    private fun applyTextSize(isOn: Boolean) {
+        // Saving is handled by toggle()
+        
+        // Recreate activity to apply font scale changes immediately via QuizMonApp's lifecycle callback
+        recreate()
     }
 }

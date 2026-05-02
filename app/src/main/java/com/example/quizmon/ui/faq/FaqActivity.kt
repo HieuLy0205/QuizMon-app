@@ -6,19 +6,27 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizmon.R
 import com.example.quizmon.ui.report.ReportActivity
+import com.example.quizmon.utils.SoundManager
 
 class FaqActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Không gọi enableEdgeToEdge() để tránh tràn viền
         setContentView(R.layout.activity_faq)
 
         Log.d("FAQ", "FaqActivity opened")
+
+        findViewById<ImageButton>(R.id.btnBack).setOnClickListener {
+            SoundManager.playClick()
+            finish()
+        }
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerFaq)
 
@@ -82,6 +90,7 @@ class FaqActivity : AppCompatActivity() {
         )
 
         val adapter = FaqAdapter(faqList) { item ->
+            SoundManager.playClick()
             val intent = Intent(this, FaqDetailActivity::class.java)
             intent.putExtra("title", item.title)
             intent.putExtra("content", item.content)
@@ -92,6 +101,7 @@ class FaqActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
         findViewById<Button>(R.id.btnReportFromFaq).setOnClickListener {
+            SoundManager.playClick()
             showReportDialog()
         }
     }
@@ -104,26 +114,31 @@ class FaqActivity : AppCompatActivity() {
             .create()
 
         view.findViewById<View>(R.id.btnContent).setOnClickListener {
+            SoundManager.playClick()
             openReportForm("Nội dung")
             dialog.dismiss()
         }
 
         view.findViewById<View>(R.id.btnTech).setOnClickListener {
+            SoundManager.playClick()
             openReportForm("Kỹ thuật")
             dialog.dismiss()
         }
 
         view.findViewById<View>(R.id.btnAds).setOnClickListener {
+            SoundManager.playClick()
             openReportForm("Quảng cáo")
             dialog.dismiss()
         }
 
         view.findViewById<View>(R.id.btnPrivacy).setOnClickListener {
+            SoundManager.playClick()
             openReportForm("Quyền riêng tư")
             dialog.dismiss()
         }
 
         view.findViewById<View>(R.id.btnOther).setOnClickListener {
+            SoundManager.playClick()
             openReportForm("Khác")
             dialog.dismiss()
         }

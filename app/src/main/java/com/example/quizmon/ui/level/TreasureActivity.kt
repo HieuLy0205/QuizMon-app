@@ -21,6 +21,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.R
 import com.example.quizmon.utils.PreferenceManager
+import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.TaskHeadManager
 import kotlin.random.Random
 
@@ -67,12 +68,14 @@ class TreasureActivity : AppCompatActivity() {
             chest.setOnClickListener {
                 if (!hasOpened) {
                     hasOpened = true
+                    SoundManager.playClick()
                     animateChestToCenter(chest, index == monsterIndex)
                 }
             }
         }
 
         findViewById<Button>(R.id.btnBack).setOnClickListener {
+            SoundManager.playClick()
             if (hasOpened) {
                 val intent = Intent()
                 intent.putExtra("INTERACTED", true)
@@ -92,6 +95,7 @@ class TreasureActivity : AppCompatActivity() {
         btnDialogClose = findViewById(R.id.btnDialogClose)
 
         btnDialogClose.setOnClickListener {
+            SoundManager.playClick()
             dialogOverlay.visibility = View.GONE
             val intent = Intent()
             intent.putExtra("INTERACTED", true)
@@ -159,6 +163,7 @@ class TreasureActivity : AppCompatActivity() {
         val rawContent: String
 
         if (isMonster) {
+            SoundManager.playWrong()
             preferenceManager.useHeart()
             val monsterMessages = listOf(
                 getString(R.string.monster_message_1),
@@ -174,6 +179,7 @@ class TreasureActivity : AppCompatActivity() {
             tvDialogTitle.setTextColor(Color.parseColor("#B71C1C"))
             btnDialogClose.text = "CHẤP NHẬN SỐ PHẬN"
         } else {
+            SoundManager.playTreasure()
             val rewards = listOf("100 Xu", "200 Xu", "Cộng 1 Mạng", "50 EXP", "Phụ trợ 50/50 x1", "Phụ trợ Đáp án đúng x1")
             rawContent = rewards.random()
             // Sử dụng hàm tổng hợp Master để xử lý mượt mà
@@ -218,14 +224,17 @@ class TreasureActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        SoundManager.playMusic(this, R.raw.background)
     }
 
     override fun onPause() {
         super.onPause()
         TaskHeadManager.stopLoop()
+        SoundManager.pauseMusic()
     }
 
     override fun onBackPressed() {
+        SoundManager.playClick()
         if (hasOpened) {
             val intent = Intent()
             intent.putExtra("INTERACTED", true)

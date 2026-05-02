@@ -18,6 +18,7 @@ import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.ui.shop.activity_shop
+import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.TaskHeadManager
 
 class HistoryActivity : AppCompatActivity() {
@@ -45,20 +46,24 @@ class HistoryActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.tv_nav_history).setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
 
         findViewById<LinearLayout>(R.id.nav_home).setOnClickListener {
+            SoundManager.playClick()
             val intent = Intent(this, MainActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
         findViewById<LinearLayout>(R.id.nav_profile).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, ProfileActivity::class.java))
         }
 
         findViewById<LinearLayout>(R.id.nav_shop).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, activity_shop::class.java))
         }
 
         findViewById<LinearLayout>(R.id.nav_menu).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, SettingsActivity::class.java))
         }
     }
@@ -67,11 +72,17 @@ class HistoryActivity : AppCompatActivity() {
         super.onResume()
         //Khởi động đếm ngược Header tự động
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        
+        // Phát nhạc nền
+        SoundManager.playMusic(this, R.raw.background)
     }
     
     override fun onPause() {
         super.onPause()
         //Dừng đếm ngược
         TaskHeadManager.stopLoop()
+        
+        // Tạm dừng nhạc
+        SoundManager.pauseMusic()
     }
 }

@@ -26,6 +26,7 @@ import com.example.quizmon.data.model.Question
 import com.example.quizmon.data.repository.QuizRepository
 import com.example.quizmon.data.repository.StatisticsRepository
 import com.example.quizmon.utils.PreferenceManager
+import com.example.quizmon.utils.SoundManager
 import com.google.android.material.button.MaterialButton
 
 /**
@@ -111,8 +112,14 @@ class QuizActivity : AppCompatActivity() {
         setupPowerUps()
         updatePowerUpCounts()
 
-        btnBack.setOnClickListener { showExitConfirmation() }
-        onBackPressedDispatcher.addCallback(this) { showExitConfirmation() }
+        btnBack.setOnClickListener { 
+            SoundManager.playClick()
+            showExitConfirmation() 
+        }
+        onBackPressedDispatcher.addCallback(this) { 
+            SoundManager.playClick()
+            showExitConfirmation() 
+        }
     }
 
     private fun initViews() {
@@ -248,6 +255,7 @@ class QuizActivity : AppCompatActivity() {
 
     private fun onAnswerSelected(index: Int) {
         if (isAnswered) return 
+        SoundManager.playClick()
         selectedIndex = index
         resetButtonStyles()
         answerButtons[index].backgroundTintList =
@@ -270,10 +278,12 @@ class QuizActivity : AppCompatActivity() {
 
             if (!isAnswered) {
                 if (selectedIndex == -1) return@setOnClickListener
+                SoundManager.playClick()
                 val isCorrect = selectedIndex == q.correctIndex
 
                 // Xử lý Phụ trợ "Cơ hội 2" khi trả lời sai lần đầu
                 if (!isCorrect && isDoubleChanceActive) {
+                    SoundManager.playWrong()
                     isDoubleChanceActive = false 
                     val indexToHide = selectedIndex 
                     Toast.makeText(this, "Đáp án sai! Bạn còn 1 cơ hội.", Toast.LENGTH_SHORT).show()
@@ -298,9 +308,11 @@ class QuizActivity : AppCompatActivity() {
                 }
 
                 if (isCorrect) {
+                    SoundManager.playCorrect()
                     animateCorrect(selectedIndex)
                     preferenceManager.handleCorrectAnswer()
                 } else {
+                    SoundManager.playWrong()
                     animateWrong(selectedIndex, q.correctIndex)
                     preferenceManager.handleWrongAnswer()
                 }
@@ -315,6 +327,7 @@ class QuizActivity : AppCompatActivity() {
                 btnConfirm.text = "Tiếp tục"
                 btnConfirm.isEnabled = true
             } else {
+                SoundManager.playClick()
                 // Thoát và truyền trạng thái x2 điểm về SubMapActivity
                 val resultIntent = Intent()
                 resultIntent.putExtra(EXTRA_IS_DOUBLE_SCORE, isDoubleScoreActive)
@@ -328,21 +341,25 @@ class QuizActivity : AppCompatActivity() {
     private fun setupPowerUps() {
         // --- Nhấn để hiện Dialog xác nhận sử dụng ---
         btnFiftyFifty.setOnClickListener {
+            SoundManager.playClick()
             showPowerUpConfirmation("50/50", "Loại bỏ 2 phương án trả lời sai.") {
                 useFiftyFifty()
             }
         }
         btnDoubleChance.setOnClickListener {
+            SoundManager.playClick()
             showPowerUpConfirmation("Cơ hội 2", "Cho phép bạn chọn lại một lần nếu trả lời sai.") {
                 useDoubleChance()
             }
         }
         btnRevealAnswer.setOnClickListener {
+            SoundManager.playClick()
             showPowerUpConfirmation("Gợi ý", "Hiển thị trực tiếp đáp án chính xác cho câu hỏi này.") {
                 useRevealAnswer()
             }
         }
         btnDoubleScore.setOnClickListener {
+            SoundManager.playClick()
             showPowerUpConfirmation("x2 Điểm", "Nhận gấp đôi số điểm nếu bạn trả lời đúng câu hỏi này.") {
                 useDoubleScore()
             }
@@ -372,10 +389,12 @@ class QuizActivity : AppCompatActivity() {
         dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
 
         btnPositive.setOnClickListener {
+            SoundManager.playClick()
             onConfirm()
             dialog.dismiss()
         }
         btnNegative.setOnClickListener {
+            SoundManager.playClick()
             dialog.dismiss()
         }
 
@@ -388,6 +407,7 @@ class QuizActivity : AppCompatActivity() {
             Toast.makeText(this, "Bạn đã hết phụ trợ 50/50", Toast.LENGTH_SHORT).show()
             return
         }
+        SoundManager.playBonus()
         val q = currentQuestion ?: return
         
         preferenceManager.addSupport(PreferenceManager.SUPPORT_5050, -1)
@@ -420,6 +440,7 @@ class QuizActivity : AppCompatActivity() {
             Toast.makeText(this, "Bạn không còn phụ trợ Cơ hội 2", Toast.LENGTH_SHORT).show()
             return
         }
+        SoundManager.playBonus()
         
         preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_CHANCE, -1)
         updatePowerUpCounts()
@@ -435,6 +456,7 @@ class QuizActivity : AppCompatActivity() {
             Toast.makeText(this, "Bạn không còn phụ trợ Gợi ý", Toast.LENGTH_SHORT).show()
             return
         }
+        SoundManager.playBonus()
         val q = currentQuestion ?: return
         
         preferenceManager.addSupport(PreferenceManager.SUPPORT_CORRECT_ANSWER, -1)
@@ -460,6 +482,7 @@ class QuizActivity : AppCompatActivity() {
             Toast.makeText(this, "Bạn không còn phụ trợ x2 Điểm", Toast.LENGTH_SHORT).show()
             return
         }
+        SoundManager.playBonus()
         
         preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_POINTS, -1)
         updatePowerUpCounts()
@@ -547,6 +570,17 @@ class QuizActivity : AppCompatActivity() {
             duration = 150
             start()
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Phát nhạc nền Quiz
+        SoundManager.playMusic(this, R.raw.quiz)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        SoundManager.pauseMusic()
     }
 
     private fun getCategoryDisplayName(category: String): String = when (category) {

@@ -19,6 +19,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Thanh trạng thái phía trên -->
     <include
         android:id="@+id/taskhead"
         layout="@layout/layout_taskhead"
@@ -270,6 +271,7 @@
                         android:id="@+id/tvSelectedTime"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/black"
                         android:text="Giờ nhắc: 08:00"
                         android:textSize="14sp"
                         android:layout_marginBottom="10dp"/>
@@ -285,6 +287,7 @@
                             android:layout_height="48dp"
                             android:layout_weight="1"
                             android:hint="Giờ"
+                            android:textColor="@color/black"
                             android:inputType="number"
                             android:layout_marginEnd="6dp"/>
 
@@ -294,6 +297,7 @@
                             android:layout_height="48dp"
                             android:layout_weight="1"
                             android:hint="Phút"
+                            android:textColor="@color/black"
                             android:inputType="number"
                             android:layout_marginStart="6dp"/>
                     </LinearLayout>

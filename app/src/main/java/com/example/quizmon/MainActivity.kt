@@ -27,6 +27,7 @@ import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
 import com.example.quizmon.ui.pet.AnimetorActivity
+import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.StreakManager
 import com.example.quizmon.utils.TaskHeadManager
 import kotlin.math.abs
@@ -47,6 +48,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+        
+        // Khởi tạo SoundManager
+        SoundManager.init(this)
+        
         reposiroty = petReposiroty()
         preferenceManager = PreferenceManager(this)
 
@@ -61,14 +66,17 @@ class MainActivity : AppCompatActivity() {
         updateUI()
 
         findViewById<View>(R.id.btnQuiz).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, LevelMapActivity::class.java))
         }
 
         findViewById<View>(R.id.cardDailyReward).setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, shop_phobien::class.java))
         }
 
         findViewById<FrameLayout>(R.id.layoutStreak)?.setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, StreakActivity::class.java))
         }
 
@@ -108,6 +116,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         ivFloatingPet.setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, PetActivity::class.java))
         }
     }
@@ -117,6 +126,9 @@ class MainActivity : AppCompatActivity() {
         updateUI()
         //Tự động cập nhật Header và đếm ngược Tim
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        
+        // Phát nhạc nền
+        SoundManager.playMusic(this, R.raw.background)
     }
 
     override fun onPause() {
@@ -124,6 +136,10 @@ class MainActivity : AppCompatActivity() {
         animetor.stop()
         //Dừng cập nhật
         TaskHeadManager.stopLoop()
+        
+        //Tạm dừng nhạc nếu cần (thường background music nên tắt khi out hẳn hoặc chuyển activity đặc biệt)
+        //pause ở onPause và resume ở onResume
+        SoundManager.pauseMusic()
     }
 
     private fun updateUI() {
@@ -164,6 +180,7 @@ class MainActivity : AppCompatActivity() {
             )
         )
         findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener {
+            SoundManager.playClick()
             startActivity(
                 Intent(
                     this,
@@ -172,6 +189,7 @@ class MainActivity : AppCompatActivity() {
             )
         }
         findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener {
+            SoundManager.playClick()
             startActivity(
                 Intent(
                     this,
@@ -180,6 +198,7 @@ class MainActivity : AppCompatActivity() {
             )
         }
         findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener {
+            SoundManager.playClick()
             startActivity(
                 Intent(
                     this,
@@ -187,7 +206,10 @@ class MainActivity : AppCompatActivity() {
                 )
             )
         }
-        findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener { openProfileFlow() }
+        findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener { 
+            SoundManager.playClick()
+            openProfileFlow() 
+        }
     }
 
     private fun openProfileFlow() {

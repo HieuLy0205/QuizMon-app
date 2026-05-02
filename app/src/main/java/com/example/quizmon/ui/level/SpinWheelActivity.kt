@@ -14,6 +14,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.R
 import com.example.quizmon.utils.PreferenceManager
+import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.TaskHeadManager
 import kotlin.random.Random
 
@@ -56,6 +57,7 @@ class SpinWheelActivity : AppCompatActivity() {
         initViews()
 
         findViewById<Button>(R.id.btnBack).setOnClickListener {
+            SoundManager.playClick()
             if (hasSpun) {
                 val intent = Intent()
                 intent.putExtra("INTERACTED", true)
@@ -79,6 +81,7 @@ class SpinWheelActivity : AppCompatActivity() {
         tvDialogContent = findViewById(R.id.tvDialogContent)
         
         findViewById<Button>(R.id.btnDialogClose).setOnClickListener {
+            SoundManager.playClick()
             dialogOverlay.visibility = View.GONE
             val intent = Intent()
             intent.putExtra("INTERACTED", true)
@@ -89,6 +92,7 @@ class SpinWheelActivity : AppCompatActivity() {
 
     private fun startSpin() {
         isSpinning = true
+        SoundManager.playSpinWheel()
         
         val rewardIndex = Random.nextInt(rewards.size)
         val reward = rewards[rewardIndex]
@@ -107,6 +111,7 @@ class SpinWheelActivity : AppCompatActivity() {
                 hasSpun = true
                 luckyWheel.rotation = targetItemRotation % 360
                 
+                SoundManager.playComplete()
                 preferenceManager.applyRewardByString(reward, levelId)
                 
                 showRewardDialog(reward)
@@ -132,7 +137,20 @@ class SpinWheelActivity : AppCompatActivity() {
         TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
     }
 
+    override fun onResume() {
+        super.onResume()
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        SoundManager.playMusic(this, R.raw.background)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        TaskHeadManager.stopLoop()
+        SoundManager.pauseMusic()
+    }
+
     override fun onBackPressed() {
+        SoundManager.playClick()
         if (hasSpun) {
             val intent = Intent()
             intent.putExtra("INTERACTED", true)

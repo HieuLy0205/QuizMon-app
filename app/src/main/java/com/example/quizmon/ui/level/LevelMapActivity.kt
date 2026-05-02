@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quizmon.R
+import com.example.quizmon.utils.SoundManager
 
 class LevelMapActivity : AppCompatActivity() {
 
@@ -47,7 +48,10 @@ class LevelMapActivity : AppCompatActivity() {
         val ivBackground1 = findViewById<ImageView>(R.id.ivBackground1)
         val ivBackground2 = findViewById<ImageView>(R.id.ivBackground2)
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
-        btnBack.setOnClickListener { finish() }
+        btnBack.setOnClickListener { 
+            SoundManager.playClick()
+            finish() 
+        }
 
         val rvLevelMap = findViewById<RecyclerView>(R.id.rvLevelMap)
 
@@ -55,6 +59,7 @@ class LevelMapActivity : AppCompatActivity() {
         val levels = (1..totalLevels).toList().reversed()
 
         val adapter = LevelAdapter(levels, currentUnlockedLevel) { selectedLevel ->
+            SoundManager.playClick()
             val intent = Intent(this, SubMapActivity::class.java)
             intent.putExtra("LEVEL_ID", selectedLevel)
             startActivity(intent)
@@ -103,6 +108,14 @@ class LevelMapActivity : AppCompatActivity() {
         super.onResume()
         loadProgress()
         findViewById<RecyclerView>(R.id.rvLevelMap).adapter?.notifyDataSetChanged()
+        
+        // Phát nhạc nền bản đồ
+        SoundManager.playMusic(this, R.raw.background)
+    }
+    
+    override fun onPause() {
+        super.onPause()
+        SoundManager.pauseMusic()
     }
 
     private fun loadProgress() {
