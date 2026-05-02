@@ -15,6 +15,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import android.widget.ImageButton
+import com.example.quizmon.utils.TaskHeadManager
 
 
 class TupetActivity: AppCompatActivity(){
@@ -26,7 +27,7 @@ class TupetActivity: AppCompatActivity(){
     private lateinit var btnBack: ImageButton
     private val reposiroty = petReposiroty()
     private var currentList = listOf<Pet>()
-    private lateinit var tv_selected_pet_name: TextView
+    private lateinit var tv_danhsach: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,18 +38,17 @@ class TupetActivity: AppCompatActivity(){
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        //không để tâm
         lv_vat_in_tu = findViewById(R.id.lv_vat_in_tu)
         lv_kho_dung = findViewById(R.id.lv_kho_dung)
         img_pet_preview = findViewById(R.id.img_pet_preview)
-        tv_selected_pet_name = findViewById(R.id.tv_selected_pet_name)
+        tv_danhsach = findViewById(R.id.tv_selected_pet_name)
         btnBack = findViewById(R.id.btnBack)
 
         pref = PreferenceManager(this)
 
         //setup listview bên trái
-        val loai_doi_tuong = listOf("Thú", "Trứng")
-        lv_vat_in_tu.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, loai_doi_tuong)
+        val danh_sach_vat = listOf("Thú", "Trứng")
+        lv_vat_in_tu.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, danh_sach_vat)
 
         lv_vat_in_tu.setOnItemClickListener { parent, view, position, id ->
             if (position == 0) {
@@ -58,14 +58,13 @@ class TupetActivity: AppCompatActivity(){
             }
         }
         //setup listview bên phải ( phân loại đối tượng )
+        // sự kiện chọn pet
         lv_kho_dung.setOnItemClickListener { _, _, position, _ ->
             val selectedPet = currentList[position]
-
             // Cập nhật khung Preview (Lấy ảnh đầu tiên của level 1 để xem trước)
             val previewImg = selectedPet.animetor[1]?.get(0) ?: 0
             img_pet_preview.setImageResource(previewImg)
-            tv_selected_pet_name.text = selectedPet.name
-
+            tv_danhsach.text = selectedPet.name
             // Lưu ID để mang về ActivityPet
             pref.savePetid(selectedPet.id.toInt())
             Toast.makeText(this, "Đã chọn: ${selectedPet.name}", Toast.LENGTH_SHORT).show()
@@ -73,16 +72,14 @@ class TupetActivity: AppCompatActivity(){
         btnBack.setOnClickListener { finish() }
         showListPet()
     }
-
     private fun showListPet() {
         // 1. Lấy danh sách ID đã sở hữu
-        val ownedIds = pref.getOwnedPetIds()
+        val ownedIds = pref.get_sh_PetIds()
 
-        // 2. Lọc danh sách từ Repository: Chỉ lấy những con có ID nằm trong ownedIds
+        // 2. Lọc danh sách từ Repository: Chỉ lấy những con có ID nằm trong sh_Ids
         currentList = reposiroty.getAllPets().filter { pet ->
             ownedIds.contains(pet.id)
         }
-
         // 3. Hiển thị lên ListView
         if (currentList.isEmpty()) {
             lv_kho_dung.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listOf("Bạn chưa có thú cưng nào"))
@@ -93,15 +90,24 @@ class TupetActivity: AppCompatActivity(){
     }
 
     private fun showListTrung() {
-        val ownedEggIds = pref.getOwnedEggIds()
-
-        val eggNames = ownedEggIds.map { "Trứng loại $it" }
-
+        // Giá trị trả về khi hàm get_Sh_EggIds() lục lọi trong bộ nhớ, nó trả veef danh sách
+        val ownedEggIds = pref.get_sh_EggIds()
+        // biến ánh xạ.map từ id sang tên
+        val eggNames = ownedEggIds.map { "Trứng $it" }
         if (eggNames.isEmpty()) {
             lv_kho_dung.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listOf("Bạn chưa có trứng nào"))
         } else {
             lv_kho_dung.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, eggNames)
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), pref)
+    }
+    override fun onPause() {
+        super.onPause()
+        TaskHeadManager.stopLoop()
     }
 
 

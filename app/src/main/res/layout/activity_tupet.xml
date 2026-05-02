@@ -6,9 +6,24 @@
     android:id="@+id/tupet"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F8F9FA">
+    android:background="@drawable/background">
 
-    <!-- Tiêu đề -->
+    <ImageView
+        android:id="@+id/taskhead_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@null" />
+
+    <include
+        android:id="@+id/layout_taskhead"
+        layout="@layout/layout_taskhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -19,7 +34,7 @@
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/layout_taskhead" />
 
     <!-- Thân máy: Chia làm 2 cột -->
     <LinearLayout
@@ -35,7 +50,7 @@
             android:id="@+id/lv_vat_in_tu"
             android:layout_width="110dp"
             android:layout_height="match_parent"
-            android:background="#E9ECEF"
+            android:background="@drawable/task_right_tupet"
             android:divider="@android:color/transparent"
             android:dividerHeight="4dp"
             android:padding="4dp" />
@@ -48,12 +63,13 @@
             android:padding="8dp">
 
             <TextView
-                android:id="@+id/tv_category_title"
+                android:id="@+id/tv_danhsach"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Danh sách"
                 android:textSize="18sp"
                 android:textStyle="bold"
+                android:textColor="#070606"
                 android:layout_marginBottom="8dp"/>
 
             <!-- Danh sách các con Pet đang có -->

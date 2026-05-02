@@ -1,7 +1,7 @@
 package com.example.quizmon.data.repository
 import com.example.quizmon.R
 import com.example.quizmon.data.model.Pet
-
+import com.example.quizmon.data.model.Trung
 
 class petReposiroty {
     //chứa danh sách pet
@@ -54,8 +54,38 @@ class petReposiroty {
             )
         )
     )
+
+    private val alltrung = listOf(
+        Trung(
+            "1",
+            "Trứng hoa long",
+            R.drawable.trung_pet_1
+        ),
+        Trung(
+            "2",
+            "Trứng sầu riêng",
+            R.drawable.trung_pet_4
+        ),
+        Trung(
+            "3",
+            "Trứng mựt nily",
+            R.drawable.trung_pet_2
+        ),
+        Trung(
+            "4",
+            "Trứng sao nhị",
+            R.drawable.trung_pet_6
+        )
+    )
+
     fun getPetById(id: String): Pet? = allpets.find { it.id == id }
 
     fun getAllPets(): List<Pet> = allpets
+
+    fun getAllTrung(): List<Trung> = alltrung
+
+    fun getTrungById(id: String): Trung? = alltrung.find { it.id == id }
+
+
 
 }

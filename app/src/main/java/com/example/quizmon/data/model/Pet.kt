@@ -9,6 +9,7 @@ data class Pet(
     val currentelevel: Int,
 
     val levelmax: Int,
+
     //hoạt ảnh
     val animetor: Map<Int, IntArray>,
 

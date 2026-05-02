@@ -27,8 +27,11 @@ import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
 import com.example.quizmon.ui.pet.AnimetorActivity
+import com.example.quizmon.ui.shop.shop_tim
+import com.example.quizmon.ui.shop.shop_xu
 import com.example.quizmon.utils.StreakManager
 import com.example.quizmon.utils.TaskHeadManager
+import kotlin.jvm.java
 import kotlin.math.abs
 
 class MainActivity : AppCompatActivity() {
@@ -55,8 +58,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
         setupTaskbar()
+        setupTaskhead()
         setupFloatingPet()
         updateUI()
 
@@ -133,7 +136,7 @@ class MainActivity : AppCompatActivity() {
         val preferenceManager = PreferenceManager(this)
         val petLevel = preferenceManager.getPetLevel()
         val petId = preferenceManager.getPetid()
-        val currentPetId = "0"
+        val currentPetId = "1"
         //tạm dừng pet để xử lý logic thay đổi pet trong kho (tủ)
         if (petId == -1 || petLevel == 0) {
             animetor.stop()
@@ -188,6 +191,18 @@ class MainActivity : AppCompatActivity() {
                 )
             }
             findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener { openProfileFlow() }
+        }
+        private fun setupTaskhead() {
+            TaskHeadManager.update(findViewById(R.id.taskhead), preferenceManager)
+            findViewById<View>(R.id.imgcoin_nhan_thuong).setOnClickListener {
+                startActivity(Intent(this, shop_phobien::class.java))
+            }
+            findViewById<View>(R.id.img_xu_shop).setOnClickListener {
+                startActivity(Intent(this, shop_xu::class.java))
+            }
+            findViewById<View>(R.id.img_tim_shop).setOnClickListener {
+                startActivity(Intent(this, shop_tim::class.java))
+            }
         }
 
         private fun openProfileFlow() {

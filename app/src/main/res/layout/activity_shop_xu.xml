@@ -3,194 +3,214 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:fillViewport="true">
 
     <LinearLayout
-        android:id="@+id/xu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="24dp">
+        android:orientation="vertical">
 
-        <!-- Header -->
+        <!-- BƯỚC 2: Phần TaskHead -->
         <LinearLayout
+            android:id="@+id/taskhead_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
-            android:padding="16dp">
-
-            <ImageView
-                android:layout_width="69dp"
-                android:layout_height="69dp"
-                android:src="@drawable/su_shop_map"
-                android:contentDescription="Icon Shop" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="69dp"
-                android:background="@drawable/btn_play"
-                android:backgroundTint="#A5D9D6D6"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:text="@string/text_napthe"
-                android:textSize="24sp"
-                android:textColor="#070606"
-                android:backgroundTintMode="src_atop"/>
-        </LinearLayout>
-
-        <!-- Giá nạp Section -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
             android:orientation="vertical">
 
-            <TextView
+            <include
+                android:id="@+id/layout_taskhead"
+                layout="@layout/layout_taskhead"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/text_gianap"
-                android:textStyle="bold"
-                android:textSize="20sp" />
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/xu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chọn mệnh giá"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rlvmenhgia"
+            <!-- Header -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:nestedScrollingEnabled="false" />
-        </LinearLayout>
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal"
+                android:padding="16dp">
 
-        <!-- Phương thức thanh toán Section -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical">
+                <ImageView
+                    android:layout_width="69dp"
+                    android:layout_height="69dp"
+                    android:contentDescription="Icon Shop"
+                    android:src="@drawable/su_shop_map" />
 
-            <TextView
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:background="@drawable/btn_play"
+                    android:backgroundTint="#A5D9D6D6"
+                    android:backgroundTintMode="src_atop"
+                    android:gravity="center"
+                    android:text="@string/text_napthe"
+                    android:textColor="#070606"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Giá nạp Section -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text_thangtoan"
-                android:textStyle="bold"
-                android:textSize="20sp" />
-        </LinearLayout>
+                android:orientation="vertical"
+                android:padding="16dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Phương thức thanh toán"
-                android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_gianap"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:orientation="horizontal"
-                android:weightSum="2">
+                android:orientation="vertical"
+                android:padding="16dp">
 
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cardMomo"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="4dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn mệnh giá"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
-                    <ImageView
-                        android:id="@+id/imgQR"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp"
-                        android:src="@drawable/logo_momo"
-                        android:contentDescription="MoMo" />
-                </com.google.android.material.card.MaterialCardView>
-
-                <com.google.android.material.card.MaterialCardView
-                    android:id="@+id/cardZaloPay"
-                    android:layout_width="0dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="4dp"
-                    android:layout_weight="1"
-                    app:cardCornerRadius="8dp"
-                    app:cardElevation="4dp">
-
-                    <ImageView
-                        android:id="@+id/imgQRpay"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="16dp"
-                        android:src="@drawable/logo_vnpay"
-                        android:contentDescription="Viettel" />
-                </com.google.android.material.card.MaterialCardView>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rlvmenhgia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:nestedScrollingEnabled="false" />
             </LinearLayout>
-            <TextView
+
+            <!-- Phương thức thanh toán Section -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="@string/text_notepaymenthv"
-                >
+                android:orientation="vertical"
+                android:padding="16dp">
 
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_thangtoan"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnConfirmPayment"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="24dp"
-                android:text="XÁC NHẬN THANH TOÁN" />
-        </LinearLayout>
-
-        <!-- Footer Footer -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="16dp"
-            android:orientation="vertical">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text_dangnhap"
-                android:textStyle="bold"
-                android:textSize="20sp" />
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phương thức thanh toán"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardMomo"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/imgQR"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="MoMo"
+                            android:padding="16dp"
+                            android:src="@drawable/logo_momo" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardZaloPay"
+                        android:layout_width="0dp"
+                        android:layout_height="100dp"
+                        android:layout_margin="4dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="8dp"
+                        app:cardElevation="4dp">
+
+                        <ImageView
+                            android:id="@+id/imgQRpay"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="Viettel"
+                            android:padding="16dp"
+                            android:src="@drawable/logo_vnpay" />
+                    </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_notepaymenthv"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnConfirmPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="24dp"
+                    android:text="XÁC NHẬN THANH TOÁN" />
+            </LinearLayout>
+
+            <!-- Footer Footer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_dangnhap"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="24dp"
+                android:background="@drawable/bg_difficulty_btn"
+                android:contentDescription="@string/btn_back"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_back" />
+
         </LinearLayout>
-
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_margin="24dp"
-            android:background="@drawable/bg_difficulty_btn"
-            android:contentDescription="@string/btn_back"
-            android:padding="12dp"
-            android:layout_gravity="bottom"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_back" />
-
     </LinearLayout>
 
 </ScrollView>

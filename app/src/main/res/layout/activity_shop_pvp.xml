@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:fillViewport="true">
 
     <LinearLayout
         android:id="@+id/pvp"
@@ -44,14 +44,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
-                android:textStyle="bold"
+                android:text="🅰️ Quà trong shop"
                 android:textSize="20dp"
-                android:text="🅰️ Quà trong shop">
+                android:textStyle="bold">
 
             </TextView>
 
@@ -60,17 +61,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="111dp"
-            android:orientation="horizontal"
             android:background="@drawable/nv_nhanpet4"
+            android:orientation="horizontal"
             android:padding="8dp">
 
             <TextView
-                android:layout_width="188dp"
+                android:layout_width="149dp"
                 android:layout_height="95dp"
-                android:backgroundTint="#0B0A0A"
+                android:backgroundTint="#E60808"
                 android:gravity="center"
                 android:text="@string/text_nhantrung"
-                android:textSize="18sp"
+                android:textColor="#D72C40"
+                android:textSize="25dp"
                 android:textStyle="bold">
             </TextView>
 
@@ -90,11 +92,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:backgroundTint="#EBD280"
-                android:text="chưu thể nhận"
+                android:text="@string/text_nhanpet"
                 android:textColor="#161313"
                 android:textStyle="bold">
             </Button>
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="41dp"
@@ -103,20 +106,35 @@
             android:textSize="16sp"
             android:textStyle="bold">
         </TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="🅱️ Đổi xu nhận trứng"
+                android:textSize="20dp"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
         <!-- Trứng rồng thứ nhất -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="111dp"
-            android:orientation="horizontal"
             android:background="@drawable/bg_map_5"
+            android:orientation="horizontal"
             android:padding="8dp">
 
             <TextView
-                android:layout_width="188dp"
-                android:layout_height="95dp"
-                android:backgroundTint="#D3F6F5F5"
-                android:gravity="center"
-                android:text="@string/text_nhantrung"
+                android:layout_width="80dp"
+                android:layout_height="79dp"
+                android:background="@drawable/su_shop_map"
+                android:layout_gravity="center_vertical"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
@@ -137,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:backgroundTint="#EBD280"
-                android:text="chưu thể nhận"
+                android:text="@string/text_doi20"
                 android:textColor="#161313"
                 android:textStyle="bold">
             </Button>
@@ -155,15 +173,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="112dp"
-            android:padding="10dp"
             android:background="@drawable/anhnenpr"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
-                android:layout_width="188dp"
-                android:layout_height="95dp"
-                android:gravity="center"
-                android:text="@string/text_nhantrung"
+                android:layout_width="80dp"
+                android:layout_height="79dp"
+                android:background="@drawable/su_shop_map"
+                android:layout_gravity="center_vertical"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
@@ -174,8 +192,8 @@
                 android:layout_height="97dp"
                 android:background="@drawable/trung_pet_2"
                 android:backgroundTint="#19EDEAEA"
-                android:padding="10dp"
                 android:backgroundTintMode="src_atop"
+                android:padding="10dp"
                 android:textStyle="bold">
             </ImageView>
 
@@ -185,18 +203,19 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:backgroundTint="#EBD280"
-                android:text="chưu thể nhận"
+                android:text="@string/text_doi50"
                 android:textColor="#161313"
                 android:textStyle="bold">
             </Button>
         </LinearLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
-            android:textStyle="bold"
             android:padding="10dp"
-            android:text="name: Trứng tuột mựt nily ">
+            android:text="name: Trứng tuột mựt nily "
+            android:textSize="16sp"
+            android:textStyle="bold">
         </TextView>
 
         <!--Trứng rồng thứ 3 -->
@@ -204,15 +223,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="112dp"
-            android:orientation="horizontal"
             android:background="@drawable/nv_nhanpet3"
+            android:orientation="horizontal"
             android:padding="10dp">
 
             <TextView
-                android:layout_width="188dp"
-                android:layout_height="95dp"
-                android:gravity="center"
-                android:text="@string/text_nhantrung"
+                android:layout_width="80dp"
+                android:layout_height="79dp"
+                android:background="@drawable/su_shop_map"
+                android:layout_gravity="center_vertical"
                 android:textSize="18sp"
                 android:textStyle="bold">
             </TextView>
@@ -233,7 +252,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:backgroundTint="#EBD280"
-                android:text="chưu thể nhận"
+                android:text="@string/text_doi100"
                 android:textColor="#161313"
                 android:textStyle="bold">
             </Button>
@@ -242,10 +261,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="16sp"
             android:padding="10dp"
-            android:textStyle="bold"
-            android:text="name: Trứng kỳ cáo băn phong ">
+            android:text="name: Trứng kỳ cáo băn phong "
+            android:textSize="16sp"
+            android:textStyle="bold">
         </TextView>
 
 
@@ -253,11 +272,11 @@
             android:id="@+id/btnBack"
             android:layout_width="45dp"
             android:layout_height="45dp"
+            android:layout_gravity="bottom"
             android:layout_margin="24dp"
             android:background="@drawable/bg_difficulty_btn"
             android:contentDescription="@string/btn_back"
             android:padding="12dp"
-            android:layout_gravity="bottom"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_back" />
     </LinearLayout>

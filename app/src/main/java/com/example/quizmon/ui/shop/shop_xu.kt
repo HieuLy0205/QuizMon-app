@@ -10,6 +10,7 @@ import coil.load
 import com.example.quizmon.R
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.quizmon.utils.TaskHeadManager
 import com.google.android.material.button.MaterialButton
 
 class shop_xu: AppCompatActivity() {
@@ -66,6 +67,14 @@ class shop_xu: AppCompatActivity() {
                 ).show()
             }
         }
+    }
+    override fun onResume() {
+        super.onResume()
+        TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), preferenceManager)
+    }
+    override fun onPause() {
+        super.onPause()
+        TaskHeadManager.stopLoop()
     }
     //nói đến thanh toán: đây là bộ sử lý giao diện
     private fun SetupQr() {

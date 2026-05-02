@@ -153,12 +153,12 @@ class PreferenceManager(context: Context) {
     }
 
     // --- QUẢN LÝ NHIỆM VỤ ---
-    fun isTaskCompletedToday(taskId: String): Boolean {
+    fun saver_va_inday(taskId: String): Boolean {
         val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         val lastData = sharedPreferences.getString("task_$taskId", null)
         return lastData == currentDate
     }
-    fun markTaskCompletedToday(taskId: String) {
+    fun Xn_va_inday(taskId: String) {
         val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         sharedPreferences.edit().putString("task_$taskId", currentDate).apply()
     }
@@ -168,6 +168,8 @@ class PreferenceManager(context: Context) {
     fun Dk_xacnhan_cq(taskId: String): Boolean {
         return sharedPreferences.getBoolean("ready_$taskId", false)
     }
+
+
     // --- QUẢN LÝ PET ---
     fun getPetLevel(): Int{
         //vì sao cần biến : vì khi đổi bet thì tên key có thể cộng vào id
@@ -190,33 +192,32 @@ class PreferenceManager(context: Context) {
     fun addpetid(id: Int) {
         val nextid = getPetid() + id
         savePetid(nextid)
-    // savePetid(getPetid() + id)
-    }
+        }
 
     // --- QUẢN LÝ DANH SÁCH SỞ HỮU ---
-    fun getOwnedPetIds(): List<String> {
-        val ownedStr = sharedPreferences.getString("owned_pets", "") ?: ""
-        return if (ownedStr.isEmpty()) emptyList() else ownedStr.split(",")
+    fun get_sh_PetIds(): List<String> {
+        val sh_Str = sharedPreferences.getString("owned_pets", "") ?: ""
+        return if (sh_Str.isEmpty()) emptyList() else sh_Str.split(",")
     }
 
-    fun addOwnedPet(id: String) {
-        val owned = getOwnedPetIds().toMutableList()
-        if (!owned.contains(id)) {
-            owned.add(id)
-            sharedPreferences.edit().putString("owned_pets", owned.joinToString(",")).apply()
+    fun add_sh_Pet(id: String) {
+        val sh = get_sh_PetIds().toMutableList()
+        if (!sh.contains(id)) {
+            sh.add(id)
+            sharedPreferences.edit().putString("owned_pets", sh.joinToString(",")).apply()
         }
     }
 
-    fun getOwnedEggIds(): List<String> {
-        val ownedStr = sharedPreferences.getString("owned_eggs", "") ?: ""
-        return if (ownedStr.isEmpty()) emptyList() else ownedStr.split(",")
+    fun get_sh_EggIds(): List<String> {
+        val sh_Str = sharedPreferences.getString("owned_eggs", "") ?: ""
+        return if (sh_Str.isEmpty()) emptyList() else sh_Str.split(",")
     }
 
-    fun addOwnedEgg(id: String) {
-        val owned = getOwnedEggIds().toMutableList()
-        if (!owned.contains(id)) {
-            owned.add(id)
-            sharedPreferences.edit().putString("owned_eggs", owned.joinToString(",")).apply()
+    fun add_sh_Egg(id: String) {
+        val sh = get_sh_EggIds().toMutableList()
+        if (!sh.contains(id)) {
+            sh.add(id)
+            sharedPreferences.edit().putString("owned_eggs", sh.joinToString(",")).apply()
         }
     }
 }

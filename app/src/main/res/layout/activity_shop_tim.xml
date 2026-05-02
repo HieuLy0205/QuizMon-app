@@ -3,181 +3,203 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:fillViewport="true">
 
     <LinearLayout
-        android:id="@+id/mang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingBottom="24dp">
+        android:orientation="vertical">
 
-        <!-- Header -->
+        <!-- BƯỚC 2: Phần TaskHead -->
         <LinearLayout
+            android:id="@+id/taskhead_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:orientation="horizontal"
-            android:padding="16dp">
+            android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="69dp"
-                android:layout_height="69dp"
-                android:src="@drawable/tim3_shop_map"
-                android:contentDescription="Icon Shop" />
-
-            <TextView
+            <include
+                android:id="@+id/taskhead"
+                layout="@layout/layout_taskhead"
                 android:layout_width="match_parent"
-                android:layout_height="69dp"
-                android:background="@drawable/btn_play"
-                android:backgroundTint="#89D9D6D6"
-                android:gravity="center"
-                android:textStyle="bold"
-                android:text="@string/text_napmau"
-                android:textColor="#100F0F"
-                android:textSize="24sp"
-                android:backgroundTintMode="src_atop"/>
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
 
-        <!-- Giá nạp Section -->
         <LinearLayout
+            android:id="@+id/mang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/text_gianap"
-                android:textStyle="bold"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Chọn mệnh giá"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rvDenominations"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/anh_shop_map"
-                android:backgroundTint="#ADE7E3E3"
-                android:layout_marginTop="8dp"
-                android:backgroundTintMode="src_atop"
-                android:nestedScrollingEnabled="false" />
-        </LinearLayout>
-
-        <!-- Phương thức thanh toán Section -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/text_thangtoan"
-                android:textStyle="bold"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Phương thức đổi"
-                android:textStyle="bold" />
-
+            <!-- Header -->
             <LinearLayout
-
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:padding="16dp">
 
                 <ImageView
-                    android:id="@+id/imgXunap"
-                    android:layout_width="196dp"
-                    android:layout_height="84dp"
-                    android:layout_gravity="center_vertical"
-                    android:background="@drawable/bg_map_4"
-                    android:padding="16dp"
-                    android:src="@drawable/su_shop_map" />
+                    android:layout_width="69dp"
+                    android:layout_height="69dp"
+                    android:contentDescription="Icon Shop"
+                    android:src="@drawable/tim3_shop_map" />
 
-                <ImageView
-                    android:id="@+id/imgdiemchoi"
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="16dp"
-                    android:background="@drawable/main2"
-                    android:src="@drawable/diem_shop_map"
-                    android:contentDescription="Viettel" />
+                    android:layout_height="69dp"
+                    android:background="@drawable/btn_play"
+                    android:backgroundTint="#89D9D6D6"
+                    android:backgroundTintMode="src_atop"
+                    android:gravity="center"
+                    android:text="@string/text_napmau"
+                    android:textColor="#100F0F"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
-            <TextView
+
+            <!-- Giá nạp Section -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:text="Chọn phương thức trước khi xác thực đổi: "
-                android:textSize="14dp">
+                android:orientation="vertical"
+                android:padding="16dp">
 
-            </TextView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_gianap"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnConfirmPayment"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="24dp"
-                android:text="XÁC NHẬN THANH TOÁN" />
-        </LinearLayout>
-
-        <!-- Footer Footer -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="16dp"
-            android:orientation="vertical">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text_dangnhap"
-                android:textStyle="bold"
-                android:textSize="20sp" />
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn mệnh giá"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvDenominations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/anh_shop_map"
+                    android:backgroundTint="#ADE7E3E3"
+                    android:backgroundTintMode="src_atop"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+            <!-- Phương thức thanh toán Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_thangtoan"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phương thức đổi"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <ImageView
+                        android:id="@+id/imgXunap"
+                        android:layout_width="196dp"
+                        android:layout_height="84dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/bg_map_4"
+                        android:padding="16dp"
+                        android:src="@drawable/su_shop_map" />
+
+                    <ImageView
+                        android:id="@+id/imgdiemchoi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/main2"
+                        android:contentDescription="Viettel"
+                        android:padding="16dp"
+                        android:src="@drawable/diem_shop_map" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn phương thức trước khi xác thực đổi: "
+                    android:textSize="14dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnConfirmPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="24dp"
+                    android:text="XÁC NHẬN THANH TOÁN" />
+            </LinearLayout>
+
+            <!-- Footer Footer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_dangnhap"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_gravity="bottom"
+                android:layout_margin="24dp"
+                android:background="@drawable/bg_difficulty_btn"
+                android:contentDescription="@string/btn_back"
+                android:padding="12dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_back" />
+
         </LinearLayout>
-
-        <ImageButton
-            android:id="@+id/btnBack"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_margin="24dp"
-            android:background="@drawable/bg_difficulty_btn"
-            android:contentDescription="@string/btn_back"
-            android:padding="12dp"
-            android:layout_gravity="bottom"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_back" />
-
     </LinearLayout>
+
 </ScrollView>
