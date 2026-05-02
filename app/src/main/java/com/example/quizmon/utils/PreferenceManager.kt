@@ -2,6 +2,7 @@ package com.example.quizmon.utils
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.core.content.edit
+import java.nio.file.Files.delete
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.regex.Pattern
@@ -196,6 +197,14 @@ class PreferenceManager(private val context: Context) {
             sharedPreferences.edit().putString("owned_eggs", sh.joinToString(",")).apply()
         }
     }
+
+    fun delete_trung(id: String) {
+        val sh = get_sh_EggIds().toMutableList()
+        if (sh.remove(id)) {
+            sharedPreferences.edit().putString("owned_eggs", "").apply()
+        }
+    }
+
 
     fun handleCorrectAnswer() {
         addExp(10)

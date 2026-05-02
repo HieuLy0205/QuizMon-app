@@ -14,6 +14,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import android.widget.ImageButton
+//import androidx.paging.map
+import com.example.quizmon.data.model.Trung
 import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 
@@ -26,7 +28,10 @@ class TupetActivity: AppCompatActivity(){
     private lateinit var pref: PreferenceManager
     private lateinit var btnBack: ImageButton
     private val reposiroty = petReposiroty()
-    private var currentList = listOf<Pet>()
+    private var currentListpet = listOf<Pet>()
+    private var currentListtrung = listOf<Trung>()
+
+    private var vi_tri_pet = true
     private lateinit var tv_danhsach: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,23 +56,58 @@ class TupetActivity: AppCompatActivity(){
         lv_vat_in_tu.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, danh_sach_vat)
 
         lv_vat_in_tu.setOnItemClickListener { parent, view, position, id ->
-            if (position == 0) {
+            vi_tri_pet = (position == 0)
+            if (vi_tri_pet) {
                 showListPet()
             } else {
                 showListTrung()
             }
         }
         //setup listview bên phải ( phân loại đối tượng )
-        // sự kiện chọn pet
         lv_kho_dung.setOnItemClickListener { _, _, position, _ ->
-            val selectedPet = currentList[position]
-            // Cập nhật khung Preview (Lấy ảnh đầu tiên của level 1 để xem trước)
-            val previewImg = selectedPet.animetor[1]?.get(0) ?: 0
-            img_pet_preview.setImageResource(previewImg)
-            tv_danhsach.text = selectedPet.name
-            // Lưu ID để mang về ActivityPet
-            pref.savePetid(selectedPet.id.toInt())
-            Toast.makeText(this, "Đã chọn: ${selectedPet.name}", Toast.LENGTH_SHORT).show()
+            if(vi_tri_pet){
+                //chế độ pet
+                val choice_pet = currentListpet[position]
+                // khai báo biến tạo địa chỉ
+                val previewImg = currentListpet[position].animetor[1]?.get(0) ?: 0
+                //đổi ảnh
+                img_pet_preview.setImageResource(previewImg)
+                // hiển thị tên pet
+                tv_danhsach.text = choice_pet.name
+                // lưu id pet
+                pref.savePetid(choice_pet.id.toInt())
+                //sự kiện nay có ba thành phân
+                Toast.makeText(this, "Đã chọn: ${choice_pet.name}", Toast.LENGTH_SHORT).show()
+            }else{
+                //chế độ trung
+                if (currentListtrung.isNotEmpty()) {
+                    val choice_trung = currentListtrung[position]
+                    val id_trung = choice_trung.id
+                    //đổi ảnh
+                    img_pet_preview.setImageResource(choice_trung.poto_trung)
+                    tv_danhsach.text = choice_trung.name
+                    img_pet_preview.postDelayed({
+
+                        // XÓA TRỨNG - THÊM PET (Dùng chung ID vì repo bạn đặt giống nhau)
+                        pref.delete_trung(id_trung)
+                        pref.add_sh_Pet(id_trung)
+                        pref.savePetid(id_trung.toInt())
+
+                        // Tìm con pet vừa nở để hiện ảnh cấp 1 của nó
+                        val hatchedPet = reposiroty.getPetById(id_trung)
+                        val petImg = hatchedPet?.animetor?.get(1)?.get(0) ?: 0
+
+                        img_pet_preview.setImageResource(petImg)
+                        tv_danhsach.text = "Chúc mừng! Đã nở ra ${hatchedPet?.name}"
+
+                        Toast.makeText(this, "Bạn đã nhận được Pet mới!", Toast.LENGTH_SHORT).show()
+
+                        // 3. Cập nhật lại danh sách trứng ngay lập tức (để nó biến mất khỏi list)
+                        showListTrung()
+
+                    }, 1000)
+                }
+            }
         }
         btnBack.setOnClickListener { finish() }
         showListPet()
@@ -77,14 +117,14 @@ class TupetActivity: AppCompatActivity(){
         val ownedIds = pref.get_sh_PetIds()
 
         // 2. Lọc danh sách từ Repository: Chỉ lấy những con có ID nằm trong sh_Ids
-        currentList = reposiroty.getAllPets().filter { pet ->
+        currentListpet = reposiroty.getAllPets().filter { pet ->
             ownedIds.contains(pet.id)
         }
         // 3. Hiển thị lên ListView
-        if (currentList.isEmpty()) {
+        if (currentListpet.isEmpty()) {
             lv_kho_dung.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listOf("Bạn chưa có thú cưng nào"))
         } else {
-            val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, currentList.map { it.name })
+            val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, currentListpet.map { it.name })
             lv_kho_dung.adapter = adapter
         }
     }
@@ -93,22 +133,24 @@ class TupetActivity: AppCompatActivity(){
         // Giá trị trả về khi hàm get_Sh_EggIds() lục lọi trong bộ nhớ, nó trả veef danh sách
         val ownedEggIds = pref.get_sh_EggIds()
         // biến ánh xạ.map từ id sang tên
-        val eggNames = ownedEggIds.map { "Trứng $it" }
-        if (eggNames.isEmpty()) {
+        currentListtrung = reposiroty.getAllTrung().filter { ownedEggIds.contains(it.id) }
+
+        if (currentListtrung.isEmpty()) {
             lv_kho_dung.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listOf("Bạn chưa có trứng nào"))
         } else {
+            val eggNames = currentListtrung.map { it.name }
             lv_kho_dung.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, eggNames)
         }
     }
 
-//    override fun onResume() {
-//        super.onResume()
-//        TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), pref)
-//    }
-//    override fun onPause() {
-//        super.onPause()
-//        TaskHeadManager.stopLoop()
-//    }
+    override fun onResume() {
+        super.onResume()
+        TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), pref)
+    }
+    override fun onPause() {
+        super.onPause()
+        TaskHeadManager.stopLoop()
+    }
 
 
 }

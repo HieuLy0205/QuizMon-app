@@ -66,6 +66,7 @@ class PetActivity : AppCompatActivity() {
         }
         btnBack.setOnClickListener { finish() }
     }
+
     override fun onResume() {
         super.onResume()
         infomationPet()
