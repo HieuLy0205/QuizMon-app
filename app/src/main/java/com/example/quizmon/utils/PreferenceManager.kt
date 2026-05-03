@@ -2,7 +2,7 @@ package com.example.quizmon.utils
 import android.content.Context
 import android.content.SharedPreferences
 import androidx.core.content.edit
-import java.nio.file.Files.delete
+import com.example.quizmon.R
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.regex.Pattern
@@ -18,83 +18,45 @@ class PreferenceManager(private val context: Context) {
         const val SUPPORT_DOUBLE_POINTS = "support_double_points"
     }
 
-    // --- QUẢN LÝ SAO (Stars) ---
-    fun saveCoins(coins: Int) {
-        sharedPreferences.edit().putInt("current_coins", coins).apply()
-    }
-    fun getCoins(): Int {
-        return sharedPreferences.getInt("current_coins", 0)
-    }
-    fun addCoin(amount: Int) {
-        saveCoins(getCoins() + amount)
-    }
+    // --- PROFILE ---
+    fun saveName(name: String) = sharedPreferences.edit { putString("name", name) }
+    fun getName(): String = sharedPreferences.getString("name", "Người chơi") ?: "Người chơi"
 
-    // --- QUẢN LÝ XU (Coins) ---
-    fun saveXu(xu: Int) {
-        sharedPreferences.edit().putInt("current_xu", xu).apply()
-    }
-    fun getXu(): Int {
-        return sharedPreferences.getInt("current_xu", 0)
-    }
-    fun addXu(amount: Int) {
-        saveXu(getXu() + amount)
-    }
+    fun saveAvatar(avatar: String) = sharedPreferences.edit { putString("avatar", avatar) }
+    fun getAvatar(): String = sharedPreferences.getString("avatar", "avatar1") ?: "avatar1"
 
-    // --- QUẢN LÝ KINH NGHIỆM (Exp) ---
-    fun saveExp(exp: Int) {
-        sharedPreferences.edit().putInt("current_exp", exp).apply()
-    }
-    fun getExp(): Int {
-        return sharedPreferences.getInt("current_exp", 0)
-    }
-    fun addExp(amount: Int) {
-        saveExp(getExp() + amount)
-    }
+    fun saveBorder(borderResId: Int) = sharedPreferences.edit { putInt("frame", borderResId) }
+    fun getBorder(): Int = sharedPreferences.getInt("frame", R.drawable.bg_avatar_border_fancy)
 
+    // --- CURRENCY ---
+    fun saveCoins(coins: Int) = sharedPreferences.edit { putInt("current_coins", coins) }
+    fun getCoins(): Int = sharedPreferences.getInt("current_coins", 0)
+    fun addCoin(amount: Int) = saveCoins(getCoins() + amount)
 
-    // --- ĐIỂM ẢI (Stage Score) ---
-    fun getLevelScore(levelId: Int) = mapPrefs.getInt("SCORE_$levelId", 0)
-    
-    // Sử dụng commit = true để đảm bảo dữ liệu được ghi ngay lập tức (quan trọng cho vòng quay)
-    fun saveLevelScore(levelId: Int, score: Int) = mapPrefs.edit(commit = true) { 
-        putInt("SCORE_$levelId", score) 
-    }
-    // --- ĐIỂM ẢI (Stage Score) ---
-    
-    fun addLevelScore(levelId: Int, amount: Int) {
-        val current = getLevelScore(levelId)
-        saveLevelScore(levelId, current + amount)
-    }
+    fun saveXu(xu: Int) = sharedPreferences.edit { putInt("current_xu", xu) }
+    fun getXu(): Int = sharedPreferences.getInt("current_xu", 0)
+    fun addXu(amount: Int) = saveXu(getXu() + amount)
 
-    // --- HÀM XỬ LÝ PHẦN THƯỞNG TỔNG HỢP ---
-    fun applyRewardByString(reward: String, levelId: Int = -1) {
-        val text = reward.lowercase()
-        val matcher = Pattern.compile("\\d+").matcher(reward)
-        val amount = if (matcher.find()) matcher.group().toInt() else 0
-        val isNegative = text.contains("trừ") || text.contains("mất") || text.contains("lời nguyền")
+    fun saveExp(exp: Int) = sharedPreferences.edit { putInt("current_exp", exp) }
+    fun getExp(): Int = sharedPreferences.getInt("current_exp", 0)
+    fun addExp(amount: Int) = saveExp(getExp() + amount)
 
-        when {
-            text.contains("50/50") -> addSupport(SUPPORT_5050, 1)
-            text.contains("đáp án đúng") -> addSupport(SUPPORT_CORRECT_ANSWER, 1)
-            text.contains("nhân đôi điểm") -> addSupport(SUPPORT_DOUBLE_POINTS, 1)
-            text.contains("nhân đôi cơ hội") -> addSupport(SUPPORT_DOUBLE_CHANCE, 1)
-            
-            text.contains("điểm") && levelId != -1 -> {
-                addLevelScore(levelId, if (isNegative) -amount else amount)
-            }
-            
-            text.contains("xu") -> addXu(amount)
-            text.contains("exp") -> addExp(amount)
-            text.contains("mạng") || text.contains("tim") -> {
-                if (isNegative) useHeart() else addHearts(if (amount == 0) 1 else amount)
-            }
+    // --- LEVEL ---
+    fun getCurrentUnlockedLevel(): Int = sharedPreferences.getInt("CURRENT_UNLOCKED_LEVEL", 1)
+    fun setLevelUnlocked(level: Int) {
+        val current = getCurrentUnlockedLevel()
+        if (level > current) {
+            sharedPreferences.edit { putInt("CURRENT_UNLOCKED_LEVEL", level) }
         }
     }
 
-    // --- QUẢN LÝ TIM ---
+    fun getLevelScore(levelId: Int): Int = mapPrefs.getInt("SCORE_$levelId", 0)
+    fun saveLevelScore(levelId: Int, score: Int) = mapPrefs.edit { putInt("SCORE_$levelId", score) }
+
+    // --- HEARTS ---
     fun getHearts() = sharedPreferences.getInt("current_hearts", 5)
     fun addHearts(amount: Int) {
-        val next = getHearts() + amount
+        val next = (getHearts() + amount).coerceAtMost(5)
         sharedPreferences.edit { putInt("current_hearts", next) }
         if (next >= 5) sharedPreferences.edit { putLong("last_heart_loss_time", 0L) }
     }
@@ -126,95 +88,86 @@ class PreferenceManager(private val context: Context) {
         return if (getHearts() < 5) interval - (System.currentTimeMillis() - sharedPreferences.getLong("last_heart_loss_time", 0L)) % interval else 0
     }
 
+    // --- OTHERS ---
     fun getSupportQuantity(type: String) = sharedPreferences.getInt(type, 1)
     fun addSupport(type: String, amount: Int) = sharedPreferences.edit { putInt(type, getSupportQuantity(type) + amount) }
 
-
-    // --- QUẢN LÝ NHIỆM VỤ ---
     fun saver_va_inday(taskId: String): Boolean {
-        //mặt định là false
         val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
-        val lastData = sharedPreferences.getString("task_$taskId", null)
-        return lastData == currentDate
+        return sharedPreferences.getString("task_$taskId", null) == currentDate
     }
     fun Xn_va_inday(taskId: String) {
-        //
         val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
-        sharedPreferences.edit().putString("task_$taskId", currentDate).apply()
-    }
-    fun Dk_batmo_xn(taskId: String, isReady: Boolean) {
-        sharedPreferences.edit().putBoolean("ready_$taskId", isReady).apply()
-    }
-    fun Dk_xacnhan_cq(taskId: String): Boolean {
-        return sharedPreferences.getBoolean("ready_$taskId", false)
+        sharedPreferences.edit { putString("task_$taskId", currentDate) }
     }
 
-    // --- QUẢN LÝ PET ---
-    fun getPetLevel(): Int{
-        //vì sao cần biến : vì khi đổi bet thì tên key có thể cộng vào id
+    fun Dk_batmo_xn(taskId: String, isReady: Boolean) = sharedPreferences.edit { putBoolean("ready_$taskId", isReady) }
+    fun Dk_xacnhan_cq(taskId: String): Boolean = sharedPreferences.getBoolean("ready_$taskId", false)
+
+    fun handleCorrectAnswer() {
+        // Logic for correct answer statistics or streaks
+    }
+
+    fun handleWrongAnswer() {
+        // Logic for wrong answer statistics or resetting streaks
+    }
+
+    fun applyRewardByString(reward: String, levelId: Int) {
+        when {
+            reward.contains("50/50") -> addSupport(SUPPORT_5050, 1)
+            reward.contains("Nhân đôi cơ hội") -> addSupport(SUPPORT_DOUBLE_CHANCE, 1)
+            reward.contains("Đáp án đúng") -> addSupport(SUPPORT_CORRECT_ANSWER, 1)
+            reward.contains("Nhân đôi điểm") -> addSupport(SUPPORT_DOUBLE_POINTS, 1)
+            reward.contains("Xu") -> {
+                val amount = reward.replace(Regex("[^0-9]"), "").toIntOrNull() ?: 0
+                addXu(amount)
+            }
+            reward.contains("EXP") -> {
+                val amount = reward.replace(Regex("[^0-9]"), "").toIntOrNull() ?: 0
+                addExp(amount)
+            }
+            reward.contains("Mạng") -> addHearts(1)
+            reward.contains("Điểm") -> {
+                val isMinus = reward.contains("Trừ")
+                val amount = reward.replace(Regex("[^0-9]"), "").toIntOrNull() ?: 0
+                val current = getLevelScore(levelId)
+                saveLevelScore(levelId, current + (if (isMinus) -amount else amount))
+            }
+        }
+    }
+
+    // --- PET ---
+    fun getPetLevel(): Int {
         val currentPetid = getPetid()
         if(currentPetid == -1) return 1
         return sharedPreferences.getInt("pet_level_$currentPetid", 1)
     }
-    fun savePetLevel(level: Int){
+    fun savePetLevel(level: Int) {
         val currentPetid = getPetid()
-        if (currentPetid != -1) {
-            sharedPreferences.edit().putInt("pet_level_$currentPetid", level).apply()
-        }
+        if (currentPetid != -1) sharedPreferences.edit { putInt("pet_level_$currentPetid", level) }
     }
-    fun getPetid(): Int {
-        return sharedPreferences.getInt("pet_id", -1)
-    }
-    fun savePetid(id: Int) {
-        sharedPreferences.edit().putInt("pet_id", id).apply()
-    }
+    fun getPetid(): Int = sharedPreferences.getInt("pet_id", -1)
+    fun savePetid(id: Int) = sharedPreferences.edit { putInt("pet_id", id) }
 
-    // --- QUẢN LÝ DANH SÁCH SỞ HỮU ---
-    fun get_sh_PetIds(): List<String> {
-        val sh_Str = sharedPreferences.getString("owned_pets", "") ?: ""
-        return if (sh_Str.isEmpty()) emptyList() else sh_Str.split(",")
-    }
-
+    fun get_sh_PetIds(): List<String> = sharedPreferences.getString("owned_pets", "")?.split(",")?.filter { it.isNotEmpty() } ?: emptyList()
     fun add_sh_Pet(id: String) {
-        // toMutableList cho phép sữa, sống lại
         val sh = get_sh_PetIds().toMutableList()
         if (!sh.contains(id)) {
             sh.add(id)
-            sharedPreferences.edit().putString("owned_pets", sh.joinToString(",")).apply()
+            sharedPreferences.edit { putString("owned_pets", sh.joinToString(",")) }
         }
     }
 
-    fun get_sh_EggIds(): List<String> {
-        val sh_Str = sharedPreferences.getString("owned_eggs", "") ?: ""
-        return if (sh_Str.isEmpty())
-            emptyList()
-        else sh_Str.split(",")
-    }
-
+    fun get_sh_EggIds(): List<String> = sharedPreferences.getString("owned_eggs", "")?.split(",")?.filter { it.isNotEmpty() } ?: emptyList()
     fun add_sh_Egg(id: String) {
         val sh = get_sh_EggIds().toMutableList()
         if (!sh.contains(id)) {
             sh.add(id)
-            sharedPreferences.edit().putString("owned_eggs", sh.joinToString(",")).apply()
+            sharedPreferences.edit { putString("owned_eggs", sh.joinToString(",")) }
         }
     }
-
     fun delete_trung(id: String) {
         val sh = get_sh_EggIds().toMutableList()
-        if (sh.remove(id)) {
-            sharedPreferences.edit().putString("owned_eggs", sh.joinToString(",")).apply()
-        }
-    }
-
-
-    fun handleCorrectAnswer() {
-        addExp(10)
-        val streakManager = StreakManager(context)
-        streakManager.checkAndUpdateStreak()
-    }
-
-    fun handleWrongAnswer() {
-        val streakManager = StreakManager(context)
-        streakManager.resetStreak()
+        if (sh.remove(id)) sharedPreferences.edit { putString("owned_eggs", sh.joinToString(",")) }
     }
 }

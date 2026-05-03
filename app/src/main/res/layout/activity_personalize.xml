@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="28dp"
                 android:gravity="center"
-                android:text="Cá nhân hoá trò chơi của bạn"
+                android:text="@string/personalize_title"
                 android:textColor="#1F1F1F"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="14dp"
-                android:text="Giới tính"
+                android:text="@string/personalize_gender"
                 android:textColor="#333333"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -57,7 +57,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/bg_gender_selector"
                     android:backgroundTint="@null"
-                    android:text="Nam"
+                    android:text="@string/personalize_gender_male"
                     android:textColor="@color/gender_text_selector" />
 
                 <Button
@@ -70,7 +70,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/bg_gender_selector"
                     android:backgroundTint="@null"
-                    android:text="Nữ"
+                    android:text="@string/personalize_gender_female"
                     android:textColor="@color/gender_text_selector" />
 
                 <Button
@@ -82,7 +82,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/bg_gender_selector"
                     android:backgroundTint="@null"
-                    android:text="Khác"
+                    android:text="@string/personalize_gender_other"
                     android:textColor="@color/gender_text_selector" />
             </LinearLayout>
 
@@ -90,7 +90,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="14dp"
-                android:text="Chủ đề yêu thích (chọn ít nhất 3)"
+                android:text="@string/personalize_fav_topics"
                 android:textColor="#333333"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -119,7 +119,7 @@
                 android:layout_height="54dp"
                 android:layout_marginBottom="10dp"
                 android:background="@drawable/bg_edittext"
-                android:hint="Nhập sở thích khác..."
+                android:hint="@string/personalize_custom_topic_hint"
                 android:imeOptions="actionDone"
                 android:inputType="text"
                 android:paddingStart="18dp"
@@ -142,7 +142,7 @@
                 android:background="@drawable/bg_button_primary"
                 android:elevation="6dp"
                 android:enabled="false"
-                android:text="Tiếp tục"
+                android:text="@string/btn_next"
                 android:textAllCaps="false"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp"

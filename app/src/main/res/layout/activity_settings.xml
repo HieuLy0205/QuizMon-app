@@ -12,7 +12,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/anhnenpr"
+        android:src="@drawable/background"
         android:contentDescription="@null"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,13 +55,13 @@
                     android:layout_width="72dp"
                     android:layout_height="72dp"
                     android:src="@mipmap/ic_launcher"
-                    android:contentDescription="QuizMon logo"
+                    android:contentDescription="@null"
                     android:layout_marginBottom="6dp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="QuizMon"
+                    android:text="@string/app_name"
                     android:textColor="#333333"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -70,7 +70,7 @@
                     android:id="@+id/tvAppVersion"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="v1.0.0"
+                    android:text="@string/settings_app_version_default"
                     android:textColor="#777777"
                     android:textSize="13sp" />
             </LinearLayout>
@@ -80,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginBottom="16dp"
-                android:text="📋 Báo cáo vấn đề"
+                android:text="@string/settings_report_issue"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="16sp"
@@ -106,7 +106,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:gravity="center"
-                        android:text="⚙️ Cài đặt"
+                        android:text="@string/settings_config"
                         android:textColor="@color/home_green"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -130,7 +130,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:gravity="center"
-                        android:text="⏰ Nhắc nhở"
+                        android:text="@string/settings_reminder_section"
                         android:textColor="#757575"
                         android:textSize="16sp"
                         android:textStyle="bold" />
@@ -162,7 +162,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cài đặt"
+                        android:text="@string/settings_title"
                         android:textColor="@color/home_green"
                         android:textSize="16sp"
                         android:textStyle="bold"
@@ -180,7 +180,7 @@
                             android:layout_height="56dp"
                             android:layout_weight="1"
                             android:layout_marginEnd="6dp"
-                            android:text="🔊 Âm thanh"
+                            android:text="@string/settings_sound"
                             android:backgroundTint="#3b6fd4"
                             android:textColor="@color/white"
                             android:textStyle="bold"
@@ -192,7 +192,7 @@
                             android:layout_height="56dp"
                             android:layout_weight="1"
                             android:layout_marginStart="6dp"
-                            android:text="🎵 Nhạc"
+                            android:text="@string/settings_music"
                             android:backgroundTint="#e06c1c"
                             android:textColor="@color/white"
                             android:textStyle="bold"
@@ -211,7 +211,7 @@
                             android:layout_height="56dp"
                             android:layout_weight="1"
                             android:layout_marginEnd="6dp"
-                            android:text="📳 Rung khi chạm"
+                            android:text="@string/settings_vibration"
                             android:backgroundTint="#b83a8c"
                             android:textColor="@color/white"
                             android:textStyle="bold"
@@ -223,7 +223,7 @@
                             android:layout_height="56dp"
                             android:layout_weight="1"
                             android:layout_marginStart="6dp"
-                            android:text="🔡 Chữ lớn"
+                            android:text="@string/settings_large_font"
                             android:backgroundTint="#6534b5"
                             android:textColor="@color/white"
                             android:textStyle="bold"
@@ -234,7 +234,7 @@
                         android:id="@+id/btnDarkMode"
                         android:layout_width="match_parent"
                         android:layout_height="56dp"
-                        android:text="🌙 Giao diện tối"
+                        android:text="@string/settings_dark_mode"
                         android:backgroundTint="#1a7a6e"
                         android:textColor="@color/white"
                         android:textStyle="bold"
@@ -261,7 +261,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Nhắc nhở hàng ngày"
+                        android:text="@string/settings_daily_reminder"
                         android:textSize="16sp"
                         android:textStyle="bold"
                         android:textColor="@color/home_green"
@@ -272,7 +272,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
-                        android:text="Giờ nhắc: 08:00"
+                        android:text="@string/settings_reminder_time_default_text"
                         android:textSize="14sp"
                         android:layout_marginBottom="10dp"/>
 
@@ -286,7 +286,7 @@
                             android:layout_width="0dp"
                             android:layout_height="48dp"
                             android:layout_weight="1"
-                            android:hint="Giờ"
+                            android:hint="@string/hour_hint"
                             android:textColor="@color/black"
                             android:inputType="number"
                             android:layout_marginEnd="6dp"/>
@@ -296,7 +296,7 @@
                             android:layout_width="0dp"
                             android:layout_height="48dp"
                             android:layout_weight="1"
-                            android:hint="Phút"
+                            android:hint="@string/minute_hint"
                             android:textColor="@color/black"
                             android:inputType="number"
                             android:layout_marginStart="6dp"/>
@@ -306,10 +306,9 @@
                         android:id="@+id/btnPickTime"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
-                        android:text="Chọn giờ"
+                        android:text="@string/settings_choose_time"
                         android:layout_marginTop="10dp"/>
                 </LinearLayout>
-                <!-- Giữ nguyên toàn bộ nội dung reminder của bạn ở đây -->
             </androidx.cardview.widget.CardView>
 
             <!-- Nút Lưu thay đổi: chỉ dùng cho tab Nhắc nhở, không hiện ở Cài đặt -->
@@ -317,7 +316,7 @@
                 android:id="@+id/btnSave"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:text="Lưu thay đổi"
+                android:text="@string/settings_save"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="18sp"

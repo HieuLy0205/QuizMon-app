@@ -24,12 +24,13 @@
                 android:layout_height="40dp"
                 android:layout_gravity="start"
                 android:src="@android:drawable/ic_media_previous"
-                android:padding="6dp" />
+                android:padding="6dp"
+                android:contentDescription="@string/btn_back" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Chọn Avatar"
+                android:text="@string/avatar_title"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="#222"
@@ -45,7 +46,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/avatar1" />
+                    android:src="@drawable/avatar1"
+                    android:contentDescription="@null" />
 
                 <View
                     android:id="@+id/framePreview"
@@ -57,7 +59,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Avatar"
+                android:text="@string/avatar_tab"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp" />
@@ -74,7 +76,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Avatar 1"
+                    android:text="@string/avatar_item_format"
                     android:backgroundTint="#6A5ACD"
                     android:textColor="#FFF" />
 
@@ -83,7 +85,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="Avatar 2"
+                    android:text="@string/avatar_item_format"
                     android:layout_marginStart="10dp"
                     android:backgroundTint="#6A5ACD"
                     android:textColor="#FFF" />
@@ -93,7 +95,7 @@
                 android:id="@+id/btnAvatarVip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Avatar VIP 🔒"
+                android:text="@string/avatar_vip_lock"
                 android:layout_marginTop="10dp"
                 android:backgroundTint="#999999"
                 android:textColor="#FFF" />
@@ -101,7 +103,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Khung viền"
+                android:text="@string/avatar_frame_tab"
                 android:textStyle="bold"
                 android:textSize="18sp"
                 android:layout_marginTop="20dp" />
@@ -116,7 +118,7 @@
                     android:id="@+id/btnFrame1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Khung Pikachu"
+                    android:text="@string/avatar_frame_pikachu"
                     android:backgroundTint="#6A5ACD"
                     android:textColor="#FFF" />
 
@@ -124,7 +126,7 @@
                     android:id="@+id/btnFrame2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Khung Kyogre"
+                    android:text="@string/avatar_frame_kyogre"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="#6A5ACD"
                     android:textColor="#FFF" />
@@ -133,7 +135,7 @@
                     android:id="@+id/btnFrame3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Khung Rayquaza"
+                    android:text="@string/avatar_frame_rayquaza"
                     android:layout_marginTop="10dp"
                     android:backgroundTint="#6A5ACD"
                     android:textColor="#FFF" />
@@ -143,7 +145,7 @@
                 android:id="@+id/btnFinish"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Hoàn tất"
+                android:text="@string/btn_finish"
                 android:textStyle="bold"
                 android:layout_marginTop="24dp"
                 android:backgroundTint="#4CAF50"

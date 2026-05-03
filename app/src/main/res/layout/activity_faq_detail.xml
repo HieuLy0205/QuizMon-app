@@ -51,7 +51,7 @@
                     android:id="@+id/tvTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Cách chơi"
+                    android:text="@string/faq_how_to_play"
                     android:textSize="22sp"
                     android:textStyle="bold"
                     android:textColor="#333"

@@ -15,7 +15,7 @@ import com.example.quizmon.R
 
 class LevelAdapter(
     private val levels: List<Int>,
-    private val currentLevel: Int,
+    private var currentLevel: Int,
     private val onLevelClick: (Int) -> Unit
 ) : RecyclerView.Adapter<LevelAdapter.LevelViewHolder>() {
 
@@ -29,6 +29,13 @@ class LevelAdapter(
             view.findViewById(R.id.ivStar2),
             view.findViewById(R.id.ivStar3)
         )
+    }
+
+    fun updateCurrentLevel(newLevel: Int) {
+        if (this.currentLevel != newLevel) {
+            this.currentLevel = newLevel
+            notifyDataSetChanged()
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LevelViewHolder {

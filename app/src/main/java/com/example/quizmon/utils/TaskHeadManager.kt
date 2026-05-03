@@ -5,7 +5,6 @@ import android.os.Looper
 import android.view.View
 import android.widget.TextView
 import com.example.quizmon.R
-import com.example.quizmon.utils.PreferenceManager
 import java.util.Locale
 
 object TaskHeadManager {
@@ -13,12 +12,12 @@ object TaskHeadManager {
     private var updateRunnable: Runnable? = null
 
     /**
-     * Hàm cập nhật dữ liệu lên UI (giữ nguyên logic cũ)
+     * Hàm cập nhật dữ liệu lên UI
      */
     fun update(taskHeadRoot: View?, preferenceManager: PreferenceManager) {
         if (taskHeadRoot == null) return
 
-        val tvStar = taskHeadRoot.findViewById<TextView>(R.id.  textcoins)
+        val tvStar = taskHeadRoot.findViewById<TextView>(R.id.textcoins)
         val tvCoin = taskHeadRoot.findViewById<TextView>(R.id.textxu)
         val tvExp = taskHeadRoot.findViewById<TextView>(R.id.head_text_exp)
         val tvHeartCount = taskHeadRoot.findViewById<TextView>(R.id.head_text_heart_count)
@@ -46,6 +45,7 @@ object TaskHeadManager {
      * Bắt đầu vòng lặp cập nhật tự động (Dùng cho onResume)
      */
     fun startLoop(taskHeadRoot: View?, preferenceManager: PreferenceManager) {
+        if (taskHeadRoot == null) return
         stopLoop() // Đảm bảo không có loop nào chạy song song
         updateRunnable = object : Runnable {
             override fun run() {

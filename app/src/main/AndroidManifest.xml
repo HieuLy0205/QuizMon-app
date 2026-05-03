@@ -25,13 +25,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.shop.shop_phobien"/>
+        <activity android:name=".ui.shop.DailyRewardActivity"/>
         <activity android:name=".ui.shop.shop_tim"/>
         <activity android:name=".ui.shop.shop_xu"/>
+        <activity android:name=".ui.shop.ShopSaoActivity"/>
         <activity android:name=".ui.shop.shop_pvp"/>
         <activity android:name=".ui.shop.activity_shop" />
+        <activity android:name=".ui.shop.shop_xu_buy" />
         <activity android:name=".ui.pet.PetActivity"/>
         <activity android:name=".ui.profile.ProfileActivity"/>
+        <activity android:name=".ui.rank.RankActivity" />
         <activity
             android:name=".ui.history.HistoryActivity"
             android:exported="false"/>

@@ -35,18 +35,17 @@
                 android:layout_height="40dp"
                 android:src="@drawable/ic_back"
                 android:background="?attr/selectableItemBackgroundBorderless"
-                android:contentDescription="Back"
+                android:contentDescription="@string/btn_back"
                 android:layout_gravity="start|center_vertical" />
             <TextView
                 android:id="@+id/tvQuestionNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Câu hỏi"
+                android:text="@string/quiz_question_title"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 android:textColor="#795548"
-                android:layout_gravity="center"
-                tools:ignore="HardcodedText"/>
+                android:layout_gravity="center" />
         </FrameLayout>
 
         <ProgressBar
@@ -75,7 +74,7 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_fifty_fifty" />
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_fifty_fifty" android:contentDescription="@null" />
                     <TextView
                         android:id="@+id/tvCountFiftyFifty"
                         android:layout_width="wrap_content"
@@ -89,7 +88,7 @@
                         android:textColor="@color/black"
                         tools:ignore="SmallSp"/>
                 </FrameLayout>
-                <TextView style="@style/PowerUpTextStyle" android:text="50/50"/>
+                <TextView style="@style/PowerUpTextStyle" android:text="@string/quiz_powerup_fifty_fifty"/>
             </LinearLayout>
 
             <!-- Cơ hội 2 -->
@@ -101,7 +100,7 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_skip" />
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_skip" android:contentDescription="@null" />
                     <TextView
                         android:id="@+id/tvCountDoubleChance"
                         android:layout_width="wrap_content"
@@ -115,7 +114,7 @@
                         android:textColor="@color/black"
                         tools:ignore="SmallSp"/>
                 </FrameLayout>
-                <TextView style="@style/PowerUpTextStyle" android:text="Cơ hội 2"/>
+                <TextView style="@style/PowerUpTextStyle" android:text="@string/quiz_powerup_chance2"/>
             </LinearLayout>
 
             <!-- Gợi ý -->
@@ -127,7 +126,7 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_reveal_answer" />
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_reveal_answer" android:contentDescription="@null" />
                     <TextView
                         android:id="@+id/tvCountRevealAnswer"
                         android:layout_width="wrap_content"
@@ -141,7 +140,7 @@
                         android:textColor="@color/black"
                         tools:ignore="SmallSp"/>
                 </FrameLayout>
-                <TextView style="@style/PowerUpTextStyle" android:text="Gợi ý"/>
+                <TextView style="@style/PowerUpTextStyle" android:text="@string/quiz_powerup_hint"/>
             </LinearLayout>
 
             <!-- x2 Điểm -->
@@ -153,7 +152,7 @@
                 <FrameLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
-                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_double_score" />
+                    <ImageView android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/ic_double_score" android:contentDescription="@null" />
                     <TextView
                         android:id="@+id/tvCountDoubleScore"
                         android:layout_width="wrap_content"
@@ -167,7 +166,7 @@
                         android:textColor="@color/black"
                         tools:ignore="SmallSp"/>
                 </FrameLayout>
-                <TextView style="@style/PowerUpTextStyle" android:text="x2 Điểm"/>
+                <TextView style="@style/PowerUpTextStyle" android:text="@string/quiz_powerup_x2"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -321,12 +320,11 @@
             android:id="@+id/btnConfirm"
             android:layout_width="match_parent"
             android:layout_height="52dp"
-            android:text="Xác nhận"
+            android:text="@string/quiz_confirm"
             android:textSize="16sp"
             android:textColor="#FFFFFF"
             android:backgroundTint="#4CAF50"
             android:enabled="false"
-            app:cornerRadius="26dp"
-            tools:ignore="HardcodedText"/>
+            app:cornerRadius="26dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

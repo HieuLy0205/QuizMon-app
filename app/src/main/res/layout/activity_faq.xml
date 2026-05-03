@@ -27,7 +27,7 @@
         android:id="@+id/tvHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Câu hỏi thường gặp"
+        android:text="@string/faq_title"
         android:textSize="22sp"
         android:textStyle="bold"
         android:textColor="#333"
@@ -64,7 +64,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Chưa tìm thấy câu trả lời cho câu hỏi của bạn?"
+            android:text="@string/faq_not_found_msg"
             android:textSize="14sp"
             android:textStyle="bold"
             android:textColor="#333"
@@ -74,10 +74,9 @@
             android:id="@+id/btnReportFromFaq"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:text="Báo cáo vấn đề"
+            android:text="@string/settings_report_issue"
             android:backgroundTint="#2979FF"
-            android:textColor="@android:color/white"
-            tools:ignore="HardcodedText" />
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

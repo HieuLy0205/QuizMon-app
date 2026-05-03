@@ -114,6 +114,9 @@ class SpinWheelActivity : AppCompatActivity() {
                 SoundManager.playComplete()
                 preferenceManager.applyRewardByString(reward, levelId)
                 
+                // Khớp với nv4: Quay vòng quay mau mắn
+                preferenceManager.Dk_batmo_xn("nv4", true)
+                
                 showRewardDialog(reward)
                 updateHeader()
             }

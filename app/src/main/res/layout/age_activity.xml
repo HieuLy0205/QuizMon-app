@@ -19,7 +19,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@android:drawable/ic_media_previous"
-            android:contentDescription="back"
+            android:contentDescription="@string/btn_back"
             android:padding="6dp" />
 
         <LinearLayout
@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nhập tuổi của bạn"
+                android:text="@string/age_prompt"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 android:textColor="#222222" />
@@ -60,7 +60,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="Tiếp tục" />
+                android:text="@string/btn_next" />
         </LinearLayout>
     </LinearLayout>
 

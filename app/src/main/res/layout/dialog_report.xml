@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Báo cáo vấn đề"
+            android:text="@string/report_title"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#333333"
@@ -34,7 +34,10 @@
             android:layout_height="56dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
 
             <TextView
                 android:layout_width="32dp"
@@ -45,7 +48,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nội dung"
+                android:text="@string/report_content"
                 android:textSize="16sp"
                 android:textColor="#333"
                 android:layout_marginStart="8dp"/>
@@ -57,7 +60,10 @@
             android:layout_height="56dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
 
             <TextView
                 android:layout_width="32dp"
@@ -68,7 +74,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Kỹ thuật"
+                android:text="@string/report_technical"
                 android:textSize="16sp"
                 android:textColor="#333"
                 android:layout_marginStart="8dp"/>
@@ -80,7 +86,10 @@
             android:layout_height="56dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
 
             <TextView
                 android:layout_width="32dp"
@@ -91,7 +100,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quảng cáo"
+                android:text="@string/report_ad"
                 android:textSize="16sp"
                 android:textColor="#333"
                 android:layout_marginStart="8dp"/>
@@ -103,7 +112,10 @@
             android:layout_height="56dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
 
             <TextView
                 android:layout_width="32dp"
@@ -114,7 +126,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vấn đề về quyền riêng tư"
+                android:text="@string/report_privacy"
                 android:textSize="16sp"
                 android:textColor="#333"
                 android:layout_marginStart="8dp"/>
@@ -126,7 +138,10 @@
             android:layout_height="56dp"
             android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:padding="10dp">
+            android:padding="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground">
 
             <TextView
                 android:layout_width="32dp"
@@ -137,7 +152,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Khác"
+                android:text="@string/report_other"
                 android:textSize="16sp"
                 android:textColor="#333"
                 android:layout_marginStart="8dp"/>
@@ -155,5 +170,6 @@
         android:scaleType="centerCrop"
         android:background="@drawable/bg_logo_white_circle"
         android:clipToOutline="true"
-        android:elevation="10dp"/>
+        android:elevation="10dp"
+        android:contentDescription="@null" />
 </FrameLayout>

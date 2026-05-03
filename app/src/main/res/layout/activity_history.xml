@@ -1,92 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    android:id="@+id/history_root"-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="match_parent"-->
-<!--    android:fitsSystemWindows="true"-->
-<!--    tools:context=".ui.history.HistoryActivity">-->
-
-<!--    &lt;!&ndash; Ảnh nền chính &ndash;&gt;-->
-<!--    <ImageView-->
-<!--        android:layout_width="3327dp"-->
-<!--        android:layout_height="2751dp"-->
-<!--        android:contentDescription="@null"-->
-<!--        android:scaleType="centerCrop"-->
-<!--        android:src="@drawable/background"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    &lt;!&ndash; Thanh trạng thái phía trên &ndash;&gt;-->
-<!--    <include-->
-<!--        android:id="@+id/taskhead"-->
-<!--        layout="@layout/layout_taskhead"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--    <ScrollView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="0dp"-->
-<!--        android:fillViewport="true"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/taskhead"-->
-<!--        app:layout_constraintBottom_toTopOf="@id/taskbar">-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="vertical"-->
-<!--            android:padding="20dp"-->
-<!--            android:gravity="center_horizontal">-->
-
-<!--            <TextView-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="@string/ls"-->
-<!--                android:textSize="28sp"-->
-<!--                android:textStyle="bold"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:layout_marginBottom="16dp" />-->
-
-<!--            <androidx.recyclerview.widget.RecyclerView-->
-<!--                android:id="@+id/rvHistory"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="1231dp"-->
-<!--                android:clipToPadding="false"-->
-<!--                android:overScrollMode="never"-->
-<!--                tools:listitem="@layout/item_history" />-->
-
-<!--        </LinearLayout>-->
-<!--    </ScrollView>-->
-
-<!--    &lt;!&ndash; Thanh điều hướng dưới &ndash;&gt;-->
-<!--    <include-->
-<!--        android:id="@+id/taskbar"-->
-<!--        layout="@layout/layout_taskbar"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="75dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent" />-->
-
-<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
-
-
-
-
-<!--Layout giao diện lịch sử chính-->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/history_root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bg_cream"
-    android:id="@+id/history_root">
+    tools:context=".ui.history.HistoryActivity">
 
-    <!-- ===== HEADER ===== -->
+    <!-- ===== BACKGROUND ===== -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@null" />
+
+    <!-- ===== HEADER (Taskhead) ===== -->
+    <include
+        android:id="@+id/taskhead"
+        layout="@layout/layout_taskhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ===== STATS HEADER ===== -->
     <LinearLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -97,7 +39,7 @@
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:paddingTop="14dp"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/taskhead">
 
         <!-- Tiêu đề + nút lọc -->
         <LinearLayout
@@ -112,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
-                android:text="Lịch sử"
+                android:text="@string/history_title"
                 android:textColor="@color/text_primary"
                 android:textSize="22sp" />
 
@@ -141,11 +83,10 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
                         android:fontFamily="sans-serif-black"
-                        android:text="Lọc"
+                        android:text="@string/history_filter"
                         android:textColor="@color/orange_primary"
                         android:textSize="13sp" />
 
-                    <!-- Badge số -->
                     <TextView
                         android:id="@+id/tv_filter_badge"
                         android:layout_width="16dp"
@@ -193,7 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Đúng"
+                    android:text="@string/history_correct"
                     android:textColor="@color/correct_green_dark"
                     android:textSize="11sp" />
             </LinearLayout>
@@ -222,7 +163,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Sai"
+                    android:text="@string/history_wrong"
                     android:textColor="@color/wrong_red_dark"
                     android:textSize="11sp" />
             </LinearLayout>
@@ -250,14 +191,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Tổng"
+                    android:text="@string/history_total"
                     android:textColor="@color/blue_dark"
                     android:textSize="11sp" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
-    <!-- ===== DANH SÁCH ===== -->
+    <!-- ===== DANH SÁCH LỊCH SỬ ===== -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_history"
         android:layout_width="match_parent"
@@ -265,7 +206,7 @@
         android:clipToPadding="false"
         android:paddingHorizontal="14dp"
         android:paddingVertical="12dp"
-        app:layout_constraintBottom_toTopOf="@id/nav_bottom"
+        app:layout_constraintBottom_toTopOf="@id/taskbar"
         app:layout_constraintTop_toBottomOf="@id/header" />
 
     <!-- Empty state -->
@@ -274,165 +215,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
-        android:text="Chưa có lịch sử nào"
+        android:text="@string/history_empty"
         android:textColor="@color/text_hint"
         android:textSize="15sp"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@id/nav_bottom"
+        app:layout_constraintBottom_toTopOf="@id/taskbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header" />
 
-    <!-- ===== NAV BAR (Đã được kích hoạt mục Lịch sử) ===== -->
-    <LinearLayout
-        android:id="@+id/nav_bottom"
+    <!-- ===== FOOTER (Taskbar) ===== -->
+    <include
+        android:id="@+id/taskbar"
+        layout="@layout/layout_taskbar"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:background="@drawable/taskbar_bg"
-        android:orientation="horizontal"
-        android:gravity="center_vertical"
-        android:baselineAligned="false"
-        android:paddingStart="4dp"
-        android:paddingEnd="4dp"
-        android:elevation="8dp"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintBottom_toBottomOf="parent" />
 
-        <!-- Hồ sơ -->
-        <LinearLayout
-            android:id="@+id/nav_profile"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:src="@drawable/hoso_taskbar" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/hoso"
-                android:textSize="15sp"
-                android:textColor="@color/taskbar_text"
-                android:textStyle="bold" />
-            <View
-                android:layout_width="28dp"
-                android:layout_height="5dp"
-                android:layout_marginTop="2dp"
-                android:background="@drawable/bg_wood_indicator"
-                android:visibility="invisible" />
-        </LinearLayout>
-
-        <!-- Lịch sử (ĐÃ SET ACTIVE) -->
-        <LinearLayout
-            android:id="@+id/nav_history"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:src="@drawable/lichsu_taskbar" />
-            <TextView
-                android:id="@+id/tv_nav_history"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/ls"
-                android:textSize="15sp"
-                android:textColor="#A52A2A"
-                android:textStyle="bold" />
-            <View
-                android:id="@+id/indicator_history"
-                android:layout_width="28dp"
-                android:layout_height="5dp"
-                android:layout_marginTop="2dp"
-                android:background="@drawable/bg_wood_indicator"
-                android:visibility="visible" /> <!-- Hiện thanh gạch chân gỗ -->
-        </LinearLayout>
-
-        <!-- Trang chủ -->
-        <LinearLayout
-            android:id="@+id/nav_home"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:src="@drawable/home_taskbar" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/home"
-                android:textSize="15sp"
-                android:textColor="@color/taskbar_text"
-                android:textStyle="bold" />
-            <View
-                android:layout_width="28dp"
-                android:layout_height="5dp"
-                android:layout_marginTop="2dp"
-                android:background="@drawable/bg_wood_indicator"
-                android:visibility="invisible" />
-        </LinearLayout>
-
-        <!-- Cửa hàng -->
-        <LinearLayout
-            android:id="@+id/nav_shop"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:src="@drawable/shop_taskbar" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/shop"
-                android:textSize="15sp"
-                android:textColor="@color/taskbar_text"
-                android:textStyle="bold" />
-            <View
-                android:layout_width="28dp"
-                android:layout_height="5dp"
-                android:layout_marginTop="2dp"
-                android:background="@drawable/bg_wood_indicator"
-                android:visibility="invisible" />
-        </LinearLayout>
-
-        <!-- Menu -->
-        <LinearLayout
-            android:id="@+id/nav_menu"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="42dp"
-                android:layout_height="42dp"
-                android:src="@drawable/menu_taskbar" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/menu"
-                android:textSize="15sp"
-                android:textColor="@color/taskbar_text"
-                android:textStyle="bold" />
-            <View
-                android:layout_width="28dp"
-                android:layout_height="5dp"
-                android:layout_marginTop="2dp"
-                android:background="@drawable/bg_wood_indicator"
-                android:visibility="invisible" />
-        </LinearLayout>
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

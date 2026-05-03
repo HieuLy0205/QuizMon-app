@@ -1,7 +1,6 @@
 package com.example.quizmon
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.MotionEvent
@@ -18,7 +17,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.quizmon.data.repository.petReposiroty
 import com.example.quizmon.ui.pet.PetActivity
-import com.example.quizmon.ui.shop.shop_phobien
+import com.example.quizmon.ui.shop.DailyRewardActivity
 import com.example.quizmon.ui.level.LevelMapActivity
 import com.example.quizmon.ui.settings.SettingsActivity
 import com.example.quizmon.ui.shop.activity_shop
@@ -27,12 +26,10 @@ import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
 import com.example.quizmon.ui.pet.AnimetorActivity
-import com.example.quizmon.ui.shop.shop_tim
-import com.example.quizmon.ui.shop.shop_xu
+import com.example.quizmon.ui.rank.RankActivity
 import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.StreakManager
 import com.example.quizmon.utils.TaskHeadManager
-import kotlin.jvm.java
 import kotlin.math.abs
 import com.example.quizmon.ui.onboarding.AgeActivity
 
@@ -42,47 +39,48 @@ class MainActivity : AppCompatActivity() {
     private val CLICK_DRAG_TOLERANCE = 10f
 
     private lateinit var reposiroty: petReposiroty
-
     private lateinit var animetor: AnimetorActivity
 
-    private lateinit var ivFlatingPet: ImageView
+    private lateinit var ivFloatingPet: ImageView
     private lateinit var tvUserName: TextView
     private lateinit var ivAvatar: ImageView
-    private  lateinit var preferenceManager: PreferenceManager
+    private lateinit var ivAvatarBorder: ImageView
+    private lateinit var preferenceManager: PreferenceManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
-
-        val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
-
+        
+        preferenceManager = PreferenceManager(this)
+        
+        val isFirstTime = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE).getBoolean("FIRST_TIME", true)
         if (isFirstTime) {
             startActivity(Intent(this, AgeActivity::class.java))
             finish()
             return
         }
+
         tvUserName = findViewById(R.id.tvUserName)
         ivAvatar = findViewById(R.id.ivAvatar)
+        ivAvatarBorder = findViewById(R.id.ivAvatarBorder)
+        ivFloatingPet = findViewById(R.id.ivFloatingPet)
 
-        loadUserHeader()
-        // Khởi tạo SoundManager
         SoundManager.init(this)
-        
         reposiroty = petReposiroty()
-        preferenceManager = PreferenceManager(this)
+        animetor = AnimetorActivity(ivFloatingPet)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        findViewById<View>(R.id.main)?.let { v ->
+            ViewCompat.setOnApplyWindowInsetsListener(v) { _, insets ->
+                val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+                insets
+            }
         }
 
         setupTaskbar()
         setupFloatingPet()
-        updateUI()
-        loadUserHeader()
+        
         findViewById<View>(R.id.btnQuiz).setOnClickListener {
             SoundManager.playClick()
             startActivity(Intent(this, LevelMapActivity::class.java))
@@ -90,26 +88,24 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<View>(R.id.cardDailyReward).setOnClickListener {
             SoundManager.playClick()
-            startActivity(Intent(this, shop_phobien::class.java))
+            startActivity(Intent(this, DailyRewardActivity::class.java))
+        }
+
+        findViewById<View>(R.id.cardMatch).setOnClickListener {
+            SoundManager.playClick()
+            startActivity(Intent(this, RankActivity::class.java))
         }
 
         findViewById<FrameLayout>(R.id.layoutStreak)?.setOnClickListener {
             SoundManager.playClick()
             startActivity(Intent(this, StreakActivity::class.java))
         }
-
-        findViewById<FrameLayout>(R.id.layoutStreak)?.startAnimation(
-            AnimationUtils.loadAnimation(this, R.anim.streak_bounce)
-        )
     }
 
     @SuppressLint("ClickableViewAccessibility")
     private fun setupFloatingPet() {
-        val ivFloatingPet = findViewById<ImageView>(R.id.ivFloatingPet)
         val bounceAnimation = AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
         ivFloatingPet.startAnimation(bounceAnimation)
-
-        animetor = AnimetorActivity(ivFloatingPet)
 
         ivFloatingPet.setOnTouchListener { view, event ->
             when (event.actionMasked) {
@@ -142,124 +138,77 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         updateUI()
-        //Tự động cập nhật Header và đếm ngược Tim
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
-        
-        // Phát nhạc nền
         SoundManager.playMusic(this, R.raw.background)
     }
 
     override fun onPause() {
         super.onPause()
         animetor.stop()
-        //Dừng cập nhật
         TaskHeadManager.stopLoop()
-        
-        //Tạm dừng nhạc nếu cần (thường background music nên tắt khi out hẳn hoặc chuyển activity đặc biệt)
-        //pause ở onPause và resume ở onResume
         SoundManager.pauseMusic()
     }
 
     private fun updateUI() {
-        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-        val streakManager = StreakManager(this)
-        ivFlatingPet = findViewById(R.id.ivFloatingPet)
-        val preferenceManager = PreferenceManager(this)
+        // Cập nhật Profile từ PreferenceManager
+        tvUserName.text = preferenceManager.getName()
+        setAvatarHome(preferenceManager.getAvatar())
+        ivAvatarBorder.setImageResource(preferenceManager.getBorder())
+
+        // Cập nhật Ải hiện tại
+        val currentLevel = preferenceManager.getCurrentUnlockedLevel()
+        findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
+
+        // Cập nhật số Ải đã vượt qua vào Streak (Biểu tượng lửa)
+        val levelsPassed = (currentLevel - 1).coerceAtLeast(0)
+        findViewById<TextView>(R.id.tvStreakCount)?.text = levelsPassed.toString()
+
+        // XỬ LÝ HIỂN THỊ PET
+        val savedPetId = preferenceManager.getPetid()
         val petLevel = preferenceManager.getPetLevel()
-        val petId = preferenceManager.getPetid()
 
-        //tạm dừng pet để xử lý logic thay đổi pet trong kho (tủ)
-        if (petId == -1 || petLevel == 0) {
-            animetor.stop()
+        // Nếu chưa chọn Pet (Id = -1), lấy mặc định là Pet ID "1" (Hỏa Long)
+        val finalPetId = if (savedPetId == -1) "1" else savedPetId.toString()
+        
+        val petDetail = reposiroty.getPetById(finalPetId)
+        if (petDetail != null) {
+            ivFloatingPet.visibility = View.VISIBLE
+            animetor.stop() // Dừng animation cũ nếu có
+            animetor.starAnimetor(petDetail.copy(currentelevel = petLevel))
         } else {
-            ivFlatingPet?.visibility = View.VISIBLE
-            val petDetail = reposiroty.getPetById(petId.toString())
-            petDetail?.let {
-                // Đồng bộ level hiện tại cho con pet
-                val activePet = it.copy(currentelevel = petLevel)
-                // Ra lệnh bắt đầu chạy ảnh lặp
-                animetor.starAnimetor(activePet)
-            }
-            val currentLevel = prefs.getInt("CURRENT_UNLOCKED_LEVEL", 1)
-            findViewById<TextView>(R.id.tvCurrentLevel)?.text = currentLevel.toString()
-
-            // Cập nhật các thành phần riêng của trang
-            findViewById<TextView>(R.id.tvStreakCount)?.text =
-                streakManager.getCurrentStreak().toString()
+            ivFloatingPet.visibility = View.GONE
         }
     }
 
     private fun setupTaskbar() {
         findViewById<View>(R.id.indicator_home)?.visibility = View.VISIBLE
-        findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(
-            ContextCompat.getColor(
-                this,
-                R.color.taskbar_active
-            )
-        )
+        findViewById<TextView>(R.id.tv_nav_home)?.setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
+
         findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener {
             SoundManager.playClick()
-            startActivity(
-                Intent(
-                    this,
-                    HistoryActivity::class.java
-                )
-            )
+            startActivity(Intent(this, HistoryActivity::class.java))
         }
         findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener {
             SoundManager.playClick()
-            startActivity(
-                Intent(
-                    this,
-                    activity_shop::class.java
-                )
-            )
+            startActivity(Intent(this, activity_shop::class.java))
         }
         findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener {
             SoundManager.playClick()
-            startActivity(
-                Intent(
-                    this,
-                    SettingsActivity::class.java
-                )
-            )
+            startActivity(Intent(this, SettingsActivity::class.java))
         }
         findViewById<LinearLayout>(R.id.nav_profile)?.setOnClickListener { 
             SoundManager.playClick()
-            openProfileFlow() 
-        }
-    }
-
-    private fun openProfileFlow() {
-        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-        val isFirstTime = prefs.getBoolean("FIRST_TIME", true)
-        if (isFirstTime) {
-            startActivity(
-                Intent(
-                    this,
-                    com.example.quizmon.ui.onboarding.AgeActivity::class.java
-                )
-            )
-        } else {
             startActivity(Intent(this, ProfileActivity::class.java))
         }
     }
-    private fun loadUserHeader() {
-        val prefs = getSharedPreferences("QuizMonPrefs", Context.MODE_PRIVATE)
-
-        val name = prefs.getString("name", "User")
-        val avatar = prefs.getString("avatar", "avatar1")
-
-        tvUserName.text = if (name.isNullOrBlank()) "User" else name
-        setAvatarHome(avatar ?: "avatar1")
-    }
 
     private fun setAvatarHome(id: String) {
-        when (id) {
-            "avatar1" -> ivAvatar.setImageResource(R.drawable.avatar1)
-            "avatar2" -> ivAvatar.setImageResource(R.drawable.avatar2)
-            "avatar_vip1" -> ivAvatar.setImageResource(R.drawable.avatar_vip1)
-            else -> ivAvatar.setImageResource(R.drawable.avatar1)
+        val resId = when (id) {
+            "avatar1" -> R.drawable.avatar1
+            "avatar2" -> R.drawable.avatar2
+            "avatar_vip1" -> R.drawable.avatar_vip1
+            else -> R.drawable.avatar1
         }
+        ivAvatar.setImageResource(resId)
     }
 }
