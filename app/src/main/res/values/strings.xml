@@ -44,11 +44,11 @@
     <string name="text_nhiemvu1">Đăng nhập + 10 coin</string>
     <string name="text_nhiemvu2">Qua ải nhỏ + 20 coin</string>
     <string name="text_nhiemvu3">Nạp su + 20 coin</string>
-    <string name="text_nhiemvu4">Hoàn thành pvp + 10 coin</string>
+    <string name="text_nhiemvu4">Mua pet trong pvp + 10 coin</string>
     <string name="text_nhiemvu5">Hoàn thành 1 câu hỏi + 5 coin</string>
-    <string name="text_doi20">Đổi 20 xu</string>"
-    <string name="text_doi50">Đổi 20 xu</string>"
-    <string name="text_doi100">Đổi 20 xu</string>"
+    <string name="text_doi20">Đổi 30 xu</string>"
+    <string name="text_doi50">Đổi 150 xu</string>"
+    <string name="text_doi100">Đổi 100 xu</string>"
     <string name="text_nhanpet">free qua ải</string>
     <string name="text_traodoi"> bằng </string>
     <string name="text_so">0</string>

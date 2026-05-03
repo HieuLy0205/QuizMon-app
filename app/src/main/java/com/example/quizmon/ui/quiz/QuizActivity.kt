@@ -310,6 +310,7 @@ class QuizActivity : AppCompatActivity() {
                 if (isCorrect) {
                     SoundManager.playCorrect()
                     animateCorrect(selectedIndex)
+                    preferenceManager.Dk_batmo_xn("nv5", true)
                     preferenceManager.handleCorrectAnswer()
                 } else {
                     SoundManager.playWrong()
