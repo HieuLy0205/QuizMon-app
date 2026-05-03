@@ -40,9 +40,9 @@ class shop_pvp: AppCompatActivity() {
             val isReceivedToday = pref.saver_va_inday("nh_trung_1")
             if (isReady && !isReceivedToday) {
                 pref.Xn_va_inday("nh_trung_1")
-                btnNhanPetFree.isEnabled = true
+                btnNhanPetFree.isEnabled = false
                 btnNhanPetFree.text = "Nhận ngay"
-                pref.Dk_batmo_xn("nh_trung_1", true)
+                pref.Dk_batmo_xn("nh_trung_1", false)
             }
         }
 

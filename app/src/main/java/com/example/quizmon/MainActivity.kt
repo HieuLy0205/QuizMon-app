@@ -27,9 +27,12 @@ import com.example.quizmon.ui.streak.StreakActivity
 import com.example.quizmon.ui.profile.ProfileActivity
 import com.example.quizmon.ui.history.HistoryActivity
 import com.example.quizmon.ui.pet.AnimetorActivity
+import com.example.quizmon.ui.shop.shop_tim
+import com.example.quizmon.ui.shop.shop_xu
 import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.StreakManager
 import com.example.quizmon.utils.TaskHeadManager
+import kotlin.jvm.java
 import kotlin.math.abs
 import com.example.quizmon.ui.onboarding.AgeActivity
 

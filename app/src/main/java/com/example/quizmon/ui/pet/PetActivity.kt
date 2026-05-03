@@ -80,6 +80,13 @@ class PetActivity : AppCompatActivity() {
         petAnimetor.stop()
     }
     fun infomationPet(){
+        //mới xữa
+        if(pref.getPetid() == -1){
+            imgPet1.visibility = android.view.View.INVISIBLE
+            return
+        }
+        imgPet1.visibility = android.view.View.VISIBLE
+
         val currentPetid = pref.getPetid()
         val currentlevel = pref.getPetLevel()
         val petdetail = repotory.getPetById(currentPetid.toString())

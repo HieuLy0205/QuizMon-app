@@ -171,6 +171,7 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/img_tim_shop"
                 android:layout_width="16dp"
                 android:layout_height="16dp"
                 android:layout_marginStart="1dp"

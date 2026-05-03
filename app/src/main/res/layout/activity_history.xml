@@ -338,7 +338,7 @@
                 android:text="@string/ls"
                 android:textSize="15sp"
                 android:textColor="#A52A2A"
-                xandroid:textStyle="bold" />
+                android:textStyle="bold" />
             <View
                 android:id="@+id/indicator_history"
                 android:layout_width="28dp"
