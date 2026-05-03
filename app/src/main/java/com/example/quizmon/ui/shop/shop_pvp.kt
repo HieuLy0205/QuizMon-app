@@ -22,6 +22,7 @@ class shop_pvp: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shop_pvp)
         pref = PreferenceManager(this)
+
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
         btnNhanPetFree = findViewById(R.id.btn_nhanpetFree)
         btnNhanPet1 = findViewById(R.id.btn_nhanpet1)
@@ -33,7 +34,6 @@ class shop_pvp: AppCompatActivity() {
     }
 
     fun setupnhanpet() {
-
         if (pref.get_sh_EggIds().contains("1")) {
             btnNhanPetFree.isEnabled = false
             btnNhanPetFree.text = "Đã nhận"
@@ -72,46 +72,61 @@ class shop_pvp: AppCompatActivity() {
 
         btnNhanPet1.setOnClickListener {
             val currentXu = pref.getXu()
-            val id_trung = "2"
             val ds_trung = pref.get_sh_EggIds()
+            val gia_xu = 30;
+            val id_trung = "2"
             if (!ds_trung.contains(id_trung)) {
-                pref.add_sh_Egg(id_trung)
-                pref.saveXu(currentXu - 30)
-
-                Toast.makeText(this, "Nhận trứng thành công!", Toast.LENGTH_SHORT).show()
-            }else{
-                Toast.makeText(this, "Bạn đã sở hửu trứng này rồi!", Toast.LENGTH_SHORT).show()
+                if (currentXu >= gia_xu ) {
+                    pref.add_sh_Egg(id_trung)
+                    pref.saveXu(currentXu - gia_xu)
+                    pref.Dk_batmo_xn("nv4", true)
+                    btnNhanPet1.isEnabled = false
+                    btnNhanPet1.text = "Đã nhận"
+                    Toast.makeText(this, "Nhận trứng thành công!", Toast.LENGTH_SHORT).show()
+                }else{
+                    Toast.makeText(this, "Bạn không đủ xu!", Toast.LENGTH_SHORT).show()
+                }
             }
-            btnNhanPet1.isEnabled = false
-            btnNhanPet1.text = "Đã nhận"
         }
 
         btnNhanPet2.setOnClickListener {
             val currentXu = pref.getXu()
-            val id_trung = "3"
             val ds_trung = pref.get_sh_EggIds()
+            val gia_xu = 150
+            val id_trung = "3"
             if(!ds_trung.contains(id_trung)){
-                pref.add_sh_Egg(id_trung)
-                pref.saveXu(currentXu - 100)
-                Toast.makeText(this, "Nhận trứng thành công!", Toast.LENGTH_SHORT).show()
-            }else{
-                Toast.makeText(this, "Bạn đã sở hữu trứng này rồi!", Toast.LENGTH_SHORT).show()
+                if (currentXu >= gia_xu) {
+                    pref.add_sh_Egg(id_trung)
+                    pref.saveXu(currentXu - gia_xu)
+                    pref.Dk_batmo_xn("nv4", true)
+                    btnNhanPet2.isEnabled = false
+                    btnNhanPet2.text = "Đã nhận"
+                    Toast.makeText(this, "Nhận trứng thành công!", Toast.LENGTH_SHORT).show()
+                }else{
+                    Toast.makeText(this, "Bạn không đủ xu!", Toast.LENGTH_SHORT).show()
+                }
             }
-            btnNhanPet2.isEnabled = false
-            btnNhanPet2.text = "Đã nhận"
         }
         btnNhanPet3.setOnClickListener {
             val currentXu = pref.getXu()
-            val id_trung = "4"
             val ds_trung = pref.get_sh_EggIds()
+            val gia_xu = 100
+            val id_trung = "4"
             if (!ds_trung.contains(id_trung)){
-                pref.saveXu(currentXu - 100)
-                pref.add_sh_Egg(id_trung)
-                Toast.makeText(this, "Nhận trứng thành công!", Toast.LENGTH_SHORT).show()
-            }else{
-                Toast.makeText(this, "Bạn đã sở hữu trứng này rồi!", Toast.LENGTH_SHORT).show()
+                if (currentXu >= gia_xu) {
+                    pref.saveXu(currentXu - gia_xu)
+                    pref.add_sh_Egg(id_trung)
+                    pref.Dk_batmo_xn("nv4", true)
+                    btnNhanPet3.isEnabled = false
+                    btnNhanPet3.text = "Đã nhận"
+                    Toast.makeText(this, "Nhận trứng thành công!", Toast.LENGTH_SHORT).show()
+                }else{
+                    Toast.makeText(this, "Bạn không đủ xu!", Toast.LENGTH_SHORT).show()
+                }
             }
+
         }
+
     }
     override fun onResume() {
         super.onResume()
