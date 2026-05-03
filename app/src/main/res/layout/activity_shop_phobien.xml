@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@drawable/background">
+    android:background="#E3F2FD">
 
-    <!-- Thanh trạng thái phía trên -->
     <include
         android:id="@+id/taskhead"
         layout="@layout/layout_taskhead"
@@ -15,229 +13,144 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Nút Quay lại -->
     <ImageButton
         android:id="@+id/btnBack"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/bg_difficulty_btn"
-        android:contentDescription="@string/btn_back"
-        android:padding="12dp"
-        android:scaleType="fitCenter"
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/taskhead"
         app:tint="@color/white" />
 
-    <!-- Tiêu đề màn hình -->
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="16dp"
-        android:background="@drawable/btn_play"
-        android:backgroundTint="#89D9D6D6"
-        android:gravity="center"
-        android:text="@string/text_ShopNv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/daily_reward_title"
         android:textSize="22sp"
-        android:textColor="#1B1919"
         android:textStyle="bold"
+        android:textColor="#1A237E"
         app:layout_constraintTop_toTopOf="@id/btnBack"
         app:layout_constraintBottom_toBottomOf="@id/btnBack"
-        app:layout_constraintStart_toEndOf="@id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Danh sách nhiệm vụ -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
         app:layout_constraintTop_toBottomOf="@id/btnBack"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginTop="8dp">
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingHorizontal="16dp"
-            android:paddingBottom="24dp">
+            android:padding="16dp">
 
-            <!-- Nhiệm vụ 1 -->
-            <LinearLayout
+            <!-- PHẦN 1: THƯỞNG HÀNG NGÀY -->
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingVertical="12dp"
-                android:gravity="center_vertical">
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                android:layout_marginBottom="20dp">
 
-                <TextView
-                    android:id="@+id/text_nv1"
-                    android:layout_width="0dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/text_nhiemvu1"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#333" />
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:background="#FFFFFF">
 
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/sao_shop_map" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/daily_reward_title"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#333"
+                        android:layout_gravity="center" />
 
-                <Button
-                    android:id="@+id/btn_Nv1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#B697EB80"
-                    android:text="hoàn thành"
-                    android:textColor="#161313"
-                    android:textStyle="bold"
-                    app:cornerRadius="8dp"/>
-            </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/daily_reward_subtitle"
+                        android:textSize="13sp"
+                        android:textColor="#666"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="16dp"/>
 
-            <!-- Nhiệm vụ 2 -->
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:columnCount="3"
+                        android:alignmentMode="alignMargins">
+
+                        <include android:id="@+id/day1" layout="@layout/item_daily_reward" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" />
+                        <include android:id="@+id/day2" layout="@layout/item_daily_reward" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" />
+                        <include android:id="@+id/day3" layout="@layout/item_daily_reward" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" />
+                        <include android:id="@+id/day4" layout="@layout/item_daily_reward" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" />
+                        <include android:id="@+id/day5" layout="@layout/item_daily_reward" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" />
+                        <include android:id="@+id/day6" layout="@layout/item_daily_reward" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" />
+                    </GridLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutDay7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_stats_bar"
+                        android:padding="12dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:clickable="true"
+                        android:focusable="true">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ngày 7: " android:textStyle="bold" android:textColor="#D32F2F"/>
+                        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/trung_pet_1" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" + "/>
+                        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/trung_pet_4" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" + "/>
+                        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/trung_pet_6" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnDoubleReward"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/daily_reward_double_btn"
+                        android:backgroundTint="#FF9800"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- PHẦN 2: NHIỆM VỤ HÀNG NGÀY -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/daily_task_section_title"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#1A237E"
+                android:layout_marginBottom="12dp"/>
+
             <LinearLayout
+                android:id="@+id/layoutTaskList"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingVertical="12dp"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/text_nhiemvu2"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#333" />
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/sao_shop_map" />
-
-                <Button
-                    android:id="@+id/btn_Nv2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#B6EB8C80"
-                    android:text="hoàn thành"
-                    android:textColor="#161313"
-                    android:textStyle="bold"
-                    app:cornerRadius="8dp"/>
-            </LinearLayout>
-
-            <!-- Nhiệm vụ 3 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingVertical="12dp"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/text_nhiemvu3"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#333" />
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/sao_shop_map" />
-
-                <Button
-                    android:id="@+id/btn_Nv3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#B65CD9F0"
-                    android:text="hoàn thành"
-                    android:textColor="#161313"
-                    android:textStyle="bold"
-                    app:cornerRadius="8dp"/>
-            </LinearLayout>
-
-            <!-- Nhiệm vụ 4 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingVertical="12dp"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/text_nhiemvu4"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#333" />
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/sao_shop_map" />
-
-                <Button
-                    android:id="@+id/btn_Nv4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#EBD280"
-                    android:text="hoàn thành"
-                    android:textColor="#161313"
-                    android:textStyle="bold"
-                    app:cornerRadius="8dp"/>
-            </LinearLayout>
-
-            <!-- Nhiệm vụ 5 -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:paddingVertical="12dp"
-                android:gravity="center_vertical">
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/text_nhiemvu5"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:textColor="#333" />
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/sao_shop_map" />
-
-                <Button
-                    android:id="@+id/btn_Nv5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#B6C680EB"
-                    android:text="hoàn thành"
-                    android:textColor="#161313"
-                    android:textStyle="bold"
-                    app:cornerRadius="8dp"/>
+                android:orientation="vertical">
+                <include android:id="@+id/task1" layout="@layout/item_task_row" />
+                <include android:id="@+id/task2" layout="@layout/item_task_row" />
+                <include android:id="@+id/task3" layout="@layout/item_task_row" />
+                <include android:id="@+id/task4" layout="@layout/item_task_row" />
+                <include android:id="@+id/task5" layout="@layout/item_task_row" />
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

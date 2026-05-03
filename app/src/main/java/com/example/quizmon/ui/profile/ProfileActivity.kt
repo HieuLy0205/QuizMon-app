@@ -7,9 +7,17 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import com.example.quizmon.MainActivity
 import com.example.quizmon.R
+import com.example.quizmon.ui.history.HistoryActivity
 import com.example.quizmon.ui.onboarding.AgeActivity
 import com.example.quizmon.ui.onboarding.AvatarActivity
+import com.example.quizmon.ui.settings.SettingsActivity
+import com.example.quizmon.ui.shop.activity_shop
+import com.example.quizmon.utils.PreferenceManager
+import com.example.quizmon.utils.SoundManager
+import com.example.quizmon.utils.TaskHeadManager
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -35,10 +43,13 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var etTopics: EditText
     private lateinit var btnSave: Button
 
+    private lateinit var preferenceManager: PreferenceManager
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
 
+        preferenceManager = PreferenceManager(this)
         val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
 
         imgAvatar = findViewById(R.id.imgAvatar)
@@ -60,6 +71,7 @@ class ProfileActivity : AppCompatActivity() {
         btnSave = findViewById(R.id.btnSave)
 
         loadProfile()
+        setupTaskbar()
 
         // EDIT
         btnEditProfile.setOnClickListener {
@@ -110,10 +122,38 @@ class ProfileActivity : AppCompatActivity() {
                     prefs.edit().clear().apply()
 
                     startActivity(Intent(this, AgeActivity::class.java))
-                    finish()
+                    finishAffinity()
                 }
                 .setNegativeButton("Hủy", null)
                 .show()
+        }
+    }
+
+    private fun setupTaskbar() {
+        findViewById<View>(R.id.indicator_profile)?.visibility = View.VISIBLE
+        findViewById<TextView>(R.id.tv_nav_profile)?.setTextColor(
+            ContextCompat.getColor(this, R.color.taskbar_active)
+        )
+
+        findViewById<LinearLayout>(R.id.nav_home)?.setOnClickListener {
+            SoundManager.playClick()
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
+        findViewById<LinearLayout>(R.id.nav_history)?.setOnClickListener {
+            SoundManager.playClick()
+            startActivity(Intent(this, HistoryActivity::class.java))
+            finish()
+        }
+        findViewById<LinearLayout>(R.id.nav_shop)?.setOnClickListener {
+            SoundManager.playClick()
+            startActivity(Intent(this, activity_shop::class.java))
+            finish()
+        }
+        findViewById<LinearLayout>(R.id.nav_menu)?.setOnClickListener {
+            SoundManager.playClick()
+            startActivity(Intent(this, SettingsActivity::class.java))
+            finish()
         }
     }
 
@@ -169,5 +209,11 @@ class ProfileActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         loadProfile()
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+    }
+
+    override fun onPause() {
+        super.onPause()
+        TaskHeadManager.stopLoop()
     }
 }
