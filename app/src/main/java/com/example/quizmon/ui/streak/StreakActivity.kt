@@ -32,6 +32,11 @@ class StreakActivity : AppCompatActivity() {
     private lateinit var tvTabThongKe: TextView
     private lateinit var ivTabThanhTich: ImageView
     private lateinit var ivTabThongKe: ImageView
+
+    // Profile Views
+    private lateinit var ivAvatar: ImageView
+    private lateinit var ivAvatarBorder: ImageView
+    private lateinit var tvName: TextView
     
     // Views cho Thành tích
     private lateinit var tvPercentWarrior: TextView
@@ -65,6 +70,9 @@ class StreakActivity : AppCompatActivity() {
         setupClickListeners()
         setupTaskbar()
         
+        // Cập nhật Profile
+        updateUserProfile()
+        
         // Mặc định ban đầu sẽ tải dữ liệu Thành tích
         loadAchievementData()
         showThanhTich()
@@ -80,6 +88,11 @@ class StreakActivity : AppCompatActivity() {
         ivTabThanhTich = findViewById(R.id.ivTabThanhTich)
         ivTabThongKe = findViewById(R.id.ivTabThongKe)
 
+        // Ánh xạ Profile views
+        ivAvatar = findViewById(R.id.ivAvatar)
+        ivAvatarBorder = findViewById(R.id.ivAvatarBorder)
+        tvName = findViewById(R.id.tvName)
+
         // Ánh xạ các view Thành tích
         tvPercentWarrior = findViewById(R.id.tvPercentWarrior)
         pbWarrior = findViewById(R.id.pbWarrior)
@@ -89,6 +102,20 @@ class StreakActivity : AppCompatActivity() {
         pbHunter = findViewById(R.id.pbHunter)
         tvPercentPassion = findViewById(R.id.tvPercentPassion)
         pbPassion = findViewById(R.id.pbPassion)
+    }
+
+    private fun updateUserProfile() {
+        tvName.text = preferenceManager.getName()
+        ivAvatarBorder.setImageResource(preferenceManager.getBorder())
+        
+        val avatarId = preferenceManager.getAvatar()
+        val resId = when (avatarId) {
+            "avatar1" -> R.drawable.avatar1
+            "avatar2" -> R.drawable.avatar2
+            "avatar_vip1" -> R.drawable.avatar_vip1
+            else -> R.drawable.avatar1
+        }
+        ivAvatar.setImageResource(resId)
     }
 
     private fun loadAchievementData() {
@@ -178,6 +205,7 @@ class StreakActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
+        updateUserProfile() // Cập nhật Profile khi quay lại
         loadAchievementData() // Cập nhật lại khi quay lại màn hình
     }
 

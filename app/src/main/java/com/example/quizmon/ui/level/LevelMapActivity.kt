@@ -30,10 +30,11 @@ class LevelMapActivity : AppCompatActivity() {
     )
 
     private var currentUnlockedLevel = 1
+    private lateinit var levels: List<Int>
+    private lateinit var rvLevelMap: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        // ✅ Đồng bộ chuẩn màn hình MainActivity
         enableEdgeToEdge()
         setContentView(R.layout.activity_level_map)
 
@@ -53,10 +54,10 @@ class LevelMapActivity : AppCompatActivity() {
             finish() 
         }
 
-        val rvLevelMap = findViewById<RecyclerView>(R.id.rvLevelMap)
+        rvLevelMap = findViewById(R.id.rvLevelMap)
 
         val totalLevels = 200
-        val levels = (1..totalLevels).toList().reversed()
+        levels = (1..totalLevels).toList().reversed()
 
         val adapter = LevelAdapter(levels, currentUnlockedLevel) { selectedLevel ->
             SoundManager.playClick()
@@ -71,10 +72,7 @@ class LevelMapActivity : AppCompatActivity() {
         rvLevelMap.layoutManager = layoutManager
         rvLevelMap.adapter = adapter
 
-        val scrollPosition = levels.indexOf(currentUnlockedLevel)
-        if (scrollPosition != -1) {
-            rvLevelMap.scrollToPosition(scrollPosition)
-        }
+        scrollToCurrentLevel()
 
         rvLevelMap.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
@@ -106,13 +104,29 @@ class LevelMapActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        val oldLevel = currentUnlockedLevel
         loadProgress()
-        findViewById<RecyclerView>(R.id.rvLevelMap).adapter?.notifyDataSetChanged()
+        
+        val adapter = rvLevelMap.adapter as? LevelAdapter
+        if (adapter != null) {
+            adapter.updateCurrentLevel(currentUnlockedLevel)
+            // Nếu có ải mới được mở khóa, cuộn đến ải đó ngay lập tức
+            if (oldLevel != currentUnlockedLevel) {
+                scrollToCurrentLevel()
+            }
+        }
         
         // Phát nhạc nền bản đồ
         SoundManager.playMusic(this, R.raw.background)
     }
     
+    private fun scrollToCurrentLevel() {
+        val scrollPosition = levels.indexOf(currentUnlockedLevel)
+        if (scrollPosition != -1) {
+            rvLevelMap.scrollToPosition(scrollPosition)
+        }
+    }
+
     override fun onPause() {
         super.onPause()
         SoundManager.pauseMusic()

@@ -31,7 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="VÒNG QUAY MAY MẮN"
+        android:text="@string/spin_wheel_title"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -55,7 +55,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="-30dp"
         android:src="@drawable/muiten"
-        android:contentDescription="Mũi tên"
+        android:contentDescription="@null"
         app:layout_constraintEnd_toEndOf="@id/luckyWheel"
         app:layout_constraintStart_toStartOf="@id/luckyWheel"
         app:layout_constraintTop_toTopOf="@id/luckyWheel" />
@@ -67,7 +67,7 @@
         android:layout_marginBottom="60dp"
         android:background="@drawable/bg_orange_btn"
         app:backgroundTint="@null"
-        android:text="Quay lại"
+        android:text="@string/btn_back"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -105,7 +105,7 @@
                     android:id="@+id/ivRewardIcon"
                     android:layout_width="140dp"
                     android:layout_height="140dp"
-                    android:contentDescription="Biểu tượng phần thưởng"
+                    android:contentDescription="@null"
                     android:scaleType="fitCenter"
                     android:src="@drawable/spin" />
 
@@ -114,7 +114,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="CHÚC MỪNG!"
+                    android:text="@string/spin_wheel_congrats"
                     android:textColor="#4CAF50"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -126,7 +126,7 @@
                     android:layout_marginTop="12dp"
                     android:gravity="center"
                     android:lineSpacingExtra="4dp"
-                    android:text="Bạn nhận được phần thưởng"
+                    android:text="@string/spin_wheel_reward_msg"
                     android:textColor="#FFFFFF"
                     android:textSize="18sp" />
 
@@ -137,7 +137,7 @@
                     android:layout_marginTop="28dp"
                     android:background="@drawable/bg_orange_btn"
                     app:backgroundTint="@null"
-                    android:text="NHẬN THƯỞNG"
+                    android:text="@string/spin_wheel_get_reward"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />
 

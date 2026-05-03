@@ -11,22 +11,13 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/taskhead_container"
+        <include
+            android:id="@+id/taskhead"
+            layout="@layout/layout_taskhead"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <include
-                android:id="@+id/taskhead"
-                layout="@layout/layout_taskhead"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent" />
-        </LinearLayout>
+            android:layout_height="wrap_content" />
 
         <LinearLayout
-            android:id="@+id/xu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
@@ -53,12 +44,13 @@
                     android:backgroundTint="#A5D9D6D6"
                     android:backgroundTintMode="src_atop"
                     android:gravity="center"
-                    android:text="@string/text_napthe"
+                    android:text="@string/shop_sao_title"
                     android:textColor="#070606"
                     android:textSize="24sp"
                     android:textStyle="bold" />
             </LinearLayout>
 
+            <!-- Mệnh giá -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -71,29 +63,16 @@
                     android:text="@string/text_gianap"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/payment_choose_price"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/rlvmenhgia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="12dp"
                     android:nestedScrollingEnabled="false" />
             </LinearLayout>
 
+            <!-- Thanh toán -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -106,24 +85,11 @@
                     android:text="@string/text_thangtoan"
                     android:textSize="20sp"
                     android:textStyle="bold" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/payment_method"
-                    android:textStyle="bold" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="12dp"
                     android:orientation="horizontal"
                     android:weightSum="2">
 
@@ -133,79 +99,64 @@
                         android:layout_height="100dp"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        app:cardCornerRadius="8dp"
+                        app:cardCornerRadius="12dp"
                         app:cardElevation="4dp">
-
                         <ImageView
                             android:id="@+id/imgQR"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:contentDescription="MoMo"
                             android:padding="16dp"
-                            android:src="@drawable/logo_momo" />
+                            android:src="@drawable/logo_momo"
+                            android:contentDescription="MoMo" />
                     </com.google.android.material.card.MaterialCardView>
 
                     <com.google.android.material.card.MaterialCardView
-                        android:id="@+id/cardZaloPay"
+                        android:id="@+id/cardVNPAY"
                         android:layout_width="0dp"
                         android:layout_height="100dp"
                         android:layout_margin="4dp"
                         android:layout_weight="1"
-                        app:cardCornerRadius="8dp"
+                        app:cardCornerRadius="12dp"
                         app:cardElevation="4dp">
-
                         <ImageView
                             android:id="@+id/imgQRpay"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:contentDescription="Viettel"
-                            android:padding="16dp"
-                            android:src="@drawable/logo_vnpay" />
+                            android:padding="12dp"
+                            android:src="@drawable/logo_vnpay"
+                            android:contentDescription="VNPay" />
                     </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/text_notepaymenthv"
-                    android:textStyle="bold" />
+                    android:layout_marginTop="16dp"
+                    android:text="@string/shop_sao_note"
+                    android:textColor="#CC0000"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnConfirmPayment"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:layout_marginTop="24dp"
-                    android:text="@string/payment_confirm" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/text_dangnhap"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:layout_marginTop="20dp"
+                    android:text="@string/btn_confirm_transferred"
+                    app:cornerRadius="12dp" />
             </LinearLayout>
 
             <ImageButton
                 android:id="@+id/btnBack"
-                android:layout_width="45dp"
-                android:layout_height="45dp"
-                android:layout_gravity="bottom"
-                android:layout_margin="24dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="20dp"
                 android:background="@drawable/bg_difficulty_btn"
-                android:contentDescription="@string/btn_back"
                 android:padding="12dp"
                 android:scaleType="fitCenter"
-                android:src="@drawable/ic_back" />
+                android:src="@drawable/ic_back"
+                android:contentDescription="@string/btn_back" />
 
         </LinearLayout>
     </LinearLayout>
-
 </ScrollView>

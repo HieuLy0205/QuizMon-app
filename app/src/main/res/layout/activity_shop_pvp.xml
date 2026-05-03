@@ -31,7 +31,7 @@
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="81dp"
-                android:contentDescription="Icon Shop"
+                android:contentDescription="@null"
                 android:src="@drawable/icon_ruong_pvp" />
 
             <TextView
@@ -41,7 +41,7 @@
                 android:backgroundTint="#74D9D6D6"
                 android:backgroundTintMode="src_atop"
                 android:gravity="center"
-                android:text="Nhận pet với shop"
+                android:text="@string/shop_pvp_receive_pet"
                 android:textColor="#090808"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -57,11 +57,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
-                android:text="🅰️ Quà trong shop"
-                android:textSize="20dp"
-                android:textStyle="bold">
-
-            </TextView>
+                android:text="@string/shop_pvp_gift_section"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
         <!-- Trứng rồng dragon free -->
@@ -80,8 +78,7 @@
                 android:background="@drawable/trung_pet_1"
                 android:backgroundTint="#19EDEAEA"
                 android:backgroundTintMode="src_atop"
-                android:textStyle="bold">
-            </ImageView>
+                android:contentDescription="@null" />
 
         </LinearLayout>
 
@@ -95,10 +92,9 @@
                 android:layout_height="41dp"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
-                android:text="name: Trứng rồng Hỏa Long"
+                android:text="@string/egg_name_rong_hoa_long"
                 android:textSize="16sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_nhanpetFree"
@@ -109,8 +105,7 @@
                 android:text="@string/text_nhanpet"
                 android:textColor="#161313"
                 android:textStyle="bold"
-                app:cornerRadius="8dp">
-            </Button>
+                app:cornerRadius="8dp" />
 
         </LinearLayout>
 
@@ -124,10 +119,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
-                android:text="🅱️ Đổi xu nhận trứng"
-                android:textSize="20dp"
-                android:textStyle="bold">
-            </TextView>
+                android:text="@string/shop_pvp_exchange_egg"
+                android:textSize="20sp"
+                android:textStyle="bold" />
         </LinearLayout>
         <!-- Trứng rồng thứ nhất -->
         <LinearLayout
@@ -143,16 +137,15 @@
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/su_shop_map"
                 android:textSize="18sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="44dp"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="20dp"
-                android:background="@drawable/icon_trao_doi">
-            </ImageView>
+                android:background="@drawable/icon_trao_doi"
+                android:contentDescription="@null" />
 
             <ImageView
                 android:id="@+id/img_trung2"
@@ -161,8 +154,7 @@
                 android:background="@drawable/trung_pet_4"
                 android:backgroundTint="#19EDEAEA"
                 android:backgroundTintMode="src_atop"
-                android:textStyle="bold">
-            </ImageView>
+                android:contentDescription="@null" />
 
         </LinearLayout>
 
@@ -176,10 +168,9 @@
                 android:layout_height="41dp"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
-                android:text="name: Trứng rồng sầu riêng "
+                android:text="@string/egg_name_rong_sau_rieng"
                 android:textSize="16sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_nhanpet1"
@@ -190,8 +181,7 @@
                 android:text="@string/text_doi20"
                 android:textColor="#161313"
                 android:textStyle="bold"
-                app:cornerRadius="8dp">
-            </Button>
+                app:cornerRadius="8dp" />
 
         </LinearLayout>
         <!--Trứng rồng thứ 2 -->
@@ -208,16 +198,15 @@
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/su_shop_map"
                 android:textSize="18sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="44dp"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="20dp"
-                android:background="@drawable/icon_trao_doi">
-            </ImageView>
+                android:background="@drawable/icon_trao_doi"
+                android:contentDescription="@null" />
 
             <ImageView
                 android:id="@+id/img_trung3"
@@ -226,9 +215,7 @@
                 android:background="@drawable/trung_pet_2"
                 android:backgroundTint="#19EDEAEA"
                 android:backgroundTintMode="src_atop"
-                android:padding="10dp"
-                android:textStyle="bold">
-            </ImageView>
+                android:contentDescription="@null" />
         </LinearLayout>
 
         <LinearLayout
@@ -241,10 +228,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
-                android:text="name: Trứng tuột mựt nily "
+                android:text="@string/egg_name_tuot_mut_nily"
                 android:textSize="16sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_nhanpet2"
@@ -255,8 +241,7 @@
                 android:text="@string/text_doi50"
                 android:textColor="#161313"
                 android:textStyle="bold"
-                app:cornerRadius="8dp">
-            </Button>
+                app:cornerRadius="8dp" />
         </LinearLayout>
 
         <!--Trứng rồng thứ 3 -->
@@ -274,16 +259,15 @@
                 android:layout_gravity="center_vertical"
                 android:background="@drawable/su_shop_map"
                 android:textSize="18sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold" />
 
             <ImageView
                 android:layout_width="48dp"
                 android:layout_height="44dp"
                 android:layout_gravity="center_vertical"
                 android:layout_margin="20dp"
-                android:background="@drawable/icon_trao_doi">
-            </ImageView>
+                android:background="@drawable/icon_trao_doi"
+                android:contentDescription="@null" />
 
             <ImageView
                 android:id="@+id/img_trung4"
@@ -292,8 +276,7 @@
                 android:background="@drawable/trung_pet_6"
                 android:backgroundTint="#19EDEAEA"
                 android:backgroundTintMode="src_atop"
-                android:textStyle="bold">
-            </ImageView>
+                android:contentDescription="@null" />
         </LinearLayout>
 
         <LinearLayout
@@ -306,10 +289,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:padding="10dp"
-                android:text="name: Trứng kỳ băn phong "
+                android:text="@string/egg_name_bann_phong"
                 android:textSize="16sp"
-                android:textStyle="bold">
-            </TextView>
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/btn_nhanpet3"
@@ -320,8 +302,7 @@
                 android:text="@string/text_doi100"
                 android:textColor="#161313"
                 android:textStyle="bold"
-                app:cornerRadius="8dp">
-            </Button>
+                app:cornerRadius="8dp" />
         </LinearLayout>
 
         <ImageButton

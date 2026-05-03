@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:background="#E3F2FD">
+    android:fitsSystemWindows="true">
+
+    <!-- Nền background chung của app -->
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@null" />
 
     <include
         android:id="@+id/taskhead"
@@ -31,9 +43,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/daily_reward_title"
-        android:textSize="22sp"
+        android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#1A237E"
+        android:textColor="#FFFFFF"
+        android:shadowColor="#80000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
         app:layout_constraintTop_toTopOf="@id/btnBack"
         app:layout_constraintBottom_toBottomOf="@id/btnBack"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,6 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:fillViewport="true"
+        android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@id/btnBack"
         app:layout_constraintBottom_toBottomOf="parent">
 
@@ -52,44 +69,45 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- PHẦN 1: THƯỞNG HÀNG NGÀY -->
+            <!-- PHẦN 1: ĐIỂM DANH - NỀN TRẮNG SẠCH SẼ -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="4dp"
-                android:layout_marginBottom="20dp">
+                app:cardCornerRadius="24dp"
+                app:cardElevation="6dp"
+                android:layout_marginBottom="24dp"
+                app:cardBackgroundColor="#F8F9FA">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="16dp"
-                    android:background="#FFFFFF">
+                    android:padding="20dp">
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/daily_reward_title"
-                        android:textSize="18sp"
+                        android:text="@string/check"
+                        android:textSize="22sp"
                         android:textStyle="bold"
-                        android:textColor="#333"
+                        android:textColor="#263238"
                         android:layout_gravity="center" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/daily_reward_subtitle"
-                        android:textSize="13sp"
-                        android:textColor="#666"
+                        android:textSize="14sp"
+                        android:textColor="#546E7A"
                         android:layout_gravity="center"
-                        android:layout_marginBottom="16dp"/>
+                        android:layout_marginBottom="20dp"/>
 
                     <GridLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:columnCount="3"
-                        android:alignmentMode="alignMargins">
+                        android:alignmentMode="alignMargins"
+                        android:layout_gravity="center">
 
                         <include android:id="@+id/day1" layout="@layout/item_daily_reward" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" />
                         <include android:id="@+id/day2" layout="@layout/item_daily_reward" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" />
@@ -99,34 +117,48 @@
                         <include android:id="@+id/day6" layout="@layout/item_daily_reward" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" />
                     </GridLayout>
 
+                    <!-- NGÀY 7 ĐẶC BIỆT -->
                     <LinearLayout
                         android:id="@+id/layoutDay7"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
-                        android:background="@drawable/bg_stats_bar"
-                        android:padding="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/bg_item_reward"
+                        android:padding="16dp"
                         android:gravity="center"
                         android:orientation="horizontal"
                         android:clickable="true"
                         android:focusable="true">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_day_7_prefix" android:textStyle="bold" android:textColor="#D32F2F"/>
-                        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/trung_pet_1" android:contentDescription="@null" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_plus_sign"/>
-                        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/trung_pet_4" android:contentDescription="@null" />
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_plus_sign"/>
-                        <ImageView android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/trung_pet_6" android:contentDescription="@null" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/shop_day_7_prefix"
+                            android:textStyle="bold"
+                            android:textColor="#D32F2F"
+                            android:textSize="18sp"/>
+                        <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/trung_pet_1" android:contentDescription="@null" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_plus_sign" android:textStyle="bold" android:textColor="#D32F2F" android:textSize="18sp"/>
+                        <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/trung_pet_4" android:contentDescription="@null" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shop_plus_sign" android:textStyle="bold" android:textColor="#D32F2F" android:textSize="18sp"/>
+                        <ImageView android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/trung_pet_6" android:contentDescription="@null" />
                     </LinearLayout>
 
-                    <Button
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/btnDoubleReward"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="24dp"
                         android:text="@string/daily_reward_double_btn"
-                        android:backgroundTint="#FF9800"
+                        app:backgroundTint="#FF9800"
                         android:textColor="@android:color/white"
-                        app:cornerRadius="15dp"/>
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        app:cornerRadius="28dp"
+                        app:elevation="4dp"
+                        app:icon="@drawable/bt_vqmm"
+                        app:iconGravity="textStart"
+                        app:iconSize="24dp"
+                        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -135,10 +167,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/daily_task_section_title"
-                android:textSize="20sp"
+                android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="#1A237E"
-                android:layout_marginBottom="12dp"/>
+                android:textColor="#FFFFFF"
+                android:shadowColor="#80000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="4"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="4dp"/>
 
             <LinearLayout
                 android:id="@+id/layoutTaskList"

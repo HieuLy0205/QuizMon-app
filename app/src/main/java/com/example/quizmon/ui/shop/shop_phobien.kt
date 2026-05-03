@@ -2,6 +2,7 @@ package com.example.quizmon.ui.shop
 
 import android.os.Bundle
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -24,6 +25,9 @@ class shop_phobien : AppCompatActivity() {
         preferenceManager = PreferenceManager(this)
         streakManager = StreakManager(this)
         
+        // Cập nhật chuỗi đăng nhập
+        streakManager.checkAndUpdateStreak()
+
         btnBack = findViewById(R.id.btnBack)
         btnDoubleReward = findViewById(R.id.btnDoubleReward)
 
@@ -37,7 +41,7 @@ class shop_phobien : AppCompatActivity() {
         
         btnDoubleReward.setOnClickListener {
             SoundManager.playClick()
-            Toast.makeText(this, "Tính năng xem quảng cáo đang được phát triển", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Xem quảng cáo nhân đôi quà đang bảo trì!", Toast.LENGTH_SHORT).show()
         }
     }
 
@@ -45,8 +49,8 @@ class shop_phobien : AppCompatActivity() {
         val currentStreak = streakManager.getCurrentStreak()
         val todayClaimed = preferenceManager.saver_va_inday("daily_reward_claimed")
         
-        // Xác định ngày hiện tại trong chuỗi 7 ngày (1-7)
-        val dayInCycle = ((currentStreak - 1) % 7) + 1
+        // Xác định ngày trong vòng lặp 7 ngày
+        val dayInCycle = if (currentStreak == 0) 1 else ((currentStreak - 1) % 7) + 1
 
         val rewardViews = listOf(
             findViewById<View>(R.id.day1), findViewById<View>(R.id.day2),
@@ -54,14 +58,17 @@ class shop_phobien : AppCompatActivity() {
             findViewById<View>(R.id.day5), findViewById<View>(R.id.day6)
         )
 
+        // Cấu hình quà tặng theo yêu cầu: [Tên, Icon, Loại quà]
         val rewards = listOf(
-            "x25 Xu" to R.drawable.sao_shop_map,
-            "Nhân đôi x5" to R.drawable.sao_shop_map,
-            "Điểm x100" to R.drawable.sao_shop_map,
-            "x50 Xu" to R.drawable.sao_shop_map,
-            "Bỏ qua x5" to R.drawable.sao_shop_map,
-            "x75 Xu" to R.drawable.sao_shop_map
+            Triple("25 Sao ước", R.drawable.sao_shop_map, "sao"),
+            Triple("Nhân đôi x2", R.drawable.ic_double_score, "support_double"),
+            Triple("50/50 x2", R.drawable.ic_fifty_fifty, "support_5050"),
+            Triple("50 Xu cỏ", R.drawable.su_shop_map, "xu"),
+            Triple("Gợi ý x2", R.drawable.ic_reveal_answer, "support_hint"),
+            Triple("100 Xu cỏ", R.drawable.su_shop_map, "xu")
         )
+
+        val shakeAnim = AnimationUtils.loadAnimation(this, R.anim.shake)
 
         for (i in rewardViews.indices) {
             val view = rewardViews[i]
@@ -73,92 +80,118 @@ class shop_phobien : AppCompatActivity() {
             val bg = view.findViewById<LinearLayout>(R.id.layoutDayBg)
             val check = view.findViewById<ImageView>(R.id.ivCheck)
 
-            if (dayNum < dayInCycle || (dayNum == dayInCycle && todayClaimed)) {
-                // Đã nhận
-                bg.setBackgroundColor(ContextCompat.getColor(this, R.color.white))
-                check.visibility = View.VISIBLE
-            } else if (dayNum == dayInCycle) {
-                // Sẵn sàng nhận
-                bg.setBackgroundResource(R.drawable.bg_stats_bar) // Highlight màu vàng/cam
-                view.setOnClickListener { claimReward(dayNum) }
+            when {
+                dayNum < dayInCycle || (dayNum == dayInCycle && todayClaimed) -> {
+                    // Đã nhận quà
+                    bg.setBackgroundResource(R.drawable.bg_stats_bar)
+                    bg.alpha = 0.6f
+                    check.visibility = View.VISIBLE
+                    view.setOnClickListener(null)
+                }
+                dayNum == dayInCycle -> {
+                    // Ngày hiện tại chưa nhận - Chạy Animation Rung
+                    bg.setBackgroundResource(R.drawable.bg_card_overlay_selector)
+                    view.startAnimation(shakeAnim)
+                    view.setOnClickListener { claimReward(dayNum, rewards[i].third) }
+                }
+                else -> {
+                    // Các ngày tiếp theo
+                    bg.setBackgroundColor(ContextCompat.getColor(this, android.R.color.darker_gray))
+                    bg.alpha = 0.3f
+                }
             }
         }
         
-        // Xử lý ngày 7 đặc biệt
+        // Ngày 7 Đặc biệt
         val layoutDay7 = findViewById<View>(R.id.layoutDay7)
-        if (dayInCycle == 7 && !todayClaimed) {
-            layoutDay7.setOnClickListener { claimReward(7) }
+        if (dayInCycle == 7) {
+            if (todayClaimed) {
+                layoutDay7.alpha = 0.6f
+                layoutDay7.setOnClickListener(null)
+            } else {
+                layoutDay7.startAnimation(shakeAnim)
+                layoutDay7.setOnClickListener { claimReward(7, "special") }
+            }
+        } else {
+            layoutDay7.alpha = 0.3f
         }
     }
 
-    private fun claimReward(day: Int) {
+    private fun claimReward(day: Int, type: String) {
         if (preferenceManager.saver_va_inday("daily_reward_claimed")) return
 
         SoundManager.playCoin()
-        when (day) {
-            1 -> preferenceManager.addCoin(25)
-            2 -> preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_CHANCE, 5)
-            3 -> preferenceManager.addLevelScore(1, 100) // Ví dụ cộng vào ải 1
-            4 -> preferenceManager.addCoin(50)
-            5 -> preferenceManager.addSupport(PreferenceManager.SUPPORT_CORRECT_ANSWER, 5) // Dùng tạm cho Bỏ qua
-            6 -> preferenceManager.addCoin(75)
-            7 -> {
+        when (type) {
+            "sao" -> preferenceManager.addCoin(25)
+            "xu" -> preferenceManager.addXu(if(day == 4) 50 else 100)
+            "support_double" -> preferenceManager.addSupport(PreferenceManager.SUPPORT_DOUBLE_POINTS, 2)
+            "support_5050" -> preferenceManager.addSupport(PreferenceManager.SUPPORT_5050, 2)
+            "support_hint" -> preferenceManager.addSupport(PreferenceManager.SUPPORT_CORRECT_ANSWER, 2)
+            "special" -> {
                 preferenceManager.add_sh_Egg("1")
                 preferenceManager.add_sh_Egg("4")
                 preferenceManager.add_sh_Egg("6")
+                Toast.makeText(this, "WOW! Bạn nhận được bộ 3 Trứng Pet cực hiếm!", Toast.LENGTH_LONG).show()
             }
         }
         
         preferenceManager.Xn_va_inday("daily_reward_claimed")
-        Toast.makeText(this, "Đã nhận thưởng ngày $day!", Toast.LENGTH_SHORT).show()
-        setupDailyRewards() // Cập nhật lại UI
+        
+        // Animation chúc mừng khi nhấn nhận
+        val claimAnim = AnimationUtils.loadAnimation(this, R.anim.pet_bounce)
+        findViewById<View>(R.id.tvTitle).startAnimation(claimAnim)
+        
+        Toast.makeText(this, "Điểm danh ngày $day thành công!", Toast.LENGTH_SHORT).show()
+        setupDailyRewards()
+        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
     }
 
     private fun setupDailyTasks() {
         val tasks = listOf(
-            Triple(R.id.task1, "Đăng nhập nhận thưởng", "nv1"),
-            Triple(R.id.task2, "Hoàn thành 1 ải nhỏ", "nv2"),
-            Triple(R.id.task3, "Nạp xu vào tài khoản", "nv3"),
-            Triple(R.id.task4, "Mua trứng trong PVP", "nv4"),
-            Triple(R.id.task5, "Trả lời đúng 1 câu hỏi", "nv5")
+            Triple(R.id.task1, "Đăng nhập hôm nay", "nv1"),
+            Triple(R.id.task2, "Trả lời đúng 1 câu", "nv2"),
+            Triple(R.id.task3, "Vượt qua 1 cấp độ", "nv3"),
+            Triple(R.id.task4, "Dùng vòng quay may mắn", "nv4"),
+            Triple(R.id.task5, "Thắng 3 trận PVP (Cực khó)", "nv5")
         )
-
-        val taskRewards = listOf(10, 20, 20, 10, 5)
 
         for (i in tasks.indices) {
             val taskView = findViewById<View>(tasks[i].first)
             val taskId = tasks[i].third
             val title = tasks[i].second
-            val rewardAmount = taskRewards[i]
+            val btn = taskView.findViewById<Button>(R.id.btnAction)
+            val tvReward = taskView.findViewById<TextView>(R.id.tvTaskReward)
+            val ivIcon = taskView.findViewById<ImageView>(R.id.ivTaskRewardIcon)
 
             taskView.findViewById<TextView>(R.id.tvTaskTitle).text = title
-            taskView.findViewById<TextView>(R.id.tvTaskReward).text = "+ $rewardAmount Xu"
-            
-            val btn = taskView.findViewById<Button>(R.id.btnAction)
 
+            // NV khó nhất thưởng Sao ước, các NV khác thưởng Xu cỏ
+            if (taskId == "nv5") {
+                tvReward.text = "+ 10 Sao ước"
+                tvReward.setTextColor(ContextCompat.getColor(this, R.color.red))
+                ivIcon.setImageResource(R.drawable.sao_shop_map)
+            } else {
+                tvReward.text = "+ 20 Xu cỏ"
+                ivIcon.setImageResource(R.drawable.su_shop_map)
+            }
+            
             if (preferenceManager.saver_va_inday(taskId)) {
                 btn.isEnabled = false
                 btn.text = "Đã xong"
-                btn.setBackgroundTintList(ContextCompat.getColorStateList(this, android.R.color.darker_gray))
+                btn.alpha = 0.5f
             } else {
                 btn.setOnClickListener {
                     if (taskId == "nv1" || preferenceManager.Dk_xacnhan_cq(taskId)) {
                         SoundManager.playCoin()
-                        preferenceManager.addCoin(rewardAmount)
+                        if (taskId == "nv5") preferenceManager.addCoin(10) else preferenceManager.addXu(20)
                         preferenceManager.Xn_va_inday(taskId)
                         btn.isEnabled = false
                         btn.text = "Đã xong"
-                        Toast.makeText(this, "Hoàn thành nhiệm vụ!", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Nhiệm vụ hoàn tất!", Toast.LENGTH_SHORT).show()
+                        TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
                     } else {
                         SoundManager.playWrong()
-                        val msg = when(taskId) {
-                            "nv2" -> "Chưa xong ải nào!"
-                            "nv3" -> "Hãy nạp xu trước!"
-                            "nv4" -> "Hãy mua trứng trong shop PVP!"
-                            "nv5" -> "Hãy trả lời đúng 1 câu hỏi!"
-                            else -> "Chưa hoàn thành yêu cầu!"
-                        }
-                        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this, "Bạn chưa hoàn thành yêu cầu này!", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
@@ -168,12 +201,5 @@ class shop_phobien : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         TaskHeadManager.startLoop(findViewById(R.id.taskhead), preferenceManager)
-        SoundManager.playMusic(this, R.raw.background)
-    }
-
-    override fun onPause() {
-        super.onPause()
-        TaskHeadManager.stopLoop()
-        SoundManager.pauseMusic()
     }
 }

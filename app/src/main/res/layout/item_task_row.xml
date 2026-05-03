@@ -3,16 +3,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="8dp"
-    app:cardCornerRadius="15dp"
-    app:cardElevation="2dp">
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@android:color/transparent">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="12dp"
-        android:gravity="center_vertical">
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_task_item"
+        android:clickable="true"
+        android:focusable="true">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -24,31 +28,59 @@
                 android:id="@+id/tvTaskTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nhiệm vụ 1"
+                android:text="@string/task_label"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                android:textColor="#333" />
+                android:textColor="#37474F" />
 
             <TextView
-                android:id="@+id/tvTaskReward"
+                android:id="@+id/tvTaskDesc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="+ 10 coin"
-                android:textSize="14sp"
-                android:textColor="#4CAF50"
-                android:textStyle="bold" />
+                android:text="@string/task_desc_placeholder"
+                android:textSize="12sp"
+                android:textColor="#78909C"
+                android:layout_marginTop="2dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:id="@+id/ivTaskRewardIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/su_shop_map"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@null" />
+
+                <TextView
+                    android:id="@+id/tvTaskReward"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/task_reward_format"
+                    android:textSize="14sp"
+                    android:textColor="#2E7D32"
+                    android:textStyle="bold" />
+            </LinearLayout>
         </LinearLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnAction"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
             android:layout_width="wrap_content"
-            android:layout_height="36dp"
-            android:paddingHorizontal="12dp"
-            android:text="Nhận"
-            android:textSize="12sp"
-            android:backgroundTint="#4CAF50"
-            android:textColor="@color/white"
-            app:cornerRadius="18dp" />
+            android:layout_height="40dp"
+            android:text="@string/task_claim"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:backgroundTint="#4CAF50"
+            android:textColor="@android:color/white"
+            app:cornerRadius="20dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp" />
 
     </LinearLayout>
 </androidx.cardview.widget.CardView>

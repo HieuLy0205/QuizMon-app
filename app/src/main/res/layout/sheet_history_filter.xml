@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:fontFamily="san-serif-bold"
-            android:text="Bộ lọc"
+            android:text="@string/filter_title"
             android:textColor="@color/text_primary"
             android:textSize="18sp" />
 
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:fontFamily="san-serif-black"
-            android:text="THỂ LOẠI"
+            android:text="@string/filter_category"
             android:textColor="@color/text_hint"
             android:textSize="12sp"
             android:letterSpacing="0.05" />
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:fontFamily="san-serif-black"
-            android:text="LOẠI ĐÁP ÁN"
+            android:text="@string/filter_type_answer"
             android:textColor="@color/text_hint"
             android:textSize="12sp"
             android:letterSpacing="0.05" />
@@ -84,7 +84,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:fontFamily="san-serif-black"
-                android:text="Thiết lập lại"
+                android:text="@string/filter_reset"
                 android:textSize="14sp" />
 
             <Button
@@ -94,7 +94,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/bg_btn_orange"
                 android:fontFamily="san-serif-black"
-                android:text="Áp dụng"
+                android:text="@string/filter_apply"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
         </LinearLayout>

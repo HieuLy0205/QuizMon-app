@@ -2,7 +2,6 @@ package com.example.quizmon.ui.profile
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.MotionEvent
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
@@ -18,12 +17,10 @@ import com.example.quizmon.ui.shop.activity_shop
 import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.SoundManager
 import com.example.quizmon.utils.TaskHeadManager
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.textfield.TextInputEditText
 
 class ProfileActivity : AppCompatActivity() {
-
-    //  Swipe variables
-    private var x1 = 0f
-    private var x2 = 0f
 
     private lateinit var imgAvatar: ImageView
     private lateinit var frame: View
@@ -33,15 +30,15 @@ class ProfileActivity : AppCompatActivity() {
     private lateinit var tvGender: TextView
     private lateinit var tvTopics: TextView
 
-    private lateinit var btnEditProfile: Button
-    private lateinit var btnEditAvatar: Button
-    private lateinit var btnReset: Button
+    private lateinit var btnEditProfile: MaterialButton
+    private lateinit var btnEditAvatar: MaterialButton
+    private lateinit var btnReset: MaterialButton
 
     private lateinit var layoutEdit: LinearLayout
-    private lateinit var etName: EditText
-    private lateinit var etAge: EditText
-    private lateinit var etTopics: EditText
-    private lateinit var btnSave: Button
+    private lateinit var etName: TextInputEditText
+    private lateinit var etAge: TextInputEditText
+    private lateinit var etTopics: TextInputEditText
+    private lateinit var btnSave: MaterialButton
 
     private lateinit var preferenceManager: PreferenceManager
 
@@ -50,7 +47,6 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
 
         preferenceManager = PreferenceManager(this)
-        val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
 
         imgAvatar = findViewById(R.id.imgAvatar)
         frame = findViewById(R.id.frame)
@@ -73,54 +69,47 @@ class ProfileActivity : AppCompatActivity() {
         loadProfile()
         setupTaskbar()
 
-        // EDIT
         btnEditProfile.setOnClickListener {
+            SoundManager.playClick()
+            val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
             etName.setText(prefs.getString("name", ""))
             etAge.setText(prefs.getInt("age", 0).toString())
-            etTopics.setText(
-                prefs.getStringSet("topics", setOf())
-                    ?.joinToString(", ")
-            )
-            layoutEdit.visibility = View.VISIBLE
+            etTopics.setText(prefs.getStringSet("topics", setOf())?.joinToString(", "))
+            layoutEdit.visibility = if (layoutEdit.visibility == View.VISIBLE) View.GONE else View.VISIBLE
         }
 
-        // SAVE
         btnSave.setOnClickListener {
-
+            SoundManager.playClick()
+            val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
             val newName = etName.text.toString().trim()
             val newAge = etAge.text.toString().toIntOrNull() ?: 0
+            val newTopics = etTopics.text.toString().split(",").map { it.trim() }.filter { it.isNotEmpty() }.toSet()
 
-            val newTopics = etTopics.text.toString()
-                .split(",")
-                .map { it.trim() }
-                .filter { it.isNotEmpty() }
-                .toSet()
-
-            prefs.edit()
-                .putString("name", newName)
-                .putInt("age", newAge)
-                .putStringSet("topics", newTopics)
-                .apply()
+            prefs.edit().apply {
+                putString("name", newName)
+                putInt("age", newAge)
+                putStringSet("topics", newTopics)
+                apply()
+            }
 
             loadProfile()
             layoutEdit.visibility = View.GONE
+            Toast.makeText(this, "Đã cập nhật hồ sơ!", Toast.LENGTH_SHORT).show()
         }
 
-        // ĐỔI AVATAR
         btnEditAvatar.setOnClickListener {
+            SoundManager.playClick()
             startActivity(Intent(this, AvatarActivity::class.java))
         }
 
-        // RESET
         btnReset.setOnClickListener {
-
+            SoundManager.playClick()
             AlertDialog.Builder(this)
-                .setTitle("Xác nhận")
-                .setMessage("Bạn muốn reset toàn bộ dữ liệu?")
-                .setPositiveButton("Reset") { _, _ ->
-
-                    prefs.edit().clear().apply()
-
+                .setTitle("Xác nhận Reset")
+                .setMessage("Toàn bộ tiến trình chơi và dữ liệu sẽ bị xóa vĩnh viễn. Bạn có chắc chắn?")
+                .setPositiveButton("Xóa hết") { _, _ ->
+                    getSharedPreferences("QuizMonPrefs", MODE_PRIVATE).edit().clear().apply()
+                    getSharedPreferences("QuizMonMapPrefs", MODE_PRIVATE).edit().clear().apply()
                     startActivity(Intent(this, AgeActivity::class.java))
                     finishAffinity()
                 }
@@ -131,9 +120,7 @@ class ProfileActivity : AppCompatActivity() {
 
     private fun setupTaskbar() {
         findViewById<View>(R.id.indicator_profile)?.visibility = View.VISIBLE
-        findViewById<TextView>(R.id.tv_nav_profile)?.setTextColor(
-            ContextCompat.getColor(this, R.color.taskbar_active)
-        )
+        findViewById<TextView>(R.id.tv_nav_profile)?.setTextColor(ContextCompat.getColor(this, R.color.taskbar_active))
 
         findViewById<LinearLayout>(R.id.nav_home)?.setOnClickListener {
             SoundManager.playClick()
@@ -157,53 +144,28 @@ class ProfileActivity : AppCompatActivity() {
         }
     }
 
-    //  Swipe BACK chuẩn
-    override fun dispatchTouchEvent(ev: MotionEvent): Boolean {
-        when (ev.action) {
-            MotionEvent.ACTION_DOWN -> {
-                x1 = ev.x
-            }
-
-            MotionEvent.ACTION_UP -> {
-                x2 = ev.x
-
-                // 👉 Vuốt từ trái sang phải
-                if (x2 - x1 > 120) {
-                    finish()
-                }
-            }
-        }
-        return super.dispatchTouchEvent(ev)
-    }
-
-    // LOAD PROFILE
     private fun loadProfile() {
         val prefs = getSharedPreferences("QuizMonPrefs", MODE_PRIVATE)
-
-        val name = prefs.getString("name", "")
-        val age = prefs.getInt("age", 0)
-        val gender = prefs.getString("gender", "")
+        val name = prefs.getString("name", "Người chơi")
+        val age = prefs.getInt("age", 18)
+        val gender = prefs.getString("gender", "Chưa rõ")
         val topics = prefs.getStringSet("topics", setOf())
         val avatar = prefs.getString("avatar", "avatar1")
         val frameRes = prefs.getInt("frame", R.drawable.bg_avatar_border_fancy)
 
-        tvName.text = if (name.isNullOrEmpty()) "Chưa đặt tên" else name
+        tvName.text = name
         tvAge.text = "Tuổi: $age"
         tvGender.text = "Giới tính: $gender"
-        tvTopics.text = "Sở thích: ${topics?.joinToString(", ")}"
+        tvTopics.text = "Sở thích: ${if (topics.isNullOrEmpty()) "Chưa cập nhật" else topics.joinToString(", ")}"
 
-        setAvatar(avatar ?: "avatar1")
-        frame.setBackgroundResource(frameRes)
-    }
-
-    // SET AVATAR
-    private fun setAvatar(id: String) {
-        when (id) {
-            "avatar1" -> imgAvatar.setImageResource(R.drawable.avatar1)
-            "avatar2" -> imgAvatar.setImageResource(R.drawable.avatar2)
-            "avatar_vip1" -> imgAvatar.setImageResource(R.drawable.avatar_vip1)
-            else -> imgAvatar.setImageResource(R.drawable.avatar1)
+        val resId = when (avatar) {
+            "avatar1" -> R.drawable.avatar1
+            "avatar2" -> R.drawable.avatar2
+            "avatar_vip1" -> R.drawable.avatar_vip1
+            else -> R.drawable.avatar1
         }
+        imgAvatar.setImageResource(resId)
+        frame.setBackgroundResource(frameRes)
     }
 
     override fun onResume() {

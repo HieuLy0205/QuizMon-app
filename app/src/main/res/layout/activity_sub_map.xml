@@ -59,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Điểm ải: "
+            android:text="@string/level_score_prefix"
             android:textStyle="bold"
             android:textColor="#444444"
             android:textSize="14sp"/>
@@ -107,7 +107,8 @@
                 app:layout_constraintEnd_toStartOf="@+id/star2"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintHorizontal_chainStyle="spread" />
+                app:layout_constraintHorizontal_chainStyle="spread"
+                android:contentDescription="@null" />
 
             <ImageView
                 android:id="@+id/star2"
@@ -117,7 +118,8 @@
                 app:layout_constraintStart_toEndOf="@+id/star1"
                 app:layout_constraintEnd_toStartOf="@+id/star3"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:contentDescription="@null" />
 
             <ImageView
                 android:id="@+id/star3"
@@ -127,7 +129,8 @@
                 app:layout_constraintStart_toEndOf="@+id/star2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" />
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:contentDescription="@null" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </FrameLayout>
@@ -199,21 +202,16 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:layout_marginBottom="20dp">
-                        <ImageView android:id="@+id/ivSumStar1" android:layout_width="60dp" android:layout_height="60dp" android:src="@android:drawable/btn_star_big_on" android:rotation="-15" android:alpha="0.2"/>
-                        <ImageView android:id="@+id/ivSumStar2" android:layout_width="80dp" android:layout_height="80dp" android:src="@android:drawable/btn_star_big_on" android:layout_marginTop="-10dp" android:alpha="0.2"/>
-                        <ImageView android:id="@+id/ivSumStar3" android:layout_width="60dp" android:layout_height="60dp" android:src="@android:drawable/btn_star_big_on" android:rotation="15" android:alpha="0.2"/>
+                        <ImageView android:id="@+id/ivSumStar1" android:layout_width="60dp" android:layout_height="60dp" android:src="@android:drawable/btn_star_big_on" android:rotation="-15" android:alpha="0.2" android:contentDescription="@null" />
+                        <ImageView android:id="@+id/ivSumStar2" android:layout_width="80dp" android:layout_height="80dp" android:src="@android:drawable/btn_star_big_on" android:layout_marginTop="-10dp" android:alpha="0.2" android:contentDescription="@null" />
+                        <ImageView android:id="@+id/ivSumStar3" android:layout_width="60dp" android:layout_height="60dp" android:src="@android:drawable/btn_star_big_on" android:rotation="15" android:alpha="0.2" android:contentDescription="@null" />
                     </LinearLayout>
 
                     <!-- Thống kê -->
                     <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="✓ Câu trả lời đúng" android:textSize="18sp" android:textStyle="bold" android:textColor="#444444"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/summary_correct_label" android:textSize="18sp" android:textStyle="bold" android:textColor="#444444"/>
                         <TextView android:id="@+id/tvCorrectCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="0/0" android:textSize="18sp" android:textStyle="bold" android:textColor="#000000"/>
                     </RelativeLayout>
-
-<!--                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">-->
-<!--                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="⏱ Điểm thưởng" android:textSize="18sp" android:textStyle="bold" android:textColor="#444444"/>-->
-<!--                        <TextView android:id="@+id/tvBonusPoints" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentEnd="true" android:text="0" android:textSize="18sp" android:textStyle="bold" android:textColor="#000000"/>-->
-<!--                    </RelativeLayout>-->
 
                     <!-- Tổng điểm -->
                     <LinearLayout
@@ -224,7 +222,7 @@
                         android:paddingVertical="8dp"
                         android:gravity="center"
                         android:layout_marginBottom="20dp">
-                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Tổng điểm" android:textSize="14sp" android:textStyle="bold" android:textColor="#444444"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/summary_total_score_label" android:textSize="14sp" android:textStyle="bold" android:textColor="#444444"/>
                         <TextView android:id="@+id/tvTotalScore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" android:textSize="22sp" android:textStyle="bold" android:textColor="#F44336" android:layout_marginStart="8dp"/>
                     </LinearLayout>
 
@@ -232,7 +230,7 @@
                         android:id="@+id/tvPercentile"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Bạn đang thể hiện giỏi hơn --% số người chơi khác."
+                        android:text="@string/level_performance_msg"
                         android:gravity="center"
                         android:textColor="#0277BD"
                         android:textStyle="italic"/>
@@ -247,7 +245,7 @@
                 android:layout_height="60dp"
                 android:background="@drawable/bg_orange_btn"
                 app:backgroundTint="#F44336"
-                android:text="Cấp độ 1"
+                android:text="@string/level_title_format"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -265,7 +263,7 @@
                 android:layout_marginTop="16dp"
                 android:background="@drawable/bg_orange_btn"
                 app:backgroundTint="#4CAF50"
-                android:text="Tiếp tục"
+                android:text="@string/btn_next"
                 android:textColor="#FFFFFF"
                 android:textSize="18sp"
                 android:textStyle="bold"

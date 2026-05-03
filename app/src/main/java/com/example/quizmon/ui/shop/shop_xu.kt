@@ -59,11 +59,11 @@ class shop_xu: AppCompatActivity() {
                 Toast.makeText(this, "chọn loại thẻ thanh toán", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }else {
-                preferenceManager.addXu(item!!.amount)
+                preferenceManager.addCoin(item!!.amount)
                 preferenceManager.Dk_batmo_xn("nv3", true)
                 Toast.makeText(
                     this,
-                    "thanh toán thành công ${selectedItem!!.amount}đ",
+                    "Nạp thành công ${selectedItem!!.amount} Sao ước",
                     Toast.LENGTH_SHORT
                 ).show()
             }
@@ -86,8 +86,8 @@ class shop_xu: AppCompatActivity() {
         val imgQrmomo = findViewById<ImageView>(R.id.imgQR)
         val item = selectedItem ?: return
         //Tạo link thay số tài khoản
-        val qrLink = "https://img.vietqr.io/image/ICB-0342061314-compact.png?amount=${item.amount}&addInfo=NAPXU_VNPAY_${item.text}"
-        val qrLink1 = "https://img.vietqr.io/image/momo-0346541884-compact.png?amount=${item.amount}&addInfo=NAPXU_MOMO_${item.text}"
+        val qrLink = "https://img.vietqr.io/image/ICB-0342061314-compact.png?amount=${item.amount}&addInfo=NAPSAO_VNPAY_${item.text}"
+        val qrLink1 = "https://img.vietqr.io/image/momo-0346541884-compact.png?amount=${item.amount}&addInfo=NAPSAO_MOMO_${item.text}"
         imgQrmomo.setOnClickListener {
             imgQrmomo.load(qrLink1)
             Toast.makeText(this, "thanh toán QRmomo", Toast.LENGTH_SHORT).show()
