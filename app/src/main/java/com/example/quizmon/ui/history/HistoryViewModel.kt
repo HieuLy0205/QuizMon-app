@@ -8,25 +8,25 @@ import com.example.quizmon.data.source.local.HistoryRecord
 import com.example.quizmon.data.repository.HistoryRepository
 import kotlinx.coroutines.launch
 
-
 class HistoryViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val repository: HistoryRepository
+    //  Khởi tạo repository
+    private val repository: HistoryRepository = run {
+        val db = AppDatabase.getInstance(application)
+        HistoryRepository(db.historyDao())
+    }
 
-    // Trạng thái bộ lọc đang áp dụng
     private val _selectedCategory   = MutableLiveData("all")
     private val _selectedAnswerType = MutableLiveData("all")
     val selectedCategory  : LiveData<String> = _selectedCategory
     val selectedAnswerType: LiveData<String> = _selectedAnswerType
 
-    // Trigger để switchMap reload khi filter thay đổi
     private val _filterTrigger = MutableLiveData(Pair("all", "all"))
 
     val historyList: LiveData<List<HistoryRecord>> = _filterTrigger.switchMap { (cat, ans) ->
         repository.getFiltered(cat, ans)
     }
 
-    // Danh sách thể loại đã chơi (động từ DB)
     private val _categories = MutableLiveData<List<String>>(emptyList())
     val categories: LiveData<List<String>> = _categories
 
@@ -34,8 +34,6 @@ class HistoryViewModel(application: Application) : AndroidViewModel(application)
         get() = _selectedCategory.value != "all" || _selectedAnswerType.value != "all"
 
     init {
-        val db = AppDatabase.getInstance(application)
-        repository = HistoryRepository(db.historyDao())
         refreshCategories()
     }
 
@@ -60,15 +58,6 @@ class HistoryViewModel(application: Application) : AndroidViewModel(application)
             refreshCategories()
         }
     }
-
-    // -------------------------------------------------------------------------
-    // Gọi hàm này từ QuizActivity ngay sau khi người chơi bấm Xác nhận đáp án
-    // -------------------------------------------------------------------------
-
-//     question       Object Question đang hiển thị
-//      chosenIndex    Index đáp án người chơi đã chọn (selectedIndex trong QuizActivity)
-//       categoryDisplay Tên hiển thị thể loại — lấy từ getCategoryDisplayName(currentCategory)
-//                            VD: "Âm nhạc", "Lịch sử", "Vật lý"
 
     fun saveAnswer(
         question        : Question,

@@ -62,13 +62,16 @@ dependencies {
     implementation("io.coil-kt:coil:2.6.0")
     implementation("com.google.android.gms:play-services-base:17.6.0")
 
-
-
-    implementation("androidx.room:room-runtime:2.6.1")
-    implementation("androidx.room:room-ktx:2.6.1")
-    ksp("androidx.room:room-compiler:2.6.1")
+    val room_version = "2.7.0-beta01"
+    implementation("androidx.room:room-runtime:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
+    ksp("androidx.room:room-compiler:$room_version")
 
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.8.7")
 
+}
+
+ksp {
+    arg("room.generateKotlin", "true")
 }
