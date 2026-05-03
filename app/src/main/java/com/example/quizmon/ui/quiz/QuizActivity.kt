@@ -28,12 +28,14 @@ import com.example.quizmon.data.repository.StatisticsRepository
 import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.SoundManager
 import com.google.android.material.button.MaterialButton
+import androidx.activity.viewModels
+import com.example.quizmon.ui.history.HistoryViewModel
 
-/**
- * Hoạt động chính của phần trả lời câu hỏi Quiz.
- * Quản lý việc hiển thị câu hỏi, xử lý đáp án và sử dụng các phụ trợ.
- * Cơ chế: Khi nhấn vào phụ trợ sẽ hiện Dialog xác nhận tùy chỉnh kèm mô tả.
- */
+
+// * Hoạt động chính của phần trả lời câu hỏi Quiz.
+// * Quản lý việc hiển thị câu hỏi, xử lý đáp án và sử dụng các phụ trợ.
+// * Cơ chế: Khi nhấn vào phụ trợ sẽ hiện Dialog xác nhận tùy chỉnh kèm mô tả.
+
 class QuizActivity : AppCompatActivity() {
 
     companion object {
@@ -72,6 +74,9 @@ class QuizActivity : AppCompatActivity() {
     private lateinit var quizRepository: QuizRepository
     private lateinit var statisticsRepository: StatisticsRepository
     private lateinit var preferenceManager: PreferenceManager
+
+    private val historyViewModel: HistoryViewModel by viewModels()
+
 
     // --- Biến trạng thái câu hỏi ---
     private var currentQuestion: Question? = null
@@ -231,9 +236,9 @@ class QuizActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Thiết lập background bo góc và viền cho ô phụ trợ
-     */
+
+//     Thiết lập background bo góc và viền cho ô phụ trợ
+
     private fun setPowerUpBackground(view: View, isActive: Boolean) {
         val drawable = GradientDrawable().apply {
             shape = GradientDrawable.RECTANGLE
@@ -323,6 +328,13 @@ class QuizActivity : AppCompatActivity() {
                     correct = if (isCorrect) 1 else 0,
                     wrong = if (isCorrect) 0 else 1
                 )
+
+                // Lưu lịch sử
+                    historyViewModel.saveAnswer(
+                        question        = q,
+                        chosenIndex     = selectedIndex,
+                        categoryDisplay = getCategoryDisplayName(currentCategory)
+                    )
 
                 btnConfirm.text = "Tiếp tục"
                 btnConfirm.isEnabled = true
