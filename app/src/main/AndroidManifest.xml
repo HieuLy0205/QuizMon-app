@@ -33,9 +33,8 @@
         <activity android:name=".ui.pet.PetActivity"/>
         <activity android:name=".ui.profile.ProfileActivity"/>
         <activity
-            android:name=".ui.history.HistoryActivity"/>
-<!--            android:exported="false"-->
-<!--            android:windowSoftInputMode="adjustResize" />-->
+            android:name=".ui.history.HistoryActivity"
+            android:exported="false"/>
         <activity android:name=".ui.level.LevelMapActivity"/>
         <activity android:name=".ui.level.SubMapActivity"/>
         <activity android:name=".ui.quiz.QuizActivity"/>
