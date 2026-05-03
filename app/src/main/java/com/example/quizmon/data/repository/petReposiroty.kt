@@ -26,9 +26,12 @@ class petReposiroty {
             1,
             3,
             mapOf(
-                1 to intArrayOf(R.drawable.pet003_xaubong_c1),
-                2 to intArrayOf(R.drawable.pet003_xaubong_c2),
-                3 to intArrayOf(R.drawable.pet003_xaubong_c3)
+                1 to intArrayOf(R.drawable.pet003_xaubong_c1,
+                    R.drawable.pet_003_xaubong_c1_1),
+                2 to intArrayOf(R.drawable.pet003_xaubong_c2,
+                    R.drawable.pet_003_xaubong_c2_1),
+                3 to intArrayOf(R.drawable.pet003_xaubong_c3,
+                    R.drawable.pet_003_xaubong_c3_3)
             )
         ),
         Pet(
@@ -37,9 +40,12 @@ class petReposiroty {
             1,
             3,
             mapOf(
-                1 to intArrayOf(R.drawable.pet002_tuot_c1),
-                2 to intArrayOf(R.drawable.pet002_tuot_c2),
-                3 to intArrayOf(R.drawable.pet002_tuot_c3)
+                1 to intArrayOf(R.drawable.pet002_tuot_c1,
+                    R.drawable.pet_002_tuot_c3_1),
+                2 to intArrayOf(R.drawable.pet002_tuot_c2,
+                    R.drawable.pet_002_tuot_c3_2),
+                3 to intArrayOf(R.drawable.pet002_tuot_c3,
+                    R.drawable.pet_002_tuot_c3_3)
             )
         ),
         Pet(
@@ -48,9 +54,12 @@ class petReposiroty {
             1,
             3,
             mapOf(
-                1 to intArrayOf(R.drawable.pet004_saonhi_c1),
-                2 to intArrayOf(R.drawable.pet004_saonhi_c2),
-                3 to intArrayOf(R.drawable.pet004_saonhi_c3)
+                1 to intArrayOf(R.drawable.pet004_saonhi_c1,
+                    R.drawable.pet004_saonhi_c1_1),
+                2 to intArrayOf(R.drawable.pet004_saonhi_c2,
+                    R.drawable.pet004_saonhi_c2_1),
+                3 to intArrayOf(R.drawable.pet004_saonhi_c3,
+                    R.drawable.pet004_saonhi_c3_1)
             )
         )
     )

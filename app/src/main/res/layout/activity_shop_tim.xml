@@ -137,7 +137,7 @@
 
                     <ImageView
                         android:id="@+id/imgXunap"
-                        android:layout_width="196dp"
+                        android:layout_width="193dp"
                         android:layout_height="84dp"
                         android:layout_gravity="center_vertical"
                         android:background="@drawable/bg_map_4"
@@ -168,7 +168,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginTop="24dp"
-                    android:text="XÁC NHẬN THANH TOÁN" />
+                    android:textColor="#090808"
+                    android:backgroundTint="#8D06D5CB"
+                    android:text="XÁC NHẬN THANH TOÁN"
+                    app:cornerRadius="8dp"/>
             </LinearLayout>
 
             <!-- Footer Footer -->
@@ -193,6 +196,7 @@
                 android:layout_height="45dp"
                 android:layout_gravity="bottom"
                 android:layout_margin="24dp"
+                android:backgroundTint="#3E3232"
                 android:background="@drawable/bg_difficulty_btn"
                 android:contentDescription="@string/btn_back"
                 android:padding="12dp"

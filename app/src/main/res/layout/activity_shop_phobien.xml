@@ -22,6 +22,7 @@
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#3E3232"
         android:background="@drawable/bg_difficulty_btn"
         android:contentDescription="@string/btn_back"
         android:padding="12dp"
@@ -34,21 +35,20 @@
     <!-- Tiêu đề màn hình -->
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_width="322dp"
+        android:layout_height="60dp"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/btn_play"
-        android:backgroundTint="#89D9D6D6"
+        android:background="@drawable/icon_shop_map"
         android:gravity="center"
         android:text="@string/text_ShopNv"
-        android:textSize="22sp"
         android:textColor="#1B1919"
+        android:textSize="22sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@id/btnBack"
         app:layout_constraintBottom_toBottomOf="@id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/btnBack"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="@id/btnBack" />
 
     <!-- Danh sách nhiệm vụ -->
     <ScrollView
@@ -64,6 +64,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingHorizontal="16dp"
+            android:padding="20dp"
             android:paddingBottom="24dp">
 
             <!-- Nhiệm vụ 1 -->
@@ -73,7 +74,11 @@
                 android:orientation="horizontal"
                 android:paddingVertical="12dp"
                 android:gravity="center_vertical">
-
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sao_shop_map" />
                 <TextView
                     android:id="@+id/text_nv1"
                     android:layout_width="0dp"
@@ -83,12 +88,6 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="#333" />
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/sao_shop_map" />
 
                 <Button
                     android:id="@+id/btn_Nv1"
@@ -109,6 +108,12 @@
                 android:paddingVertical="12dp"
                 android:gravity="center_vertical">
 
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sao_shop_map" />
+
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -118,11 +123,6 @@
                     android:textStyle="bold"
                     android:textColor="#333" />
 
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/sao_shop_map" />
 
                 <Button
                     android:id="@+id/btn_Nv2"
@@ -142,6 +142,12 @@
                 android:orientation="horizontal"
                 android:paddingVertical="12dp"
                 android:gravity="center_vertical">
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sao_shop_map" />
+
 
                 <TextView
                     android:layout_width="0dp"
@@ -151,12 +157,6 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="#333" />
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/sao_shop_map" />
 
                 <Button
                     android:id="@+id/btn_Nv3"
@@ -177,6 +177,11 @@
                 android:paddingVertical="12dp"
                 android:gravity="center_vertical">
 
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sao_shop_map" />
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -185,12 +190,6 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="#333" />
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/sao_shop_map" />
 
                 <Button
                     android:id="@+id/btn_Nv4"
@@ -211,6 +210,13 @@
                 android:paddingVertical="12dp"
                 android:gravity="center_vertical">
 
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/sao_shop_map" />
+
+
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -219,12 +225,6 @@
                     android:textSize="18sp"
                     android:textStyle="bold"
                     android:textColor="#333" />
-
-                <ImageView
-                    android:layout_width="36dp"
-                    android:layout_height="36dp"
-                    android:layout_marginEnd="8dp"
-                    android:src="@drawable/sao_shop_map" />
 
                 <Button
                     android:id="@+id/btn_Nv5"

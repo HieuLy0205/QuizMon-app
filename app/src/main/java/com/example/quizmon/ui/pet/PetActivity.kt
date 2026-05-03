@@ -40,27 +40,40 @@ class PetActivity : AppCompatActivity() {
         
         val btn_tanglevel = findViewById<Button>(R.id.btn_tanglevel)
         val btnBack = findViewById<ImageButton>(R.id.btnBack)
-        //sự kiện tăng cấp pet
+        
+        // Sự kiện tăng cấp pet với 3 mức giá khác nhau
         btn_tanglevel.setOnClickListener {
-            val currentid = pref.getPetLevel()
-            val currientCoin = pref.getCoins()
-            if (currentid != 3) {
-                if (currientCoin >= 20) {
-                    pref.saveCoins(currientCoin - 20)
-                    val nextLevel = currentid + 1
-                    pref.savePetLevel(nextLevel)
-                    // Cập nhật lại thông tin pet và header
-                    infomationPet()
-                    TaskHeadManager.update(findViewById(R.id.taskhead), pref)
-                    
-                    Toast.makeText(this, "Tăng cấp Thành công", Toast.LENGTH_SHORT).show()
-                } else {
-                    Toast.makeText(this, "Chưa đủ coin", Toast.LENGTH_SHORT).show()
-                }
+            val currentLevel = pref.getPetLevel()
+            val currentCoins = pref.getCoins()
+
+            // 1. Xác định giá nâng cấp dựa trên level hiện tại
+            val muc_gia = when (currentLevel) {
+                1 -> 20
+                2 -> 50
+                3 -> 80
+                else -> -1
+            }
+            // 2. Kiểm tra điều kiện tối đa
+            if (muc_gia == -1 || currentLevel >= 4) {
+                Toast.makeText(this, "Pet đã đạt cấp tối đa!", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+            // Kiểm tra tiền và thực hiện trừ coin + tăng cấp
+            if (currentCoins >= muc_gia) {
+                pref.saveCoins(currentCoins - muc_gia)
+                val nextLevel = currentLevel + 1
+                pref.savePetLevel(nextLevel)
+                
+                // Cập nhật giao diện
+                infomationPet()
+                TaskHeadManager.update(findViewById(R.id.taskhead), pref)
+
+                Toast.makeText(this, "Nâng lên cấp $nextLevel thành công! -$muc_gia", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "Đã đạt cấp tối đa", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Bạn cần $muc_gia coin để nâng cấp Hiện có: $currentCoins", Toast.LENGTH_SHORT).show()
             }
         }
+
         btn_tupet.setOnClickListener {
             startActivity(Intent(this, TupetActivity::class.java))
         }
@@ -80,8 +93,8 @@ class PetActivity : AppCompatActivity() {
         petAnimetor.stop()
     }
     fun infomationPet(){
-        //mới xữa
-        if(pref.getPetid() == -1){
+        //mới xữa ẩn imgPet1
+        if(pref.getPetid() == 0){
             imgPet1.visibility = android.view.View.INVISIBLE
             return
         }
