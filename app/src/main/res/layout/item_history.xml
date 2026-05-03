@@ -94,7 +94,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="4dp"
-                android:fontFamily="@font/sans-serif-black"
+                android:fontFamily="sans-serif-black"
                 android:textColor="@color/orange_primary"
                 android:textSize="11sp" />
 
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ellipsize="end"
-                android:fontFamily="@font/sans-serif-medium"
+                android:fontFamily="sans-serif-medium"
                 android:maxLines="2"
                 android:textColor="@color/text_primary"
                 android:textSize="14sp" />
@@ -121,7 +121,7 @@
                     android:id="@+id/tv_result"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/sans-serif-black"
+                    android:fontFamily="sans-serif-black"
                     android:paddingHorizontal="9dp"
                     android:paddingVertical="3dp"
                     android:textSize="11sp" />
@@ -131,7 +131,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:fontFamily="@font/sans-serif"
+                    android:fontFamily="sans-serif"
                     android:textColor="@color/text_hint"
                     android:textSize="11sp" />
             </LinearLayout>

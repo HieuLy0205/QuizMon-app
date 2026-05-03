@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Header ngày-->
 <TextView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/tv_date_header"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:fontFamily="@font/sans-serif-black"
+    android:fontFamily="sans-serif-black"
     android:letterSpacing="0.04"
     android:paddingVertical="4dp"
     android:layout_marginBottom="6dp"

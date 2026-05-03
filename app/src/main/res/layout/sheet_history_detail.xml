@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Sheet chi tiết-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -41,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/bg_chip_orange"
-                    android:fontFamily="@font/san-serif-black"
+                    android:fontFamily="san-serif-black"
                     android:paddingHorizontal="10dp"
                     android:paddingVertical="4dp"
                     android:textColor="@color/orange_primary"
@@ -51,7 +52,7 @@
                     android:id="@+id/tv_detail_result"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/san-serif-black"
+                    android:fontFamily="san-serif-black"
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="5dp"
                     android:textSize="12sp" />
@@ -63,7 +64,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:fontFamily="@font/san-serif-black"
+                android:fontFamily="san-serif-black"
                 android:lineSpacingMultiplier="1.4"
                 android:textColor="@color/text_primary"
                 android:textSize="16sp" />
@@ -102,7 +103,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="5dp"
-                        android:fontFamily="@font/san-serif-black"
+                        android:fontFamily="san-serif-black"
                         android:text="Giải thích"
                         android:textColor="@color/amber_dark"
                         android:textSize="12sp" />
@@ -112,7 +113,7 @@
                     android:id="@+id/tv_explain"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/san-serif"
+                    android:fontFamily="san-serif"
                     android:lineSpacingMultiplier="1.55"
                     android:textColor="@color/amber_text"
                     android:textSize="13sp" />

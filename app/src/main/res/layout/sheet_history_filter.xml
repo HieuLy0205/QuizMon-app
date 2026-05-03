@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--Sheet bộ lọc-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -26,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:fontFamily="@font/san-serif-bold"
+            android:fontFamily="san-serif-bold"
             android:text="Bộ lọc"
             android:textColor="@color/text_primary"
             android:textSize="18sp" />
@@ -36,7 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:fontFamily="@font/san-serif-black"
+            android:fontFamily="san-serif-black"
             android:text="THỂ LOẠI"
             android:textColor="@color/text_hint"
             android:textSize="12sp"
@@ -55,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:fontFamily="@font/san-serif-black"
+            android:fontFamily="san-serif-black"
             android:text="LOẠI ĐÁP ÁN"
             android:textColor="@color/text_hint"
             android:textSize="12sp"
@@ -82,7 +83,7 @@
                 android:layout_height="50dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
-                android:fontFamily="@font/san-serif-black"
+                android:fontFamily="san-serif-black"
                 android:text="Thiết lập lại"
                 android:textSize="14sp" />
 
@@ -92,7 +93,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:background="@drawable/bg_btn_orange"
-                android:fontFamily="@font/san-serif-black"
+                android:fontFamily="san-serif-black"
                 android:text="Áp dụng"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
