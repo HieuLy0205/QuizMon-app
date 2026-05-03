@@ -30,5 +30,24 @@
         <!--         Giúp chữ không bị cắt nêú quá dài -->
         <item name="android:maxLines">1</item>
         <item name="android:ellipsize">end</item>
+
+    </style>
+
+<!--        Style BottomSheetDialog-->
+
+    <style name="BottomSheetDialogTheme"
+        parent="Theme.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheet"
+        parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/BottomSheetShape</item>
+    </style>
+
+    <style name="BottomSheetShape">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
     </style>
 </resources>

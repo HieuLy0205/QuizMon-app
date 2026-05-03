@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Hàng đáp án trong sheet detail-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="8dp"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <!-- A/B/C/D -->
+    <TextView
+        android:id="@+id/tv_option_label"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:fontFamily="san-serif-black"
+        android:textSize="13sp"
+        android:layout_marginEnd="10dp" />
+
+    <!-- Nội dung đáp án -->
+    <TextView
+        android:id="@+id/tv_option_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="san-serif-medium"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp" />
+
+    <!-- Icon đúng/sai -->
+    <ImageView
+        android:id="@+id/iv_option_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>

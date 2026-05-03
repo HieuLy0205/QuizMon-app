@@ -29,7 +29,8 @@
     <color name="eevee_cream">#F5E6BE</color>
     <color name="eevee_dark">#6B4423</color>
     <color name="eevee_locked">#A9A9A9</color>
-    <!-- Lịch sử -->
+
+    <!-- Giao diện Lịch sử -->
     <color name="correct_green">#16A34A</color>
     <color name="correct_green_dark">#15803D</color>
     <color name="wrong_red">#DC2626</color>
