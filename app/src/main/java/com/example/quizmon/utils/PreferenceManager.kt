@@ -132,11 +132,13 @@ class PreferenceManager(private val context: Context) {
 
     // --- QUẢN LÝ NHIỆM VỤ ---
     fun saver_va_inday(taskId: String): Boolean {
+        //mặt định là false
         val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         val lastData = sharedPreferences.getString("task_$taskId", null)
         return lastData == currentDate
     }
     fun Xn_va_inday(taskId: String) {
+        //
         val currentDate = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(Date())
         sharedPreferences.edit().putString("task_$taskId", currentDate).apply()
     }
@@ -166,10 +168,6 @@ class PreferenceManager(private val context: Context) {
     fun savePetid(id: Int) {
         sharedPreferences.edit().putInt("pet_id", id).apply()
     }
-    fun addpetid(id: Int) {
-        val nextid = getPetid() + id
-        savePetid(nextid)
-    }
 
     // --- QUẢN LÝ DANH SÁCH SỞ HỮU ---
     fun get_sh_PetIds(): List<String> {
@@ -178,6 +176,7 @@ class PreferenceManager(private val context: Context) {
     }
 
     fun add_sh_Pet(id: String) {
+        // toMutableList cho phép sữa, sống lại
         val sh = get_sh_PetIds().toMutableList()
         if (!sh.contains(id)) {
             sh.add(id)
@@ -187,7 +186,9 @@ class PreferenceManager(private val context: Context) {
 
     fun get_sh_EggIds(): List<String> {
         val sh_Str = sharedPreferences.getString("owned_eggs", "") ?: ""
-        return if (sh_Str.isEmpty()) emptyList() else sh_Str.split(",")
+        return if (sh_Str.isEmpty())
+            emptyList()
+        else sh_Str.split(",")
     }
 
     fun add_sh_Egg(id: String) {
@@ -201,7 +202,7 @@ class PreferenceManager(private val context: Context) {
     fun delete_trung(id: String) {
         val sh = get_sh_EggIds().toMutableList()
         if (sh.remove(id)) {
-            sharedPreferences.edit().putString("owned_eggs", "").apply()
+            sharedPreferences.edit().putString("owned_eggs", sh.joinToString(",")).apply()
         }
     }
 

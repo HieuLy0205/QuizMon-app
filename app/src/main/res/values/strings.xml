@@ -49,7 +49,8 @@
     <string name="text_doi20">Đổi 20 xu</string>"
     <string name="text_doi50">Đổi 20 xu</string>"
     <string name="text_doi100">Đổi 20 xu</string>"
-    <string name="text_nhanpet">Chưa the nhan</string>
+    <string name="text_nhanpet">free qua ải</string>
+    <string name="text_traodoi"> bằng </string>
     <string name="text_so">0</string>
     <string name="text_time">00:00</string>
     <string name="hoso">Hồ sơ</string>

@@ -20,7 +20,7 @@ import com.example.quizmon.utils.PreferenceManager
 import com.example.quizmon.utils.TaskHeadManager
 
 
-class TupetActivity: AppCompatActivity(){
+class TupetActivity : AppCompatActivity() {
     //không để tâm
     private lateinit var lv_vat_in_tu: ListView
     private lateinit var img_pet_preview: ImageView
@@ -53,7 +53,8 @@ class TupetActivity: AppCompatActivity(){
 
         //setup listview bên trái
         val danh_sach_vat = listOf("Thú", "Trứng")
-        lv_vat_in_tu.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, danh_sach_vat)
+        lv_vat_in_tu.adapter =
+            ArrayAdapter(this, android.R.layout.simple_list_item_1, danh_sach_vat)
 
         lv_vat_in_tu.setOnItemClickListener { parent, view, position, id ->
             vi_tri_pet = (position == 0)
@@ -65,7 +66,7 @@ class TupetActivity: AppCompatActivity(){
         }
         //setup listview bên phải ( phân loại đối tượng )
         lv_kho_dung.setOnItemClickListener { _, _, position, _ ->
-            if(vi_tri_pet){
+            if (vi_tri_pet) {
                 //chế độ pet
                 val choice_pet = currentListpet[position]
                 // khai báo biến tạo địa chỉ
@@ -78,7 +79,7 @@ class TupetActivity: AppCompatActivity(){
                 pref.savePetid(choice_pet.id.toInt())
                 //sự kiện nay có ba thành phân
                 Toast.makeText(this, "Đã chọn: ${choice_pet.name}", Toast.LENGTH_SHORT).show()
-            }else{
+            } else {
                 //chế độ trung
                 if (currentListtrung.isNotEmpty()) {
                     val choice_trung = currentListtrung[position]
@@ -87,7 +88,6 @@ class TupetActivity: AppCompatActivity(){
                     img_pet_preview.setImageResource(choice_trung.poto_trung)
                     tv_danhsach.text = choice_trung.name
                     img_pet_preview.postDelayed({
-
                         // XÓA TRỨNG - THÊM PET (Dùng chung ID vì repo bạn đặt giống nhau)
                         pref.delete_trung(id_trung)
                         pref.add_sh_Pet(id_trung)
@@ -112,6 +112,7 @@ class TupetActivity: AppCompatActivity(){
         btnBack.setOnClickListener { finish() }
         showListPet()
     }
+
     private fun showListPet() {
         // 1. Lấy danh sách ID đã sở hữu
         val ownedIds = pref.get_sh_PetIds()
@@ -122,9 +123,16 @@ class TupetActivity: AppCompatActivity(){
         }
         // 3. Hiển thị lên ListView
         if (currentListpet.isEmpty()) {
-            lv_kho_dung.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listOf("Bạn chưa có thú cưng nào"))
+            lv_kho_dung.adapter = ArrayAdapter(
+                this,
+                android.R.layout.simple_list_item_1,
+                listOf("Bạn chưa có thú cưng nào")
+            )
         } else {
-            val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, currentListpet.map { it.name })
+            val adapter = ArrayAdapter(
+                this,
+                android.R.layout.simple_list_item_1,
+                currentListpet.map { it.name })
             lv_kho_dung.adapter = adapter
         }
     }
@@ -136,7 +144,11 @@ class TupetActivity: AppCompatActivity(){
         currentListtrung = reposiroty.getAllTrung().filter { ownedEggIds.contains(it.id) }
 
         if (currentListtrung.isEmpty()) {
-            lv_kho_dung.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, listOf("Bạn chưa có trứng nào"))
+            lv_kho_dung.adapter = ArrayAdapter(
+                this,
+                android.R.layout.simple_list_item_1,
+                listOf("Bạn chưa có trứng nào")
+            )
         } else {
             val eggNames = currentListtrung.map { it.name }
             lv_kho_dung.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, eggNames)
@@ -147,6 +159,7 @@ class TupetActivity: AppCompatActivity(){
         super.onResume()
         TaskHeadManager.startLoop(findViewById(R.id.layout_taskhead), pref)
     }
+
     override fun onPause() {
         super.onPause()
         TaskHeadManager.stopLoop()

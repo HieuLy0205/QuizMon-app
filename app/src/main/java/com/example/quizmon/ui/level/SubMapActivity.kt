@@ -375,6 +375,7 @@ class SubMapActivity : AppCompatActivity() {
         if (currentScore >= star1Score && levelId == currentMax) {
             mainPrefs.edit().putInt("CURRENT_UNLOCKED_LEVEL", levelId + 1).apply()
             preferenceManager.Dk_batmo_xn("nv2", true)
+            preferenceManager.Dk_batmo_xn("nh_trung_1",  true)
         }
     }
 
