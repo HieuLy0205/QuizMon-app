@@ -36,6 +36,9 @@ class AvatarActivity : AppCompatActivity() {
         val btnAvatar2 = findViewById<Button>(R.id.btnAvatar2)
         val btnAvatarVip = findViewById<Button>(R.id.btnAvatarVip)
 
+        btnAvatar1.text = getString(R.string.avatar_item_format, 1)
+        btnAvatar2.text = getString(R.string.avatar_item_format, 2)
+
         val btnFrame1 = findViewById<Button>(R.id.btnFrame1)
         val btnFrame2 = findViewById<Button>(R.id.btnFrame2)
         val btnFrame3 = findViewById<Button>(R.id.btnFrame3)

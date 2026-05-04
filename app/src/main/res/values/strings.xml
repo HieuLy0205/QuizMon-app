@@ -312,6 +312,7 @@
     <string name="shop_tim_restore_1">Hồi phục 1 Tim</string>
     <string name="shop_tim_cost_100xu">100 Xu</string>
     <string name="shop_tim_cost_5sao">5 Sao</string>
+    <string name="shop_tim_tip">Mẹo: Bạn có thể nhận Tim miễn phí\nbằng cách hoàn thành nhiệm vụ!</string>
 
     <!-- Filter extra -->
     <string name="filter_reset">Thiết lập lại</string>

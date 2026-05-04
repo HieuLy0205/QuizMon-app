@@ -167,16 +167,20 @@ class MainActivity : AppCompatActivity() {
         val savedPetId = preferenceManager.getPetid()
         val petLevel = preferenceManager.getPetLevel()
 
-        // Nếu chưa chọn Pet (Id = -1), lấy mặc định là Pet ID "1" (Hỏa Long)
-        val finalPetId = if (savedPetId == -1) "1" else savedPetId.toString()
-        
-        val petDetail = reposiroty.getPetById(finalPetId)
-        if (petDetail != null) {
+        if (savedPetId == -1) {
+            // Nếu chưa chọn Pet, hiển thị ảnh pet_an_0 và dừng animator
             ivFloatingPet.visibility = View.VISIBLE
-            animetor.stop() // Dừng animation cũ nếu có
-            animetor.starAnimetor(petDetail.copy(currentelevel = petLevel))
+            ivFloatingPet.setImageResource(R.drawable.pet_an_0)
+            animetor.stop()
         } else {
-            ivFloatingPet.visibility = View.GONE
+            val petDetail = reposiroty.getPetById(savedPetId.toString())
+            if (petDetail != null) {
+                ivFloatingPet.visibility = View.VISIBLE
+                animetor.stop() // Dừng animation cũ nếu có
+                animetor.starAnimetor(petDetail.copy(currentelevel = petLevel))
+            } else {
+                ivFloatingPet.visibility = View.GONE
+            }
         }
     }
 

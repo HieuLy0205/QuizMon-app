@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
@@ -77,6 +78,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/avatar_item_format"
+                    tools:text="Avatar 1"
                     android:backgroundTint="#6A5ACD"
                     android:textColor="#FFF" />
 
@@ -86,6 +88,7 @@
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/avatar_item_format"
+                    tools:text="Avatar 2"
                     android:layout_marginStart="10dp"
                     android:backgroundTint="#6A5ACD"
                     android:textColor="#FFF" />
