@@ -105,11 +105,13 @@ class PreferenceManager(private val context: Context) {
     fun Dk_xacnhan_cq(taskId: String): Boolean = sharedPreferences.getBoolean("ready_$taskId", false)
 
     fun handleCorrectAnswer() {
-        // Logic for correct answer statistics or streaks
+        // Mỗi câu trả lời đúng tăng 10 EXP và 2 Xu Cỏ
+        addExp(10)
+        addXu(2)
     }
 
     fun handleWrongAnswer() {
-        // Logic for wrong answer statistics or resetting streaks
+        // Có thể trừ điểm hoặc reset chuỗi nếu cần
     }
 
     fun applyRewardByString(reward: String, levelId: Int) {

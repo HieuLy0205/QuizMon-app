@@ -42,19 +42,15 @@
     <string name="text_dangnhap">🆎 Trạng thái: Đã đăng nhập</string>
     <string name="text_ShopNv">Nhiệm Vụ Hằng Ngày</string>
 
-    <!-- Tên nhiệm vụ chi tiết hơn -->
+    <!-- Tên nhiệm vụ -->
     <string name="task_1_name">Khởi đầu ngày mới</string>
     <string name="task_1_desc">Đăng nhập vào ứng dụng QuizMon hôm nay</string>
-
     <string name="task_2_name">Nhà thông thái</string>
     <string name="task_2_desc">Trả lời chính xác ít nhất 1 câu hỏi bất kỳ</string>
-
     <string name="task_3_name">Chinh phục thử thách</string>
     <string name="task_3_desc">Hoàn thành xuất sắc 1 cấp độ trên bản đồ</string>
-
     <string name="task_4_name">Vòng quay may mắn</string>
     <string name="task_4_desc">Thử vận may của bạn với 1 lượt quay hằng ngày</string>
-
     <string name="task_5_name">Nhà đầu tư tài ba</string>
     <string name="task_5_desc">Ủng hộ QuizMon bằng cách nạp thêm Sao ước</string>
 
@@ -82,7 +78,6 @@
     <string name="rank_exp_format">%1$d EXP</string>
     <string name="rank_exp_placeholder">0 EXP</string>
 
-    <!-- Strings cho màn hình Hồ sơ & Thống kê -->
     <string name="tab_thanh_tich">Thành tích</string>
     <string name="tab_thong_ke">Thống kê</string>
     <string name="tab_mua_hang">Mua hàng</string>
@@ -98,14 +93,12 @@
     <string name="percent_100">100%</string>
     <string name="percent_67">0%</string>
 
-    <!-- Các chuỗi bổ sung -->
     <string name="default_star_count">0</string>
     <string name="default_coin_count">0</string>
     <string name="default_time">00:00</string>
     <string name="default_user_name">Fonix</string>
     <string name="stat_questions_value">0</string>
 
-    <!-- Achievements Strings -->
     <string name="achievement_warrior">Chiến binh</string>
     <string name="achievement_warrior_desc">Thắng 100 trận đấu</string>
     <string name="percent_0">0%</string>
@@ -120,7 +113,6 @@
     <string name="monster_message_2">Ôi không! Quái vật vừa \'thó\' mất của bạn 1 mạng rồi. Chạy ngay đi!</string>
     <string name="monster_message_3">Quái vật hiện hình! Nó đã nuốt chửng 1 mạng của bạn như một viên kẹo!</string>
 
-    <!-- Daily Rewards & Tasks -->
     <string name="daily_reward_title">Thưởng hàng ngày</string>
     <string name="check">Điểm danh</string>
     <string name="daily_reward_subtitle">Hãy chơi mỗi ngày để nối tiếp chuỗi!</string>
@@ -131,7 +123,6 @@
     <string name="task_status_done">Đã xong</string>
     <string name="task_msg_not_ready">Chưa hoàn thành yêu cầu!</string>
 
-    <!-- New Strings added -->
     <string name="profile_info_title">Thông Tin Cá Nhân</string>
     <string name="profile_age_format">Tuổi: %1$d</string>
     <string name="profile_gender_format">Giới tính: %1$s</string>
@@ -151,7 +142,6 @@
     <string name="shop_day_7_prefix">Ngày 7: </string>
     <string name="shop_plus_sign"> + </string>
 
-    <!-- Settings Screen -->
     <string name="settings_title">Cài đặt</string>
     <string name="settings_dark_mode">🌙 Giao diện tối</string>
     <string name="settings_music">🎵 Nhạc</string>
@@ -170,10 +160,10 @@
     <string name="hour_hint">Giờ</string>
     <string name="minute_hint">Phút</string>
 
-    <!-- Avatar Screen -->
     <string name="avatar_title">Chọn Avatar</string>
     <string name="avatar_vip_lock">Avatar VIP 🔒</string>
     <string name="avatar_tab">Avatar</string>
+    <string name="avatar_item_format">Avatar %1$d</string>
     <string name="avatar1">Avatar 1</string>
     <string name="avatar2">Avatar 2</string>
     <string name="avatar_frame_tab">Khung viền</string>
@@ -182,7 +172,6 @@
     <string name="avatar_frame_rayquaza">Khung Rayquaza</string>
     <string name="btn_finish">Hoàn tất</string>
 
-    <!-- History Screen -->
     <string name="history_title">Lịch sử</string>
     <string name="history_empty">Chưa có lịch sử nào</string>
     <string name="history_filter">Lọc</string>
@@ -191,13 +180,11 @@
     <string name="history_total">Tổng</string>
     <string name="history_explanation">Giải thích</string>
 
-    <!-- Spin Wheel Screen -->
     <string name="spin_wheel_title">VÒNG QUAY MAY MẮN</string>
     <string name="spin_wheel_get_reward">NHẬN THƯỞNG</string>
     <string name="spin_wheel_congrats">CHÚC MỪNG!</string>
     <string name="spin_wheel_reward_msg">Bạn nhận được phần thưởng</string>
 
-    <!-- Sub Map / Level Screen -->
     <string name="level_title_format">Cấp độ %1$d</string>
     <string name="level_score_prefix">Điểm ải: </string>
     <string name="level_performance_msg">Bạn đang thể hiện giỏi hơn --% số người chơi khác.</string>
@@ -205,7 +192,6 @@
     <string name="summary_correct_label">✓ Câu trả lời đúng</string>
     <string name="summary_total_score_label">Tổng điểm</string>
 
-    <!-- Personalize Screen -->
     <string name="personalize_title">Cá nhân hoá trò chơi của bạn</string>
     <string name="personalize_fav_topics">Chủ đề yêu thích (chọn ít nhất 3)</string>
     <string name="personalize_gender">Giới tính</string>
@@ -214,14 +200,12 @@
     <string name="personalize_gender_other">Khác</string>
     <string name="personalize_custom_topic_hint">Nhập sở thích khác…</string>
 
-    <!-- Shop Main -->
     <string name="shop_main_title">CỬA HÀNG</string>
     <string name="shop_pet_tab">SHOP PET</string>
     <string name="shop_xu_tab">SHOP XU</string>
     <string name="shop_sao_tab">SHOP SAO</string>
     <string name="shop_tim_tab">SHOP TIM</string>
 
-    <!-- Quiz Screen -->
     <string name="quiz_question_title">Câu hỏi</string>
     <string name="quiz_powerup_x2">x2 Điểm</string>
     <string name="quiz_powerup_hint">Gợi ý</string>
@@ -229,23 +213,19 @@
     <string name="quiz_confirm">Xác nhận</string>
     <string name="quiz_powerup_fifty_fifty">50/50</string>
 
-    <!-- FAQ Screen -->
     <string name="faq_title">Câu hỏi thường gặp</string>
     <string name="faq_how_to_play">Cách chơi</string>
     <string name="faq_not_found_msg">Chưa tìm thấy câu trả lời cho câu hỏi của bạn?</string>
 
-    <!-- Pet Closet -->
     <string name="pet_closet_title">TỦ ĐỒ PET</string>
     <string name="pet_closet_short_title">Tủ pet</string>
     <string name="pet_closet_no_pet">Chưa chọn Pet</string>
     <string name="pet_closet_list">Danh sách</string>
 
-    <!-- Statistics -->
     <string name="stat_questions_answered_label">Số câu hỏi đã\ntrả lời</string>
     <string name="stat_correct_rate_label">Tỷ lệ trả lời\nđúng</string>
     <string name="stat_levels_completed_label">Số cấp độ đã\nhoàn thành</string>
 
-    <!-- Shop PVP / Eggs -->
     <string name="shop_pvp_exchange_egg">🅱️ Đổi xu nhận trứng</string>
     <string name="shop_pvp_receive_pet">Nhận pet với shop</string>
     <string name="shop_pvp_gift_section">🅰️ Quà trong shop</string>
@@ -254,26 +234,21 @@
     <string name="egg_name_rong_sau_rieng">Trứng rồng sầu riêng </string>
     <string name="egg_name_rong_hoa_long">Trứng rồng Hỏa Long</string>
 
-    <!-- Treasure / Lucky Box -->
     <string name="treasure_lucky_title">CHỌN MỘT RƯƠNG MAY MẮN</string>
     <string name="treasure_congrats_msg">Chúc mừng! Bạn nhận được 100 xu</string>
     <string name="treasure_awesome">TUYỆT VỜI</string>
     <string name="treasure_congrats_title">CHÚC MỪNG!</string>
     <string name="treasure_chest_desc">Rương may mắn %1$d</string>
 
-    <!-- Flip Card -->
     <string name="flip_card_title">Rút Thẻ May Mắn</string>
 
-    <!-- Payment -->
     <string name="payment_method">Phương thức thanh toán</string>
     <string name="payment_choose_price">Chọn mệnh giá</string>
     <string name="payment_confirm">XÁC NHẬN THANH TOÁN</string>
 
-    <!-- Nickname -->
     <string name="nickname_title">Đặt biệt danh</string>
     <string name="nickname_hint">Nhập biệt danh của bạn</string>
 
-    <!-- Report -->
     <string name="report_how_can_help">Chúng tôi có thể giúp gì?</string>
     <string name="report_title">Báo cáo vấn đề</string>
     <string name="report_send">Gửi đi</string>
@@ -286,21 +261,17 @@
     <string name="report_hint_name">Tên của bạn</string>
     <string name="report_hint_email">Email của bạn</string>
 
-    <!-- Custom Dialog -->
     <string name="dialog_title_default">Tiêu đề</string>
     <string name="dialog_msg_default">Nội dung thông báo ở đây.</string>
     <string name="btn_cancel">Hủy bỏ</string>
     <string name="btn_confirm">Đồng ý</string>
 
-    <!-- Age Activity -->
     <string name="age_prompt">Nhập tuổi của bạn</string>
 
-    <!-- Shop Sao extra -->
     <string name="shop_sao_title">NẠP SAO ƯỚC</string>
     <string name="shop_sao_note">* Chú ý: Nhấn vào biểu tượng MoMo hoặc VNPay để lấy mã QR thanh toán sau khi chọn mệnh giá.</string>
     <string name="btn_confirm_transferred">XÁC NHẬN ĐÃ CHUYỂN KHOẢN</string>
 
-    <!-- Shop Xu Buy extra -->
     <string name="shop_xu_buy_title">ĐỔI XU CỎ</string>
     <string name="shop_xu_buy_subtitle">Sử dụng Sao Ước để đổi Xu Cỏ</string>
     <string name="shop_xu_buy_rate">Tỷ lệ: 1 Sao = 10 Xu</string>
@@ -308,34 +279,28 @@
     <string name="shop_xu_buy_btn2">550 Xu (50 Sao)</string>
     <string name="shop_xu_buy_btn3">1200 Xu (100 Sao)</string>
 
-    <!-- Shop Tim extra -->
     <string name="shop_tim_title">CỬA HÀNG SINH MỆNH</string>
     <string name="shop_tim_restore_1">Hồi phục 1 Tim</string>
     <string name="shop_tim_cost_100xu">100 Xu</string>
     <string name="shop_tim_cost_5sao">5 Sao</string>
     <string name="shop_tim_tip">Mẹo: Bạn có thể nhận Tim miễn phí\nbằng cách hoàn thành nhiệm vụ!</string>
 
-    <!-- Filter extra -->
     <string name="filter_reset">Thiết lập lại</string>
     <string name="filter_type_answer">LOẠI ĐÁP ÁN</string>
     <string name="filter_category">THỂ LOẠI</string>
     <string name="filter_apply">Áp dụng</string>
     <string name="filter_title">Bộ lọc</string>
 
-    <!-- Task Item extra -->
     <string name="task_reward_format">+ %1$d Xu</string>
     <string name="task_claim">Nhận</string>
     <string name="task_label">Nhiệm vụ</string>
     <string name="task_desc_placeholder">Mô tả nhiệm vụ</string>
 
-    <!-- Daily Reward Item extra -->
     <string name="daily_reward_day_format">Ngày %1$d</string>
     <string name="daily_reward_value_format">x%1$d</string>
 
-    <!-- Rank Item extra -->
     <string name="rank_player_label">Người chơi</string>
 
-    <!-- Topic Item extra -->
     <string name="topic_placeholder">Topic</string>
 
     <string name="hour_label">HH</string>
