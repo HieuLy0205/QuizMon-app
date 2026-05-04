@@ -77,8 +77,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="@string/avatar_item_format"
-                    tools:text="Avatar 1"
+                    android:text="@string/avatar1"
                     android:backgroundTint="#6A5ACD"
                     android:textColor="#FFF" />
 
@@ -87,8 +86,7 @@
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
-                    android:text="@string/avatar_item_format"
-                    tools:text="Avatar 2"
+                    android:text="@string/avatar2"
                     android:layout_marginStart="10dp"
                     android:backgroundTint="#6A5ACD"
                     android:textColor="#FFF" />

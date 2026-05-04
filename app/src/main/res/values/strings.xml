@@ -174,7 +174,8 @@
     <string name="avatar_title">Chọn Avatar</string>
     <string name="avatar_vip_lock">Avatar VIP 🔒</string>
     <string name="avatar_tab">Avatar</string>
-    <string name="avatar_item_format">Avatar %1$d</string>
+    <string name="avatar1">Avatar 1</string>
+    <string name="avatar2">Avatar 2</string>
     <string name="avatar_frame_tab">Khung viền</string>
     <string name="avatar_frame_kyogre">Khung Kyogre</string>
     <string name="avatar_frame_pikachu">Khung Pikachu</string>
