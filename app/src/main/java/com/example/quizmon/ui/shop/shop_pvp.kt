@@ -71,14 +71,14 @@ class shop_pvp: AppCompatActivity() {
         }
 
         btnNhanPet1.setOnClickListener {
-            val currentXu = pref.getXu()
+            val currentXu = pref.getCoins()
             val ds_trung = pref.get_sh_EggIds()
             val gia_xu = 30;
             val id_trung = "2"
             if (!ds_trung.contains(id_trung)) {
                 if (currentXu >= gia_xu ) {
                     pref.add_sh_Egg(id_trung)
-                    pref.saveXu(currentXu - gia_xu)
+                    pref.saveCoins(currentXu - gia_xu)
                     pref.Dk_batmo_xn("nv4", true)
                     btnNhanPet1.isEnabled = false
                     btnNhanPet1.text = "Đã nhận"
@@ -90,14 +90,14 @@ class shop_pvp: AppCompatActivity() {
         }
 
         btnNhanPet2.setOnClickListener {
-            val currentXu = pref.getXu()
+            val currentXu = pref.getCoins()
             val ds_trung = pref.get_sh_EggIds()
             val gia_xu = 150
             val id_trung = "3"
             if(!ds_trung.contains(id_trung)){
                 if (currentXu >= gia_xu) {
                     pref.add_sh_Egg(id_trung)
-                    pref.saveXu(currentXu - gia_xu)
+                    pref.saveCoins(currentXu - gia_xu)
                     pref.Dk_batmo_xn("nv4", true)
                     btnNhanPet2.isEnabled = false
                     btnNhanPet2.text = "Đã nhận"
@@ -108,13 +108,13 @@ class shop_pvp: AppCompatActivity() {
             }
         }
         btnNhanPet3.setOnClickListener {
-            val currentXu = pref.getXu()
+            val currentXu = pref.getCoins()
             val ds_trung = pref.get_sh_EggIds()
             val gia_xu = 100
             val id_trung = "4"
             if (!ds_trung.contains(id_trung)){
                 if (currentXu >= gia_xu) {
-                    pref.saveXu(currentXu - gia_xu)
+                    pref.saveCoins(currentXu - gia_xu)
                     pref.add_sh_Egg(id_trung)
                     pref.Dk_batmo_xn("nv4", true)
                     btnNhanPet3.isEnabled = false
